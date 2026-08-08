@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#f7f4ee"/>
+  <text x="32" y="45" font-family="Songti SC, Noto Serif SC, Georgia, serif"
+        font-size="38" font-weight="700" fill="#1c1a17" text-anchor="middle">对</text>
+  <path d="M8 34 Q 20 30, 32 34 T 56 33" fill="none" stroke="#cf3a30"
+        stroke-width="6" stroke-linecap="round"/>
+</svg>
