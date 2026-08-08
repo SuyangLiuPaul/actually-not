@@ -23,6 +23,17 @@
 
 **这不是医疗建议。** 这里讲的是人群层面的一般规律，落到具体的人身上未必适用。
 
+## 可以装到手机上
+
+站点是一个 PWA：iOS 用 Safari「添加到主屏幕」，Android / 桌面 Chrome 会直接提示安装。
+装上之后**完全离线可用**——所有内容都在首次访问时预缓存了，没网也能打开。
+
+内容更新时不会打断你阅读，右下角出现一条提示，你自己决定什么时候刷新。
+
+图标覆盖了各平台需要的规格：`favicon.ico`（旧环境）、SVG favicon、
+iOS 的 `apple-touch-icon`、Android 的 192/512 以及带安全区的 maskable 版本。
+图标本身只用几何图形画成，不含文字，所以不依赖任何字体，在 16px 下也不糊。
+
 ## 本地运行
 
 ```bash
@@ -30,16 +41,28 @@ npm install
 npm run dev
 ```
 
-构建：
+其他命令：
 
 ```bash
-npm run build
+npm run check    # lint + 类型检查 + 内容测试
+npm run build    # 构建到 dist/
+npm run preview  # 本地跑构建产物（要测 service worker 就用这个，dev 模式不启用）
+npm run icons    # 改了 assets/*.svg 之后重新生成图标
 ```
 
 ## 技术栈
 
 React 19 + TypeScript + Vite + Tailwind CSS v4，纯静态站点，无后端。
 内容全部在 [`src/data/myths.ts`](src/data/myths.ts) 一个文件里。
+
+## 内容测试
+
+`npm test` 会逐条检查所有条目：id 唯一且是合法的 URL 片段、分类和风险等级有效、
+五个正文字段都不为空、没有占位符残留、每条至少一个出处、出处链接是合法的 https 地址、
+每个分类下都有内容。写错了在 CI 就会被拦下来，不会带到线上。
+
+图标是本地生成后提交进仓库的，CI 不跑 `npm run icons`——
+这样构建机上有没有中文字体都不影响。
 
 ## 想改内容？
 

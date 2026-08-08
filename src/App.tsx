@@ -8,7 +8,11 @@ type Theme = 'light' | 'dark' | 'auto'
 
 export default function App() {
   const [query, setQuery] = useState('')
-  const [cat, setCat] = useState<CategoryId | 'all'>('all')
+  // ?c=urgent —— 给 PWA 的快捷方式用，也方便直接分享某一类
+  const [cat, setCat] = useState<CategoryId | 'all'>(() => {
+    const c = new URLSearchParams(window.location.search).get('c')
+    return CATEGORIES.some((x) => x.id === c) ? (c as CategoryId) : 'all'
+  })
   const [stakes, setStakes] = useState<Stakes | 'all'>('all')
   const [openId, setOpenId] = useState<string | null>(null)
   const [theme, setTheme] = useState<Theme>('auto')
@@ -90,6 +94,13 @@ export default function App() {
 
   return (
     <div className="relative z-1 min-h-dvh">
+      <a
+        href="#content"
+        className="sr-only rounded-lg px-4 py-2 text-sm font-medium focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50"
+        style={{ background: 'var(--pen)', color: '#fff' }}
+      >
+        跳到正文
+      </a>
       <div className="mx-auto max-w-5xl px-5 sm:px-8">
         {/* ── 页头 ── */}
         <header className="pt-14 pb-10 sm:pt-20 sm:pb-14">
@@ -233,7 +244,7 @@ export default function App() {
         </div>
 
         {/* ── 卡片 ── */}
-        <main className="pb-16">
+        <main id="content" className="pb-16">
           {filtered.length === 0 ? (
             <div className="py-24 text-center">
               <p className="text-base" style={{ color: 'var(--ink-soft)' }}>

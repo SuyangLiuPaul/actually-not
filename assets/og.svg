@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#f7f4ee"/>
+
+  <!-- 稿纸横线 -->
+  <g stroke="#e2dcd1" stroke-width="1.5">
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="280" x2="1200" y2="280"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="440" x2="1200" y2="440"/>
+    <line x1="0" y1="520" x2="1200" y2="520"/>
+  </g>
+
+  <text x="88" y="150" font-family="PingFang SC, Helvetica Neue, sans-serif"
+        font-size="26" font-weight="600" letter-spacing="6" fill="#cf3a30">常识核对表</text>
+
+  <text x="88" y="310" font-family="Songti SC, Noto Serif SC, Georgia, serif"
+        font-size="140" font-weight="700" fill="#1c1a17">其实不是</text>
+
+  <!-- 被划掉的那句 -->
+  <g>
+    <text x="88" y="418" font-family="Songti SC, Noto Serif SC, Georgia, serif"
+          font-size="42" fill="#55504a">早上不吃饭伤身 · 骨头汤补钙</text>
+    <path d="M78 403 Q 260 394 430 405 T 700 398"
+          fill="none" stroke="#cf3a30" stroke-width="7" stroke-linecap="round" opacity="0.9"/>
+  </g>
+
+  <text x="88" y="510" font-family="PingFang SC, Helvetica Neue, sans-serif"
+        font-size="30" fill="#8c857c">55 条听起来天经地义、但证据并不支持的说法，每条附出处</text>
+
+  <!-- 右侧图标 -->
+  <g transform="translate(940 190) scale(0.42)">
+    <rect width="512" height="512" rx="114" fill="#fffdf9" stroke="#e2dcd1" stroke-width="4"/>
+    <path d="M140 272 L232 360 L378 166" fill="none" stroke="#1c1a17"
+          stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M62 300 Q 170 268 268 292 T 452 254" fill="none" stroke="#cf3a30"
+          stroke-width="46" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -2,24 +2,89 @@
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="dark light" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
     <title>其实不是 · 那些你以为对的生活常识</title>
     <meta
       name="description"
-      content="早上不吃饭伤身、洗完头不吹干有湿气、骨头汤补钙……这些听起来天经地义的说法，其实证据并不支持。一个关于生活常识误区的小站。"
+      content="早上不吃饭伤身、洗完头不吹干有湿气、骨头汤补钙……55 条听起来天经地义、但证据并不支持的生活常识，每条附出处。"
     />
+    <link rel="canonical" href="https://actually-not.netlify.app/" />
+
+    <!-- 图标：SVG 给现代浏览器，ico 给旧环境，apple-touch-icon 给 iOS 主屏 -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="mask-icon" href="/favicon.svg" color="#cf3a30" />
+
+    <!-- 浏览器 UI 配色随系统深浅色切换 -->
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f7f4ee" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#14130f" media="(prefers-color-scheme: dark)" />
+
+    <!-- iOS 加到主屏后的表现 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="其实不是" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Windows 磁贴 -->
+    <meta name="msapplication-TileColor" content="#f7f4ee" />
+    <meta name="msapplication-TileImage" content="/icons/icon-192.png" />
+
+    <!-- 分享卡片 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="其实不是" />
+    <meta property="og:locale" content="zh_CN" />
     <meta property="og:title" content="其实不是 · 那些你以为对的生活常识" />
     <meta
       property="og:description"
-      content="听起来天经地义，其实证据不支持。50 条被误传的生活常识，附上它们是怎么传开的。"
+      content="听起来天经地义，其实证据不支持。55 条被误传的生活常识，附上它们是怎么传开的。"
     />
-    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://actually-not.netlify.app/" />
+    <meta property="og:image" content="https://actually-not.netlify.app/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="其实不是 —— 常识核对表" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="其实不是 · 那些你以为对的生活常识" />
+    <meta
+      name="twitter:description"
+      content="听起来天经地义，其实证据不支持。55 条被误传的生活常识，附上它们是怎么传开的。"
+    />
+    <meta name="twitter:image" content="https://actually-not.netlify.app/og.png" />
+
+    <!-- 首屏底色，避免加载瞬间闪白 -->
+    <style>
+      :root { color-scheme: light dark; }
+      html { background: #f7f4ee; }
+      @media (prefers-color-scheme: dark) { html { background: #14130f; } }
+      .boot-fallback {
+        max-width: 34rem;
+        margin: 18vh auto;
+        padding: 0 1.5rem;
+        font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif;
+        line-height: 1.8;
+        color: #55504a;
+      }
+      @media (prefers-color-scheme: dark) { .boot-fallback { color: #b4ada1; } }
+    </style>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <div class="boot-fallback">
+        <h1>其实不是</h1>
+        <p>
+          这个站点需要 JavaScript 才能浏览。内容本身是纯文本的，
+          如果你不想开 JavaScript，可以直接在
+          <a href="https://github.com/SuyangLiuPaul/actually-not/blob/main/src/data/myths.ts"
+            >GitHub 上读原始数据</a
+          >。
+        </p>
+      </div>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
