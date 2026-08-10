@@ -6,7 +6,7 @@
 
 ## 0. 一句话
 
-「其实不是」是一个中文静态站点，收录 55 条**听起来天经地义、但证据并不支持**的生活常识
+「其实不是」是一个中文静态站点，收录 61 条**听起来天经地义、但证据并不支持**的生活常识
 （早上不吃饭伤身、洗完头不吹干有湿气、骨头汤补钙……），每条附出处。
 纯前端，无后端，无数据库，无环境依赖。
 
@@ -36,7 +36,7 @@ npm run dev          # http://localhost:5173
 | 命令 | 作用 |
 |---|---|
 | `npm run dev` | 开发服务器（**Service Worker 在这个模式下是关的**） |
-| `npm run check` | lint + 类型检查 + 610 条内容测试。**提交前跑这个** |
+| `npm run check` | lint + 类型检查 + 676 条内容测试。**提交前跑这个** |
 | `npm test` | 只跑内容测试 |
 | `npm run build` | 构建到 `dist/` |
 | `npm run preview` | 跑构建产物 → 要测 PWA / 离线**必须用这个**，不能用 dev |
@@ -131,10 +131,12 @@ actually-not/
 │
 ├── src/
 │   ├── data/
-│   │   ├── myths.ts         ★ 全部 55 条内容都在这一个文件里
-│   │   └── myths.test.ts    内容完整性测试（610 条断言）
+│   │   ├── myths.ts         ★ 全部 61 条内容都在这一个文件里
+│   │   └── myths.test.ts    内容完整性测试（676 条断言）
 │   ├── types.ts             数据结构 + 分类 + 风险等级的定义
-│   ├── App.tsx              页面主体：搜索、筛选、卡片网格、主题切换
+│   ├── hooks/
+│   │   └── useReadProgress.ts 已读进度（localStorage，自动过滤已删除的 id）
+│   ├── App.tsx              页面主体：搜索、筛选、卡片网格、主题切换、已读进度
 │   ├── components/
 │   │   ├── MythCard.tsx     卡片
 │   │   ├── MythDetail.tsx   点开后的详情弹层
@@ -259,7 +261,7 @@ Mayo Clinic、CDC、JAMA、BMJ、Cochrane、NEJM 这些站对 curl 一律返回 
 以下都是权衡后的选择，不是随手写的。要改可以，但先知道当初为什么这么定：
 
 - **内容全在一个 `myths.ts` 里，没有用 CMS / markdown / 数据库。**
-  55 条纯文本，一个文件最好改、好搜索、好做 diff review，也让测试能静态检查全部内容。
+  61 条纯文本，一个文件最好改、好搜索、好做 diff review，也让测试能静态检查全部内容。
 
 - **图标只用几何图形，不含文字。**
   原本是「对」字加红线，但那依赖系统字体，且 16px 下糊成一团。
@@ -285,7 +287,7 @@ Mayo Clinic、CDC、JAMA、BMJ、Cochrane、NEJM 这些站对 curl 一律返回 
 ```bash
 cd /Users/pliu0036/Documents/CodingProject/actually-not
 npm install
-npm run check              # 应该：lint 无输出、类型通过、610 tests passed
+npm run check              # 应该：lint 无输出、类型通过、676 tests passed
 npm run build              # 应该：生成 dist/，PWA precache 约 22 entries
 ./scripts/status.sh        # 应该：CI success、Netlify ready、线上全 200
 git check-ignore .env.local # 应该：输出 .env.local（说明不会被提交）
@@ -303,11 +305,13 @@ npm run preview
 
 ## 10. 当前状态
 
-- 55 条内容，6 个分类（吃 17 / 身体 13 / 生活 8 / 关键时刻 7 / 运动 6 / 睡 4）
-- 其中 18 条标记为「可能有害」
+- 61 条内容，6 个分类（吃 20 / 身体 15 / 生活 8 / 关键时刻 7 / 运动 6 / 睡 5）
+- 其中 19 条标记为「可能有害」
 - 所有出处链接都做过 HTTP 核对；确认不了的只保留文献信息、不放死链
+- 已读进度、详情分享按钮、搜索高亮、FAQ JSON-LD 结构化数据、
+  PWA「随便看一条」快捷方式都已上线
 - CI 通过，Netlify 自动部署正常，PWA 离线实测通过
 - 没有已知 bug，没有待办
 
 可以做的方向（都不是必须的）：继续加条目、给条目加配图、
-做一个「随机一条」的每日推送、把内容拆成中英双语。
+做一个「每日一条」的推送、把内容拆成中英双语。

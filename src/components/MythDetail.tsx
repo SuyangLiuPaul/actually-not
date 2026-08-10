@@ -6,22 +6,28 @@ import { CATEGORIES, STAKES_META, type Myth } from '../types'
 export function MythDetail({
   myth,
   index,
+  read,
   onClose,
   onPrev,
   onNext,
+  onToggleRead,
 }: {
   myth: Myth
   index: number
+  read: boolean
   onClose: () => void
   onPrev?: () => void
   onNext?: () => void
+  onToggleRead: () => void
 }) {
   const panelRef = useRef<HTMLDivElement>(null)
   const [struck, setStruck] = useState(false)
+  const [shared, setShared] = useState(false)
 
-  // 每次换一条，重新播划线动画并把滚动条拉回顶部
+  // 每次换一条，重新播划线动画、清掉「已复制」反馈，并把滚动条拉回顶部
   useEffect(() => {
     setStruck(false)
+    setShared(false)
     panelRef.current?.scrollTo({ top: 0 })
     const t = setTimeout(() => setStruck(true), 220)
     return () => clearTimeout(t)
@@ -33,6 +39,25 @@ export function MythDetail({
       if (e.key === 'Escape') onClose()
       if (e.key === 'ArrowLeft') onPrev?.()
       if (e.key === 'ArrowRight') onNext?.()
+      // 把 Tab 圈在弹层里
+      if (e.key === 'Tab') {
+        const panel = panelRef.current
+        if (!panel) return
+        const focusables = panel.querySelectorAll<HTMLElement>(
+          'button:not(:disabled), a[href], [tabindex]:not([tabindex="-1"])',
+        )
+        if (focusables.length === 0) return
+        const first = focusables[0]
+        const last = focusables[focusables.length - 1]
+        const active = document.activeElement
+        if (e.shiftKey && (active === first || active === panel)) {
+          e.preventDefault()
+          last.focus()
+        } else if (!e.shiftKey && active === last) {
+          e.preventDefault()
+          first.focus()
+        }
+      }
     }
     document.addEventListener('keydown', onKey)
     const prevOverflow = document.body.style.overflow
@@ -42,6 +67,39 @@ export function MythDetail({
       document.body.style.overflow = prevOverflow
     }
   }, [onClose, onPrev, onNext])
+
+  // 优先调起系统分享，不行就复制深链
+  const share = async () => {
+    const url = `${window.location.origin}${window.location.pathname}#/${myth.id}`
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: `其实不是：${myth.belief}`,
+          text: `你以为「${myth.belief}」？其实——${myth.truth}`,
+          url,
+        })
+        return
+      } catch (err) {
+        // 用户主动取消不算失败，也不再退回复制
+        if (err instanceof Error && err.name === 'AbortError') return
+      }
+    }
+    try {
+      await navigator.clipboard.writeText(url)
+    } catch {
+      // 老浏览器没有 clipboard API，退回隐藏输入框
+      const ta = document.createElement('textarea')
+      ta.value = url
+      ta.style.position = 'fixed'
+      ta.style.opacity = '0'
+      document.body.appendChild(ta)
+      ta.select()
+      document.execCommand('copy')
+      ta.remove()
+    }
+    setShared(true)
+    window.setTimeout(() => setShared(false), 1600)
+  }
 
   const cat = CATEGORIES.find((c) => c.id === myth.category)!
   const stakes = STAKES_META[myth.stakes]
@@ -85,6 +143,36 @@ export function MythDetail({
             {cat.label}
           </span>
           <div className="flex items-center gap-1">
+            <button
+              onClick={share}
+              aria-label={shared ? '链接已复制' : '分享这一条，复制链接'}
+              title={shared ? '已复制链接' : '分享这一条'}
+              className="grid h-8 w-8 place-items-center rounded-lg transition-colors"
+              style={{ color: shared ? 'var(--slate)' : 'var(--ink-soft)' }}
+              onMouseEnter={(e) => (e.currentTarget.style.background = 'var(--rule)')}
+              onMouseLeave={(e) => (e.currentTarget.style.background = 'transparent')}
+            >
+              {shared ? (
+                <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path
+                    d="M3 8.5L6.5 12L13 4"
+                    stroke="currentColor"
+                    strokeWidth="1.7"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              ) : (
+                <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path
+                    d="M6.6 9.4a3 3 0 004.3.3l2-2a3 3 0 10-4.3-4.3l-1 1M9.4 6.6a3 3 0 00-4.3-.3l-2 2a3 3 0 104.3 4.3l1-1"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              )}
+            </button>
             <NavBtn onClick={onPrev} label="上一条" dir="prev" />
             <NavBtn onClick={onNext} label="下一条" dir="next" />
             <button
@@ -148,6 +236,29 @@ export function MythDetail({
             <span className="text-[13px]" style={{ color: 'var(--ink-soft)' }}>
               {stakes.hint}
             </span>
+            <button
+              onClick={onToggleRead}
+              aria-pressed={read}
+              className="ml-auto inline-flex shrink-0 items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] font-medium transition-colors"
+              style={{
+                borderColor: read ? 'var(--slate)' : 'var(--rule-strong)',
+                background: read ? 'var(--slate-soft)' : 'transparent',
+                color: 'var(--slate)',
+              }}
+            >
+              {read && (
+                <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path
+                    d="M2 6.5L4.8 9L10 3"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              )}
+              {read ? '已读' : '标为已读'}
+            </button>
           </div>
 
           {/* 出处 */}

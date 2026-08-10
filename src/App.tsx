@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { MYTHS } from './data/myths'
 import { CATEGORIES, STAKES_META, type CategoryId, type Stakes } from './types'
+import { useReadProgress } from './hooks/useReadProgress'
 import { MythCard } from './components/MythCard'
 import { MythDetail } from './components/MythDetail'
 
@@ -17,6 +18,7 @@ export default function App() {
   const [openId, setOpenId] = useState<string | null>(null)
   const [theme, setTheme] = useState<Theme>('auto')
   const searchRef = useRef<HTMLInputElement>(null)
+  const { read, markRead, toggleRead, readCount } = useReadProgress()
 
   // 主题
   useEffect(() => {
@@ -42,13 +44,35 @@ export default function App() {
     return () => window.removeEventListener('hashchange', sync)
   }, [])
 
+  // PWA 快捷方式「随便看一条」：/?random=1（已有 hash 深链时让位）
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    if (!params.has('random') || window.location.hash) return
+    const m = MYTHS[Math.floor(Math.random() * MYTHS.length)]
+    params.delete('random')
+    const qs = params.toString()
+    const base = window.location.pathname + (qs ? `?${qs}` : '')
+    history.replaceState('', document.title, `${base}#/${m.id}`)
+    setOpenId(m.id)
+  }, [])
+
+  // 打开详情即算「看过」
+  useEffect(() => {
+    if (openId) markRead(openId)
+  }, [openId, markRead])
+
   const open = useCallback((id: string) => {
     window.location.hash = `/${id}`
   }, [])
 
   const close = useCallback(() => {
+    const id = window.location.hash.replace(/^#\/?/, '')
     history.pushState('', document.title, window.location.pathname + window.location.search)
     setOpenId(null)
+    // 焦点还给对应卡片，键盘用户不至于丢位置
+    requestAnimationFrame(() => {
+      document.querySelector<HTMLElement>(`[data-myth-id="${id}"]`)?.focus()
+    })
   }, [])
 
   // 搜索 + 筛选
@@ -265,11 +289,18 @@ export default function App() {
           ) : (
             <>
               <p className="mb-4 text-[13px]" style={{ color: 'var(--ink-faint)' }}>
-                {filtered.length} 条
+                {filtered.length} 条 · 已读 {readCount}/{MYTHS.length}
               </p>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {filtered.map((m, i) => (
-                  <MythCard key={m.id} myth={m} index={i} onOpen={() => open(m.id)} />
+                  <MythCard
+                    key={m.id}
+                    myth={m}
+                    index={i}
+                    read={read.has(m.id)}
+                    query={query}
+                    onOpen={() => open(m.id)}
+                  />
                 ))}
               </div>
             </>
@@ -311,6 +342,7 @@ export default function App() {
         <MythDetail
           myth={openMyth}
           index={openIndex >= 0 ? openIndex : 0}
+          read={read.has(openMyth.id)}
           onClose={close}
           onPrev={openIndex > 0 ? () => open(filtered[openIndex - 1].id) : undefined}
           onNext={
@@ -318,6 +350,7 @@ export default function App() {
               ? () => open(filtered[openIndex + 1].id)
               : undefined
           }
+          onToggleRead={() => toggleRead(openMyth.id)}
         />
       )}
     </div>

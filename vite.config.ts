@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
 const DESCRIPTION =
-  '早上不吃饭伤身、洗完头不吹干有湿气、骨头汤补钙……55 条听起来天经地义、但证据并不支持的生活常识，每条附出处。'
+  '早上不吃饭伤身、洗完头不吹干有湿气、骨头汤补钙……61 条听起来天经地义、但证据并不支持的生活常识，每条附出处。'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -48,6 +48,12 @@ export default defineConfig({
           { src: '/favicon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any' },
         ],
         shortcuts: [
+          {
+            name: '随便看一条',
+            short_name: '随便看',
+            url: '/?random=1',
+            description: '随机打开一条，看缘分',
+          },
           {
             name: '关键时刻：照做会出事的',
             short_name: '关键时刻',
