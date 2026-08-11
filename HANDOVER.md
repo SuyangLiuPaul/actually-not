@@ -155,6 +155,7 @@ actually-not/
 │
 ├── public/                  会被原样复制到 dist/
 │   ├── icons/               ★ 生成物，不要手改
+│   ├── og/                  ★ 生成物：每条的 OG 分享图（npm run og）
 │   ├── favicon.ico/.svg     ★ 生成物
 │   ├── og.png               ★ 生成物
 │   ├── _redirects           SPA 回退（Netlify 直传时生效）
@@ -163,6 +164,7 @@ actually-not/
 ├── scripts/
 │   ├── prerender.ts         ★ 构建期预渲染 62 页 + sitemap.xml + robots.txt
 │   ├── generate-icons.mjs   从 assets/*.svg 生成全部图标
+│   ├── generate-og.mjs      为每条内容生成 OG 分享图（改了文案要重跑）
 │   ├── deploy.sh            手动部署
 │   └── status.sh            状态总览
 │
@@ -177,7 +179,7 @@ actually-not/
 
 | 你要做的事 | 改这里 |
 |---|---|
-| 加 / 改 / 删一条内容 | `src/data/myths.ts`，然后 `npm test` |
+| 加 / 改 / 删一条内容 | `src/data/myths.ts`，然后 `npm test` 和 `npm run og` |
 | 加一个新分类 | `src/types.ts` 的 `CATEGORIES` |
 | 改配色、深浅色 | `src/index.css` 顶部的 CSS 变量 |
 | 改卡片长相 | `src/components/MythCard.tsx` |
@@ -237,9 +239,10 @@ Mayo Clinic、CDC、JAMA、BMJ、Cochrane、NEJM 这些站对 curl 一律返回 
 **不管路径对不对**。不要因为 403 就判定链接失效并删掉。要验证就用真实浏览器打开。
 （当初就是这样才发现真正失效的只有 6 个，其余几十个 403 全是误报。）
 
-**② 图标不要放进 CI 生成。**
-`npm run icons` 只在本地跑，产物提交进仓库。因为 `og.svg` 里有中文字，
-构建机上不一定装了中文字体。CI 里跑会得到一张字体错乱的分享图。
+**② 图标和 OG 图不要放进 CI 生成。**
+`npm run icons` / `npm run og` 只在本地跑，产物提交进仓库。因为 `og.svg`
+和每条的分享图里有中文字，构建机上不一定装了中文字体。
+CI 里跑会得到一张字体错乱的分享图。
 
 **③ 缓存头要改两个地方。**
 `netlify.toml` 只在 **CI 构建**时生效；`./scripts/deploy.sh` 这种直传 `dist/` 的方式
@@ -326,6 +329,7 @@ npm run preview
   测验「你中了几条」（/quiz + 成绩分享图）、FAQ JSON-LD 结构化数据、
   PWA「随便看一条」快捷方式都已上线
 - CI 通过，Netlify 自动部署正常，PWA 离线实测通过
+- 每条内容有自己的 OG 分享图（`public/og/`，预渲染时按路由注入 og:image）
 - Lighthouse 四项全 100；对比度全部 ≥4.5:1；`prefers-reduced-motion`
   已用真实浏览器实测（reduce 时 transition 降到 0.01ms）。
   屏幕阅读器（VoiceOver/NVDA）真机过一遍详情页仍未做
