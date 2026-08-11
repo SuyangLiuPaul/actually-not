@@ -453,7 +453,7 @@ export const MYTHS: Myth[] = [
       },
       {
         label: 'Unger, Arthritis & Rheumatism 1998 —— 六十年单人实验',
-        url: 'https://onlinelibrary.wiley.com/doi/10.1002/art.1780410528',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/9588755/',
       },
     ],
   },

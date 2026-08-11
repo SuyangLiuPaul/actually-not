@@ -13,6 +13,7 @@
     "check": "npm run lint && npm run typecheck && npm run test",
     "icons": "node scripts/generate-icons.mjs",
     "og": "node scripts/generate-og.mjs",
+    "links": "node scripts/check-links.mts",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -26,6 +27,7 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.4",
     "oxlint": "^1.75.0",
+    "playwright": "^1.62.1",
     "png-to-ico": "^3.0.2",
     "sharp": "^0.35.3",
     "tailwindcss": "^4.3.3",

@@ -130,9 +130,14 @@ A3（每条分享图）也依赖它。
 
 ## A7 · 出处链接体检 `M`
 
-- [ ] 写个脚本跑一遍所有出处链接，报告失效的
-- [ ] **必须用真实浏览器（Playwright），不能用 curl**
-- [ ] 可以挂到 GitHub Actions 每月跑一次，发现失效自动开 issue
+- [x] 写个脚本跑一遍所有出处链接，报告失效的
+      （`npm run links` → `scripts/check-links.mts`，首次运行就抓到一个真死链：
+      knuckle-crack 的 Unger 1998 DOI 从未注册过，已换成 PubMed 9588755）
+- [x] **必须用真实浏览器（Playwright），不能用 curl**
+      （注意：BMJ / NICE 等 7 个站连 headless Chrome 都拦，脚本把 403 单列
+      为「被反爬拦截」，只有 404/导航失败才算确定失效）
+- [x] 可以挂到 GitHub Actions 每月跑一次，发现失效自动开 issue
+      （`.github/workflows/link-check.yml`，每月 3 号，发现失效自动开 issue 且去重）
 
 > ⚠️ 见 HANDOVER 坑①：Mayo Clinic、CDC、JAMA、BMJ、Cochrane 这些站
 > 对 curl **一律返回 403，不管路径对不对**。用 curl 写这个脚本，

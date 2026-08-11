@@ -165,6 +165,7 @@ actually-not/
 │   ├── prerender.ts         ★ 构建期预渲染 62 页 + sitemap.xml + robots.txt
 │   ├── generate-icons.mjs   从 assets/*.svg 生成全部图标
 │   ├── generate-og.mjs      为每条内容生成 OG 分享图（改了文案要重跑）
+│   ├── check-links.mts      出处链接体检（真实浏览器，不是 curl）
 │   ├── deploy.sh            手动部署
 │   └── status.sh            状态总览
 │
@@ -236,8 +237,10 @@ actually-not/
 
 **① 核对出处链接时，curl 会骗你。**
 Mayo Clinic、CDC、JAMA、BMJ、Cochrane、NEJM 这些站对 curl 一律返回 403/412，
-**不管路径对不对**。不要因为 403 就判定链接失效并删掉。要验证就用真实浏览器打开。
-（当初就是这样才发现真正失效的只有 6 个，其余几十个 403 全是误报。）
+**不管路径对不对**。不要因为 403 就判定链接失效并删掉。要验证就跑
+`npm run links`（真实浏览器体检，见下）；其中 BMJ、NICE 等 7 个站连
+headless Chrome 都拦，脚本会把它们单列为「被反爬拦截」，要人工开浏览器复核。
+（当初就是这样才发现真正失效的只有个位数，其余几十个 403 全是误报。）
 
 **② 图标和 OG 图不要放进 CI 生成。**
 `npm run icons` / `npm run og` 只在本地跑，产物提交进仓库。因为 `og.svg`
@@ -323,7 +326,8 @@ npm run preview
 
 - 61 条内容，6 个分类（吃 20 / 身体 15 / 生活 8 / 关键时刻 7 / 运动 6 / 睡 5）
 - 其中 19 条标记为「可能有害」
-- 所有出处链接都做过 HTTP 核对；确认不了的只保留文献信息、不放死链
+- 所有出处链接都做过真实浏览器体检（`npm run links`）；失效的已修，
+  确认不了的只保留文献信息、不放死链；GitHub Actions 每月自动复查
 - 真实路径路由 + 63 页预渲染 + sitemap/robots；旧 `#/xxx` 链接自动重写
 - 已读进度、详情分享按钮、搜索高亮、相关条目、详情页纠错入口、
   测验「你中了几条」（/quiz + 成绩分享图）、FAQ JSON-LD 结构化数据、
