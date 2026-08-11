@@ -12,6 +12,7 @@
     "typecheck": "tsc -b --noEmit",
     "check": "npm run lint && npm run typecheck && npm run test",
     "icons": "node scripts/generate-icons.mjs",
+    "og": "node scripts/generate-og.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

@@ -28,6 +28,11 @@
   [headers.values]
     Cache-Control = "public, max-age=604800"
 
+[[headers]]
+  for = "/og/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
 # Service worker 绝不能被缓存，否则用户会卡在旧版本上
 [[headers]]
   for = "/sw.js"

@@ -14,6 +14,9 @@ export interface PrerenderRoute {
   path: string
   title: string
   description: string
+  /** 每条内容自己的分享图（/og/{id}.png），省略时用站点默认 og.png */
+  image?: string
+  imageAlt?: string
 }
 
 export const ROUTES: PrerenderRoute[] = [
@@ -32,6 +35,8 @@ export const ROUTES: PrerenderRoute[] = [
     path: `/${m.id}`,
     title: `${m.belief}｜其实不是`,
     description: m.truth,
+    image: `/og/${m.id}.png`,
+    imageAlt: `「${m.belief}」——其实不是`,
   })),
 ]
 

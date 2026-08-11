@@ -121,3 +121,14 @@ describe('相关条目', () => {
     }
   })
 })
+
+describe('OG 分享图', () => {
+  const OG_FILES = new Set(
+    Object.keys(import.meta.glob('../../public/og/*.png')).map((p) => p.split('/').pop()),
+  )
+
+  it('每条都有对应的 public/og/{id}.png（加条目后要重跑 npm run og）', () => {
+    const missing = MYTHS.filter((m) => !OG_FILES.has(`${m.id}.png`)).map((m) => m.id)
+    expect(missing).toEqual([])
+  })
+})

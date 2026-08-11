@@ -21,6 +21,8 @@ interface Route {
   path: string
   title: string
   description: string
+  image?: string
+  imageAlt?: string
 }
 
 /** 写进 HTML 属性 / 标签里的文本必须转义 */
@@ -63,6 +65,17 @@ function applyMeta(html: string, route: Route): string {
     true,
   )
   html = replaceChecked(html, /(<meta\s+name="twitter:title"\s+content=")[^"]*(")/, `$1${title}$2`)
+  if (route.image) {
+    const image = esc(`${ORIGIN}${route.image}`)
+    const imageAlt = esc(route.imageAlt ?? route.title)
+    html = replaceChecked(html, /(<meta\s+property="og:image"\s+content=")[^"]*(")/, `$1${image}$2`)
+    html = replaceChecked(html, /(<meta\s+name="twitter:image"\s+content=")[^"]*(")/, `$1${image}$2`)
+    html = replaceChecked(
+      html,
+      /(<meta\s+property="og:image:alt"\s+content=")[^"]*(")/,
+      `$1${imageAlt}$2`,
+    )
+  }
   return html
 }
 

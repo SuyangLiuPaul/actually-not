@@ -88,6 +88,8 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,ico,webmanifest}'],
+        // 每条的 OG 分享图是给爬虫看的，不进预缓存（61 张约 3MB，会拖慢 SW 安装）
+        globIgnores: ['og/**'],
         cleanupOutdatedCaches: true,
         clientsClaim: true,
         navigateFallback: '/index.html',
