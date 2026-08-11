@@ -139,12 +139,13 @@ actually-not/
 │   ├── App.tsx              页面主体：搜索、筛选、卡片网格、主题切换、已读进度
 │   ├── components/
 │   │   ├── MythCard.tsx     卡片
-│   │   ├── MythDetail.tsx   点开后的详情弹层
+│   │   ├── MythDetail.tsx   点开后的详情弹层（含分享、已读、相关条目、纠错入口）
 │   │   ├── Strike.tsx       红笔划掉的描边动画
 │   │   ├── ErrorBoundary.tsx 渲染出错时的兜底页
 │   │   └── UpdatePrompt.tsx  有新版本时右下角的提示
 │   ├── index.css            主题变量（纸/墨/红笔）+ 深浅色
-│   └── main.tsx             入口
+│   ├── entry-server.tsx     ★ 预渲染入口（只进 SSR bundle，不进客户端）
+│   └── main.tsx             入口（有预渲染 HTML 就 hydrate，否则从头渲染）
 │
 ├── assets/                  图标源文件（SVG，手工维护）
 │   ├── icon.svg             主图标
@@ -159,6 +160,7 @@ actually-not/
 │   └── _headers             缓存与安全头（Netlify 直传时生效）
 │
 ├── scripts/
+│   ├── prerender.ts         ★ 构建期预渲染 62 页 + sitemap.xml + robots.txt
 │   ├── generate-icons.mjs   从 assets/*.svg 生成全部图标
 │   ├── deploy.sh            手动部署
 │   └── status.sh            状态总览
@@ -189,7 +191,7 @@ actually-not/
 
 ```ts
 {
-  id: 'kebab-case-唯一-英文',      // 会变成分享链接 #/xxx，必须小写短横线
+  id: 'kebab-case-唯一-英文',      // 会变成它的网址 /xxx，必须小写短横线
   category: 'eat',                  // eat | body | sleep | move | life | urgent
   belief:  '你以为的那句话',
   truth:   '一句话说清其实是什么',
@@ -255,6 +257,12 @@ Mayo Clinic、CDC、JAMA、BMJ、Cochrane、NEJM 这些站对 curl 一律返回 
 **⑦ 内容测试的长度阈值是按字段分别设的。**
 中文很密，「吃辣会吃出胃溃疡」八个字就是完整一句。别改回一刀切的阈值，会误报。
 
+**⑧ `vite.config.ts` 里 `prerenderPlugin()` 必须排在 `VitePWA()` 前面。**
+closeBundle 按插件顺序执行：先预渲染出 62 个 HTML，PWA 才生成 sw.js 的
+预缓存清单。顺序反了，预渲染页面就进不了离线缓存（build 不会报错，要查 sw.js 才知道）。
+另外 `vite preview` 对 `/wet-hair` 这种无斜杠路径会走 SPA 回退（看不到预渲染页），
+加 trailing slash 或看 Netlify 线上才是真实行为。
+
 ---
 
 ## 8. 一些设计决定，和为什么
@@ -275,9 +283,12 @@ Mayo Clinic、CDC、JAMA、BMJ、Cochrane、NEJM 这些站对 curl 一律返回 
 - **ErrorBoundary 里有「清除缓存后重试」。**
   PWA 万一缓存到一个坏版本，普通刷新救不回来，必须能反注册 SW + 清 caches。
 
-- **hash 路由（`#/wet-hair`）而不是 history 路由。**
-  纯静态站，hash 不依赖服务器重写规则，任何托管环境都能用。
-  （`_redirects` 里的 SPA 回退是额外保险，不是必需。）
+- **真实路径路由（`/wet-hair`）+ 构建期预渲染，不是 hash 路由。**
+  原来是 `#/xxx`，但 hash 部分搜索引擎抓不到，61 条内容在搜索眼里只有一页。
+  现在构建时 `scripts/prerender.ts` 用 SSR bundle 渲染 62 个独立 HTML
+  （各自带 title/description/canonical/og + sitemap.xml），客户端 hydrate 接管。
+  旧的 `#/xxx` 链接由 index.html 里的内联脚本在应用启动前重写到 `/xxx`，
+  已经分享出去的链接不断。
 
 ---
 

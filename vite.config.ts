@@ -1,7 +1,30 @@
-import { defineConfig } from 'vite'
+import { defineConfig, build as viteBuild, type Plugin } from 'vite'
+import { resolve } from 'node:path'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
+import { prerender } from './scripts/prerender.ts'
+
+/**
+ * 构建末尾：SSR 打包 → 给首页和每条内容预渲染真实路径的 HTML。
+ * 必须排在 VitePWA 前面——closeBundle 按插件顺序执行，
+ * 这样 62 个页面才会进入 sw.js 的预缓存清单。
+ */
+function prerenderPlugin(): Plugin {
+  return {
+    name: 'actually-not-prerender',
+    apply: 'build',
+    async closeBundle() {
+      await viteBuild({
+        configFile: false,
+        logLevel: 'silent',
+        plugins: [react()],
+        build: { ssr: 'src/entry-server.tsx', outDir: 'dist-ssr', emptyOutDir: true },
+      })
+      await prerender(resolve('dist'), resolve('dist-ssr'))
+    },
+  }
+}
 
 const DESCRIPTION =
   '早上不吃饭伤身、洗完头不吹干有湿气、骨头汤补钙……61 条听起来天经地义、但证据并不支持的生活常识，每条附出处。'
@@ -11,6 +34,7 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
+    prerenderPlugin(),
     VitePWA({
       registerType: 'prompt',
       // 不设 includeAssets：下面的 globPatterns 已经覆盖了图标和 og 图，

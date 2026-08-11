@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { MYTHS } from '../data/myths'
 
 /**
@@ -21,9 +21,18 @@ function load(): Set<string> {
 }
 
 export function useReadProgress() {
-  const [read, setRead] = useState<Set<string>>(load)
+  // 初始必须是空集合：预渲染页面在没有 localStorage 的环境生成，
+  // 挂载后再读真实进度，水合才不会和预渲染的标记打架
+  const [read, setRead] = useState<Set<string>>(new Set())
+  const loaded = useRef(false)
 
   useEffect(() => {
+    setRead(load())
+    loaded.current = true
+  }, [])
+
+  useEffect(() => {
+    if (!loaded.current) return
     try {
       localStorage.setItem(KEY, JSON.stringify([...read]))
     } catch {

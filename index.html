@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
+    <!-- 旧版 hash 深链（#/xxx）已搬到真实路径 /xxx：在应用启动前重写，老链接不断 -->
+    <script>
+      if (location.hash.indexOf('#/') === 0) {
+        var oldId = location.hash.slice(2)
+        if (/^[a-z0-9]+(-[a-z0-9]+)*$/.test(oldId)) {
+          history.replaceState(null, '', '/' + oldId + location.search)
+        }
+      }
+    </script>
+
     <title>其实不是 · 那些你以为对的生活常识</title>
     <meta
       name="description"

@@ -7,15 +7,32 @@ import { MythDetail } from './components/MythDetail'
 
 type Theme = 'light' | 'dark' | 'auto'
 
+/**
+ * 真实路径路由：/wet-hair 直接打开对应条目。
+ * 预渲染（SSR）时没有 window，从构建期注入的全局变量读路径。
+ * 旧的 #/xxx 深链由 index.html 里的内联脚本重写到路径，不会走到这里。
+ */
+function pathId(): string {
+  const p =
+    typeof window !== 'undefined'
+      ? window.location.pathname
+      : ((globalThis as Record<string, unknown>).__PRERENDER_PATH__ as string | undefined) ?? '/'
+  return p.replace(/^\/+|\/+$/g, '')
+}
+
 export default function App() {
   const [query, setQuery] = useState('')
   // ?c=urgent —— 给 PWA 的快捷方式用，也方便直接分享某一类
   const [cat, setCat] = useState<CategoryId | 'all'>(() => {
+    if (typeof window === 'undefined') return 'all'
     const c = new URLSearchParams(window.location.search).get('c')
     return CATEGORIES.some((x) => x.id === c) ? (c as CategoryId) : 'all'
   })
   const [stakes, setStakes] = useState<Stakes | 'all'>('all')
-  const [openId, setOpenId] = useState<string | null>(null)
+  const [openId, setOpenId] = useState<string | null>(() => {
+    const id = pathId()
+    return MYTHS.some((m) => m.id === id) ? id : null
+  })
   const [theme, setTheme] = useState<Theme>('auto')
   const searchRef = useRef<HTMLInputElement>(null)
   const { read, markRead, toggleRead, readCount } = useReadProgress()
@@ -33,26 +50,24 @@ export default function App() {
     localStorage.setItem('theme', theme)
   }, [theme])
 
-  // 用 hash 做深链，方便把某一条直接发给别人
+  // 浏览器前进 / 后退时跟着 URL 走
   useEffect(() => {
     const sync = () => {
-      const id = window.location.hash.replace(/^#\/?/, '')
+      const id = pathId()
       setOpenId(MYTHS.some((m) => m.id === id) ? id : null)
     }
-    sync()
-    window.addEventListener('hashchange', sync)
-    return () => window.removeEventListener('hashchange', sync)
+    window.addEventListener('popstate', sync)
+    return () => window.removeEventListener('popstate', sync)
   }, [])
 
-  // PWA 快捷方式「随便看一条」：/?random=1（已有 hash 深链时让位）
+  // PWA 快捷方式「随便看一条」：/?random=1（已有路径深链时让位）
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)
-    if (!params.has('random') || window.location.hash) return
+    if (!params.has('random') || pathId()) return
     const m = MYTHS[Math.floor(Math.random() * MYTHS.length)]
     params.delete('random')
     const qs = params.toString()
-    const base = window.location.pathname + (qs ? `?${qs}` : '')
-    history.replaceState('', document.title, `${base}#/${m.id}`)
+    history.replaceState('', document.title, `/${m.id}${qs ? `?${qs}` : ''}`)
     setOpenId(m.id)
   }, [])
 
@@ -62,12 +77,13 @@ export default function App() {
   }, [openId, markRead])
 
   const open = useCallback((id: string) => {
-    window.location.hash = `/${id}`
+    history.pushState('', '', `/${id}`)
+    setOpenId(id)
   }, [])
 
   const close = useCallback(() => {
-    const id = window.location.hash.replace(/^#\/?/, '')
-    history.pushState('', document.title, window.location.pathname + window.location.search)
+    const id = pathId()
+    history.pushState('', '', `/${window.location.search}`)
     setOpenId(null)
     // 焦点还给对应卡片，键盘用户不至于丢位置
     requestAnimationFrame(() => {
@@ -94,6 +110,13 @@ export default function App() {
 
   const openIndex = filtered.findIndex((m) => m.id === openId)
   const openMyth = openId ? (MYTHS.find((m) => m.id === openId) ?? null) : null
+
+  // 标题跟着当前条目走（和预渲染页面的 <title> 同一格式）
+  useEffect(() => {
+    document.title = openMyth
+      ? `${openMyth.belief}｜其实不是`
+      : '其实不是 · 那些你以为对的生活常识'
+  }, [openMyth])
 
   // 「/」聚焦搜索框
   useEffect(() => {

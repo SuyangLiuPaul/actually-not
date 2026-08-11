@@ -73,7 +73,7 @@ export function MythDetail({
 
   // 优先调起系统分享，不行就复制深链
   const share = async () => {
-    const url = `${window.location.origin}${window.location.pathname}#/${myth.id}`
+    const url = `${window.location.origin}/${myth.id}`
     if (navigator.share) {
       try {
         await navigator.share({
@@ -113,7 +113,7 @@ export function MythDetail({
   const issueUrl = `https://github.com/SuyangLiuPaul/actually-not/issues/new?title=${encodeURIComponent(
     `纠错：${myth.belief}`,
   )}&body=${encodeURIComponent(
-    `条目：#/${myth.id}\n\n**哪里不对**\n\n\n**依据**（综述 / 指南 / 原始研究链接）\n\n`,
+    `条目：/${myth.id}\n\n**哪里不对**\n\n\n**依据**（综述 / 指南 / 原始研究链接）\n\n`,
   )}`
 
   return (

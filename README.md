@@ -41,7 +41,8 @@ iOS 的 `apple-touch-icon`、Android 的 192/512 以及带安全区的 maskable 
 
 - **已读进度**：点开过详情的条目会标上「已读」，进度存在你自己设备的
   localStorage 里，不上传任何东西，下次来接着看。看错了可以在详情里改回未读。
-- **分享单条**：详情页顶栏的链接按钮会复制这条的深链（`#/xxx`），
+- **分享单条**：每条都有自己的网址（`/wet-hair` 这样的真实路径，服务器直出完整
+  内容和独立 meta，搜索引擎和分享预览都能看懂）。详情页顶栏的链接按钮一键复制，
   手机上优先调起系统分享——发到家庭群正好。
 - **搜索高亮**：搜到的词在卡片上直接标出来。
 - **键盘操作**：`/` 聚焦搜索，`←` `→` 在详情里翻上一条下一条，`Esc` 关闭。
@@ -65,7 +66,8 @@ npm run icons    # 改了 assets/*.svg 之后重新生成图标
 ## 技术栈
 
 React 19 + TypeScript + Vite + Tailwind CSS v4，纯静态站点，无后端。
-内容全部在 [`src/data/myths.ts`](src/data/myths.ts) 一个文件里。
+构建时为每条内容预渲染一个独立 HTML（真实路径 + 各自的 title/meta/sitemap），
+客户端再 hydrate 接管。内容全部在 [`src/data/myths.ts`](src/data/myths.ts) 一个文件里。
 
 ## 内容测试
 

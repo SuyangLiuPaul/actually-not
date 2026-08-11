@@ -1,5 +1,5 @@
 import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { createRoot, hydrateRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 import { ErrorBoundary } from './components/ErrorBoundary.tsx'
@@ -24,11 +24,15 @@ ldScript.type = 'application/ld+json'
 ldScript.textContent = JSON.stringify(faqLd)
 document.head.appendChild(ldScript)
 
-createRoot(container).render(
+const app = (
   <StrictMode>
     <ErrorBoundary>
       <App />
       <UpdatePrompt />
     </ErrorBoundary>
-  </StrictMode>,
+  </StrictMode>
 )
+
+// 预渲染页面带着完整 HTML 来，接管即可；dev / SPA 回退页则从空开始渲染
+if (container.hasChildNodes()) hydrateRoot(container, app)
+else createRoot(container).render(app)
