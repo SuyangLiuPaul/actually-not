@@ -4,6 +4,7 @@ import { CATEGORIES, STAKES_META, type CategoryId, type Stakes } from './types'
 import { useReadProgress } from './hooks/useReadProgress'
 import { MythCard } from './components/MythCard'
 import { MythDetail } from './components/MythDetail'
+import { Quiz } from './components/Quiz'
 
 type Theme = 'light' | 'dark' | 'auto'
 
@@ -33,6 +34,7 @@ export default function App() {
     const id = pathId()
     return MYTHS.some((m) => m.id === id) ? id : null
   })
+  const [quizOpen, setQuizOpen] = useState(() => pathId() === 'quiz')
   const [theme, setTheme] = useState<Theme>('auto')
   const searchRef = useRef<HTMLInputElement>(null)
   const { read, markRead, toggleRead, readCount } = useReadProgress()
@@ -55,6 +57,7 @@ export default function App() {
     const sync = () => {
       const id = pathId()
       setOpenId(MYTHS.some((m) => m.id === id) ? id : null)
+      setQuizOpen(id === 'quiz')
     }
     window.addEventListener('popstate', sync)
     return () => window.removeEventListener('popstate', sync)
@@ -91,6 +94,17 @@ export default function App() {
     })
   }, [])
 
+  const openQuiz = useCallback(() => {
+    history.pushState('', '', '/quiz')
+    setOpenId(null)
+    setQuizOpen(true)
+  }, [])
+
+  const closeQuiz = useCallback(() => {
+    history.pushState('', '', `/${window.location.search}`)
+    setQuizOpen(false)
+  }, [])
+
   // 搜索 + 筛选
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
@@ -111,12 +125,14 @@ export default function App() {
   const openIndex = filtered.findIndex((m) => m.id === openId)
   const openMyth = openId ? (MYTHS.find((m) => m.id === openId) ?? null) : null
 
-  // 标题跟着当前条目走（和预渲染页面的 <title> 同一格式）
+  // 标题跟着当前条目 / 测验走（和预渲染页面的 <title> 同一格式）
   useEffect(() => {
-    document.title = openMyth
-      ? `${openMyth.belief}｜其实不是`
-      : '其实不是 · 那些你以为对的生活常识'
-  }, [openMyth])
+    document.title = quizOpen
+      ? '你中了几条？｜其实不是'
+      : openMyth
+        ? `${openMyth.belief}｜其实不是`
+        : '其实不是 · 那些你以为对的生活常识'
+  }, [openMyth, quizOpen])
 
   // 「/」聚焦搜索框
   useEffect(() => {
@@ -194,6 +210,17 @@ export default function App() {
                 />
               </svg>
               随便看一条
+            </button>
+            <button
+              onClick={openQuiz}
+              className="inline-flex items-center gap-2 rounded-lg border px-4 py-2.5 text-sm font-medium transition-transform active:scale-[0.97]"
+              style={{
+                borderColor: 'var(--rule-strong)',
+                color: 'var(--ink-soft)',
+                background: 'var(--paper-raised)',
+              }}
+            >
+              你中了几条？
             </button>
             <p className="text-[13px]" style={{ color: 'var(--ink-faint)' }}>
               其中 {riskyCount} 条照做可能有害
@@ -360,6 +387,16 @@ export default function App() {
           </p>
         </footer>
       </div>
+
+      {quizOpen && (
+        <Quiz
+          onClose={closeQuiz}
+          onOpenMyth={(id) => {
+            setQuizOpen(false)
+            open(id)
+          }}
+        />
+      )}
 
       {openMyth && (
         <MythDetail

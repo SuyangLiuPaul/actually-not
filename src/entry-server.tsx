@@ -22,6 +22,12 @@ export const ROUTES: PrerenderRoute[] = [
     title: '其实不是 · 那些你以为对的生活常识',
     description: `早上不吃饭伤身、洗完头不吹干有湿气、骨头汤补钙……${MYTHS.length} 条听起来天经地义、但证据并不支持的生活常识，每条附出处。`,
   },
+  {
+    path: '/quiz',
+    title: '你中了几条？｜其实不是',
+    description:
+      '随机抽 10 条听起来天经地义的说法，只问你信不信过，最后逐条对答案——每条都有出处。',
+  },
   ...MYTHS.map((m) => ({
     path: `/${m.id}`,
     title: `${m.belief}｜其实不是`,
