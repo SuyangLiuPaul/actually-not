@@ -28,6 +28,7 @@ export const MYTHS: Myth[] = [
         url: 'https://onlinelibrary.wiley.com/doi/full/10.1002/oby.22791',
       },
     ],
+    related: ['late-eating'],
   },
   {
     id: 'bone-soup',
@@ -47,6 +48,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.cnsoc.org/',
       },
     ],
+    related: ['soup-nutrition', 'cramp-calcium'],
   },
   {
     id: 'leftovers',
@@ -70,6 +72,7 @@ export const MYTHS: Myth[] = [
         url: 'https://zjnews.zjol.com.cn/zjnews/tznews/201603/t20160316_607651.shtml',
       },
     ],
+    related: ['moldy-fruit'],
   },
   {
     id: 'msg',
@@ -89,6 +92,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.fda.gov/food/food-additives-petitions/questions-and-answers-monosodium-glutamate-msg',
       },
     ],
+    related: ['detox'],
   },
   {
     id: 'collagen',
@@ -127,6 +131,7 @@ export const MYTHS: Myth[] = [
         url: 'https://journals.physiology.org/doi/full/10.1152/ajpregu.00365.2002',
       },
     ],
+    related: ['coffee-dehydrate'],
   },
   {
     id: 'coffee-dehydrate',
@@ -146,6 +151,7 @@ export const MYTHS: Myth[] = [
         url: 'https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0084154',
       },
     ],
+    related: ['eight-glasses'],
   },
   {
     id: 'spicy-ulcer',
@@ -165,6 +171,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.nobelprize.org/prizes/medicine/2005/summary/',
       },
     ],
+    related: ['porridge-stomach'],
   },
   {
     id: 'moldy-fruit',
@@ -184,6 +191,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/molds-food-are-they-dangerous',
       },
     ],
+    related: ['leftovers'],
   },
   {
     id: 'honey-crystal',
@@ -220,6 +228,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-ovens',
       },
     ],
+    related: ['phone-radiation'],
   },
   {
     id: 'soup-nutrition',
@@ -238,6 +247,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.cnsoc.org/',
       },
     ],
+    related: ['bone-soup'],
   },
   {
     id: 'egg-yolk',
@@ -275,6 +285,7 @@ export const MYTHS: Myth[] = [
         url: 'https://journals.asm.org/doi/10.1128/AEM.01838-16',
       },
     ],
+    related: ['swallowed-gum'],
   },
   {
     id: 'late-eating',
@@ -293,6 +304,7 @@ export const MYTHS: Myth[] = [
         label: 'Vujović et al., Cell Metabolism 2022 —— 晚进食对能量消耗与食欲调节的影响',
       },
     ],
+    related: ['breakfast'],
   },
   {
     id: 'porridge-stomach',
@@ -311,6 +323,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.mayoclinic.org/diseases-conditions/gerd/diagnosis-treatment/drc-20361959',
       },
     ],
+    related: ['spicy-ulcer'],
   },
   {
     id: 'detox',
@@ -330,6 +343,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.nccih.nih.gov/health/detoxes-and-cleanses-what-you-need-to-know',
       },
     ],
+    related: ['msg'],
   },
   {
     id: 'swallowed-gum',
@@ -352,6 +366,7 @@ export const MYTHS: Myth[] = [
         label: 'Mayo Clinic —— Swallowing gum: Is it harmful?（专家问答）',
       },
     ],
+    related: ['five-second'],
   },
   {
     id: 'sugar-hyper',
@@ -393,6 +408,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.smithsonianmag.com/arts-culture/a-wwii-propaganda-campaign-popularized-the-myth-that-carrots-help-you-see-in-the-dark-28812484/',
       },
     ],
+    related: ['glasses-worse'],
   },
 
   // ─────────────────────────── 身体 ───────────────────────────
@@ -418,6 +434,7 @@ export const MYTHS: Myth[] = [
         url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10324571/',
       },
     ],
+    related: ['vitamin-c'],
   },
   {
     id: 'knuckle-crack',
@@ -457,6 +474,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.scientificamerican.com/article/why-does-hair-turn-gray/',
       },
     ],
+    related: ['shaving'],
   },
   {
     id: 'shaving',
@@ -474,6 +492,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.mayoclinic.org/healthy-lifestyle/adult-health/expert-answers/hair-removal/faq-20058427',
       },
     ],
+    related: ['gray-hair'],
   },
   {
     id: 'glasses-worse',
@@ -492,6 +511,7 @@ export const MYTHS: Myth[] = [
         label: 'Chung, Mohidin & O’Leary, Vision Research 2002 —— 欠矫加快近视进展的随机试验',
       },
     ],
+    related: ['blue-light', 'reading-dark', 'carrot-vision'],
   },
   {
     id: 'blue-light',
@@ -511,6 +531,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013244.pub2/full',
       },
     ],
+    related: ['glasses-worse'],
   },
   {
     id: 'reading-dark',
@@ -529,6 +550,7 @@ export const MYTHS: Myth[] = [
         label: 'He et al., JAMA 2015 —— 增加户外活动降低儿童近视发生率的整群随机试验',
       },
     ],
+    related: ['glasses-worse'],
   },
   {
     id: 'ten-percent-brain',
@@ -547,6 +569,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/',
       },
     ],
+    related: ['left-right-brain'],
   },
   {
     id: 'antibiotics-cold',
@@ -585,6 +608,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD000980.pub4/full',
       },
     ],
+    related: ['wet-hair', 'flu-shot'],
   },
   {
     id: 'flu-shot',
@@ -603,6 +627,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.cdc.gov/flu/prevent/misconceptions.htm',
       },
     ],
+    related: ['vitamin-c', 'mmr-autism'],
   },
   {
     id: 'cramp-calcium',
@@ -622,6 +647,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.mayoclinic.org/diseases-conditions/muscle-cramp/symptoms-causes/syc-20350820',
       },
     ],
+    related: ['bone-soup'],
   },
   {
     id: 'tongue-map',
@@ -659,6 +685,7 @@ export const MYTHS: Myth[] = [
         url: 'https://pubmed.ncbi.nlm.nih.gov/23967180/',
       },
     ],
+    related: ['ten-percent-brain'],
   },
   {
     id: 'mmr-autism',
@@ -682,6 +709,7 @@ export const MYTHS: Myth[] = [
         url: 'https://pubmed.ncbi.nlm.nih.gov/32309885/',
       },
     ],
+    related: ['flu-shot'],
   },
 
   // ─────────────────────────── 睡 ───────────────────────────
@@ -702,6 +730,7 @@ export const MYTHS: Myth[] = [
         url: 'https://onlinelibrary.wiley.com/doi/10.1111/acer.12006',
       },
     ],
+    related: ['snoring'],
   },
   {
     id: 'weekend-catchup',
@@ -720,6 +749,7 @@ export const MYTHS: Myth[] = [
         label: 'Depner et al., Current Biology 2019 —— 周末恢复性睡眠对代谢的影响',
       },
     ],
+    related: ['eight-hours'],
   },
   {
     id: 'eight-hours',
@@ -738,6 +768,7 @@ export const MYTHS: Myth[] = [
         label: 'Watson et al., SLEEP 2015 —— AASM 与 SRS 成人睡眠时长共识声明',
       },
     ],
+    related: ['weekend-catchup'],
   },
   {
     id: 'snoring',
@@ -756,6 +787,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.mayoclinic.org/diseases-conditions/obstructive-sleep-apnea/symptoms-causes/syc-20352090',
       },
     ],
+    related: ['nightcap', 'sleepwalk-wake'],
   },
   {
     id: 'sleepwalk-wake',
@@ -775,6 +807,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.nhs.uk/conditions/sleepwalking/',
       },
     ],
+    related: ['snoring'],
   },
 
   // ─────────────────────────── 运动 ───────────────────────────
@@ -795,6 +828,7 @@ export const MYTHS: Myth[] = [
         label: 'Ramírez-Campillo et al., J Strength Cond Res 2013 —— 单侧腿部训练后的区域脂肪变化',
       },
     ],
+    related: ['sweat-fat'],
   },
   {
     id: 'sweat-fat',
@@ -813,6 +847,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.bmj.com/content/349/bmj.g7257',
       },
     ],
+    related: ['spot-reduction'],
   },
   {
     id: 'lactic-acid',
@@ -873,6 +908,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.popsci.com/health/10000-steps-debunk-science/',
       },
     ],
+    related: ['women-lifting'],
   },
   {
     id: 'women-lifting',
@@ -892,6 +928,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.acsm.org/',
       },
     ],
+    related: ['ten-thousand-steps'],
   },
 
   // ─────────────────────────── 生活 ───────────────────────────
@@ -911,6 +948,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.nhs.uk/conditions/hypothermia/',
       },
     ],
+    related: ['baijiu-disinfect'],
   },
   {
     id: 'baijiu-disinfect',
@@ -929,6 +967,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.cdc.gov/infection-control/hcp/disinfection-sterilization/chemical-disinfectants.html',
       },
     ],
+    related: ['alcohol-warm'],
   },
   {
     id: 'phone-radiation',
@@ -948,6 +987,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.cancer.gov/about-cancer/causes-prevention/risk/radiation/cell-phones-fact-sheet',
       },
     ],
+    related: ['microwave'],
   },
   {
     id: 'battery-charge',
@@ -1062,6 +1102,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.nhs.uk/conditions/nosebleed/',
       },
     ],
+    related: ['burn-toothpaste'],
   },
   {
     id: 'fever-sweat',
@@ -1080,6 +1121,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.nhs.uk/conditions/fever-in-children/',
       },
     ],
+    related: ['alcohol-rub-fever'],
   },
   {
     id: 'alcohol-rub-fever',
@@ -1098,6 +1140,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.nice.org.uk/guidance/ng143',
       },
     ],
+    related: ['fever-sweat'],
   },
   {
     id: 'burn-toothpaste',
@@ -1117,6 +1160,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.nhs.uk/conditions/burns-and-scalds/treatment/',
       },
     ],
+    related: ['nosebleed'],
   },
   {
     id: 'seizure-mouth',
@@ -1140,6 +1184,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.cdc.gov/epilepsy/first-aid-for-seizures/index.html',
       },
     ],
+    related: ['heimlich-baby', 'drowning-silent'],
   },
   {
     id: 'drowning-silent',
@@ -1162,6 +1207,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.cdc.gov/drowning/prevention/index.html',
       },
     ],
+    related: ['seizure-mouth'],
   },
   {
     id: 'heimlich-baby',
@@ -1184,5 +1230,6 @@ export const MYTHS: Myth[] = [
         url: 'https://www.sja.org.uk/first-aid-advice/choking/',
       },
     ],
+    related: ['seizure-mouth'],
   },
 ]

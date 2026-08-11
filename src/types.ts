@@ -32,6 +32,8 @@ export interface Myth {
   instead: string
   stakes: Stakes
   sources: Source[]
+  /** 相关条目的 id —— 详情页底部「你可能也以为……」。写了就必须双向互链（测试会查） */
+  related?: string[]
 }
 
 export interface Category {

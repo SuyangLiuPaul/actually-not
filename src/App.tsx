@@ -351,6 +351,7 @@ export default function App() {
               : undefined
           }
           onToggleRead={() => toggleRead(openMyth.id)}
+          onOpenMyth={open}
         />
       )}
     </div>

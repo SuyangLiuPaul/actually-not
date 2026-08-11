@@ -98,3 +98,26 @@ describe('分类', () => {
     expect(empty).toEqual([])
   })
 })
+
+describe('相关条目', () => {
+  const IDS = new Set(MYTHS.map((m) => m.id))
+
+  it('related 里的 id 都存在、不指向自己', () => {
+    for (const m of MYTHS) {
+      for (const r of m.related ?? []) {
+        expect(IDS.has(r), `${m.id} 链了不存在的 ${r}`).toBe(true)
+        expect(r, `${m.id} 链了自己`).not.toBe(m.id)
+      }
+    }
+  })
+
+  it('related 是双向的（A 列了 B，B 必须回链 A）', () => {
+    const byId = new Map(MYTHS.map((m) => [m.id, m]))
+    for (const m of MYTHS) {
+      for (const r of m.related ?? []) {
+        const other = byId.get(r)!
+        expect(other.related ?? [], `${r} 没有回链 ${m.id}`).toContain(m.id)
+      }
+    }
+  })
+})

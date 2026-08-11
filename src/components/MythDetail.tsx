@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Strike } from './Strike'
 import { StakesDot } from './MythCard'
+import { MYTHS } from '../data/myths'
 import { CATEGORIES, STAKES_META, type Myth } from '../types'
 
 export function MythDetail({
@@ -11,6 +12,7 @@ export function MythDetail({
   onPrev,
   onNext,
   onToggleRead,
+  onOpenMyth,
 }: {
   myth: Myth
   index: number
@@ -19,6 +21,7 @@ export function MythDetail({
   onPrev?: () => void
   onNext?: () => void
   onToggleRead: () => void
+  onOpenMyth: (id: string) => void
 }) {
   const panelRef = useRef<HTMLDivElement>(null)
   const [struck, setStruck] = useState(false)
@@ -103,6 +106,15 @@ export function MythDetail({
 
   const cat = CATEGORIES.find((c) => c.id === myth.category)!
   const stakes = STAKES_META[myth.stakes]
+  const relatedMyths = (myth.related ?? [])
+    .map((id) => MYTHS.find((m) => m.id === id))
+    .filter((m): m is Myth => m !== undefined)
+
+  const issueUrl = `https://github.com/SuyangLiuPaul/actually-not/issues/new?title=${encodeURIComponent(
+    `纠错：${myth.belief}`,
+  )}&body=${encodeURIComponent(
+    `条目：#/${myth.id}\n\n**哪里不对**\n\n\n**依据**（综述 / 指南 / 原始研究链接）\n\n`,
+  )}`
 
   return (
     <div
@@ -302,6 +314,65 @@ export function MythDetail({
               ))}
             </ul>
           </div>
+
+          {/* 相关条目 */}
+          {relatedMyths.length > 0 && (
+            <div className="mt-7">
+              <Label>你可能也以为</Label>
+              <div className="mt-2.5 grid gap-2">
+                {relatedMyths.map((r) => (
+                  <button
+                    key={r.id}
+                    onClick={() => onOpenMyth(r.id)}
+                    className="group flex items-center justify-between gap-3 rounded-lg border px-4 py-3 text-left transition-colors"
+                    style={{ borderColor: 'var(--rule)', background: 'var(--paper)' }}
+                  >
+                    <span
+                      className="text-[14px] leading-[1.6] font-medium"
+                      style={{ fontFamily: 'var(--font-serif)', color: 'var(--ink-soft)' }}
+                    >
+                      {r.belief}
+                    </span>
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      aria-hidden="true"
+                      className="shrink-0 transition-transform group-hover:translate-x-0.5"
+                      style={{ color: 'var(--ink-faint)' }}
+                    >
+                      <path
+                        d="M2 7h9m0 0L7.5 3.5M11 7l-3.5 3.5"
+                        stroke="currentColor"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* 纠错入口 */}
+          <p
+            className="mt-8 border-t pt-5 text-[13px] leading-[1.8]"
+            style={{ borderColor: 'var(--rule)', color: 'var(--ink-faint)' }}
+          >
+            这条写错了、出处打不开、或者有更准的说法？
+            <a
+              href={issueUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-dotted underline-offset-[3px]"
+              style={{ color: 'var(--ink-soft)' }}
+            >
+              来提个 issue 纠错
+            </a>
+            ——这个站的公信力靠「可以被纠错」建立，不靠自称严谨。
+          </p>
         </div>
       </div>
     </div>
