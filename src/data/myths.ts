@@ -131,7 +131,7 @@ export const MYTHS: Myth[] = [
         url: 'https://journals.physiology.org/doi/full/10.1152/ajpregu.00365.2002',
       },
     ],
-    related: ['coffee-dehydrate'],
+    related: ['coffee-dehydrate', 'alkaline-diet'],
   },
   {
     id: 'coffee-dehydrate',
@@ -343,7 +343,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.nccih.nih.gov/health/detoxes-and-cleanses-what-you-need-to-know',
       },
     ],
-    related: ['msg'],
+    related: ['msg', 'alkaline-diet', 'juice-fruit'],
   },
   {
     id: 'swallowed-gum',
@@ -389,6 +389,7 @@ export const MYTHS: Myth[] = [
         label: 'Hoover & Milich, J Abnorm Child Psychol 1994 —— 母亲期望效应实验',
       },
     ],
+    related: ['juice-fruit'],
   },
   {
     id: 'carrot-vision',
@@ -409,6 +410,30 @@ export const MYTHS: Myth[] = [
       },
     ],
     related: ['glasses-worse'],
+  },
+
+  {
+    id: 'juice-fruit',
+    category: 'eat',
+    belief: '鲜榨果汁等于吃水果，还更好吸收',
+    truth: '差远了——榨汁丢掉了膳食纤维和饱腹感，留下的是一杯游离糖。',
+    detail:
+      '完整水果里的糖被细胞壁包着，消化吸收慢；榨成汁之后糖被释放出来，按世界卫生组织的分类属于「游离糖」，和饮料里的添加糖是同一类、同样需要限制。果汁的升糖速度接近含糖饮料，而且液体不顶饱，一杯下去可能就是两三个水果的糖，你还觉得挺健康。\n\n美国儿科学会 2017 年的建议说得更直白：1 岁以内婴儿不要喝果汁，大一点的孩子也要限量——直接吃水果永远更好。要留余地的是：果汁不是毒药，偶尔喝一杯没事，问题是把它当健康食品天天喝。',
+    origin:
+      '果汁从诞生起就是当健康食品卖的——「浓缩果园精华」听起来比「糖水」高级。自家榨的又多一层「无添加」光环，但无添加改变不了糖被释放出来这件事。',
+    instead:
+      '直接吃水果，喝白水。真想喝果汁，控制在一小杯（约 150 毫升）以内，而且别拿它顶替水果份额。',
+    stakes: 'harmless',
+    sources: [
+      {
+        label: 'Heyman & Abrams, Pediatrics 2017 —— 美国儿科学会果汁建议',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/28562300/',
+      },
+      {
+        label: 'WHO —— 游离糖定义包含果汁（Guideline: Sugars intake, 2015）',
+      },
+    ],
+    related: ['detox', 'sugar-hyper'],
   },
 
   // ─────────────────────────── 身体 ───────────────────────────
@@ -474,7 +499,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.scientificamerican.com/article/why-does-hair-turn-gray/',
       },
     ],
-    related: ['shaving'],
+    related: ['shaving', 'cotton-swab'],
   },
   {
     id: 'shaving',
@@ -712,6 +737,31 @@ export const MYTHS: Myth[] = [
     related: ['flu-shot'],
   },
 
+  {
+    id: 'wine-heart',
+    category: 'body',
+    belief: '每天一杯红酒，软化血管、保护心脏',
+    truth: '「适量饮酒有益健康」是观察性研究造出的假象；把研究偏差控制住后，少量饮酒并没有保护作用。',
+    detail:
+      '早期研究里有一条著名的 J 形曲线：少量饮酒的人死亡率比完全不喝的人还低。2023 年一项汇总了 107 个队列研究、近 500 万参与者的分析指出，这个「保护」很大程度来自研究方法的问题——很多「不喝酒」的对照组里混着因为生病才戒酒的人（前饮酒者偏差）。校正这些偏差之后，每天一两杯与死亡风险之间没有显著的负相关；风险从每天约 25 克酒精（不到两杯红酒）起开始上升，女性升得更早。\n\n要留余地：这说的是「为了健康去喝」没有依据，不是说喝一杯就会怎样。风险是剂量堆出来的。',
+    origin:
+      '「喝点反而更健康」是人人想听的消息，传播毫不费力，酒业也乐意资助和引用这类研究。再叠上「法国人吃黄油却心脏病少」的法国悖论，红酒就戴上了保健品的帽子。',
+    instead:
+      '不喝酒的人，没必要为了「保护心脏」开始喝。喝的人记住一句就够：少喝比多喝好，不喝最好——这是世界卫生组织 2023 年的原话。',
+    stakes: 'risky',
+    sources: [
+      {
+        label: 'Zhao et al., JAMA Netw Open 2023 —— 每日酒精摄入与全因死亡风险的汇总分析（107 个队列）',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/37000449/',
+      },
+      {
+        label: 'WHO 2023 —— No level of alcohol consumption is safe for our health',
+        url: 'https://www.who.int/europe/news/item/04-01-2023-no-level-of-alcohol-consumption-is-safe-for-our-health',
+      },
+    ],
+    related: ['alcohol-warm', 'nightcap'],
+  },
+
   // ─────────────────────────── 睡 ───────────────────────────
   {
     id: 'nightcap',
@@ -730,7 +780,7 @@ export const MYTHS: Myth[] = [
         url: 'https://onlinelibrary.wiley.com/doi/10.1111/acer.12006',
       },
     ],
-    related: ['snoring'],
+    related: ['snoring', 'insomnia-rest', 'wine-heart'],
   },
   {
     id: 'weekend-catchup',
@@ -749,7 +799,7 @@ export const MYTHS: Myth[] = [
         label: 'Depner et al., Current Biology 2019 —— 周末恢复性睡眠对代谢的影响',
       },
     ],
-    related: ['eight-hours'],
+    related: ['eight-hours', 'insomnia-rest'],
   },
   {
     id: 'eight-hours',
@@ -768,7 +818,7 @@ export const MYTHS: Myth[] = [
         label: 'Watson et al., SLEEP 2015 —— AASM 与 SRS 成人睡眠时长共识声明',
       },
     ],
-    related: ['weekend-catchup'],
+    related: ['weekend-catchup', 'elder-sleep'],
   },
   {
     id: 'snoring',
@@ -787,7 +837,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.mayoclinic.org/diseases-conditions/obstructive-sleep-apnea/symptoms-causes/syc-20352090',
       },
     ],
-    related: ['nightcap', 'sleepwalk-wake'],
+    related: ['nightcap', 'sleepwalk-wake', 'elder-sleep'],
   },
   {
     id: 'sleepwalk-wake',
@@ -810,6 +860,47 @@ export const MYTHS: Myth[] = [
     related: ['snoring'],
   },
 
+  {
+    id: 'insomnia-rest',
+    category: 'sleep',
+    belief: '睡不着没关系，闭着眼睛躺着也是一种休息',
+    truth: '在床上长时间睡不着，反而会让大脑学会「床＝清醒」，失眠被越养越牢。',
+    detail:
+      '慢性失眠的一线非药物疗法（认知行为治疗 CBT-I）里有一条核心操作叫刺激控制：躺下大约 20 分钟还睡不着，就起床到别处做点平静的事，困了再回床。原理是行为条件反射——床如果总和「翻来覆去的清醒」配对，大脑会形成联结，一上床就精神。\n\n要留余地：闭眼躺着确实比刷手机强，偶尔一晚睡不着也不必紧张到立刻起床。这条针对的是长期的、每周好几晚的入睡困难。',
+    origin:
+      '「休息总没坏处」的直觉，加上「努力就能睡着」的错觉。可惜睡眠大概是唯一一件越用力越得不到的事。',
+    instead:
+      '固定起床时间比固定入睡时间重要；睡不着超过 20 分钟就起来，灯光调暗，别看时间。长期失眠去看医生做 CBT-I，效果比安眠药持久。',
+    stakes: 'wasteful',
+    sources: [
+      {
+        label: 'Edinger et al., J Clin Sleep Med 2021 —— AASM 成人慢性失眠行为治疗指南',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/33164742/',
+      },
+    ],
+    related: ['nightcap', 'weekend-catchup'],
+  },
+  {
+    id: 'elder-sleep',
+    category: 'sleep',
+    belief: '人老了觉自然变少，睡不踏实是正常现象',
+    truth: '睡眠需求并不随年龄明显下降——老人常见的睡不好，是疾病、药物等因素造成的，可以也应该治。',
+    detail:
+      '睡眠医学的综述说得很清楚：衰老会带来睡眠结构的变化（深睡变少、更容易醒），但没有证据表明老年人需要的睡眠变少了，睡眠紊乱也不是衰老的必然组成部分。老人睡不好的真实原因通常是慢性疾病、多种药物、心理社会因素和原发性睡眠障碍（比如呼吸暂停）——这些大多有对应的处理办法。\n\n把「老失眠」当成正常的代价不小：长期睡不好和跌倒、认知下降、心血管风险都相关。',
+    origin:
+      '大家看到的老人都起得早，就反推出「老人不需要睡」。其实早睡早起更多是生物钟前移，夜里醒得多是睡眠连续性变差——都不是「不需要」。',
+    instead:
+      '家里老人长期睡不好，别劝「年纪大了都这样」。带去评估一下：排查睡眠呼吸暂停、复查药物清单、处理疼痛和夜尿，很多情况能改善。',
+    stakes: 'risky',
+    sources: [
+      {
+        label: 'Miner & Kryger, Sleep Med Clin 2017 —— Sleep in the Aging Population',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/28159095/',
+      },
+    ],
+    related: ['eight-hours', 'snoring'],
+  },
+
   // ─────────────────────────── 运动 ───────────────────────────
   {
     id: 'spot-reduction',
@@ -828,7 +919,7 @@ export const MYTHS: Myth[] = [
         label: 'Ramírez-Campillo et al., J Strength Cond Res 2013 —— 单侧腿部训练后的区域脂肪变化',
       },
     ],
-    related: ['sweat-fat'],
+    related: ['sweat-fat', 'fasted-cardio'],
   },
   {
     id: 'sweat-fat',
@@ -847,7 +938,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.bmj.com/content/349/bmj.g7257',
       },
     ],
-    related: ['spot-reduction'],
+    related: ['spot-reduction', 'fasted-cardio'],
   },
   {
     id: 'lactic-acid',
@@ -867,6 +958,7 @@ export const MYTHS: Myth[] = [
         url: 'https://link.springer.com/article/10.2165/00007256-200333020-00005',
       },
     ],
+    related: ['static-stretch', 'anabolic-window'],
   },
   {
     id: 'static-stretch',
@@ -886,6 +978,7 @@ export const MYTHS: Myth[] = [
         url: 'https://cdnsciencepub.com/doi/10.1139/apnm-2015-0235',
       },
     ],
+    related: ['lactic-acid', 'anabolic-window'],
   },
   {
     id: 'ten-thousand-steps',
@@ -908,7 +1001,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.popsci.com/health/10000-steps-debunk-science/',
       },
     ],
-    related: ['women-lifting'],
+    related: ['women-lifting', 'running-knees'],
   },
   {
     id: 'women-lifting',
@@ -928,7 +1021,68 @@ export const MYTHS: Myth[] = [
         url: 'https://www.acsm.org/',
       },
     ],
-    related: ['ten-thousand-steps'],
+    related: ['ten-thousand-steps', 'running-knees'],
+  },
+
+  {
+    id: 'running-knees',
+    category: 'move',
+    belief: '跑步伤膝盖，跑多了早晚得换关节',
+    truth: '恰恰相反——休闲跑者的膝髋骨关节炎发生率比久坐人群低。',
+    detail:
+      '2017 年一项汇总了 17 项研究、超过 11 万人的系统综述发现：休闲跑者膝髋骨关节炎发生率约 3.5%，久坐不动的人约 10%。软骨不是「用一点少一点」的损耗件——适度负荷会给它带来营养和强化。\n\n要留余地的是两头：竞技级大跑量运动员的发生率确实偏高（约 13%）；已经有关节旧伤、体重过大的人也需要控制量、循序渐进。但对普通休闲跑者，「跑步磨膝盖」不是事实。真正和关节炎强相关的是肥胖、旧伤和遗传。',
+    origin:
+      '直觉太顺了：跑步每一步都在撞击，膝盖听起来就是耗材。机器确实会磨损，但生物组织会适应——不用的那台「机器」，才退化得快。',
+    instead:
+      '循序渐进加量（每周增幅别超一成），疼就减量不硬扛，体重大的先从快走开始。为了膝盖戒掉跑步，是捡了芝麻。',
+    stakes: 'harmless',
+    sources: [
+      {
+        label: 'Alentorn-Geli et al., JOSPT 2017 —— 跑步与膝髋骨关节炎的系统综述',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/28504066/',
+      },
+    ],
+    related: ['ten-thousand-steps', 'women-lifting'],
+  },
+  {
+    id: 'fasted-cardio',
+    category: 'move',
+    belief: '早上空腹运动直接烧脂肪，减肥效率高',
+    truth: '运动中多烧的那点脂肪是账面数字；拉长到几周看，空腹和不空腹的减脂效果没有差别。',
+    detail:
+      '空腹运动时，脂肪的供能比例确实更高——这是这个说法「科学感」的来源。但身体不按单次运动结账，之后的代谢会自己找平。直接检验这一点的随机对照试验（年轻女性、规律有氧、控制饮食、持续四周）发现：空腹组和非空腹组减掉的体重和体脂没有显著差异。\n\n要留余地：那项试验样本很小（20 人），算不上盖棺定论；但「空腹运动明显更减肥」目前确实拿不出像样的证据。',
+    origin:
+      '把「当下烧什么」当成「最终减什么」，是健身圈最常见的混淆。加上晨练本来就空腹，方便的事最容易被说成正确的事。',
+    instead:
+      '什么时间练、练前吃不吃，按你舒服、能坚持的来。空腹练要是头晕没劲，就吃点再练——减脂看的是长期的能量总账。',
+    stakes: 'harmless',
+    sources: [
+      {
+        label: 'Schoenfeld et al., J Int Soc Sports Nutr 2014 —— 空腹与进食后有氧运动的体成分对照试验',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/25429252/',
+      },
+    ],
+    related: ['sweat-fat', 'spot-reduction'],
+  },
+  {
+    id: 'anabolic-window',
+    category: 'move',
+    belief: '练完 30 分钟内必须补蛋白粉，错过窗口就白练了',
+    truth: '「合成窗口」比传说宽得多——前后好几个小时都算数，全天吃够总量才是关键。',
+    detail:
+      '运动营养学界自己复查过这个概念：2013 年的综述（作者正是当年推广窗口理论的人之一）结论是，所谓窗口远不止 30 分钟，很可能横跨训练前后数小时。只要一天的蛋白质总量够（大致每公斤体重 1.6 克上下）、别集中在一顿，练后立刻喝粉和一小时后正常吃饭，对增肌的影响差别不大。\n\n要留余地：两种情形确实建议练后及时补——训练前完全空腹，或者一天要练第二次。普通人一天一练，没那么紧急。',
+    origin:
+      '健身房传说和补剂营销的天作之合：「不吃就白练」直接通向「赶紧买蛋白粉」。紧迫感是卖点，不是科学。',
+    instead:
+      '练完饿了就吃，不饿就正常吃饭。盯总量、盯长期，比掐着表灌粉有用得多。',
+    stakes: 'harmless',
+    sources: [
+      {
+        label: 'Aragon & Schoenfeld, J Int Soc Sports Nutr 2013 —— 重新审视合成窗口',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/23360586/',
+      },
+    ],
+    related: ['lactic-acid', 'static-stretch'],
   },
 
   // ─────────────────────────── 生活 ───────────────────────────
@@ -948,7 +1102,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.nhs.uk/conditions/hypothermia/',
       },
     ],
-    related: ['baijiu-disinfect'],
+    related: ['baijiu-disinfect', 'wine-heart'],
   },
   {
     id: 'baijiu-disinfect',
@@ -1083,6 +1237,47 @@ export const MYTHS: Myth[] = [
     ],
   },
 
+  {
+    id: 'cotton-swab',
+    category: 'life',
+    belief: '耳屎要常掏，棉签转一转才干净',
+    truth: '耳屎是会自己排出的保护性分泌物；棉签只会把它推得更深，还可能捅伤耳道和鼓膜。',
+    detail:
+      '耳屎（耵聍）不是脏东西：它抗菌、润滑、挡灰。耳道自带清洁机制——咀嚼和说话时，耳道皮肤像传送带一样把耳屎慢慢送出来。耳鼻喉科的临床指南写得直白：不要把棉签或挖耳勺伸进耳道。棉签掏耳朵的真实后果，常常是把耳屎推成栓塞；急诊室里也不缺棉签头掉在耳道里、甚至鼓膜穿孔的病例。\n\n要留余地：耳屎栓塞确实会发生（常用入耳式耳机的人更容易），症状是闷胀、听不清——那也该让医生处理，不是自己拿工具掏。',
+    origin:
+      '「能掏出东西来」的即时反馈太爽了，棉签又是家里现成的。爽感被当成了效果。',
+    instead:
+      '洗完澡用毛巾擦外耳廓就够了。觉得堵、闷、听不清，去耳鼻喉科，医生一分钟就能冲出来。',
+    stakes: 'risky',
+    sources: [
+      {
+        label: 'Schwartz et al., Otolaryngol Head Neck Surg 2017 —— AAO-HNS 耳屎临床指南',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/28045632/',
+      },
+    ],
+    related: ['gray-hair', 'nosebleed'],
+  },
+  {
+    id: 'alkaline-diet',
+    category: 'life',
+    belief: '酸性体质是万病之源，要多吃碱性食物、喝碱性水中和',
+    truth: '血液酸碱度由肺和肾精密控制在 7.35–7.45，食物动不了它分毫；「酸碱体质」从头到尾是个营销概念。',
+    detail:
+      '「酸性」「碱性」食物确实会改变尿液的 pH——但那只是肾脏把多余的酸排出去的结果，恰恰说明缓冲系统在正常工作。血液 pH 真要被食物推动哪怕零点几个单位，就是酸中毒或碱中毒，要进 ICU，不是喝柠檬水能调的。2016 年发表在 BMJ Open 的系统综述专门查了「碱性饮食防癌」的证据：没有任何人体研究支持。\n\n要留余地：多吃蔬菜水果本来就是好习惯——但益处来自纤维、维生素和替代掉的高热量食物，不来自「碱性」。',
+    origin:
+      '这个概念 2000 年代靠几本畅销书和「酸碱体质自测表」传遍全球，中文圈再叠上养生号的转发。概念的提出者 Robert O. Young 后来在美国因无照行医被判刑——概念本身却没有跟着消失。',
+    instead:
+      '省下碱性水的钱。均衡饮食的理由有一大把，「调酸碱」不在其中。',
+    stakes: 'wasteful',
+    sources: [
+      {
+        label: 'Fenton & Huang, BMJ Open 2016 —— 膳食酸负荷、碱性水与癌症关联的系统综述',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/27297008/',
+      },
+    ],
+    related: ['detox', 'eight-glasses'],
+  },
+
   // ─────────────────────────── 关键时刻 ───────────────────────────
   {
     id: 'nosebleed',
@@ -1102,7 +1297,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.nhs.uk/conditions/nosebleed/',
       },
     ],
-    related: ['burn-toothpaste'],
+    related: ['burn-toothpaste', 'cotton-swab'],
   },
   {
     id: 'fever-sweat',
@@ -1184,7 +1379,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.cdc.gov/epilepsy/first-aid-for-seizures/index.html',
       },
     ],
-    related: ['heimlich-baby', 'drowning-silent'],
+    related: ['heimlich-baby', 'drowning-silent', 'cpr-hard'],
   },
   {
     id: 'drowning-silent',
@@ -1230,6 +1425,26 @@ export const MYTHS: Myth[] = [
         url: 'https://www.sja.org.uk/first-aid-advice/choking/',
       },
     ],
-    related: ['seizure-mouth'],
+    related: ['seizure-mouth', 'cpr-hard'],
+  },
+  {
+    id: 'cpr-hard',
+    category: 'urgent',
+    belief: '心肺复苏把肋骨按断，说明下手太重、操作失误了',
+    truth: '按断肋骨在规范的心肺复苏里很常见，不是做错了——怕按断而不敢用力，才真的会要命。',
+    detail:
+      '有效的胸外按压要求深度 5–6 厘米、频率每分钟 100–120 次，这个力度作用在成年人的胸廓上，骨骼损伤本来就可能发生。一项用 CT 检查复苏后患者的研究发现，近三成恢复自主循环的人查出了肋骨或胸骨骨折——而骨折和按压是否规范之间没有显著关联。\n\n轻重要分清：肋骨骨折会愈合；心脏骤停不按压，几分钟就是不可逆的脑损伤。复苏指南的态度很明确：不要因为担心骨折而减轻按压或停手。',
+    origin:
+      '「把人救活还把人弄伤」听起来当然像事故。非专业施救者最常见的两个犹豫——不敢按、按太浅——都和这个顾虑有关。',
+    instead:
+      '学一次正经的急救培训（红十字会常有公益课），知道正确的深度和频率后放心按。很多地方的「好人法」也保护紧急救助者。',
+    stakes: 'risky',
+    sources: [
+      {
+        label: 'Zaidi et al., Resuscitation Plus 2020 —— CT 评估心肺复苏后的胸部并发症',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/34223300/',
+      },
+    ],
+    related: ['heimlich-baby', 'seizure-mouth'],
   },
 ]
