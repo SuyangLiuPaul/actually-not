@@ -12,6 +12,11 @@ import { pathToFileURL } from 'node:url'
 
 const ORIGIN = 'https://actually-not.netlify.app'
 
+/** Netlify 把 /wet-hair 301 到 /wet-hair/，规范地址统一成带斜杠的形式 */
+function pageUrl(path: string): string {
+  return `${ORIGIN}${path === '/' ? '/' : `${path}/`}`
+}
+
 interface Route {
   path: string
   title: string
@@ -37,7 +42,7 @@ function replaceChecked(html: string, pattern: RegExp, replacement: string, all 
 }
 
 function applyMeta(html: string, route: Route): string {
-  const url = `${ORIGIN}${route.path}`
+  const url = pageUrl(route.path)
   const title = esc(route.title)
   const desc = esc(route.description)
   // 属性之间用 \s+：模板里的多行标签（换行 + 缩进）也要能匹配
@@ -87,7 +92,7 @@ export async function prerender(distDir: string, ssrDir: string): Promise<void> 
   const today = new Date().toISOString().slice(0, 10)
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${ssr.ROUTES.map((r) => `  <url><loc>${ORIGIN}${r.path}</loc><lastmod>${today}</lastmod></url>`).join('\n')}
+${ssr.ROUTES.map((r) => `  <url><loc>${pageUrl(r.path)}</loc><lastmod>${today}</lastmod></url>`).join('\n')}
 </urlset>
 `
   writeFileSync(join(distDir, 'sitemap.xml'), sitemap)
