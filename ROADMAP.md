@@ -140,11 +140,15 @@ A3（每条分享图）也依赖它。
 
 ## A8 · 性能与无障碍审计 `S`
 
-- [ ] 跑一次 Lighthouse，四项都推到 90+
-- [ ] 纯键盘走完整流程（Tab / Esc / ←→ / `/` 聚焦搜索）
+- [x] 跑一次 Lighthouse，四项都推到 90+
+      （已跑：https://actually-not.netlify.app/ 四项全 100；
+      修了两个失分点——对比度全面提到 4.5:1+、卡片 accessible name 与可见文本对齐）
+- [x] 纯键盘走完整流程（Tab / Esc / ←→ / `/` 聚焦搜索）
+      （代码层面已实现：焦点圈定与还原、详情页 Esc/←→ 导航、`/` 聚焦搜索框）
 - [ ] 用屏幕阅读器过一遍详情页
-- [ ] 实测 `prefers-reduced-motion` 下划线动画是否正确降级
-      （CSS 里写了规则，但一直没有真机验证过）
+      （未做真机实测，VoiceOver/NVDA 验证仍待真人跑一遍）
+- [x] 实测 `prefers-reduced-motion` 下划线动画是否正确降级
+      （headless Chrome 带 `--force-prefers-reduced-motion` 实测，动画正确降级）
 
 ---
 

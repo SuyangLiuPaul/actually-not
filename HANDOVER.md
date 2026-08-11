@@ -326,6 +326,9 @@ npm run preview
   测验「你中了几条」（/quiz + 成绩分享图）、FAQ JSON-LD 结构化数据、
   PWA「随便看一条」快捷方式都已上线
 - CI 通过，Netlify 自动部署正常，PWA 离线实测通过
+- Lighthouse 四项全 100；对比度全部 ≥4.5:1；`prefers-reduced-motion`
+  已用真实浏览器实测（reduce 时 transition 降到 0.01ms）。
+  屏幕阅读器（VoiceOver/NVDA）真机过一遍详情页仍未做
 - 没有已知 bug，没有待办
 
 可以做的方向（都不是必须的）：继续加条目、给条目加配图、
