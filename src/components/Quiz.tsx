@@ -271,6 +271,7 @@ export function Quiz({
           <span
             className="text-xs font-medium tracking-wide"
             style={{ color: 'var(--ink-faint)' }}
+            aria-live="polite"
           >
             {phase === 'answering' ? `第 ${step + 1} / ${items.length} 条` : '你中了几条'}
           </span>

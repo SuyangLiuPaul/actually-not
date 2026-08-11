@@ -62,7 +62,6 @@ export function MythCard({
         boxShadow: hover ? 'var(--shadow-lift)' : 'var(--shadow)',
         transform: hover ? 'translateY(-3px)' : 'none',
       }}
-      aria-label={`${myth.belief} —— 展开看证据`}
     >
       <div className="flex items-center justify-between gap-3">
         <span
