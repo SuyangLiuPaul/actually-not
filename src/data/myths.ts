@@ -92,7 +92,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.fda.gov/food/food-additives-petitions/questions-and-answers-monosodium-glutamate-msg',
       },
     ],
-    related: ['detox'],
+    related: ['detox', 'iodine-salt'],
   },
   {
     id: 'collagen',
@@ -131,7 +131,7 @@ export const MYTHS: Myth[] = [
         url: 'https://journals.physiology.org/doi/full/10.1152/ajpregu.00365.2002',
       },
     ],
-    related: ['coffee-dehydrate', 'alkaline-diet'],
+    related: ['coffee-dehydrate', 'alkaline-diet', 'water-meal'],
   },
   {
     id: 'coffee-dehydrate',
@@ -323,7 +323,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.mayoclinic.org/diseases-conditions/gerd/diagnosis-treatment/drc-20361959',
       },
     ],
-    related: ['spicy-ulcer'],
+    related: ['spicy-ulcer', 'water-meal'],
   },
   {
     id: 'detox',
@@ -343,7 +343,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.nccih.nih.gov/health/detoxes-and-cleanses-what-you-need-to-know',
       },
     ],
-    related: ['msg', 'alkaline-diet', 'juice-fruit'],
+    related: ['msg', 'alkaline-diet', 'juice-fruit', 'magnet-bracelet'],
   },
   {
     id: 'swallowed-gum',
@@ -434,6 +434,27 @@ export const MYTHS: Myth[] = [
       },
     ],
     related: ['detox', 'sugar-hyper'],
+  },
+
+  {
+    id: 'water-meal',
+    category: 'eat',
+    belief: '吃饭时喝水会冲淡胃液，影响消化',
+    truth: '消化系统没那么脆弱——随餐喝水不耽误消化，有时还帮点忙。',
+    detail:
+      '「冲淡胃液就消化不动」低估了胃的调节能力：胃酸分泌随进食动态调整，一餐里喝的那杯水对胃内酸碱度的影响，身体随手就补回来了。Mayo Clinic 的专家问答说得很直白：随餐喝水不会干扰消化，反而有助于软化食物、顺利吞咽。\n\n要留余地：胃食管反流的人一餐灌太多水会胀、会加重反流感——那是容量问题，不是「稀释胃酸」；做完减重手术的人另有专门医嘱，不在这条讨论范围。',
+    origin:
+      '这句大概率跟「趁热吃」「吃饭别说话」出自同一套餐桌管教——出发点多半是让孩子专心吃饭，说重了就成了生理学断言。',
+    instead:
+      '想喝就喝，正常量就好。真正要留意的是拿含糖饮料下饭——那杯饮料的热量才是实打实的。',
+    stakes: 'harmless',
+    sources: [
+      {
+        label: 'Mayo Clinic —— Water after meals: Does it disturb digestion?',
+        url: 'https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/expert-answers/water-after-meals/faq-20058394',
+      },
+    ],
+    related: ['eight-glasses', 'porridge-stomach'],
   },
 
   // ─────────────────────────── 身体 ───────────────────────────
@@ -734,7 +755,7 @@ export const MYTHS: Myth[] = [
         url: 'https://pubmed.ncbi.nlm.nih.gov/32309885/',
       },
     ],
-    related: ['flu-shot'],
+    related: ['flu-shot', 'antiperspirant'],
   },
 
   {
@@ -760,6 +781,27 @@ export const MYTHS: Myth[] = [
       },
     ],
     related: ['alcohol-warm', 'nightcap'],
+  },
+
+  {
+    id: 'antiperspirant',
+    category: 'body',
+    belief: '止汗剂堵住汗腺、毒素排不出去，会得乳腺癌',
+    truth: '美国国家癌症研究所的结论：没有可靠证据把止汗剂和乳腺癌联系起来。',
+    detail:
+      '这个说法有两个零件：「铝盐堵汗腺让毒素淤积」和「腋下离乳腺近所以危险」。问题在于：铝盐只在皮肤表面形成暂时的浅表堵塞，而且汗液本来就不是排毒通道——「排毒」是肝和肾的活。大型病例对照研究比较过使用者和非使用者，乳腺癌风险没有差异；美国国家癌症研究所（NCI）在专题页里明确写了「没有结论性证据」。\n\n要留余地：刚剃完毛用会刺痛，那是皮肤刺激，不是中毒；对铝敏感的人选无铝香体剂就好。',
+    origin:
+      '1990 年代的连锁邮件最早散布了这个说法（中文圈后来换成朋友圈版本）。它完美命中了「现代化学品不可信」的情绪。',
+    instead:
+      '想用就用，按说明用。不放心就选无铝香体剂——为了气味管理，不是为了「防癌」。',
+    stakes: 'harmless',
+    sources: [
+      {
+        label: 'National Cancer Institute —— Antiperspirants/Deodorants and Breast Cancer',
+        url: 'https://www.cancer.gov/about-cancer/causes-prevention/risk/myths/antiperspirants-fact-sheet',
+      },
+    ],
+    related: ['mmr-autism', 'phone-radiation'],
   },
 
   // ─────────────────────────── 睡 ───────────────────────────
@@ -818,7 +860,7 @@ export const MYTHS: Myth[] = [
         label: 'Watson et al., SLEEP 2015 —— AASM 与 SRS 成人睡眠时长共识声明',
       },
     ],
-    related: ['weekend-catchup', 'elder-sleep'],
+    related: ['weekend-catchup', 'elder-sleep', 'night-owl'],
   },
   {
     id: 'snoring',
@@ -878,7 +920,7 @@ export const MYTHS: Myth[] = [
         url: 'https://pubmed.ncbi.nlm.nih.gov/33164742/',
       },
     ],
-    related: ['nightcap', 'weekend-catchup'],
+    related: ['nightcap', 'weekend-catchup', 'melatonin-sleep'],
   },
   {
     id: 'elder-sleep',
@@ -898,7 +940,52 @@ export const MYTHS: Myth[] = [
         url: 'https://pubmed.ncbi.nlm.nih.gov/28159095/',
       },
     ],
-    related: ['eight-hours', 'snoring'],
+    related: ['eight-hours', 'snoring', 'melatonin-sleep'],
+  },
+
+  {
+    id: 'melatonin-sleep',
+    category: 'sleep',
+    belief: '失眠就吃褪黑素，天然激素安全又助眠',
+    truth: '褪黑素是「对表」的，不是「催眠」的——它调的是生物钟，对普通慢性失眠的效果小到指南不推荐。',
+    detail:
+      '褪黑素的正经用途是调整生物钟时机：倒时差、纠正睡眠相位后移（越夜越精神的节律），这些有较扎实的证据——Cochrane 对时差反应的综述就给了肯定结论。但对最常见的「躺下睡不着、夜里老醒」的慢性失眠，它的平均效果只是把入睡时间缩短几分钟；美国睡眠医学会 2017 年的药物治疗指南明确建议，不要把褪黑素当安眠药用。\n\n要留余地：「天然激素」不等于随便吃。市售剂量常常远超生理分泌量，长期安全性数据也有限；老人、孕妇、在用抗凝药的人，先问医生。',
+    origin:
+      '「人体自己分泌的东西」听起来天然无害，加上不用处方就能买到（在国内它是保健品）。「天然」和「买得到」被当成了「对症」。',
+    instead:
+      '倒时差、作息紊乱，低剂量褪黑素可以短期试试；长期失眠的首选是 CBT-I（认知行为治疗），效果比任何药都持久。',
+    stakes: 'wasteful',
+    sources: [
+      {
+        label: 'Sateia et al., J Clin Sleep Med 2017 —— AASM 慢性失眠药物治疗指南',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/27998379/',
+      },
+      {
+        label: 'Herxheimer & Petrie, Cochrane Database Syst Rev 2002 —— 褪黑素防治时差反应',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/12076414/',
+      },
+    ],
+    related: ['insomnia-rest', 'elder-sleep', 'night-owl'],
+  },
+  {
+    id: 'night-owl',
+    category: 'sleep',
+    belief: '夜猫子就是懒、不自律，早睡早起的人都更优秀',
+    truth: '晨型还是夜型，很大程度上写在基因里——这是一种生理倾向，不是道德品质。',
+    detail:
+      '2019 年一项近 70 万人的全基因组研究，把和「晨型」相关的基因位点从 24 个扩到 351 个，这些位点集中在生物钟调节、视网膜信号等通路上。携带最多「晨型等位基因」的 5% 的人，平均入睡时间比携带最少的 5% 早约 25 分钟。晚睡晚起是一种有生理基础的「时型」（chronotype），就像有人天生高一点、有人矮一点。\n\n要留余地：基因决定的是倾向，不是全部——光照、咖啡因、作息习惯都能移动节律。拿「我是夜型」当熬夜刷手机的借口，就偷换概念了。',
+    origin:
+      '农业社会把「日出而作」和勤劳绑定，早起成了美德符号；后来的工作制又默认按晨型人的节律设计，夜型人自然显得「懒」。',
+    instead:
+      '别和别人比起床时间，比睡眠规不规律。必须早起的夜型人：早晨见强光、晚上调暗灯光、固定起床点，节律可以一点点往前挪。',
+    stakes: 'harmless',
+    sources: [
+      {
+        label: 'Jones et al., Nat Commun 2019 —— 近 70 万人的时型全基因组研究',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/30696823/',
+      },
+    ],
+    related: ['eight-hours', 'melatonin-sleep'],
   },
 
   // ─────────────────────────── 运动 ───────────────────────────
@@ -919,7 +1006,7 @@ export const MYTHS: Myth[] = [
         label: 'Ramírez-Campillo et al., J Strength Cond Res 2013 —— 单侧腿部训练后的区域脂肪变化',
       },
     ],
-    related: ['sweat-fat', 'fasted-cardio'],
+    related: ['sweat-fat', 'fasted-cardio', 'muscle-to-fat'],
   },
   {
     id: 'sweat-fat',
@@ -938,7 +1025,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.bmj.com/content/349/bmj.g7257',
       },
     ],
-    related: ['spot-reduction', 'fasted-cardio'],
+    related: ['spot-reduction', 'fasted-cardio', 'standing-desk'],
   },
   {
     id: 'lactic-acid',
@@ -958,7 +1045,7 @@ export const MYTHS: Myth[] = [
         url: 'https://link.springer.com/article/10.2165/00007256-200333020-00005',
       },
     ],
-    related: ['static-stretch', 'anabolic-window'],
+    related: ['static-stretch', 'anabolic-window', 'muscle-to-fat'],
   },
   {
     id: 'static-stretch',
@@ -1021,7 +1108,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.acsm.org/',
       },
     ],
-    related: ['ten-thousand-steps', 'running-knees'],
+    related: ['ten-thousand-steps', 'running-knees', 'period-exercise'],
   },
 
   {
@@ -1042,7 +1129,7 @@ export const MYTHS: Myth[] = [
         url: 'https://pubmed.ncbi.nlm.nih.gov/28504066/',
       },
     ],
-    related: ['ten-thousand-steps', 'women-lifting'],
+    related: ['ten-thousand-steps', 'women-lifting', 'period-exercise'],
   },
   {
     id: 'fasted-cardio',
@@ -1083,6 +1170,47 @@ export const MYTHS: Myth[] = [
       },
     ],
     related: ['lactic-acid', 'static-stretch'],
+  },
+
+  {
+    id: 'muscle-to-fat',
+    category: 'move',
+    belief: '肌肉不练就会变成脂肪，练出来的迟早变一身膘',
+    truth: '肌肉和脂肪是两种完全不同的组织，不会互相转化——停练后是「肌肉变少」和「脂肪变多」两件事同时发生。',
+    detail:
+      '停练后，肌肉因缺乏刺激而萎缩（去训练效应），围度和力量下降；与此同时，很多人的食量还维持在训练期的水平，热量盈余变成脂肪堆起来。一个缩水、一个膨胀，看起来就像「肌肉变成了脂肪」。\n\n这个误传还带来一个反向的焦虑：有人因此不敢停练、不敢休息。其实恢复训练后肌肉重建比从零开始快得多——「肌肉记忆」在细胞层面有一定依据，萎缩时肌核并不会轻易消失。',
+    origin:
+      '退役运动员发福的样子太有说服力了——皮相上确实是「腱子肉变肥肉」。人们看到相关，脑补了转化。',
+    instead:
+      '停练期把食量调回日常水平就行。中断过也别怕，重新开始比你想象的快。',
+    stakes: 'harmless',
+    sources: [
+      {
+        label: 'Mujika & Padilla, Sports Med 2000 —— 去训练导致的生理与运动表现变化',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/10999420/',
+      },
+    ],
+    related: ['spot-reduction', 'lactic-acid'],
+  },
+  {
+    id: 'period-exercise',
+    category: 'move',
+    belief: '生理期不能运动，躺着养着才不会落下毛病',
+    truth: '没有证据说经期运动有害；规律运动反而可能减轻痛经。',
+    detail:
+      'Cochrane 2019 年的系统综述汇总了相关试验：证据质量虽然不高，但方向一致——每周三次以上、每次 45 分钟上下的规律运动，可能让痛经强度明显下降（100 分疼痛评分平均降约 25 分）。经期运动「落下毛病」的说法，现代医学里找不到依据。\n\n要留余地：量大、痛经严重、有贫血或妇科病的情况，减量或休息是对的，倾听身体永远没错。错的是把「经期不能动」当成对所有人的铁律。',
+    origin:
+      '把生理期的正常不适归因于「受了风、着了凉、动了身子」，是传统养护观的一部分——出发点是保护，但保护过度就成了限制。',
+    instead:
+      '没特殊不适就正常运动，强度按当天状态调；瑜伽、散步这类轻量的对痛经还特别友好。疼到影响生活，去排查继发性痛经（比如子宫内膜异位），别硬扛也别硬躺。',
+    stakes: 'harmless',
+    sources: [
+      {
+        label: 'Armour et al., Cochrane Database Syst Rev 2019 —— 运动与痛经的系统综述',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/31538328/',
+      },
+    ],
+    related: ['running-knees', 'women-lifting'],
   },
 
   // ─────────────────────────── 生活 ───────────────────────────
@@ -1141,7 +1269,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.cancer.gov/about-cancer/causes-prevention/risk/radiation/cell-phones-fact-sheet',
       },
     ],
-    related: ['microwave'],
+    related: ['microwave', 'antiperspirant'],
   },
   {
     id: 'battery-charge',
@@ -1275,7 +1403,68 @@ export const MYTHS: Myth[] = [
         url: 'https://pubmed.ncbi.nlm.nih.gov/27297008/',
       },
     ],
-    related: ['detox', 'eight-glasses'],
+    related: ['detox', 'eight-glasses', 'magnet-bracelet', 'iodine-salt'],
+  },
+
+  {
+    id: 'magnet-bracelet',
+    category: 'life',
+    belief: '磁疗手环、磁疗床垫能促进血液循环、治各种疼',
+    truth: '随机对照试验的汇总结论：静磁体对疼痛的效果和安慰剂没有显著差别。',
+    detail:
+      '2007 年《加拿大医学会杂志》的荟萃分析汇总了静磁体镇痛的随机对照试验：设盲合格的 9 项试验合并后，磁疗组和对照组的疼痛改善差异是 2.1 毫米（100 毫米疼痛量表）——统计学上不显著，临床上更没有意义。\n\n要留余地：骨关节炎那个小分支里，证据不足以完全排除一点效果，作者原话是「值得进一步研究」。但「促进血液循环保健治病」这种大说法没有证据支撑。顺带一提，血液里的铁在血红蛋白中，不是铁磁性的，磁场吸不动它。',
+    origin:
+      '磁场看不见摸不着又自带「科学感」，是保健品的完美素材。戴上觉得舒服这件事，安慰剂效应和疼痛的自然波动就能解释。',
+    instead:
+      '疼去查原因，别先买设备。已经买了也不用扔——它大概率无害，只是没用。',
+    stakes: 'wasteful',
+    sources: [
+      {
+        label: 'Pittler et al., CMAJ 2007 —— 静磁体镇痛的系统综述与荟萃分析',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/17893349/',
+      },
+    ],
+    related: ['alkaline-diet', 'detox', 'standing-desk'],
+  },
+  {
+    id: 'standing-desk',
+    category: 'life',
+    belief: '换个站立办公桌，站着上班就能减肥治腰痛',
+    truth: '站立比坐着每小时只多消耗约 9 千卡——指望它减肥不现实，它是个舒适度工具，不是健康设备。',
+    detail:
+      '2018 年一项汇总 46 项研究的荟萃分析算得很清楚：站和坐的能量消耗差是每分钟 0.15 千卡。一天站 6 小时多消耗约 54 千卡——理论上一年能对应约 2.5 公斤脂肪，前提是「吃的一点没变多」，而现实中站饿了总会多吃一口。\n\n要留余地：站立办公不是一无是处——打破连续久坐本身有益，对部分人的腰背不适也有缓解。但它治不了已经存在的腰椎问题，更不是减肥方案。',
+    origin:
+      '「久坐是新的吸烟」这句话火了之后，站立桌成了现成的解药商品。恐惧营销的第一步是制造恐惧。',
+    instead:
+      '比买桌子更有效的免费方案：每半小时起来走两分钟、接水走楼梯。真要买，买可升降的，站坐轮换着用。',
+    stakes: 'wasteful',
+    sources: [
+      {
+        label: 'Saeidifard et al., Eur J Prev Cardiol 2018 —— 站立与坐姿能量消耗差异的荟萃分析',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/29385357/',
+      },
+    ],
+    related: ['sweat-fat', 'magnet-bracelet'],
+  },
+  {
+    id: 'iodine-salt',
+    category: 'life',
+    belief: '碘盐吃多了导致甲状腺结节，现在谁还敢吃碘盐',
+    truth: '结节高发主要是超声检查普及「找」出来的；真正的风险恰好在另一端——碘摄入不足。',
+    detail:
+      '体检季甲状腺结节检出率动辄百分之几十，但这是高分辨率超声把几毫米的小结节都照出来的结果——过去摸不到、看不见，不是过去没有。目前没有可靠证据把合格加碘盐和甲状腺结节、甲状腺癌挂上钩。反面的证据反而硬：碘是合成甲状腺激素的原料，缺碘会导致甲状腺肿，孕妇缺碘影响胎儿神经发育——这正是中国 1995 年推行全民食盐加碘的原因。\n\n要留余地：碘也不是越多越好——过量碘摄入与亚临床甲减、自身免疫性甲状腺炎的风险上升有关（中国不同碘摄入水平地区的对比研究证实过这一点）。已经确诊甲亢、桥本甲状腺炎的，遵医嘱选盐。',
+    origin:
+      '结节检出率上升和食盐加碘政策在时间上重叠，两件事被焊成了因果。再叠上「后加进去的东西总是可疑」的心理。',
+    instead:
+      '普通家庭正常吃加碘盐就好；有甲状腺疾病史的人问内分泌科医生。与其纠结盐，不如把体检报告里那个几毫米的结节按医嘱复查。',
+    stakes: 'risky',
+    sources: [
+      {
+        label: 'Teng et al., N Engl J Med 2006 —— 碘摄入水平与中国甲状腺疾病的对比研究',
+        url: 'https://www.nejm.org/doi/full/10.1056/NEJMoa054022',
+      },
+    ],
+    related: ['msg', 'alkaline-diet'],
   },
 
   // ─────────────────────────── 关键时刻 ───────────────────────────
@@ -1355,7 +1544,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.nhs.uk/conditions/burns-and-scalds/treatment/',
       },
     ],
-    related: ['nosebleed'],
+    related: ['nosebleed', 'stroke-needle'],
   },
   {
     id: 'seizure-mouth',
@@ -1379,7 +1568,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.cdc.gov/epilepsy/first-aid-for-seizures/index.html',
       },
     ],
-    related: ['heimlich-baby', 'drowning-silent', 'cpr-hard'],
+    related: ['heimlich-baby', 'drowning-silent', 'cpr-hard', 'stroke-needle'],
   },
   {
     id: 'drowning-silent',
@@ -1446,5 +1635,28 @@ export const MYTHS: Myth[] = [
       },
     ],
     related: ['heimlich-baby', 'seizure-mouth'],
+  },
+  {
+    id: 'stroke-needle',
+    category: 'urgent',
+    belief: '中风发作时扎手指放血，能急救、能救命',
+    truth: '放血够不到脑子里的病灶——缺血性脑卒中每拖延一分钟，就有约 190 万个神经元死亡。',
+    detail:
+      '中风（脑卒中）分两种：血管堵了（缺血性，占多数）和血管破了（出血性）。无论哪种，指尖放血都影响不了颅内的病灶。缺血性中风真正有效的急救是溶栓和取栓，而它们都有严格的时间窗——经典的「时间就是大脑」测算：大血管堵塞时，每分钟约有 190 万个神经元死亡。掐人中、扎手指、喂水的每一分钟，都在花掉患者脑子里的「存款」。\n\n更要命的是假安心：扎完了、观察观察再说——时间窗就这么关上了。',
+    origin:
+      '放血疗法在中外都有上千年历史，「放出瘀血、通了就好」符合对流体堵塞的朴素想象。转发这类「急救妙招」的帖子，往往还打着「医生不会告诉你」的旗号。',
+    instead:
+      '记住 FAST：脸歪（Face）、一侧胳膊抬不起来（Arm）、说话不清（Speech）、立刻打 120（Time）。等救护车时让患者侧卧，不喂水不喂药，别的都别做。',
+    stakes: 'risky',
+    sources: [
+      {
+        label: 'Saver, Stroke 2006 —— Time is brain—quantified',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/16339467/',
+      },
+      {
+        label: '中国卒中学会 —— 卒中急救科普（识别、呼救、时间窗）',
+      },
+    ],
+    related: ['seizure-mouth', 'burn-toothpaste'],
   },
 ]

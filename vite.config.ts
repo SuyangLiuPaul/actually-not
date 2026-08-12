@@ -27,7 +27,7 @@ function prerenderPlugin(): Plugin {
 }
 
 const DESCRIPTION =
-  '早上不吃饭伤身、洗完头不吹干有湿气、骨头汤补钙……71 条听起来天经地义、但证据并不支持的生活常识，每条附出处。'
+  '早上不吃饭伤身、洗完头不吹干有湿气、骨头汤补钙……81 条听起来天经地义、但证据并不支持的生活常识，每条附出处。'
 
 // https://vite.dev/config/
 export default defineConfig({
