@@ -151,7 +151,7 @@ export const MYTHS: Myth[] = [
         url: 'https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0084154',
       },
     ],
-    related: ['eight-glasses'],
+    related: ['eight-glasses', 'pregnancy-taboos'],
   },
   {
     id: 'spicy-ulcer',
@@ -806,7 +806,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.who.int/europe/news/item/04-01-2023-no-level-of-alcohol-consumption-is-safe-for-our-health',
       },
     ],
-    related: ['alcohol-warm', 'nightcap'],
+    related: ['alcohol-warm', 'nightcap', 'pregnancy-taboos'],
   },
 
   {
@@ -849,6 +849,38 @@ export const MYTHS: Myth[] = [
       },
     ],
     related: ['antibiotics-cold', 'vitamin-c', 'wet-hair'],
+  },
+  {
+    id: 'pregnancy-taboos',
+    category: 'body',
+    belief: '怀孕就得忌口忌动：咖啡、螃蟹、山楂都不能碰，最好一直躺着养着',
+    truth: '孕期真正要忌的清单很短——酒、烟、生食、高汞鱼；多数「禁忌」没有证据，卧床保胎反而有害。',
+    detail:
+      '有据可查的孕期禁忌其实就几条：酒精（没有安全剂量）、吸烟、生肉生蛋和未巴氏消毒的乳制品（李斯特菌、弓形虫风险）、汞含量高的大型鱼类、咖啡因控制在每天 200mg 以内（ACOG 建议）。除此之外那份长长的忌口单——螃蟹「性寒滑胎」、山楂山楂糕「导致流产」、荔枝、酱油「孩子皮肤黑」——没有任何研究支持。早期流产一半以上是胚胎染色体异常导致的，和那天吃了什么基本无关。\n\n「躺着保胎」更要小心。Cochrane 综述没有找到卧床休息能预防流产的证据；针对早产风险的活动限制，随机试验同样不支持，而且卧床明确增加血栓、肌肉萎缩、骨质流失的风险——ACOG 和 SMFM 都不推荐把卧床当保胎手段。反倒是运动被推荐：没有并发症的孕妇每周至少 150 分钟中等强度活动，能降低妊娠糖尿病和子痫前期的风险。\n\n咖啡要留余地：ACOG 认为每天 200mg 以内（大约一杯半中杯美式）与流产、早产没有明确关联；但也有荟萃分析认为剂量关系不能完全排除。所以稳妥的做法是控制量，而不是滴咖啡不沾，也不是放开喝。手机电脑、染发、日常化妆品同理——非电离辐射没有伤害胎儿的证据，染发的经皮吸收量极低，研究未发现风险。',
+    origin:
+      '产科历史上是「万一」逻辑：任何不良结局都可能被归咎于母亲做过的某件事，于是每一次意外都给禁忌清单添一条。加上保胎文化和对流产的隐性污名，「宁可信其有」越滚越长。清单上的很多条目，本质是把罕见风险当成了必然因果。',
+    instead:
+      '照短清单执行：戒酒戒烟、肉蛋做熟、奶喝巴氏消毒的、避开高汞鱼、咖啡一天一小杯以内。保持日常活动和正常运动，别躺着不动。养猫的把铲屎交给别人（弓形虫），具体用药和检查听产科医生的——别听亲戚群里的。',
+    stakes: 'risky',
+    sources: [
+      {
+        label: 'ACOG Committee Opinion 804 (2020) —— Physical Activity and Exercise During Pregnancy',
+        url: 'https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period',
+      },
+      {
+        label: 'ACOG Committee Opinion 462 (2010) —— Moderate Caffeine Consumption During Pregnancy',
+        url: 'https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2010/08/moderate-caffeine-consumption-during-pregnancy',
+      },
+      {
+        label: 'NHS —— Foods to avoid in pregnancy',
+        url: 'https://www.nhs.uk/pregnancy/keeping-well/foods-to-avoid/',
+      },
+      {
+        label: 'Aleman et al., Cochrane Database Syst Rev 2005 —— 卧床休息预防流产的综述（无获益证据）',
+        url: 'https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003576.pub2/full',
+      },
+    ],
+    related: ['period-exercise', 'coffee-dehydrate', 'wine-heart'],
   },
 
   // ─────────────────────────── 睡 ───────────────────────────
@@ -1257,7 +1289,7 @@ export const MYTHS: Myth[] = [
         url: 'https://pubmed.ncbi.nlm.nih.gov/31538328/',
       },
     ],
-    related: ['running-knees', 'women-lifting'],
+    related: ['running-knees', 'women-lifting', 'pregnancy-taboos'],
   },
 
   // ─────────────────────────── 生活 ───────────────────────────

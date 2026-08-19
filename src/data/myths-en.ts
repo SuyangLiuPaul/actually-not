@@ -1138,4 +1138,29 @@ export const MYTHS_EN: Record<string, MythText> = {
     }
   ]
 },
+  "pregnancy-taboos": {
+  "belief": "When you're pregnant you must avoid everything — coffee, crab, hawthorn — and ideally stay in bed the whole time",
+  "truth": "The evidence-based avoid list in pregnancy is short — alcohol, smoking, raw foods, high-mercury fish. Most taboos have no evidence, and bed rest can actually do harm.",
+  "detail": "The list of pregnancy restrictions with real evidence behind it is short: alcohol (no safe dose), smoking, raw meat and eggs and unpasteurized dairy (listeria, toxoplasma), large high-mercury fish, and caffeine capped at 200 mg a day (ACOG). The long folk list beyond that — crab being 'too cooling', hawthorn 'causing miscarriage', lychees, soy sauce 'darkening the baby's skin' — has no research support. More than half of early miscarriages are caused by chromosomal abnormalities in the embryo, not by anything the mother ate.\n\nBed rest is the bigger worry. A Cochrane review found no evidence that bed rest prevents miscarriage; trials of activity restriction for preterm-birth risk likewise found no benefit — and bed rest clearly increases the risk of blood clots, muscle loss, and bone loss. ACOG and SMFM do not recommend it as a safeguard. Exercise, on the other hand, is recommended: at least 150 minutes a week of moderate activity for women without complications lowers the risk of gestational diabetes and preeclampsia.\n\nCoffee deserves a caveat: ACOG holds that under 200 mg a day (about one and a half medium Americanos) has no clear link to miscarriage or preterm birth, though some meta-analyses say a dose relationship can't be ruled out. The sensible move is moderation — neither total abstinence nor unlimited refills. Phones and computers, hair dye, and everyday cosmetics are similar: non-ionizing radiation has no evidence of harming a fetus, and the skin absorption from hair dye is far too low to matter.",
+  "origin": "Obstetrics historically ran on a 'what if' logic: any bad outcome could be blamed on something the mother did, so every mishap added one more line to the taboo list. Layer on a culture of pregnancy protection and the quiet stigma around miscarriage, and 'better safe than sorry' snowballs. Many items on the list are essentially rare risks treated as certainties.",
+  "instead": "Follow the short list: no alcohol or smoking, cook meat and eggs through, drink pasteurized milk, skip high-mercury fish, keep coffee to one small cup a day. Stay active and keep exercising — don't lie still. If you have a cat, delegate the litter box (toxoplasma). For medications and checkups, listen to your OB — not the family group chat.",
+  "sources": [
+    {
+      "label": "ACOG Committee Opinion 804 (2020) — Physical Activity and Exercise During Pregnancy",
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period"
+    },
+    {
+      "label": "ACOG Committee Opinion 462 (2010) — Moderate Caffeine Consumption During Pregnancy",
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2010/08/moderate-caffeine-consumption-during-pregnancy"
+    },
+    {
+      "label": "NHS — Foods to avoid in pregnancy",
+      "url": "https://www.nhs.uk/pregnancy/keeping-well/foods-to-avoid/"
+    },
+    {
+      "label": "Aleman et al., Cochrane Database Syst Rev 2005 — bed rest for preventing miscarriage (no evidence of benefit)",
+      "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003576.pub2/full"
+    }
+  ]
+},
 }
