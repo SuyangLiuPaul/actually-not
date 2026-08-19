@@ -258,6 +258,16 @@ export function catEmoji(id: CategoryId): string {
   return CATEGORIES.find((c) => c.id === id)!.emoji
 }
 
+/** 每个分类的强调色（卡片/详情 chip 用，color-mix 后深浅色主题都安全） */
+export const CAT_ACCENT: Record<CategoryId, string> = {
+  eat: '#b3541e',
+  body: '#2f6f6a',
+  sleep: '#4a5a8a',
+  move: '#4d7a3a',
+  life: '#8a6d3b',
+  urgent: '#c13024',
+}
+
 export function stakesMeta(s: Stakes, locale: Locale): { label: string; hint: string; tone: string } {
   if (locale === 'en') return { ...STAKES_META_EN[s], tone: s }
   return STAKES_META[s]

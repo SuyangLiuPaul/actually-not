@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Strike } from './Strike'
 import { StakesDot } from './MythCard'
 import { mythsFor } from '../data/localized'
-import { categoryLabel, catEmoji, stakesMeta, STRINGS, pathFor, type Locale } from '../i18n'
+import { categoryLabel, catEmoji, CAT_ACCENT, stakesMeta, STRINGS, pathFor, type Locale } from '../i18n'
 import type { Myth } from '../types'
 
 export function MythDetail({
@@ -151,8 +151,11 @@ export function MythDetail({
           }}
         >
           <span
-            className="inline-flex items-center gap-1.5 text-xs font-medium"
-            style={{ color: 'var(--ink-faint)' }}
+            className="inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 text-xs font-medium"
+            style={{
+              background: `color-mix(in srgb, ${CAT_ACCENT[myth.category]} 12%, transparent)`,
+              color: `color-mix(in srgb, ${CAT_ACCENT[myth.category]} 55%, var(--ink-soft))`,
+            }}
           >
             <span aria-hidden="true">{catEmoji(myth.category)}</span>
             {catLabel}
@@ -209,6 +212,17 @@ export function MythDetail({
             </button>
           </div>
         </div>
+
+        {/* 分享图（红笔划掉那条的卡片图） */}
+        <img
+          src={locale === 'en' ? `/og/en/${myth.id}.png` : `/og/${myth.id}.png`}
+          alt={myth.belief}
+          width={1200}
+          height={630}
+          loading="lazy"
+          className="block w-full border-b"
+          style={{ borderColor: 'var(--rule)' }}
+        />
 
         <div className="px-5 pb-9 sm:px-7">
           {/* 你以为 */}

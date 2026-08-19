@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Strike } from './Strike'
-import { categoryLabel, catEmoji, stakesMeta, STRINGS, type Locale } from '../i18n'
+import { categoryLabel, catEmoji, CAT_ACCENT, stakesMeta, STRINGS, type Locale } from '../i18n'
 import type { Myth } from '../types'
 
 /** 把搜索词在文本里标出来 */
@@ -69,8 +69,11 @@ export function MythCard({
     >
       <div className="flex items-center justify-between gap-3">
         <span
-          className="inline-flex items-center gap-1.5 text-[11px] font-medium tracking-wide"
-          style={{ color: 'var(--ink-faint)' }}
+          className="inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 text-[11px] font-medium tracking-wide"
+          style={{
+            background: `color-mix(in srgb, ${CAT_ACCENT[myth.category]} 12%, transparent)`,
+            color: `color-mix(in srgb, ${CAT_ACCENT[myth.category]} 55%, var(--ink-soft))`,
+          }}
         >
           <span aria-hidden="true">{catEmoji(myth.category)}</span>
           {catLabel}
