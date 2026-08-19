@@ -247,7 +247,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.cnsoc.org/',
       },
     ],
-    related: ['bone-soup'],
+    related: ['bone-soup', 'postpartum-confinement'],
   },
   {
     id: 'egg-yolk',
@@ -880,7 +880,35 @@ export const MYTHS: Myth[] = [
         url: 'https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD003576.pub2/full',
       },
     ],
-    related: ['period-exercise', 'coffee-dehydrate', 'wine-heart'],
+    related: ['period-exercise', 'coffee-dehydrate', 'wine-heart', 'postpartum-confinement'],
+  },
+  {
+    id: 'postpartum-confinement',
+    category: 'body',
+    belief: '坐月子不能洗头洗澡、不能刷牙、不能开窗吹风，要捂着躺着，否则会落下月子病',
+    truth: '产后真正要注意的是卫生、活动、营养和情绪——「捂月子」没有依据，极端捂法每年都捂出产褥中暑。',
+    detail:
+      '所谓「月子病」——产后腰背酸痛、头痛、关节不适——更多和激素变化、抱娃姿势、睡眠碎片化有关，不是「受了风寒」。没有证据表明洗头洗澡刷牙会导致这些毛病。产褥期出汗多、有恶露，恰恰更需要清洁：淋浴（伤口愈合后）、刷牙、勤换洗，都是降低感染风险的正事。\n\n「捂」有实打实的危险：产褥中暑是中暑的一种，密闭高温的房间里再加厚衣被，几乎每年夏天都有产妇因此被送医甚至死亡的报道。「躺」同样不妙——产后血液处于高凝状态，长期卧床增加静脉血栓风险，而血栓正是孕产妇死亡的重要原因之一，早下床活动才是正规建议。饮食上催奶浓汤主要是水和脂肪，均衡吃饭比喝汤实在。\n\n要留余地：反对的是没依据的禁忌，不是休息本身。产后确实需要恢复——避免重体力劳动、护理伤口、42 天复查都不能省；约八分之一的产妇会出现产后抑郁，情绪持续低落需要被认真对待和筛查，而不是被说成「矫情」。ACOG 把产后照护定义为持续 12 周的过程，重点是恢复质量，不是行为禁忌。',
+    origin:
+      '坐月子诞生在另一个时代：没有抗生素、营养差、取暖难，产后感染（产褥热）曾是孕产妇的头号杀手。在那种条件下，少碰水、多捂盖是有朴素防护逻辑的。问题是居住和医疗条件早就变了，规则没有跟着变。',
+    instead:
+      '正常洗头洗澡刷牙（淋浴、及时吹干）、房间通风、均衡饮食、尽早下地活动；盯住真正要紧的信号：出血量、发热、伤口红肿、情绪持续两周以上的低落。42 天产后复查别跳过。家人能给的最好照顾，是分担夜奶和家务，不是没收手机和逼她躺着。',
+    stakes: 'risky',
+    sources: [
+      {
+        label: 'WHO (2022) —— 产后母婴照护建议（卫生、活动、并发症识别）',
+        url: 'https://www.who.int/publications/i/item/9789240045989',
+      },
+      {
+        label: 'ACOG Committee Opinion 736 (2018) —— Optimizing Postpartum Care（产后是持续 12 周的恢复过程）',
+        url: 'https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/05/optimizing-postpartum-care',
+      },
+      {
+        label: 'ACOG —— Postpartum Depression（约 1/8 产妇，需筛查和干预）',
+        url: 'https://www.acog.org/womens-health/faqs/postpartum-depression',
+      },
+    ],
+    related: ['pregnancy-taboos', 'soup-nutrition', 'fever-sweat'],
   },
 
   // ─────────────────────────── 睡 ───────────────────────────
@@ -1584,7 +1612,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.nhs.uk/conditions/fever-in-children/',
       },
     ],
-    related: ['alcohol-rub-fever'],
+    related: ['alcohol-rub-fever', 'postpartum-confinement'],
   },
   {
     id: 'alcohol-rub-fever',

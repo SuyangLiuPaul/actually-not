@@ -1163,4 +1163,25 @@ export const MYTHS_EN: Record<string, MythText> = {
     }
   ]
 },
+  "postpartum-confinement": {
+  "belief": "After giving birth you can't wash your hair, shower, brush your teeth, or open a window — you must stay bundled up in bed or you'll get lifelong 'confinement sickness'",
+  "truth": "What the postpartum period actually calls for is hygiene, activity, nutrition, and emotional care. 'Sweating it out' has no basis — and extreme bundling causes real cases of puerperal heat stroke every year.",
+  "detail": "The so-called 'confinement sickness' — back pain, headaches, aching joints after childbirth — has far more to do with hormonal shifts, carrying posture, and fragmented sleep than with 'catching a chill'. There's no evidence that washing your hair, showering, or brushing your teeth causes any of it. With heavy sweating and lochia, the postpartum period is exactly when hygiene matters most: showers (once wounds have healed), tooth-brushing, and clean clothes all lower infection risk.\n\nThe bundling carries real danger: puerperal heat stroke is a recognized form of heat stroke, and sealed, overheated rooms plus heavy clothing send new mothers to hospitals — with deaths reported nearly every summer. Staying in bed is no better: postpartum blood is in a hypercoagulable state, prolonged bed rest raises the risk of venous thrombosis (a leading cause of maternal death), and early mobilization is the standard advice. As for the lactation soups — they're mostly water and fat; eating balanced meals beats drinking broth.\n\nTo be fair: the objection is to baseless taboos, not to rest. Recovery is real — avoid heavy lifting, care for the wound, and don't skip the 6-week checkup. About 1 in 8 mothers develop postpartum depression, and two weeks of persistently low mood deserves screening and support, not dismissal as 'being dramatic'. ACOG frames postpartum care as a 12-week process focused on recovery quality, not behavior bans.",
+  "origin": "Confinement rules were born in a different era: no antibiotics, poor nutrition, no heating — and puerperal fever was the top killer of new mothers. Back then, minimizing contact with water and staying covered was a reasonable protective instinct. Housing and medicine have changed completely; the rules just didn't change with them.",
+  "instead": "Wash your hair, shower, brush your teeth (shower and dry off promptly), ventilate the room, eat balanced meals, and get up and moving early. Watch the signals that actually matter: bleeding volume, fever, redness at the wound, low mood lasting more than two weeks. Don't skip the 6-week checkup. The best care a family can offer is sharing night feeds and housework — not confiscating her phone and making her lie still.",
+  "sources": [
+    {
+      "label": "WHO (2022) — recommendations on maternal and newborn care for a positive postnatal experience",
+      "url": "https://www.who.int/publications/i/item/9789240045989"
+    },
+    {
+      "label": "ACOG Committee Opinion 736 (2018) — Optimizing Postpartum Care (a 12-week recovery process)",
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/05/optimizing-postpartum-care"
+    },
+    {
+      "label": "ACOG — Postpartum Depression (about 1 in 8 mothers; screening and care needed)",
+      "url": "https://www.acog.org/womens-health/faqs/postpartum-depression"
+    }
+  ]
+},
 }
