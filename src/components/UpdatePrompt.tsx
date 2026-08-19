@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useRegisterSW } from 'virtual:pwa-register/react'
+import { STRINGS, parsePath } from '../i18n'
 
 /**
  * 两种提示，都是右下角一条不挡路的小横幅：
@@ -7,6 +8,11 @@ import { useRegisterSW } from 'virtual:pwa-register/react'
  *  2. 首次装好、可离线使用 —— 出现几秒后自动消失
  */
 export function UpdatePrompt() {
+  // 只在客户端挂载，直接读路径判断语言
+  const [locale] = useState(() =>
+    typeof window !== 'undefined' ? parsePath(window.location.pathname).locale : 'zh',
+  )
+  const t = STRINGS[locale]
   const {
     offlineReady: [offlineReady, setOfflineReady],
     needRefresh: [needRefresh, setNeedRefresh],
@@ -46,9 +52,9 @@ export function UpdatePrompt() {
     >
       {needRefresh ? (
         <>
-          <p className="text-sm font-medium">有新内容</p>
+          <p className="text-sm font-medium">{t.updateNew}</p>
           <p className="mt-1 text-[13px]" style={{ color: 'var(--ink-soft)' }}>
-            条目或措辞有更新，刷新一下就能看到。
+            {t.updateNewBody}
           </p>
           <div className="mt-3 flex gap-2">
             <button
@@ -60,23 +66,23 @@ export function UpdatePrompt() {
               className="rounded-lg px-3 py-1.5 text-[13px] font-medium transition-transform active:scale-[0.97] disabled:opacity-60"
               style={{ background: 'var(--pen)', color: '#fff' }}
             >
-              {reloading ? '正在刷新…' : '刷新'}
+              {reloading ? t.updateReloading : t.updateReload}
             </button>
             <button
               onClick={dismiss}
               className="rounded-lg px-3 py-1.5 text-[13px] font-medium"
               style={{ color: 'var(--ink-soft)' }}
             >
-              以后再说
+              {t.updateLater}
             </button>
           </div>
         </>
       ) : (
         <p className="text-[13px]" style={{ color: 'var(--ink-soft)' }}>
           <span className="font-medium" style={{ color: 'var(--ink)' }}>
-            已经可以离线看了。
+            {t.updateOffline}
           </span>{' '}
-          没网也能打开。
+          {t.updateOfflineTail}
         </p>
       )}
     </div>

@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
- * 为每条内容生成一张 1200×630 的 OG 分享图，输出到 public/og/{id}.png。
+ * 为每条内容生成一张 1200×630 的 OG 分享图：
+ * 中文版输出到 public/og/{id}.png，英文版输出到 public/og/en/{id}.png。
  *
  *   node scripts/generate-og.mjs
  *
@@ -13,9 +14,11 @@ import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import sharp from 'sharp'
 import { MYTHS } from '../src/data/myths.ts'
+import { MYTHS_EN } from '../src/data/myths-en.ts'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const outDir = join(root, 'public', 'og')
+const outDirEn = join(root, 'public', 'og', 'en')
 
 const W = 1200
 const H = 630
@@ -23,6 +26,8 @@ const MARGIN = 88
 const TEXT_W = W - MARGIN * 2
 const SERIF = 'Songti SC, Noto Serif SC, STSong, serif'
 const SANS = 'PingFang SC, Helvetica Neue, sans-serif'
+const SERIF_EN = 'Georgia, Times New Roman, serif'
+const SANS_EN = 'Helvetica Neue, Arial, sans-serif'
 
 /** SVG 文本必须转义 */
 function esc(s) {
@@ -66,11 +71,28 @@ function wrap(text, perLine) {
   return lines
 }
 
+/** 英文按词折行：单词不切半 */
+function wrapWords(text, perLine) {
+  const lines = []
+  let line = ''
+  for (const word of text.split(/\s+/)) {
+    const candidate = line ? `${line} ${word}` : word
+    if (units(candidate) <= perLine) {
+      line = candidate
+    } else {
+      if (line) lines.push(line)
+      line = word
+    }
+  }
+  if (line) lines.push(line)
+  return lines
+}
+
 /** belief 的字号：先取行数最少的方案，行数相同时取最大字号（最多 3 行） */
-function layoutBelief(belief) {
+function layoutBelief(belief, wrapFn = wrap) {
   let best
   for (const fs of [64, 56, 48, 42]) {
-    const lines = wrap(belief, Math.floor(TEXT_W / fs))
+    const lines = wrapFn(belief, Math.floor(TEXT_W / fs))
     if (!best || lines.length < best.lines.length) best = { fs, lines }
     if (lines.length === 1) break
   }
@@ -78,10 +100,10 @@ function layoutBelief(belief) {
 }
 
 /** truth 固定 30px 两行，放不下就截断加省略号 */
-function layoutTruth(truth) {
+function layoutTruth(truth, wrapFn = wrap) {
   const fs = 30
   const perLine = Math.floor(TEXT_W / fs)
-  const lines = wrap(truth, perLine)
+  const lines = wrapFn(truth, perLine)
   if (lines.length <= 2) return { fs, lines }
   let last = lines[1]
   while (units(last + '…') > perLine) last = last.slice(0, -1)
@@ -103,9 +125,17 @@ function ruledLines() {
   return `<g stroke="#e2dcd1" stroke-width="1.5">${out}</g>`
 }
 
-function svg(m) {
-  const belief = layoutBelief(m.belief)
-  const truth = layoutTruth(m.truth)
+function svg(m, opts = {}) {
+  const {
+    serif = SERIF,
+    sans = SANS,
+    wrapFn = wrap,
+    header = '常识核对表',
+    footer = '其实不是 · 那些你以为对的生活常识',
+    headerSpacing = 6,
+  } = opts
+  const belief = layoutBelief(m.belief, wrapFn)
+  const truth = layoutTruth(m.truth, wrapFn)
 
   // belief 块垂直居中在上 2/3 区域（中线约 y=295）
   const lh = belief.fs * 1.55
@@ -115,7 +145,7 @@ function svg(m) {
       const y = firstBaseline + i * lh
       const w = units(line) * belief.fs
       return (
-        `<text x="${MARGIN}" y="${y.toFixed(1)}" font-family="${SERIF}" font-size="${belief.fs}" font-weight="700" fill="#1c1a17">${esc(line)}</text>\n    ` +
+        `<text x="${MARGIN}" y="${y.toFixed(1)}" font-family="${serif}" font-size="${belief.fs}" font-weight="700" fill="#1c1a17">${esc(line)}</text>\n    ` +
         strike(MARGIN, y - belief.fs * 0.32, w, belief.fs)
       )
     })
@@ -124,7 +154,7 @@ function svg(m) {
   const truthSvg = truth.lines
     .map(
       (line, i) =>
-        `<text x="${MARGIN}" y="${505 + i * 47}" font-family="${SANS}" font-size="${truth.fs}" fill="#55504a">${esc(line)}</text>`,
+        `<text x="${MARGIN}" y="${505 + i * 47}" font-family="${sans}" font-size="${truth.fs}" fill="#55504a">${esc(line)}</text>`,
     )
     .join('\n  ')
 
@@ -132,7 +162,7 @@ function svg(m) {
   <rect width="${W}" height="${H}" fill="#f7f4ee"/>
   ${ruledLines()}
 
-  <text x="${MARGIN}" y="110" font-family="${SANS}" font-size="26" font-weight="600" letter-spacing="6" fill="#c13024">常识核对表</text>
+  <text x="${MARGIN}" y="110" font-family="${sans}" font-size="26" font-weight="600" letter-spacing="${headerSpacing}" fill="#c13024">${esc(header)}</text>
 
   <g>
     ${beliefSvg}
@@ -140,13 +170,14 @@ function svg(m) {
 
   ${truthSvg}
 
-  <text x="${MARGIN}" y="592" font-family="${SANS}" font-size="22" fill="#948c80">其实不是 · 那些你以为对的生活常识</text>
+  <text x="${MARGIN}" y="592" font-family="${sans}" font-size="22" fill="#948c80">${esc(footer)}</text>
 </svg>
 `
 }
 
 async function main() {
   await mkdir(outDir, { recursive: true })
+  await mkdir(outDirEn, { recursive: true })
   let total = 0
   for (const m of MYTHS) {
     const buf = await sharp(Buffer.from(svg(m)), { density: 144 })
@@ -155,9 +186,33 @@ async function main() {
       .toBuffer()
     await writeFile(join(outDir, `${m.id}.png`), buf)
     total += buf.length
+
+    const en = MYTHS_EN[m.id]
+    if (!en) throw new Error(`OG：${m.id} 缺英文翻译`)
+    const bufEn = await sharp(
+      Buffer.from(
+        svg(
+          { belief: en.belief, truth: en.truth },
+          {
+            serif: SERIF_EN,
+            sans: SANS_EN,
+            wrapFn: wrapWords,
+            header: 'THE COMMON-SENSE CHECKLIST',
+            footer: 'Actually, Not · everyday things you thought were true',
+            headerSpacing: 3,
+          },
+        ),
+      ),
+      { density: 144 },
+    )
+      .resize(W, H)
+      .png({ compressionLevel: 9 })
+      .toBuffer()
+    await writeFile(join(outDirEn, `${m.id}.png`), bufEn)
+    total += bufEn.length
   }
   console.log(
-    `OG 图生成完毕：${MYTHS.length} 张 → public/og/，共 ${(total / 1024 / 1024).toFixed(1)} MB`,
+    `OG 图生成完毕：中英各 ${MYTHS.length} 张 → public/og/，共 ${(total / 1024 / 1024).toFixed(1)} MB`,
   )
 }
 

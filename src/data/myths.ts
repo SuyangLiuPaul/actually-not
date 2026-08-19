@@ -343,7 +343,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.nccih.nih.gov/health/detoxes-and-cleanses-what-you-need-to-know',
       },
     ],
-    related: ['msg', 'alkaline-diet', 'juice-fruit', 'magnet-bracelet'],
+    related: ['msg', 'alkaline-diet', 'juice-fruit', 'magnet-bracelet', 'craving-deficiency'],
   },
   {
     id: 'swallowed-gum',
@@ -389,7 +389,7 @@ export const MYTHS: Myth[] = [
         label: 'Hoover & Milich, J Abnorm Child Psychol 1994 —— 母亲期望效应实验',
       },
     ],
-    related: ['juice-fruit'],
+    related: ['juice-fruit', 'craving-deficiency'],
   },
   {
     id: 'carrot-vision',
@@ -457,6 +457,31 @@ export const MYTHS: Myth[] = [
     related: ['eight-glasses', 'porridge-stomach'],
   },
 
+  {
+    id: 'craving-deficiency',
+    category: 'eat',
+    belief: '特别想吃某样东西，说明身体缺它含有的营养',
+    truth: '渴望基本不来自营养缺乏——它更多是心理、激素和节食限制的产物。唯一的例外是缺铁导致的异食癖。',
+    detail:
+      '「想吃巧克力是缺镁」「想吃红肉是缺蛋白质」这类对应关系流传很广，但从生物-心理-社会角度系统梳理过证据的综述结论很清楚：食物渴望和营养缺乏之间没有可靠的对应。实验里能稳定预测渴望的是另一些因素：正在节食限制、情绪波动、以及刚看到闻到食物线索。\n\n唯一有扎实证据的例外：缺铁的人可能出现「异食癖」——特别想吃冰块、泥土这类没有营养的东西，补铁之后这种渴望会消失。注意方向是反的：缺什么偏想吃不含它的东西，这个机制和「身体缺什么就馋什么」恰好相反。',
+    origin:
+      '「身体比你自己更知道需要什么」听起来既神秘又体贴，还顺带赦免了嘴馋——不是我想吃，是身体需要。把欲望正当化的说法，从来传得都快。',
+    instead:
+      '想吃就吃一点，没关系。频繁失控的嘴馋，先检查睡眠、压力和是不是吃得太克制；如果突然特别想吃冰、墙皮这类东西，去查一下铁蛋白。',
+    stakes: 'harmless',
+    sources: [
+      {
+        label: 'Rogers & Smit, Pharmacol Biochem Behav 2000 —— 从生物-心理-社会视角审视食物渴望的证据',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/10837838/',
+      },
+      {
+        label: 'Mabe et al., Transfus Med 2022 —— 异食癖（嗜冰）与缺铁的关联',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/35750589/',
+      },
+    ],
+    related: ['sugar-hyper', 'detox'],
+  },
+
   // ─────────────────────────── 身体 ───────────────────────────
   {
     id: 'wet-hair',
@@ -480,7 +505,7 @@ export const MYTHS: Myth[] = [
         url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10324571/',
       },
     ],
-    related: ['vitamin-c'],
+    related: ['vitamin-c', 'sick-yearly'],
   },
   {
     id: 'knuckle-crack',
@@ -635,6 +660,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.cdc.gov/antibiotic-use/colds.html',
       },
     ],
+    related: ['sick-yearly'],
   },
   {
     id: 'vitamin-c',
@@ -654,7 +680,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD000980.pub4/full',
       },
     ],
-    related: ['wet-hair', 'flu-shot'],
+    related: ['wet-hair', 'flu-shot', 'sick-yearly'],
   },
   {
     id: 'flu-shot',
@@ -802,6 +828,27 @@ export const MYTHS: Myth[] = [
       },
     ],
     related: ['mmr-autism', 'phone-radiation'],
+  },
+
+  {
+    id: 'sick-yearly',
+    category: 'body',
+    belief: '每年感冒生病一两次是好事，把病「发出来」，顺便锻炼免疫力',
+    truth: '生病不「排毒」也不「练兵」——感冒一次次得，只是因为感冒病毒有 200 多种，每种都得单独免疫一次。',
+    detail:
+      '普通感冒由 200 多种不同的病毒引起（鼻病毒、冠状病毒、腺病毒……），感染一次只对那一株产生比较牢固的免疫，下一株来了照样中招。没有任何生理机制需要靠「每年病一次」来维持，也没有证据说经常生病的人免疫系统更强。真正和抵抗力相关的，是睡眠、疫苗和基础疾病管理这些不怎么传奇的东西。\n\n要留余地：「卫生假说」确实讨论过生命早期接触微生物与过敏风险的关系——但那是关于环境中的微生物暴露，而且是流行病学层面的相关性，得不出「主动生病有益」的结论。',
+    origin:
+      '人们观察到小孩常感冒、大人感冒少，就脑补出「病多了就练出来了」。大人感冒少，是因为几十年里把常见毒株都碰过一遍了——是「碰巧都见过了」，不是「生病练出来的」。',
+    instead:
+      '感冒不值得追求，也不值得硬扛出自豪感。睡好、打流感疫苗、勤洗手；真病了就休息补水，不用安慰自己「这是身体在变好」。',
+    stakes: 'harmless',
+    sources: [
+      {
+        label: 'CDC —— About Common Cold（200 多种病毒可致普通感冒）',
+        url: 'https://www.cdc.gov/common-cold/about/index.html',
+      },
+    ],
+    related: ['antibiotics-cold', 'vitamin-c', 'wet-hair'],
   },
 
   // ─────────────────────────── 睡 ───────────────────────────

@@ -6,8 +6,9 @@
 
 ## 0. 一句话
 
-「其实不是」是一个中文静态站点，收录 81 条**听起来天经地义、但证据并不支持**的生活常识
+「其实不是」是一个中英双语静态站点，收录 83 条**听起来天经地义、但证据并不支持**的生活常识
 （早上不吃饭伤身、洗完头不吹干有湿气、骨头汤补钙……），每条附出处。
+中文版在根路径，英文版（Actually, Not）在 `/en` 前缀下，页头可互相切换。
 纯前端，无后端，无数据库，无环境依赖。
 
 | | |
@@ -131,8 +132,11 @@ actually-not/
 │
 ├── src/
 │   ├── data/
-│   │   ├── myths.ts         ★ 全部 81 条内容都在这一个文件里
-│   │   └── myths.test.ts    内容完整性测试（676 条断言）
+│   │   ├── myths.ts         ★ 全部 83 条中文内容都在这一个文件里
+│   │   ├── myths-en.ts      ★ 每条对应的英文翻译（Record<id, 文字字段>）
+│   │   ├── localized.ts     mythsFor(locale)：按语言合并条目
+│   │   └── myths.test.ts    内容完整性测试（1254 条断言，含翻译完整性）
+│   ├── i18n.ts              ★ 全部 UI 文案（中英）、分类/风险英文名、/en 路由工具
 │   ├── types.ts             数据结构 + 分类 + 风险等级的定义
 │   ├── hooks/
 │   │   └── useReadProgress.ts 已读进度（localStorage，自动过滤已删除的 id）
@@ -155,16 +159,16 @@ actually-not/
 │
 ├── public/                  会被原样复制到 dist/
 │   ├── icons/               ★ 生成物，不要手改
-│   ├── og/                  ★ 生成物：每条的 OG 分享图（npm run og）
+│   ├── og/                  ★ 生成物：每条的 OG 分享图（npm run og），en/ 子目录是英文版
 │   ├── favicon.ico/.svg     ★ 生成物
 │   ├── og.png               ★ 生成物
 │   ├── _redirects           SPA 回退（Netlify 直传时生效）
 │   └── _headers             缓存与安全头（Netlify 直传时生效）
 │
 ├── scripts/
-│   ├── prerender.ts         ★ 构建期预渲染 62 页 + sitemap.xml + robots.txt
+│   ├── prerender.ts         ★ 构建期预渲染 170 页（中英 85×2）+ hreflang + sitemap.xml + robots.txt
 │   ├── generate-icons.mjs   从 assets/*.svg 生成全部图标
-│   ├── generate-og.mjs      为每条内容生成 OG 分享图（改了文案要重跑）
+│   ├── generate-og.mjs      为每条内容生成中英两张 OG 分享图（改了文案要重跑）
 │   ├── check-links.mts      出处链接体检（真实浏览器，不是 curl）
 │   ├── deploy.sh            手动部署
 │   └── status.sh            状态总览
@@ -180,7 +184,8 @@ actually-not/
 
 | 你要做的事 | 改这里 |
 |---|---|
-| 加 / 改 / 删一条内容 | `src/data/myths.ts`，然后 `npm test` 和 `npm run og` |
+| 加 / 改 / 删一条内容 | `src/data/myths.ts` + `src/data/myths-en.ts`（英文翻译必须同步，测试会挡），然后 `npm test` 和 `npm run og` |
+| 改界面文案 | `src/i18n.ts`（中英两边都要改，T 类型会校验） |
 | 加一个新分类 | `src/types.ts` 的 `CATEGORIES` |
 | 改配色、深浅色 | `src/index.css` 顶部的 CSS 变量 |
 | 改卡片长相 | `src/components/MythCard.tsx` |
@@ -212,6 +217,11 @@ actually-not/
 ```
 
 写完跑 `npm test`，它会检查 id 唯一性、字段非空、出处存在且是合法 https 等等。
+
+**加条目必须同时加英文翻译**：在 `src/data/myths-en.ts` 里按同一个 id 补
+`belief / truth / detail / origin / instead / sources` 六个文字字段
+（`sources` 的 `url` 必须和中文一致，`label` 翻成英文），然后重跑 `npm run og`
+（中英两张分享图一起生成）。缺翻译或多翻译测试都会挡。
 
 ---
 
@@ -324,11 +334,14 @@ npm run preview
 
 ## 10. 当前状态
 
-- 81 条内容，6 个分类（吃 22 / 身体 17 / 生活 13 / 关键时刻 9 / 运动 11 / 睡 9）
+- 83 条内容，6 个分类（吃 23 / 身体 18 / 生活 13 / 运动 11 / 关键时刻 9 / 睡 9）
 - 其中 25 条标记为「可能有害」
+- **中英双语**：中文版在根路径，英文版在 `/en` 前缀（`/en`、`/en/quiz`、`/en/{id}`），
+  全部 UI 文案在 `src/i18n.ts`，条目翻译在 `src/data/myths-en.ts`；
+  页面互链 hreflang，英文条目的 OG 图在 `public/og/en/`
 - 所有出处链接都做过真实浏览器体检（`npm run links`）；失效的已修，
   确认不了的只保留文献信息、不放死链；GitHub Actions 每月自动复查
-- 真实路径路由 + 63 页预渲染 + sitemap/robots；旧 `#/xxx` 链接自动重写
+- 真实路径路由 + 170 页预渲染（中英）+ sitemap/robots；旧 `#/xxx` 链接自动重写
 - 已读进度、详情分享按钮、搜索高亮、相关条目、详情页纠错入口、
   测验「你中了几条」（/quiz + 成绩分享图）、FAQ JSON-LD 结构化数据、
   PWA「随便看一条」快捷方式都已上线

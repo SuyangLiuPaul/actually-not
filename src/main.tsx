@@ -4,16 +4,18 @@ import './index.css'
 import App from './App.tsx'
 import { ErrorBoundary } from './components/ErrorBoundary.tsx'
 import { UpdatePrompt } from './components/UpdatePrompt.tsx'
-import { MYTHS } from './data/myths.ts'
+import { mythsFor } from './data/localized.ts'
+import { parsePath } from './i18n.ts'
 
 const container = document.getElementById('root')
 if (!container) throw new Error('找不到 #root 挂载点')
 
-// 结构化数据：hash 路由的深链搜索引擎抓不到，FAQ JSON-LD 帮它理解每条问答
+// 结构化数据：每条内容以 FAQ JSON-LD 暴露给搜索引擎；语言跟着当前页面走
+const locale = parsePath(window.location.pathname).locale
 const faqLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: MYTHS.map((m) => ({
+  mainEntity: mythsFor(locale).map((m) => ({
     '@type': 'Question',
     name: m.belief,
     acceptedAnswer: { '@type': 'Answer', text: `${m.truth}\n\n${m.detail}` },

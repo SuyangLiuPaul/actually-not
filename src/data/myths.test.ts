@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { MYTHS } from './myths'
+import { MYTHS_EN } from './myths-en'
 import { CATEGORIES, STAKES_META, type Myth } from '../types'
 
 const CATEGORY_IDS = new Set(CATEGORIES.map((c) => c.id))
@@ -130,5 +131,50 @@ describe('OG 分享图', () => {
   it('每条都有对应的 public/og/{id}.png（加条目后要重跑 npm run og）', () => {
     const missing = MYTHS.filter((m) => !OG_FILES.has(`${m.id}.png`)).map((m) => m.id)
     expect(missing).toEqual([])
+  })
+})
+
+describe('英文翻译', () => {
+  const OG_EN_FILES = new Set(
+    Object.keys(import.meta.glob('../../public/og/en/*.png')).map((p) => p.split('/').pop()),
+  )
+
+  it('每条中文条目都有英文翻译，且没有多出来的翻译', () => {
+    const missing = MYTHS.filter((m) => !MYTHS_EN[m.id]).map((m) => m.id)
+    const extra = Object.keys(MYTHS_EN).filter((id) => !MYTHS.some((m) => m.id === id))
+    expect(missing).toEqual([])
+    expect(extra).toEqual([])
+  })
+
+  describe.each(MYTHS.map((m) => [m.id, m] as const))('%s', (id, myth: Myth) => {
+    it('翻译各字段非空', () => {
+      const en = MYTHS_EN[id]
+      expect(en, `${id} 缺英文翻译`).toBeDefined()
+      for (const field of TEXT_FIELDS) {
+        expect(en[field].trim().length, `${id} 的 ${field} 翻译太短`).toBeGreaterThanOrEqual(5)
+      }
+    })
+
+    it('出处链接与中文一致，出处说明也有翻译', () => {
+      const en = MYTHS_EN[id]
+      expect(en.sources.length).toBe(myth.sources.length)
+      for (let i = 0; i < myth.sources.length; i++) {
+        expect(en.sources[i].url).toBe(myth.sources[i].url)
+        expect(en.sources[i].label.trim().length).toBeGreaterThan(4)
+      }
+    })
+
+    it('正文里没有占位符', () => {
+      const en = MYTHS_EN[id]
+      for (const field of TEXT_FIELDS) {
+        for (const p of PLACEHOLDERS) {
+          expect(en[field]).not.toMatch(p)
+        }
+      }
+    })
+
+    it('有对应的 public/og/en/{id}.png', () => {
+      expect(OG_EN_FILES.has(`${id}.png`)).toBe(true)
+    })
   })
 })

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Strike } from './Strike'
-import { CATEGORIES, STAKES_META, type Myth } from '../types'
+import { categoryLabel, catEmoji, stakesMeta, STRINGS, type Locale } from '../i18n'
+import type { Myth } from '../types'
 
 /** 把搜索词在文本里标出来 */
 export function Highlight({ text, query }: { text: string; query: string }) {
@@ -35,17 +36,20 @@ export function MythCard({
   index,
   read = false,
   query = '',
+  locale,
   onOpen,
 }: {
   myth: Myth
   index: number
   read?: boolean
   query?: string
+  locale: Locale
   onOpen: () => void
 }) {
   const [hover, setHover] = useState(false)
-  const cat = CATEGORIES.find((c) => c.id === myth.category)!
-  const stakes = STAKES_META[myth.stakes]
+  const t = STRINGS[locale]
+  const catLabel = categoryLabel(myth.category, locale)
+  const stakes = stakesMeta(myth.stakes, locale)
 
   return (
     <button
@@ -68,8 +72,8 @@ export function MythCard({
           className="inline-flex items-center gap-1.5 text-[11px] font-medium tracking-wide"
           style={{ color: 'var(--ink-faint)' }}
         >
-          <span aria-hidden="true">{cat.emoji}</span>
-          {cat.label}
+          <span aria-hidden="true">{catEmoji(myth.category)}</span>
+          {catLabel}
         </span>
         <StakesDot tone={stakes.tone} label={stakes.label} />
       </div>
@@ -88,7 +92,7 @@ export function MythCard({
           className="flex items-center gap-1.5 text-[13px] font-medium transition-colors"
           style={{ color: hover ? 'var(--pen)' : 'var(--ink-faint)' }}
         >
-          其实不是
+          {t.cardCta}
           <svg
             width="14"
             height="14"
@@ -123,7 +127,7 @@ export function MythCard({
                 strokeLinejoin="round"
               />
             </svg>
-            已读
+            {t.readBadge}
           </span>
         )}
       </div>

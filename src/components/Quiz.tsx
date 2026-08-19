@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Strike } from './Strike'
-import { MYTHS } from '../data/myths'
+import { mythsFor } from '../data/localized'
+import { STRINGS, type Locale, type T } from '../i18n'
 import type { Myth } from '../types'
 
 /**
@@ -12,20 +13,13 @@ const QUIZ_LEN = 10
 
 type Phase = 'start' | 'answering' | 'result'
 
-function pickRandom(): Myth[] {
-  const pool = [...MYTHS]
+function pickRandom(locale: Locale): Myth[] {
+  const pool = [...mythsFor(locale)]
   for (let i = pool.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1))
     ;[pool[i], pool[j]] = [pool[j], pool[i]]
   }
   return pool.slice(0, QUIZ_LEN)
-}
-
-function verdict(n: number): string {
-  if (n <= 2) return '你不太好骗。'
-  if (n <= 5) return '正常人水平——这些说法本来就设计得很可信。'
-  if (n <= 8) return '过半了。没关系，每一条当初都是有头有脸的传言。'
-  return '几乎全中。这个站就是为你写的。'
 }
 
 /** 手写感的红笔线（和 Strike 同一个伪随机思路） */
@@ -60,7 +54,7 @@ function wavyLine(
 }
 
 /** 成绩分享图：1200×630，纸墨红笔风格，和站点 og 图一套语言 */
-function drawScoreImage(score: number, total: number): Promise<Blob | null> {
+function drawScoreImage(score: number, total: number, t: T): Promise<Blob | null> {
   const W = 1200
   const H = 630
   const cv = document.createElement('canvas')
@@ -86,37 +80,45 @@ function drawScoreImage(score: number, total: number): Promise<Blob | null> {
 
   ctx.fillStyle = '#cf3a30'
   ctx.font = `600 26px ${sans}`
-  ctx.fillText('常识核对表 · 你中了几条', 88, 152)
+  ctx.fillText(t.quizImgHeader, 88, 152)
 
   // 成绩
   ctx.fillStyle = '#1c1a17'
   ctx.font = `700 110px ${serif}`
-  ctx.fillText(`${total} 条里中过 ${score} 条`, 88, 330)
+  const scoreText = t.quizImgScore(score, total)
+  // 英文句子比中文长，字号自适应缩一点
+  if (ctx.measureText(scoreText).width > 1024) {
+    ctx.font = `700 84px ${serif}`
+  }
+  ctx.fillText(scoreText, 88, 330)
   ctx.strokeStyle = '#cf3a30'
   ctx.lineWidth = 7
   ctx.lineCap = 'round'
   ctx.globalAlpha = 0.88
-  wavyLine(ctx, 84, 292, 820, score + 7)
+  wavyLine(ctx, 84, 292, Math.min(ctx.measureText(scoreText).width, 1000), score + 7)
   ctx.globalAlpha = 1
 
   ctx.fillStyle = '#55504a'
   ctx.font = `400 34px ${sans}`
-  ctx.fillText(verdict(score), 88, 436)
+  ctx.fillText(t.quizVerdict(score), 88, 436)
 
   ctx.fillStyle = '#8c857c'
   ctx.font = `400 27px ${sans}`
-  ctx.fillText('其实不是 · 每条附出处 · actually-not.netlify.app/quiz', 88, 522)
+  ctx.fillText(t.quizImgFooter, 88, 522)
 
   return new Promise((resolve) => cv.toBlob((b) => resolve(b), 'image/png'))
 }
 
 export function Quiz({
+  locale,
   onClose,
   onOpenMyth,
 }: {
+  locale: Locale
   onClose: () => void
   onOpenMyth: (id: string) => void
 }) {
+  const t = STRINGS[locale]
   const panelRef = useRef<HTMLDivElement>(null)
   const [phase, setPhase] = useState<Phase>('start')
   const [items, setItems] = useState<Myth[]>([])
@@ -129,7 +131,7 @@ export function Quiz({
   const score = believed.filter(Boolean).length
 
   const restart = () => {
-    setItems(pickRandom())
+    setItems(pickRandom(locale))
     setStep(0)
     setBelieved([])
     setCopied(false)
@@ -197,8 +199,7 @@ export function Quiz({
   }
 
   // 注意别在渲染期碰 window：这个组件会被预渲染（SSR）
-  const shareText = () =>
-    `我在「其实不是」的常识测验里 ${items.length} 条中过 ${score} 条——你呢？ ${window.location.origin}/quiz`
+  const shareText = () => t.quizShareText(score, items.length, window.location.origin)
 
   const copyResult = async () => {
     try {
@@ -219,16 +220,16 @@ export function Quiz({
 
   const makeImage = async () => {
     if (img) return
-    const blob = await drawScoreImage(score, items.length)
+    const blob = await drawScoreImage(score, items.length, t)
     if (blob) setImg({ url: URL.createObjectURL(blob), blob })
   }
 
   const shareImage = async () => {
     if (!img) return
-    const file = new File([img.blob], '你中了几条.png', { type: 'image/png' })
+    const file = new File([img.blob], t.quizImgFile(score, items.length), { type: 'image/png' })
     if (navigator.canShare?.({ files: [file] })) {
       try {
-        await navigator.share({ files: [file], title: '你中了几条｜其实不是' })
+        await navigator.share({ files: [file], title: t.quizTitle })
       } catch {
         // 用户取消，不用做任何事
       }
@@ -242,7 +243,7 @@ export function Quiz({
       className="fixed inset-0 z-50 flex items-end justify-center sm:items-center sm:p-6"
       role="dialog"
       aria-modal="true"
-      aria-label="你中了几条"
+      aria-label={t.quizName}
     >
       <div
         className="absolute inset-0"
@@ -273,11 +274,11 @@ export function Quiz({
             style={{ color: 'var(--ink-faint)' }}
             aria-live="polite"
           >
-            {phase === 'answering' ? `第 ${step + 1} / ${items.length} 条` : '你中了几条'}
+            {phase === 'answering' ? t.quizProgress(step + 1, items.length) : t.quizName}
           </span>
           <button
             onClick={onClose}
-            aria-label="关闭"
+            aria-label={t.close}
             className="grid h-8 w-8 place-items-center rounded-lg transition-colors"
             style={{ color: 'var(--ink-soft)' }}
             onMouseEnter={(e) => (e.currentTarget.style.background = 'var(--rule)')}
@@ -302,24 +303,23 @@ export function Quiz({
                 className="text-[2rem] leading-[1.3] font-bold sm:text-[2.5rem]"
                 style={{ fontFamily: 'var(--font-serif)' }}
               >
-                你中了几条？
+                {t.quizName}
               </p>
               <p
                 className="mx-auto mt-4 max-w-[40ch] text-[15px] leading-[1.85]"
                 style={{ color: 'var(--ink-soft)' }}
               >
-                随机抽 {QUIZ_LEN} 条，只看那句「你以为」，回答你信不信过。
-                最后逐条对答案——每条都有出处。
+                {t.quizIntro(QUIZ_LEN)}
               </p>
               <button
                 onClick={restart}
                 className="mt-7 inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-medium transition-transform active:scale-[0.97]"
                 style={{ background: 'var(--pen)', color: '#fff' }}
               >
-                开始
+                {t.quizStart}
               </button>
               <p className="mt-4 text-[12px]" style={{ color: 'var(--ink-faint)' }}>
-                不记分、不上传，答完只在你自己设备上
+                {t.quizPrivacy}
               </p>
             </div>
           )}
@@ -331,7 +331,7 @@ export function Quiz({
                 className="text-[11px] font-semibold tracking-[0.14em] uppercase"
                 style={{ color: 'var(--ink-faint)' }}
               >
-                这句话你信过吗
+                {t.quizQuestion}
               </p>
               <p
                 className="mt-3 min-h-[5.5rem] text-[1.35rem] leading-[1.6] font-medium sm:text-[1.6rem]"
@@ -351,7 +351,7 @@ export function Quiz({
                     background: 'var(--pen-soft)',
                   }}
                 >
-                  我信过
+                  {t.quizYes}
                 </button>
                 <button
                   onClick={() => answer(false)}
@@ -362,7 +362,7 @@ export function Quiz({
                     background: 'var(--paper)',
                   }}
                 >
-                  我没信过
+                  {t.quizNo}
                 </button>
               </div>
             </div>
@@ -376,10 +376,10 @@ export function Quiz({
                   className="text-[2rem] leading-[1.3] font-bold sm:text-[2.5rem]"
                   style={{ fontFamily: 'var(--font-serif)' }}
                 >
-                  {items.length} 条里中过 {score} 条
+                  {t.quizScore(score, items.length)}
                 </p>
                 <p className="mt-3 text-[15px]" style={{ color: 'var(--ink-soft)' }}>
-                  {verdict(score)}
+                  {t.quizVerdict(score)}
                 </p>
                 <div className="mt-6 flex flex-wrap items-center justify-center gap-2.5">
                   <button
@@ -387,7 +387,7 @@ export function Quiz({
                     className="rounded-lg px-4 py-2.5 text-sm font-medium transition-transform active:scale-[0.97]"
                     style={{ background: 'var(--pen)', color: '#fff' }}
                   >
-                    {copied ? '✓ 已复制' : '复制战绩'}
+                    {copied ? t.quizCopied : t.quizCopy}
                   </button>
                   <button
                     onClick={makeImage}
@@ -398,14 +398,14 @@ export function Quiz({
                       background: 'var(--paper)',
                     }}
                   >
-                    生成成绩图
+                    {t.quizMakeImage}
                   </button>
                   <button
                     onClick={restart}
                     className="rounded-lg px-4 py-2.5 text-sm font-medium"
                     style={{ color: 'var(--ink-faint)' }}
                   >
-                    再测一次
+                    {t.quizRestart}
                   </button>
                 </div>
               </div>
@@ -415,7 +415,7 @@ export function Quiz({
                 <div className="mt-6">
                   <img
                     src={img.url}
-                    alt={`成绩图：${items.length} 条里中过 ${score} 条`}
+                    alt={t.quizImgAlt(score, items.length)}
                     className="w-full rounded-lg border"
                     style={{ borderColor: 'var(--rule)' }}
                   />
@@ -426,12 +426,12 @@ export function Quiz({
                         className="rounded-lg px-4 py-2 text-[13px] font-medium"
                         style={{ background: 'var(--pen)', color: '#fff' }}
                       >
-                        直接分享
+                        {t.quizShareImage}
                       </button>
                     )}
                     <a
                       href={img.url}
-                      download={`你中了几条-${score}of${items.length}.png`}
+                      download={t.quizImgFile(score, items.length)}
                       className="rounded-lg border px-4 py-2 text-[13px] font-medium"
                       style={{
                         borderColor: 'var(--rule-strong)',
@@ -439,7 +439,7 @@ export function Quiz({
                         background: 'var(--paper)',
                       }}
                     >
-                      保存图片
+                      {t.quizSaveImage}
                     </a>
                   </div>
                 </div>
@@ -478,7 +478,7 @@ export function Quiz({
                           : { background: 'var(--slate-soft)', color: 'var(--slate)' }
                       }
                     >
-                      {believed[i] ? '你信过' : '没信过'}
+                      {believed[i] ? t.quizBelieved : t.quizNotBelieved}
                     </span>
                   </button>
                 ))}
@@ -488,7 +488,7 @@ export function Quiz({
                 className="mt-5 text-center text-[12px]"
                 style={{ color: 'var(--ink-faint)' }}
               >
-                点开任意一条看证据和出处
+                {t.quizReviewHint}
               </p>
             </div>
           )}

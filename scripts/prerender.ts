@@ -1,10 +1,11 @@
 /**
  * 预渲染：为首页和每一条内容生成真实路径的独立 HTML
- *（各自的 title / description / canonical / og），并生成 sitemap.xml 和 robots.txt。
+ *（各自的 title / description / canonical / og / hreflang），并生成 sitemap.xml 和 robots.txt。
+ * 中文版路径不变，英文版全部在 /en 前缀下，一一对应。
  *
  * 由 vite.config.ts 里的 prerenderPlugin 在构建末尾调用。
  * 必须跑在 VitePWA 生成 sw.js 之前（插件数组里排它前面），
- * 这样 62 个页面才会进入 Service Worker 的预缓存清单。
+ * 这样全部页面才会进入 Service Worker 的预缓存清单。
  */
 import { mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
@@ -32,6 +33,24 @@ function esc(s: string): string {
     .replace(/"/g, '&quot;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
+}
+
+/** 英文页 = /en 或 /en/... 前缀 */
+function isEn(path: string): boolean {
+  return path === '/en' || path.startsWith('/en/')
+}
+
+/** 任一语言的路径 → 对应中文版路径 */
+function zhPathOf(path: string): string {
+  if (path === '/en') return '/'
+  if (path.startsWith('/en/')) return path.slice(3)
+  return path
+}
+
+/** 任一语言的路径 → 对应英文版路径 */
+function enPathOf(path: string): string {
+  const zh = zhPathOf(path)
+  return zh === '/' ? '/en' : `/en${zh}`
 }
 
 /**
@@ -76,6 +95,23 @@ function applyMeta(html: string, route: Route): string {
       `$1${imageAlt}$2`,
     )
   }
+  // 语言：英文页改 <html lang> 和 og:locale
+  if (isEn(route.path)) {
+    html = replaceChecked(html, /<html lang="zh-CN">/, '<html lang="en">')
+    html = replaceChecked(
+      html,
+      /(<meta\s+property="og:locale"\s+content=")[^"]*(")/,
+      '$1en_US$2',
+    )
+  }
+  // hreflang：中英页面一一对应，x-default 指向中文版
+  const zhUrl = pageUrl(zhPathOf(route.path))
+  const enUrl = pageUrl(enPathOf(route.path))
+  const alternates =
+    `<link rel="alternate" hreflang="zh-CN" href="${zhUrl}" />\n    ` +
+    `<link rel="alternate" hreflang="en" href="${enUrl}" />\n    ` +
+    `<link rel="alternate" hreflang="x-default" href="${zhUrl}" />`
+  html = replaceChecked(html, /(<link\s+rel="canonical"[^>]*\/>)/, `$1\n    ${alternates}`)
   return html
 }
 
@@ -95,7 +131,7 @@ export async function prerender(distDir: string, ssrDir: string): Promise<void> 
   for (const route of ssr.ROUTES) {
     const body = ssr.render(route.path)
     let html = template.replace('<div id="root"></div>', `<div id="root">${body}</div>`)
-    if (route.path !== '/') html = applyMeta(html, route)
+    html = applyMeta(html, route)
     const file =
       route.path === '/' ? join(distDir, 'index.html') : join(distDir, route.path.slice(1), 'index.html')
     mkdirSync(dirname(file), { recursive: true })

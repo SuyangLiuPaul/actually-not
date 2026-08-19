@@ -3,21 +3,25 @@ import { renderToString } from 'react-dom/server'
 import App from './App'
 import { ErrorBoundary } from './components/ErrorBoundary'
 import { MYTHS } from './data/myths'
+import { mythsFor } from './data/localized'
 
 /**
  * 预渲染入口（只在构建时运行，不进客户端 bundle）。
  * 客户端通过 main.tsx 的 hydrateRoot 接管生成的 HTML。
  * UpdatePrompt 依赖 Service Worker，刻意不在 SSR 图里。
+ * 英文版全部走 /en 前缀，与中文版一一对应。
  */
 
 export interface PrerenderRoute {
   path: string
   title: string
   description: string
-  /** 每条内容自己的分享图（/og/{id}.png），省略时用站点默认 og.png */
+  /** 每条内容自己的分享图（/og/{id}.png、/og/en/{id}.png），省略时用站点默认 og.png */
   image?: string
   imageAlt?: string
 }
+
+const MYTHS_EN = mythsFor('en')
 
 export const ROUTES: PrerenderRoute[] = [
   {
@@ -37,6 +41,24 @@ export const ROUTES: PrerenderRoute[] = [
     description: m.truth,
     image: `/og/${m.id}.png`,
     imageAlt: `「${m.belief}」——其实不是`,
+  })),
+  {
+    path: '/en',
+    title: 'Actually, Not · Everyday things you thought were true',
+    description: `Skipping breakfast wrecks your stomach? Bone soup is full of calcium? ${MYTHS_EN.length} everyday claims that sound self-evident but aren't backed by evidence — each with sources.`,
+  },
+  {
+    path: '/en/quiz',
+    title: 'How many got you? | Actually, Not',
+    description:
+      'We draw 10 random everyday claims, ask if you ever believed them, then go through the answers one by one — every one with sources.',
+  },
+  ...MYTHS_EN.map((m) => ({
+    path: `/en/${m.id}`,
+    title: `${m.belief} | Actually, Not`,
+    description: m.truth,
+    image: `/og/en/${m.id}.png`,
+    imageAlt: `"${m.belief}" — actually, not`,
   })),
 ]
 

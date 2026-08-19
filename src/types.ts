@@ -36,6 +36,9 @@ export interface Myth {
   related?: string[]
 }
 
+/** 条目里的文字部分 —— 英文版（myths-en.ts）按 id 提供同一份文字的翻译 */
+export type MythText = Pick<Myth, 'belief' | 'truth' | 'detail' | 'origin' | 'instead' | 'sources'>
+
 export interface Category {
   id: CategoryId
   label: string

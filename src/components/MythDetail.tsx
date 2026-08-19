@@ -1,13 +1,15 @@
 import { useEffect, useRef, useState } from 'react'
 import { Strike } from './Strike'
 import { StakesDot } from './MythCard'
-import { MYTHS } from '../data/myths'
-import { CATEGORIES, STAKES_META, type Myth } from '../types'
+import { mythsFor } from '../data/localized'
+import { categoryLabel, catEmoji, stakesMeta, STRINGS, pathFor, type Locale } from '../i18n'
+import type { Myth } from '../types'
 
 export function MythDetail({
   myth,
   index,
   read,
+  locale,
   onClose,
   onPrev,
   onNext,
@@ -17,6 +19,7 @@ export function MythDetail({
   myth: Myth
   index: number
   read: boolean
+  locale: Locale
   onClose: () => void
   onPrev?: () => void
   onNext?: () => void
@@ -72,13 +75,14 @@ export function MythDetail({
   }, [onClose, onPrev, onNext])
 
   // 优先调起系统分享，不行就复制深链
+  const t = STRINGS[locale]
   const share = async () => {
-    const url = `${window.location.origin}/${myth.id}`
+    const url = `${window.location.origin}${pathFor(locale, myth.id)}`
     if (navigator.share) {
       try {
         await navigator.share({
-          title: `其实不是：${myth.belief}`,
-          text: `你以为「${myth.belief}」？其实——${myth.truth}`,
+          title: t.shareNativeTitle(myth.belief),
+          text: t.shareNativeText(myth.belief, myth.truth),
           url,
         })
         return
@@ -104,17 +108,16 @@ export function MythDetail({
     window.setTimeout(() => setShared(false), 1600)
   }
 
-  const cat = CATEGORIES.find((c) => c.id === myth.category)!
-  const stakes = STAKES_META[myth.stakes]
+  const catLabel = categoryLabel(myth.category, locale)
+  const stakes = stakesMeta(myth.stakes, locale)
+  const all = mythsFor(locale)
   const relatedMyths = (myth.related ?? [])
-    .map((id) => MYTHS.find((m) => m.id === id))
+    .map((id) => all.find((m) => m.id === id))
     .filter((m): m is Myth => m !== undefined)
 
   const issueUrl = `https://github.com/SuyangLiuPaul/actually-not/issues/new?title=${encodeURIComponent(
-    `纠错：${myth.belief}`,
-  )}&body=${encodeURIComponent(
-    `条目：/${myth.id}\n\n**哪里不对**\n\n\n**依据**（综述 / 指南 / 原始研究链接）\n\n`,
-  )}`
+    t.correctionIssueTitle(myth.belief),
+  )}&body=${encodeURIComponent(t.correctionIssueBody(myth.id))}`
 
   return (
     <div
@@ -151,14 +154,14 @@ export function MythDetail({
             className="inline-flex items-center gap-1.5 text-xs font-medium"
             style={{ color: 'var(--ink-faint)' }}
           >
-            <span aria-hidden="true">{cat.emoji}</span>
-            {cat.label}
+            <span aria-hidden="true">{catEmoji(myth.category)}</span>
+            {catLabel}
           </span>
           <div className="flex items-center gap-1">
             <button
               onClick={share}
-              aria-label={shared ? '链接已复制' : '分享这一条，复制链接'}
-              title={shared ? '已复制链接' : '分享这一条'}
+              aria-label={shared ? t.shareCopied : t.shareAria}
+              title={shared ? t.shareCopied : t.shareTitle}
               className="grid h-8 w-8 place-items-center rounded-lg transition-colors"
               style={{ color: shared ? 'var(--slate)' : 'var(--ink-soft)' }}
               onMouseEnter={(e) => (e.currentTarget.style.background = 'var(--rule)')}
@@ -185,11 +188,11 @@ export function MythDetail({
                 </svg>
               )}
             </button>
-            <NavBtn onClick={onPrev} label="上一条" dir="prev" />
-            <NavBtn onClick={onNext} label="下一条" dir="next" />
+            <NavBtn onClick={onPrev} label={t.prev} dir="prev" />
+            <NavBtn onClick={onNext} label={t.next} dir="next" />
             <button
               onClick={onClose}
-              aria-label="关闭"
+              aria-label={t.close}
               className="ml-1 grid h-8 w-8 place-items-center rounded-lg transition-colors"
               style={{ color: 'var(--ink-soft)' }}
               onMouseEnter={(e) => (e.currentTarget.style.background = 'var(--rule)')}
@@ -210,7 +213,7 @@ export function MythDetail({
         <div className="px-5 pb-9 sm:px-7">
           {/* 你以为 */}
           <div className="pt-6">
-            <Label>你以为</Label>
+            <Label>{t.detailBelief}</Label>
             <p
               className="mt-2 text-[1.35rem] leading-[1.6] font-medium sm:text-[1.6rem]"
               style={{ fontFamily: 'var(--font-serif)' }}
@@ -226,7 +229,7 @@ export function MythDetail({
             className="mt-6 rounded-xl border-l-[3px] py-4 pr-4 pl-4 sm:pl-5"
             style={{ background: 'var(--pen-soft)', borderColor: 'var(--pen)' }}
           >
-            <Label tone="pen">其实</Label>
+            <Label tone="pen">{t.detailTruth}</Label>
             <p
               className="mt-1.5 text-[1.0625rem] leading-[1.7] font-medium sm:text-[1.125rem]"
               style={{ color: 'var(--ink)' }}
@@ -235,9 +238,9 @@ export function MythDetail({
             </p>
           </div>
 
-          <Section title="证据是什么" body={myth.detail} />
-          <Section title="这个说法是怎么传开的" body={myth.origin} />
-          <Section title="那到底该怎么做" body={myth.instead} accent />
+          <Section title={t.detailEvidence} body={myth.detail} />
+          <Section title={t.detailOrigin} body={myth.origin} />
+          <Section title={t.detailInstead} body={myth.instead} accent />
 
           {/* 影响程度 */}
           <div
@@ -269,13 +272,13 @@ export function MythDetail({
                   />
                 </svg>
               )}
-              {read ? '已读' : '标为已读'}
+              {read ? t.readBadge : t.markRead}
             </button>
           </div>
 
           {/* 出处 */}
           <div className="mt-7">
-            <Label>出处</Label>
+            <Label>{t.detailSources}</Label>
             <ul className="mt-2.5 space-y-2">
               {myth.sources.map((s) => (
                 <li key={s.label} className="text-[13px] leading-relaxed">
@@ -318,7 +321,7 @@ export function MythDetail({
           {/* 相关条目 */}
           {relatedMyths.length > 0 && (
             <div className="mt-7">
-              <Label>你可能也以为</Label>
+              <Label>{t.detailRelated}</Label>
               <div className="mt-2.5 grid gap-2">
                 {relatedMyths.map((r) => (
                   <button
@@ -361,7 +364,7 @@ export function MythDetail({
             className="mt-8 border-t pt-5 text-[13px] leading-[1.8]"
             style={{ borderColor: 'var(--rule)', color: 'var(--ink-faint)' }}
           >
-            这条写错了、出处打不开、或者有更准的说法？
+            {t.correctionLead}
             <a
               href={issueUrl}
               target="_blank"
@@ -369,9 +372,9 @@ export function MythDetail({
               className="underline decoration-dotted underline-offset-[3px]"
               style={{ color: 'var(--ink-soft)' }}
             >
-              来提个 issue 纠错
+              {t.correctionCta}
             </a>
-            ——这个站的公信力靠「可以被纠错」建立，不靠自称严谨。
+            {t.correctionTail}
           </p>
         </div>
       </div>
