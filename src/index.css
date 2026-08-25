@@ -133,9 +133,7 @@ a {
 
 .strike svg {
   position: absolute;
-  left: -1.5%;
-  top: 50%;
-  width: 103%;
+  /* left/top/width 由组件按每行的实测盒设置 */
   height: 0.7em;
   transform: translateY(-55%);
   overflow: visible;
@@ -153,7 +151,8 @@ a {
 }
 
 .strike[data-on='true'] path {
-  animation: draw 0.5s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  animation: draw 0.5s cubic-bezier(0.65, 0, 0.35, 1) both;
+  animation-delay: var(--delay, 0s);
 }
 
 @keyframes draw {

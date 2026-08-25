@@ -1,8 +1,17 @@
-import { useMemo } from 'react'
+import { useLayoutEffect, useMemo, useRef, useState } from 'react'
+
+interface LineBox {
+  x: number
+  y: number
+  w: number
+  h: number
+}
 
 /**
  * 红笔划掉一句话。线条带一点手写的抖动，看起来不像是电脑画的。
  * seed 让每条线的形状略有不同。
+ * 多行文本会按实际换行逐行各画一条（用 Range.getClientRects 量出来），
+ * 逐行带一点延迟，像一笔一笔划过去。
  */
 export function Strike({
   children,
@@ -13,19 +22,53 @@ export function Strike({
   on: boolean
   seed?: number
 }) {
-  const { d, len } = useMemo(() => buildPath(seed), [seed])
+  const ref = useRef<HTMLSpanElement>(null)
+  const [lines, setLines] = useState<LineBox[]>([])
+
+  useLayoutEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const measure = () => {
+      const range = document.createRange()
+      range.selectNodeContents(el)
+      const base = el.getBoundingClientRect()
+      const next = [...range.getClientRects()]
+        .filter((r) => r.width > 4)
+        .map((r) => ({ x: r.left - base.left, y: r.top - base.top, w: r.width, h: r.height }))
+      setLines((prev) =>
+        prev.length === next.length && JSON.stringify(prev) === JSON.stringify(next) ? prev : next,
+      )
+    }
+    measure()
+    const ro = new ResizeObserver(measure)
+    ro.observe(el)
+    return () => ro.disconnect()
+  }, [children])
+
+  const paths = useMemo(() => lines.map((_, i) => buildPath(seed + i * 13)), [lines, seed])
 
   return (
-    <span className="strike" data-on={on}>
+    <span ref={ref} className="strike" data-on={on}>
       {children}
-      <svg
-        viewBox="0 0 400 20"
-        preserveAspectRatio="none"
-        aria-hidden="true"
-        style={{ ['--len' as string]: len }}
-      >
-        <path d={d} />
-      </svg>
+      {lines.map((line, i) => (
+        <svg
+          key={i}
+          viewBox="0 0 400 20"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+          style={
+            {
+              left: line.x - line.w * 0.015,
+              top: line.y + line.h / 2,
+              width: line.w * 1.03,
+              '--len': paths[i].len,
+              '--delay': `${i * 0.12}s`,
+            } as React.CSSProperties
+          }
+        >
+          <path d={paths[i].d} />
+        </svg>
+      ))}
     </span>
   )
 }
