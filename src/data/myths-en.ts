@@ -1184,4 +1184,191 @@ export const MYTHS_EN: Record<string, MythText> = {
     }
   ]
 },
+  "nail-moons": {
+  "belief": "Fewer half-moons on your fingernails means your body is weak and deficient",
+  "truth": "The half-moon is just the visible part of the nail matrix. Its size is set by genetics and nail growth speed — it says nothing about your vitality.",
+  "detail": "Nails grow from the matrix at the base. Newly formed keratin cells look white before they fully harden — that's the half-moon. Some people's matrix sits forward with little skin covering it (big moons); others' sits further back (no visible moons at all) — both are completely normal. On the same hand, the thumb usually shows the biggest moon because its nail grows fastest.\n\nOne caveat: a *sudden change* — all moons vanishing or ballooning within weeks — is worth a doctor's look, since it can ride along with thyroid or nutritional problems. But that's a different claim from 'few moons = weak body'. Counting your moons to gauge your health is meaningless.",
+  "origin": "It's natural to treat any easily observed body feature as a health gauge. Moons sit on your hands in plain sight, so 'they must reflect something' spread on its own.",
+  "instead": "Stop counting moons. Nail signs actually worth noticing are: clear color changes, pitting, thickening, or a dark vertical streak. Worried about your health? Get a checkup, not a palm reading.",
+  "sources": [
+    {
+      "label": "Nail matrix anatomy and nail growth — standard dermatology textbook knowledge (no stable public link)"
+    }
+  ]
+},
+  "daily-bowel": {
+  "belief": "You must have a bowel movement every single day — otherwise 'stale stool' builds up and toxins get absorbed",
+  "truth": "The normal range runs from three times a day to three times a week. 'Stale stool' is not a medical concept, and your colon isn't stockpiling poison.",
+  "detail": "Medicine defines constipation by difficulty, hard stools, and incomplete emptying — not by missing a daily check-in. The NHS puts it plainly: everyone has their own pattern, and anywhere from three a day to three a week is normal. Stool sitting in the colon an extra day just gets a bit more water absorbed; there is no 'toxins being reabsorbed into the blood' — a healthy gut barrier and liver already handle metabolic waste.\n\n'Stale stool' appears in no anatomy or gastroenterology textbook. It caught on because detox-product marketing needed a scary-sounding word (see the 'detox' entry).\n\nOne caveat: a *sudden change* in bowel habits — weeks of noticeably looser, thinner, or bloody stool — is a reason to see a doctor. That's a different matter from skipping a day.",
+  "origin": "'Once a day' sounds tidy and disciplined, so it easily becomes a moral standard; add the detox industry's 'stale stool' rhetoric, and the anxiety package is complete.",
+  "instead": "Watch your own pattern, not the calendar. Drink water, eat enough fiber, move. If your habits shift suddenly for two or three weeks, see a gastroenterologist.",
+  "sources": [
+    {
+      "label": "NHS — Constipation (the normal range of bowel frequency)",
+      "url": "https://www.nhs.uk/conditions/constipation/"
+    }
+  ]
+},
+  "lasik-cure": {
+  "belief": "Getting laser eye surgery cures your myopia",
+  "truth": "Surgery just lasers your cornea into a permanent contact lens. Your eyeball is still elongated, and the retinal risks of high myopia are untouched.",
+  "detail": "Myopia means the eyeball is too long, so light focuses in front of the retina. LASIK and SMILE reshape the cornea so the focus lands back on the retina — they fix 'no more glasses', not 'a healthy eye'. The stretched eyewall and thinned retina remain exactly as they were.\n\nSo after surgery, people with high myopia (above -6.00) still carry above-average risk of retinal tears, detachment, and myopic macular changes — regular fundus exams are still necessary. This is usually written in the consent form, just not in the ads.",
+  "origin": "'Ditching glasses' and 'curing myopia' got equated in everyday language — the result (seeing clearly) really is the same, but medically one is correction and the other is a cure, and the gap is wide.",
+  "instead": "If you want to be glasses-free and you're a good candidate, go ahead — it's a mature correction. But keep getting your retina checked afterward, especially with high myopia. Not wearing glasses doesn't make you a non-myopic eye.",
+  "sources": [
+    {
+      "label": "Ophthalmology consensus: refractive surgery corrects focus, not axial length or retinal risk (no stable public link)"
+    }
+  ]
+},
+  "dream-sleep-quality": {
+  "belief": "Lots of dreams means you slept badly — dreamless sleep is the deep, good kind",
+  "truth": "Everyone dreams 4–6 times a night; you only remember dreams you wake up in the middle of. Feeling 'full of dreams' usually means you woke up a lot.",
+  "detail": "Dreams happen mainly in REM sleep, and a normal night includes 4–6 REM cycles. Dreaming is routine brain activity, not a marker of poor sleep. A 'dreamless night' simply means you woke from non-REM sleep and nothing got recorded in memory.\n\nConversely, 'dreamt all night and woke exhausted' usually comes from frequent awakenings (stress, snoring, sleep apnea, alcohol, noise) — each time you surface during REM, a dream gets stored. The problem is waking often, not dreaming often.\n\nCaveat: frequent nightmares that spoil your daytime, or shouting and acting out dreams (possible REM sleep behavior disorder), deserve a doctor — but that's abnormal dream content and behavior, not 'dreaming a lot'.",
+  "origin": "Dreams are the only part of sleep you can subjectively perceive, so they naturally got cast as the readout of sleep quality. Unfortunately that readout measures memory, not depth.",
+  "instead": "Don't use dreaming as your sleep report. Morning energy and daytime sleepiness are the real metrics. If you feel dream-heavy and tired, look for what's waking you: snoring, alcohol, stress.",
+  "sources": [
+    {
+      "label": "Sleep-medicine consensus: dreams occur mainly in REM and everyone dreams nightly (no stable public link)"
+    }
+  ]
+},
+  "nap-long": {
+  "belief": "The longer your afternoon nap, the more refreshed you'll feel — aim for an hour or two",
+  "truth": "Naps past half an hour drag you into deep sleep, and waking from there leaves you groggy longer. 20–30 minutes is the sweet spot.",
+  "detail": "Sleep runs in cycles, and deep sleep starts roughly 30 minutes in. Getting yanked out of deep sleep by an alarm produces 'sleep inertia' — a foggy, slow state that can last up to an hour. 'Slept two hours and feel worse' is not an illusion; you woke at the wrong stage.\n\nThe oft-cited NASA nap study on pilots found that about 26 minutes of napping significantly improved alertness and performance. Short naps top up wakefulness without borrowing deep-sleep debt.\n\nCaveat: if you're severely sleep-deprived at night, a full 90-minute cycle in the day beats toughing it out. But for most people on a normal schedule, short is the practical answer.",
+  "origin": "The intuition 'tired, so sleep more' got applied straight to naps. But a nap is a quick recharge, not a miniature night of sleep.",
+  "instead": "Set a 20–30 minute alarm and nap before 3 p.m. Give yourself five minutes to come around. If nights are the problem, fix nights.",
+  "sources": [
+    {
+      "label": "Mayo Clinic — Napping: do's and don'ts for healthy adults",
+      "url": "https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/napping/art-20048319"
+    }
+  ]
+},
+  "milk-sleep": {
+  "belief": "A glass of warm milk before bed helps you sleep, thanks to the tryptophan",
+  "truth": "A glass of milk contains far too little tryptophan to move the needle. If it works, it's the warm drink plus the ritual — a placebo effect.",
+  "detail": "Tryptophan really is the raw material for melatonin and serotonin — that biochemical chain is true. The dose is where it falls apart: a glass of milk has about 100 mg of tryptophan, while sleep studies use gram-level doses — ten times more. And tryptophan still has to compete with other amino acids to cross the blood-brain barrier; one glass of milk doesn't shift that balance.\n\nBut 'it seems to work' isn't pure fantasy: a fixed bedtime ritual builds a conditioned response, a warm drink is relaxing, and the expectation 'I drank my sleep aid' is itself sedating. That's the placebo script — effective, but tryptophan isn't the active ingredient.",
+  "origin": "Every link in 'tryptophan → melatonin → sleepiness' is real, so 'milk contains tryptophan' got bolted onto the conclusion, with the dosage chasm quietly skipped.",
+  "instead": "If you enjoy it, keep it as a wind-down ritual. For real insomnia, don't count on food: keep a fixed schedule, dim the lights an hour before bed, and put the phone down. The first-line treatment for chronic insomnia is CBT-I.",
+  "sources": [
+    {
+      "label": "Tryptophan dosing and sleep — see sleep-medicine reviews (no stable public link)"
+    }
+  ]
+},
+  "night-mode-phone": {
+  "belief": "Scrolling your phone in bed is fine as long as night mode is on",
+  "truth": "Night mode only removes the blue-light part of the problem. The bigger issue is that the content keeps you wired.",
+  "detail": "Bright light at night — especially its blue component — does suppress melatonin and delay sleepiness, and warming the screen removes part of that. That step is evidence-based, but it's where the benefit ends: short videos, messages, and games keep your arousal up, and what really turns 'five more minutes' into 2 a.m. is dopamine, not the spectrum.\n\nStudies on pre-sleep screen use implicate not just light but duration and engagement. An hour of short video on the warmest night mode hurts your sleep far more than ten minutes of an e-reader without it.",
+  "origin": "After 'blue light harms sleep' got popularized, phone makers shipped night mode, and 'just turn it on' followed as the classic technologist's fallacy — fix the easiest variable, then declare the problem solved.",
+  "instead": "The most effective move is putting the phone out of reach 30–60 minutes before bed. If you must use it: night mode, lowest brightness, static content (an e-book, not video), and a hard stop time you set in advance.",
+  "sources": [
+    {
+      "label": "Screen light, usage behavior, and sleep — see sleep-medicine reviews (no stable public link)"
+    }
+  ]
+},
+  "new-clothes-wash": {
+  "belief": "New clothes are clean from the factory — no need to wash before wearing",
+  "truth": "'New' isn't clean: fabric carries formaldehyde finishing agents, loose dye, and a journey's worth of dust and microbes. One wash before wearing against skin is worth it.",
+  "detail": "Textiles get resin finishes to resist wrinkles and shrinkage, and formaldehyde is a common residue — safety standards for skin-contact clothing cap it precisely because excess causes contact dermatitis, and a single wash removes most of it. The same goes for loose dye and the dust and microbes from storage and shipping.\n\nCaveat: 'worth it', not 'deadly'. Clothes from proper retail channels are mostly within limits, and wearing something once unwashed usually does nothing — the point is to drop the 'factory = clean' assumption, not to panic. For coats and other non-skin-contact layers, skipping the wash is fine.",
+  "origin": "New clothes look crisp and spotless. The dirt is invisible, so it's assumed not to exist.",
+  "instead": "Wash anything that touches skin directly (underwear, T-shirts, bedding) before first use — especially for sensitive skin and babies. Outerwear is your call.",
+  "sources": [
+    {
+      "label": "Formaldehyde textile finishes and contact dermatitis — see textile safety standard GB 18401 and dermatology references (no stable public link)"
+    }
+  ]
+},
+  "toilet-std": {
+  "belief": "Public toilet seats can give you an STD — sitting on one is risky",
+  "truth": "The pathogens behind gonorrhea, syphilis, and HIV die quickly outside the body. Not a single case of toilet-seat transmission has ever been confirmed in medicine.",
+  "detail": "STI pathogens are fragile: HIV becomes inactive within minutes to hours outside the body, the syphilis spirochete is extremely sensitive to drying, and gonococci don't last long away from mucous membranes. Transmission needs mucosa-to-mucosa, fluid-to-fluid contact — a dry, room-temperature seat plus the intact skin of your thighs makes that route biologically impossible. Neither the CDC nor mainstream STI guidelines list toilet seats as a route.\n\nCaveat: seats can carry gut bacteria like E. coli (from flush aerosols), but intact skin is a barrier — washing your hands beats hovering. If you have an open wound, a paper barrier is hygiene, not STD prevention.",
+  "origin": "The intuition 'dirty place = disease', plus the stigma around STDs — blaming a toilet seat is easier to say out loud than acknowledging sexual contact. That scapegoat has served for decades.",
+  "instead": "Wash your hands after public restrooms — that's enough. Real STD prevention is condoms and regular screening, not squatting mid-air.",
+  "sources": [
+    {
+      "label": "CDC — how STDs are (and aren't) transmitted (not via toilet seats or casual contact)"
+    }
+  ]
+},
+  "ac-facial-paralysis": {
+  "belief": "Sleeping with the AC or fan blowing on your face can give you facial paralysis",
+  "truth": "Bell's palsy is mainly explained by virus-triggered nerve inflammation. Cold air blowing on your face has never been confirmed as a cause.",
+  "detail": "Bell's palsy is a sudden inflammation and swelling of the facial nerve, pinched inside its bony canal. The leading explanation involves post-viral inflammation (herpes-family viruses), and the cause lists from the NHS and similar bodies don't include 'a draft'. News stories about 'paralyzed by the AC' appear every summer, but sequence isn't causation — Bell's palsy incidence is stable year-round, and hundreds of millions of people use AC; if drafts caused it, we'd see a summer epidemic.\n\nCaveat: 'cold exposure as a trigger' is a discussed hypothesis with occasional case reports, but no systematic evidence. The real red flag is facial weakness plus limb weakness or slurred speech — that's a stroke; call emergency services immediately.",
+  "origin": "'Catching a chill' is the all-purpose folk explanation, and Bell's palsy often strikes after late nights and exhaustion — which overlap with AC season, so the blame stuck.",
+  "instead": "Use the AC and fan as you like — not blasting your head all night is about comfort and not drying out, not paralysis prevention. If one side of your face stops moving, steroids work best within 48 hours — see a doctor fast instead of waiting it out with folk remedies.",
+  "sources": [
+    {
+      "label": "NHS — Bell's palsy (viral association; no cold-air cause listed)",
+      "url": "https://www.nhs.uk/conditions/bells-palsy/"
+    }
+  ]
+},
+  "hand-sanitizer": {
+  "belief": "A squirt of hand sanitizer is just as good as washing your hands",
+  "truth": "Sanitizer kills most bacteria and enveloped viruses, but it can't remove grease and dirt, norovirus, or C. difficile — running water and soap are still the gold standard.",
+  "detail": "Alcohol-based sanitizer (60%+) works against most common pathogens, including enveloped viruses like flu and SARS-CoV-2 — that's CDC-endorsed. But its blind spots are clear: it's poor against norovirus (the classic vomiting-and-diarrhea bug) and C. difficile; on visibly dirty or greasy hands the alcohol can't even reach the microbes; and it doesn't remove chemical residues like pesticides or heavy metals. Washing rinses things away; sanitizer only kills some of what's there.\n\nThe CDC's advice is layered: sanitizer is a great substitute when there's no sink, and soap-and-water wins when there is.",
+  "origin": "The word 'disinfect' sounds final, like an upgraded version of handwashing. It's actually the portable version — you trade coverage for convenience.",
+  "instead": "Use sanitizer when eating out or away from water (enough product, rub until dry). At home, after the toilet, or with oily or dirty hands: soap and running water for 20 seconds.",
+  "sources": [
+    {
+      "label": "CDC — Clean Hands / hand sanitizer use and its limits",
+      "url": "https://www.cdc.gov/clean-hands/about/index.html"
+    }
+  ]
+},
+  "fish-bone-vinegar": {
+  "belief": "If a fish bone gets stuck in your throat, swallow vinegar to soften it, then gulp a ball of rice to push it down",
+  "truth": "Vinegar can't soften a bone — a second of contact won't even soften an eggshell. Swallowing rice can drive the bone deeper and tear the esophagus.",
+  "detail": "A fish bone is calcified hard tissue; hours of soaking in vinegar might not soften it, and a swallow of vinegar touches the bone for a second or two — nothing happens. The rice ball is worse: a bone that's shallow and easily removed can be pressed into deeper tissue or driven toward the esophagus. Esophageal perforation near the great vessels is a documented, sometimes fatal, emergency.\n\nThe right move is simple: stop swallowing. If the bone is visible and shallow, someone can remove it with clean tweezers. If you can't see it, or the pain is obvious, or there's drooling or any breathing difficulty — go to the ENT emergency, where a doctor can pull it with a laryngoscope in a minute.",
+  "origin": "'Vinegar softens' borrows the chemistry fact that acid reacts with calcium; 'swallow it down' comes from the instinct that blockages should be pushed through. Both forget that the human body is neither a beaker nor a drainpipe.",
+  "instead": "Stop eating, try a gentle cough. Visible? Tweezers. Not visible? Hospital. No vinegar, no rice balls, no finger-fishing.",
+  "sources": [
+    {
+      "label": "Management principles for esophageal foreign bodies — ENT emergency guidance (no stable public link)"
+    }
+  ]
+},
+  "sprain-heat": {
+  "belief": "Right after a sprain, apply heat and rub in medicinal wine to disperse the bruising",
+  "truth": "A fresh sprain needs ice, not heat. Heat and rubbing in the acute phase dilate blood vessels and worsen the bleeding and swelling.",
+  "detail": "A sprain is torn ligament fibers plus ruptured small vessels, and the first 24–48 hours are the bleeding-and-swelling phase. Heat packs, hot soaks, and rubbing in liniment each dilate local vessels and make the swelling worse — stretching out recovery. Standard acute care is: rest, ice (with a towel barrier, 15–20 minutes at a time), compression, and elevation. Heat earns its place only after the acute phase.\n\nCaveat: the old RICE protocol has evolved into PEACE & LOVE, which emphasizes early gentle loading after the acute phase rather than endless icing and rest — but 'no heat, no rubbing in the acute phase' has never changed.",
+  "origin": "'Promoting circulation to disperse stasis' sounds self-consistent: stasis must scatter, scattering needs heat. Unfortunately, in the first two days the problem isn't stasis refusing to scatter — it's bleeding that hasn't stopped.",
+  "instead": "Just sprained: ice, compression, elevation — no heat, no massage. Consider warmth and gentle movement after 48 hours. Severe swelling, inability to bear weight, or a 'pop' at the moment of injury — get an X-ray to rule out fracture.",
+  "sources": [
+    {
+      "label": "NHS — Sprains and strains (acute-phase management)",
+      "url": "https://www.nhs.uk/conditions/sprains-and-strains/"
+    }
+  ]
+},
+  "heatstroke-pinch": {
+  "belief": "If someone collapses from heatstroke, pinch the philtrum (renzhong) to wake them",
+  "truth": "Pinching the philtrum does nothing for heatstroke. Heat stroke is fatal: cool them down, move them to shade, call an ambulance — every minute belongs to cooling.",
+  "detail": "A painful pinch can only startle someone who's already conscious; for someone with real impaired consciousness from heat illness it does nothing. Heatstroke collapse is central nervous dysfunction from a soaring core temperature — nothing improves until the temperature comes down. Severe heat stroke has a high mortality rate, and the outcome tracks how long the high temperature lasts, so the core of first aid is one word: cool, fast.\n\nThe steps: move the person to shade or ventilation, remove excess clothing, douse or wipe with cool water or immerse, apply ice packs to the neck, armpits, and groin, and fan them. Don't give water to someone not fully conscious (aspiration risk). High temperature or altered consciousness — call an ambulance immediately.",
+  "origin": "The philtrum pinch is folk first aid's universal opening move — someone collapses, you pinch, at least you did something. But pain stimulus isn't treatment, and in a race against temperature it steals time from cooling that actually works.",
+  "instead": "Memorize the order: move to shade, remove clothing, physical cooling, call for help. Pinching is in none of them. Someone hot and confused — don't hesitate, call 120 (or local emergency number).",
+  "sources": [
+    {
+      "label": "Mayo Clinic — Heatstroke (first aid is immediate cooling plus emergency care)",
+      "url": "https://www.mayoclinic.org/diseases-conditions/heat-stroke/symptoms-causes/syc-20353581"
+    }
+  ]
+},
+  "electric-shock-pull": {
+  "belief": "If someone's being electrocuted, grab them and pull them away immediately",
+  "truth": "Grabbing them barehanded lets the current flow through you too — that's how double electrocutions happen. The first step is always cutting the power, not pulling the person.",
+  "detail": "The human body conducts. When someone is in tetanic grip on a live source and you yank them, the circuit runs through you, and now two people are being shocked. Step one of electrical first aid is breaking the circuit: flip the breaker, pull the plug. If you can't reach a switch, push the wire or the person apart with something dry and insulating — dry wood, plastic, thick rubber. Dry and insulating are the operative words.\n\nOnce they're clear, check consciousness and breathing: no normal breathing means start CPR and have someone call an ambulance. A shock victim may look fine, but current through the heart can trigger arrhythmias — even someone who feels fine should get checked at a hospital.",
+  "origin": "Seeing someone you love getting shocked, 'pull them off' is hardwired. First-aid training exists precisely to slam the brakes on instinct at moments like this.",
+  "instead": "Memorize it: cut the power first (breaker / insulating object) → call emergency services → CPR if there's no normal breathing. Until you've confirmed the power is off, hands off.",
+  "sources": [
+    {
+      "label": "Electrical-injury first aid (power off before rescue) — Red Cross first-aid guidance (no stable public link)"
+    }
+  ]
+},
 }
+

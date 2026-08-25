@@ -11,6 +11,12 @@ export type CategoryId =
  */
 export type Stakes = 'harmless' | 'wasteful' | 'risky'
 
+/**
+ * 结论的证据强度 —— 区分「研究很确定」「研究不多」「学界还在吵」，
+ * 让读者一眼看出这条结论有多稳。
+ */
+export type Confidence = 'strong' | 'limited' | 'debated'
+
 export interface Source {
   label: string
   /** 省略表示这条只有文献出处、没有稳定的公开链接 */
@@ -31,6 +37,8 @@ export interface Myth {
   /** 那到底该怎么做 */
   instead: string
   stakes: Stakes
+  /** 证据强度：strong 证据充分 | limited 研究有限 | debated 尚有争议 */
+  confidence: Confidence
   sources: Source[]
   /** 相关条目的 id —— 详情页底部「你可能也以为……」。写了就必须双向互链（测试会查） */
   related?: string[]
@@ -72,5 +80,20 @@ export const STAKES_META: Record<
     label: '可能有害',
     hint: '照做反而可能把事情弄糟',
     tone: 'risky',
+  },
+}
+
+export const CONFIDENCE_META: Record<Confidence, { label: string; hint: string }> = {
+  strong: {
+    label: '证据充分',
+    hint: '有系统综述、随机对照试验或权威机构指南支撑',
+  },
+  limited: {
+    label: '研究有限',
+    hint: '现有研究不多或质量一般，方向明确但别把结论当铁律',
+  },
+  debated: {
+    label: '尚有争议',
+    hint: '不同研究结论不一，正文里写了几边各自的理由',
   },
 }

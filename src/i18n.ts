@@ -2,7 +2,7 @@
  * 界面文案（中英双语）。条目正文在 data/myths.ts / data/myths-en.ts，
  * 这里只放 UI 字符串。新增文案要两边都加——T 类型是两边的并集校验。
  */
-import { CATEGORIES, STAKES_META, type CategoryId, type Stakes } from './types'
+import { CATEGORIES, CONFIDENCE_META, STAKES_META, type CategoryId, type Confidence, type Stakes } from './types'
 
 export type Locale = 'zh' | 'en'
 
@@ -69,6 +69,8 @@ const zh = {
   correctionTail: '——这个站的公信力靠「可以被纠错」建立，不靠自称严谨。',
   correctionIssueTitle: (belief: string) => `纠错：${belief}`,
   correctionIssueBody: (id: string) => `条目：/${id}\n\n**哪里不对**\n\n\n**依据**（综述 / 指南 / 原始研究链接）\n\n`,
+  detailAdded: (d: string) => `收录于 ${d}`,
+  detailRevised: (d: string) => `最近修订 ${d}`,
 
   quizName: '你中了几条',
   quizStart: '开始',
@@ -180,6 +182,8 @@ const en: T = {
   correctionIssueTitle: (belief) => `Correction: ${belief}`,
   correctionIssueBody: (id) =>
     `Entry: /${id}\n\n**What's wrong**\n\n\n**Evidence** (review / guideline / primary study link)\n\n`,
+  detailAdded: (d) => `Added ${d}`,
+  detailRevised: (d) => `Last revised ${d}`,
 
   quizName: 'How many got you?',
   quizStart: 'Start',
@@ -225,6 +229,37 @@ const en: T = {
 
 export const STRINGS: Record<Locale, T> = { zh, en }
 
+/** 搜索同义词组：搜组里任何一个词，同组的词一起参与匹配 */
+export const SYNONYM_GROUPS: string[][] = [
+  ['感冒', '着凉', '伤风', 'cold', 'flu'],
+  ['减肥', '瘦身', '减重', '胖', 'weight', 'fat'],
+  ['补钙', '钙', 'calcium'],
+  ['近视', '视力', '眼睛', 'vision', 'eyes'],
+  ['失眠', '睡不着', 'insomnia', 'sleep'],
+  ['酒', '酒精', '红酒', '白酒', 'alcohol', 'wine'],
+  ['咖啡', '茶', 'caffeine', 'coffee', 'tea'],
+  ['手机', '辐射', 'radiation', 'phone'],
+  ['疫苗', 'vaccine', 'flu-shot'],
+  ['发烧', '发热', 'fever'],
+  ['胃', '溃疡', 'stomach', 'ulcer'],
+  ['头发', '白发', 'hair'],
+  ['运动', '跑步', '锻炼', 'exercise', 'running'],
+  ['怀孕', '孕妇', '月子', 'pregnancy', 'postpartum'],
+  ['糖', '血糖', 'sugar', 'diabetes'],
+]
+
+/** 查询词扩展：返回包含 query 的所有同组词（含原词） */
+export function expandQuery(q: string): string[] {
+  const lower = q.toLowerCase()
+  const out = new Set([lower])
+  for (const g of SYNONYM_GROUPS) {
+    if (g.some((w) => w.toLowerCase().includes(lower) || lower.includes(w.toLowerCase()))) {
+      for (const w of g) out.add(w.toLowerCase())
+    }
+  }
+  return [...out]
+}
+
 /** 分类和危害程度的中文名在 types.ts；英文名在这里 */
 export const CATEGORY_LABELS_EN: Record<CategoryId, string> = {
   eat: 'Food',
@@ -248,6 +283,29 @@ export const STAKES_META_EN: Record<Stakes, { label: string; hint: string }> = {
     label: 'Can harm',
     hint: 'Following this one can actually make things worse',
   },
+}
+
+export const CONFIDENCE_META_EN: Record<Confidence, { label: string; hint: string }> = {
+  strong: {
+    label: 'Strong evidence',
+    hint: 'Backed by systematic reviews, RCTs, or major health-agency guidelines',
+  },
+  limited: {
+    label: 'Limited research',
+    hint: 'Few or weaker studies — the direction is clear, but don\'t treat it as settled law',
+  },
+  debated: {
+    label: 'Still debated',
+    hint: 'Studies disagree — the entry lays out each side',
+  },
+}
+
+export function confidenceMeta(
+  c: Confidence,
+  locale: Locale,
+): { label: string; hint: string; tone: string } {
+  if (locale === 'en') return { ...CONFIDENCE_META_EN[c], tone: c }
+  return { ...CONFIDENCE_META[c], tone: c }
 }
 
 export function categoryLabel(id: CategoryId, locale: Locale): string {

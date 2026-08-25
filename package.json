@@ -14,6 +14,7 @@
     "icons": "node scripts/generate-icons.mjs",
     "og": "node scripts/generate-og.mjs",
     "illu": "node scripts/generate-illustrations.mjs",
+    "revisions": "node --experimental-strip-types scripts/generate-revisions.mjs",
     "links": "node scripts/check-links.mts",
     "preview": "vite preview"
   },

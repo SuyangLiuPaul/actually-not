@@ -6,7 +6,7 @@
 
 ## 0. 一句话
 
-「其实不是」是一个中英双语静态站点，收录 83 条**听起来天经地义、但证据并不支持**的生活常识
+「其实不是」是一个中英双语静态站点，收录 100 条**听起来天经地义、但证据并不支持**的生活常识
 （早上不吃饭伤身、洗完头不吹干有湿气、骨头汤补钙……），每条附出处。
 中文版在根路径，英文版（Actually, Not）在 `/en` 前缀下，页头可互相切换。
 纯前端，无后端，无数据库，无环境依赖。
@@ -132,10 +132,11 @@ actually-not/
 │
 ├── src/
 │   ├── data/
-│   │   ├── myths.ts         ★ 全部 83 条中文内容都在这一个文件里
+│   │   ├── myths.ts         ★ 全部 100 条中文内容都在这一个文件里
 │   │   ├── myths-en.ts      ★ 每条对应的英文翻译（Record<id, 文字字段>）
+│   │   ├── revisions.ts      ★ 生成物：每条收录/修订日期（npm run revisions，改完内容重跑）
 │   │   ├── localized.ts     mythsFor(locale)：按语言合并条目
-│   │   └── myths.test.ts    内容完整性测试（1254 条断言，含翻译完整性）
+│   │   └── myths.test.ts    内容完整性测试（1610 条断言，含翻译/插画/修订完整性）
 │   ├── i18n.ts              ★ 全部 UI 文案（中英）、分类/风险英文名、/en 路由工具
 │   ├── types.ts             数据结构 + 分类 + 风险等级的定义
 │   ├── hooks/
@@ -171,6 +172,7 @@ actually-not/
 │   ├── generate-icons.mjs   从 assets/*.svg 生成全部图标
 │   ├── generate-og.mjs      为每条内容生成中英两张 OG 分享图（改了文案要重跑）
 │   ├── generate-illustrations.mjs  为每条生成卡片插画（AI 生图，场景表 illu-scenes.json）
+│   ├── generate-revisions.mjs  从 git 历史生成每条的收录/修订日期
 │   ├── check-links.mts      出处链接体检（真实浏览器，不是 curl）
 │   ├── deploy.sh            手动部署
 │   └── status.sh            状态总览
@@ -224,7 +226,8 @@ actually-not/
 `belief / truth / detail / origin / instead / sources` 六个文字字段
 （`sources` 的 `url` 必须和中文一致，`label` 翻成英文），然后重跑 `npm run og`
 （中英两张分享图一起生成）和 `npm run illu <id>`（卡片插画——先在
-`scripts/illu-scenes.json` 里给新 id 写一句 5–12 词的英文场景，具体、画物件不画概念）。
+`scripts/illu-scenes.json` 里给新 id 写一句 5–12 词的英文场景，具体、画物件不画概念）和
+`npm run revisions`（更新收录/修订日期）。
 缺翻译、多翻译或缺插画，测试都会挡。
 
 ---
@@ -338,8 +341,8 @@ npm run preview
 
 ## 10. 当前状态
 
-- 83 条内容，6 个分类（吃 23 / 身体 18 / 生活 13 / 运动 11 / 关键时刻 9 / 睡 9）
-- 其中 25 条标记为「可能有害」
+- 100 条内容，6 个分类（吃 23 / 身体 23 / 生活 17 / 睡 13 / 关键时刻 13 / 运动 11）
+- 其中 31 条标记为「可能有害」
 - **中英双语**：中文版在根路径，英文版在 `/en` 前缀（`/en`、`/en/quiz`、`/en/{id}`），
   全部 UI 文案在 `src/i18n.ts`，条目翻译在 `src/data/myths-en.ts`；
   页面互链 hreflang，英文条目的 OG 图在 `public/og/en/`

@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import { Strike } from './Strike'
 import { StakesDot } from './MythCard'
+import { REVISIONS } from '../data/revisions'
 import { mythsFor } from '../data/localized'
-import { categoryLabel, catEmoji, CAT_ACCENT, stakesMeta, STRINGS, pathFor, type Locale } from '../i18n'
+import { categoryLabel, catEmoji, CAT_ACCENT, confidenceMeta, stakesMeta, STRINGS, pathFor, type Locale } from '../i18n'
 import type { Myth } from '../types'
 
 export function MythDetail({
@@ -110,6 +111,7 @@ export function MythDetail({
 
   const catLabel = categoryLabel(myth.category, locale)
   const stakes = stakesMeta(myth.stakes, locale)
+  const conf = confidenceMeta(myth.confidence, locale)
   const all = mythsFor(locale)
   const relatedMyths = (myth.related ?? [])
     .map((id) => all.find((m) => m.id === id))
@@ -256,7 +258,7 @@ export function MythDetail({
           <Section title={t.detailOrigin} body={myth.origin} />
           <Section title={t.detailInstead} body={myth.instead} accent />
 
-          {/* 影响程度 */}
+          {/* 影响程度 + 证据强度 */}
           <div
             className="mt-7 flex flex-wrap items-center gap-x-3 gap-y-1.5 rounded-lg border px-4 py-3"
             style={{ borderColor: 'var(--rule)' }}
@@ -264,6 +266,38 @@ export function MythDetail({
             <StakesDot tone={stakes.tone} label={stakes.label} />
             <span className="text-[13px]" style={{ color: 'var(--ink-soft)' }}>
               {stakes.hint}
+            </span>
+            <span
+              className="inline-flex shrink-0 items-center gap-1.5 rounded-full px-2 py-0.5 text-[11px] font-medium"
+              title={conf.hint}
+              style={{ background: 'var(--rule)', color: 'var(--ink-soft)' }}
+            >
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                {conf.tone === 'strong' ? (
+                  <path
+                    d="M2 6.5L4.8 9L10 3"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                ) : conf.tone === 'limited' ? (
+                  <path
+                    d="M6 2v6M6 10v.01"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                  />
+                ) : (
+                  <path
+                    d="M2.5 4.5h7M4.5 7.5h5"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                  />
+                )}
+              </svg>
+              {conf.label}
             </span>
             <button
               onClick={onToggleRead}
@@ -373,9 +407,16 @@ export function MythDetail({
             </div>
           )}
 
-          {/* 纠错入口 */}
+          {/* 收录/修订时间 + 纠错入口 */}
+          {REVISIONS[myth.id] && (
+            <p className="mt-8 border-t pt-5 text-[12px]" style={{ borderColor: 'var(--rule)', color: 'var(--ink-faint)' }}>
+              {t.detailAdded(REVISIONS[myth.id].added)}
+              {REVISIONS[myth.id].updated !== REVISIONS[myth.id].added &&
+                ` · ${t.detailRevised(REVISIONS[myth.id].updated)}`}
+            </p>
+          )}
           <p
-            className="mt-8 border-t pt-5 text-[13px] leading-[1.8]"
+            className={`${REVISIONS[myth.id] ? 'mt-2' : 'mt-8 border-t pt-5'} text-[13px] leading-[1.8]`}
             style={{ borderColor: 'var(--rule)', color: 'var(--ink-faint)' }}
           >
             {t.correctionLead}

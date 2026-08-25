@@ -5,6 +5,7 @@ import { CATEGORIES, STAKES_META, type Myth } from '../types'
 
 const CATEGORY_IDS = new Set(CATEGORIES.map((c) => c.id))
 const STAKES_IDS = new Set(Object.keys(STAKES_META))
+const CONFIDENCE_IDS = new Set(['strong', 'limited', 'debated'])
 
 /** 出现在正文里就说明这条还没写完 */
 const PLACEHOLDERS = [/TODO/i, /FIXME/i, /待补/, /lorem ipsum/i, /XXX/]
@@ -55,6 +56,10 @@ describe('内容数据完整性', () => {
 
     it('stakes 是已定义的', () => {
       expect(STAKES_IDS.has(myth.stakes)).toBe(true)
+    })
+
+    it('confidence 是已定义的（strong | limited | debated）', () => {
+      expect(CONFIDENCE_IDS.has(myth.confidence)).toBe(true)
     })
 
     it.each(TEXT_FIELDS)('%s 非空且有实际内容', (field) => {

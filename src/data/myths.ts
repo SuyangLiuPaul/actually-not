@@ -18,6 +18,7 @@ export const MYTHS: Myth[] = [
     instead:
       '按你自己的饥饿感来。真正影响体重的是一天总共吃了多少，不是分几顿吃。如果不吃早饭让你中午暴食，那就吃；如果不吃也很舒服，不用逼自己。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Sievert et al., BMJ 2019 —— 早餐与体重的随机试验汇总',
@@ -42,6 +43,7 @@ export const MYTHS: Myth[] = [
     instead:
       '要补钙，牛奶、酸奶、豆腐（石膏点的）、深绿色叶菜、带骨小鱼都比骨头汤高出一两个数量级。一杯牛奶约 250 毫克钙。汤可以喝，就当它是汤。',
     stakes: 'wasteful',
+    confidence: 'strong',
     sources: [
       {
         label: '中国营养学会《中国居民膳食指南》—— 钙的食物来源',
@@ -62,6 +64,7 @@ export const MYTHS: Myth[] = [
     instead:
       '菜做好后尽快分装、盖好、放冰箱（别等凉透，两小时内进冰箱）。绿叶菜尽量当顿吃完，剩的肉菜彻底加热再吃。凭味道和外观判断，别凭「隔了几夜」。',
     stakes: 'wasteful',
+    confidence: 'strong',
     sources: [
       {
         label: '澎湃新闻 —— 隔夜菜亚硝酸盐实测',
@@ -86,6 +89,7 @@ export const MYTHS: Myth[] = [
     instead:
       '正常用就行。味精的钠含量约为食盐的三分之一，用它替代一部分盐反而能降低总钠摄入。真要控制的是总钠，不是味精。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'FDA —— Questions and Answers on MSG',
@@ -106,6 +110,7 @@ export const MYTHS: Myth[] = [
     instead:
       '皮肤最怕的是紫外线。防晒霜、帽子、不抽烟、睡够觉，这几样的证据强度远超任何口服胶原。猪蹄好吃就吃，但它主要给你的是脂肪。',
     stakes: 'wasteful',
+    confidence: 'strong',
     sources: [
       {
         label: 'Harvard Health —— Considering collagen drinks and supplements?',
@@ -125,6 +130,7 @@ export const MYTHS: Myth[] = [
     instead:
       '渴了就喝。想要一个粗略的自查指标，看尿色：淡黄色说明水分充足，深黄说明该喝了。汤、粥、水果、茶、咖啡都算数。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Valtin, Am J Physiol 2002 —— "Drink at least eight glasses of water a day." Really?',
@@ -145,6 +151,7 @@ export const MYTHS: Myth[] = [
     instead:
       '咖啡和茶可以正常计入每天的液体摄入。真需要注意的是别喝太晚影响睡眠——咖啡因半衰期约 5 小时。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Killer et al., PLoS ONE 2014 —— 咖啡与白水的补水效果对照试验',
@@ -165,6 +172,7 @@ export const MYTHS: Myth[] = [
     instead:
       '反复上腹痛、饱胀、黑便，去查幽门螺杆菌（呼气试验很方便），别自己戒辣了事。长期吃止痛药的人尤其要警惕。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: '诺贝尔奖官网 —— 2005 年生理学或医学奖',
@@ -185,6 +193,7 @@ export const MYTHS: Myth[] = [
     instead:
       '软质食物长霉了整个丢掉。硬质食物切掉霉斑及周围 2–3 厘米，刀不要碰到霉斑。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'USDA —— Molds on Food: Are They Dangerous?',
@@ -203,6 +212,7 @@ export const MYTHS: Myth[] = [
     origin: '「纯天然 = 永远清澈透亮」的想象，正好和事实反过来。',
     instead: '看蜜种，别看结晶。真假蜂蜜要靠检测，肉眼判断基本不可靠。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'National Honey Board —— Honey crystallization',
@@ -222,6 +232,7 @@ export const MYTHS: Myth[] = [
     instead:
       '正常用。要注意的是容器——用标注「微波炉适用」的器皿，避免普通塑料盒和保鲜膜直接接触高温食物。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'FDA —— Microwave Ovens: 辐射类型与安全性',
@@ -241,6 +252,7 @@ export const MYTHS: Myth[] = [
       '「汤浓味鲜 = 营养都出来了」的直觉。味道浓度和营养密度是两回事。',
     instead: '汤和肉一起吃。真觉得肉柴，那也是口感问题，不是营养跑了。',
     stakes: 'wasteful',
+    confidence: 'strong',
     sources: [
       {
         label: '中国营养学会 —— 膳食指南科学研究报告',
@@ -261,6 +273,7 @@ export const MYTHS: Myth[] = [
     instead:
       '健康人每天一到两个全蛋没有问题。已有心血管疾病或血脂异常的，按医生的建议来。别为了躲胆固醇只吃蛋白——蛋黄里有胆碱、叶黄素和大部分维生素。',
     stakes: 'wasteful',
+    confidence: 'strong',
     sources: [
       {
         label: '美国膳食指南 2015–2020 —— 取消胆固醇摄入上限',
@@ -279,6 +292,7 @@ export const MYTHS: Myth[] = [
       '这是个人人都想相信的规则，所以没人愿意去验证它。它的功能是给「我要吃掉它」提供一个体面的理由。',
     instead: '看掉在哪儿。自家刚拖过的地板上掉块饼干，风险很低；公共场所的地面，扔了吧。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Miranda & Schaffner, Appl Environ Microbiol 2016 —— 五秒规则实验',
@@ -299,6 +313,7 @@ export const MYTHS: Myth[] = [
     instead:
       '关注一天总量。真的饿了就吃点，蛋白质加纤维，别吃到撑影响睡眠。反流的人睡前 2–3 小时别吃。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Vujović et al., Cell Metabolism 2022 —— 晚进食对能量消耗与食欲调节的影响',
@@ -317,6 +332,7 @@ export const MYTHS: Myth[] = [
     instead:
       '胃病要找原因——幽门螺杆菌、药物刺激、反流，各有各的处理方式。日常规律吃饭、别过烫过辣、戒烟限酒，比换成粥有用。',
     stakes: 'wasteful',
+    confidence: 'strong',
     sources: [
       {
         label: 'Mayo Clinic —— GERD 生活方式管理',
@@ -337,13 +353,14 @@ export const MYTHS: Myth[] = [
     instead:
       '想帮肝肾减负，就是老三样：少喝酒、别乱吃来路不明的补剂、吃够纤维和水。真的怀疑中毒（重金属、药物），去医院做检测。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'NIH NCCIH —— "Detoxes" and "Cleanses": What You Need To Know',
         url: 'https://www.nccih.nih.gov/health/detoxes-and-cleanses-what-you-need-to-know',
       },
     ],
-    related: ['msg', 'alkaline-diet', 'juice-fruit', 'magnet-bracelet', 'craving-deficiency'],
+    related: ['msg', 'alkaline-diet', 'juice-fruit', 'magnet-bracelet', 'craving-deficiency', 'daily-bowel'],
   },
   {
     id: 'swallowed-gum',
@@ -357,6 +374,7 @@ export const MYTHS: Myth[] = [
     instead:
       '嚼完吐到纸巾里包好扔掉。孩子偶尔吞了一次不用慌，更不用催吐——真到要担心的量，你会先看到他拿口香糖当饭吃。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Nemours KidsHealth —— What If I Swallow Gum?',
@@ -380,6 +398,7 @@ export const MYTHS: Myth[] = [
     instead:
       '限制糖的理由是龋齿和总热量，不是「怕亢奋」。孩子吃完糖真的很闹，先看看场合、睡眠和他到底多兴奋——再决定下次还带不带去生日会。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Wolraich et al., JAMA 1995 —— 糖与儿童行为认知的汇总分析',
@@ -403,6 +422,7 @@ export const MYTHS: Myth[] = [
     instead:
       '胡萝卜是好蔬菜，正常吃就行。看东西模糊去验光——真正常见的夜间视力问题是度数不准、散光没矫正、白内障早期，这些胡萝卜都帮不上。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Smithsonian Magazine 2013 —— A WWII Propaganda Campaign Popularized the Myth That Carrots Help You See in the Dark',
@@ -424,6 +444,7 @@ export const MYTHS: Myth[] = [
     instead:
       '直接吃水果，喝白水。真想喝果汁，控制在一小杯（约 150 毫升）以内，而且别拿它顶替水果份额。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Heyman & Abrams, Pediatrics 2017 —— 美国儿科学会果汁建议',
@@ -448,6 +469,7 @@ export const MYTHS: Myth[] = [
     instead:
       '想喝就喝，正常量就好。真正要留意的是拿含糖饮料下饭——那杯饮料的热量才是实打实的。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Mayo Clinic —— Water after meals: Does it disturb digestion?',
@@ -469,6 +491,7 @@ export const MYTHS: Myth[] = [
     instead:
       '想吃就吃一点，没关系。频繁失控的嘴馋，先检查睡眠、压力和是不是吃得太克制；如果突然特别想吃冰、墙皮这类东西，去查一下铁蛋白。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Rogers & Smit, Pharmacol Biochem Behav 2000 —— 从生物-心理-社会视角审视食物渴望的证据',
@@ -495,6 +518,7 @@ export const MYTHS: Myth[] = [
     instead:
       '想吹就吹，主要是为了舒服和护发，不是为了防感冒。防感冒最有效的还是洗手、通风、少摸脸、该打疫苗打疫苗。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Mayo Clinic Health System —— Can wet hair make you sick?',
@@ -505,7 +529,7 @@ export const MYTHS: Myth[] = [
         url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10324571/',
       },
     ],
-    related: ['vitamin-c', 'sick-yearly'],
+    related: ['vitamin-c', 'sick-yearly', 'ac-facial-paralysis'],
   },
   {
     id: 'knuckle-crack',
@@ -517,6 +541,7 @@ export const MYTHS: Myth[] = [
     origin: '关节响听起来就像有什么东西在磨损，直觉上很有说服力。',
     instead: '想掰就掰。如果关节响的同时伴有疼痛、肿胀或卡住，那才需要看医生——那不是这回事。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Kawchuk et al., PLoS ONE 2015 —— 实时核磁下的关节弹响',
@@ -539,6 +564,7 @@ export const MYTHS: Myth[] = [
       '人在发现第一根白发时才开始留意头发，于是接下来注意到的每一根都像是「新长的」。典型的注意力偏差。',
     instead: '想去掉就剪掉，别拔。染发是另一个选择，接受也是。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Scientific American —— Why does hair turn gray?',
@@ -557,6 +583,7 @@ export const MYTHS: Myth[] = [
     origin: '触感和视觉的变化是真实的，只是原因被归错了——变的是切口形状，不是毛本身。',
     instead: '按喜好来。想让重新长出来时不那么扎，可以试试蜡脱或激光——它们作用在毛囊层面。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Mayo Clinic —— Hair removal: Does shaved hair grow back thicker?',
@@ -577,12 +604,13 @@ export const MYTHS: Myth[] = [
     instead:
       '按验光结果足矫。控制进展有证据支持的手段：每天户外活动 2 小时、低浓度阿托品滴眼液、角膜塑形镜（OK 镜）、离焦框架镜——找眼科医生评估。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'Chung, Mohidin & O’Leary, Vision Research 2002 —— 欠矫加快近视进展的随机试验',
       },
     ],
-    related: ['blue-light', 'reading-dark', 'carrot-vision'],
+    related: ['blue-light', 'reading-dark', 'carrot-vision', 'lasik-cure'],
   },
   {
     id: 'blue-light',
@@ -596,13 +624,14 @@ export const MYTHS: Myth[] = [
     instead:
       '眼疲劳主要来自持续近距离聚焦和眨眼减少。用 20-20-20 法则：每 20 分钟看 20 英尺（约 6 米）外 20 秒。调低屏幕亮度到和环境接近，必要时用人工泪液。',
     stakes: 'wasteful',
+    confidence: 'strong',
     sources: [
       {
         label: 'Singh et al., Cochrane Database Syst Rev 2023',
         url: 'https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013244.pub2/full',
       },
     ],
-    related: ['glasses-worse'],
+    related: ['glasses-worse', 'night-mode-phone'],
   },
   {
     id: 'reading-dark',
@@ -616,6 +645,7 @@ export const MYTHS: Myth[] = [
     instead:
       '开灯看书是为了舒服。真想保护孩子的视力，让他们每天在户外待够两小时——这比任何护眼灯、护眼贴的证据都硬。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'He et al., JAMA 2015 —— 增加户外活动降低儿童近视发生率的整群随机试验',
@@ -634,6 +664,7 @@ export const MYTHS: Myth[] = [
       '来源已经很难考证，常被错误地归到爱因斯坦头上。可能源于早期神经科学对胶质细胞功能的误解，也可能来自「人的潜能远未发挥」这类励志说法的字面化。自我提升产业让它一直活着。',
     instead: '想提升认知能力，睡眠、有氧运动、学新技能的证据都比「开发潜能」的课程扎实得多。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Scientific American —— Do people only use 10 percent of their brains?',
@@ -654,6 +685,7 @@ export const MYTHS: Myth[] = [
     instead:
       '对症处理：休息、补水、需要时用退烧止痛药。症状超过 10 天不见好、或先好转又突然加重伴高热，再去看医生评估是否继发细菌感染。抗生素处方交给医生。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'CDC —— Antibiotic Prescribing and Use: Common Cold',
@@ -674,6 +706,7 @@ export const MYTHS: Myth[] = [
     instead:
       '正常饮食就能满足需要，一个猕猴桃或半个甜椒就够一天的量。感冒了主要还是休息和补水。',
     stakes: 'wasteful',
+    confidence: 'strong',
     sources: [
       {
         label: 'Hemilä & Chalker, Cochrane Database Syst Rev —— Vitamin C for preventing and treating the common cold',
@@ -693,6 +726,7 @@ export const MYTHS: Myth[] = [
     instead:
       '每年流行季前接种，尤其是老人、慢性病患者、孕妇和小孩。它的价值不只是不得病，更是不得重症。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'CDC —— Misconceptions about Seasonal Flu and Flu Vaccines',
@@ -713,13 +747,14 @@ export const MYTHS: Myth[] = [
     instead:
       '抽筋当下：反方向拉伸（小腿抽筋就勾脚背、伸直膝盖）。预防：睡前拉伸小腿、注意补水、检查在用的药。频繁发作或伴随麻木无力，去查一下原因。',
     stakes: 'wasteful',
+    confidence: 'strong',
     sources: [
       {
         label: 'Mayo Clinic —— Muscle cramp',
         url: 'https://www.mayoclinic.org/diseases-conditions/muscle-cramp/symptoms-causes/syc-20350820',
       },
     ],
-    related: ['bone-soup'],
+    related: ['bone-soup', 'sprain-heat'],
   },
   {
     id: 'tongue-map',
@@ -732,6 +767,7 @@ export const MYTHS: Myth[] = [
       '1901 年德国研究者 D. P. Hänig 测量了舌头不同区域的味觉阈值，发现了微小差异。1942 年哈佛心理学家 Edwin Boring 把这些数据翻译并绘成图表时，坐标处理不当，把「略微更敏感」画成了「只在这里敏感」。这张图进了教科书，流传了大半个世纪。',
     instead: '不用做什么。下次看到这张图，可以拿舌尖蘸一点苦的东西自己验证。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'ScienceAlert —— How a mistranslation made you think your tongue had taste zones',
@@ -751,6 +787,7 @@ export const MYTHS: Myth[] = [
     instead:
       '想让大脑发育好，方法朴素得没什么可卖的：睡够、运动、阅读、丰富的玩耍和对话。没有任何短期课程能给大脑「扩容」。',
     stakes: 'wasteful',
+    confidence: 'strong',
     sources: [
       {
         label: 'Nielsen et al., PLoS ONE 2013 —— 上千人静息态脑成像检验左右脑假说',
@@ -771,6 +808,7 @@ export const MYTHS: Myth[] = [
     instead:
       '按国家免疫规划接种。对疫苗成分、禁忌症有疑问，问接种门诊的医生，别问家长群。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'Deer, BMJ 2011 —— 麻腮风疫苗骗局调查',
@@ -796,6 +834,7 @@ export const MYTHS: Myth[] = [
     instead:
       '不喝酒的人，没必要为了「保护心脏」开始喝。喝的人记住一句就够：少喝比多喝好，不喝最好——这是世界卫生组织 2023 年的原话。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'Zhao et al., JAMA Netw Open 2023 —— 每日酒精摄入与全因死亡风险的汇总分析（107 个队列）',
@@ -821,6 +860,7 @@ export const MYTHS: Myth[] = [
     instead:
       '想用就用，按说明用。不放心就选无铝香体剂——为了气味管理，不是为了「防癌」。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'National Cancer Institute —— Antiperspirants/Deodorants and Breast Cancer',
@@ -842,6 +882,7 @@ export const MYTHS: Myth[] = [
     instead:
       '感冒不值得追求，也不值得硬扛出自豪感。睡好、打流感疫苗、勤洗手；真病了就休息补水，不用安慰自己「这是身体在变好」。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'CDC —— About Common Cold（200 多种病毒可致普通感冒）',
@@ -862,6 +903,7 @@ export const MYTHS: Myth[] = [
     instead:
       '照短清单执行：戒酒戒烟、肉蛋做熟、奶喝巴氏消毒的、避开高汞鱼、咖啡一天一小杯以内。保持日常活动和正常运动，别躺着不动。养猫的把铲屎交给别人（弓形虫），具体用药和检查听产科医生的——别听亲戚群里的。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'ACOG Committee Opinion 804 (2020) —— Physical Activity and Exercise During Pregnancy',
@@ -894,6 +936,7 @@ export const MYTHS: Myth[] = [
     instead:
       '正常洗头洗澡刷牙（淋浴、及时吹干）、房间通风、均衡饮食、尽早下地活动；盯住真正要紧的信号：出血量、发热、伤口红肿、情绪持续两周以上的低落。42 天产后复查别跳过。家人能给的最好照顾，是分担夜奶和家务，不是没收手机和逼她躺着。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'WHO (2022) —— 产后母婴照护建议（卫生、活动、并发症识别）',
@@ -911,6 +954,61 @@ export const MYTHS: Myth[] = [
     related: ['pregnancy-taboos', 'soup-nutrition', 'fever-sweat'],
   },
 
+  {
+    id: 'nail-moons',
+    category: 'body',
+    belief: '指甲上的月牙越少，说明身体越虚',
+    truth: '月牙是甲母质没被皮肤盖住的部分，大小主要由遗传和指甲生长速度决定，和「虚不虚」无关。',
+    detail:
+      '指甲从根部的甲母质长出来，新长出的角蛋白细胞还没完全角质化时发白，这就是月牙。有人甲母质位置靠前、皮肤盖得少，月牙就大；有人天生靠后，十个手指都看不到月牙——两种都完全正常。同一个人，拇指月牙通常最大、小指最小，因为拇指指甲长得最快。\n\n要留余地：月牙的「突然变化」——比如短期内全部消失或突然变大——确实值得看一眼医生，因为它可能伴随甲状腺或营养问题。但这和「月牙少=虚」是两回事：盯着自己的月牙数量判断健康，没有意义。',
+    origin: '把容易观察的身体特征当成健康晴雨表，是很自然的联想。月牙长在手上天天见，「它应该反映点什么」的说法就这么传开了。',
+    instead: '不用数月牙。指甲真正值得留意的信号是：颜色明显改变、凹陷、增厚、纵向黑线。担心身体就去体检，别看手相。',
+    stakes: 'harmless',
+    confidence: 'strong',
+    sources: [
+      {
+        label: '甲母质与指甲生长的解剖学常识 —— 见皮肤科教材（本条无稳定公开链接）',
+      },
+    ],
+  },
+  {
+    id: 'daily-bowel',
+    category: 'body',
+    belief: '每天必须排便一次，不排就是宿便堆积、毒素吸收',
+    truth: '正常排便频率的范围是一天三次到一周三次。「宿便」不是医学概念，肠道不会存着「毒」等你排。',
+    detail:
+      '医学上判断便秘看的是排便困难、粪便干硬、排便不尽感，而不是「没每天打卡」。NHS 的便秘指南写得明白：每个人的规律不同，一天三次到一周三次都算正常范围。粪便在结肠里多待一天，只是水分被吸收得更多一些，并不存在「毒素被重新吸收进血液」这件事——健康人的肠道屏障和肝脏本来就在处理代谢废物。\n\n「宿便」这个词在任何解剖学和消化病学教材里都找不到。它流行起来是因为排毒产品营销需要一个听起来可怕的词（见本站「排毒」条目）。\n\n要留余地：排便习惯「突然改变」——持续几周的明显变稀、变细、带血——是需要就医的信号，这和工作日多跑一次厕所完全是两回事。',
+    origin: '「每天一次」听起来整齐又自律，很容易变成道德标准；再配上「宿便排毒」的商业话术，焦虑就齐了。',
+    instead: '看自己的规律，不看日历。多喝水、吃够膳食纤维、动起来；排便习惯突然改变超过两三周，去看消化科。',
+    stakes: 'harmless',
+    confidence: 'strong',
+    sources: [
+      {
+        label: 'NHS —— Constipation（排便频率的正常范围）',
+        url: 'https://www.nhs.uk/conditions/constipation/',
+      },
+    ],
+    related: ['detox'],
+  },
+  {
+    id: 'lasik-cure',
+    category: 'body',
+    belief: '做了近视手术，近视就治好了',
+    truth: '手术只是用激光把角膜磨成一副「永久的隐形眼镜」。眼轴还是那么长，高度近视的眼底风险一点没少。',
+    detail:
+      '近视的本质是眼轴变长，光线聚焦在视网膜前面。激光手术（LASIK、全飞秒）改变的是角膜的曲率，让焦点重新落回视网膜——它解决的是「不用戴眼镜」，不是「眼睛恢复正常」。被拉长的眼球壁和变薄拉伸的视网膜原封不动。\n\n所以高度近视（600 度以上）的人做完手术，视网膜裂孔、脱离、黄斑病变的风险依然高于常人，定期查眼底仍然必要。这一点手术同意书里通常写了，但广告里不写。',
+    origin: '「摘掉眼镜」和「治好近视」在日常语言里被划了等号——效果上确实都是看得清，但医学上一个是矫正，一个是治愈，差得很远。',
+    instead: '想摘镜、条件合适就去做，它是成熟的矫正手段。但术后该查眼底还查眼底，尤其是高度近视的人——别因为不戴眼镜了就当自己是正视眼。',
+    stakes: 'harmless',
+    confidence: 'strong',
+    sources: [
+      {
+        label: '眼科学教材共识：近视手术是屈光矫正，不改变眼轴和眼底 —— 本条无稳定公开链接',
+      },
+    ],
+    related: ['glasses-worse'],
+  },
+
   // ─────────────────────────── 睡 ───────────────────────────
   {
     id: 'nightcap',
@@ -923,13 +1021,14 @@ export const MYTHS: Myth[] = [
     instead:
       '睡不着先查原因：咖啡因、屏幕、作息不规律、焦虑。失眠的一线治疗是认知行为疗法（CBT-I），效果比任何助眠饮品都可靠。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'Ebrahim et al., Alcohol Clin Exp Res 2013 —— 酒精对睡眠的影响综述',
         url: 'https://onlinelibrary.wiley.com/doi/10.1111/acer.12006',
       },
     ],
-    related: ['snoring', 'insomnia-rest', 'wine-heart'],
+    related: ['snoring', 'insomnia-rest', 'wine-heart', 'milk-sleep'],
   },
   {
     id: 'weekend-catchup',
@@ -943,12 +1042,13 @@ export const MYTHS: Myth[] = [
     instead:
       '尽量让工作日和周末的起床时间差控制在一小时以内。真的欠了觉，补觉比不补好，但别把它当成常规方案。',
     stakes: 'wasteful',
+    confidence: 'debated',
     sources: [
       {
         label: 'Depner et al., Current Biology 2019 —— 周末恢复性睡眠对代谢的影响',
       },
     ],
-    related: ['eight-hours', 'insomnia-rest'],
+    related: ['eight-hours', 'insomnia-rest', 'nap-long'],
   },
   {
     id: 'eight-hours',
@@ -962,6 +1062,7 @@ export const MYTHS: Myth[] = [
     instead:
       '判断标准看白天：如果白天不需要靠咖啡硬撑、注意力正常、周末不需要大幅补觉，那你的睡眠时长大概是够的。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Watson et al., SLEEP 2015 —— AASM 与 SRS 成人睡眠时长共识声明',
@@ -980,13 +1081,14 @@ export const MYTHS: Myth[] = [
     instead:
       '这几个信号要当回事：鼾声很响、旁人观察到呼吸停顿、夜间憋醒、晨起头痛口干、白天怎么睡都困。有这些就去做睡眠监测。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'Mayo Clinic —— Obstructive sleep apnea',
         url: 'https://www.mayoclinic.org/diseases-conditions/obstructive-sleep-apnea/symptoms-causes/syc-20352090',
       },
     ],
-    related: ['nightcap', 'sleepwalk-wake', 'elder-sleep'],
+    related: ['nightcap', 'sleepwalk-wake', 'elder-sleep', 'dream-sleep-quality'],
   },
   {
     id: 'sleepwalk-wake',
@@ -1000,6 +1102,7 @@ export const MYTHS: Myth[] = [
     instead:
       '别围观、别摇晃、别大声喊。牵着他慢慢走回床上；叫得醒就叫，叫不醒就在旁边守着。频繁发作或有危险动作的，去看睡眠门诊。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'NHS —— Sleepwalking',
@@ -1021,13 +1124,14 @@ export const MYTHS: Myth[] = [
     instead:
       '固定起床时间比固定入睡时间重要；睡不着超过 20 分钟就起来，灯光调暗，别看时间。长期失眠去看医生做 CBT-I，效果比安眠药持久。',
     stakes: 'wasteful',
+    confidence: 'strong',
     sources: [
       {
         label: 'Edinger et al., J Clin Sleep Med 2021 —— AASM 成人慢性失眠行为治疗指南',
         url: 'https://pubmed.ncbi.nlm.nih.gov/33164742/',
       },
     ],
-    related: ['nightcap', 'weekend-catchup', 'melatonin-sleep'],
+    related: ['nightcap', 'weekend-catchup', 'melatonin-sleep', 'dream-sleep-quality', 'night-mode-phone'],
   },
   {
     id: 'elder-sleep',
@@ -1041,6 +1145,7 @@ export const MYTHS: Myth[] = [
     instead:
       '家里老人长期睡不好，别劝「年纪大了都这样」。带去评估一下：排查睡眠呼吸暂停、复查药物清单、处理疼痛和夜尿，很多情况能改善。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'Miner & Kryger, Sleep Med Clin 2017 —— Sleep in the Aging Population',
@@ -1062,6 +1167,7 @@ export const MYTHS: Myth[] = [
     instead:
       '倒时差、作息紊乱，低剂量褪黑素可以短期试试；长期失眠的首选是 CBT-I（认知行为治疗），效果比任何药都持久。',
     stakes: 'wasteful',
+    confidence: 'strong',
     sources: [
       {
         label: 'Sateia et al., J Clin Sleep Med 2017 —— AASM 慢性失眠药物治疗指南',
@@ -1072,7 +1178,7 @@ export const MYTHS: Myth[] = [
         url: 'https://pubmed.ncbi.nlm.nih.gov/12076414/',
       },
     ],
-    related: ['insomnia-rest', 'elder-sleep', 'night-owl'],
+    related: ['insomnia-rest', 'elder-sleep', 'night-owl', 'milk-sleep'],
   },
   {
     id: 'night-owl',
@@ -1086,6 +1192,7 @@ export const MYTHS: Myth[] = [
     instead:
       '别和别人比起床时间，比睡眠规不规律。必须早起的夜型人：早晨见强光、晚上调暗灯光、固定起床点，节律可以一点点往前挪。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Jones et al., Nat Commun 2019 —— 近 70 万人的时型全基因组研究',
@@ -1093,6 +1200,80 @@ export const MYTHS: Myth[] = [
       },
     ],
     related: ['eight-hours', 'melatonin-sleep'],
+  },
+
+  {
+    id: 'dream-sleep-quality',
+    category: 'sleep',
+    belief: '做梦多说明没睡好，一夜无梦才是深睡眠',
+    truth: '每个人每晚都做 4–6 次梦，记不住只是因为你没在做梦时醒来。「多梦」的感觉往往来自频繁觉醒。',
+    detail:
+      '梦主要发生在快速眼动（REM）睡眠期，正常人每晚经历 4–6 个 REM 周期，做梦是大脑的常规活动，不是睡眠质量差的标志。你觉得「一夜无梦」，是因为从非 REM 期醒来，梦没被记住而已。\n\n反过来，「做了一晚上梦好累」的真实原因通常是：夜里醒了很多次（压力、打鼾、呼吸暂停、 alcohol、环境吵），每次正好在 REM 期醒来，梦就被记住了。问题在「醒得多」，不在「梦得多」。\n\n要留余地：频繁做噩梦且影响白天状态，或者梦中大喊大叫、拳打脚踢（可能是 REM 睡眠行为障碍），这两样都值得看医生——但这是梦境内容和行为异常，不是「梦多」本身。',
+    origin: '梦是睡眠里唯一能被主观感知的部分，很自然地被当成了睡眠质量的「读数」。可惜这个读数测的是记忆，不是深度。',
+    instead: '别把「有没有做梦」当睡眠报告。早上醒来精力如何、白天困不困才是指标。真觉得多梦又疲惫，先查夜间觉醒的原因：打鼾、饮酒、压力。',
+    stakes: 'harmless',
+    confidence: 'strong',
+    sources: [
+      {
+        label: '睡眠医学共识：梦主要发生在 REM 期，人人每夜都做梦 —— 本条无稳定公开链接',
+      },
+    ],
+    related: ['insomnia-rest', 'snoring'],
+  },
+  {
+    id: 'nap-long',
+    category: 'sleep',
+    belief: '午觉睡得越久越解乏，最好能睡足一两个小时',
+    truth: '超过半小时的午觉容易把人拖进深睡眠，醒来反而昏沉更久。20–30 分钟才是甜区。',
+    detail:
+      '睡眠分周期，入睡约 30 分钟后开始进入深睡眠。在深睡眠阶段被闹钟拽起来，会经历明显的「睡眠惰性」——那种脑袋发懵、反应变慢的状态能持续半小时到一小时。所以「睡了两个小时更累」不是错觉，是醒错了阶段。\n\nNASA 当年为飞行员做的小睡研究常被引用：约 26 分钟的小睡显著提升了警觉度和操作表现。短暂小睡主要补充的是清醒度，不欠深睡眠的债。\n\n要留余地：如果晚上严重缺觉，白天补一个完整的 90 分钟周期比硬扛强；只是对多数作息正常的人，「午睡以短为佳」更实用。',
+    origin: '「累了就多睡」的直觉直接套用到了午觉上。但午觉的功能是快速回血，不是夜间睡眠的缩减版。',
+    instead: '午觉定 20–30 分钟的闹钟，下午三点前睡。醒来缓五分钟再干活。晚上真缺觉，问题要在晚上解决。',
+    stakes: 'harmless',
+    confidence: 'strong',
+    sources: [
+      {
+        label: 'Mayo Clinic —— Napping: do\'s and don\'ts for healthy adults',
+        url: 'https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/napping/art-20048319',
+      },
+    ],
+    related: ['weekend-catchup'],
+  },
+  {
+    id: 'milk-sleep',
+    category: 'sleep',
+    belief: '睡前喝一杯热牛奶，里面的色氨酸能助眠',
+    truth: '一杯牛奶里的色氨酸少得不足以影响睡意。觉得有用，是温热饮品加仪式感带来的安慰剂效应。',
+    detail:
+      '色氨酸确实是合成褪黑素和血清素的原料，这个生化链条是真的。问题出在剂量：一杯牛奶大约含 100mg 色氨酸，而研究里影响睡眠的色氨酸补充剂量是克级的——差着十倍往上。而且色氨酸要穿过血脑屏障还得和其他氨基酸竞争转运，一杯牛奶掀不起什么浪。\n\n但「喝了好像真有用」也不全是错觉：固定的睡前仪式会建立条件反射，温热饮品让人放松，再加上「我喝了助眠的」这个预期本身就有镇静效果。这是安慰剂的标准剧本——有效，但有效成分不是色氨酸。',
+    origin: '「色氨酸→褪黑素→助眠」这条生化链每一步都是真的，于是「牛奶含色氨酸」被顺理成章地接到了结论上，中间的剂量鸿沟被忽略了。',
+    instead: '喜欢喝就喝，把它当放松仪式没问题。真失眠别指望食物：固定作息、睡前一小时调暗灯光、少看手机，长期失眠的一线疗法是认知行为疗法（CBT-I）。',
+    stakes: 'harmless',
+    confidence: 'strong',
+    sources: [
+      {
+        label: '色氨酸剂量与睡眠的生化讨论 —— 见睡眠医学综述（本条无稳定公开链接）',
+      },
+    ],
+    related: ['nightcap', 'melatonin-sleep'],
+  },
+  {
+    id: 'night-mode-phone',
+    category: 'sleep',
+    belief: '睡前玩手机没事，开个夜间模式（护眼模式）就不影响睡眠了',
+    truth: '夜间模式只减少了蓝光这一项刺激，而睡前玩手机最大的问题是内容让你越看越精神。',
+    detail:
+      '夜间的强光（尤其是蓝光部分）确实会抑制褪黑素分泌、推迟睡意，夜间模式把屏幕调暖，能去掉一部分影响——这一步是有依据的。但也就到此为止了：短视频、消息、游戏的内容刺激会持续拉高觉醒度，真正让你「再刷五分钟就到两点」的是多巴胺，不是光谱。\n\n实验里影响睡眠的除了光线，还有「睡前使用时长」和「内容参与度」。开着最暖的夜间模式刷一小时短视频，对睡眠的伤害远大于不开夜间模式看十分钟电子书。',
+    origin: '「蓝光伤睡眠」被科普成功后，手机厂商顺势推出夜间模式，「开了就没事」是技术解决方案主义的典型推论——解决了变量里最好解决的那个，然后假装问题解决了。',
+    instead: '睡前半小时到一小时把手机放远点是最有效的做法。实在要用，夜间模式 + 调暗亮度 + 看静态内容（电子书而不是视频），并给自己设个硬性停止时间。',
+    stakes: 'wasteful',
+    confidence: 'limited',
+    sources: [
+      {
+        label: '屏幕光线、使用行为与睡眠的关系 —— 见睡眠医学综述（本条无稳定公开链接）',
+      },
+    ],
+    related: ['blue-light', 'insomnia-rest'],
   },
 
   // ─────────────────────────── 运动 ───────────────────────────
@@ -1108,6 +1289,7 @@ export const MYTHS: Myth[] = [
     instead:
       '想减脂就制造热量缺口（饮食为主）+ 保持力量训练（保住肌肉）。腹肌训练照做，它让肌肉更明显——只是要等脂肪层整体变薄才看得见。',
     stakes: 'wasteful',
+    confidence: 'strong',
     sources: [
       {
         label: 'Ramírez-Campillo et al., J Strength Cond Res 2013 —— 单侧腿部训练后的区域脂肪变化',
@@ -1126,6 +1308,7 @@ export const MYTHS: Myth[] = [
     instead:
       '用运动强度和时长衡量效果，不看汗量。运动中和运动后及时补水；夏天户外运动注意补充电解质。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'Meerman & Brown, BMJ 2014 —— When somebody loses weight, where does the fat go?',
@@ -1146,6 +1329,7 @@ export const MYTHS: Myth[] = [
     instead:
       '酸痛期做低强度活动（散步、轻松骑车）促进血流，通常比完全静止舒服。按摩和拉伸能缓解主观不适，但不是在「揉散乳酸」。逐步增加训练量能明显减少 DOMS。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Cheung et al., Sports Medicine 2003 —— DOMS 的机制与处理综述',
@@ -1166,6 +1350,7 @@ export const MYTHS: Myth[] = [
     instead:
       '运动前做动态热身：高抬腿、开合跳、弓步走、专项动作的低强度版本，让心率和肌温上来。静态拉伸留到运动后，用来改善柔韧性。',
     stakes: 'wasteful',
+    confidence: 'strong',
     sources: [
       {
         label: 'Behm et al., Appl Physiol Nutr Metab 2016 —— 热身中静态与动态拉伸的系统综述',
@@ -1185,6 +1370,7 @@ export const MYTHS: Myth[] = [
     instead:
       '别纠结那个整数。从现在的步数往上加一两千步，收益就很实在。走路速度（每分钟约 100 步以上算中等强度）比总步数更值得关注。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Lee et al., JAMA Internal Medicine 2019 —— 步数、步频与老年女性全因死亡率',
@@ -1209,6 +1395,7 @@ export const MYTHS: Myth[] = [
     instead:
       '该练就练。想要「线条」，需要的恰恰是肌肉量加上适度的体脂——而肌肉正是力量训练给的。',
     stakes: 'wasteful',
+    confidence: 'strong',
     sources: [
       {
         label: 'ACSM —— Resistance Training for Health',
@@ -1230,6 +1417,7 @@ export const MYTHS: Myth[] = [
     instead:
       '循序渐进加量（每周增幅别超一成），疼就减量不硬扛，体重大的先从快走开始。为了膝盖戒掉跑步，是捡了芝麻。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Alentorn-Geli et al., JOSPT 2017 —— 跑步与膝髋骨关节炎的系统综述',
@@ -1250,6 +1438,7 @@ export const MYTHS: Myth[] = [
     instead:
       '什么时间练、练前吃不吃，按你舒服、能坚持的来。空腹练要是头晕没劲，就吃点再练——减脂看的是长期的能量总账。',
     stakes: 'harmless',
+    confidence: 'limited',
     sources: [
       {
         label: 'Schoenfeld et al., J Int Soc Sports Nutr 2014 —— 空腹与进食后有氧运动的体成分对照试验',
@@ -1270,6 +1459,7 @@ export const MYTHS: Myth[] = [
     instead:
       '练完饿了就吃，不饿就正常吃饭。盯总量、盯长期，比掐着表灌粉有用得多。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Aragon & Schoenfeld, J Int Soc Sports Nutr 2013 —— 重新审视合成窗口',
@@ -1291,6 +1481,7 @@ export const MYTHS: Myth[] = [
     instead:
       '停练期把食量调回日常水平就行。中断过也别怕，重新开始比你想象的快。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Mujika & Padilla, Sports Med 2000 —— 去训练导致的生理与运动表现变化',
@@ -1311,6 +1502,7 @@ export const MYTHS: Myth[] = [
     instead:
       '没特殊不适就正常运动，强度按当天状态调；瑜伽、散步这类轻量的对痛经还特别友好。疼到影响生活，去排查继发性痛经（比如子宫内膜异位），别硬扛也别硬躺。',
     stakes: 'harmless',
+    confidence: 'limited',
     sources: [
       {
         label: 'Armour et al., Cochrane Database Syst Rev 2019 —— 运动与痛经的系统综述',
@@ -1331,6 +1523,7 @@ export const MYTHS: Myth[] = [
     origin: '主观体感和客观生理状态在这件事上正好相反，而人只能感知到前者。',
     instead: '真冷就穿够、进屋、喝热的非酒精饮品。已经出现失温迹象的人绝对不能给酒。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'NHS —— Hypothermia',
@@ -1350,6 +1543,7 @@ export const MYTHS: Myth[] = [
     instead:
       '小伤口：清水或生理盐水冲洗干净是第一位的，然后可以用碘伏（比酒精温和，不刺激创面）。医用酒精用于完好皮肤的消毒，不往开放伤口里倒。伤口深、有异物、动物咬伤、出血不止，去医院。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'CDC —— Chemical Disinfectants: Alcohol（有效浓度 60–90%）',
@@ -1370,6 +1564,7 @@ export const MYTHS: Myth[] = [
     instead:
       '不用为辐射调整生活。手机影响睡眠是真的，但原因是内容让人兴奋和光照抑制褪黑素——所以睡前放远点还是有道理的，只不过理由不是辐射。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: '美国国家癌症研究所（NCI）—— Cell Phones and Cancer Risk',
@@ -1390,6 +1585,7 @@ export const MYTHS: Myth[] = [
     instead:
       '随用随充，日常保持在 20–80% 之间对寿命最友好。真正伤电池的是高温——别在暴晒的车里充电，别盖着被子充。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Apple —— 电池与性能',
@@ -1409,6 +1605,7 @@ export const MYTHS: Myth[] = [
     instead:
       '按包装刻度放，水软的地区可以再少一点。衣服少的时候按比例减量。定期用高温筒自洁程序清洗洗衣机。',
     stakes: 'wasteful',
+    confidence: 'strong',
     sources: [
       {
         label: 'ACI —— Laundry detergent dosing guidance',
@@ -1427,6 +1624,7 @@ export const MYTHS: Myth[] = [
     instead:
       '把海绵当消耗品，一到两周换一块。每次用完拧干、摊开放在通风处。切生肉的区域用可以高温洗的抹布或刷子，刷子比海绵更容易保持干燥。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'Cardinale et al., Scientific Reports 2017 —— 厨房海绵微生物组研究',
@@ -1445,6 +1643,7 @@ export const MYTHS: Myth[] = [
     instead:
       '日常防晒选广谱（标注 PA+++ 或 broad spectrum）产品。长时间在窗边工作、开车通勤的人尤其值得涂。物理遮挡——帽子、长袖、防晒膜——同样有效。',
     stakes: 'wasteful',
+    confidence: 'strong',
     sources: [
       {
         label: 'Gordon & Brieva, NEJM 2012 —— Unilateral Dermatoheliosis',
@@ -1464,6 +1663,7 @@ export const MYTHS: Myth[] = [
     instead:
       '雷暴时室内用手机没问题，但拔掉充电线。避免使用有线电话、别洗澡、远离窗户和金属管道。在户外则要尽快进入建筑物或汽车内。',
     stakes: 'harmless',
+    confidence: 'strong',
     sources: [
       {
         label: 'NOAA —— Lightning Safety Myths',
@@ -1484,6 +1684,7 @@ export const MYTHS: Myth[] = [
     instead:
       '洗完澡用毛巾擦外耳廓就够了。觉得堵、闷、听不清，去耳鼻喉科，医生一分钟就能冲出来。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'Schwartz et al., Otolaryngol Head Neck Surg 2017 —— AAO-HNS 耳屎临床指南',
@@ -1504,6 +1705,7 @@ export const MYTHS: Myth[] = [
     instead:
       '省下碱性水的钱。均衡饮食的理由有一大把，「调酸碱」不在其中。',
     stakes: 'wasteful',
+    confidence: 'strong',
     sources: [
       {
         label: 'Fenton & Huang, BMJ Open 2016 —— 膳食酸负荷、碱性水与癌症关联的系统综述',
@@ -1525,6 +1727,7 @@ export const MYTHS: Myth[] = [
     instead:
       '疼去查原因，别先买设备。已经买了也不用扔——它大概率无害，只是没用。',
     stakes: 'wasteful',
+    confidence: 'strong',
     sources: [
       {
         label: 'Pittler et al., CMAJ 2007 —— 静磁体镇痛的系统综述与荟萃分析',
@@ -1545,6 +1748,7 @@ export const MYTHS: Myth[] = [
     instead:
       '比买桌子更有效的免费方案：每半小时起来走两分钟、接水走楼梯。真要买，买可升降的，站坐轮换着用。',
     stakes: 'wasteful',
+    confidence: 'strong',
     sources: [
       {
         label: 'Saeidifard et al., Eur J Prev Cardiol 2018 —— 站立与坐姿能量消耗差异的荟萃分析',
@@ -1565,6 +1769,7 @@ export const MYTHS: Myth[] = [
     instead:
       '普通家庭正常吃加碘盐就好；有甲状腺疾病史的人问内分泌科医生。与其纠结盐，不如把体检报告里那个几毫米的结节按医嘱复查。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'Teng et al., N Engl J Med 2006 —— 碘摄入水平与中国甲状腺疾病的对比研究',
@@ -1572,6 +1777,78 @@ export const MYTHS: Myth[] = [
       },
     ],
     related: ['msg', 'alkaline-diet'],
+  },
+
+  {
+    id: 'new-clothes-wash',
+    category: 'life',
+    belief: '新衣服不洗就直接穿，反正出厂是干净的',
+    truth: '「新」不等于干净：布料在生产和运输中会带甲醛整理剂、染料浮色和一路的灰尘细菌，贴身穿之前洗一次是划算的。',
+    detail:
+      '纺织品为了防皱防缩会做树脂整理，甲醛是常见残留之一——各国对贴身衣物的甲醛含量有标准，超标会引起接触性皮炎，而一次水洗就能去掉大部分。染色布料的浮色、仓储运输的灰尘和微生物也同理。\n\n要留余地：这里说「划算」而不是「致命」。正规渠道的衣物甲醛大多在标准限值内，直接穿一次通常不会怎样——这条要反对的是「出厂=干净」的默认假设，不是制造恐慌。外套大衣这类不贴身的，不洗直接穿问题不大。',
+    origin: '新衣服看起来笔挺干净，「脏」是看不见的，于是被默认为不存在。',
+    instead: '贴身衣物（内衣、T 恤、床品）过一遍水再穿；皮肤敏感的人和婴幼儿衣物尤其要洗。外衣不贴身，看心情。',
+    stakes: 'harmless',
+    confidence: 'limited',
+    sources: [
+      {
+        label: '纺织品甲醛整理与接触性皮炎 —— 见纺织品安全国家标准 GB 18401 及皮肤科资料（本条无稳定公开链接）',
+      },
+    ],
+  },
+  {
+    id: 'toilet-std',
+    category: 'life',
+    belief: '公共马桶圈会传染性病，坐上去就危险了',
+    truth: '淋病、梅毒、HIV 这些病原体离开人体很快失活，经由马桶圈传播的病例在医学上从未被证实过。',
+    detail:
+      '性传播疾病的病原体大多是脆弱的：HIV 在体外几分钟到几小时内失活，梅毒螺旋体对干燥极其敏感，淋球菌离开黏膜环境也活不久。它们要传播，需要的是黏膜对黏膜、体液对体液——马桶圈既干燥又常温，还要隔着你完整的大腿皮肤，这条路在生物学上走不通。CDC 和主流性病指南都不把马桶圈列为传播途径。\n\n要留余地：马桶圈确实可能有大肠杆菌等肠道细菌（来自冲水气溶胶），但完整的皮肤本身就是屏障，勤洗手比扎马步有用得多。皮肤有开放伤口时垫张纸，是卫生考虑，不是防性病。',
+    origin: '「脏地方=生病」的直觉加上对性病的耻感——把感染归因于马桶，比承认性接触容易说出口。这个替罪羊一当就是几十年。',
+    instead: '用公共卫生间后认真洗手就够了。真正的性病预防是安全套和定期筛查，不是半蹲姿势。',
+    stakes: 'harmless',
+    confidence: 'strong',
+    sources: [
+      {
+        label: 'CDC —— 性病传播途径说明（不经马桶圈等日常接触传播）',
+      },
+    ],
+  },
+  {
+    id: 'ac-facial-paralysis',
+    category: 'life',
+    belief: '空调、风扇对着脸吹，会吹成面瘫',
+    truth: '面瘫（贝尔麻痹）的主流解释是病毒引发的神经炎症，冷风直吹没有被证实是病因。',
+    detail:
+      '贝尔麻痹是面神经突然发炎水肿、在骨性管道里被卡住导致的一侧面部瘫痪。目前的主流观点认为它和疱疹病毒等感染后的炎症反应有关，NHS 等机构的病因列表里没有「吹风」这一项。「吹空调后面瘫了」的新闻每年夏天都有，但先后关系不等于因果——面瘫的发病率常年稳定，夏天吹空调的人以亿计，真要是病因，面瘫早该夏季爆发了。\n\n要留余地：「寒冷暴露诱发」是一个被讨论过的假说，有些病例报告提过，但从未被系统研究证实。真正的风险信号是：除了面部无力还伴随肢体无力、言语不清——那是中风，立刻打 120。',
+    origin: '「受风」是传统病因观里的万能解释之一，恰好面瘫又常发生在熬夜疲劳免疫力低的时候——和开空调的季节重合，罪名就安上了。',
+    instead: '空调风扇该用用，别整晚对着头吹更多是为了不着凉、不口干，不是防面瘫。出现一侧脸动不了，48 小时内就医用激素效果最好——别在家拔火罐等它自己好。',
+    stakes: 'harmless',
+    confidence: 'strong',
+    sources: [
+      {
+        label: 'NHS —— Bell\'s palsy（病因与病毒相关，未列冷风）',
+        url: 'https://www.nhs.uk/conditions/bells-palsy/',
+      },
+    ],
+    related: ['wet-hair'],
+  },
+  {
+    id: 'hand-sanitizer',
+    category: 'life',
+    belief: '免洗洗手液搓两下，就和洗手一样干净了',
+    truth: '免洗洗手液能杀多数细菌和包膜病毒，但去不掉油污、诺如病毒和艰难梭菌——流水加肥皂仍然是金标准。',
+    detail:
+      '含酒精（60% 以上）的免洗洗手液对多数常见病原体是有效的，流感、新冠这类包膜病毒都在射程内，这是 CDC 认可的。但它的短板也很明确：对诺如病毒（上吐下泻的常见元凶）和艰难梭菌效果差；手上有明显污垢、油脂时酒精根本接触不到微生物；它还不去除农药、重金属这类化学残留——洗手是「冲走」，免洗只是「杀死一部分」。\n\n所以 CDC 的建议是分层：没有洗手条件时免洗洗手液是很好的替代，有条件时流水肥皂优先。',
+    origin: '「消毒」这个词自带终极感，听起来像是洗手的升级版。其实它是便携版——牺牲了一些覆盖面，换来随时随地。',
+    instead: '外出吃饭前、没水源时用免洗洗手液（用量要够、搓到干）；在家、便后、手上有油有土时老老实实流水洗手 20 秒。',
+    stakes: 'harmless',
+    confidence: 'strong',
+    sources: [
+      {
+        label: 'CDC —— Clean Hands / Hand Sanitizer Use（酒精免洗的适用与局限）',
+        url: 'https://www.cdc.gov/clean-hands/about/index.html',
+      },
+    ],
   },
 
   // ─────────────────────────── 关键时刻 ───────────────────────────
@@ -1587,6 +1864,7 @@ export const MYTHS: Myth[] = [
     instead:
       '坐下，身体略微前倾，用拇指和食指捏住鼻翼柔软的部分（不是鼻梁骨），持续按压 10–15 分钟不要中途松手查看。可以在鼻梁上敷冰袋。压满 20 分钟仍不止、出血量大、或是外伤导致的，去急诊。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'NHS —— Nosebleed',
@@ -1606,13 +1884,14 @@ export const MYTHS: Myth[] = [
     instead:
       '穿着透气、盖薄一点，保持室内通风。多喝水。需要时按体重用对乙酰氨基酚或布洛芬。三个月以下婴儿发热、高热不退、精神差、抽搐、皮疹，立刻就医。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'NHS —— Fever in children',
         url: 'https://www.nhs.uk/conditions/fever-in-children/',
       },
     ],
-    related: ['alcohol-rub-fever', 'postpartum-confinement'],
+    related: ['alcohol-rub-fever', 'postpartum-confinement', 'heatstroke-pinch'],
   },
   {
     id: 'alcohol-rub-fever',
@@ -1625,13 +1904,14 @@ export const MYTHS: Myth[] = [
     instead:
       '按体重用对乙酰氨基酚或布洛芬（三个月以下婴儿先就医，不要自行用药）。温水（约 32–34°C）擦浴可以作为辅助，让孩子舒服一点。核心是补水和观察精神状态。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'NICE 指南 NG143 —— Fever in under 5s',
         url: 'https://www.nice.org.uk/guidance/ng143',
       },
     ],
-    related: ['fever-sweat'],
+    related: ['fever-sweat', 'heatstroke-pinch'],
   },
   {
     id: 'burn-toothpaste',
@@ -1645,13 +1925,14 @@ export const MYTHS: Myth[] = [
     instead:
       '「冲、脱、泡、盖、送」：立即用流动凉水（不是冰水）冲 20 分钟；小心脱掉伤处衣物，粘住就别硬撕；继续浸泡凉水缓解疼痛；用干净纱布或保鲜膜松松盖住；面积大、起大水疱、伤及面部手部会阴或深度烫伤的，尽快送医。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'NHS —— Burns and scalds: first aid',
         url: 'https://www.nhs.uk/conditions/burns-and-scalds/treatment/',
       },
     ],
-    related: ['nosebleed', 'stroke-needle'],
+    related: ['nosebleed', 'stroke-needle', 'fish-bone-vinegar', 'sprain-heat'],
   },
   {
     id: 'seizure-mouth',
@@ -1665,6 +1946,7 @@ export const MYTHS: Myth[] = [
     instead:
       '移开周围硬物和尖锐物品；在头下垫软的东西；解开领口；不要按住肢体、不要往嘴里放任何东西；发作停止后帮助侧卧（恢复体位）以保持气道通畅；记录发作时长。超过 5 分钟、连续发作、首次发作、发作后长时间不恢复意识、或伴有受伤，立即叫救护车。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'Epilepsy Foundation —— Seizure First Aid',
@@ -1688,6 +1970,7 @@ export const MYTHS: Myth[] = [
     instead:
       '看这些信号：头后仰嘴张开、眼神空洞或紧闭、直立在水中但没有踢腿、试图游向某个方向却没有移动、头发盖住眼睛也不去拨、看起来像在「爬一架看不见的梯子」。看到有人在水里安静地不对劲，直接开口问他——答不上来就是需要救援。带孩子游泳时保持视线不离开。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'Pia, On Scene —— Instinctive Drowning Response',
@@ -1711,6 +1994,7 @@ export const MYTHS: Myth[] = [
     instead:
       '成人和一岁以上儿童完全梗阻：站到身后，交替进行 5 次背部拍击（掌根拍两肩胛骨之间）和 5 次腹部冲击（海姆立克法），直到异物排出。一岁以下婴儿改为 5 次拍背加 5 次胸部按压，不做腹部冲击。患者失去意识就开始心肺复苏。同时叫救护车。这些动作值得找机会实际练一次。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'American Red Cross —— Adult & Child Choking: Symptoms and First Aid',
@@ -1735,13 +2019,14 @@ export const MYTHS: Myth[] = [
     instead:
       '学一次正经的急救培训（红十字会常有公益课），知道正确的深度和频率后放心按。很多地方的「好人法」也保护紧急救助者。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'Zaidi et al., Resuscitation Plus 2020 —— CT 评估心肺复苏后的胸部并发症',
         url: 'https://pubmed.ncbi.nlm.nih.gov/34223300/',
       },
     ],
-    related: ['heimlich-baby', 'seizure-mouth'],
+    related: ['heimlich-baby', 'seizure-mouth', 'electric-shock-pull'],
   },
   {
     id: 'stroke-needle',
@@ -1755,6 +2040,7 @@ export const MYTHS: Myth[] = [
     instead:
       '记住 FAST：脸歪（Face）、一侧胳膊抬不起来（Arm）、说话不清（Speech）、立刻打 120（Time）。等救护车时让患者侧卧，不喂水不喂药，别的都别做。',
     stakes: 'risky',
+    confidence: 'strong',
     sources: [
       {
         label: 'Saver, Stroke 2006 —— Time is brain—quantified',
@@ -1765,5 +2051,79 @@ export const MYTHS: Myth[] = [
       },
     ],
     related: ['seizure-mouth', 'burn-toothpaste'],
+  },
+  {
+    id: 'fish-bone-vinegar',
+    category: 'urgent',
+    belief: '鱼刺卡喉了，喝口醋软化一下，再吞口饭团压下去',
+    truth: '醋软化不了鱼刺——那点接触时间连蛋壳都泡不软；吞饭团反而可能把刺推得更深、划伤食道。',
+    detail:
+      '鱼刺是钙化的硬组织，泡在醋里几小时都未必软化，喝醋时刺和醋的接触只有一两秒，什么都没发生。吞饭团更糟：本来越过扁桃体、表浅能夹出来的刺，被饭团一压可能扎进更深的组织，甚至推向食道——食道异物穿孔扎到旁边的大血管，是有死亡案例的急症。\n\n正确做法很简单：先别咽了。能看到的表浅刺，让人用干净镊子夹；看不到、或者疼得明显、流口水、呼吸困难，直接去耳鼻喉科急诊，医生用喉镜一分钟就能取出来。',
+    origin: '「醋能软化」来自钙+酸会反应的化学常识，「吞下去」来自异物要「弄下去」的直觉——两个都忽略了人体不是烧杯也不是下水道。',
+    instead: '停下进食，轻咳试试；看得见就夹，看不见就上医院。别喝醋、别吞饭、别用手指抠。',
+    stakes: 'risky',
+    confidence: 'strong',
+    sources: [
+      {
+        label: '食道异物的处理原则 —— 见耳鼻喉科急诊指南（本条无稳定公开链接）',
+      },
+    ],
+    related: ['burn-toothpaste'],
+  },
+  {
+    id: 'sprain-heat',
+    category: 'urgent',
+    belief: '扭伤脚马上热敷、擦活血药酒，把淤血揉开',
+    truth: '扭伤头一两天要冰敷，不是热敷。急性期热敷和揉搓会扩张血管、加重出血肿胀，揉药酒更是火上浇油。',
+    detail:
+      '扭伤的本质是韧带撕裂加小血管破裂，伤后 24–48 小时是出血肿胀期。这时候热敷、泡热水、揉药酒，每一件都在扩张局部血管、让肿胀更严重，恢复期反而拉长。急性期的标准处理是：休息、冰敷（隔层毛巾，每次 15–20 分钟）、加压包扎、抬高患肢。过了急性期进入恢复期，热敷才轮得上。\n\n要留余地：老观念里的 RICE 近年被修正为 PEACE & LOVE，更强调急性期后尽早适度负重活动，而不是一直冰敷静养——但「急性期别热敷别揉」这一点始终没有变。',
+    origin: '「活血化淤」的逻辑看起来自洽：淤血要散，散要热。可惜扭伤头两天的问题不是淤血散不掉，是血还在出。',
+    instead: '刚扭伤：冰敷、加压、抬高，别揉别热敷。48 小时后再考虑热敷和温和活动。肿得厉害、无法踩地、听到过「啪」的一声——去拍个片子排除骨折。',
+    stakes: 'risky',
+    confidence: 'strong',
+    sources: [
+      {
+        label: 'NHS —— Sprains and strains（急性期处理原则）',
+        url: 'https://www.nhs.uk/conditions/sprains-and-strains/',
+      },
+    ],
+    related: ['burn-toothpaste', 'cramp-calcium'],
+  },
+  {
+    id: 'heatstroke-pinch',
+    category: 'urgent',
+    belief: '中暑晕倒，掐人中能掐醒',
+    truth: '掐人中治不了中暑。热射病是会死人的急症：降温、移到阴凉处、打 120，每一分钟都该花在降温上。',
+    detail:
+      '人中穴那一下疼只能刺激清醒的人，对真正意识障碍的中暑患者没有任何治疗作用——中暑晕倒是核心体温过高导致的中枢功能障碍，不把体温降下来，掐哪里都没用。重症中暑（热射病）的死亡率很高，预后取决于高热持续的时间，所以院前急救的核心就一个字：快降温。\n\n正确步骤：把人移到阴凉通风处，脱去多余衣物，凉水擦拭或浸泡、冰袋敷颈部腋下腹股沟、扇风；意识不清不要喂水（呛咳误吸风险）；体温很高或意识障碍，立即叫急救车。',
+    origin: '掐人中是民间急救的「通用起手式」——晕倒了掐一下，至少做了点什么。但刺激疼痛 ≠ 治疗，对中暑这种和体温赛跑的急症，它还挤占了真正有用的降温时间。',
+    instead: '记住顺序：移阴凉、脱衣、物理降温、叫急救。掐人中不在任何一步里。身边人热到意识模糊，别犹豫，直接打 120。',
+    stakes: 'risky',
+    confidence: 'strong',
+    sources: [
+      {
+        label: 'Mayo Clinic —— Heatstroke（急救核心是立即降温并呼叫急救）',
+        url: 'https://www.mayoclinic.org/diseases-conditions/heat-stroke/symptoms-causes/syc-20353581',
+      },
+    ],
+    related: ['fever-sweat', 'alcohol-rub-fever'],
+  },
+  {
+    id: 'electric-shock-pull',
+    category: 'urgent',
+    belief: '有人触电了，赶紧上手把他拉开',
+    truth: '徒手去拉，电会通过两个人——连环触电就是这么发生的。第一步永远是断电，不是拉人。',
+    detail:
+      '人体是导体，触电者肌肉痉挛抓握电源时，你去拽他，电流会经过你的身体形成回路，结果是两个人一起触电。急救原则的第一步是切断电源：拉闸、拔插头。够不到开关，用干燥的木棍、塑料、厚橡胶制品把电线或触电者拨开——干燥且绝缘是关键。\n\n脱离电源后立刻判断意识和呼吸：没有正常呼吸就开始心肺复苏、叫人打 120。触电者外表可能没事，但电流经过心脏可引起心律失常，醒了也应该去医院观察。',
+    origin: '看到亲近的人触电，「拉开」是刻在身体里的第一反应。急救知识存在的意义，就是在这种时候给本能踩刹车。',
+    instead: '背下来：先断电（拉闸/绝缘物挑开）→ 叫 120 → 没呼吸就 CPR。自己不确认电源断开，绝不上手。',
+    stakes: 'risky',
+    confidence: 'strong',
+    sources: [
+      {
+        label: '触电急救原则（先断电后施救）—— 见红十字会急救教程（本条无稳定公开链接）',
+      },
+    ],
+    related: ['cpr-hard'],
   },
 ]

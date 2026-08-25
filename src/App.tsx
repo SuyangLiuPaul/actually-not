@@ -3,6 +3,7 @@ import { CATEGORIES, type CategoryId, type Stakes } from './types'
 import {
   STRINGS,
   categoryLabel,
+  expandQuery,
   parsePath,
   pathFor,
   stakesMeta,
@@ -121,20 +122,16 @@ export default function App() {
     setQuizOpen(false)
   }, [locale])
 
-  // 搜索 + 筛选
+  // 搜索 + 筛选（全文 + 同义词扩展，比如搜「着凉」也能命中「感冒」）
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
+    const terms = q ? expandQuery(q) : []
     return myths.filter((m) => {
       if (cat !== 'all' && m.category !== cat) return false
       if (stakes !== 'all' && m.stakes !== stakes) return false
-      if (!q) return true
-      return (
-        m.belief.toLowerCase().includes(q) ||
-        m.truth.toLowerCase().includes(q) ||
-        m.detail.toLowerCase().includes(q) ||
-        m.origin.toLowerCase().includes(q) ||
-        m.instead.toLowerCase().includes(q)
-      )
+      if (!terms.length) return true
+      const haystack = `${m.belief}\n${m.truth}\n${m.detail}\n${m.origin}\n${m.instead}`.toLowerCase()
+      return terms.some((term) => haystack.includes(term))
     })
   }, [query, cat, stakes, myths])
 
