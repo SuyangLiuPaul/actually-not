@@ -72,6 +72,8 @@
 html {
   background: var(--paper);
   -webkit-text-size-adjust: 100%;
+  /* 任何元素意外超出右边都不许撑宽页面——iOS Safari 会把超宽的页面整体缩小显示 */
+  overflow-x: clip;
 }
 
 body {
@@ -82,6 +84,7 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  overflow-x: clip;
 }
 
 /* 纸张的细微纹理：一层极淡的横线，像稿纸 */
