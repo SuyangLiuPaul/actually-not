@@ -281,6 +281,22 @@ export const REVISIONS: Record<string, { added: string; updated: string }> =
     "added": "2026-08-12",
     "updated": "2026-08-12"
   },
+  "fat-burn-30min": {
+    "added": "2026-08-26",
+    "updated": "2026-08-26"
+  },
+  "morning-exercise": {
+    "added": "2026-08-26",
+    "updated": "2026-08-26"
+  },
+  "sweat-out-cold": {
+    "added": "2026-08-26",
+    "updated": "2026-08-26"
+  },
+  "more-exercise": {
+    "added": "2026-08-26",
+    "updated": "2026-08-26"
+  },
   "alcohol-warm": {
     "added": "2026-08-08",
     "updated": "2026-08-08"
