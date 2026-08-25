@@ -173,6 +173,18 @@ export const REVISIONS: Record<string, { added: string; updated: string }> =
     "added": "2026-08-19",
     "updated": "2026-08-19"
   },
+  "nail-moons": {
+    "added": "2026-08-25",
+    "updated": "2026-08-25"
+  },
+  "daily-bowel": {
+    "added": "2026-08-25",
+    "updated": "2026-08-25"
+  },
+  "lasik-cure": {
+    "added": "2026-08-25",
+    "updated": "2026-08-25"
+  },
   "nightcap": {
     "added": "2026-08-08",
     "updated": "2026-08-08"
@@ -208,6 +220,22 @@ export const REVISIONS: Record<string, { added: string; updated: string }> =
   "night-owl": {
     "added": "2026-08-12",
     "updated": "2026-08-12"
+  },
+  "dream-sleep-quality": {
+    "added": "2026-08-25",
+    "updated": "2026-08-25"
+  },
+  "nap-long": {
+    "added": "2026-08-25",
+    "updated": "2026-08-25"
+  },
+  "milk-sleep": {
+    "added": "2026-08-25",
+    "updated": "2026-08-25"
+  },
+  "night-mode-phone": {
+    "added": "2026-08-25",
+    "updated": "2026-08-25"
   },
   "spot-reduction": {
     "added": "2026-08-08",
@@ -305,6 +333,22 @@ export const REVISIONS: Record<string, { added: string; updated: string }> =
     "added": "2026-08-12",
     "updated": "2026-08-12"
   },
+  "new-clothes-wash": {
+    "added": "2026-08-25",
+    "updated": "2026-08-25"
+  },
+  "toilet-std": {
+    "added": "2026-08-25",
+    "updated": "2026-08-25"
+  },
+  "ac-facial-paralysis": {
+    "added": "2026-08-25",
+    "updated": "2026-08-25"
+  },
+  "hand-sanitizer": {
+    "added": "2026-08-25",
+    "updated": "2026-08-25"
+  },
   "nosebleed": {
     "added": "2026-08-08",
     "updated": "2026-08-08"
@@ -340,5 +384,21 @@ export const REVISIONS: Record<string, { added: string; updated: string }> =
   "stroke-needle": {
     "added": "2026-08-12",
     "updated": "2026-08-12"
+  },
+  "fish-bone-vinegar": {
+    "added": "2026-08-25",
+    "updated": "2026-08-25"
+  },
+  "sprain-heat": {
+    "added": "2026-08-25",
+    "updated": "2026-08-25"
+  },
+  "heatstroke-pinch": {
+    "added": "2026-08-25",
+    "updated": "2026-08-25"
+  },
+  "electric-shock-pull": {
+    "added": "2026-08-25",
+    "updated": "2026-08-25"
   }
 }
