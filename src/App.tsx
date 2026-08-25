@@ -48,6 +48,37 @@ export default function App() {
   })
   const [quizOpen, setQuizOpen] = useState(() => parsePath(currentPath()).id === 'quiz')
   const [theme, setTheme] = useState<Theme>('auto')
+  // 手动检查更新：点了以后问 service worker 要新版本，
+  // 有新版时 UpdatePrompt 的弹条会自动出现；没有就显示「已是最新」几秒
+  const [updateState, setUpdateState] = useState<'idle' | 'checking' | 'latest'>('idle')
+  const checkUpdates = useCallback(async () => {
+    if (updateState !== 'idle') return
+    setUpdateState('checking')
+    const back = () => {
+      setUpdateState('latest')
+      setTimeout(() => setUpdateState('idle'), 3000)
+    }
+    try {
+      const reg = await navigator.serviceWorker?.getRegistration()
+      if (!reg) return back()
+      const found = new Promise<boolean>((resolve) => {
+        const timer = setTimeout(() => resolve(false), 6000)
+        reg.addEventListener(
+          'updatefound',
+          () => {
+            clearTimeout(timer)
+            resolve(true)
+          },
+          { once: true },
+        )
+      })
+      await reg.update()
+      if (await found) setUpdateState('idle')
+      else back()
+    } catch {
+      back()
+    }
+  }, [updateState])
   const searchRef = useRef<HTMLInputElement>(null)
   const { read, markRead, toggleRead, readCount } = useReadProgress()
 
@@ -431,6 +462,18 @@ export default function App() {
             >
               GitHub
             </a>
+            <button
+              type="button"
+              onClick={() => void checkUpdates()}
+              disabled={updateState === 'checking'}
+              className="underline decoration-dotted underline-offset-[3px] disabled:opacity-60"
+            >
+              {updateState === 'checking'
+                ? t.checkUpdateChecking
+                : updateState === 'latest'
+                  ? t.checkUpdateLatest
+                  : t.checkUpdate}
+            </button>
           </p>
         </footer>
       </div>

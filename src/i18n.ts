@@ -111,6 +111,9 @@ const zh = {
   updateLater: '以后再说',
   updateOffline: '已经可以离线看了。',
   updateOfflineTail: '没网也能打开。',
+  checkUpdate: '检查更新',
+  checkUpdateChecking: '检查中…',
+  checkUpdateLatest: '已是最新版本',
 }
 
 export type T = typeof zh
@@ -225,6 +228,9 @@ const en: T = {
   updateLater: 'Later',
   updateOffline: 'Ready for offline reading.',
   updateOfflineTail: 'Works without a connection.',
+  checkUpdate: 'Check for updates',
+  checkUpdateChecking: 'Checking…',
+  checkUpdateLatest: "You're up to date",
 }
 
 export const STRINGS: Record<Locale, T> = { zh, en }
