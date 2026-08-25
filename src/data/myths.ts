@@ -889,7 +889,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.cdc.gov/common-cold/about/index.html',
       },
     ],
-    related: ['antibiotics-cold', 'vitamin-c', 'wet-hair'],
+    related: ['antibiotics-cold', 'vitamin-c', 'wet-hair', 'sweat-out-cold'],
   },
   {
     id: 'pregnancy-taboos',
@@ -1315,7 +1315,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.bmj.com/content/349/bmj.g7257',
       },
     ],
-    related: ['spot-reduction', 'fasted-cardio', 'standing-desk'],
+    related: ['spot-reduction', 'fasted-cardio', 'standing-desk', 'fat-burn-30min'],
   },
   {
     id: 'lactic-acid',
@@ -1336,7 +1336,7 @@ export const MYTHS: Myth[] = [
         url: 'https://link.springer.com/article/10.2165/00007256-200333020-00005',
       },
     ],
-    related: ['static-stretch', 'anabolic-window', 'muscle-to-fat'],
+    related: ['static-stretch', 'anabolic-window', 'muscle-to-fat', 'more-exercise'],
   },
   {
     id: 'static-stretch',
@@ -1381,7 +1381,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.popsci.com/health/10000-steps-debunk-science/',
       },
     ],
-    related: ['women-lifting', 'running-knees'],
+    related: ['women-lifting', 'running-knees', 'fat-burn-30min'],
   },
   {
     id: 'women-lifting',
@@ -1510,6 +1510,94 @@ export const MYTHS: Myth[] = [
       },
     ],
     related: ['running-knees', 'women-lifting', 'pregnancy-taboos'],
+  },
+  {
+    id: 'fat-burn-30min',
+    category: 'move',
+    belief: '运动必须超过 30 分钟才开始燃烧脂肪，少于 30 分钟等于白练',
+    truth: '脂肪从第一分钟起就在供能，只是比例不同——不存在第 31 分钟才接通的「燃脂开关」。',
+    detail:
+      '运动时脂肪和碳水化合物同时在供能，比例随强度变化：低强度时脂肪供能占比高，高强度时碳水占比高。「30 分钟后才开始燃脂」大概是对「运动一段时间后脂肪供能占比逐渐上升」的误读——那是一条渐变曲线，不是一个开关。\n\n对减脂真正起决定作用的是总热量缺口和总运动量。世界卫生组织的身体活动指南说得很清楚：健康收益来自一周累计的活动量，不要求单次跨过某个时间门槛；把活动拆成几段十分钟，只要总量相当，收益相当。\n\n要留余地：高强度间歇（HIIT）和普通有氧的对比研究里，减脂效果差异很小。选你能长期坚持的那种，比选「理论上效率最高」的那种重要得多。',
+    origin:
+      '运动生理学教材里确实有「运动约 20–30 分钟后脂肪供能占比逐渐上升」的曲线图。一条渐变曲线被读成一个阈值，阈值又变成门槛，门槛最后变成「不到 30 分钟等于白动」。',
+    instead:
+      '动起来就算数，十分钟也是运动。想减脂，盯住一周的总活动量和饮食总量；能拆成几段完成的，没必要硬凑一整段。',
+    stakes: 'harmless',
+    confidence: 'strong',
+    sources: [
+      {
+        label: 'WHO 2020 —— 身体活动与久坐行为指南（健康收益取决于累计量）',
+        url: 'https://www.who.int/publications/i/item/9789240015128',
+      },
+    ],
+    related: ['ten-thousand-steps', 'sweat-fat', 'more-exercise'],
+  },
+  {
+    id: 'morning-exercise',
+    category: 'move',
+    belief: '早上的空气最新鲜，晨练最养人',
+    truth: '「早上空气最新鲜」恰恰说反了——日出前近地面的空气往往更差；而锻炼效果和时间段基本无关。',
+    detail:
+      '植物夜里只呼吸、不光合作用，并不会「净化空气」；更要紧的是逆温现象——夜间地面散热快，近地空气比上层冷，污染物被压在低空散不出去，等日出后地面被晒热、对流起来，空气才开始好转。所以天不亮就去公园猛练，吸进去的污染物浓度往往正是一天里偏高的水平。\n\n至于锻炼效果，对照研究里晨练和晚练在血压、体能、代谢指标上的差别都很小。最优的运动时段，就是你能长期坚持的那个时段。\n\n要留余地：极端高温天气里，清晨反而是避开中暑风险的合理选择。这条反对的不是晨练本身，是「早上空气好所以必须晨练」的因果。',
+    origin:
+      '「一日之计在于晨」的文化惯性，加上半句生物课——「植物吸二氧化碳吐氧气」。后半句「没光的时候不吐」被忘了。',
+    instead:
+      '看空气质量 App（AQI）选出门时间，比看钟点靠谱；污染重的日子改室内。锻炼时段按自己的作息挑，别为了「吸新鲜空气」摸黑出门。',
+    stakes: 'harmless',
+    confidence: 'strong',
+    sources: [
+      {
+        label: 'US EPA AirNow —— Air Quality Index (AQI) Basics（污染物浓度随时间变化）',
+        url: 'https://www.airnow.gov/aqi/aqi-basics/',
+      },
+    ],
+    related: ['more-exercise', 'sweat-out-cold'],
+  },
+  {
+    id: 'sweat-out-cold',
+    category: 'move',
+    belief: '感冒了去跑个步、蒸个桑拿，出透一身汗就能把病「逼出来」',
+    truth: '汗里没有病毒，感冒不会被「逼出来」；发热时剧烈运动，可能把小病拖成心肌炎。',
+    detail:
+      '感冒由病毒引起，病程取决于免疫系统清除病毒的速度，出汗在这个过程中没有任何作用——汗的成分是水和电解质，不含病毒。「出了汗感觉好点」多半是体温波动带来的主观感受，和病程无关。\n\n真正要警惕的是反面：病毒感染期（尤其是有发热、肌肉酸痛、明显乏力时）做剧烈运动，与病毒性心肌炎风险相关，而心肌炎的早期症状和感冒很像，带病硬练是有真实死亡案例的。运动医学里有个实用的「颈部法则」：症状只在脖子以上（流鼻涕、打喷嚏、轻微嗓子痛），可以做低强度活动；症状到了脖子以下（发热、胸闷、浑身酸痛、腹泻），就彻底休息。\n\n蒸桑拿同理：高温加脱水，会让正在发热的身体雪上加霜。',
+    origin:
+      '这是「捂汗退烧」的运动版，底层是同一个错觉：出汗和退烧在时间上经常一起出现，于是汗被当成了药。',
+    instead:
+      '记住颈部法则：脖子以上的小症状，散步级别的活动可以；发烧、浑身酸痛，停训休息。恢复后从平时强度的一半开始加回来，别想着「把落下的补回来」。',
+    stakes: 'risky',
+    confidence: 'strong',
+    sources: [
+      {
+        label: 'Mayo Clinic —— Is it OK to exercise if I have a cold?（颈部法则）',
+        url: 'https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/exercise/art-20047594',
+      },
+    ],
+    related: ['sick-yearly', 'fever-sweat', 'morning-exercise'],
+  },
+  {
+    id: 'more-exercise',
+    category: 'move',
+    belief: '运动越多越好，一天都不能停，停一天前面的就白练了',
+    truth: '训练的效果是在休息时长出来的；没有恢复日的连续硬练，练出来的是过度疲劳，不是健康。',
+    detail:
+      '运动带来的提升遵循「刺激—恢复—适应」：训练造成微小的肌纤维损伤和糖原消耗，身体在恢复期把它们修复到比之前略高的水平。把恢复日拿掉，损伤和疲劳持续累积，结果是过度训练综合征——静息心率升高、睡眠变差、情绪低落、运动表现下降、更容易生病。\n\n世界卫生组织 2020 年的指南建议每周 150–300 分钟中等强度（或 75–150 分钟高强度）有氧，加每周至少两天力量训练。注意它说的是一周的总量，不是每天打卡；而且收益曲线在超过推荐量几倍后就趋于平坦，极端量的耐力运动对心脏是否有额外风险，目前仍有争论。\n\n「停一天就白练」在生理上也不成立：停训后体能下降以周为单位缓慢发生，不是按天清零。',
+    origin:
+      '健身社交媒体的打卡文化把「坚持」可视化成了连续天数，断更一天就像破戒。运动心理学和进食障碍研究里都提到过这种心态的代价。',
+    instead:
+      '一周留 1–2 个休息日或轻松日，睡眠优先。连续几天疲劳、静息心率比平时高、抗拒训练，就减一周量。目标是「练几十年」，不是「连续打卡几十天」。',
+    stakes: 'risky',
+    confidence: 'strong',
+    sources: [
+      {
+        label: 'WHO 2020 —— 身体活动与久坐行为指南（每周 150–300 分钟中等强度）',
+        url: 'https://www.who.int/publications/i/item/9789240015128',
+      },
+      {
+        label: 'Kreher & Schwartz, Sports Health 2012 —— 过度训练综合征综述',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/23016079/',
+      },
+    ],
+    related: ['fat-burn-30min', 'morning-exercise', 'lactic-acid'],
   },
 
   // ─────────────────────────── 生活 ───────────────────────────
@@ -1891,7 +1979,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.nhs.uk/conditions/fever-in-children/',
       },
     ],
-    related: ['alcohol-rub-fever', 'postpartum-confinement', 'heatstroke-pinch'],
+    related: ['alcohol-rub-fever', 'postpartum-confinement', 'heatstroke-pinch', 'sweat-out-cold'],
   },
   {
     id: 'alcohol-rub-fever',

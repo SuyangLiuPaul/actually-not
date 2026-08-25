@@ -1370,5 +1370,61 @@ export const MYTHS_EN: Record<string, MythText> = {
     }
   ]
 },
+  "fat-burn-30min": {
+  "belief": "You have to exercise for more than 30 minutes before fat starts burning — anything shorter is wasted",
+  "truth": "Fat contributes to energy from the very first minute, just in varying proportions. There is no 'fat-burning switch' that flips on at minute 31.",
+  "detail": "During exercise, fat and carbohydrate are burned simultaneously; the ratio shifts with intensity — fat's share is higher at low intensity, carbohydrate's at high intensity. 'Fat burning starts after 30 minutes' is likely a misreading of 'fat's share of fuel gradually rises as exercise continues.' That is a gradient, not a switch.\n\nWhat actually determines fat loss is the total calorie deficit and total activity volume. The WHO physical activity guidelines are explicit: health benefits come from the amount accumulated over a week, and no single session needs to cross a time threshold. Splitting activity into several 10-minute bouts delivers comparable benefits as long as the total is comparable.\n\nOne caveat: in head-to-head studies, high-intensity interval training (HIIT) and ordinary cardio differ very little in fat loss. Choosing the kind you can stick with matters far more than choosing the theoretically most efficient kind.",
+  "origin": "Exercise physiology textbooks do show a curve where fat's share of fuel gradually rises after about 20–30 minutes. A gradient got read as a threshold, the threshold became a gate, and the gate became 'under 30 minutes doesn't count.'",
+  "instead": "Moving counts — ten minutes is exercise too. For fat loss, watch your total weekly activity and total food intake. If it can be done in chunks, don't force it into one block.",
+  "sources": [
+    {
+      "label": "WHO 2020 — Guidelines on physical activity and sedentary behaviour (benefits depend on accumulated volume)",
+      "url": "https://www.who.int/publications/i/item/9789240015128"
+    }
+  ]
+},
+  "morning-exercise": {
+  "belief": "The air is freshest in the early morning, so a dawn workout is the healthiest",
+  "truth": "That's actually backwards — air near the ground is often worse just before sunrise. And workout effectiveness barely depends on the time of day.",
+  "detail": "Plants respire at night but don't photosynthesize, so they are not 'cleaning the air' before dawn. More importantly, temperature inversions: the ground cools overnight, the air near it becomes colder than the air above, and pollutants get trapped close to the surface. Only after the sun warms the ground and convection starts does the air improve. Exercising hard in the park before sunrise often means breathing pollutant levels near their daily peak.\n\nAs for effectiveness, controlled studies find only small differences between morning and evening exercise for blood pressure, fitness, and metabolic markers. The best time to exercise is the time you can sustain.\n\nOne caveat: during extreme heat, early morning is a sensible choice to avoid heat illness. This entry isn't against morning workouts — it's against the causal chain 'morning air is fresh, therefore you must work out at dawn.'",
+  "origin": "The cultural inertia of 'the day's work starts at dawn,' plus half a biology lesson — 'plants breathe in CO2 and breathe out oxygen.' The second half, 'not when there's no light,' got forgotten.",
+  "instead": "Check an air-quality app (AQI) instead of the clock before heading out; on polluted days, move indoors. Pick the workout time that fits your schedule — don't head out in the dark chasing 'fresh air.'",
+  "sources": [
+    {
+      "label": "US EPA AirNow — Air Quality Index (AQI) Basics (pollutant levels vary through the day)",
+      "url": "https://www.airnow.gov/aqi/aqi-basics/"
+    }
+  ]
+},
+  "sweat-out-cold": {
+  "belief": "When you catch a cold, go for a run or sit in a sauna — sweat the sickness out",
+  "truth": "There's no virus in sweat — a cold can't be 'sweated out.' Exercising hard while feverish can turn a minor illness into myocarditis.",
+  "detail": "Colds are viral, and the course of illness is set by how fast your immune system clears the virus. Sweating plays no role in that — sweat is water and electrolytes, not virus. 'Feeling better after a good sweat' is mostly temperature fluctuation and subjective relief, unrelated to the course of the illness.\n\nThe real danger runs the other way: vigorous exercise during a viral infection — especially with fever, muscle aches, or marked fatigue — is associated with viral myocarditis, whose early symptoms look just like a cold. There are real deaths from training through it. Sports medicine offers a practical 'above-the-neck rule': if symptoms are only above the neck (runny nose, sneezing, mild sore throat), light activity is fine; if they're below the neck (fever, chest tightness, body aches, diarrhea), rest completely.\n\nSaunas are the same story: heat plus dehydration piles extra strain on an already feverish body.",
+  "origin": "This is the workout edition of 'sweat out a fever.' Underneath is the same illusion: sweating and fever-breaking often happen at the same time, so sweat gets credited as the medicine.",
+  "instead": "Remember the above-the-neck rule: mild symptoms above the neck, walk-level activity is okay; fever or body aches, stop and rest. When you come back, start at half your usual intensity — don't try to 'make up for lost sessions.'",
+  "sources": [
+    {
+      "label": "Mayo Clinic — Is it OK to exercise if I have a cold? (the above-the-neck rule)",
+      "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/exercise/art-20047594"
+    }
+  ]
+},
+  "more-exercise": {
+  "belief": "The more exercise the better — train every single day, because one day off undoes everything",
+  "truth": "The gains from training are built during rest. Training hard every day without recovery days produces overtraining, not health.",
+  "detail": "Improvement follows a stimulus–recovery–adaptation cycle: training causes microscopic muscle damage and glycogen depletion, and the body repairs itself during recovery to a slightly higher level than before. Remove the recovery days and the damage and fatigue accumulate, ending in overtraining syndrome — elevated resting heart rate, worse sleep, low mood, declining performance, and getting sick more easily.\n\nThe WHO 2020 guidelines recommend 150–300 minutes of moderate (or 75–150 minutes of vigorous) aerobic activity per week, plus strength training at least twice a week. Note that this is a weekly total, not a daily streak — and the benefit curve flattens well beyond the recommended amounts. Whether extreme volumes of endurance exercise carry extra cardiac risk is still debated.\n\n'One day off and it's all wasted' also fails physiologically: fitness declines over weeks of detraining, not overnight.",
+  "origin": "Fitness social media turned 'consistency' into a visible streak of consecutive days, where missing one feels like breaking a vow. Exercise psychology and eating-disorder research have both documented the cost of that mindset.",
+  "instead": "Keep 1–2 rest or easy days per week and prioritize sleep. If you're fatigued for days, your resting heart rate is up, and you're dreading training, cut back for a week. The goal is training for decades, not a streak of dozens of days.",
+  "sources": [
+    {
+      "label": "WHO 2020 — Guidelines on physical activity (150–300 minutes of moderate activity per week)",
+      "url": "https://www.who.int/publications/i/item/9789240015128"
+    },
+    {
+      "label": "Kreher & Schwartz, Sports Health 2012 — Overtraining syndrome review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23016079/"
+    }
+  ]
+},
 }
 
