@@ -134,6 +134,17 @@ describe('OG 分享图', () => {
   })
 })
 
+describe('插画', () => {
+  const ILLU_FILES = new Set(
+    Object.keys(import.meta.glob('../../public/illu/*.webp')).map((p) => p.split('/').pop()),
+  )
+
+  it('每条都有对应的 public/illu/{id}.webp（加条目后要重跑 npm run illu）', () => {
+    const missing = MYTHS.filter((m) => !ILLU_FILES.has(`${m.id}.webp`)).map((m) => m.id)
+    expect(missing).toEqual([])
+  })
+})
+
 describe('英文翻译', () => {
   const OG_EN_FILES = new Set(
     Object.keys(import.meta.glob('../../public/og/en/*.png')).map((p) => p.split('/').pop()),

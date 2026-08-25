@@ -160,6 +160,7 @@ actually-not/
 ├── public/                  会被原样复制到 dist/
 │   ├── icons/               ★ 生成物，不要手改
 │   ├── og/                  ★ 生成物：每条的 OG 分享图（npm run og），en/ 子目录是英文版
+│   ├── illu/                ★ 生成物：每条的卡片插画（npm run illu，场景表在 scripts/illu-scenes.json）
 │   ├── favicon.ico/.svg     ★ 生成物
 │   ├── og.png               ★ 生成物
 │   ├── _redirects           SPA 回退（Netlify 直传时生效）
@@ -169,6 +170,7 @@ actually-not/
 │   ├── prerender.ts         ★ 构建期预渲染 170 页（中英 85×2）+ hreflang + sitemap.xml + robots.txt
 │   ├── generate-icons.mjs   从 assets/*.svg 生成全部图标
 │   ├── generate-og.mjs      为每条内容生成中英两张 OG 分享图（改了文案要重跑）
+│   ├── generate-illustrations.mjs  为每条生成卡片插画（AI 生图，场景表 illu-scenes.json）
 │   ├── check-links.mts      出处链接体检（真实浏览器，不是 curl）
 │   ├── deploy.sh            手动部署
 │   └── status.sh            状态总览
@@ -221,7 +223,9 @@ actually-not/
 **加条目必须同时加英文翻译**：在 `src/data/myths-en.ts` 里按同一个 id 补
 `belief / truth / detail / origin / instead / sources` 六个文字字段
 （`sources` 的 `url` 必须和中文一致，`label` 翻成英文），然后重跑 `npm run og`
-（中英两张分享图一起生成）。缺翻译或多翻译测试都会挡。
+（中英两张分享图一起生成）和 `npm run illu <id>`（卡片插画——先在
+`scripts/illu-scenes.json` 里给新 id 写一句 5–12 词的英文场景，具体、画物件不画概念）。
+缺翻译、多翻译或缺插画，测试都会挡。
 
 ---
 

@@ -67,6 +67,16 @@ export function MythCard({
         transform: hover ? 'translateY(-3px)' : 'none',
       }}
     >
+      <img
+        src={`/illu/${myth.id}.webp`}
+        alt=""
+        width={640}
+        height={640}
+        loading="lazy"
+        onError={(e) => (e.currentTarget.style.display = 'none')}
+        className="h-28 w-full rounded-lg object-cover"
+        style={{ background: 'var(--rule)' }}
+      />
       <div className="flex items-center justify-between gap-3">
         <span
           className="inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 text-[11px] font-medium tracking-wide"
