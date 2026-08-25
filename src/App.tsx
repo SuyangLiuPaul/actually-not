@@ -219,6 +219,60 @@ export default function App() {
               {t.brand}
             </span>
             <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => void checkUpdates()}
+                disabled={updateState === 'checking'}
+                aria-label={
+                  updateState === 'checking'
+                    ? t.checkUpdateChecking
+                    : updateState === 'latest'
+                      ? t.checkUpdateLatest
+                      : t.checkUpdate
+                }
+                title={
+                  updateState === 'checking'
+                    ? t.checkUpdateChecking
+                    : updateState === 'latest'
+                      ? t.checkUpdateLatest
+                      : t.checkUpdate
+                }
+                className="grid h-8 w-8 shrink-0 place-items-center rounded-lg border transition-colors disabled:opacity-60"
+                style={{
+                  borderColor: 'var(--rule)',
+                  color: 'var(--ink-soft)',
+                  background: 'var(--paper-raised)',
+                }}
+              >
+                {updateState === 'latest' ? (
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path
+                      d="M3 8.5l3.2 3.2L13 5"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    aria-hidden="true"
+                    className={updateState === 'checking' ? 'animate-spin' : undefined}
+                  >
+                    <path
+                      d="M13.5 8a5.5 5.5 0 1 1-1.61-3.89M13.5 2.5v2.7h-2.7"
+                      stroke="currentColor"
+                      strokeWidth="1.6"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                )}
+              </button>
               <a
                 href={pathFor(locale === 'en' ? 'zh' : 'en', openId ?? (quizOpen ? 'quiz' : ''))}
                 aria-label={t.langToggleLabel}
