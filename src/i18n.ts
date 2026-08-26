@@ -25,7 +25,7 @@ const zh = {
   filterAll: '全部',
   emptyResult: (q: string) => `没找到「${q}」相关的条目。`,
   emptySubmitLead: '觉得这句该收？',
-  emptySubmit: '投给我们',
+  emptySubmit: '发邮件投稿',
   clearFilters: '清除筛选',
   listStatus: (shown: number, read: number, total: number) => `${shown} 条 · 已读 ${read}/${total}`,
   footerAboutTitle: '关于这些结论。',
@@ -36,8 +36,9 @@ const zh = {
   disclaimerTitle: '免责声明。',
   disclaimer:
     '本站内容仅供一般科普参考，不构成医疗、营养或法律建议，也不构成医患关系。我们尽量核对出处并标注证据强度，但不保证所有信息绝对准确、完整或永远最新——科学结论会更新，条目也会随之修订。任何健康决策请结合自身情况咨询医生或注册营养师等专业人士；因参考本站内容做出的任何决定，后果由个人承担。文中外链仅作出处标注，不代表我们为其全部内容背书。',
-  footerCorrection: '发现哪条写错了？欢迎提 issue 或 PR。',
-  footerSubmit: '想到一句该收的？投稿一条',
+  footerCorrection: '发现哪条写错了？发邮件告诉我们。',
+  footerSubmit: '想到一句该收的？发邮件投稿',
+  submitMailSubject: '投稿：想到一句该收的',
   themeAuto: '跟随系统',
   themeLight: '浅色',
   themeDark: '深色',
@@ -65,7 +66,7 @@ const zh = {
   shareNativeTitle: (belief: string) => `其实不是：${belief}`,
   shareNativeText: (belief: string, truth: string) => `你以为「${belief}」？其实——${truth}`,
   correctionLead: '这条写错了、出处打不开、或者有更准的说法？',
-  correctionCta: '来提个 issue 纠错',
+  correctionCta: '发邮件纠错',
   correctionTail: '——这个站的公信力靠「可以被纠错」建立，不靠自称严谨。',
   correctionIssueTitle: (belief: string) => `纠错：${belief}`,
   correctionIssueBody: (id: string) => `条目：/${id}\n\n**哪里不对**\n\n\n**依据**（综述 / 指南 / 原始研究链接）\n\n`,
@@ -139,7 +140,7 @@ const en: T = {
   filterAll: 'All',
   emptyResult: (q) => `Nothing matches "${q}".`,
   emptySubmitLead: 'Think it belongs here?',
-  emptySubmit: 'Submit it',
+  emptySubmit: 'Email it to us',
   clearFilters: 'Clear filters',
   listStatus: (shown, read, total) => `${shown} entries · read ${read}/${total}`,
   footerAboutTitle: 'About these conclusions.',
@@ -151,8 +152,9 @@ const en: T = {
   disclaimerTitle: 'Disclaimer.',
   disclaimer:
     "This site is for general education only. It is not medical, nutritional, or legal advice, and using it creates no doctor–patient relationship. We check sources and mark evidence strength carefully, but we can't guarantee every detail is accurate, complete, or current — science moves on, and entries get revised. Talk to a doctor, registered dietitian, or other qualified professional before making health decisions; whatever you decide after reading this site is your own responsibility. External links are citations, not endorsements of everything on those sites.",
-  footerCorrection: 'Spotted an error? Issues and PRs are welcome.',
-  footerSubmit: 'Know a claim we should cover? Submit it',
+  footerCorrection: 'Spotted an error? Email us.',
+  footerSubmit: 'Know a claim we should cover? Email us',
+  submitMailSubject: 'Submission: a claim to cover',
   themeAuto: 'System',
   themeLight: 'Light',
   themeDark: 'Dark',
@@ -180,7 +182,7 @@ const en: T = {
   shareNativeTitle: (belief) => `Actually, Not: ${belief}`,
   shareNativeText: (belief, truth) => `You'd think "${belief}"? Actually — ${truth}`,
   correctionLead: 'Something wrong here, a dead source link, or a more accurate framing?',
-  correctionCta: 'File an issue to correct it',
+  correctionCta: 'Email a correction',
   correctionTail: " — this site's credibility comes from being correctable, not from claiming rigor.",
   correctionIssueTitle: (belief) => `Correction: ${belief}`,
   correctionIssueBody: (id) =>
@@ -232,6 +234,9 @@ const en: T = {
   checkUpdateChecking: 'Checking…',
   checkUpdateLatest: "You're up to date",
 }
+
+/** 投稿 / 纠错反馈邮箱 */
+export const FEEDBACK_EMAIL = 'lsy95112@gmail.com'
 
 export const STRINGS: Record<Locale, T> = { zh, en }
 

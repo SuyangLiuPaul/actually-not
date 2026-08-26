@@ -3,7 +3,7 @@ import { Strike } from './Strike'
 import { StakesDot } from './MythCard'
 import { REVISIONS } from '../data/revisions'
 import { mythsFor } from '../data/localized'
-import { categoryLabel, catEmoji, CAT_ACCENT, confidenceMeta, stakesMeta, STRINGS, pathFor, type Locale } from '../i18n'
+import { FEEDBACK_EMAIL, categoryLabel, catEmoji, CAT_ACCENT, confidenceMeta, stakesMeta, STRINGS, pathFor, type Locale } from '../i18n'
 import type { Myth } from '../types'
 
 export function MythDetail({
@@ -117,7 +117,7 @@ export function MythDetail({
     .map((id) => all.find((m) => m.id === id))
     .filter((m): m is Myth => m !== undefined)
 
-  const issueUrl = `https://github.com/SuyangLiuPaul/actually-not/issues/new?title=${encodeURIComponent(
+  const mailUrl = `mailto:${FEEDBACK_EMAIL}?subject=${encodeURIComponent(
     t.correctionIssueTitle(myth.belief),
   )}&body=${encodeURIComponent(t.correctionIssueBody(myth.id))}`
 
@@ -421,7 +421,7 @@ export function MythDetail({
           >
             {t.correctionLead}
             <a
-              href={issueUrl}
+              href={mailUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="underline decoration-dotted underline-offset-[3px]"

@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { CATEGORIES, type CategoryId, type Stakes } from './types'
 import {
+  FEEDBACK_EMAIL,
   STRINGS,
   categoryLabel,
   expandQuery,
@@ -455,7 +456,7 @@ export default function App() {
               <p className="mt-2 text-[13px]" style={{ color: 'var(--ink-faint)' }}>
                 {t.emptySubmitLead}
                 <a
-                  href="https://github.com/SuyangLiuPaul/actually-not/issues/new?template=new-entry.md"
+                  href={`mailto:${FEEDBACK_EMAIL}?subject=${encodeURIComponent(t.submitMailSubject)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline decoration-dotted underline-offset-[3px]"
@@ -517,7 +518,7 @@ export default function App() {
           <p className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-1">
             <span>{t.footerCorrection}</span>
             <a
-              href="https://github.com/SuyangLiuPaul/actually-not/issues/new?template=new-entry.md"
+              href={`mailto:${FEEDBACK_EMAIL}?subject=${encodeURIComponent(t.submitMailSubject)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="underline decoration-dotted underline-offset-[3px]"

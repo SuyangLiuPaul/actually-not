@@ -90,16 +90,11 @@ export class ErrorBoundary extends Component<Props, State> {
         </details>
 
         <p className="mt-8 text-[13px]" style={{ color: 'var(--ink-faint)' }}>
-          反复出现的话，欢迎到{' '}
-          <a
-            href="https://github.com/SuyangLiuPaul/actually-not/issues"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline underline-offset-2"
-          >
-            GitHub
-          </a>{' '}
-          提一个 issue。
+          反复出现的话，欢迎{' '}
+          <a href="mailto:lsy95112@gmail.com" className="underline underline-offset-2">
+            发邮件告诉我们
+          </a>
+          。
         </p>
       </div>
     )
