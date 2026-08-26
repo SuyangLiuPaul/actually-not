@@ -146,11 +146,11 @@ a {
 .strike path {
   fill: none;
   stroke: var(--pen);
-  stroke-width: 3.5;
+  stroke-width: 2.4;
   stroke-linecap: round;
   stroke-dasharray: var(--len, 400);
   stroke-dashoffset: var(--len, 400);
-  opacity: 0.85;
+  opacity: 0.7;
 }
 
 .strike[data-on='true'] path {

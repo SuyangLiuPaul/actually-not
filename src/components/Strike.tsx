@@ -10,7 +10,9 @@ interface LineBox {
 /**
  * 红笔划掉一句话。线条带一点手写的抖动，看起来不像是电脑画的。
  * seed 让每条线的形状略有不同。
- * 多行文本会按实际换行逐行各画一条（用 Range.getClientRects 量出来），
+ * 多行文本会按实际换行逐行各画一条。注意用内层 inline 元素的
+ * getClientRects() 量——Range.getClientRects() 在 WebKit 里会把
+ * 行盒拉满整行宽，划线就会超出文字一大截。
  * 逐行带一点延迟，像一笔一笔划过去。
  */
 export function Strike({
@@ -23,16 +25,16 @@ export function Strike({
   seed?: number
 }) {
   const ref = useRef<HTMLSpanElement>(null)
+  const innerRef = useRef<HTMLSpanElement>(null)
   const [lines, setLines] = useState<LineBox[]>([])
 
   useLayoutEffect(() => {
     const el = ref.current
-    if (!el) return
+    const inner = innerRef.current
+    if (!el || !inner) return
     const measure = () => {
-      const range = document.createRange()
-      range.selectNodeContents(el)
       const base = el.getBoundingClientRect()
-      const next = [...range.getClientRects()]
+      const next = [...inner.getClientRects()]
         .filter((r) => r.width > 4)
         .map((r) => ({ x: r.left - base.left, y: r.top - base.top, w: r.width, h: r.height }))
       setLines((prev) =>
@@ -40,6 +42,8 @@ export function Strike({
       )
     }
     measure()
+    // 字体加载完会改换行，补量一次
+    document.fonts?.ready.then(measure).catch(() => {})
     const ro = new ResizeObserver(measure)
     ro.observe(el)
     return () => ro.disconnect()
@@ -49,7 +53,7 @@ export function Strike({
 
   return (
     <span ref={ref} className="strike" data-on={on}>
-      {children}
+      <span ref={innerRef}>{children}</span>
       {lines.map((line, i) => (
         <svg
           key={i}
@@ -58,9 +62,9 @@ export function Strike({
           aria-hidden="true"
           style={
             {
-              left: line.x - line.w * 0.015,
+              left: line.x - line.w * 0.005,
               top: line.y + line.h / 2,
-              width: line.w * 1.03,
+              width: line.w * 1.01,
               '--len': paths[i].len,
               '--delay': `${i * 0.12}s`,
             } as React.CSSProperties

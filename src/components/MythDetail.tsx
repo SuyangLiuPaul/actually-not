@@ -215,14 +215,14 @@ export function MythDetail({
           </div>
         </div>
 
-        {/* 分享图（红笔划掉那条的卡片图） */}
+        {/* 条目插画 */}
         <img
-          src={locale === 'en' ? `/og/en/${myth.id}.png` : `/og/${myth.id}.png`}
+          src={`/illu/${myth.id}.webp`}
           alt={myth.belief}
-          width={1200}
-          height={630}
+          width={640}
+          height={640}
           loading="lazy"
-          className="block w-full border-b"
+          className="block h-44 w-full border-b object-cover sm:h-56"
           style={{ borderColor: 'var(--rule)' }}
         />
 
