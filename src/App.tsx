@@ -88,6 +88,15 @@ export default function App() {
     if (saved) setTheme(saved)
   }, [])
 
+  // PWA 名称随语言走：iOS 看 apple-mobile-web-app-title，Android 看 manifest
+  useEffect(() => {
+    document
+      .querySelector('meta[name="apple-mobile-web-app-title"]')
+      ?.setAttribute('content', locale === 'en' ? 'Actually, Not' : '其实不是')
+    const manifest = document.querySelector<HTMLLinkElement>('link[rel="manifest"]')
+    if (manifest) manifest.href = locale === 'en' ? '/manifest-en.webmanifest' : '/manifest.webmanifest'
+  }, [locale])
+
   useEffect(() => {
     const root = document.documentElement
     if (theme === 'auto') root.removeAttribute('data-theme')
@@ -276,6 +285,13 @@ export default function App() {
               <a
                 href={pathFor(locale === 'en' ? 'zh' : 'en', openId ?? (quizOpen ? 'quiz' : ''))}
                 aria-label={t.langToggleLabel}
+                onClick={() => {
+                  try {
+                    localStorage.setItem('lang-picked', '1')
+                  } catch {
+                    /* 隐私模式下没有 localStorage，忽略 */
+                  }
+                }}
                 className="grid h-8 shrink-0 place-items-center rounded-lg border px-2.5 text-[13px] font-medium transition-colors"
                 style={{
                   borderColor: 'var(--rule)',

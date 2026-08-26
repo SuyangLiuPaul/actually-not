@@ -1,0 +1,37 @@
+{
+  "id": "/",
+  "name": "Actually, Not · Everyday things you thought were true",
+  "short_name": "Actually, Not",
+  "description": "Everyday claims that sound self-evident but aren't backed by evidence — each entry with sources, how the myth spread, and what to do instead.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/en",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "orientation": "any",
+  "background_color": "#f7f4ee",
+  "theme_color": "#f7f4ee",
+  "categories": ["health", "education", "reference"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Surprise me",
+      "short_name": "Random",
+      "url": "/en?random=1",
+      "description": "Open a random entry"
+    },
+    {
+      "name": "Emergencies: myths that can hurt",
+      "short_name": "Emergencies",
+      "url": "/en?c=urgent",
+      "description": "First-aid myths with real risk"
+    }
+  ]
+}
