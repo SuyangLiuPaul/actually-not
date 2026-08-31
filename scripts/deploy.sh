@@ -58,7 +58,7 @@ for _ in $(seq 1 40); do
   state=$(api "https://api.netlify.com/api/v1/deploys/$deploy_id" \
           | python3 -c 'import sys,json;print(json.load(sys.stdin).get("state",""))')
   case "$state" in
-    ready)  echo "✓ 已上线：https://actually-not.netlify.app"; exit 0 ;;
+    ready)  echo "✓ 已上线：https://actually-not.com"; exit 0 ;;
     error)  api "https://api.netlify.com/api/v1/deploys/$deploy_id" \
               | python3 -c 'import sys,json;print("✗ 部署失败：",json.load(sys.stdin).get("error_message"))' >&2
             exit 1 ;;

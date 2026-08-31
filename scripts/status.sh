@@ -53,6 +53,6 @@ fi
 echo
 echo "━━━ 线上站点 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 for p in / /manifest.webmanifest /sw.js /favicon.ico /og.png; do
-  code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 10 "https://actually-not.netlify.app$p")
+  code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 10 "https://actually-not.com$p")
   printf "%-24s HTTP %s\n" "$p" "$code"
 done
