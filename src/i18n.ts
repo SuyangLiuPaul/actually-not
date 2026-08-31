@@ -102,7 +102,7 @@ const zh = {
   },
   quizImgHeader: '常识核对表 · 你中了几条',
   quizImgScore: (score: number, total: number) => `${total} 条里中过 ${score} 条`,
-  quizImgFooter: '其实不是 · 每条附出处 · actually-not.netlify.app/quiz',
+  quizImgFooter: '其实不是 · 每条附出处 · actually-not.com/quiz',
   quizImgFile: (score: number, total: number) => `你中了几条-${score}of${total}.png`,
 
   updateNew: '有新内容',
@@ -220,7 +220,7 @@ const en: T = {
   },
   quizImgHeader: 'The Common-Sense Checklist',
   quizImgScore: (score, total) => `${score} out of ${total} got me`,
-  quizImgFooter: 'Actually, Not · every entry sourced · actually-not.netlify.app/en/quiz',
+  quizImgFooter: 'Actually, Not · every entry sourced · actually-not.com/en/quiz',
   quizImgFile: (score, total) => `actually-not-${score}of${total}.png`,
 
   updateNew: 'New content available',

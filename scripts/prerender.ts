@@ -11,7 +11,7 @@ import { mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'nod
 import { dirname, join } from 'node:path'
 import { pathToFileURL } from 'node:url'
 
-const ORIGIN = 'https://actually-not.netlify.app'
+const ORIGIN = 'https://actually-not.com'
 
 /** Netlify 把 /wet-hair 301 到 /wet-hair/，规范地址统一成带斜杠的形式 */
 function pageUrl(path: string): string {

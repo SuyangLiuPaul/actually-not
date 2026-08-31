@@ -14,7 +14,7 @@
 | | |
 |---|---|
 | 本地路径 | `/Users/pliu0036/Documents/CodingProject/actually-not` |
-| 线上 | https://actually-not.netlify.app |
+| 线上 | https://actually-not.com |
 | 仓库 | https://github.com/SuyangLiuPaul/actually-not （**公开**） |
 | Netlify 站点 ID | `1345bcb2-6a9c-4ec8-9ae0-f52cc3933551` |
 | 技术栈 | React 19 · TypeScript · Vite 8 · Tailwind v4 · vite-plugin-pwa |
