@@ -1,1 +1,5 @@
+# 旧域名 301 到主域名（必须在 SPA 兜底之前；与 netlify.toml 保持一致，见 HANDOVER 坑③）
+https://actually-not.netlify.app/*  https://actually-not.com/:splat  301!
+http://actually-not.netlify.app/*   https://actually-not.com/:splat  301!
+
 /*  /index.html  200
