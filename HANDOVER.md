@@ -13,7 +13,7 @@
 
 | | |
 |---|---|
-| 本地路径 | `/Users/pliu0036/Documents/CodingProject/actually-not` |
+| 本地路径 | `/Users/pliu0036/Documents/CodingProject/not-so-fast/site` |
 | 线上 | https://actually-not.com |
 | 仓库 | https://github.com/SuyangLiuPaul/actually-not （**公开**） |
 | Netlify 站点 ID | `1345bcb2-6a9c-4ec8-9ae0-f52cc3933551` |
@@ -27,7 +27,7 @@
 ## 1. 五分钟上手
 
 ```bash
-cd /Users/pliu0036/Documents/CodingProject/actually-not
+cd /Users/pliu0036/Documents/CodingProject/not-so-fast/site
 npm install
 npm run dev          # http://localhost:5173
 ```
@@ -321,7 +321,7 @@ closeBundle 按插件顺序执行：先预渲染出 62 个 HTML，PWA 才生成 
 接手后跑一遍，全绿说明环境是好的：
 
 ```bash
-cd /Users/pliu0036/Documents/CodingProject/actually-not
+cd /Users/pliu0036/Documents/CodingProject/not-so-fast/site
 npm install
 npm run check              # 应该：lint 无输出、类型通过、676 tests passed
 npm run build              # 应该：生成 dist/，PWA precache 约 22 entries
