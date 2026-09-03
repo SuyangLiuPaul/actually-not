@@ -26,6 +26,26 @@ interface Result extends Link {
   verdict: 'ok' | 'blocked' | 'dead'
 }
 
+/**
+ * 少数站点对数据中心 IP 返回 404 而不是 403 —— 伪装成「页面不存在」的反爬。
+ * 2026-09-03 首次月度体检：语料里仅有的两条 fda.gov 出处在 GitHub Actions 上
+ * 双双 404，而同一时刻从本机和另一条独立线路打开都是 200、标题完全正确
+ * （"Questions and Answers on Monosodium glutamate (MSG)" / "Microwave Ovens | FDA"）。
+ * 同域链接 100% 一起挂，是域名级封锁，不是两个页面同时被删。
+ * 对这些域名，404 降级为 blocked（人工复核），不判「确定失效」。
+ * 加域名前先按这个标准确认：同域全挂 + 换线路能打开。
+ */
+const BLOCKS_WITH_404 = ['fda.gov']
+
+function blocksWith404(url: string): boolean {
+  try {
+    const host = new URL(url).hostname
+    return BLOCKS_WITH_404.some((d) => host === d || host.endsWith(`.${d}`))
+  } catch {
+    return false
+  }
+}
+
 const CONCURRENCY = 4
 const NAV_TIMEOUT = 30_000
 const RETRIES = 1
@@ -63,7 +83,16 @@ async function checkOnce(browser: Browser, link: Link): Promise<Result> {
     // 有些站先 200 再靠 JS 跳错误页，给一次补判的机会
     await page.waitForTimeout(1500)
     const finalUrl = page.url()
-    const verdict = status === null ? 'dead' : status === 403 ? 'blocked' : status < 400 ? 'ok' : 'dead'
+    const verdict: Result['verdict'] =
+      status === null
+        ? 'dead'
+        : status === 403
+          ? 'blocked'
+          : status < 400
+            ? 'ok'
+            : status === 404 && blocksWith404(link.url)
+              ? 'blocked'
+              : 'dead'
     return { ...link, status, finalUrl, verdict }
   } catch (err) {
     return { ...link, status: null, finalUrl: '', error: String(err).split('\n')[0], verdict: 'dead' }
@@ -112,7 +141,7 @@ async function main() {
       `${blocked.length} 被反爬拦截（需人工复核，别当死链删），${dead.length} 确定失效`,
   )
   if (blocked.length > 0) {
-    console.log('\n被反爬拦截（人工用浏览器打开确认）：')
+    console.log('\n被反爬拦截（人工用浏览器打开确认，别当死链删）：')
     for (const r of blocked) console.log(`  - ${r.mythId}「${r.label}」 ${r.url}`)
   }
   if (dead.length > 0) {

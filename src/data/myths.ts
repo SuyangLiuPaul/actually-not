@@ -1569,7 +1569,7 @@ export const MYTHS: Myth[] = [
     sources: [
       {
         label: 'Mayo Clinic —— Is it OK to exercise if I have a cold?（颈部法则）',
-        url: 'https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/exercise/art-20047594',
+        url: 'https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/exercise/faq-20058494',
       },
     ],
     related: ['sick-yearly', 'fever-sweat', 'morning-exercise'],

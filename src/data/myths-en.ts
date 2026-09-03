@@ -1405,7 +1405,7 @@ export const MYTHS_EN: Record<string, MythText> = {
   "sources": [
     {
       "label": "Mayo Clinic — Is it OK to exercise if I have a cold? (the above-the-neck rule)",
-      "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/exercise/art-20047594"
+      "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/expert-answers/exercise/faq-20058494"
     }
   ]
 },
