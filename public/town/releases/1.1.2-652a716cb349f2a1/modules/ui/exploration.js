@@ -1,0 +1,30 @@
+import { TOPICS } from '../experiments/models.js';
+import { topics } from '../content/topics.js';
+import { STATIONS } from '../game/world.js';
+import { PLACE_IDS, places, VIEW_NAMES } from '../content/places.js';
+import { mapBoundary, riverX, riverHalfWidth, SAMPLED_TRAILS } from '../game/landscape.js';
+import { topicLocale, translate } from './locale.js';
+const button = (action, text, value = '', active = false) => `<button type="button" data-action="${action}" data-value="${value}" ${active ? 'aria-pressed="true" class="selected"' : ''}>${text}</button>`;
+export const noteText = (n) => n.id === 'greenhouse' ? (n.value ? '打开了温室天窗' : '合上了温室天窗') : n.id === 'waterwheel' ? `闸板${['关闭', '半开', '全开'][n.value]}` : `望向${VIEW_NAMES[n.value]}`;
+export function explorationPanel(s) {
+    const p = places[s.current];
+    let controls = '';
+    if (p.id === 'greenhouse')
+        controls = `<div class="scenic-state"><span>天窗状态</span><strong>${s.data.vent ? '已经打开' : '现在合拢'}</strong></div><div class="button-row">${button('env-vent', '打开天窗', 'open', s.data.vent)}${button('env-vent', '合上天窗', 'closed', !s.data.vent)}</div><p class="microcopy">也可以直接点 3D 屋顶。窗框会随窗扇一起转动；打开后能看见温室内部。</p>`;
+    if (p.id === 'waterwheel')
+        controls = `<div class="scenic-state"><span>闸板位置</span><strong>${['关闭', '半开', '全开'][s.data.gate]}</strong></div><div class="segments">${[0, 1, 2].map(n => button('env-gate', ['关上闸板', '开到一半', '完全打开'][n], String(n), s.data.gate === n)).join('')}</div><p class="microcopy">点岸边手轮也能循环切换。看闸板的高度、槽内水带和轮子的转动，不显示虚构流量。</p>${button('env-pause', s.paused ? '继续装置' : '暂停装置', '', s.paused)}`;
+    if (p.id === 'lookout')
+        controls = `<div class="scenic-state"><span>当前取景</span><strong>${VIEW_NAMES[s.data.view]}</strong></div><div class="scenic-views">${VIEW_NAMES.map((name, n) => button('env-view', `0${n + 1} · ${name}`, String(n), s.data.view === n)).join('')}</div><p class="microcopy">选择一个地标，望远镜会转向它，镜头也会靠近。不是寻物考试，不必看遍所有方向。</p>${button('env-platform', '返回观景平台')}`;
+    const notes = s.data.notes.filter(n => n.id === p.id).length;
+    return `<div class="panel-top"><span class="eyebrow">散步支线 ${p.number} · 自由停留</span>${button('env-exit', '回到小镇')}</div><h1>${p.title}</h1><p class="scenic-subtitle">${p.subtitle}</p><p class="scenic-instruction">${p.instruction}</p>${controls}<div class="scenic-limits"><span class="eyebrow">场景互动 · 艺术化演示</span><p>${p.note}</p></div><div class="panel-actions"><div class="button-row">${button('env-save', '记下这段散步')}${button('env-reset', '重置装置')}</div><p class="microcopy">${notes ? `这里已有 ${notes} 条散步记录。` : '记录可以跳过，不影响探索。'}散步记录与科普观察分开保存。</p></div>`;
+}
+export function mapPanel(player, locale = 'zh-Hans') {
+    const outline = Array.from({ length: 72 }, (_, i) => mapBoundary(i * Math.PI / 36).map(n => n.toFixed(2)).join(',')).join(' ');
+    const riverLeft = [], riverRight = [];
+    for (let z = -12.3; z <= 22.6; z += .3) {
+        riverLeft.push([riverX(z) - riverHalfWidth(z), z]);
+        riverRight.push([riverX(z) + riverHalfWidth(z), z]);
+    }
+    const river = [...riverLeft, ...riverRight.reverse()].map(p => p.join(',')).join(' ');
+    return `<p class="dialog-intro">${translate('选一个体验，或找个角落散步。想马上开始，就点“直接前往”。', locale)}</p><div class="town-map"><svg viewBox="-22 -16 44 41" role="img" aria-label="${translate('小镇俯视地图。双圆点标记角色位置，浅色线是步道。', locale)}"><polygon points="${outline}" fill="#c4d2ae"/><polygon points="${river}" fill="#83b5b7"/><ellipse cx="6" cy="9" rx="2.2" ry="1.6" fill="#83b5b7"/>${SAMPLED_TRAILS.map(t => `<polyline points="${t.samples.map(p => p.join(',')).join(' ')}" fill="none" stroke="${t.forest ? '#e9debb' : '#f3edda'}" stroke-width="${t.width * .6}" stroke-linecap="round"/>`).join('')}${[1, 7].map(z => `<rect x="${riverX(z) - 1.54}" y="${z - .6}" width="3.08" height="1.2" rx=".12" fill="${z === 1 ? '#ceb68c' : '#c9cbbd'}" stroke="#9b9d80" stroke-width=".09"/>`).join('')}<g fill="#bc9073" stroke="#9f8166" stroke-width=".1"><rect x="-2.5" y="-8.1" width="4.8" height="3.5" rx=".3"/><rect x="6.1" y="-7.7" width="3.7" height="3.2" rx=".3"/><rect x="6.1" y="1.25" width="3.7" height="2.5" rx=".3"/></g>${TOPICS.map((id, i) => { const p = STATIONS[id]; return `<g transform="translate(${p.approach.join(' ')})"><circle r=".83" fill="#e8eedc" stroke="#6e9586" stroke-width=".08"/><text y=".3" text-anchor="middle" font-size=".9" fill="#3d5f55">${i + 1}</text></g>`; }).join('')}${PLACE_IDS.map(id => { const p = places[id]; return `<g transform="translate(${p.approach.join(' ')})"><circle r=".86" fill="#faf4de" stroke="#a9926f" stroke-width=".07"/><text y=".31" text-anchor="middle" font-size=".9" fill="#665c40">${p.number}</text></g>`; }).join('')}<g fill="#365c50"><circle cx="${player[0]}" cy="${player[1]}" r=".32"/><circle cx="${player[0]}" cy="${player[1]}" r=".65" fill="none" stroke="#365c50" stroke-width=".09"/></g></svg><span class="map-key">${translate('双圆点是你 · 浅色线是步道 · 从桥上过河', locale)}</span></div><h3>${locale === 'en' ? `${TOPICS.length} science experiences` : `${TOPICS.length} ${translate('个科普体验', locale)}`}</h3><div class="science-destinations">${TOPICS.map((id, i) => `<section><h3>${String(i + 1).padStart(2, '0')} · ${topicLocale(topics[id], locale).place}</h3><p>${topicLocale(topics[id], locale).title}</p><div class="button-row">${button('walk-science', translate('沿小路过去', locale), id)}<button data-travel="${id}">${translate('直接前往', locale)}</button></div></section>`).join('')}</div><h3>${translate('散步角落', locale)}</h3><div class="scenic-destinations">${PLACE_IDS.map(id => { const p = places[id]; return `<section><div class="scenic-place-title"><span>${p.number}</span><div><h3>${translate(p.title, locale)}</h3><p>${translate(p.subtitle, locale)}</p></div></div><div class="button-row">${button('walk-place', translate('沿小路过去', locale), id)}${button('explore-place', translate('直接前往', locale), id)}</div></section>`; }).join('')}</div><p class="microcopy">${translate('这是游戏地图，不代表真实地点。', locale)}</p>`;
+}
