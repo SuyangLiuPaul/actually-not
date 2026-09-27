@@ -89,10 +89,11 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,ico,webmanifest}'],
         // 每条的 OG 分享图是给爬虫看的，不进预缓存（61 张约 3MB，会拖慢 SW 安装）
-        globIgnores: ['og/**', 'illu/**'],
+        globIgnores: ['og/**', 'illu/**', 'town/**'],
         cleanupOutdatedCaches: true,
         clientsClaim: true,
         navigateFallback: '/index.html',
+        navigateFallbackDenylist: [/^\/town(?:\/|\?|$)/],
         // 站点是纯静态的，整站都能预缓存 —— 装上之后完全离线可用
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
       },

@@ -2,4 +2,9 @@
 https://actually-not.netlify.app/*  https://actually-not.com/:splat  301!
 http://actually-not.netlify.app/*   https://actually-not.com/:splat  301!
 
+# BEGIN ACTUALLY_NOT_TOWN_TEXT
+/town  /town/index.html  200
+/town/*  /town/404.html  404
+# END ACTUALLY_NOT_TOWN_TEXT
+
 /*  /index.html  200
