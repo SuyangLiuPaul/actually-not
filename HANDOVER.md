@@ -407,4 +407,10 @@ ChatGPT 的下载按钮存到 ~/Downloads 再导入的。** 旧的 104 条是 po
 卡片和详情页都是横幅裁切（object-cover），主体要放在画面中间。
 
 **OG 图**：左上角红字现在是板块名，页脚统一为「其实不是 · 每条附出处 · actually-not.com」。
+
+**批量出图的坑（2026-10-04 实测，下次先读这段）**
+- ChatGPT 页面在 Chrome 窗口「不可见」（Mac 锁屏、窗口被挡住）时，界面不更新：下载按钮不出现、生成结果不显示、输入框的真实点击打字失效。纯 JS 提交（`execCommand('insertText')` + 点 aria-label=Send）仍然有效。
+- 取图绕开界面：在 chatgpt.com 标签页里用同源 `fetch('/backend-api/conversation/<id>')` 读会话 → 取第 N 个 `asset_pointer` → `/conversation/<id>/attachment/<fileId>/download` → `download_url` 拿 blob → `<a download="ILLU-<id>.png">` 存到 ~/Downloads，再 `scripts/illu-import-all.sh` 导入。页面脚本不允许回传 base64，所以必须落盘。
+- **限流**：同时开多个 ChatGPT 标签会触发 `429 Too many requests`（标签自己的轮询 + 我们的读取叠加）；稳妥做法是只留一个活动标签、读取间隔 ≥60 秒，其余标签导航到别的站。「临时对话」里不能生图。
+- 每张图一个新对话会在 ChatGPT 历史里留下很多「Create … Illustration」；同一对话里连续出图可行（第 N 张用 N−1 作索引）。
 <!-- END CONTENT_PIPELINE -->
