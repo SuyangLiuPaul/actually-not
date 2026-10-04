@@ -715,6 +715,48 @@ export const MYTHS_EN_EXTRA: Record<string, MythText> = {
       }
     ]
   },
+  "origin-edison-invented-lightbulb": {
+    "belief": "Thomas Edison invented the light bulb",
+    "truth": "Several people had made incandescent lamps before Edison, and Swan demonstrated a carbon-filament lamp in 1878–79; Edison's achievement was making it durable, practical and part of a whole supply system.",
+    "detail": "The Edison Papers project (Rutgers) says experimenters had struggled for about forty years before Edison began in 1878; the problem was getting a filament hot enough to give light without melting, oxidizing or drawing too much power. Earlier work includes Davy's platinum strip in 1802, De la Rue's platinum coil in a vacuum tube in 1840, and Joseph Swan in Britain, who demonstrated a carbon-rod lamp in December 1878 and again in early 1879.\n\nWhat Edison did was turn it into a product: he reasoned that lamps needed high resistance to save costly copper; from March 1879 he isolated the filament in a vacuum bulb; on 21–22 October 1879 a carbonized cotton thread glowed in vacuum (Wikipedia records about 13.5 hours), and he later found carbonized bamboo could last over 1,200 hours; and the lamps were wired in parallel so one could go out without affecting the others.\n\nPatents were not one-sided either: the two companies merged in Britain as the Edison and Swan United Electric Company; in the US the Patent Office in 1883 ruled Edison's patents invalid on prior art, and only in 1889 did a judge uphold the claim to a 'filament of carbon of high resistance'. Another commonly cited forerunner, Heinrich Göbel's 1850s lamps, was concluded by 2007 research to be fictitious.",
+    "origin": "Edison was good at packaging, manufacturing and storytelling; Menlo Park and the power system built around it made him 'the man who invented the lamp', and textbooks and press compressed a relay of inventors in several countries into one name.",
+    "instead": "Say: 'Edison didn't invent the incandescent lamp; he and his team made it durable, commercial and connectable to a grid.' Mention Swan too, whose British company merged with Edison's.",
+    "sources": [
+      {
+        "label": "Thomas A. Edison Papers (Rutgers) — Electric Lamp (forty years of earlier experiments; high resistance, vacuum, carbonized cotton Oct 1879, parallel circuits)",
+        "url": "https://edison.rutgers.edu/life-of-edison/inventions?catid=91&id=531%3Aelectric-lamp&view=article"
+      },
+      {
+        "label": "Wikipedia — Incandescent light bulb (Davy, De la Rue, Swan, Göbel, patent disputes)",
+        "url": "https://en.wikipedia.org/wiki/Incandescent_light_bulb"
+      }
+    ]
+  },
+  "origin-archimedes-eureka-bath": {
+    "belief": "Archimedes discovered buoyancy in his bath and ran naked through the streets shouting 'Eureka'",
+    "truth": "The story first appears in Vitruvius, about two centuries after Archimedes, and not in his own works; whether the measurement it describes could actually work has long been debated.",
+    "detail": "Vitruvius tells it in the preface to Book IX of De Architectura: King Hiero of Syracuse commissioned a gold votive crown, suspected the goldsmith of mixing in silver, and asked Archimedes to examine it. Entering a bath, Archimedes saw the water overflow, grasped the method, leapt out, ran home naked and kept shouting the Greek 'εὑρηκα' ('I have found it'). Wikipedia notes that the anecdote appears in none of Archimedes' surviving mathematical works and that Vitruvius wrote around two centuries later.\n\nThe Museo Galileo exhibit says the method Vitruvius attributes to Archimedes 'has been the focus of lively scholarly debate ever since'. One criticism Wikipedia relays is that a crown with only a little silver would displace a barely different volume of water, hard to detect with ancient tools. Another ancient source, the anonymous poem Carmen de Ponderibus (c. 5th century), describes weighing the objects on a balance immersed in water, closer to the principle in Archimedes' On Floating Bodies.\n\nA safe reading is that the buoyancy principle is Archimedes' own, documented in his writings, while the bathtub scene and the shout are a later legend whose details cannot be checked against contemporary records.",
+    "origin": "The tale was passed on by Vitruvius and later writers such as Plutarch and became the classic picture of the sudden flash of insight; in modern times textbooks and popular science retold it until the details looked settled.",
+    "instead": "Say: 'The buoyancy principle is Archimedes' own, in his writings; the bath-and-crown story comes from Vitruvius two centuries later and is best told as a legend.'",
+    "sources": [
+      {
+        "label": "Vitruvius, De Architectura, Book IX preface (Thayer edition, University of Chicago)",
+        "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Vitruvius/9*.html"
+      },
+      {
+        "label": "Wikipedia — Archimedes (source of the crown story, absence from his works, On Floating Bodies, Carmen de Ponderibus)",
+        "url": "https://en.wikipedia.org/wiki/Archimedes"
+      },
+      {
+        "label": "Museo Galileo — Vitruvius and Archimedes (scholarly debate over the method)",
+        "url": "https://exhibits.museogalileo.it/archimedes/section/VitruviusArchimedes.html"
+      },
+      {
+        "label": "Wikipedia — Eureka (word) (criticism that the displacement difference would be hard to measure; Vitruvius and Plutarch)",
+        "url": "https://en.wikipedia.org/wiki/Eureka_(word)"
+      }
+    ]
+  },
   "origin-nian-beast": {
     "belief": "Firecrackers and red couplets at Spring Festival come from scaring away a fierce monster called Nian",
     "truth": "The Nian monster cannot be found in classical texts; the earliest written trace found so far dates to the 1930s, and the standard version was fixed by a 1980 newspaper article.",
@@ -729,6 +771,23 @@ export const MYTHS_EN_EXTRA: Record<string, MythText> = {
       {
         "label": "China Writers' Network — article on the origin and earliest record of the Nian legend (2025)",
         "url": "https://www.chinawriter.com.cn/n1/2025/0209/c442005-40415244.html"
+      }
+    ]
+  },
+  "origin-posh-port-out-starboard-home": {
+    "belief": "'Posh' stands for 'Port Out, Starboard Home', the shady cabins wealthy passengers booked on ships to India",
+    "truth": "No ticket stamped POSH and no shipping-company record has ever been found; the explanation first appears in 1932, long after the word was in English.",
+    "detail": "The tale says that on liners between Britain and India the rich booked port-side cabins outbound and starboard-side homeward to avoid the sun, and their tickets were stamped POSH. The WordOrigins.org entry puts it bluntly: an excellent story, but no tickets with posh stamped on them have ever been found and company records show no sign of the phrase. It also notes that the explanation did not appear until 1932, by which time the word had long been established.\n\nWordOrigins' likelier sources are two related senses. One is money, from Angloromani posh ('half', as in a halfpenny), with 1830 court records already using it for money. The other is 'smart, stylish', possibly from Urdu safed-pōš ('white-clothed', i.e. well-dressed), with 1914 military slang using it for superior clothing. Earlier still, in 1801, Posh was merely a character's name in a play. Wikipedia's list of false etymologies likewise says posh probably derives from 19th-century slang for a dandy, originally underworld slang for money.\n\nTwo similar 'acronym' stories fail too: golf is not 'Gentlemen Only, Ladies Forbidden', since the word existed in Middle Scots, and tip is not 'To Insure Promptness', since the word dates to the 17th century while acronyms were nearly non-existent in English until the mid-20th. The real sources of these words are not fully settled, but 'not an acronym' is well supported.",
+    "origin": "'Each letter stands for a word' tales sound clever and visual and involve no real people, so they pass easily through guidebooks and chat; acronyms only became common in English in the 20th century, so applying one to an older word is an after-the-fact reconstruction.",
+    "instead": "Say: 'The origin of posh is uncertain; the better-supported view is that it grew from slang for money and for smart dress; there is no documentary support for Port Out, Starboard Home.' When told 'X is really an acronym', ask when it first appears and whether any physical evidence exists.",
+    "sources": [
+      {
+        "label": "WordOrigins.org — Posh (no POSH tickets, 1932 first appearance of the claim, Romani and Urdu sources)",
+        "url": "https://www.wordorigins.org/big-list-entries/posh"
+      },
+      {
+        "label": "Wikipedia — List of common false etymologies of English words (posh, golf, tip)",
+        "url": "https://en.wikipedia.org/wiki/List_of_common_false_etymologies_of_English_words"
       }
     ]
   },
@@ -750,6 +809,82 @@ export const MYTHS_EN_EXTRA: Record<string, MythText> = {
       {
         "label": "Wikipedia — Cocktail (etymology: disputed; early 'stimulating' uses)",
         "url": "https://en.wikipedia.org/wiki/Cocktail"
+      }
+    ]
+  },
+  "origin-sandwich-gambling-earl": {
+    "belief": "The sandwich was invented by the Earl of Sandwich so he could keep gambling without leaving the card table",
+    "truth": "The gambling tale rests on one French travel writer's anecdote, which the earl's biographer finds unsupported; bread-and-filling foods were not his invention, though the name very likely does come from him.",
+    "detail": "The usual version says John Montagu, 4th Earl of Sandwich, gambled for a whole day eating only beef between toasted bread, and others began ordering 'the same as Sandwich'. The source is the French writer Pierre-Jean Grosley's account of his 1765 stay in London, published in the early 1770s; it describes a minister gaming for 24 hours, without naming him.\n\nThe naval historian N. A. M. Rodger, in his biography of the earl, says there is no supporting evidence for the piece of gossip and it does not seem likely to have any foundation, especially since in 1765 Sandwich was a busy Cabinet minister; he thinks the earl more probably ate this way at his desk. Word Histories notes that the earliest known use of the word 'sandwich' is in Edward Gibbon's 1762 diary, which does not mention the earl, but the word is almost certainly named for him, as there is no other plausible explanation.\n\nHistory.com also stresses that the earl was not the first to think of the idea; bread-wrapped fillings existed in many places long before. A safe summary: his name stuck to the food, and how that came about cannot be settled from the surviving sources.",
+    "origin": "Grosley's book describes only an unnamed minister gaming for 24 hours; later retellings attached it to the Earl of Sandwich, and gambling, 24 hours and 'the same as Sandwich' hardened into fixed plot, and into the thing the earl, better known for naval and political roles, is most remembered for.",
+    "instead": "Say: 'The sandwich is named after the Earl of Sandwich, but he didn't invent bread with fillings; the gambling story is an 18th-century anecdote his biographer doesn't believe.'",
+    "sources": [
+      {
+        "label": "Word Histories — history of the word 'sandwich' (Gibbon 1762, Grosley's Londres, Rodger's comment)",
+        "url": "https://wordhistories.net/2017/03/23/sandwich/"
+      },
+      {
+        "label": "History.com — Who Invented the Sandwich? (earl not the first; Grosley's anecdote may be invented)",
+        "url": "https://www.history.com/.amp/news/sandwich-inventor-john-montagu-earl-of-sandwich"
+      },
+      {
+        "label": "Wikipedia — John Montagu, 4th Earl of Sandwich (Grosley's account; Rodger's work-desk theory)",
+        "url": "https://en.wikipedia.org/wiki/John_Montagu,_4th_Earl_of_Sandwich"
+      }
+    ]
+  },
+  "origin-toast-clink-poison": {
+    "belief": "People clink glasses so the drinks splash into each other's cup, to guard against poisoning",
+    "truth": "There is no evidence for this; clinking has only about 300 years of history, long after toasting began, and toasting itself goes back to ancient libations.",
+    "detail": "Wikipedia says that the account (clinking makes each drink spill into the other's) has 'no real evidence'; Mental Floss adds that people have only been clinking glasses for about 300 years, long after toasting was born, so poison testing is unlikely to be the cause. The same article says explanations such as driving away evil spirits with the noise also lack credible evidence.\n\nTwo better-supported explanations: toasting itself is probably a secular vestige of ancient sacrificial libations, according to the International Handbook on Alcohol and Culture as cited by Wikipedia; and the word 'toast' became attached to the custom in the 17th century from spiced toast used to flavour drinks, with a lady's name likened to the seasoning. As for the clink, Mental Floss relays the view that once people moved from a shared 'loving cup' to individual glasses, bringing the glasses together symbolically reunited the drink as one. That is an interpretation, not a settled fact.",
+    "origin": "'To avoid poison' sounds reasonable and has a touch of court intrigue, so it became the favourite table-talk explanation; it reflects people's habit of inventing reasons for customs rather than a documented cause.",
+    "instead": "Say: 'Nobody knows for sure how clinking began; the poison story has no evidence, and clinking is much younger than toasting.'",
+    "sources": [
+      {
+        "label": "Wikipedia — Toast (honor) (clink-and-poison claim 'no real evidence'; libation theory; the word 'toast')",
+        "url": "https://en.wikipedia.org/wiki/Toast_(honor)"
+      },
+      {
+        "label": "Mental Floss — Why do we toast and clink glasses? (about 300 years of clinking; poison and spirit theories unsupported)",
+        "url": "https://www.mentalfloss.com/culture/why-do-we-toast-celebrate"
+      }
+    ]
+  },
+  "origin-hanshi-jie-zitui": {
+    "belief": "The Cold Food Festival bans fire and eats cold food to honour Jie Zitui, who died when the Duke of Jin set the mountain ablaze to force him out",
+    "truth": "The story of Jie Zitui burning to death is absent from the early sources, the earliest record of the festival comes about 600 years after him, and scholars differ over whether the fire ban has an older origin.",
+    "detail": "According to Wikipedia's account, the earliest record of the festival is in Huan Tan's New Discussions (c. 1st century AD), saying residents of Taiyuan avoided fire for five days around midwinter to honour Jie Zitui, about six hundred years after the Spring and Autumn period. In the earlier Zuozhuan, Jie Zitui withdraws voluntarily after feeling overlooked; there is no death by fire. A later Han biography has the official Zhou Ju criticizing locals for fire-avoidance that cost lives, showing the custom was strictly kept by then.\n\nOther scholars argue the roots lie in an older 'changing fire' practice: Du Gongzhan linked it to the Rites of Zhou's rule that in mid-spring wooden bells enforce a fire ban, and China News introduces it as extinguishing old fires and drilling new ones in dry early spring, with cold food eaten meanwhile; they see the Jie Zitui tale as added later. Wikipedia, however, says such alternative theories are 'unlikely accurate', because early sources consistently tie the festival to Jie Zitui and the theories lean on the spring timing, when the festival originally fell in midwinter.\n\nSo scholars disagree: what can be said is that the burning episode is late; whether the fire ban existed first and was attached to Jie Zitui, or was tied to him from the start, is unsettled.",
+    "origin": "Jie Zitui went from a man who withdrew when overlooked to a model of loyalty who cut flesh to feed his lord, refused rewards and burned to death; once the festival drew close to Qingming and merged with it, the story entered the explanation of Qingming too.",
+    "instead": "Say: 'There are two main explanations for the Cold Food Festival: commemorating Jie Zitui, or an older fire-changing custom; the 'burned out of the mountain' detail is not in the early sources.'",
+    "sources": [
+      {
+        "label": "Wikipedia — Cold Food Festival (Huan Tan; Zuozhuan's Jie Zitui; Zhou Ju; alternative theories of Du Gongzhan, de Groot, Frazer)",
+        "url": "https://en.wikipedia.org/wiki/Hanshi_Festival"
+      },
+      {
+        "label": "China News — two accounts of the Cold Food Festival's origin (Jie Zitui and the ancient fire-changing custom)",
+        "url": "https://www.chinanews.com.cn/life/2022/04-02/9718038.shtml"
+      },
+      {
+        "label": "The World of Chinese — China's ancient Cold Food Festival (the standard Jie Zitui legend)",
+        "url": "https://www.theworldofchinese.com/2018/04/chinas-ancient-cold-food-festival-is-not-too-hot/"
+      }
+    ]
+  },
+  "origin-thomas-crapper-flush-toilet": {
+    "belief": "Thomas Crapper invented the flush toilet, and the English word 'crap' comes from his name",
+    "truth": "Crapper did not invent the flush toilet, and the word 'crap' is older than he was; he did have real inventions, such as the floating ballcock and the U-bend.",
+    "detail": "Wikipedia says Crapper held nine patents, three of them for water-closet improvements such as the floating ballcock, but none for the flush toilet itself; his advertising even implied he invented the siphonic flush, and one ad cited a patent number that actually belonged to Albert Giblin in 1898. He did improve the drain trap in 1880 with the U-bend, opened the world's first bathroom showroom on King's Road, and won several royal warrants.\n\nThe 'crap' story (American soldiers in the First World War saw his name on cisterns and began saying 'going to the crapper') fails as well: the word long predates him. The WordOrigins.org entry cites a manuscript copied before 1425 where 'crappys' means mill chaff, with earlier Anglo-Norman forms such as chrape and crappe meaning rubbish or chaff; its application to excrement is recorded in the 19th century (the OED's first such use is 1846, about ten years after Crapper's birth). The word's ultimate source is still uncertain, with French and Dutch influences likely.\n\nWordOrigins' view is that his name, so apt for his trade, may have helped the word spread but was not its source.",
+    "origin": "The coincidence of surname and trade, together with his genuine sanitary-ware business, made 'Crapper invented the toilet' a widely repeated piece of trivia, often joined to the origin of the word 'crap'.",
+    "instead": "Say: 'Crapper was a real sanitary-ware businessman who improved toilet parts but did not invent the flush toilet; the word crap existed before him.'",
+    "sources": [
+      {
+        "label": "Wikipedia — Thomas Crapper (nine patents, no flush-toilet patent, the U-bend, misleading ads; 'crap' predates him)",
+        "url": "https://en.wikipedia.org/wiki/Thomas_Crapper"
+      },
+      {
+        "label": "WordOrigins.org — Crap (pre-1425 manuscript; Anglo-Norman and Dutch roots; 19th-century excretory sense)",
+        "url": "https://www.wordorigins.org/big-list-entries/crap"
       }
     ]
   },
@@ -966,6 +1101,19 @@ export const MYTHS_EN_EXTRA: Record<string, MythText> = {
       {
         "label": "Quote Investigator, 2011 — Everything Should Be Made as Simple as Possible, But Not Simpler",
         "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple/"
+      }
+    ]
+  },
+  "luxun-no-road": {
+    "belief": "\"There was originally no road in the world; when many people walk, a road comes into being.\" —Lu Xun",
+    "truth": "Lu Xun wrote \"in fact the roads on the ground did not exist to begin with; they came to be when many people walked\" — and in the original it is a metaphor for hope.",
+    "detail": "The line is in the last paragraph of the short story 'My Old Home' (Guxiang), dated January 1921. The original reads, roughly: 'I thought: hope is neither something that exists nor something that does not. It is like the paths on the ground; in fact there were no paths to begin with, but when many people walk, a path comes to be.'\n\nSo the popular version differs in two ways. 'On the ground' (地上) is often smoothed into 'in the world' (世上), and the sentence before it — the one that says the image is about hope — is dropped. Lu Xun is not talking about roads; he is talking about hope, which you can neither claim exists nor deny, until enough people walk toward it.\n\nThis is a harmless slip rather than a fabrication; the sense survives. It is only worth noting that words in quotation marks should be the author's words.",
+    "origin": "The story first appeared in New Youth in May 1921, was collected in 'Call to Arms' (Nahan), and has been a standard school text for generations. In oral repetition, 'on the ground' became the smoother 'in the world'. We could not find when the 'world' version first appeared.",
+    "instead": "When you need quotation marks, quote the original: 'in fact there were no paths on the ground to begin with; when many people walk, a path comes to be.' To keep the context, quote the previous sentence about hope as well. If you are only paraphrasing, drop the quotation marks.",
+    "sources": [
+      {
+        "label": "Lu Xun, 'My Old Home' (Guxiang), in Call to Arms, dated Jan 1921 — electronic text of the Complete Works at the Chinese Marxists Internet Archive",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/03/002.htm"
       }
     ]
   },

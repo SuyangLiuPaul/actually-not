@@ -666,7 +666,9 @@ export const MYTHS_EXTRA: Myth[] = [
       }
     ],
     "related": [
-      "origin-flat-earth-columbus"
+      "origin-flat-earth-columbus",
+      "origin-edison-invented-lightbulb",
+      "origin-archimedes-eureka-bath"
     ]
   },
   {
@@ -711,7 +713,8 @@ export const MYTHS_EXTRA: Myth[] = [
       }
     ],
     "related": [
-      "origin-ok-zero-killed"
+      "origin-ok-zero-killed",
+      "origin-posh-port-out-starboard-home"
     ]
   },
   {
@@ -921,6 +924,7 @@ export const MYTHS_EXTRA: Myth[] = [
       }
     ],
     "related": [
+      "origin-hanshi-jie-zitui",
       "origin-nian-beast"
     ]
   },
@@ -991,6 +995,66 @@ export const MYTHS_EXTRA: Myth[] = [
         "label": "Science Museum Group blog —— Remembering James Watt（「philosophising steam kettle」与水壶故事）",
         "url": "https://blog.sciencemuseum.org.uk/remembering-james-watt/"
       }
+    ],
+    "related": [
+      "origin-edison-invented-lightbulb"
+    ]
+  },
+  {
+    "id": "origin-edison-invented-lightbulb",
+    "category": "origin",
+    "belief": "灯泡是爱迪生发明的",
+    "truth": "爱迪生之前已有多人做出白炽灯，斯旺 1878—1879 年就演示了碳丝灯；爱迪生的贡献是让它耐用、实用并配上整套供电系统。",
+    "detail": "Edison Papers 项目（罗格斯大学）的介绍写道，爱迪生 1878 年开始研究之前，实验者已摸索了约四十年，难点是让灯丝既发光又不熔化、不氧化、不耗电过多。更早的有：1802 年戴维用铂条通电发光，1840 年德拉鲁把铂丝封进真空管；英国的约瑟夫·斯旺 1878 年 12 月演示了碳棒灯，1879 年初重复演示。\n\n爱迪生做的是把它变成能用的产品：他判断灯需要高电阻以省下昂贵的铜导线；1879 年 3 月起把灯丝封进真空泡中；1879 年 10 月 21—22 日用碳化的棉线在真空里点亮了灯（维基记作持续约 13.5 小时），后来发现碳化竹丝可以亮 1200 小时以上；灯泡还被接成并联电路，使一盏灯熄灭不影响其他灯。\n\n专利上也不是一边倒：英国的两家公司后来合并成 Edison and Swan United Electric Company；在美国，专利局 1883 年曾以在先技术为由裁定爱迪生的专利无效，1889 年法官才对「高电阻碳丝」这一权利要求给予支持。另外有一个常见的先驱说法，海因里希·戈贝尔 1854 年的灯，据 2007 年的研究结论是虚构的。",
+    "origin": "爱迪生善于把一项技术包装、量产并讲成故事，门洛帕克实验室和随后建成的电力系统让他成了「发明电灯的人」，教科书和媒体把一个团队、多国发明者接力的过程，缩成了一个人的名字。",
+    "instead": "可以说：「爱迪生没有发明白炽灯，他和团队把它做成了耐用、可商用、能接入电网的产品。」同时可以提到斯旺——他们的英国公司后来合并。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Thomas A. Edison Papers (Rutgers) —— Electric Lamp（此前四十年的实验者；高电阻、真空、碳化棉线 1879 年 10 月、并联）",
+        "url": "https://edison.rutgers.edu/life-of-edison/inventions?catid=91&id=531%3Aelectric-lamp&view=article"
+      },
+      {
+        "label": "Wikipedia —— Incandescent light bulb（戴维、德拉鲁、斯旺、戈贝尔、专利之争）",
+        "url": "https://en.wikipedia.org/wiki/Incandescent_light_bulb"
+      }
+    ],
+    "related": [
+      "origin-watt-kettle",
+      "origin-newton-apple-head"
+    ]
+  },
+  {
+    "id": "origin-archimedes-eureka-bath",
+    "category": "origin",
+    "belief": "阿基米德在澡盆里发现浮力原理，光着身子冲出去大喊「尤里卡」",
+    "truth": "这个故事最早见于阿基米德身后约两个世纪的维特鲁威，不见于他自己的著作；故事里的测量方法是否可行，学界一直有争论。",
+    "detail": "维特鲁威在《建筑十书》第九卷序言里讲了这个故事：叙拉古的国王希罗委托金匠做一顶金冠，怀疑金匠掺了银，让阿基米德查验；阿基米德入浴时看到水溢出，悟到办法，光着身子跑回家，一遍遍喊着希腊语「εὑρηκα」（我找到了）。英文维基指出，这则轶事并不出现在阿基米德任何一部留存下来的数学著作里，讲述者维特鲁威比他晚了大约两个世纪。\n\n伽利略博物馆的展览介绍说，维特鲁威记述的方法「自古以来就引发激烈的学术争论」。维基百科引述的批评之一是：金冠若只掺了少量银，排水的差别很小，当时的测量手段很难分辨。另一份古代材料（匿名的《称重之诗》，约 5 世纪）描述的是用天平把物体浸入水里比较，这种做法更接近阿基米德在《论浮体》里讲的原理。\n\n因此比较稳妥的看法是：浮力原理确实属于阿基米德，但「澡盆顿悟、大喊尤里卡」的具体场景是后来的传说，真假和细节无法从当时的记录里证实。",
+    "origin": "这则故事经维特鲁威和后来的普鲁塔克等人转述，成了「灵光一现」的经典范例；到近现代，它被写进教科书和科普读物，细节日益统一。",
+    "instead": "可以说：「阿基米德的浮力原理有他自己的著作为证；澡盆与金冠的故事出自两个世纪后的维特鲁威，更像一个流传的传说。」",
+    "stakes": "harmless",
+    "confidence": "debated",
+    "sources": [
+      {
+        "label": "Vitruvius, De Architectura, Book IX 序言（Penelope / University of Chicago 的 Thayer 版）",
+        "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Vitruvius/9*.html"
+      },
+      {
+        "label": "Wikipedia —— Archimedes（金冠故事的来源与不见于其著作；《论浮体》；《称重之诗》）",
+        "url": "https://en.wikipedia.org/wiki/Archimedes"
+      },
+      {
+        "label": "Museo Galileo —— Vitruvius and Archimedes（维特鲁威记述方法的学术争论）",
+        "url": "https://exhibits.museogalileo.it/archimedes/section/VitruviusArchimedes.html"
+      },
+      {
+        "label": "Wikipedia —— Eureka (word)（金冠排水差异难以测量的批评；维特鲁威与普鲁塔克的转述）",
+        "url": "https://en.wikipedia.org/wiki/Eureka_(word)"
+      }
+    ],
+    "related": [
+      "origin-newton-apple-head"
     ]
   },
   {
@@ -1018,6 +1082,30 @@ export const MYTHS_EXTRA: Myth[] = [
     ]
   },
   {
+    "id": "origin-posh-port-out-starboard-home",
+    "category": "origin",
+    "belief": "「posh」（高档）是「Port Out, Starboard Home」的缩写，指富人坐船去印度时订的阴凉舱位",
+    "truth": "没有任何带 POSH 字样的船票或船公司记录被找到，这个解释到 1932 年才出现，而这个词早已在英语里存在。",
+    "detail": "这个故事说，英国与印度之间的邮轮上，富人为了避开太阳，去程订左舷（port）、回程订右舷（starboard），船票上因此盖着 POSH。词源网站 World Wide Words 的作者概括得很干脆：这是个很棒的故事，但从来没有找到过盖着 posh 的船票，公司记录里也没有这个说法。他还指出，这个解释直到 1932 年才出现，而这个词那时已在英语里存在多年。\n\nWordOrigins 的看法是：posh 有两个相关的意思。一是钱——来自罗姆语（Angloromani 的 posh，意为「一半」，指半便士），1830 年的法庭记录里已有用作「钱」的例子；二是「时髦、讲究」，可能与乌尔都语 safed-pōš（「穿白衣的人」，指体面人）有关，1914 年已有军队俚语里指好衣服的记载。更早，1801 年的一出戏里 Posh 还只是个人名。维基百科的「常见错误词源」条目也说：posh 大概源自 19 世纪指花花公子的俚语，最初是地下世界里指钱的词。\n\n同类的「缩写词源」还有两个：golf 并不是「Gentlemen Only, Ladies Forbidden」——这个词在中古苏格兰语里就已出现；tip 也不是「To Insure Promptness」——该词 17 世纪就有，而英语里首字母缩略词要到 20 世纪中叶才流行起来。上面这些词的真正来源，各家说法并不完全一致，只能说「不是缩写」是有证据的。",
+    "origin": "这类「每个字母代表一个词」的故事听起来聪明、画面感强，又不涉及任何人，因此很容易在旅游书和闲谈中代代相传；英语里首字母缩略词本身要到 20 世纪才多起来，把它套到更早的词上，就是事后的「倒推」。",
+    "instead": "可以说：「posh 的来源不确定，比较有依据的说法是它从指钱和讲究衣着的俚语演变而来；『Port Out, Starboard Home』没有任何文献支持。」遇到「X 其实是某某几个词的缩写」时，先问最早什么时候出现、有没有实物。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "WordOrigins.org —— Posh（无 POSH 船票、1932 年才出现的说法、罗姆语与乌尔都语来源）",
+        "url": "https://www.wordorigins.org/big-list-entries/posh"
+      },
+      {
+        "label": "Wikipedia —— List of common false etymologies of English words（posh、golf、tip）",
+        "url": "https://en.wikipedia.org/wiki/List_of_common_false_etymologies_of_English_words"
+      }
+    ],
+    "related": [
+      "origin-sos-save-our-souls"
+    ]
+  },
+  {
     "id": "origin-cocktail-word-legends",
     "category": "origin",
     "belief": "「鸡尾酒」这个词来自独立战争时酒馆老板娘贝特西·弗拉纳根用鸡尾羽毛装饰酒杯（或法语蛋杯 coquetier）",
@@ -1040,6 +1128,113 @@ export const MYTHS_EXTRA: Myth[] = [
         "label": "Wikipedia —— Cocktail（词源：争议；「cock-tail」与「刺激」的早期用例）",
         "url": "https://en.wikipedia.org/wiki/Cocktail"
       }
+    ],
+    "related": [
+      "origin-toast-clink-poison"
+    ]
+  },
+  {
+    "id": "origin-sandwich-gambling-earl",
+    "category": "origin",
+    "belief": "三明治是桑威奇伯爵为了赌牌时不离开牌桌而发明的",
+    "truth": "「赌桌」这个说法只来自一位法国游记作家的一则传闻，传记作者认为它没有证据；夹肉面包本身并非他首创，不过这种食物的名字很可能确实来自他。",
+    "detail": "常见的版本说，第四代桑威奇伯爵约翰·蒙塔古赌博一整天，只吃夹在烤面包片中间的牛肉，后来别人也要「和桑威奇一样的」。这个说法的出处是法国作家格罗斯利（Pierre-Jean Grosley）关于 1765 年在伦敦见闻的游记，18 世纪 70 年代出版；他写的是一位大臣赌了 24 小时，并未点名。\n\n海军史学家罗杰（N. A. M. Rodger）在伯爵的传记里评论说，这则闲话没有旁证，似乎也没什么依据，尤其是它说的 1765 年，桑威奇正是内阁大臣、公务繁忙；罗杰认为更可能是他在办公桌前为了边工作边吃饭而用上了这种吃法。Word Histories 指出，「sandwich」一词最早见于吉本 1762 年的日记，也没有提到伯爵；但这个词几乎可以肯定是以他命名的，没有别的可信解释。\n\nHistory.com 的文章也强调，伯爵并不是想出这个主意的第一人；类似「面包夹馅」的食物在许多地方存在了很久。所以较稳妥的说法是：他的名字留在了这种食物上，而具体是怎么来的，现有史料不足以确定。",
+    "origin": "格罗斯利的游记只写了一位未点名的大臣赌了 24 小时；后来的转述把它安到桑威奇伯爵头上，赌博、24 小时、「和桑威奇一样」逐渐成了固定情节，也成了这位本来在海军和政治上更为人知的伯爵最出名的事。",
+    "instead": "可以说：「三明治以桑威奇伯爵命名，但他并没有发明夹肉面包；赌桌的故事来自一则 18 世纪的传闻，他的传记作者并不相信。」",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      {
+        "label": "Word Histories —— history of the word 'sandwich'（吉本 1762、格罗斯利《伦敦》、罗杰的评论）",
+        "url": "https://wordhistories.net/2017/03/23/sandwich/"
+      },
+      {
+        "label": "History.com —— Who Invented the Sandwich?（伯爵并非第一人；格罗斯利的轶事可能是编的）",
+        "url": "https://www.history.com/.amp/news/sandwich-inventor-john-montagu-earl-of-sandwich"
+      },
+      {
+        "label": "Wikipedia —— John Montagu, 4th Earl of Sandwich（格罗斯利的记述；罗杰的办公桌说）",
+        "url": "https://en.wikipedia.org/wiki/John_Montagu,_4th_Earl_of_Sandwich"
+      }
+    ],
+    "related": [
+      "origin-thomas-crapper-flush-toilet"
+    ]
+  },
+  {
+    "id": "origin-toast-clink-poison",
+    "category": "origin",
+    "belief": "干杯时碰杯，是因为古人要让酒溅到对方杯里，防止被下毒",
+    "truth": "没有证据支持这个说法；碰杯的习俗只有约三百年历史，比祝酒晚得多，祝酒本身可以追溯到古代的祭酒仪式。",
+    "detail": "英文维基说，这个故事（碰杯会让酒溅进对方杯里）「没有真正的证据」；Mental Floss 的文章则指出，人们碰杯的历史不过约 300 年，而祝酒的习俗早就存在，所以「防毒」不太可能是起因。同一篇文章也说，「碰杯是为了用响声驱赶恶灵」之类的解释同样没有可靠证据。\n\n比较有依据的解释有两条：一是祝酒本身可能是古代祭酒仪式的世俗残余——维基百科引用《酒与文化国际手册》，认为向神灵献酒的神圣仪式是它的祖先；二是 toast 这个词在 17 世纪与「往酒里放调味的烤面包」有关，因为人们把一位女士的名字比作给酒添味的作料。至于碰杯，Mental Floss 引用的看法是：大家从共用一只「爱之杯」转向各人用自己的杯子后，把杯子碰在一起，是在象征性地重新把酒合在一起，表示亲近。这是一个解释，不是定论。",
+    "origin": "「防止下毒」这个解释听起来合情合理，又有一点宫廷阴谋的戏剧性，因此成为酒席上最常被讲的谈资；它反映的是后人替习俗找理由的倾向，而不是文献里有记载的起因。",
+    "instead": "可以说：「碰杯的起源没有定论；『防下毒』这个说法没有证据，而且碰杯的出现比祝酒晚得多。」",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      {
+        "label": "Wikipedia —— Toast (honor)（碰杯防毒说「没有真正的证据」；祭酒仪式说；toast 一词与烤面包）",
+        "url": "https://en.wikipedia.org/wiki/Toast_(honor)"
+      },
+      {
+        "label": "Mental Floss —— Why do we toast and clink glasses?（碰杯约 300 年；防毒与驱邪说无证据）",
+        "url": "https://www.mentalfloss.com/culture/why-do-we-toast-celebrate"
+      }
+    ],
+    "related": [
+      "origin-cocktail-word-legends"
+    ]
+  },
+  {
+    "id": "origin-hanshi-jie-zitui",
+    "category": "origin",
+    "belief": "寒食节禁火吃冷食，是为了纪念被晋文公放火烧山逼出来、最终抱树而死的介子推",
+    "truth": "介子推「被烧死」的故事在早期史料里并没有，最早的寒食纪念记载出现在他身后约六百年；禁火习俗是否另有更古老的来源，学界有不同看法。",
+    "detail": "英文维基整理的材料显示：最早的寒食节记载见于桓谭《新论》（约公元 1 世纪），说太原郡的人们在隆冬前后五天不生火，以纪念介子推——距离他生活的春秋时期已有约六百年。更早的《左传》里，介子推是在自己觉得未被赏识后主动归隐，并没有被火烧死的情节。东汉时，周举曾批评当地因禁火而伤人性命的做法，可见这一习俗当时已经相当严格。\n\n另一些学者主张，寒食的根子是更古老的「改火」习俗：学者 Du Gongzhan 把它联系到《周礼》里仲春用木铎令国中禁火的规定；中国新闻网等介绍也提到，早春干燥易起火，古人要熄旧火、钻木取新火，其间吃冷食。他们认为介子推的传说是后来叠加上去的。也有学者（据英文维基）认为这些替代理论「不太可能成立」，因为早期史料一致把寒食与介子推联系，且这些理论依赖的春季时间并不是寒食最初的季节（最初在隆冬）。\n\n因此这是一个「学界有分歧」的题目：可以确定的是烧山的情节比较晚；至于禁火习俗是先有、后来才附会到介子推身上，还是一开始就与他相关，目前没有定论。",
+    "origin": "介子推从春秋时期一位自觉不受重视而隐居的人，在后世的叙述里逐渐成了割股奉君、不言禄、被火烧死的忠义典范；清明与寒食在时间上相近后又合并，这个故事就跟着进入了清明的由来。",
+    "instead": "可以说：「寒食节的由来有两种主要解释：纪念介子推，或来自更古老的禁火改火习俗；『烧山逼出』的情节在早期史料里并没有。」",
+    "stakes": "harmless",
+    "confidence": "debated",
+    "sources": [
+      {
+        "label": "Wikipedia —— Cold Food Festival（桓谭《新论》；《左传》中的介子推；周举；Du Gongzhan、de Groot、Frazer 的替代理论）",
+        "url": "https://en.wikipedia.org/wiki/Hanshi_Festival"
+      },
+      {
+        "label": "中国新闻网 —— 寒食节的两种起源说法（介子推与古老的改火习俗）",
+        "url": "https://www.chinanews.com.cn/life/2022/04-02/9718038.shtml"
+      },
+      {
+        "label": "The World of Chinese —— China's ancient Cold Food Festival（介子推传说的通行版本）",
+        "url": "https://www.theworldofchinese.com/2018/04/chinas-ancient-cold-food-festival-is-not-too-hot/"
+      }
+    ],
+    "related": [
+      "origin-dragon-boat-qu-yuan"
+    ]
+  },
+  {
+    "id": "origin-thomas-crapper-flush-toilet",
+    "category": "origin",
+    "belief": "抽水马桶是托马斯·克拉珀发明的，英语里的「crap」（粪便、废话）就来自他的名字",
+    "truth": "克拉珀没有发明冲水马桶，「crap」这个词比他出生还早；他确有真实的发明，如浮球阀和 U 形弯管。",
+    "detail": "英文维基说，克拉珀持有九项专利，其中三项与抽水马桶的改进有关（如浮球阀），但没有一项是冲水马桶本身；他的广告还曾暗示自己发明了虹吸冲水，其中一则广告里的专利号其实属于 1898 年的阿尔伯特·吉布林。他确实改良了存水弯（1880 年的 U 形弯），在国王路开了世界上第一间浴室展厅，并多次获得皇家供货认证。\n\n「crap」的故事（第一次世界大战中美国士兵看到抽水箱上的名字，才说「去 crapper」）也站不住：该词在他之前很久就有。WordOrigins 的条目显示，在 1425 年之前抄写的一份手稿里，crappys 就指磨坊里的谷壳，更早的盎格鲁—诺曼文献里还有 chrape、crappe 等形式，最初指的是碎屑、废料；用来指排泄物则见于 19 世纪（牛津英语词典称最早把它用于排泄物是 1846 年，那时克拉珀才出生约十年）。词的真正来源仍有不确定之处，可能与法语、荷兰语有关。\n\nWordOrigins 的看法是：他的名字（Crapper）与职业太贴切，可能帮这个词流行起来，但不是它的来源。",
+    "origin": "姓氏与职业的巧合，加上他确有真实的卫生设备事业，使「克拉珀发明了马桶」成了流传很广的谈资，并常和「crap」一词的来源合在一起讲。",
+    "instead": "可以说：「克拉珀是真实的卫生设备商，改进了马桶的部件，但没有发明冲水马桶；crap 这个词在他之前就有。」",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Wikipedia —— Thomas Crapper（九项专利、无冲水马桶专利、U 形弯、广告误导；crap 一词早于他）",
+        "url": "https://en.wikipedia.org/wiki/Thomas_Crapper"
+      },
+      {
+        "label": "WordOrigins.org —— Crap（1425 年前手稿；盎格鲁—诺曼与荷兰语来源；19 世纪的排泄物用法）",
+        "url": "https://www.wordorigins.org/big-list-entries/crap"
+      }
+    ],
+    "related": [
+      "origin-sandwich-gambling-earl"
     ]
   },
   {
@@ -1369,6 +1564,23 @@ export const MYTHS_EXTRA: Myth[] = [
     "related": [
       "world-einstein-insanity-definition",
       "world-einstein-fish-climb-tree"
+    ]
+  },
+  {
+    "id": "luxun-no-road",
+    "category": "quote",
+    "belief": "「世上本没有路，走的人多了，也便成了路。」——鲁迅",
+    "truth": "鲁迅写的是「其实地上本没有路，走的人多了，也便成了路」，而且这句话在原文里是用来比喻「希望」的。",
+    "detail": "这句话在小说《故乡》的最后一段（篇末署一九二一年一月）。原文是：「我想：希望本是无所谓有，无所谓无的。这正如地上的路；其实地上本没有路，走的人多了，也便成了路。」\n\n所以有两处和流传版不同：一是「地上」常被顺口说成「世上」「世界上」，二是前面那半句被整个丢掉了。鲁迅在这里不是在讲「走路」，而是在讲「希望」：说不上有，也说不上无，是走的人多了才有的。这个比喻放回原来的位置，意思比「人多了就有路」更谨慎一点。\n\n这里的改动是无害的口误式改写，不是伪造：意思基本保留。值得提醒的只是，用引号写出来的话应当是原话。",
+    "origin": "《故乡》最初发表于一九二一年五月的《新青年》，后收入《呐喊》，是长期的语文课文。口耳相传里，「地上」被换成更顺口的「世上」，引文就这样慢慢变形。本站没有查到「世上」这一说法最早出现在何时何处。",
+    "instead": "需要加引号时照原文引：「其实地上本没有路，走的人多了，也便成了路」。要保留语境，就连前一句「希望本是无所谓有，无所谓无的」一起引。如果只是转述意思，不加引号也可以。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "鲁迅，《故乡》（《呐喊》，篇末署1921年1月）—— 中文马克思主义文库收录的《鲁迅全集》电子文本",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/03/002.htm"
+      }
     ]
   },
   {
