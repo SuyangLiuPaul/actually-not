@@ -968,5 +968,159 @@ export const MYTHS_EN_EXTRA: Record<string, MythText> = {
         "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple/"
       }
     ]
+  },
+  "why-manhole-round": {
+    "belief": "Manhole covers are round because only a round lid can't fall into its own hole.",
+    "truth": "A circle can't fall through, but it isn't the only shape that can: any curve of constant width, such as a Reuleaux triangle, works too. Round wins mostly because it is easy and cheap to make.",
+    "detail": "Whether a lid can drop into its opening depends on its width in every direction. A circle has the same width everywhere, so however you tilt it, it is still wider than the hole. A square lid is longer along its diagonal than along its side, so tilted it can slip into a square opening.\n\nBut that property isn't unique to circles. Any 'curve of constant width' has it. The simplest alternative is the Reuleaux triangle, an equilateral triangle with its sides bulged into circular arcs, and there are Reuleaux pentagons and heptagons too. A 2003 Science News article by Ivars Peterson explains exactly this, and notes that some coins use a constant-width heptagon shape.\n\nSo why are street covers nearly always round? The reasons usually given are practical: circles are easiest to cast and machine and use less material than a square of the same width; a round shaft resists soil pressure evenly; a round lid needs no alignment and can be rolled. How much each reason weighs varies by place and maker, so the careful version is: not falling in is a hard geometric fact, and ease of manufacture is what makes the circle the usual winner.",
+    "origin": "The question became famous as a 'how do you think?' interview puzzle, popularised by William Poundstone's 2003 book about tech-company hiring puzzles (as cited in Wikipedia's 'Manhole cover' article). Boiled down to 'why round? so it can't fall in', the extra idea that only a circle works got added in the retelling.",
+    "instead": "Next time you see a manhole cover, notice that not all are round. Square or rectangular ones usually sit on a frame or ledge larger than the opening rather than relying on shape alone. Not falling in is one advantage of the circle, not its only reason for existing.",
+    "sources": [
+      {
+        "label": "Ivars Peterson, Science News 2003: Why manhole covers are round (popular article on constant-width curves and the Reuleaux triangle)",
+        "url": "https://www.sciencenews.org/?p=26010"
+      },
+      {
+        "label": "Wikipedia: Manhole cover (lists the common reasons for round covers; cites Poundstone 2003)",
+        "url": "https://en.wikipedia.org/wiki/Manhole_cover"
+      }
+    ]
+  },
+  "why-comet-round-windows": {
+    "belief": "Airliner windows have rounded corners because the Comet's square windows tore early jets apart.",
+    "truth": "The lesson is right, since sharp-cornered openings concentrate stress, but the first fractures were at roughly square antenna windows and an escape-hatch window, not at the passenger windows themselves.",
+    "detail": "In 1954 two de Havilland Comet 1 airliners, one flown for BOAC and one for South African Airways, broke up in flight over the Mediterranean. Investigators put a whole fuselage in a water tank and pressurised it again and again to simulate thousands of flights. It cracked from fatigue at the corner of a roughly square forward escape-hatch window. Wreckage recovered near Elba then showed the break-up began around the two automatic direction finder (ADF) antenna windows on top of the fuselage, which were also roughly square.\n\nThe US Federal Aviation Administration's lessons-learned page explains that these squarish openings produced much higher local stress than the designers had estimated, and each pressurisation cycle wore the material at the corners until it tore. Round and oval openings let stress flow smoothly round the curve instead of piling up at corners, which is why jets since then have rounded windows.\n\nHowever, the safety consultancy Aerossurance has catalogued common Comet misconceptions, pointing out that the failures began at the antenna aperture and the escape hatch, so it is too simple to say square passenger windows ripped the aircraft apart. The investigation also drove the shift to fail-safe design and to serious fatigue testing. The FAA adds a telling detail: the test fuselage that survived 16,000 cycles had earlier been pressurised to twice working pressure, which hardened the material and masked the true fatigue life.",
+    "origin": "The Comet crashes are among the most retold stories in aviation, and 'square window, stress concentration, round window' is the easiest thread to draw and remember, so it got compressed into 'square windows killed them'. The short version isn't wrong, it just credits every squarish opening to the passenger windows.",
+    "instead": "Next time you look out of a rounded window, think of stress flowing smoothly around the curve. The more accurate rule is that any sharp-cornered opening in a pressurised skin is a favourite starting point for fatigue cracks, which is why doors, antenna cut-outs and access panels have rounded corners too.",
+    "sources": [
+      {
+        "label": "US Federal Aviation Administration, Lessons Learned: De Havilland DH-106 Comet 1",
+        "url": "https://www.faa.gov/lessons_learned/transport_airplane/accidents/G-ALYV"
+      },
+      {
+        "label": "Aerossurance: Common Comet Misconceptions and Collaborative Contribution to Safety",
+        "url": "https://aerossurance.com/safety-management/comet-misconceptions/"
+      }
+    ]
+  },
+  "why-pen-cap-hole": {
+    "belief": "The tiny hole in a pen cap is there to equalise air pressure so the ink doesn't dry out or leak.",
+    "truth": "It is mainly a safety feature: if a child inhales the cap, the hole leaves an air path. ISO 11540 is the standard written for exactly this.",
+    "detail": "ISO 11540 is titled for caps on writing and marking instruments that reduce the risk of asphyxiation. According to the Standards Council of Canada's database entry, it sets requirements for such caps and relates to instruments likely, in normal or foreseeable use, to be used by children up to 14. Instruments designed only for adults (jewellery pens, expensive fountain pens, professional technical pens) are outside its scope. The 1993 edition has been withdrawn and the 2014 edition is current.\n\nThe idea is simple. A pen cap is about the size that can lodge in a windpipe, and if one is inhaled, a cap with a vent at least doesn't seal the airway completely, buying time for help. A popular-science article reports that the standard sets a numerical air-flow requirement (around 8 litres per minute), but We could not open the full standard to verify the number, so it isn't presented here as settled.\n\nTo be clear, the standard is about asphyxiation, not ink. Whether the hole has any other effect is something We found no authoritative source for, so no claim is made.",
+    "origin": "Explaining the hole as 'pressure equalising' or 'keeps ink from drying' follows the intuition that a small hole means ventilation. We could not find where that explanation first appeared. The documented source of the design is ISO 11540, first published in 1993 and revised in 2014.",
+    "instead": "Next time you see a vent in a pen cap, notice where it is: it is a child-safety feature. For stationery that children use, a quick look for a vent in the cap is a small detail worth noticing.",
+    "sources": [
+      {
+        "label": "Standards Council of Canada database: ISO 11540:2014, caps for writing and marking instruments to reduce the risk of asphyxiation",
+        "url": "https://ccn-scc.ca/standardsdb/standards/8154463"
+      },
+      {
+        "label": "Standards Council of Canada database: ISO 11540:1993 (annulled)",
+        "url": "https://ccn-scc.ca/standardsdb/standards/8109284"
+      },
+      {
+        "label": "Mental Floss: The surprising reason why pen caps have tiny holes in the top (popular article citing the air-flow figure)",
+        "url": "https://www.mentalfloss.com/article/545682/surprising-reason-why-pen-caps-have-tiny-holes-top"
+      }
+    ]
+  },
+  "why-a4-ratio": {
+    "belief": "A4's awkward 210 × 297 mm size was picked arbitrarily.",
+    "truth": "It isn't arbitrary: the long side to the short side is the square root of two, so folding a sheet in half along its long side gives a sheet of the same shape. The whole series descends from A0, which has an area of one square metre.",
+    "detail": "ISO 216 defines the A series with two rules: every sheet has a height-to-width ratio of the square root of two (about 1.4142), and A0 has an area of one square metre. Because of that ratio, cutting a sheet in half across its long side gives two sheets with the same proportions, so A3 halved is A4, A4 halved is A5, and so on.\n\nA0 measures 841 × 1189 mm. The exact halved dimensions aren't whole millimetres, so the standard rounds them, giving the slightly odd-looking 210 × 297 for A4.\n\nThe idea is old. In Markus Kuhn's write-up at the University of Cambridge, the physics professor Georg Christoph Lichtenberg is shown discussing the advantages of the square-root-of-two ratio in a letter of 1786; a French paper-tax law of 1798 defined sizes that correspond exactly to some modern ISO sizes; and Walter Porstmann independently reinvented the system in Germany, where it became DIN 476 in 1922. Many countries followed, and it became the international standard ISO 216, and the UN's document format, in 1975. The United States and Canada are the main exceptions.",
+    "origin": "The 'it looks random' impression comes from the unround millimetre numbers. Seeing 210 and 297, people assume they were picked by chance; the square-root-of-two logic isn't printed on the paper and only shows when you fold it.",
+    "instead": "Fold a sheet of A4 in half and lay it over another: the A5 you made has the same shape as the A4. That's why scaling A4 down to A5, or A3 up to A4, on a copier fills the page exactly.",
+    "sources": [
+      {
+        "label": "Markus Kuhn, University of Cambridge Computer Laboratory: International standard paper sizes (design principles and history of ISO 216)",
+        "url": "https://www.cl.cam.ac.uk/~mgk25/iso-paper.html"
+      }
+    ]
+  },
+  "why-qwerty-slow-down": {
+    "belief": "QWERTY scrambled the letters on purpose to slow typists down so the typebars wouldn't jam.",
+    "truth": "The 'slow them down' story is the most widespread version but isn't settled: researchers at Kyoto University argue the layout evolved through telegraph equipment and Morse-code receivers, with no consistent plan to slow typing.",
+    "detail": "The usual story: early typewriters' typebars jammed, so the inventor Christopher Latham Sholes separated common letters to slow typists down. It has circulated for decades and appears even in academic papers.\n\nIn 2011 Koichi and Motoko Yasuoka of Kyoto University published 'On the Prehistory of QWERTY'. They argue that the first typewriter keyboard descended from printing telegraphs and was developed for Morse-code receivers, that the arrangement changed many times and 'accidentally' grew into QWERTY, through Sholes and others, then other partners, then manufacturers, at times to receive telegraphs, at times as a compromise between inventors and producers, and finally to avoid old patents. They explicitly disagree that Sholes meant to slow operators down, and they take apart related tales such as the idea that TYPE WRITER was meant to be typed from one row for salesmen.\n\nThe other side has a source too: the Yasuokas quote a 1980 paper by Prof. Hisao Yamada of the University of Tokyo which says the layout was meant to separate frequent letter pairs to reduce jams. The Yasuokas reject this, though typebar jamming was certainly a real problem for early typewriters. The safest reading is that the history is tangled and has no single clean cause.",
+    "origin": "From the 1980s the jam-and-slow-down story was repeated in technical histories, economics papers about path dependence, and popular books, getting more certain each time. The Yasuokas name this chain of citations and argue that its details, such as 'ed' having to be typed with the same finger, don't hold up against the historical machines.",
+    "instead": "When you hear that a design was 'done on purpose', ask who first said so and on what evidence. QWERTY shows how a layout can be the product of telegraphy, patents and manufacturer compromises rather than one clever plan. The careful line is 'the origin is disputed, but it wasn't simply a deliberate slow-down'.",
+    "sources": [
+      {
+        "label": "Koichi Yasuoka & Motoko Yasuoka, ZINBUN No. 42, Kyoto University 2011: On the Prehistory of QWERTY",
+        "url": "https://repository.kulib.kyoto-u.ac.jp/server/api/core/bitstreams/dc434be9-80cd-499b-a984-f9fa35954c3b/content"
+      }
+    ]
+  },
+  "why-pill-score-line": {
+    "belief": "The line across the middle of a pill is just decoration; split or not, a pill is a pill, scored or not.",
+    "truth": "A score is designed for splitting: FDA's guidance asks for data supporting scored tablets, and says modified-release tablets, whose drug release can be compromised by splitting, should not be scored.",
+    "detail": "In its March 2013 guidance 'Tablet Scoring: Nomenclature, Labeling, and Data for Evaluation', the US FDA's CDER defines a score as a debossed line across a tablet's surface, and says it facilitates splitting a higher-strength tablet into smaller portions. It recommends that sponsors supply data showing scored tablets can be split reliably, including checks on the split portions' stability.\n\nIt also states that modified-release products for which control of drug release can be compromised by splitting should not have a scoring feature. FDA's own research concluded that splitting can raise safety issues in some cases, especially when tablets are not scored or evaluated for splitting: variation in content, weight, disintegration or dissolution can change how much drug is in each piece and available for absorption.\n\nThe guidance also draws its own limits. It notes there are no standards or regulatory requirements specifically addressing scoring, and it does not describe the medical circumstances in which splitting is appropriate. So a score says 'designed to be split', not 'you should split this one'. For that, follow the leaflet and the advice of your doctor or pharmacist.",
+    "origin": "A score looks like a casually pressed decorative line, and many tablets also carry printed letters and logos, so it's easy to treat it as decoration or to assume unscored pills can be broken just as well. The intuition comes from picturing every tablet as a plain pressed lump of powder, but internal construction differs a lot between dosage forms.",
+    "instead": "Notice whether a tablet has a score, and whether the leaflet says it may be split. When unsure, show the pack to a pharmacist rather than judging for yourself. This entry describes how tablets are designed in general and is not medication advice.",
+    "sources": [
+      {
+        "label": "US FDA / CDER, Guidance for Industry (March 2013): Tablet Scoring: Nomenclature, Labeling, and Data for Evaluation",
+        "url": "https://www.fda.gov/media/81626/download"
+      }
+    ]
+  },
+  "why-black-box-orange": {
+    "belief": "The 'black box' in an aircraft is black, which is why it's called that.",
+    "truth": "Flight recorders are actually bright orange so they are easy to spot in wreckage; where the name 'black box' came from isn't settled.",
+    "detail": "A fact sheet from the Australian Transport Safety Bureau says plainly that flight recorders, popularly known as 'black boxes', are in fact painted orange to help recovery after an accident. There are normally two: the cockpit voice recorder and the flight data recorder.\n\nThe name's origin isn't settled. Wikipedia's 'Flight recorder' article says 'black box' was a British Second World War phrase for secret radar and navigation electronics, often housed in non-reflective black cases; the earliest reference it finds is a 1946 Flight magazine article; and by 1967, when many countries mandated flight recorders, the phrase was in general use, with one report noting these so-called black boxes were in fact fluorescent flame-orange. The article itself flags that section as possibly containing original research, so treat it as one explanation rather than a conclusion.",
+    "origin": "The name predates the look of the recorders: 'black box' already meant, in engineering, a system known only by its inputs and outputs, and in aviation it carried over from early electronic equipment. So something called a black box needn't be black; the name and the colour are unrelated.",
+    "instead": "When the news says 'the black box has been found', picture a tough, conspicuously orange metal box. As for the name, remember that it has nothing to do with the colour.",
+    "sources": [
+      {
+        "label": "Australian Transport Safety Bureau (ATSB): Black box flight recorders fact sheet, hosted on SKYbrary",
+        "url": "https://skybrary.aero/sites/default/files/bookshelf/3679.pdf"
+      },
+      {
+        "label": "Wikipedia: Flight recorder (Terminology section, which flags itself as possibly original research)",
+        "url": "https://en.wikipedia.org/wiki/Flight_recorder"
+      }
+    ]
+  },
+  "why-golf-ball-dimples": {
+    "belief": "A golf ball's dimples are just for grip, and a smooth ball would fly farther.",
+    "truth": "The dimples are aerodynamic: they make the air layer next to the ball turbulent, so the flow separates later behind it, and drag falls well below that of a smooth ball.",
+    "detail": "When an object flies through air, the pressure difference between its front and back, pressure drag, is the main resistance. On a smooth sphere the flow leaves the surface early, trailing a large low-pressure wake and giving high drag.\n\nA 2006 letter in Physics of Fluids by Choi, Jeon and Choi measured the air velocity above a dimpled surface and explained the mechanism: dimples cause local flow separation and trigger instability in the separating shear layer, generating strong turbulence; with this the flow reattaches to the surface with high momentum near the wall and can overcome the strong adverse pressure gradient at the rear, so the main separation is delayed and drag is greatly reduced. The paper's introduction says dimples reduce drag on a sphere by as much as 50 per cent compared with a smooth surface.",
+    "origin": "We found no source for the 'dimples are for grip' idea. It looks like a layperson's intuition from touch: a textured ball suggests grip. It overlooks that surface shape changes how air flows around a ball in flight.",
+    "instead": "Next time you see a golf ball, picture the dimples stirring up tiny turbulence that lets air cling to the ball longer.",
+    "sources": [
+      {
+        "label": "Choi, Jeon & Choi, Physics of Fluids 18, 041702 (2006): Mechanism of drag reduction by dimples on a sphere",
+        "url": "https://research.engineering.ucdavis.edu/biosport/wp-content/uploads/sites/24/2014/06/Choi-et-al-2006-Mechanism-of-drag-reduction-by-dimples-on-a-sphere.pdf"
+      }
+    ]
+  },
+  "why-coin-ridged-edge": {
+    "belief": "The ridges around a coin's edge are for grip, or just for looks.",
+    "truth": "The ridges began as protection against clipping: people shaved metal from the edges of precious-metal coins, and a milled edge makes that tampering obvious at a glance.",
+    "detail": "Gold and silver coins used to be worth what their metal was worth. With a smooth edge, someone could shave a little metal off, the coin still looked about right and spent at face value, and the shavings could be melted down and sold. This was called clipping. The Royal Mint says machines able to strike thicker coins and put milling around the edge were brought in during the mid-17th century; another Royal Mint article says milled edges began on British coinage in the 1660s, as a response to clipping. Some 17th-century coins carry the Latin edge inscription 'Decus et Tutamen', meaning 'an ornament and a safeguard'.\n\nSo the ridges were originally an anti-tampering feature, not a matter of feel. Most coins today contain little precious metal, and whether their edge ridges serve other purposes varies by country and coin; We found no authoritative source that settles that, so no claim is made.",
+    "origin": "Once value no longer depended on metal, the anti-clipping need disappeared but the ridges stayed by tradition, so people naturally explain them by present-day functions such as grip or identification. We could not trace who first offered that explanation.",
+    "instead": "Next time you run a thumb along a coin's edge, think of it as a tamper-evident seal: any filing would show up in the ridges. Compare coins of different values in your pocket and see which have ridged edges and which are smooth.",
+    "sources": [
+      {
+        "label": "The Royal Mint: The Milled Edge Motif (journal article on the origin and timing of milled edges)",
+        "url": "https://886.royalmint.com/blogs/the-journal/the-milled-edge-motif"
+      },
+      {
+        "label": "The Royal Mint: Clippers and Counterfeiters, notes for teachers (clipping and the mid-17th-century milling machines)",
+        "url": "https://www.royalmint.com/globalassets/the-royal-mint/pdf/clippers-and-counterfeiters-notes-for-teachers.pdf"
+      }
+    ]
+  },
+  "why-wire-marker-balls": {
+    "belief": "The big coloured balls on power lines are decoration, or counterweights, or for birds.",
+    "truth": "They are for low-flying aircraft: they make hard-to-see wires visible. The FAA sets rules for their size, colour and spacing.",
+    "detail": "The US FAA's Advisory Circular 70/7460-1, Obstruction Marking and Lighting, section 3.5.1 'Spherical Markers', says spherical markers are primarily used to identify overhead wires and catenary lines under 69 kilovolts, and that other shapes such as cylinders are acceptable if their projected area is no less than that of a sphere. For extensive crossings of canyons, lakes or rivers, diameter should be at least 36 inches (91 cm); smaller 20-inch (51 cm) spheres are allowed on less extensive spans or on power lines below 50 feet above ground within 1,500 feet of a runway end. Each marker should be a solid colour: aviation orange, white or yellow.\n\nFor installation, unlighted markers should be spaced about 200 feet apart, closer (30 to 50 feet) in critical areas near runway ends, and alternating colours are recommended because that gives the most conspicuity against all backgrounds.\n\nThis is the US standard; other countries have their own rules, which We did not check. The entry also makes no claim about birds: the FAA document reviewed describes only the use for aircraft.",
+    "origin": "The balls hang high, away from roads, with no sign to explain them, so people guess from 'decoration' or 'something physical'. we couldn't trace where those guesses first appeared.",
+    "instead": "Next time you see coloured balls on wires near a mountain pass, river valley or airport, think of them as road signs for helicopter and crop-duster pilots. If you fly low in such places, the balls are your cue to watch for wires.",
+    "sources": [
+      {
+        "label": "US FAA, Advisory Circular 70/7460-1M: Obstruction Marking and Lighting (section 3.5.1, Spherical Markers)",
+        "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/Advisory_Circular_70_7460_1M.pdf"
+      }
+    ]
   }
 }

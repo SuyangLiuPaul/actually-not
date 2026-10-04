@@ -26,6 +26,8 @@ const files = readdirSync(dir).filter((f) => f.endsWith('.json')).sort()
 const all = []
 for (const f of files) all.push(...JSON.parse(readFileSync(join(dir, f), 'utf8')).map((e) => ({ ...e, _file: f })))
 // --only-illustrated：还没出插画的条目先留在 staging，不进站（等插画齐了再合并）
+const skipCats = (process.argv.find((a) => a.startsWith('--skip-category=')) ?? '').split('=')[1]?.split(',') ?? []
+if (skipCats.length) all.splice(0, all.length, ...all.filter((e) => !skipCats.includes(e.category)))
 if (onlyIllustrated) {
   const have = new Set(readdirSync(join(root, 'public', 'illu')).map((n) => n.replace(/\.webp$/, '')))
   const skipped = all.filter((e) => !have.has(e.id)).map((e) => e.id)
