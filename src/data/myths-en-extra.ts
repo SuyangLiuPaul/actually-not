@@ -1117,6 +1117,502 @@ export const MYTHS_EN_EXTRA: Record<string, MythText> = {
       }
     ]
   },
+  "luxun-herd": {
+    "belief": "\"Fierce beasts walk alone; only cattle and sheep move in herds.\" —Lu Xun",
+    "truth": "The original says beasts are solitary and cattle go in herds — but the very next clause is about the strength of the herd: wild oxen can form a wall of horns against a stronger enemy.",
+    "detail": "The line comes from the essay 'Idle Talk at the End of Spring' (first published in the weekly Mangyuan on 24 April 1925 under the pen name Mingzhao). Roughly, it reads: 'Beasts are solitary, cattle and sheep go in herds; a big herd of wild oxen can form a wall of horns against a stronger foe — but pull one animal out and it can only bellow.'\n\nThe viral version keeps only the first half and rewords it as 'always walk alone' and 'only then do they herd', so it reads as an aphorism that the strong are solitary and joiners are weak. The original's weight is on the second half: a herd can resist; a lone animal cannot. The surrounding passage is satire, going on to describe how rulers try to forbid assembly and suppress speech — the herd's strength is exactly why they fear it.\n\nUsing it as a source for 'the strong walk alone' therefore nearly inverts the meaning.",
+    "origin": "In the essay these sentences sit inside a long ironic argument. Pulled out of context, the first half is easy to remember because of its parallel structure, and it was reworded into a more aphoristic form and shared as 'Lu Xun said'. We could not trace who first excerpted it.",
+    "instead": "To quote him, give the whole sentence. If you want to express 'the strong are lonely', do not attach Lu Xun's name to it.",
+    "sources": [
+      {
+        "label": "Lu Xun, 'Idle Talk at the End of Spring' (in 'The Grave'; first published Mangyuan, 24 Apr 1925) — Chinese Marxists Internet Archive",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/01/013.htm"
+      }
+    ]
+  },
+  "luxun-time-life": {
+    "belief": "\"Life is measured in units of time. Wasting other people's time is murder for money; wasting your own time is slow suicide.\" —Lu Xun",
+    "truth": "Lu Xun did write \"time is life; to squander other people's time for no reason is no different from murder for gain\" — but 'life is measured in units of time' and 'slow suicide' do not appear in his collected essays.",
+    "detail": "The genuine sentences come from 'Talks Outside the Gate on Writing' (serialized in Shen Bao's 'Free Talk' column, August–September 1934, under the pen name Huayu). He is arguing that Latinized script is quick to write: 'Americans say time is money; I think time is life. To waste other people's time for no reason is no different from murder for money.'\n\nThe long viral version expands and splices those two sentences and adds 'wasting your own time is slow suicide'. We searched the electronic text of Lu Xun's Complete Works at the Chinese Marxists Internet Archive (30 sections of essays, stories and so on) and found none of 'life is measured in time', 'slow suicide' or 'waste your own time'. That text does not include his diaries or letters, so what All we can say is that it is not in his published collections, not that he never said it anywhere.\n\nNote also that the original is about other people's time, and he follows it with a self-mocking remark that people like him, chatting in the cool of the evening, are an exception — a lighter tone than the internet version.",
+    "origin": "Because the first two sentences are real, the whole passage sounds convincingly like Lu Xun. The expansion was probably added by someone while reposting; We could not find its earliest appearance.",
+    "instead": "Quote only the genuine sentences — 'time is life; to waste other people's time for no reason is no different from murder for gain' — and cite 'Talks Outside the Gate on Writing'. Do not attach his name to the 'slow suicide' line.",
+    "sources": [
+      {
+        "label": "Lu Xun, 'Talks Outside the Gate on Writing' (in 'Qiejieting zawen'; Shen Bao, Aug–Sep 1934, pen name Huayu) — Chinese Marxists Internet Archive",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/18/008.htm"
+      },
+      {
+        "label": "Huxiu, compilation of altered and invented 'Lu Xun quotes' with their real sources",
+        "url": "https://www.huxiu.com/article/4373413.html"
+      }
+    ]
+  },
+  "luxun-awakened": {
+    "belief": "\"The greatest pain in life is to wake from a dream and find there is no road to take.\" —Lu Xun",
+    "truth": "The original is 'the most painful thing in life is to wake from the dream and have no road to go on', from a lecture about what happens after Nora leaves home — and his conclusion is not despair.",
+    "detail": "The line comes from Lu Xun's lecture 'What Happens After Nora Leaves Home?', given on 26 December 1923 at the Beijing Women's Normal College. The original is 'the most painful thing in life is to wake from the dream and have no road to go on'. The popular wording ('greatest pain', 'no road to walk') differs a little, but the sense is intact.\n\nWhat changes is the context. His question is concrete: what happens to Ibsen's Nora once she walks out? His answer is that without economic independence she has only two roads, 'to fall, or to come back'. He goes on to say that if no road can be found, 'what we need is a dream' — and then 'dreams are good; otherwise, money is what matters'.\n\nSo this is one sentence inside a sober argument about women's economic independence, not a general definition of life's greatest pain.",
+    "origin": "The sentence is short and balanced, so it was lifted again and again into textbooks and inspirational pieces, and each retelling made the wording a bit more colloquial. This is ordinary drift, not forgery — just a little further from the text each time.",
+    "instead": "Quote it as 'the most painful thing in life is to wake from the dream and have no road to go on' and say it comes from the lecture about Nora. For the theme of independence, the more fitting line from the same lecture is 'dreams are good; otherwise, money is what matters.'",
+    "sources": [
+      {
+        "label": "Lu Xun, 'What Happens After Nora Leaves Home?' (lecture, 26 Dec 1923; in 'The Grave') — Chinese Marxists Internet Archive",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/01/018.htm"
+      }
+    ]
+  },
+  "zh-shameless-sanguo": {
+    "belief": "\"I have never seen anyone so shameless!\" —Zhuge Liang cursing Wang Lang in 'Romance of the Three Kingdoms'",
+    "truth": "The novel by Luo Guanzhong does not contain this line; it was added for the 1994 CCTV television series.",
+    "detail": "In chapter 93 of the novel, 'The Marquis of Wuxiang Curses Wang Lang to Death', Zhuge Liang's speech ends: 'Be gone, old villain! Send the traitor out to settle this with me!' Wang Lang, hearing it, 'his chest filled with fury, gave a great cry and fell dead from his horse.' The words 'shameless' or 'brazen' do not appear in the chapter.\n\nThe line comes from episode 69 of the 1994 series (produced by the China TV Drama Production Center and CCTV, with Tang Guoqiang as Zhuge Liang). Wikipedia's article on the series calls it an original line: the scriptwriters stretched the exchange between the two armies and gave it this ending. Years later it became a mainstream internet phrase through countless Bilibili remix videos.\n\nAs an aside, the scene itself is fiction: histories record Wang Lang dying in 228 CE without ever facing Zhuge Liang across the field.",
+    "origin": "After the series aired, the performance spread widely; in the video-site era it was cut and pitch-shifted over and over, and the line drifted away from its source. Because it sounds like the voice of an ancient hero, many people assume it is from the novel.",
+    "instead": "The safest wording is 'a line from the 1994 TV series, spoken by Zhuge Liang'. To quote the novel, use 'Be gone, old villain! Send the traitor out to settle this with me!' Do not call it 'the original text of Romance of the Three Kingdoms'.",
+    "sources": [
+      {
+        "label": "Luo Guanzhong, Romance of the Three Kingdoms, chapter 93 (original text) — Wikisource",
+        "url": "https://zh.wikisource.org/wiki/三國演義/第093回"
+      },
+      {
+        "label": "Three Kingdoms (1994 TV series) — Chinese Wikipedia (premiere details, episode 69 and the line)",
+        "url": "https://zh.wikipedia.org/wiki/三国演义_(电视剧)"
+      },
+      {
+        "label": "Cursing Wang Lang to Death — Chinese Wikipedia (novel chapter, historical facts, episode 69)",
+        "url": "https://zh.wikipedia.org/zh-hans/%E9%AA%82%E6%AD%BB%E7%8E%8B%E6%9C%97"
+      }
+    ]
+  },
+  "zh-repay-virtue": {
+    "belief": "'Repay hatred with kindness' is a teaching of Confucius",
+    "truth": "In the Analects someone asks Confucius about repaying hatred with kindness, and he does not endorse it; 'repay hatred with virtue' is a line of the Laozi, chapter 63.",
+    "detail": "In Analects 14 ('Xianwen'), 'someone' asks: 'What about repaying resentment with kindness?' Confucius answers with a question — 'Then with what will you repay kindness?' — and says to meet resentment with 'straightness' (zhi, fairness and candor) and kindness with kindness. He is declining the proposal.\n\nThe positive formulation appears in chapter 63 of the Laozi: 'Whether great or small, many or few, repay resentment with virtue.' So the idea sits closer to Daoism.\n\nOne fair caveat: some modern scholars, pointing to how the Warring States bamboo texts write the character, argue that the 'straightness' in this Analects line should be read as 'virtue' (Wikisource notes this on that very chapter). That is a minority view; the standard reading, followed by most commentators, remains 'repay resentment with straightness'.",
+    "origin": "'Repay hatred with kindness' is catchy and sounds like Confucian generosity, so it spread as his words. In the Analects those four characters belong to someone else's question.",
+    "instead": "To cite Confucius, say he advocated 'repay resentment with straightness and kindness with kindness'. For 'repay resentment with virtue', point to the Laozi (ch. 63) — and in the Analects it is a position Confucius did not adopt.",
+    "sources": [
+      {
+        "label": "Analects 14 (section 36) — Wikisource (with a note on the variant reading and scholarly opinion)",
+        "url": "https://zh.wikisource.org/wiki/論語/憲問第十四"
+      },
+      {
+        "label": "Daodejing, chapter 63, 'repay resentment with virtue' — Wikisource (Wang Bi edition)",
+        "url": "https://zh.wikisource.org/wiki/道德經_(王弼本)"
+      },
+      {
+        "label": "The Paper, 'These so-called ancient sayings are all wrong' (includes this one)",
+        "url": "https://m.thepaper.cn/newsDetail_forward_29191107"
+      }
+    ]
+  },
+  "zh-fortress-besieged": {
+    "belief": "'Those inside the besieged city want to get out; those outside want to get in' is Qian Zhongshu's own invention",
+    "truth": "The novel itself says it is borrowed: a character says 'the French have a saying like that too', after an English one.",
+    "detail": "In 'Fortress Besieged' (Weicheng), Chu Shenming first says that an old English saying compares marriage to a gilded birdcage: the birds outside want to get in, the birds inside want to fly out. Miss Su replies that the French have the same saying, but with a besieged fortress instead of a cage — those outside want to charge in, those inside want to escape. The novel's title comes from that remark.\n\nSo Qian never presented the image as his own; he had the characters say where it came from. An article titled 'Who brought the \"besieged city\" to China?' (published in Xin Wenxue Shiliao and reposted by China Writers Net, author Guo Shuai) traces the birdcage image further back to the English playwright John Webster. We have not independently checked that tracing, so we are only reporting it.\n\nQian's achievement was to build a novel around the image and make it a common metaphor in Chinese — which is not the same as inventing it.",
+    "origin": "After the novel became popular, 'besieged city' became shorthand for marriage and careers. Readers remembered the metaphor but forgot that the book itself credits it, so it is often treated as Qian's original aphorism.",
+    "instead": "Say 'the French saying that Qian Zhongshu has Su Wenwan quote in Fortress Besieged'. If you want to praise him, praise how he used it in the novel, not the idea of having invented it.",
+    "sources": [
+      {
+        "label": "Guo Shuai, 'Who brought the \"besieged city\" to China?', Xin Wenxue Shiliao; reposted by China Writers Net, 30 May 2023 (quotes the Chu Shenming / Miss Su exchange)",
+        "url": "https://www.chinawriter.com.cn/n1/2023/0530/c404063-40001759.html"
+      }
+    ]
+  },
+  "zh-read-ten-thousand-books": {
+    "belief": "'Read ten thousand books, travel ten thousand miles' is from Confucius or an ancient maxim",
+    "truth": "The clearest source one can verify is the Ming painter Dong Qichang's writing on painting, not Confucius — though some claim an earlier source, which We could not check.",
+    "detail": "In Dong Qichang's 'Huachanshi Suibi', discussing the 'spirit resonance' of a painting, he writes that it cannot be learned, being innate — yet there is something to learn: 'read ten thousand books, travel ten thousand miles, and the dust and murk fall from your chest, and hills and valleys form naturally within.' Media such as Beijing Daily's website point to this passage as the source. It was about how a painter cultivates breadth of mind and only later became a general saying about reading and travel.\n\nNeither the Analects nor other pre-Qin texts contain the line. In fairness, some say there is an earlier source (searches turn up claims about the Song-dynasty Liu Yi, or a Qing note by Liang Shaoren citing an 'inscription for spectacles'). We could not open reliable primary texts to check them, so We can only say Dong Qichang is the most cited and most checkable source, and earlier uses are not ruled out.\n\nThe book itself is also named variously (Huachanshi Suibi, Huazhi, Huajue), so cite whichever edition you have seen.",
+    "origin": "The pairing is neat and positive, and fits the voice of 'ancient wisdom', so it is routinely credited to 'the ancients' or even Confucius. The shift from painting theory to general maxim probably happened in Ming–Qing times. We could not find when it was first pinned on Confucius.",
+    "instead": "If you cite a source, say 'Dong Qichang, Ming dynasty, in Huachanshi Suibi'. When unsure, write 'an old saying'. Do not write 'Confucius said'.",
+    "sources": [
+      {
+        "label": "Beijing Daily online, 'Read ten thousand books, travel ten thousand miles' (quotes Dong Qichang's text), 16 Sep 2023",
+        "url": "https://news.bjd.com.cn/2023/09/16/10565086.shtml"
+      },
+      {
+        "label": "Guwendao (gushiwen.cn), entry for the saying (gives Dong Qichang as the earliest source)",
+        "url": "https://m.gushiwen.cn/mingju/juv_7360eb6518d5.aspx"
+      }
+    ]
+  },
+  "zh-tagore-farthest-distance": {
+    "belief": "'The farthest distance in the world is not between life and death…' —Tagore, 'Stray Birds'",
+    "truth": "The poem is not in Tagore's collections; it is usually traced to Zhang Xiaoxian, but accounts of its authorship disagree.",
+    "detail": "This 'farthest distance' text is often passed around as a Tagore love poem, but nothing like it appears in his works. The China Joint Internet Rumor-Refuting Platform (reposting a Toutiao article, December 2018) says it is really the early work of the writer Zhang Xiaoxian, from her 1997 novel 'A Single Bed in the Pocket'.\n\nAnother piece on misattributed works (Southern Art Network) stresses that the text exists online in many expanded versions, that sources give different origins, and that authorship has no generally accepted answer. So 'not Tagore' is fairly safe, while 'it is Zhang Xiaoxian' can only be reported as a claim.\n\nWe could not find the 1997 book's original text to check, so we do not present Zhang Xiaoxian as established.",
+    "origin": "Tagore's translated verse (Stray Birds in particular) has high prestige in Chinese, and this text's imagery and rhythm resemble translated poetry, so online reposting pinned it on him. Several expanded versions (for example one with 'the bird and the fish') then multiplied.",
+    "instead": "If you quote it, label it 'a poem circulating online, author disputed (often traced to Zhang Xiaoxian)'. Do not write 'Tagore, Stray Birds'; for genuine Stray Birds lines, check a specific translation.",
+    "sources": [
+      {
+        "label": "China Joint Internet Rumor-Refuting Platform, 'The farthest distance… is fake quotations right in front of me' (from Toutiao, 19 Dec 2018)",
+        "url": "https://www.piyao.org.cn/2019-02/02/c_1210054152.htm"
+      },
+      {
+        "label": "Southern Art Network, 'Misplaced authorship: who wrote \"The farthest distance in the world\"?'",
+        "url": "https://www.zgnfys.com/m/a/nfrw-5892.shtml"
+      }
+    ]
+  },
+  "zh-linhuiyin-safe-sunny": {
+    "belief": "'If you are well, it is a sunny day.' —Lin Huiyin",
+    "truth": "The People's Literature Publishing House lists it among things Lin Huiyin did not say; the easiest source to find is the title of a biography of her.",
+    "detail": "In a June 2025 piece called 'Lin Huiyin quotes debunked', the People's Literature Publishing House lists 11 sayings she never said, and 'If you are well, it is a sunny day' tops the list, labelled 'fake inspirational soup, invented'.\n\nWhat We could verify is that Bai Luomei's biography of Lin Huiyin is titled exactly this (China Overseas Chinese Publishing House; Douban gives the edition as February 2013). The book is a lyrical, biography-style prose work, and readers on Douban criticize it for more imagination than documentation. The title uses the line, but the line is not Lin's own; We could not find who first wrote it.\n\nLin Huiyin's real poems exist — 'You Are the April Day on Earth', for example — and have nothing to do with this sentence.",
+    "origin": "A bestselling biography of Lin Huiyin printed the line in large type as its title, so readers easily treat 'a book title' as 'her words'. On social media it was then paired with her photo and her name and reposted endlessly.",
+    "instead": "To quote Lin Huiyin, choose something she actually wrote, such as 'You Are the April Day on Earth'. To use this line, label it 'popular online' or 'title of Bai Luomei's book', not Lin's.",
+    "sources": [
+      {
+        "label": "People's Literature Publishing House, 'Lin Huiyin quotes debunked!' (The Paper, 10 Jun 2025)",
+        "url": "https://m.thepaper.cn/newsDetail_forward_30959316"
+      },
+      {
+        "label": "Bai Luomei, 'If You Are Well, It Is a Sunny Day' — Douban Books (China Overseas Chinese Publishing House)",
+        "url": "https://book.douban.com/subject/20506611/"
+      }
+    ]
+  },
+  "zh-hushi-dirty-country": {
+    "belief": "'A filthy country, if everyone follows rules instead of preaching morality, will eventually become a normal, human country.' —Hu Shih",
+    "truth": "The columnist Yu Ge checked the cited source ('Introducing My Own Thinking') and the Collected Works of Hu Shih and found no such passage; no reliable source has turned up.",
+    "detail": "For years this passage circulated on Weibo and WeChat under Hu Shih's name, with a supposed source attached: 'Introducing My Own Thinking' (1930). In an October 2016 column, Yu Ge says he checked that essay and found no discussion of rules versus morality, then went through the 12-volume Peking University edition of Hu Shih's collected works and found nothing similar. The Chinese Wikiquote page for Hu Shih lists the line under 'misattributed'.\n\nYu Ge adds a linguistic hint: the colloquial -er endings in the text do not match Hu Shih's way of speaking. That is an inference, not proof; the solid point is the first one — the cited source does not contain it.\n\nWhat this shows is 'no source found', not that Hu Shih never said anything like it.",
+    "origin": "Posts of this kind often attach an impressive-looking source (title, year) to a quote, which makes it seem reliable. This one was already circulating on Weibo and WeChat by 2016. We could not find where it first appeared.",
+    "instead": "If you want Hu Shih on rules and order, read what he actually wrote in his collected works and cite the essay. For this sentence, the safest label is 'attributed online; no source found'.",
+    "sources": [
+      {
+        "label": "Yu Ge, 'Starting from a forged Hu Shih quotation', Sina News column, 18 Oct 2016",
+        "url": "https://news.sina.cn/zl/2016-10-18/zl-ifxwvpar8378190.d.html?from=wap"
+      },
+      {
+        "label": "Hu Shih — Chinese Wikiquote ('misattributed' section)",
+        "url": "https://zh.wikiquote.org/zh-cn/%E8%83%A1%E9%81%A9"
+      }
+    ]
+  },
+  "zh-zhuangzi-moisten-foam": {
+    "belief": "'Moistening each other with spit' (xiangru yimo) is Zhuangzi's praise of devotion in hard times",
+    "truth": "Zhuangzi's actual sentence is 'moistening each other with foam is not as good as forgetting each other in the rivers and lakes' — the weight is on the second half.",
+    "detail": "The passage is in the Zhuangzi, chapter 'The Great and Venerable Teacher': when the spring dries up, fish stranded on land breathe on each other to keep damp and moisten each other with spittle, but that is not as good as forgetting one another in the rivers and lakes. The next line is a parallel contrast: rather than praise Yao and condemn Jie, better to forget both and dissolve into the Way.\n\nSo he is contrasting two states: helping each other in distress is admirable, but better still is a condition in which no rescue is needed and each is at ease. Later usage lifted the first half out and turned it into a positive idiom for spouses and friends who stand by each other — a successful reinvention whose meaning departs from the source.\n\nOne more honest point: commentators differ on whether Zhuangzi is belittling such devotion — some read it as a critique of Confucian-style warmth, others as longing for a freer way of living together. What is certain is only the literal order of the text.",
+    "origin": "Over the centuries the half-sentence 'better to forget each other in the rivers and lakes' dropped away, and 'xiangru yimo' became an independent compliment for couples and friends, often credited as Zhuangzi's praise.",
+    "instead": "Using it as an idiom is fine — in modern Chinese it is positive. But do not say 'Zhuangzi praised this'. If you cite the source, quote the whole line 'moistening each other… is not as good as forgetting each other in the rivers and lakes' and note that his point lies in the second half.",
+    "sources": [
+      {
+        "label": "Zhuangzi, 'The Great and Venerable Teacher' (original text) — Wikisource",
+        "url": "https://zh.wikisource.org/wiki/莊子/大宗師"
+      },
+      {
+        "label": "The Paper, 'These so-called ancient sayings are all wrong' (includes this idiom)",
+        "url": "https://m.thepaper.cn/newsDetail_forward_29191107"
+      }
+    ]
+  },
+  "luxun-coffee-genius": {
+    "belief": "\"What genius? I just put the time others spend drinking coffee into work.\" —Lu Xun",
+    "truth": "The line does not appear in Lu Xun's published collections; the earliest form We could find is an unattributed school-reading piece called 'Lu Xun Cherished Time'.",
+    "detail": "We searched the electronic text of Lu Xun's Complete Works at the Chinese Marxists Internet Archive (30 sections: essay collections, fiction, prefaces) for 'where is there any genius' and 'the time others spend drinking coffee' and found neither. That text does not include his diaries or letters, so what All we can say is 'not in his published collections', not 'he never said it anywhere'.\n\nThe usual source is a short piece titled 'Lu Xun Cherished Time' (school reading material, author not stated; a 2016 repost is online). It says 'some say Lu Xun was a genius, but he himself said…' and then gives the line, with no date, no occasion and no source.\n\nTwo side facts: his diary does record coffee (for example 28 May 1913 and 16 Feb 1930, as compiled by Tencent News), and in 1928 he wrote 'The Revolutionary Coffee Shop', a satire on a newspaper advertisement for a cafe, saying of that 'paradise' that he had not gone and did not want to. So he was no enemy of coffee, but neither fact is the source of this line.",
+    "origin": "The line has circulated for years in teaching texts and inspirational writing, and 'coffee' gives it a modern flavor, so it is easily taken as his. We could not find its earliest appearance or whether it came from a relative's recollection; all All we can say is that no reliable source has turned up.",
+    "instead": "To talk about Lu Xun and diligence, quote something he did write, such as 'time is life; to waste other people's time for no reason is no different from murder for gain' ('Talks Outside the Gate on Writing'). For the coffee line, the safest label is 'attributed to Lu Xun; not found in his published works'.",
+    "sources": [
+      {
+        "label": "Lu Xun, 'The Revolutionary Coffee Shop' (in 'Sanxian ji', 1928) — Chinese Marxists Internet Archive",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/12/007.htm"
+      },
+      {
+        "label": "Tencent News, 'This saying of Lu Xun's may be a lie' (compiles diary entries about coffee)",
+        "url": "https://news.qq.com/rain/a/20220727A02X2J00"
+      }
+    ]
+  },
+  "luxun-medicine": {
+    "belief": "\"Studying medicine cannot save the Chinese.\" —Lu Xun",
+    "truth": "This is not Lu Xun's wording; the preface to 'Call to Arms' explains why he gave up medicine, in more specific and more measured words.",
+    "detail": "When the Beijing Lu Xun Museum's 'things Lu Xun said' search tool went online, media tried this sentence and it was not found (as reported by Sohu). It is a later summary of an episode.\n\nThe real source is the preface to 'Call to Arms', dated 3 December 1922. He recalls the slides he saw while studying medicine in Sendai and writes, roughly: 'I felt medicine was not an important matter; a weak and foolish people, however healthy and robust in body, could only serve as meaningless material for public display, and as spectators', so 'the first priority is to change their spirit' — and at the time he thought literature was the best means.\n\nThe differences: the original says 'medicine is not an important matter' as his thinking then, not a verdict on all doctors, and the claim he actually makes is about changing the spirit. He never repudiated medicine itself, so reading it as 'doctors are useless' is an over-reading.",
+    "origin": "Compressing a two-thousand-word recollection into a slogan is common in transmission. 'Studying medicine cannot save the Chinese' is short, forceful and has a target; it is easier to remember than the original, and it spread through classroom talk and inspirational writing.",
+    "instead": "Quote the original, 'I felt medicine was not an important matter', and say it is his explanation for abandoning medicine. For a summary, write 'in the preface to Call to Arms he says he then thought changing a people's spirit mattered more than treating bodies'.",
+    "sources": [
+      {
+        "label": "Lu Xun, preface to 'Call to Arms' (3 Dec 1922) — Chinese Marxists Internet Archive",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/03/001.htm"
+      },
+      {
+        "label": "Sohu, 'The \"things Lu Xun said\" search tool is online!' (test result for this sentence: not found)",
+        "url": "https://www.sohu.com/a/312984295_563929"
+      },
+      {
+        "label": "Huxiu, compilation of summarized and invented 'Lu Xun quotes' with real sources",
+        "url": "https://www.huxiu.com/article/4373413.html"
+      }
+    ]
+  },
+  "luxun-village-dogs": {
+    "belief": "\"One dog in the village barked, and the other dogs joined in without knowing why; when murk becomes normal, being clean becomes a crime.\" —Lu Xun",
+    "truth": "This passage cannot be found in Lu Xun's collected writings; one article says its first half resembles a line in a Korean drama, but We could not check the show, so all All we can say is that no source has turned up.",
+    "detail": "We searched the electronic text of Lu Xun's Complete Works at the Chinese Marxists Internet Archive (30 sections, 1,260 pages) and found nothing like 'the dogs in the village'; the few hits for 'dog barking' are unrelated passages. As elsewhere, that text lacks his diaries and letters, so the claim is 'not in his published collections'.\n\nA Huxiu compilation lists it as 'probably invented' and says a similar first half can be found in the Korean drama 'Pinocchio'. That is second-hand — We did not check the series' script — so treat it as a lead, not a finding.\n\nThe style is typical of internet 'Lu Xun-speak': an animal metaphor for mindless crowds, followed by a balanced punchline. Lu Xun did write about crowd conformity, but not in these words.",
+    "origin": "Attaching Lu Xun's name makes a line sound profound. This one borrows the familiar theme of herd mentality; We could not find where or when it first appeared.",
+    "instead": "If you want to quote it, label it 'a line circulating online; no source found'. For Lu Xun on crowds, quote something he did write, such as 'the brave, in anger, draw their swords against the stronger; the timid, in anger, draw theirs against the weaker' ('Miscellaneous Thoughts', in 'Huagai ji').",
+    "sources": [
+      {
+        "label": "Huxiu, compilation of altered and invented 'Lu Xun quotes' (includes this line and the Korean-drama lead)",
+        "url": "https://www.huxiu.com/article/4373413.html"
+      },
+      {
+        "label": "Lu Xun, 'Miscellaneous Thoughts' (in 'Huagai ji') — Chinese Marxists Internet Archive (genuine text for comparison)",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/08/011.htm"
+      }
+    ]
+  },
+  "luxun-mask": {
+    "belief": "\"Wear a mask too long and it grows into your face; to take it off you must break bones and tear skin.\" —Lu Xun",
+    "truth": "The line is not in his collected works; Lu Xun did write repeatedly about 'false masks', but never this 'grows into your face' formulation.",
+    "detail": "We searched the electronic text of the Complete Works (Chinese Marxists Internet Archive, 30 sections) for the key phrases and found no match. Essays that do contain 'false mask' include 'Sudden Thoughts', 'Correspondence', 'I Cannot Stop Yet', 'Analects, One Year On', 'On the Third Kind of People' and 'The True and False Don Quixotes'; they criticize hypocrisy and posturing, for example calling some people compradors 'wearing false masks'. That is a different thing from the psychological aphorism that a mask worn long enough becomes your face.\n\nA Huxiu compilation lists this line as a fabrication while noting that Lu Xun did discuss 'false masks'. The text We searched lacks his diaries and letters, so We can only show that it is not in his published collections.\n\nThe 'worn so long it will not come off' idea is common online; We could not find who first wrote it in this form.",
+    "origin": "'False mask' really is a favorite image of his, which makes the line plausible, and the harsh ending ('break bones and tear skin') feels Lu Xun-like. We could not find its earliest appearance.",
+    "instead": "To quote Lu Xun on masks, read the specific passages in 'Sudden Thoughts' or 'Analects, One Year On' and cite the essay. This sentence can only be labelled 'attributed online; no source found'.",
+    "sources": [
+      {
+        "label": "Huxiu, compilation of altered and invented 'Lu Xun quotes' (lists this line as a fabrication)",
+        "url": "https://www.huxiu.com/article/4373413.html"
+      },
+      {
+        "label": "Lu Xun, 'Sudden Thoughts' (in 'Huagai ji', contains 'false mask') — Chinese Marxists Internet Archive",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/08/020.htm"
+      }
+    ]
+  },
+  "luxun-sponge-time": {
+    "belief": "\"Time is like water in a sponge; if you are willing to squeeze, there is always some.\" —Lu Xun",
+    "truth": "The line is not in Lu Xun's collected works; no reliable source has turned up.",
+    "detail": "We searched the electronic text of the Complete Works (Chinese Marxists Internet Archive, 30 sections, including 'Hot Wind', 'The Grave', 'Huagai ji' and all the other essay collections) for 'sponge' and 'willing to squeeze' and found nothing. A Huxiu compilation likewise says that neither the complete works nor the Lu Xun Museum's retrieval tool yields a source and classes the line as 'invented or misattributed'.\n\nAgain, that text does not contain his diaries and letters, so the claim is only that it is not in his published collections. Some people on Zhihu have asked whether he really said it, but We found nobody giving a concrete original source.\n\nThe theme is close to something he did write ('time is life'), which may be how it got attached to his name.",
+    "origin": "Time-management articles love famous quotations. This one is vivid, colloquial and fits the inspirational genre, so it was easy to put Lu Xun's name on it. We could not find who first wrote it or where.",
+    "instead": "To talk about finding time, you can use the image without a byline; or quote what Lu Xun did write, 'time is life' ('Talks Outside the Gate on Writing').",
+    "sources": [
+      {
+        "label": "Huxiu, compilation of altered and invented 'Lu Xun quotes' (says no source in the complete works or the museum's tool)",
+        "url": "https://www.huxiu.com/article/4373413.html"
+      },
+      {
+        "label": "Lu Xun, 'Talks Outside the Gate on Writing' (in 'Qiejieting zawen') — what he really wrote about time",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/18/008.htm"
+      }
+    ]
+  },
+  "luxun-child-ox": {
+    "belief": "'Head bowed, glad to be an ox for the children' means Lu Xun was glad to serve the people",
+    "truth": "The line itself carries only a literary allusion: the Complete Works' annotation points to a Zuo Zhuan story about playing an ox for a child; reading 'children' as 'the masses' is a later interpretation.",
+    "detail": "The poem is 'Mocking Myself'. His diary for 12 October 1932 says he wrote a scroll for Liu Yazi, having 'stolen half a couplet and stitched it into a regulated poem': 'Cold-browed, I face a thousand pointing fingers; head bowed, I am glad to be an ox for the child.' The annotation in the Complete Works glosses 'ox for the child' with the Zuo Zhuan (Duke Ai, year 6): Duke Jing of Qi once held a rope in his mouth and played an ox for his son Tu to lead. It also cites Hong Liangji's 'Beijiang Poetry Talks': a licentiate named Qian, who doted on his three sons, wrote on his door-couplet 'fed and merry, glad to be an ox for the children', and the annotation says that is the 'half couplet' he stole.\n\nSo the prototype of the line is 'a father willing to bow down and be an ox for his child'. Reading 'child' directly as 'the people' is a later extension, not the gloss given in the annotation. Some articles cite a letter of his about working harder 'to be an ox for the child' as evidence that the child was his son Haiying, but We did not check that letter.\n\nThe extended reading is widespread and not necessarily wrong — poems can bear several readings. It is just a reading, not his stated meaning.",
+    "origin": "The couplet is balanced and forceful, so it was quoted again and again, and in teaching and propaganda settled into 'clear in love and hate, serving the people'. The source of the 'stolen half couplet' and the Zuo Zhuan allusion are seldom quoted along with it.",
+    "instead": "Quote it with its context: 'from \"Mocking Myself\" (1932); \"ox for the child\" uses a Zuo Zhuan allusion — literally, playing an ox for a child.' For the 'serving the people' reading, say 'often interpreted as'.",
+    "sources": [
+      {
+        "label": "Lu Xun, 'Mocking Myself' (1932) and annotations — Chinese Marxists Internet Archive electronic text of the Complete Works",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/22/038.htm"
+      },
+      {
+        "label": "Lu Xun, 'Mocking Myself' (poetry volume, with diary note) — Chinese Marxists Internet Archive",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/30/024.htm"
+      }
+    ]
+  },
+  "world-twain-lie-halfway": {
+    "belief": "\"A lie can travel halfway around the world while the truth is putting on its shoes.\" —Mark Twain",
+    "truth": "Twain left no record of saying it; close versions go back to 1710, and the first attribution to him appears nine years after his death.",
+    "detail": "The line is usually credited to Mark Twain or Winston Churchill. Quote Investigator found no solid citation for either. Churchill expert Richard Langworth stated in 2009 that it is not Churchill; for Twain, the earliest attribution is a 1919 item in Standard Player Monthly, nine years after his death, and nothing shows he said it.\n\nMuch earlier relatives exist: in 1710 Jonathan Swift wrote in The Examiner that falsehood flies and truth comes limping after it; an 1820 Portland Gazette item has truth still 'pulling her boots on'; an 1834 New-England Magazine piece says error will run half over the world while truth is putting on his boots. A 1821 source credits a similar saying to Fisher Ames.\n\nSo this is an English proverb that has circulated for three centuries; the boots became shoes and the author was swapped for the most famous humorist. The finding is 'no Twain source found', not proof that he could never have said it, but without evidence there is no reason to put quotation marks and his name on it.",
+    "origin": "The idea grew out of 18th-century satire and sermons, and by the early 1800s a 'boots' version was circulating in newspapers. In the 20th century it was attached to Twain, Churchill and other famous wits — the wittier the person, the likelier they are to be named as the source of an orphan quip.",
+    "instead": "Say 'as the old saying goes' and leave off a name, or cite Swift's 1710 line (falsehood flies, truth limps after it) with its source.",
+    "sources": [
+      {
+        "label": "Quote Investigator, 'A Lie Can Travel Halfway Around the World While the Truth Is Putting On Its Shoes'",
+        "url": "https://quoteinvestigator.com/2014/07/13/truth/"
+      }
+    ]
+  },
+  "world-twain-quit-smoking": {
+    "belief": "\"Quitting smoking is easy. I've done it a thousand times.\" —Mark Twain",
+    "truth": "Twain did write about giving up smoking, but the joke's template predates him: a 1905 novel has 'I've quit more'n a thousand times', and W. C. Fields used it for drinking by 1938.",
+    "detail": "Quote Investigator found no substantive evidence that Twain said this. The earliest match located is in Harris Dickson's 1905 novel Duke of Devil-May-Care, where the line is about gambling, not smoking: 'I've quit more'n a thousand times.'\n\nW. C. Fields performed 'The Temperance Lecture' on radio by 1938, with the line that you shouldn't say you can't swear off drinking, because it's easy: 'I've done it a thousand times.' So the pattern fits drinking, smoking or gambling alike.\n\nWhat Twain wrote about it himself, in a work published in 1913, is that he was warned to stop smoking and did, for two or three days, 'but it was too lonesome.' That is why the quip feels like him — the voice is right, only the record is missing.",
+    "origin": "'I've quit a thousand times' is a portable comic template that first circulated in fiction and stage routines, then settled on the best-known smoker among humorists. Twain loved his cigars and joked about himself, so it sounds right.",
+    "instead": "Say 'the old joke goes: quitting is easy, I've done it a thousand times', without a name. If you want Twain, quote what he actually wrote: he stopped for two or three days, but it was too lonesome.",
+    "sources": [
+      {
+        "label": "Quote Investigator, 'It's Easy to Quit Smoking. I've Done It a Thousand Times'",
+        "url": "https://quoteinvestigator.com/2012/09/19/easy-quit-smoking/"
+      }
+    ]
+  },
+  "world-twain-coldest-winter-sf": {
+    "belief": "\"The coldest winter I ever spent was a summer in San Francisco.\" —Mark Twain",
+    "truth": "Nothing in Twain's writing says this about San Francisco; the joke belongs to the 18th-century English actor James Quin, and Twain in 1880 was repeating it about Paris.",
+    "detail": "Quote Investigator found no such remark about San Francisco in Twain's papers or speeches. The earliest instance of the joke is in a letter from Horace Walpole to Mary Berry dated 29 July 1789: Quin, asked whether he had ever seen so bad a winter, replied, 'Yes, just such an one last summer!'\n\nTwain does mention the jest — in a letter to Lucius Fairchild of 28 April 1880, complaining about Paris weather — but he was quoting Quin. The earliest link to San Francisco QI located is a 1963 psychology textbook; before that the joke had also circulated about Duluth, Minnesota.\n\nSan Francisco summers really are cool and foggy, which is why the joke stuck to the city, but Twain is not its source for it.",
+    "origin": "Quin's quip spread through Walpole's letters; Twain read and repeated it; in the 20th century it was pinned on different cities (Duluth, San Francisco), and from the 1960s on it carried Twain's name. The fog made it feel right.",
+    "instead": "Say 'there's an old joke about San Francisco summers'. If you want a source, cite Walpole's 1789 letter on Quin and note that Twain's 1880 use was about Paris.",
+    "sources": [
+      {
+        "label": "Quote Investigator, 'The Coldest Winter I Ever Spent Was a Summer in San Francisco'",
+        "url": "https://quoteinvestigator.com/2011/11/30/coldest-winter/"
+      }
+    ]
+  },
+  "world-lincoln-silent-fool": {
+    "belief": "\"Better to remain silent and be thought a fool than to speak and remove all doubt.\" —Abraham Lincoln (or Mark Twain)",
+    "truth": "Neither Lincoln nor Twain has a record of saying it; the earliest source found is a 1907 book by Maurice Switzer, with Proverbs 17:28 as the older cousin.",
+    "detail": "The earliest match Quote Investigator found is in Maurice Switzer's 1907 Mrs. Goose, Her Book: 'It is better to remain silent at the risk of being thought a fool, than to talk and remove all doubt of it.'\n\nThe first credit to Lincoln appeared in Golden Book magazine in November 1931, 66 years after his death; the first credit to Twain is a Saskatchewan newspaper in May 1953. Neither comes with a contemporary document.\n\nThe ancient ancestor is Proverbs 17:28 (even a fool is thought wise if he keeps silent) — though there the silent man is thought wise, whereas the modern line only promises not to be thought a fool.",
+    "origin": "A 1907 nursery-rhyme-style book of maxims; the line lost its author in circulation, was assigned to Lincoln from the 1930s and to Twain from the 1950s — the two names most often handed unclaimed quotations.",
+    "instead": "Say 'as the saying goes' or cite Switzer 1907. If you want an ancient root, point to Proverbs 17:28 and note it is a different claim.",
+    "sources": [
+      {
+        "label": "Quote Investigator, 'Better to Remain Silent and Be Thought a Fool than to Speak and Remove All Doubt'",
+        "url": "https://quoteinvestigator.com/2010/05/17/remain-silent/"
+      }
+    ]
+  },
+  "world-lincoln-fool-all-the-people": {
+    "belief": "\"You can fool all of the people some of the time, and some of the people all of the time, but you cannot fool all of the people all of the time.\" —Abraham Lincoln",
+    "truth": "No contemporary document shows Lincoln saying it; the earliest attribution to him is an 1885 letter, and a similar thought appears in Jacques Abbadie in 1684.",
+    "detail": "Quote Investigator concludes that Lincoln probably did not use this adage, and the Collected Works contain no trace of it. The earliest attribution located is a letter from H. Clay Bascom to the New York newspaper The Voice, published in September 1885 — twenty years after Lincoln's death — which gave a version: 'you can fool the people some of the time, and you can fool some of the people all of the time; but you can't fool all of the people all the time.'\n\nThe older idea is in Jacques Abbadie's 1684 Traité de la Vérité de la Religion Chrétienne: one can fool some men, or all men in some places and times, but not all men in all places and ages.\n\nQI conjectures that someone in the prohibitionist movement of the 1880s met the idea in Abbadie or Diderot and credited it to the revered Lincoln. That is a conjecture, not a proven chain.",
+    "origin": "A 17th-century French apologetic idea, phrased colloquially in 1880s temperance rhetoric and attributed to Lincoln, then repeated for a century as a Lincoln staple.",
+    "instead": "Write 'attributed to Lincoln, though no contemporary source has been found', or cite Abbadie 1684 as a paraphrase.",
+    "sources": [
+      {
+        "label": "Quote Investigator, 'You Cannot Fool All the People All the Time'",
+        "url": "https://quoteinvestigator.com/2013/12/11/cannot-fool/"
+      }
+    ]
+  },
+  "world-hemingway-write-drunk": {
+    "belief": "\"Write drunk, edit sober.\" —Ernest Hemingway",
+    "truth": "No record in Hemingway's writing or recorded remarks; the earliest strong match is a line given to a fictional character in a 1964 Peter De Vries novel.",
+    "detail": "Quote Investigator concludes that Hemingway never said or wrote this. The earliest strong match is in Peter De Vries's 1964 novel Reuben, Reuben, chapter 21, where the character Gowan McGland, modelled on Dylan Thomas, says: 'Sometimes I write drunk and revise sober, and sometimes I write sober and revise drunk.'\n\nIn the novel the line describes one man's process — shuttling between spontaneity and restraint, the Dionysian and the Apollonian — not advice to writers. QI suggests it was later reassigned to the more famous, and famously hard-drinking, Hemingway.\n\nHemingway's own described habit was the opposite: he wrote in the morning and kept the afternoon free. His reputation as a drinker is what made the misattribution so easy to believe.",
+    "origin": "A line from a 1964 novel, stripped of context and rephrased as the imperative 'Write drunk, edit sober', then handed to the most plausible-sounding author.",
+    "instead": "Leave off Hemingway's name. If you want a source, cite De Vries's Reuben, Reuben (1964) and say it is a character speaking.",
+    "sources": [
+      {
+        "label": "Quote Investigator, 'Write Drunk, Revise Sober'",
+        "url": "https://quoteinvestigator.com/2016/09/21/write-drunk/"
+      }
+    ]
+  },
+  "world-newton-shoulders-of-giants": {
+    "belief": "\"If I have seen further, it is by standing on the shoulders of giants.\" —Isaac Newton (his own humble phrase)",
+    "truth": "Newton really wrote it in an 1675 letter to Hooke, but the metaphor was not his invention — twelfth-century scholars used it — and whether the letter was pure modesty or a veiled jab is disputed.",
+    "detail": "Newton wrote to Robert Hooke on 5 February 1675 (some sources say 1676): 'If I have seen further it is by standing on the shoulders of Giants.' The words are genuine; this is not a misquotation.\n\nThe confusion is about whose idea it was. John of Salisbury, in his 1159 Metalogicon, credits the image to the earlier Bernard of Chartres, who compared us to dwarfs perched on the shoulders of giants; William of Conches had a similar comparison in 1123. By the 17th century Mersenne, Pascal and Herbert were using it, so it was a commonplace before Newton.\n\nOne more point usually left out: Newton wrote while quarrelling with Hooke over priority in optics, and Hooke had a severe spinal curvature. Some scholars have recently read the line as a sly dig; others disagree, and historians have not settled it. Reading it only as plain modesty is common but may not be the whole story.",
+    "origin": "After the letter was published in 1855 the line became Newton's best-known 'modest' remark, retold like the apple story, while its medieval ancestry was forgotten.",
+    "instead": "Write: 'In an 1675 letter to Hooke Newton said that if he had seen further it was by standing on the shoulders of giants — a metaphor already medieval.' If you call it modesty, add that he was then in a priority dispute with Hooke.",
+    "sources": [
+      {
+        "label": "Wikipedia, 'Standing on the shoulders of giants'",
+        "url": "https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants"
+      }
+    ]
+  },
+  "world-socrates-know-nothing": {
+    "belief": "\"The only thing I know is that I know nothing.\" —Socrates",
+    "truth": "Plato's Socrates does not say this; what he says is that what he does not know he does not think he knows.",
+    "detail": "In the Apology, 21d, after questioning a politician who thought himself wise, Socrates concludes (in the Perseus English text): 'what I do not know I do not think I know either.'\n\nThere is a real difference between the two. 'I know that I know nothing' is an assertion of total ignorance. The Apology's Socrates only declines to pretend to knowledge he lacks; he does not claim to know nothing, and elsewhere he holds firm views about justice and how to live.\n\nSecondary accounts We found agree that 'I know that I know nothing' is a later summary not found in Plato's dialogues. It is not an absurd summary, but putting it in quotation marks under Socrates' name turns a more restrained claim into a bolder slogan.",
+    "origin": "Later summaries of the Apology compressed 'I do not think I know what I do not know' into 'I know that I know nothing', which then appeared on quote cards.",
+    "instead": "Quote the Apology (21d) closely — 'what I do not know I do not think I know' — or paraphrase: Socrates' wisdom lay in not pretending to know.",
+    "sources": [
+      {
+        "label": "Plato, Apology 21d (Perseus Digital Library, English)",
+        "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0170:text=Apol.:section=21d"
+      }
+    ]
+  },
+  "world-picasso-good-artists-copy": {
+    "belief": "\"Good artists copy; great artists steal.\" —Pablo Picasso",
+    "truth": "There is no evidence Picasso said it; similar lines go back to 1892, T. S. Eliot wrote a closer version in 1920, and Steve Jobs credited it to Picasso only in 1996.",
+    "detail": "Quote Investigator found no evidence that Picasso said this. The trail runs roughly as follows. In 1892 W. H. Davenport Adams wrote in The Gentleman's Magazine that great poets imitate and improve, whereas small ones steal and spoil.\n\nIn 1920 T. S. Eliot's The Sacred Wood reversed the moral valence: 'Immature poets imitate; mature poets steal; bad poets deface what they take, and good poets make it into something better.' In 1967 Peter Yates claimed Igor Stravinsky said 'A good composer does not imitate; he steals', and a 1974 book on stage design credited William Faulkner with 'immature artists copy, great artists steal.'\n\nIn 1996, on the PBS programme Triumph of the Nerds, Steve Jobs attributed 'good artists copy, great artists steal' to Picasso, which spread that version widely. QI concludes the saying was reshaped by many hands and finds nothing to support Picasso.",
+    "origin": "From late-19th-century literary criticism through Eliot's aphorism, then oral lore among composers and stage designers, and finally a 1996 Jobs television interview that tied it to Picasso.",
+    "instead": "Say 'as the saying goes' without a name, or quote Eliot's 1920 line and note that he was talking about poets.",
+    "sources": [
+      {
+        "label": "Quote Investigator, 'Good Artists Copy; Great Artists Steal'",
+        "url": "https://quoteinvestigator.com/2013/03/06/artists-steal/"
+      }
+    ]
+  },
+  "world-twain-death-exaggerated": {
+    "belief": "\"The reports of my death are greatly exaggerated.\" —Mark Twain",
+    "truth": "Twain did say something like it, but not in these words: the 1897 newspaper version is 'The report of my death was an exaggeration'; 'greatly' came later.",
+    "detail": "On 2 June 1897 the New York Journal reported, via journalist Frank Marshall White, that Twain's cousin Dr. J. Ross Clemens had been seriously ill in London and that a rumour of Twain's own death had grown from the confusion. The earliest published version of Twain's reply is: 'The report of my death was an exaggeration.'\n\nQuote Investigator traces the later versions: in the North American Review in 1906 Twain recalled telling a reporter 'Say the report is greatly exaggerated'; in 1912 biographer Albert Bigelow Paine recorded 'Just say the report of my death has been grossly exaggerated'; and later newspapers added adjectives and phrases like 'rumors of my demise'.\n\nSo the remark is real, but the familiar wording was polished through retellings. The earliest documented wording and the popular wording are different things.",
+    "origin": "The event was in 1897; the wording shifted through Twain's own recollection, a biographer's retelling and newspaper reprints until it settled into the smooth 'greatly exaggerated'.",
+    "instead": "Write: 'In 1897 the press recorded Twain's reply as \"The report of my death was an exaggeration\"; the popular \"greatly exaggerated\" is a later form.'",
+    "sources": [
+      {
+        "label": "Quote Investigator, 'Reports of My Death Are Greatly Exaggerated'",
+        "url": "https://quoteinvestigator.com/2024/06/07/report-death/"
+      }
+    ]
+  },
+  "world-einstein-god-dice": {
+    "belief": "\"God does not play dice.\" —Einstein",
+    "truth": "Einstein did write it, but in a December 1926 letter to Born the words were 'I am at all events convinced that He does not play dice' — a philosophical reservation about quantum randomness, not a theological statement.",
+    "detail": "In December 1926 Einstein replied to Max Born. The translation quoted by Aeon reads: 'The theory produces a good deal but hardly brings us closer to the secret of the Old One. I am at all events convinced that He does not play dice.' Born had been arguing that the heart of the new quantum mechanics beats randomly, unlike deterministic classical physics.\n\nTwo cautions. First, the letter's subject is 'the Old One' and 'He'; 'God does not play dice' is a later compression. Second, Einstein's 'God' was not a personal deity; the article quotes him saying he believed in Spinoza's God, who reveals himself in the lawful harmony of what exists, not a God concerned with the fates of humans.\n\nThat is why 'Einstein rejected quantum mechanics because he believed in God' is too simple: he was expressing trust that nature is rational and intelligible. His position was later outweighed by experiment, but that is another story.",
+    "origin": "A private 1926 letter that became one of the most quoted lines in physics, shortened in popular culture to 'God does not play dice' and then recruited to support all kinds of religious or anti-religious arguments.",
+    "instead": "Quote it as: 'In a 1926 letter to Born Einstein wrote that he was convinced \"He does not play dice\" (the \"Old One\", i.e. nature's order).' Don't use it to say what religion he held.",
+    "sources": [
+      {
+        "label": "Aeon, What Einstein meant by God does not play dice",
+        "url": "https://aeon.co/ideas/what-einstein-meant-by-god-does-not-play-dice"
+      }
+    ]
+  },
+  "luxun-some-live-dead": {
+    "belief": "\"Some people are alive, yet already dead; some are dead, yet still alive.\" —Lu Xun",
+    "truth": "These are the opening lines of poet Zang Kejia's 1949 poem 'Some People', subtitled 'Thoughts in Memory of Lu Xun' — it is about Lu Xun, not by him.",
+    "detail": "'Some People' (Youde ren) was published in 1949 with the subtitle 'Thoughts in Memory of Lu Xun'; Zang Kejia wrote it for the thirteenth anniversary of Lu Xun's death. An article on the China Writers Network about Zang's former home says it was written in October 1949, takes Lu Xun's spirit as its axis, and opens with 'some people are alive, yet already dead; some are dead, yet still alive'.\n\nThe mix-up is easy to understand: the poem is about Lu Xun, appears in school texts and memorial articles, and once the line is clipped from its title and author it reads like his own words. We found only scattered statements that it is widely misattributed to Lu Xun, no systematic count, so I say only that people often quote it that way.\n\nFor reference, a full-text search of an electronic text of Lu Xun's Complete Works returns zero hits. That shows only that it is not in the published collected writings, not that he never wrote anything similar in letters or diaries, but together with the poem's provenance the conclusion is clear.",
+    "origin": "A 1949 memorial poem whose first two lines were clipped into slogans and quote cards; detached from the title, they became tied to Lu Xun's name.",
+    "instead": "Cite it as: Zang Kejia, 'Some People' (1949, subtitled 'Thoughts in Memory of Lu Xun'): 'Some people are alive, yet already dead; some are dead, yet still alive.'",
+    "sources": [
+      {
+        "label": "China Writers Network, 'Visiting Zang Kejia's former home' (notes the poem, written Oct 1949, subtitled 'Thoughts in Memory of Lu Xun')",
+        "url": "https://www.chinawriter.com.cn/n1/2023/0728/c404063-40045334.html"
+      },
+      {
+        "label": "Electronic text of Lu Xun's Complete Works, Chinese Marxists Internet Archive (full-text search: zero hits)",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/index.htm"
+      }
+    ]
+  },
+  "luxun-one-confidant": {
+    "belief": "\"To find one true confidant in life is enough; treat the whole world as kin.\" —Lu Xun",
+    "truth": "The couplet is by the Qing-dynasty writer He Wayin; in spring 1933 Lu Xun copied it out as a scroll for Qu Qiubai — he transcribed it, he did not compose it.",
+    "detail": "Several articles record that in spring 1933 Lu Xun wrote out the couplet by the Qing writer He Wayin, 'to find one true confidant in life is enough; treat the world as kin', as a scroll for Qu Qiubai. The People's Political Consultative Conference website article 'Qu Qiubai's cartoon of Ah Q' says exactly this, and another article on Aisixiang also describes Lu Xun writing the couplet out by hand as a gift.\n\nSo the couplet is not Lu Xun's composition but a line by an earlier writer that he chose and copied; the calligraphy became famous because of the two men's friendship, and the words were then quoted widely as a 'Lu Xun saying'. A full-text search of an electronic text of his Complete Works gives zero hits for either half of the couplet, which fits.\n\nOne caveat: We did not open an image of the original scroll, and the detail that its inscription says it is He Wayin's line was not in any page I opened; this entry does not rely on it.",
+    "origin": "Lu Xun's handwriting made the couplet famous, and in secondary quotation 'X wrote it out for Y' easily shrinks to 'X said'.",
+    "instead": "Write: 'a line by the Qing writer He Wayin, which Lu Xun wrote out for Qu Qiubai in 1933'. If you want to speak of their friendship, citing the gift is more accurate than a bare attribution.",
+    "sources": [
+      {
+        "label": "CPPCC Net, 'Qu Qiubai's cartoon of Ah Q' (spring 1933: Lu Xun writes He Wayin's couplet for Qu Qiubai)",
+        "url": "https://www.rmzxw.com.cn/c/2024-07-17/3579048.shtml"
+      },
+      {
+        "label": "Electronic text of Lu Xun's Complete Works, Chinese Marxists Internet Archive (full-text search: zero hits)",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/index.htm"
+      }
+    ]
+  },
+  "zh-fools-trouble-themselves": {
+    "belief": "\"There was originally no trouble in the world; fools make trouble for themselves.\" —proverb",
+    "truth": "The source is a remark by Lu Xiangxian in the New Book of Tang: 'There is originally nothing the matter in the world; mediocre people stir it up into trouble.' The popular form is a later smoothing.",
+    "detail": "In the Wikisource text of the New Book of Tang, the biography of Lu Xiangxian says that while governor of Puzhou and inspector of Hedong he governed with leniency, and said: 'The world has originally nothing the matter with it; mediocre people stir it into trouble. If you only clear the source, why worry about simplicity?'\n\nCompared with today's 'shi shang ben wu shi, yong ren zi rao zhi', 'tianxia' (the realm) becomes 'shishang' (the world), and the clause 'stir it into trouble' becomes 'trouble themselves'. The meaning is close, but the original is about government: officials stirring things up with fussy rules. Today it is used as personal advice not to overthink, which shifts the emphasis.\n\nThis is a case of wording drift plus a change of context, not a false attribution to a famous person, so it is treated as harmless.",
+    "origin": "A provincial official's remark in a dynastic history, reshaped by folk usage into a proverb and later into lifestyle advice, with the meaning sliding from 'officials, stop meddling' to 'don't worry so much'.",
+    "instead": "When accuracy matters, quote the Tang text 'The world originally has nothing the matter...' and say it is about governing; as an everyday proverb the short form is fine, just do not present it as the history's wording.",
+    "sources": [
+      {
+        "label": "Ouyang Xiu and Song Qi, New Book of Tang, biography of Lu Xiangxian (Chinese Wikisource)",
+        "url": "https://zh.wikisource.org/wiki/新唐書/卷116"
+      }
+    ]
+  },
+  "zh-liang-qichao-drink-ice": {
+    "belief": "\"Ten years drinking ice, and still the hot blood does not cool.\" —Liang Qichao",
+    "truth": "Chinese Wikiquote lists it as a false attribution to Liang Qichao, and We could not find it in his writings; what can be traced is the source of 'drinking ice': the Zhuangzi, chapter 'In the World of Men'.",
+    "detail": "Chinese Wikiquote's page on Liang Qichao lists 'Ten years drinking ice, the hot blood does not cool' at the head of its quotations and marks it with the note that it is a spurious attribution to Liang. 'Drinking ice' does connect to him: he styled himself 'Master of the Ice-Drinker's Studio', alluding to the Zhuangzi where Duke Zigao of Ye says 'This morning I received my orders and by evening I am drinking ice — am I feverish inside?' The point is that anxiety about the mission leaves him feeling hot.\n\nSo 'drinking ice' is real, but 'ten years' and 'hot blood does not cool' appear to be a later poetic embellishment that sounds right with the studio name. Online it is often said to express his feelings after the failed 1898 reforms, but what We found were secondary retellings, not his own text.\n\nThe finding is 'no source in his writing found', not proof that he would never have written it, hence the confidence level of limited.",
+    "origin": "The studio name plus a Zhuangzi allusion makes a later parallel couplet sound like Liang's voice, and it circulates on inspirational posts and bookmarks.",
+    "instead": "Say: 'Liang Qichao styled himself \"Master of the Ice-Drinker's Studio\", from the Zhuangzi.' Label the couplet as 'attributed online, no original text found'.",
+    "sources": [
+      {
+        "label": "Chinese Wikiquote, Liang Qichao (couplet marked as a spurious attribution)",
+        "url": "https://zh.wikiquote.org/wiki/梁啟超"
+      },
+      {
+        "label": "Zhuangzi, 'In the World of Men' (Chinese Wikisource): 'This morning I received my orders and by evening I am drinking ice'",
+        "url": "https://zh.wikisource.org/wiki/莊子/人間世"
+      }
+    ]
+  },
   "why-manhole-round": {
     "belief": "Manhole covers are round because only a round lid can't fall into its own hole.",
     "truth": "A circle can't fall through, but it isn't the only shape that can: any curve of constant width, such as a Reuleaux triangle, works too. Round wins mostly because it is easy and cheap to make.",
@@ -1211,6 +1707,27 @@ export const MYTHS_EN_EXTRA: Record<string, MythText> = {
       }
     ]
   },
+  "why-runway-numbers": {
+    "belief": "The big numbers painted on an airport runway are just serial numbers.",
+    "truth": "The number is the runway centreline's magnetic bearing divided by ten and rounded, so the two ends of a runway differ by 18, and when magnetic north drifts enough, runways get renamed.",
+    "detail": "The FAA's Aeronautical Information Manual is explicit: the runway number is the whole number nearest one-tenth of the magnetic azimuth of the runway centreline, measured clockwise from magnetic north, determined from the approach direction. A runway pointing at about 092 degrees is Runway 09; the other end, at about 272 degrees, is 27. The two ends differ by 180 degrees, hence 18 in the numbers. Parallel runways add L, R or C for left, right or centre.\n\nBecause it uses magnetic rather than true north, and Earth's magnetic field slowly changes, runways sometimes have to be renumbered. NOAA's National Centers for Environmental Information says Fairbanks International Airport in Alaska renamed runway 1L-19R to 2L-20R in 2009 and expects to need another change around 2033. A Tucson Airport Authority notice also says such renumbering happens at almost every airport, roughly once every 30 years; that is the airport's own statement, not a universal rule.",
+    "origin": "Runway numbers look like serial numbers because they are two digits painted at the end of the pavement with no explanation next to them. We found no particular source for the misconception; it is the natural assumption when you see a number with no context.",
+    "instead": "Next time you see a runway number, estimate the direction: 09 points roughly east, 18 south, 27 west, 36 north. The number you see through the window when landing tells you which way the aircraft is facing.",
+    "sources": [
+      {
+        "label": "US FAA, Aeronautical Information Manual 2-3: Airport Marking Aids and Signs (runway designators)",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap2_section_3.html"
+      },
+      {
+        "label": "NOAA National Centers for Environmental Information: Airport Runway Names Shift with Magnetic Field",
+        "url": "https://www.ncei.noaa.gov/node/253"
+      },
+      {
+        "label": "FAASafety.gov notice: Tucson International Airport runway closure and renumbering",
+        "url": "https://www.faasafety.gov/SPANS/noticeView.aspx?nid=13246"
+      }
+    ]
+  },
   "why-black-box-orange": {
     "belief": "The 'black box' in an aircraft is black, which is why it's called that.",
     "truth": "Flight recorders are actually bright orange so they are easy to spot in wreckage; where the name 'black box' came from isn't settled.",
@@ -1268,6 +1785,239 @@ export const MYTHS_EN_EXTRA: Record<string, MythText> = {
       {
         "label": "US FAA, Advisory Circular 70/7460-1M: Obstruction Marking and Lighting (section 3.5.1, Spherical Markers)",
         "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/Advisory_Circular_70_7460_1M.pdf"
+      }
+    ]
+  },
+  "word-kongxue-laifeng": {
+    "belief": "\"Kōng xué lái fēng\" (空穴来风) means a rumor with no basis at all",
+    "truth": "Literally \"where there is an empty hole, wind comes in\" — originally it meant a rumor doesn't arise without some cause. The \"groundless\" sense is now recorded by dictionaries alongside the original.",
+    "detail": "The phrase comes from Song Yu's \"Rhapsody on the Wind\" in the Wen Xuan. When King Xiang of Chu says the breeze is shared by everyone, Song Yu replies that he learned from his teacher: the zhi-ju tree draws nests, and a hollow opening draws wind — what a place offers decides what comes to it. A commentary in the Liuchen-annotated Wen Xuan explains 空穴 as an opening in a door or gate through which wind readily passes. So \"empty hole\" is the condition that lets wind in, not a symbol of nothingness.\n\nIn its original sense the phrase therefore means \"no smoke without fire\": a gap has to exist before a rumor can enter. The Taiwan Ministry of Education's Revised Dictionary still glosses it as rumor slipping in through a gap, though its own example sentence (\"such rumors are not credible\") already uses the newer, \"baseless\" feel.\n\nChinese lexicography has followed the shift. According to a 2020 article in Modern Chinese (现代语文), the Contemporary Chinese Dictionary's 2002 supplement defined it only as \"rumors are not entirely without cause\", while its 5th edition added \"now mostly used to mean rumors with no basis whatsoever\" — keeping both senses (the article's author argues even that under-states how dominant the new sense has become). It is a word whose old and new meanings are changing places, not simply a mistake.",
+    "origin": "The reversal probably comes from reading 空 as \"empty, nothing there\": 空穴来风 then sounds like \"wind from nowhere\", i.e. no basis. That reading spread through speech and news writing until dictionaries began annotating it as a common modern use.",
+    "instead": "To mean \"rumors rarely come from nothing\", use the original sense with context, e.g. \"空穴来风，未必无因\". To say \"completely baseless\", terms like 无稽之谈 (wú jī zhī tán) or 捕风捉影 (bǔ fēng zhuō yǐng) are unambiguous.",
+    "sources": [
+      {
+        "label": "Song Yu, Rhapsody on the Wind, in the annotated Wen Xuan, juan 13 (Wikisource)",
+        "url": "https://zh.wikisource.org/wiki/%E5%85%AD%E8%87%A3%E8%A8%BB%E6%96%87%E9%81%B8_(%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC)/%E5%8D%B7%E7%AC%AC%E5%8D%81%E4%B8%89"
+      },
+      {
+        "label": "Taiwan Ministry of Education, Revised Mandarin Dictionary — 空穴來風",
+        "url": "https://dict.revised.moe.edu.tw/search.jsp?md=1&word=%E7%A9%BA%E7%A9%B4%E4%BE%86%E9%A2%A8"
+      },
+      {
+        "label": "Song Qixia, Modern Chinese 2020 no. 8 — on the dictionary definition of 空穴来风",
+        "url": "https://m.fx361.com/news/2020/1215/7342152.html"
+      }
+    ]
+  },
+  "word-chaqiang-renyi": {
+    "belief": "\"Chā qiáng rén yì\" (差强人意) means disappointing or unsatisfactory",
+    "truth": "It began as praise: 差 means \"somewhat\" and 强 means \"to rouse\", so it meant \"quite heartening\". It later softened to \"reasonably satisfactory\".",
+    "detail": "The source is the Book of the Later Han, biography of Wu Han. Emperor Guangwu sent someone to see what his commander Wu Han was doing; the report was that he was repairing the tools of war, and the emperor sighed: \"Lord Wu rather heartens me — he is like a whole enemy state in himself.\" Here 差 (chā) means \"somewhat\", and 强人意 means \"stiffens one's spirit\". It is an emperor's commendation of a general, not a complaint.\n\nLater usage drifted to \"passably satisfactory\", and many readers now hear it as \"not very satisfactory\". Taiwan's Ministry of Education Revised Dictionary records this drift openly: \"originally meant greatly heartening; later, broadly passable, grudgingly satisfactory.\" So \"just acceptable\" is dictionary-approved, while \"bad / a letdown\" is not listed.\n\nLinguists treat it as change in progress: Zhu Qingzhi's 2011 paper \"From 差强人意 to 强差人意\" uses corpus and web material to document the meaning and even the word-form varying over a short period.",
+    "origin": "The common reading of 差 is \"poor\" (chà), so 差强 looks like \"poorly strong\", and the whole phrase gets reinterpreted as \"not great\". As the old pronunciation chā and the classical sense of \"somewhat\" faded, the meaning followed.",
+    "instead": "For \"fairly acceptable\", 差强人意 is dictionary-backed. For \"disappointing\", use 不尽如人意 (bù jìn rú rén yì) or 不及预期, which cannot be mistaken for praise by readers who know the old sense.",
+    "sources": [
+      {
+        "label": "Book of the Later Han, biography of Wu Han (Wikisource)",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B718"
+      },
+      {
+        "label": "Taiwan Ministry of Education, Revised Mandarin Dictionary — 差強人意",
+        "url": "https://dict.revised.moe.edu.tw/search.jsp?md=1&word=%E5%B7%AE%E5%BC%B7%E4%BA%BA%E6%84%8F"
+      },
+      {
+        "label": "Zhu Qingzhi, \"From 差强人意 to 强差人意\", Macao Language and Culture Research 2011 (2012)",
+        "url": "https://repository.eduhk.hk/en/publications/%E5%BE%9E%E5%B7%AE%E5%BC%B7%E4%BA%BA%E6%84%8F%E5%88%B0%E5%BC%B7%E5%B7%AE%E4%BA%BA%E6%84%8F%E5%B0%8D%E4%B8%80%E5%80%8B%E6%AD%A3%E5%9C%A8%E7%99%BC%E7%94%9F%E7%9A%84%E8%AA%9E%E8%A8%80%E8%AE%8A%E7%95%B0%E5%AF%A6%E4%BE%8B%E7%9A%84%E5%88%9D%E6%AD%A5%E8%A7%80%E5%AF%9F/"
+      }
+    ]
+  },
+  "word-shoudang-qichong": {
+    "belief": "\"Shǒu dāng qí chōng\" (首当其冲) means to charge at the front, to lead the attack",
+    "truth": "It means being positioned at the point of impact and so the first to take the blow — it is passive, not \"leading the charge\".",
+    "detail": "冲 (衝) is a thoroughfare or exposed junction, and 当其冲 means \"to stand facing the impact\". An early use appears in the Book of Han's Five Phases treatise, quoting Liu Xiang: the small state of Zheng, squeezed between Jin and Chu and further pressed by Wu, \"stood at the crossroads of the clash\" (郑当其冲) and failed to cultivate virtue, so it risked ruin among three powers.\n\nThe Taiwan Ministry of Education's Revised Dictionary defines it as \"first to be attacked, or first to meet disaster\", with the example of a town caught between two armies bearing the brunt of both sides' shelling. No \"first to charge\" sense is recorded there, so in sentences like \"he led the way and finished first\" many readers will still count it as a slip.\n\nThe misreading is understandable: today 冲 most often means \"to rush\", and 首 means \"first\", so the characters read as \"first to rush\". We could not find an official statement on whether any dictionary plans to add the active sense.",
+    "origin": "As 冲 shifted in everyday Chinese from the noun \"thoroughfare\" to the verb \"rush / charge\", the idiom was reinterpreted as \"first to charge\". The usage is common in news and speech, which is why it is on many lists of frequently misused idioms.",
+    "instead": "Use it for \"first to be affected\": \"as prices rise, low-income households bear the brunt\". For an active lead, say 冲锋在前 (chōngfēng zài qián), 率先垂范 (shuàixiān chuífàn) or 一马当先 (yì mǎ dāng xiān).",
+    "sources": [
+      {
+        "label": "Book of Han, Five Phases treatise, quoting Liu Xiang (Wikisource)",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8/%E5%8D%B7027%E4%B8%8B%E4%B9%8B%E4%B8%8B"
+      },
+      {
+        "label": "Taiwan Ministry of Education, Revised Mandarin Dictionary — 首當其衝",
+        "url": "https://dict.revised.moe.edu.tw/search.jsp?md=1&word=%E9%A6%96%E7%95%B6%E5%85%B6%E8%A1%9D"
+      }
+    ]
+  },
+  "word-qiyue-liuhuo": {
+    "belief": "\"Qī yuè liú huǒ\" (七月流火) means July is blazing hot",
+    "truth": "The 火 is a star (Antares, called Great Fire) and 流 means it slides westward — the line originally says the heat is ending and autumn approaching.",
+    "detail": "The line opens the \"Seventh Month\" ode in the Book of Songs: \"In the seventh month the Fire declines; in the ninth month clothes are handed out.\" According to Wang Li's essay \"Why studying classical Chinese means studying a little astronomy\", 火 is the lunar mansion Xin, also called Great Fire (Antares), and 流 is its westward descent. Wang notes this line was long misexplained until Dai Zhen used the precession of the equinoxes to show that in Zhou times the star stood highest in the south at dusk in the sixth month and was already sinking west by the seventh.\n\nSo the verse says: when the Fire star sets, the worst heat is over, and two months later it will be time to issue winter clothes. It marks the approach of autumn, not midsummer.\n\nModern writers often use it to mean \"scorching July\" by reading the characters literally. A search of Taiwan's Ministry of Education Revised Dictionary returned zero entries for the phrase, so that dictionary does not list it; We could not locate how the Contemporary Chinese Dictionary treats it, so no claim is made. The original sense is clear: cooling.",
+    "origin": "Pulled out of context, \"flowing fire\" sounds like heat. And since the phrase is quoted every year in Gregorian July, when it really is hottest, the literal misreading is repeated each summer.",
+    "instead": "For heat, use 酷暑难耐 (kùshǔ nánnài) or 暑气蒸腾 (shǔqì zhēngténg). To quote the ode properly, use 七月流火 for \"summer is waning, autumn is coming\" — and note it refers to the lunar seventh month, around mid-to-late August.",
+    "sources": [
+      {
+        "label": "Book of Songs, \"Seventh Month\" (Wikisource)",
+        "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93/%E4%B8%83%E6%9C%88"
+      },
+      {
+        "label": "Wang Li, \"Why study a little astronomy for classical Chinese\", 1984 (reprinted on Aisixiang)",
+        "url": "https://www.aisixiang.com/data/164341.html"
+      }
+    ]
+  },
+  "word-bukan-zhilun": {
+    "belief": "\"Bù kān zhī lùn\" (不刊之论) means a view too shocking or improper to be published",
+    "truth": "刊 here means \"to pare away / revise\", so the phrase means an unalterable, indelible judgment — high praise.",
+    "detail": "When writing on bamboo slips, an error was scraped away with a knife and rewritten; that act was 刊. So 不刊 means \"cannot be pared or altered\". Taiwan's Ministry of Education Revised Dictionary lists 不刊 as \"cannot be cut or revised; unalterable, indelible\", with two classical examples: Du Yu's preface to the Zuo Commentary calling the classics \"unalterable books\", and Liu Xie's Wenxin Diaolong (chapter \"Zong Jing\") calling them \"the eternal ultimate Way, unalterable grand teaching\". Its entry for 不刊之论 reads, roughly, \"a firm, unmovable, outstanding view that cannot be erased\".\n\nToday the best-known sense of 刊 is \"to publish\" (as in 刊登, 刊物), so 不刊 is easily read as \"not to be published\" — turning praise into suppression. That is an understandable misreading from an archaic sense, nothing more.\n\nWe found no dictionary that adds the \"unpublishable\" sense; all current glosses remain the positive \"indelible\". It is also wise not to read it as \"absolutely correct\": the old usage was about the classics' fixed status, and a little hedging is sensible when praising a modern argument.",
+    "origin": "The living sense of 刊 is now \"publish\"; the older \"pare away\" meaning rarely appears in daily writing, so the idiom's logic is hidden. Words like 报刊 and 刊物 reinforce \"刊 = publish\".",
+    "instead": "To praise a view as unshakable, 不刊之论 is right. To say something cannot be published, use 不宜刊登 (bù yí kāndēng) or 不予刊发. If readers might misunderstand, 不易之论 (bù yì zhī lùn) or \"定论\" is clearer.",
+    "sources": [
+      {
+        "label": "Taiwan Ministry of Education Revised Dictionary — 不刊",
+        "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=20780"
+      },
+      {
+        "label": "Taiwan Ministry of Education Revised Dictionary — 不刊之論",
+        "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=20782"
+      },
+      {
+        "label": "Liu Xie, Wenxin Diaolong, \"Zong Jing\" (Wikisource)",
+        "url": "https://zh.wikisource.org/wiki/%E6%96%87%E5%BF%83%E9%9B%95%E9%BE%8D/%E5%AE%97%E7%B6%93"
+      }
+    ]
+  },
+  "word-zhishou-kere": {
+    "belief": "\"Zhì shǒu kě rè\" (炙手可热) means hugely popular or in great demand",
+    "truth": "It originally mocked the overbearing power of the great and powerful — so hot you can't touch it; the \"in demand\" sense came later.",
+    "detail": "The source is Du Fu's poem \"Ballad of the Beautiful Women\", which describes a spring outing of Chang'an's high-ranking families and ends: \"Singeing-hot, their power has no equal; keep well back, lest the Chancellor take offence.\" Touch it and your hand burns: the heat is arrogance of rank, and the tone is satirical.\n\nTaiwan's Ministry of Education Revised Dictionary glosses it as \"one feels heat when the hand draws near; figuratively, of high status and blazing power\", citing Du Fu and a Ming-dynasty example; the \"popular\" sense is not listed there. We did not find the Contemporary Chinese Dictionary's treatment, so no claim is made about it.\n\nYet phrases like \"a hot new stock\" or \"a sought-after rising star\" are now common in the media. The meaning has travelled a long way, from a critical \"blazing authority\" to a neutral or even positive \"in demand\". Most users mean no harm; they simply haven't met the poem's context.",
+    "origin": "In modern Chinese 热 most readily suggests \"hot, trending\", and 炙手 conjures \"people grabbing at it\", so the phrase is read as \"so wanted your hands burn reaching\". Repeated in finance and entertainment news, this reading has overtaken the original satire.",
+    "instead": "For popularity, use 备受追捧 (bèi shòu zhuīpěng), 供不应求 or 抢手. For intimidating power, 炙手可热 or 权倾一时 (quán qīng yīshí). In formal writing, keep 炙手可热 for the \"blazing influence\" sense.",
+    "sources": [
+      {
+        "label": "Du Fu, \"Ballad of the Beautiful Women\" (Wikisource)",
+        "url": "https://zh.wikisource.org/wiki/%E9%BA%97%E4%BA%BA%E8%A1%8C"
+      },
+      {
+        "label": "Taiwan Ministry of Education Revised Dictionary — 炙手可熱",
+        "url": "https://dict.revised.moe.edu.tw/search.jsp?md=1&word=%E7%82%99%E6%89%8B%E5%8F%AF%E7%86%B1"
+      }
+    ]
+  },
+  "word-meilun-meihuan": {
+    "belief": "\"Měi lún měi huàn\" (美轮美奂) can describe anything magnificent — scenery, performances, music",
+    "truth": "It originally praised a building — lofty and splendid. Applying it to scenery or shows is a later extension; the dictionary We checked still glosses it as about houses.",
+    "detail": "The source is the Book of Rites, \"Tangong, part 2\": when Xianwenzi of Jin finished building a new residence, the grandees came to congratulate him, and Zhang Lao said, \"How beautiful are its heights, how beautiful its splendor — here you may sing, here weep, here gather your clan.\" The praise is for a new house.\n\nTaiwan's Ministry of Education Revised Dictionary glosses it as \"describing a building decorated with supreme splendor\", and its example is a newly finished skyscraper. So the dictionary records the specific sense of buildings, not scenery, stages or music.\n\nIn practice, \"a stunning stage set\" or \"a dazzling light show\" in 美轮美奂 is now everywhere; most users just mean \"gorgeous\" without knowing it began as a building word. That is ordinary semantic broadening — a specific word borrowed for beauty in general. Whether and when dictionaries add the broader sense varies; here We only note the original and what the MOE dictionary currently records.",
+    "origin": "Outside the idiom, 轮 and 奂 are almost never used alone, so readers grasp it only as an impression — \"sounds splendid\". The phrase slid from an architectural compliment into a general word for gorgeous.",
+    "instead": "For buildings and homes, 美轮美奂 fits the original. For shows or scenery, 绚丽多彩 (xuànlì duōcǎi), 瑰丽 (guīlì) or 如梦如幻 are alternatives; a phrase like \"as grand as a palace\" also makes the reference clear.",
+    "sources": [
+      {
+        "label": "Book of Rites, \"Tangong\" part 2 (Wikisource)",
+        "url": "https://zh.wikisource.org/wiki/%E7%A6%AE%E8%A8%98/%E6%AA%80%E5%BC%93%E4%B8%8B"
+      },
+      {
+        "label": "Taiwan Ministry of Education Revised Dictionary — 美輪美奐",
+        "url": "https://dict.revised.moe.edu.tw/search.jsp?md=1&word=%E7%BE%8E%E8%BC%AA%E7%BE%8E%E5%A5%90"
+      }
+    ]
+  },
+  "word-xiaoshi-liaoliao": {
+    "belief": "\"Xiǎoshí liǎoliǎo, dà wèibì jiā\" (小时了了，大未必佳) means clever kids usually turn out mediocre",
+    "truth": "It began as a grown man's sneer at ten-year-old Kong Rong, answered on the spot by the boy; it is a jibe from an anecdote, not a rule.",
+    "detail": "A Tale of the World, \"Speech\" chapter: at ten, Kong Rong (courtesy name Wenju) went to Luoyang with his father to visit the eminent Li Yuanli. Chen Wei, arriving later and told of the boy's quick remarks, said: \"Bright as a child, not necessarily good when grown.\" Wenju retorted at once: \"Then you must have been very bright as a child, sir!\" Chen Wei was thoroughly embarrassed.\n\nTaiwan's Ministry of Education Revised Dictionary has an entry glossed \"clever and sharp when young, but not necessarily accomplished as an adult\", citing the same passage. So the commonly used meaning is the dictionary one — not an error. What is lost is the context: a put-down to a child, and a retort that exposes its logic (by that reasoning, what became of the speaker?).\n\nWhether precocious children really tend to plateau is a separate question the idiom cannot answer: it comes from a line in a story, not from observation or data.",
+    "origin": "The half-line is catchy and has a worldly \"don't praise children too soon\" ring, so people lifted it out of the story. They kept Chen Wei's half and forgot Kong Rong's reply, and a spat turned into a respectable \"truism\".",
+    "instead": "When quoting, add Kong Rong's reply so the story comes with it. To talk about early brilliance versus later achievement, plain words like 早慧 (zǎohuì, precocious) and 后劲 (hòujìn, staying power) are more neutral. Never use it as a prediction about a child.",
+    "sources": [
+      {
+        "label": "Liu Yiqing, A New Account of Tales of the World, \"Speech\" (Wikisource)",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%96%E8%AA%AA%E6%96%B0%E8%AA%9E/%E8%A8%80%E8%AA%9E"
+      },
+      {
+        "label": "Taiwan Ministry of Education Revised Dictionary — 小時了了，大未必佳",
+        "url": "https://dict.revised.moe.edu.tw/search.jsp?md=1&word=%E5%B0%8F%E6%99%82%E4%BA%86%E4%BA%86"
+      }
+    ]
+  },
+  "word-wusuo-buyong-qiji": {
+    "belief": "\"Wú suǒ bù yòng qí jí\" (无所不用其极) means using every dirty trick in the book",
+    "truth": "In the Great Learning it is praise: the exemplary person gives his utmost everywhere in renewal. The bad-deeds sense is a later development, and the dictionary now lists both.",
+    "detail": "The source is the Book of Rites, \"Great Learning\": \"On Tang's bathing basin was inscribed, 'If you can renew yourself one day, do so every day, and again every day.' The Announcement to Kang says, 'Make the people new.' The Odes say, 'Zhou is an old state, but its mandate is new.' Therefore the exemplary person leaves no place where he does not use his utmost.\" The subject is constant renewal, so the phrase means giving one's all at every point.\n\nTaiwan's Ministry of Education Revised Dictionary lists two senses: first \"leaving no place where one does not exert full effort\" (citing the Book of Rites), second \"using every vile means when doing wrong\", with a crime example. So the pejorative use is explicitly recognised.\n\nWhy the shift? \"Use its extreme\" reads like \"resort to extremes\", and 无所不 gives it force, so it sounds like \"stopping at nothing\". Such positive-to-negative drift is common: context gradually pushes the feel of a word to the other side.",
+    "origin": "极 is associated with \"extreme\" and \"worst\"; 用其极 sounds like \"push the means to the limit\". The original \"do your best\" thus became \"stop at nothing\" — a plausible reading of the drift; We found no dedicated study.",
+    "instead": "For \"doing everything you can\", use 竭尽全力 (jiéjìn quánlì) or 不遗余力. For \"stopping at nothing\", 无所不用其极 is now dictionary-approved. When quoting the Great Learning, make clear from context that it concerns self-renewal.",
+    "sources": [
+      {
+        "label": "Book of Rites, \"Great Learning\" (Wikisource)",
+        "url": "https://zh.wikisource.org/wiki/%E7%A6%AE%E8%A8%98/%E5%A4%A7%E5%AD%B8"
+      },
+      {
+        "label": "Taiwan Ministry of Education Revised Dictionary — 無所不用其極",
+        "url": "https://dict.revised.moe.edu.tw/search.jsp?md=1&word=%E7%84%A1%E6%89%80%E4%B8%8D%E7%94%A8%E5%85%B6%E6%A5%B5"
+      }
+    ]
+  },
+  "word-wen-bu-jiadian": {
+    "belief": "\"Wén bù jiā diǎn\" (文不加点) describes writing with no punctuation",
+    "truth": "It means writing a piece in one go without any corrections; 点 here is \"to strike out or mark over\", not punctuation.",
+    "detail": "The source is the Book of the Later Han, biography of Mi Heng. At a banquet given by Huang She, someone presented a parrot, and Huang She raised his cup to Mi Heng: \"Master, please compose a fu on it to entertain our guests.\" Mi Heng took up his brush and wrote it, with \"no marks added (文无加点) and very fine language\" — that is, in one pass, without alteration, and beautifully.\n\nTaiwan's Ministry of Education Revised Dictionary defines 文不加点 as writing fluently without needing to revise, completing a piece in a single flow (with examples from the History of the Northern Dynasties and Romance of the Three Kingdoms), and lists 文无加点 as a variant. The 点 is the old editorial act of striking out or marking over mistaken characters.\n\nThe misreading is easy to see: today 加点 sounds like adding punctuation, and classical texts did not have standardised punctuation anyway. But the idiom praises fast, sure composition; it says nothing about missing punctuation.",
+    "origin": "点 now most readily means a punctuation mark, and old books lacked modern punctuation, so the two ideas merge into \"text without punctuation\".",
+    "instead": "To praise fluent composition, use 文不加点, 一挥而就 (yì huī ér jiù) or 下笔成章. To say a text has no punctuation, say so directly.",
+    "sources": [
+      {
+        "label": "Book of the Later Han, biography of Mi Heng (Wikisource)",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B780%E4%B8%8B"
+      },
+      {
+        "label": "Taiwan Ministry of Education Revised Dictionary — 文不加點",
+        "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=162083"
+      }
+    ]
+  },
+  "word-weiyan-weixing": {
+    "belief": "\"Wēi yán wēi xíng\" (危言危行) means dangerous words and risky deeds",
+    "truth": "Here 危 means \"upright, straight\": the phrase describes words and conduct that are both upright — praise.",
+    "detail": "The source is the Analects, \"Xian Wen\": \"When the state has the Way, be upright in speech and upright in action; when the state lacks the Way, remain upright in action but speak with care (孙 = 逊).\" In a well-governed state one speaks and acts straight; in a corrupt one, conduct stays straight while speech turns circumspect.\n\nTaiwan's Ministry of Education Revised Dictionary glosses it as \"words and conduct both upright and unbending\", citing the Analects and the Records of the Three Kingdoms (\"one who in office does not bend to the powerful... and keeps upright words and conduct at court, is what a wise ruler looks for\"). So the old usage commended frankness and rectitude.\n\nThe misreading is easy: today 危 almost only means \"dangerous\", and the very common 危言耸听 (\"alarmist talk\") sits next door, so 危言危行 gets read as \"scary talk and risky acts\" — which turns the meaning inside out.",
+    "origin": "危 in daily Chinese has nearly narrowed to \"danger\", and 危言耸听 appears constantly, so 危言 is heard as \"frightening talk\" and drags 危言危行 along with it.",
+    "instead": "For \"straightforward and principled\", 危言危行 is correct, though many readers won't know it; 正言直行 or 刚正不阿 (gāngzhèng bù'ē) are clearer. For alarmist talk, use 危言耸听 (wēiyán sǒngtīng).",
+    "sources": [
+      {
+        "label": "Analects, \"Xian Wen\" (Wikisource)",
+        "url": "https://zh.wikisource.org/wiki/%E8%AB%96%E8%AA%9E/%E6%86%B2%E5%95%8F%E7%AC%AC%E5%8D%81%E5%9B%9B"
+      },
+      {
+        "label": "Taiwan Ministry of Education Revised Dictionary — 危言危行",
+        "url": "https://dict.revised.moe.edu.tw/search.jsp?md=1&word=%E5%8D%B1%E8%A8%80%E5%8D%B1%E8%A1%8C"
+      }
+    ]
+  },
+  "word-doukou-nianhua": {
+    "belief": "\"Dòukòu niánhuá\" (豆蔻年华) is a general term for lovely youth, for anyone in their early twenties",
+    "truth": "It refers specifically to a girl of about thirteen or fourteen, from Du Mu's line about cardamom buds in early spring.",
+    "detail": "Du Mu's \"Parting Gifts, No. 1\" opens: \"Slender and graceful, thirteen and a little more, like a cardamom bud at the branch tip in early spring; along the ten miles of Yangzhou's spring road, rolling up a pearl curtain, none compare.\" The girl is just past thirteen, like a cardamom bud opening in the second month. \"Cardamom\" then became a byword for a girl coming into bloom.\n\nTaiwan's Ministry of Education Revised Dictionary glosses it as \"figuratively, a young girl; mostly meaning a girl of thirteen or fourteen\", with the variant 荳蔻年华. The dictionary points at age and sex, but with the soft word \"mostly\".\n\nIn practice it is often used for youth in general, around twenty, and sometimes for boys — ordinary broadening over time. Strictly, though, the original sense is a girl of thirteen or fourteen, and using it for adults is a slight mismatch. We found no dictionary record of the broadened use.",
+    "origin": "\"Cardamom\" sounds lovely and light, and 年华 is a generic word for years, so together they sound like a synonym for \"youth\"; the poem's source and the specific age \"thirteen and more\" got lost in the spread.",
+    "instead": "For a girl of thirteen or fourteen, 豆蔻年华 fits exactly. For youth in general, use 青春年少 (qīngchūn niánshào), 韶华 (sháohuá) or 花样年华 (huāyàng niánhuá); there's no need to use it for boys.",
+    "sources": [
+      {
+        "label": "Du Mu, \"Parting Gifts, No. 1\", Complete Tang Poems juan 523 (Wikisource)",
+        "url": "https://zh.wikisource.org/wiki/%E5%85%A8%E5%94%90%E8%A9%A9/%E5%8D%B7523"
+      },
+      {
+        "label": "Taiwan Ministry of Education Revised Dictionary — 豆蔻年華",
+        "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=43437"
+      }
+    ]
+  },
+  "word-jiujia-bugui": {
+    "belief": "\"Jiǔ jiǎ bù guī\" (久假不归) just means borrowing something and not returning it for ages",
+    "truth": "That is now its commonest sense, and dictionaries record it. But in Mencius it was about long \"borrowing\" the name of virtue without giving it back.",
+    "detail": "The source is Mencius 7A: \"Yao and Shun were benevolent by nature; Tang and Wu embodied it; the Five Hegemons borrowed it. If one borrows for long and never returns it, how can one tell it is not truly one's own?\" So the line is about morality: borrowed virtue, practised long enough, may become one's own. 假 means \"to borrow\", and what is borrowed is a reputation for benevolence, not an object.\n\nTaiwan's Ministry of Education Revised Dictionary lists 久假不归 as \"borrowing another's thing and not returning it for a long time\", citing both Mencius and a Ming-dynasty story collection. So the dictionary records exactly today's everyday sense; it is not treated as an error. It is a classic case of an abstract saying being made concrete: from \"borrowed credentials\" to \"borrowed property\".",
+    "origin": "假 no longer means \"to borrow\" in modern Chinese, so only the literal reading of the four characters is left, \"borrow for long, don't return\". The Ming example shows the shift is old, not recent.",
+    "instead": "For unreturned borrowing, 久假不归 is dictionary-approved. For borrowed virtue or credentials, quote Mencius's full line, \"久假而不归，恶知其非有也\".",
+    "sources": [
+      {
+        "label": "Mencius 7A (Wikisource)",
+        "url": "https://zh.wikisource.org/wiki/%E5%AD%9F%E5%AD%90/%E7%9B%A1%E5%BF%83%E4%B8%8A"
+      },
+      {
+        "label": "Taiwan Ministry of Education Revised Dictionary — 久假不歸",
+        "url": "https://dict.revised.moe.edu.tw/search.jsp?md=1&word=%E4%B9%85%E5%81%87%E4%B8%8D%E6%AD%B8"
       }
     ]
   }

@@ -69,7 +69,7 @@ export const CATEGORIES: Category[] = [
   { id: 'film', label: '电影骗了你', emoji: '🎬' },
   { id: 'origin', label: '起源是编的', emoji: '📜' },
   // word 板块的条目已写好在 content-staging/，插画齐了再合并并放开这一行
-  // { id: 'word', label: '这个词你用错了', emoji: '✍️' },
+  { id: 'word', label: '这个词你用错了', emoji: '✍️' },
   { id: 'why', label: '为什么长这样', emoji: '🔧' },
 ]
 

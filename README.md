@@ -29,13 +29,13 @@
 - 有争议、有例外、有人群差异的地方尽量留了余地——把一个过度简化的说法换成
   另一个过度简化的说法，并没有变好。
 - 按「信了会怎样」分了三档：`可能有害` / `白费功夫` / `无伤大雅`。
-  188 条里有 44 条属于第一档。
+  227 条里有 45 条属于第一档。
 
 **这不是医疗建议。** 这里讲的是人群层面的一般规律，落到具体的人身上未必适用。
 页脚有完整的免责声明。
 
 **English version**: the whole site is also available in English at
-[`/en`](https://actually-not.com/en/) — same 188 entries, fully translated.
+[`/en`](https://actually-not.com/en/) — same 227 entries, fully translated.
 
 ## 可以装到手机上
 
