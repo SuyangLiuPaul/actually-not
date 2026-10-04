@@ -1,0 +1,422 @@
+[
+  {
+    "id": "world-einstein-compound-interest",
+    "category": "quote",
+    "belief": "「复利是世界第八大奇迹。」——爱因斯坦",
+    "truth": "目前查不到爱因斯坦说过这句话；能查到的最早版本，是 1925 年美国一家储蓄贷款公司的广告词。",
+    "detail": "Quote Investigator 追查到的最早近似句，出现在 1925 年俄亥俄州《克利夫兰老实人报》（Cleveland Plain Dealer）上 Equity Savings & Loan 公司的广告里，句子是「世界第八大奇迹——就是复利」，没有署名。此后 1929 年的另一则银行广告、1965 年《华尔街日报》上的广告（归给罗斯柴尔德男爵）、1981 年一份报纸（归给洛克菲勒）都出现过类似说法。\n\n把它归到爱因斯坦头上的最早记录是 1988 年的一份报纸。普林斯顿大学出版社的《The Ultimate Quotable Einstein》把它放在「大概不是爱因斯坦所说」（Probably Not By Einstein）一节。Quote Investigator 的判断是：没有实质证据表明爱因斯坦、罗斯柴尔德或洛克菲勒用过这句话，它更像是某位不知名的广告文案的作品。\n\n需要说明的是：这只是「查无出处」，不等于证明爱因斯坦一辈子没讲过。但在目前公开的记录里，找不到他说这话的任何文献。",
+    "origin": "金融广告需要权威背书，于是一句无名文案被一次次改署成罗斯柴尔德、洛克菲勒，最后落到名气最大的爱因斯坦身上（有记录的最早爱因斯坦署名在 1988 年），在理财文章里被反复转载。",
+    "instead": "想引用就写「据传爱因斯坦所说，但查无出处；最早见于 1925 年的一则储蓄广告」。如果只是想说明复利的威力，直接讲复利公式和具体数字，比借名人的嘴更有说服力。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      { "label": "Quote Investigator, 2019 —— The Eighth Wonder of the World Is Compound Interest", "url": "https://quoteinvestigator.com/2019/09/09/interest/" }
+    ],
+    "en": {
+      "belief": "\"Compound interest is the eighth wonder of the world.\" — Albert Einstein",
+      "truth": "No source has been found for Einstein saying this. The earliest close match is a 1925 advertisement for a US savings-and-loan company.",
+      "detail": "Quote Investigator's earliest close match is an unsigned 1925 advertisement for the Equity Savings & Loan Company in the Cleveland Plain Dealer (Ohio): \"The Eighth Wonder of the World—is compound interest.\" Similar ads followed: a 1929 bank ad, a 1965 Wall Street Journal ad crediting Baron Rothschild, and a 1981 newspaper crediting Rockefeller.\n\nThe earliest Einstein attribution found is in a 1988 newspaper. Princeton University Press's The Ultimate Quotable Einstein lists the line under \"Probably Not By Einstein\". Quote Investigator found no substantive evidence that Einstein, Rothschild or Rockefeller used it, and suspects an anonymous copywriter.\n\nTo be fair, this shows an absence of evidence, not proof that Einstein never said it. But no document records him saying it.",
+      "origin": "Financial advertising likes borrowed authority, so an unsigned line was reassigned to Rothschild, Rockefeller and finally Einstein (first recorded attribution 1988), and then copied across personal-finance writing.",
+      "instead": "If you want to cite it, say \"often attributed to Einstein, no source found; earliest known in a 1925 savings ad\". To make the point about compounding, show the formula and real numbers instead.",
+      "sources": [
+        { "label": "Quote Investigator, 2019 — The Eighth Wonder of the World Is Compound Interest", "url": "https://quoteinvestigator.com/2019/09/09/interest/" }
+      ]
+    },
+    "scene": "a small brass coin stack growing in steps beside an open ledger and a pocket watch",
+    "verification": "WebFetch https://quoteinvestigator.com/2019/09/09/interest/ : lists 1925 Cleveland Plain Dealer ad (Equity Savings & Loan), 1929 Courier-Journal ad, 1965 WSJ ad (Rothschild), 1981 Herald-Times-Reporter (Rockefeller), 1988 Courier-Post first Einstein attribution; states Calaprice 'Probably Not By Einstein' and 'no substantive evidence'. Page fetched via a ?p= URL that returned this canonical link. Fetched through summarizer, so wording quoted is as relayed."
+  },
+  {
+    "id": "world-einstein-insanity-definition",
+    "category": "quote",
+    "belief": "「疯狂，就是重复做同样的事，却期待不同的结果。」——爱因斯坦",
+    "truth": "没有证据表明爱因斯坦说过；能查到的最早版本出现在 1981 年的戒瘾互助会语境里。",
+    "detail": "Quote Investigator 找到的最早近似记录有两条，都在 1981 年：10 月，田纳西州诺克斯维尔一份报纸转述一位 Al-Anon（家属互助会）参加者说「疯狂就是一遍遍做同样的事，期待不同的结果」；11 月，匿名戒毒会（Narcotics Anonymous）的一本小册子里有「疯狂是重复同样的错误，却期待不同的结果」。1983 年，Rita Mae Brown 的小说《Sudden Death》里也让一个角色说了这句话。\n\n把它归给爱因斯坦的说法大约在 1990 年前后才开始出现在报纸上，那时他已去世三十多年。普林斯顿版《The Ultimate Quotable Einstein》把它放在「被误署为爱因斯坦」（Misattributed）一节。\n\n互助会的传统是匿名，所以谁最先说出这句话无从考证；能确定的只是它在 1981 年已在戒瘾互助圈子里流传，早于任何爱因斯坦署名。",
+    "origin": "这句话很可能先在十二步戒瘾互助圈里口耳相传，后来进入畅销书和励志文章；大约 1990 年起被配上爱因斯坦的名字，因为「聪明人说的」更有分量。",
+    "instead": "可以写「出自戒瘾互助圈的流行说法（1981 年已有记录）」，或者干脆不署名。顺带一提，它也不是严格意义上的临床定义：很多时候重复尝试正是科学和学习的方式。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      { "label": "Quote Investigator, 2017 —— Insanity Is Doing the Same Thing Over and Over Again and Expecting Different Results", "url": "https://quoteinvestigator.com/2017/03/23/same/" }
+    ],
+    "en": {
+      "belief": "\"Insanity is doing the same thing over and over again and expecting different results.\" — Albert Einstein",
+      "truth": "There is no evidence Einstein said it. The earliest versions found are from 1981, in addiction-recovery settings.",
+      "detail": "Quote Investigator's earliest strong matches are both from 1981: in October a Knoxville, Tennessee newspaper reported an Al-Anon attendee saying it, and in November a Narcotics Anonymous pamphlet had \"Insanity is repeating the same mistakes and expecting different results.\" A 1983 novel by Rita Mae Brown, Sudden Death, also has a character say it.\n\nAttributions to Einstein start appearing in newspapers around 1990, decades after his death in 1955. The Ultimate Quotable Einstein lists it under \"Misattributed to Einstein\".\n\nBecause twelve-step groups are anonymous, who first said it cannot be established. What can be said is that it circulated in recovery circles in 1981, before any Einstein attribution.",
+      "origin": "It probably spread by word of mouth in recovery groups, then into self-help books; from about 1990 it was given Einstein's name because a famous genius makes a line sound weightier.",
+      "instead": "Write \"a saying from addiction-recovery circles, recorded by 1981\", or leave it unsigned. It is also not a clinical definition, and repeated attempts are often exactly how learning works.",
+      "sources": [
+        { "label": "Quote Investigator, 2017 — Insanity Is Doing the Same Thing Over and Over Again and Expecting Different Results", "url": "https://quoteinvestigator.com/2017/03/23/same/" }
+      ]
+    },
+    "scene": "a marble rolling round and round a circular wooden groove on a table",
+    "verification": "WebFetch https://quoteinvestigator.com/2017/03/23/same/ : page gave Oct 1981 Al-Anon (Knoxville newspaper), Nov 1981 NA pamphlet, Einstein attributions from ~1990, Calaprice 'Misattributed to Einstein'. The 1983 Rita Mae Brown novel detail came from a WebSearch summary of the same QI page (not the fetch). Fetched through a summarizer."
+  },
+  {
+    "id": "world-einstein-bees",
+    "category": "quote",
+    "belief": "「如果蜜蜂从地球上消失，人类只能再活四年。」——爱因斯坦",
+    "truth": "找不到爱因斯坦说过这话的任何文献；最早的爱因斯坦署名出现在他去世十年后的 1965 年法国刊物上。",
+    "detail": "Quote Investigator 梳理的时间线是：1941 年，加拿大的《Canadian Bee Journal》上有人写下「把蜜蜂从地球上拿走，至少十万种植物就活不下去」，这里还没有「四年」，也没有说是爱因斯坦。1965 年 5 月，法国刊物《La Vie des Bêtes et l'Ami des Bêtes》才第一次把「人类四年内消失」的计算说成是爱因斯坦的；6 月另一本蜂业刊物转载。1994 年 1 月，苏格兰《The Scotsman》报道法国养蜂人全国联盟的一份传单，用的就是爱因斯坦的署名。\n\n《The Ultimate Quotable Einstein》的编者把它放在「大概不是爱因斯坦所说」一节。另外，一些网页说这句话出自梅特林克（Maeterlinck）1901 年的《蜜蜂的生活》，但 Quote Investigator 并没有把「四年」归给他，他只是写过很多植物依赖蜜蜂。\n\n还要补一句：蜜蜂等传粉昆虫确实对许多作物很重要，但「四年灭绝」这个具体数字并无科学推算支撑。这条只说署名，不否定保护传粉昆虫的意义。",
+    "origin": "养蜂界和环保团体需要一句有力的话，爱因斯坦的名字让它显得有科学背书。1960 年代起在法国的蜂业刊物里出现，1990 年代被养蜂人联盟的传单带向英语世界。",
+    "instead": "可以说「据传爱因斯坦所说，最早见于 1965 年的法国蜂业刊物，无文献佐证」。想讲传粉的重要性，直接引用粮农组织或研究文献里关于传粉依赖作物的数据。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      { "label": "Quote Investigator, 2013 —— If the Bee Disappeared Off the Face of the Earth, Man Would Only Have Four Years Left To Live", "url": "https://quoteinvestigator.com/2013/08/27/einstein-bees/" }
+    ],
+    "en": {
+      "belief": "\"If the bee disappeared off the face of the earth, man would have only four years left to live.\" — Albert Einstein",
+      "truth": "No document records Einstein saying this. The earliest Einstein attribution is from a French periodical in 1965, a decade after his death.",
+      "detail": "Quote Investigator's timeline: in 1941 the Canadian Bee Journal printed \"Remove the bee from the earth and at the same stroke you remove at least one hundred thousand plants\", with no four-year figure and no Einstein. In May 1965 the French periodical La Vie des Bêtes et l'Ami des Bêtes first tied a four-year deadline for humanity to Einstein, and a June 1965 bee magazine repeated it. In January 1994 The Scotsman quoted a pamphlet from the National Union of French Apiculture using his name.\n\nThe Ultimate Quotable Einstein files it under \"Probably Not by Einstein\". Some sites credit Maeterlinck's 1901 Life of the Bee, but Quote Investigator does not give the four-year line to him; he wrote about plants that depend on bees.\n\nPollinators matter for many crops, but the four-year figure has no scientific calculation behind it. This entry is about the attribution only.",
+      "origin": "Beekeeping and conservation groups wanted a striking line, and Einstein's name gave it a scientific air. It appeared in French bee journals from the 1960s and reached English via a 1990s apiculture pamphlet.",
+      "instead": "Say \"attributed to Einstein; earliest known in a 1965 French beekeeping journal; no source\". For the substance, cite published data on pollinator-dependent crops.",
+      "sources": [
+        { "label": "Quote Investigator, 2013 — If the Bee Disappeared Off the Face of the Earth, Man Would Only Have Four Years Left To Live", "url": "https://quoteinvestigator.com/2013/08/27/einstein-bees/" }
+      ]
+    },
+    "scene": "a honeycomb frame and a wooden bee skep beside a small potted flowering plant",
+    "verification": "WebFetch https://quoteinvestigator.com/2013/08/27/einstein-bees/ (twice, second with a chronology prompt): 1941 Fortin Canadian Bee Journal, May 1965 La Vie des Betes (Pierre Pascaud), June 1965 Abeilles et Fleurs, Jan 1994 The Scotsman; Calaprice 'Probably Not by Einstein'; Maeterlinck not credited with four years. The claim 'no scientific calculation behind four-year figure' is my own hedged statement, not from a source; kept deliberately mild. First fetch summary wrongly implied Maeterlinck wording; the WebSearch summary also claimed Maeterlinck wrote the four-years line, which the fetched page does NOT support, so I followed the page."
+  },
+  {
+    "id": "world-voltaire-defend-to-death",
+    "category": "quote",
+    "belief": "「我不同意你的观点，但我誓死捍卫你说话的权利。」——伏尔泰",
+    "truth": "这句话是英国作家 Evelyn Beatrice Hall 在 1906 年写的，她本人后来承认这是自己的措辞，不是伏尔泰的原话。",
+    "detail": "1906 年，Evelyn Beatrice Hall 用笔名 S. G. Tallentyre 出版了《The Friends of Voltaire》。书里讲到爱尔维修（Helvétius）的《论精神》在 1758 年被焚，她写下这句话，用来概括伏尔泰的态度，却把它放进了引号。伏尔泰的著作和书信里并没有找到这句话，也没有找到同样意思的原文。\n\n1939 年，Hall 写信给学者 Burdette Kinne，信中说这句话是她自己的表述，不该放进引号，并为误导对方道歉。\n\n所以准确的说法是：这是对伏尔泰立场的一种概括，思想上与他主张的宽容和言论自由相通，但措辞是 Hall 的。",
+    "origin": "一个作者给历史人物的态度写了一句精炼的转述，因为太好用，被引号一包，一代代人当成原话抄下去，署名自然落到了伏尔泰头上。",
+    "instead": "最诚实的引法是：「Evelyn Beatrice Hall 对伏尔泰态度的概括（1906）」。也可以写「常被归于伏尔泰，实为 Hall 的措辞」。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      { "label": "Quote Investigator, 2015 —— I Disapprove of What You Say, But I Will Defend to the Death Your Right to Say It", "url": "https://quoteinvestigator.com/2015/06/01/defend-say/" }
+    ],
+    "en": {
+      "belief": "\"I disapprove of what you say, but I will defend to the death your right to say it.\" — Voltaire",
+      "truth": "The sentence was written by the English author Evelyn Beatrice Hall in 1906, and she later said it was her own wording, not Voltaire's.",
+      "detail": "In 1906 Hall, writing as S. G. Tallentyre, published The Friends of Voltaire. Describing the 1758 burning of Helvétius's book De l'esprit, she wrote this sentence as a summary of Voltaire's attitude, but put it in quotation marks. Quote Investigator found nothing like it in Voltaire's writings.\n\nIn 1939 Hall wrote to the scholar Burdette Kinne that the phrase \"is my own expression and should not have been put in inverted commas\", and apologised for misleading him.\n\nSo the accurate description is a summary of Voltaire's stance: consistent with his advocacy of tolerance, but in Hall's words.",
+      "origin": "An author's neat paraphrase of a historical figure's attitude, wrapped in quotation marks, was so quotable that later writers copied it as his own words.",
+      "instead": "Cite it as \"Evelyn Beatrice Hall's summary of Voltaire's attitude (1906)\", or \"often attributed to Voltaire, actually Hall\".",
+      "sources": [
+        { "label": "Quote Investigator, 2015 — I Disapprove of What You Say, But I Will Defend to the Death Your Right to Say It", "url": "https://quoteinvestigator.com/2015/06/01/defend-say/" }
+      ]
+    },
+    "scene": "an old leather book with a charred corner beside a quill and a candle holder",
+    "verification": "WebFetch https://quoteinvestigator.com/2015/06/01/defend-say/ : Hall 1906 The Friends of Voltaire, Helvetius De l'esprit 1758 burning, no evidence in Voltaire, 1939 letter to Burdette Kinne with 'my own expression ... inverted commas' (as relayed by summarizer, I paraphrased and kept only a short phrase)."
+  },
+  {
+    "id": "world-marie-antoinette-brioche",
+    "category": "quote",
+    "belief": "「何不食肉糜？（让他们吃蛋糕吧。）」——玛丽·安托瓦内特",
+    "truth": "没有证据表明她说过。卢梭在 1760 年代写过一位「大公主」说类似的话，而且早于她的时代；把话安到她头上，是她死后约五十年的事。",
+    "detail": "卢梭的《忏悔录》前六卷写于 1765 年，1782 年出版。书里回忆，一位不具名的「大公主」听说农民没有面包，便说「那就让他们吃布里欧修吧」（Qu'ils mangent de la brioche）。他从未说明这位公主是谁，甚至可能是他杜撰的轶事。当时玛丽·安托瓦内特还是远在奥地利的孩子。\n\n据维基百科对这一条的梳理，把这句话和她联系起来的最早记录是 Alphonse Karr 在 1843 年的文字，距她被处死已约五十年；大革命期间反对王室的人也没有拿这句话攻击过她。另据芙雷泽（Antonia Fraser）的传记所述，路易十八的家人则认为这个故事更老，是路易十四之妻玛丽-泰蕾兹的故事。\n\n中文里常见的对应说法是「何不食肉糜」，出自《晋书》，说的是晋惠帝（259–307）听说百姓饿死，反问为什么不吃肉粥。这是另一个朝代、另一位当事人的传闻，两个故事讲的是同一类「不知民间疾苦」的老套。",
+    "origin": "「权贵不知民间疾苦」是各国都流传的老故事，每个社会都把它安在最容易被讨厌的统治者身上。法国人在 19 世纪中叶把它固定在了安托瓦内特身上。",
+    "instead": "可以说「相传她说过，但无同时代证据；卢梭《忏悔录》里有一位不具名公主的类似轶事」。想用来说明脱离民众，用「何不食肉糜」的晋惠帝或直接用史实更稳妥。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      { "label": "Wikipedia —— Let them eat cake（卢梭《忏悔录》、1843 年 Karr、晋惠帝条目）", "url": "https://en.wikipedia.org/wiki/Let_them_eat_cake" },
+      { "label": "Professor Buzzkill —— Quote or No Quote: \"Let Them Eat Cake\", 2019", "url": "https://professorbuzzkill.com/2019/07/09/quote-or-no-quote-let-them-eat-cake/" }
+    ],
+    "en": {
+      "belief": "\"Let them eat cake.\" — Marie Antoinette",
+      "truth": "There is no evidence she said it. Rousseau recorded a similar anecdote about an unnamed \"great princess\" in the 1760s, and it was pinned on her about fifty years after her death.",
+      "detail": "Rousseau wrote the first six books of his Confessions in 1765 and they were published in 1782. He recalls a \"great princess\" who, told that peasants had no bread, said \"Qu'ils mangent de la brioche\". He never names her and may have invented the anecdote. Marie Antoinette was then a child in Austria.\n\nAccording to Wikipedia's account, the earliest link to her is Alphonse Karr in 1843, roughly fifty years after her execution, and revolutionaries did not use the line against her. Antonia Fraser's biography reports that Louis XVIII's family thought the story older still, about Maria Theresa, wife of Louis XIV.\n\nThe Chinese counterpart, \"why not eat meat porridge\", comes from the Book of Jin, about Emperor Hui of Jin (259–307) asking why starving people did not eat meat gruel. It is a different story about a different ruler, of the same out-of-touch-elite type.",
+      "origin": "The out-of-touch-ruler anecdote circulates in many cultures and tends to be pinned on the most disliked ruler available. In 19th-century France it settled on Marie Antoinette.",
+      "instead": "Say \"attributed to her, with no contemporary evidence; Rousseau tells a similar story about an unnamed princess\". For a documented case of elite indifference, use history rather than the legend.",
+      "sources": [
+        { "label": "Wikipedia — Let them eat cake (Rousseau's Confessions, Karr 1843, Emperor Hui of Jin)", "url": "https://en.wikipedia.org/wiki/Let_them_eat_cake" },
+        { "label": "Professor Buzzkill — Quote or No Quote: \"Let Them Eat Cake\", 2019", "url": "https://professorbuzzkill.com/2019/07/09/quote-or-no-quote-let-them-eat-cake/" }
+      ]
+    },
+    "scene": "a plain round loaf and a glazed brioche on a wooden board beside an empty flour sack",
+    "verification": "WebFetch en.wikipedia.org/wiki/Let_them_eat_cake : Confessions written 1765, published 1782; Karr 1843; Louis XVIII/Fraser/Maria Theresa; Book of Jin Emperor Hui 259-307 'porridge with meat'. WebFetch professorbuzzkill (2019): Rousseau incident, Marie Antoinette 11 in Austria (it gave 'published 1767', which conflicts with Wikipedia's 1782 so I did not use that date). Britannica fetch returned 403. Wikipedia is a tertiary source; 'revolutionaries did not use it' is Wikipedia's claim. The 'Book of Jin' sentence is from Wikipedia, I did not open the Jin text itself."
+  },
+  {
+    "id": "world-burke-evil-triumph",
+    "category": "quote",
+    "belief": "「恶要得胜，只需要好人什么都不做。」——埃德蒙·伯克",
+    "truth": "伯克的著作里查不到这句话；最早的近似句出现在 1916 年的一场演讲里。",
+    "detail": "Quote Investigator 的追查显示：伯克在 1770 年的《对当前不满情绪之根源的思考》里写过相近的意思——「恶人结盟时，善人必须联合，否则他们将一个个倒下，成为一场不值一提的斗争里无人怜惜的牺牲品」，但并非流行的这句话。约翰·斯图亚特·密尔 1867 年在圣安德鲁斯大学的演讲里写过「坏人要达到目的，只需好人袖手旁观」，措辞更接近。\n\n与流行说法最像的最早记录，是 1916 年 10 月 Charles F. Aked 牧师谈禁酒时说的：「据说，恶人要达到目的，只需好人什么都不做。」1920 年，Sir R. Murray Hyslop 最早把这个现代说法归给伯克；1961 年肯尼迪在加拿大议会演讲时也说是伯克所说。\n\nQuote Investigator 的结论很克制：记录不完整，不能强断是谁造的句，Aked 也许是在伯克或密尔的基础上改写的。",
+    "origin": "类似的思想在伯克和密尔笔下都有，一句更精炼的版本在 20 世纪初成形，因为伯克名气大，又是保守主义思想的象征，署名就落在他身上；1961 年肯尼迪引用后更广为人知。",
+    "instead": "可以写「常被归于伯克，实为后人的概括；最早近似句见于 1916 年 Aked 的演讲」。想引伯克本人，用他 1770 年那句。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      { "label": "Quote Investigator, 2010 —— The Only Thing Necessary for the Triumph of Evil is that Good Men Do Nothing", "url": "https://quoteinvestigator.com/2010/12/04/good-men-do/" }
+    ],
+    "en": {
+      "belief": "\"The only thing necessary for the triumph of evil is for good men to do nothing.\" — Edmund Burke",
+      "truth": "It is not found in Burke's writings. The earliest close match is from a speech in 1916.",
+      "detail": "Quote Investigator quotes Burke's real 1770 line from Thoughts on the Cause of the Present Discontents: \"When bad men combine, the good must associate; else they will fall, one by one, an unpitied sacrifice in a contemptible struggle.\" It is related, but not the popular sentence. In 1867 John Stuart Mill, in his St Andrews address, wrote \"Bad men need nothing more to compass their ends, than that good men should look on and do nothing\", which is closer.\n\nThe earliest close match to the modern wording is from Rev. Charles F. Aked in October 1916, speaking on alcohol restriction: \"for evil men to accomplish their purpose it is only necessary that good men should do nothing.\" Sir R. Murray Hyslop first credited the modern form to Burke in 1920, and President Kennedy attributed it to Burke in 1961.\n\nQuote Investigator is cautious: the record is too incomplete to say who crafted it, and Aked may have adapted Burke or Mill.",
+      "origin": "Burke and Mill both wrote related ideas. A tighter version took shape in the early 1900s and was assigned to Burke, a famous name for this theme, then spread widely after Kennedy cited it in 1961.",
+      "instead": "Say \"often attributed to Burke; earliest close match 1916 (Aked); Mill (1867) and Burke (1770) wrote related lines\". To quote Burke himself, use his 1770 sentence.",
+      "sources": [
+        { "label": "Quote Investigator, 2010 — The Only Thing Necessary for the Triumph of Evil is that Good Men Do Nothing", "url": "https://quoteinvestigator.com/2010/12/04/good-men-do/" }
+      ]
+    },
+    "scene": "a balance scale with one heavy empty pan and a closed old book beside a lit candle",
+    "verification": "WebFetch https://quoteinvestigator.com/2010/12/04/good-men-do/ : Burke 1770 wording; Mill 1867 St Andrews; Aked Oct 1916; Hyslop 1920 first Burke attribution; Kennedy 1961 Canadian Parliament; QI conclusion 'record too incomplete'. Quotes are as relayed by summarizer."
+  },
+  {
+    "id": "world-well-behaved-women",
+    "category": "quote",
+    "belief": "「循规蹈矩的女人很少创造历史。」——玛丽莲·梦露",
+    "truth": "这是历史学家劳雷尔·撒切尔·乌尔里克 1976 年在一篇学术论文里写的话，和梦露无关。",
+    "detail": "Quote Investigator 找到的最早出处，是 Laurel Thatcher Ulrich 1976 年发表在《American Quarterly》第 28 卷第 1 期（1976 年春）的论文「Vertuous Women Found: New England Ministerial Literature, 1668-1735」，原句是「Well-behaved women seldom make history」（「seldom」，不是后来流传的「rarely」或「never」）。论文讲的是殖民地时期新英格兰牧师悼文中的「贤淑女性」，这句话原本是一个学术判断：被悼文称赞的好女人通常不会留下历史记录。\n\n后来这句话被改写成「rarely」，并被贴上了梦露、埃莉诺·罗斯福、格洛丽亚·斯泰纳姆等许多名字。Quote Investigator 找到的把它归给梦露的最早记录，是 2002 年 Hazel Dixon-Cooper 的书《Born on a Rotten Day》。\n\n乌尔里克后来成为普利策奖得主、哈佛教授。她曾说，话一写出来就不再完全属于作者，别人有权按自己的方式去理解。",
+    "origin": "一句学术论文里的短句，脱离上下文后成了励志标语，在 T 恤、海报上流行；因为谁说的不重要，它就被配上了最有名的女性的名字。",
+    "instead": "引用时写「Laurel Thatcher Ulrich，1976」。也别忘了原句的语境：它讲的是历史记录会遗漏谁，而不是在鼓励人破坏规矩。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      { "label": "Quote Investigator, 2012 —— Well-Behaved Women Seldom Make History", "url": "https://quoteinvestigator.com/2012/11/03/well-behaved-women/" }
+    ],
+    "en": {
+      "belief": "\"Well-behaved women rarely make history.\" — Marilyn Monroe",
+      "truth": "It comes from historian Laurel Thatcher Ulrich, in an academic article in 1976. Monroe is not the source.",
+      "detail": "Quote Investigator traced it to Ulrich's article \"Vertuous Women Found: New England Ministerial Literature, 1668-1735\" in American Quarterly, vol. 28, no. 1 (Spring 1976): \"Well-behaved women seldom make history\". The word was \"seldom\", not \"rarely\" or \"never\". The article concerns funeral sermons for \"virtuous\" women in colonial New England; the line is a scholarly observation that such women left little historical record.\n\nIt was later reworded to \"rarely\" and credited to Monroe, Eleanor Roosevelt, Gloria Steinem and many others. The earliest Monroe attribution Quote Investigator found is a 2002 book, Born on a Rotten Day by Hazel Dixon-Cooper.\n\nUlrich later became a Pulitzer-winning Harvard historian. She has said that once words are written they are no longer entirely yours, and people may interpret them as they wish.",
+      "origin": "A line from a scholarly paper, detached from context, became a slogan on mugs and posters; since the author mattered little to the audience, it picked up famous women's names.",
+      "instead": "Cite \"Laurel Thatcher Ulrich, 1976\". Remember the original sense: it is about who history records, not a call to break rules.",
+      "sources": [
+        { "label": "Quote Investigator, 2012 — Well-Behaved Women Seldom Make History", "url": "https://quoteinvestigator.com/2012/11/03/well-behaved-women/" }
+      ]
+    },
+    "scene": "a stack of old bound journals with a pressed flower and a pair of spectacles",
+    "verification": "WebFetch https://quoteinvestigator.com/2012/11/03/well-behaved-women/ : Ulrich American Quarterly vol 28 no 1 Spring 1976, wording 'seldom', earliest Monroe attribution 2002 Hazel Dixon-Cooper Born on a Rotten Day. Article title 'Vertuous Women Found...' and Ulrich's later remarks (Pulitzer, Harvard, 'not yours anymore') come from a WebSearch summary of the same QI page plus the fetch; 'Hazel Dixon-Cooper' 2002 from fetch. The description of the paper's subject (funeral sermons) is from the article title/summary only, kept general."
+  },
+  {
+    "id": "world-aristotle-we-are-what-we-repeatedly-do",
+    "category": "quote",
+    "belief": "「我们是由自己反复做的事塑造的，因此卓越不是一种行为，而是一种习惯。」——亚里士多德",
+    "truth": "这是威尔·杜兰特 1926 年在《哲学的故事》里对亚里士多德思想的概括，不是亚里士多德的原话。",
+    "detail": "杜兰特在《The Story of Philosophy》（1926）讲亚里士多德的伦理学时写道：卓越是通过训练和习惯养成的，我们不是因为有德行才做正确的事，而是因为做了正确的事才有德行；「we are what we repeatedly do」，所以「卓越不是一种行为，而是一种习惯」。其中带引号的部分才是对《尼各马可伦理学》的引文，「我们是我们反复做的事」是杜兰特自己的总结。维基语录的 Will Durant 页面可对应到该书第 87 页附近，引文来自《尼各马可伦理学》第一、二卷。\n\n亚里士多德本人在《尼各马可伦理学》第二卷确实主张：德性（卓越）来自习惯和习俗。所以这句话在精神上是亚里士多德式的，只是措辞不是他的。\n\n需要说明：我只核对到了维基百科和维基语录对该书出处的说明，没有直接翻到 1926 年的原书页面核对分页。",
+    "origin": "杜兰特是畅销的哲学普及作家，他的概括比译文更好记；传播中「杜兰特总结亚里士多德」逐渐被简化成「亚里士多德说」。",
+    "instead": "可以写「威尔·杜兰特对亚里士多德伦理学的概括（《哲学的故事》，1926）」。想引亚里士多德，直接引《尼各马可伦理学》第二卷关于德性来自习惯的段落。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      { "label": "Wikipedia —— The Story of Philosophy（该句的出处说明）", "url": "https://en.wikipedia.org/wiki/The_Story_of_Philosophy" },
+      { "label": "Wikiquote —— Will Durant（《The Story of Philosophy》相关段落）", "url": "https://en.wikiquote.org/wiki/Will_Durant" }
+    ],
+    "en": {
+      "belief": "\"We are what we repeatedly do. Excellence, then, is not an act, but a habit.\" — Aristotle",
+      "truth": "It is Will Durant's 1926 summary of Aristotle's ideas in The Story of Philosophy, not Aristotle's own wording.",
+      "detail": "In The Story of Philosophy (1926), discussing Aristotle's ethics, Durant writes that excellence is won by training and habituation: we do not act rightly because we have virtue, but have it because we acted rightly; \"we are what we repeatedly do. Excellence, then, is not an act but a habit.\" The quoted fragments inside his passage are from the Nicomachean Ethics; \"we are what we repeatedly do\" is Durant's own summary. Wikiquote's Will Durant page places the related passage near p. 87.\n\nAristotle really does argue in Nicomachean Ethics Book II that moral excellence results from habit and custom. So the line is Aristotelian in spirit, not in wording.\n\nCaveat: I verified this through Wikipedia and Wikiquote; I did not open the 1926 book itself.",
+      "origin": "Durant was a best-selling popular philosopher whose summary is more memorable than any translation, and \"Durant summarising Aristotle\" gradually shrank to \"Aristotle said\".",
+      "instead": "Cite \"Will Durant's summary of Aristotle's ethics, The Story of Philosophy, 1926\". To quote Aristotle, use the Nicomachean Ethics Book II passage on virtue and habit.",
+      "sources": [
+        { "label": "Wikipedia — The Story of Philosophy (source of the quotation)", "url": "https://en.wikipedia.org/wiki/The_Story_of_Philosophy" },
+        { "label": "Wikiquote — Will Durant (related passage in The Story of Philosophy)", "url": "https://en.wikiquote.org/wiki/Will_Durant" }
+      ]
+    },
+    "scene": "a small potted olive sapling beside a worn stone step and a stack of wax tablets",
+    "verification": "WebFetch en.wikipedia.org/wiki/The_Story_of_Philosophy : says the quote is from this book and 'typically misattributed to Aristotle'. WebFetch en.wikiquote.org/wiki/Will_Durant : did NOT contain the exact 'we are what we repeatedly do' string but did show 'Excellence, then, is not an act but a habit' passage p.87 sourced to Nicomachean Ethics II and I. The full Durant sentence is from a WebSearch summary (not a direct page open). checkyourfact fetch failed; Wikiquote Aristotle fetch truncated. Moderately thin: only tertiary sources; flagged in detail. The Nicomachean Ethics Book II claim is from the WebSearch summary of a different site."
+  },
+  {
+    "id": "world-napoleon-china-sleeping",
+    "category": "quote",
+    "belief": "「中国是一头沉睡的狮子，让她睡吧；她一旦醒来，世界都会为之震动。」——拿破仑",
+    "truth": "拿破仑专家找不到他说过这话的证据；能查到的最早英文版本是 1888 年的一份报纸，没有提拿破仑。",
+    "detail": "据维基百科整理，拿破仑基金会（Fondation Napoléon）的 Peter Hicks 表示，拿破仑从未说过「让中国沉睡吧，她醒来时世界会颤抖」；他在拿破仑的讲话和著作里没有找到「沉睡的龙」之类的说法。澳大利亚国立大学的历史学家 John Fitzgerald 则说，拿破仑「很可能」从未说过后来传说里归给他的那些话。\n\n已知最早的英文「China is a sleeping giant」出现在 1888 年的《New York Journal of Commerce》，没有提到拿破仑；「沉睡的狮子」版本最早见于 1890 年的《悉尼先驱晨报》，通过昆士兰政客一场演讲间接提到拿破仑。\n\n这条属于「查无出处」：不能证明他一辈子没这样想过，但在拿破仑的记录里找不到，而且最早的说法比他晚了几十年。我这里只核对到了维基百科的整理，没有逐条打开 Hicks 或 Fitzgerald 的原文。",
+    "origin": "19 世纪末西方人热衷讨论「沉睡的中国」，把一句漂亮话安在拿破仑头上，既有权威感，又带着对「一个世纪前的预言」的戏剧性。后来经 20 世纪的报刊和演讲反复引用。",
+    "instead": "可写作「相传拿破仑所说，但专家未在其著作中找到；最早的相近英文句见于 1888 年的纽约报纸」。如果想谈中国的崛起，直接引用具体的史实和数据。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      { "label": "Wikipedia —— China is a sleeping giant（Hicks、Fitzgerald 的判断及 1888/1890 年最早记录）", "url": "https://en.wikipedia.org/wiki/China_is_a_sleeping_giant" }
+    ],
+    "en": {
+      "belief": "\"China is a sleeping lion. Let her sleep, for when she wakes the world will shake.\" — Napoleon",
+      "truth": "Napoleon specialists find no evidence he said it. The earliest English version found is from an 1888 newspaper that does not mention him.",
+      "detail": "According to Wikipedia's summary, Peter Hicks of the Fondation Napoléon states that Napoleon never said \"Let China sleep, for when she wakes, the world will tremble\" and found no reference to a sleeping dragon in his recorded speeches or writings. John Fitzgerald of the Australian National University says that \"in all likelihood\" Napoleon never uttered the words attributed to him.\n\nThe oldest known English \"China is a sleeping giant\" appeared in the New York Journal of Commerce in 1888, without Napoleon. The \"sleeping lion\" variant first appears in the Sydney Morning Herald in 1890, indirectly linking Napoleon via a speech by a Queensland politician.\n\nThis is an absence of evidence, not proof he never thought it. But it is absent from his records and the earliest versions postdate him by decades. I verified this through Wikipedia's account only, not the experts' original texts.",
+      "origin": "Late-19th-century Western writers loved the \"sleeping China\" image, and attaching it to Napoleon lent it dramatic authority as a century-old prophecy. 20th-century journalism then repeated it.",
+      "instead": "Say \"attributed to Napoleon; specialists have not found it in his writings; the earliest similar English line is from 1888\". For China's rise, cite concrete history or data.",
+      "sources": [
+        { "label": "Wikipedia — China is a sleeping giant (Hicks and Fitzgerald; earliest 1888/1890 instances)", "url": "https://en.wikipedia.org/wiki/China_is_a_sleeping_giant" }
+      ]
+    },
+    "scene": "a stone lion statue half covered in blanket-like moss beside an antique brass globe",
+    "verification": "WebFetch en.wikipedia.org/wiki/China_is_a_sleeping_giant : Hicks, Fitzgerald statements; NY Journal of Commerce 1888 'sleeping giant'; Sydney Morning Herald 1890 sleeping lion via Patrick O'Sullivan. Single tertiary source; did not open Hicks/Fitzgerald originals. WebSearch noted a 1997 Economist piece, not used. Confidence limited."
+  },
+  {
+    "id": "world-gandhi-be-the-change",
+    "category": "quote",
+    "belief": "「成为你希望在世界上看到的改变。」——甘地",
+    "truth": "甘地的文字里查不到这句话；最早的近似句出现在 1974 年美国教育家 Arleen Lorrance 的书里。",
+    "detail": "Quote Investigator 找到的最早近似句，是教育家 Arleen Lorrance 1974 年在「The Love Project」一章里发表的；1975 年牧师 Ernest Troutner、1976 年 Diane Kennedy Pike 都引用过这一原则。第一次把它归给甘地的记录出现在 1987 年。2006 年，甘地研究机构表示在甘地的著作里没有找到可靠的文献证据。\n\n甘地写过意思相近的话。1913 年他写道：「如果我们能改变自己，世界的趋势也会改变；一个人改变自己的本性，世界对他的态度也会随之改变。」这是同一个想法的另一种表述，但并不是流行的那句简短有力的口号。\n\n所以这条是「查无出处」加「相关思想确有来源」：思想上有甘地的影子，措辞则属于 Lorrance。",
+    "origin": "1970 年代的美国社会运动文化把这类口号印上贴纸和海报；甘地是「非暴力自我改变」的象征，署名自然会向他靠拢，1987 年之后才逐渐固定。",
+    "instead": "可以引甘地 1913 年的原话，或者写「Arleen Lorrance，1974」。如果只是想用这句话，写成「常被归于甘地，实为 1970 年代教育家 Lorrance 的原则」。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      { "label": "Quote Investigator, 2017 —— Be the Change You Wish to See in the World", "url": "https://quoteinvestigator.com/2017/10/23/be-change/" }
+    ],
+    "en": {
+      "belief": "\"Be the change you wish to see in the world.\" — Mahatma Gandhi",
+      "truth": "It is not found in Gandhi's writings. The earliest close match is from a 1974 book by the American educator Arleen Lorrance.",
+      "detail": "Quote Investigator's earliest close match is from educator Arleen Lorrance in 1974, in a chapter called \"The Love Project\". Minister Ernest Troutner cited the principle in 1975 and Diane Kennedy Pike published it in 1976. The first (incorrect) Gandhi attribution found is from 1987, and in 2006 the Gandhi Institute confirmed there is no reliable documentary evidence for it in his writings.\n\nGandhi did write something related in 1913: \"If we could change ourselves, the tendencies in the world would also change. As a man changes his own nature, so does the attitude of the world change towards him.\" That is the same idea in other words, not the popular slogan.\n\nSo the thought has a Gandhian flavour, but the wording belongs to Lorrance.",
+      "origin": "1970s American movement culture spread slogans on stickers and posters; Gandhi symbolised nonviolent self-change, so the line drifted to him, with the first recorded attribution in 1987.",
+      "instead": "Quote Gandhi's 1913 passage, or credit \"Arleen Lorrance, 1974\". If you use the slogan, say it is often attributed to Gandhi but dates from 1970s writing.",
+      "sources": [
+        { "label": "Quote Investigator, 2017 — Be the Change You Wish to See in the World", "url": "https://quoteinvestigator.com/2017/10/23/be-change/" }
+      ]
+    },
+    "scene": "a simple spinning wheel beside a small clay lamp and a ball of cotton thread",
+    "verification": "WebFetch https://quoteinvestigator.com/2017/10/23/be-change/ : Lorrance 1974 'The Love Project'; Troutner 1975; Pike 1976; first Gandhi attribution 1987; Gandhi Institute 2006; Gandhi 1913 wording. (Summarizer-relayed.)"
+  },
+  {
+    "id": "world-gandhi-first-they-ignore-you",
+    "category": "quote",
+    "belief": "「起初他们无视你，然后嘲笑你，然后攻击你，然后你赢了。」——甘地",
+    "truth": "甘地的著作里找不到；能查到的最早近似句，出自 1918 年一位工会代表 Nicholas Klein 的演讲。",
+    "detail": "Quote Investigator 查到，这句话在 1982 年才被归给甘地，那时甘地已去世三十多年；多位研究者在他的著作里也没找到。最早的实质性近似句，出自 1918 年 Nicholas Klein 在美国联合服装工人联盟大会上的发言：「起初他们无视你，然后嘲笑你，然后攻击你，想把你烧死，然后他们给你建纪念碑。」\n\n这类「新观点必经几个阶段」的说法历史很长：叔本华在 1819 年描述过真理先被当作悖论、最后被视为理所当然的过程；1917 年 Earl B. Morgan 谈过嘲笑、争论、接受三个阶段。甘地 1921 年的文字里提到的是嘲笑、镇压、尊重，措辞与流行版本有明显差别。\n\n也就是说，思想可以追溯很久，但「甘地」这个署名是 1982 年才贴上去的。",
+    "origin": "这类句子一直在社会运动和工会圈子里流传，每一代人改一点；非暴力运动的象征是甘地，署名就被「吸」了过去。",
+    "instead": "可以写「Nicholas Klein，1918」，或者「常被归于甘地，查无出处」。想引甘地，可用他 1921 年关于嘲笑、镇压、尊重的论述，但要核对原文。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      { "label": "Quote Investigator, 2017 —— First They Ignore You, Then They Laugh at You, Then They Attack You, Then You Win", "url": "https://quoteinvestigator.com/2017/08/13/stages/" }
+    ],
+    "en": {
+      "belief": "\"First they ignore you, then they laugh at you, then they fight you, then you win.\" — Gandhi",
+      "truth": "It is not in Gandhi's writings. The earliest substantive match is a 1918 speech by the union official Nicholas Klein.",
+      "detail": "Quote Investigator found the saying was first ascribed to Gandhi in 1982, decades after his death, and researchers have not found it in his works. The earliest substantive match is from Nicholas Klein at a 1918 Amalgamated Clothing Workers of America convention: \"First they ignore you. Then they ridicule you. And then they attack you and want to burn you. And then they build monuments to you.\"\n\nThe wider family of \"stages of a new idea\" sayings is old: Schopenhauer in 1819 described truth being condemned as paradoxical before becoming trivial, and Earl B. Morgan in 1917 spoke of ridicule, argument and acceptance. Gandhi's own 1921 writing mentions ridicule, repression and respect, in different phrasing.\n\nThe idea is old; the Gandhi label dates from 1982.",
+      "origin": "Variants circulated in labour and reform circles, each generation tweaking them. Gandhi symbolises nonviolent movements, so the saying drifted to his name.",
+      "instead": "Credit \"Nicholas Klein, 1918\", or say \"often attributed to Gandhi; no source in his writings\". If quoting Gandhi, check his 1921 passage first.",
+      "sources": [
+        { "label": "Quote Investigator, 2017 — First They Ignore You, Then They Laugh at You, Then They Attack You, Then You Win", "url": "https://quoteinvestigator.com/2017/08/13/stages/" }
+      ]
+    },
+    "scene": "a small wooden walking staff leaning on a stack of rolled-up paper banners",
+    "verification": "WebFetch https://quoteinvestigator.com/2017/08/13/stages/ : Klein 1918 ACWA wording; 1982 first Gandhi attribution; Schopenhauer 1819; Earl B. Morgan 1917; Cocteau 1968 Julian Beck (not used); Gandhi 1921 ridicule/repression/respect. Summarizer-relayed."
+  },
+  {
+    "id": "world-god-helps-those-who-help-themselves",
+    "category": "quote",
+    "belief": "「天助自助者。」——《圣经》",
+    "truth": "这句话不在《圣经》里。现代英文措辞最早见于西德尼，富兰克林 1736 年的《穷理查年鉴》让它广为人知。",
+    "detail": "据维基百科整理：这句话并不见于圣经，但英美民调显示相当多的人以为它出自圣经（文中给出的比例在 53% 到 82% 之间）。类似的意思在古希腊就有：索福克勒斯和欧里庇得斯的剧作、伊索寓言（如「赫拉克勒斯与车夫」）都有相近的想法。1651 年，乔治·赫伯特在谚语集里收录了「Help thyself, and God will help thee」。\n\n现代的确切措辞「God helps those who help themselves」最早与英国政治思想家 Algernon Sidney 的《Discourses Concerning Government》联系在一起；1736 年本杰明·富兰克林在《穷理查年鉴》里用了它，因此很多人把它当作富兰克林的话。\n\n需要如实说明：一些基督徒认为这句话与圣经强调的恩典不合，因为圣经更常说神帮助那些无力自助的人。另外，不同宗教传统里有自己的相近教导，这里只谈出处，不评价任何信仰。我对这一条只核对到了维基百科的整理，没有打开 Sidney 或富兰克林的原文。",
+    "origin": "这句话作为谚语已流传了两千多年，经 17—18 世纪的英语作家和富兰克林的年鉴定型，因为听起来像格言，被误认为经文。",
+    "instead": "可以说「英语谚语，常被误以为出自圣经；现代措辞见于 Algernon Sidney，富兰克林 1736 年的年鉴使之流行」。引圣经时请直接核对经文。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      { "label": "Wikipedia —— God helps those who help themselves", "url": "https://en.wikipedia.org/wiki/God_helps_those_who_help_themselves" }
+    ],
+    "en": {
+      "belief": "\"God helps those who help themselves.\" — the Bible",
+      "truth": "It is not in the Bible. The modern English wording is linked to Algernon Sidney, and Benjamin Franklin's 1736 Poor Richard's Almanack made it famous.",
+      "detail": "According to Wikipedia's account, the saying does not appear in scripture, though polls cited there find that between 53% and 82% of Americans think it does. Similar ideas appear in Greek tragedy (Sophocles, Euripides) and in Aesop, such as \"Hercules and the Wagoner\". George Herbert included \"Help thyself, and God will help thee\" in his 1651 proverbs.\n\nThe familiar wording is credited to Algernon Sidney in his Discourses Concerning Government, and Franklin used it in Poor Richard's Almanack in 1736, so many people credit Franklin.\n\nFairly stated: some Christians argue the saying sits uneasily with the biblical emphasis on grace, which more often speaks of God helping those who cannot help themselves. This entry concerns provenance only and takes no position on any faith. I verified this only through Wikipedia, not Sidney's or Franklin's texts.",
+      "origin": "A proverb that has circulated for over two thousand years, fixed in English by 17th and 18th-century writers and Franklin's almanack; it sounds like scripture, so it is often taken for it.",
+      "instead": "Say \"an English proverb often mistaken for scripture; modern wording from Algernon Sidney, popularised by Franklin (1736)\". For biblical teaching, check the actual text.",
+      "sources": [
+        { "label": "Wikipedia — God helps those who help themselves", "url": "https://en.wikipedia.org/wiki/God_helps_those_who_help_themselves" }
+      ]
+    },
+    "scene": "a closed old Almanack-style booklet beside a wooden plough handle and a lit lantern",
+    "verification": "WebFetch en.wikipedia.org/wiki/God_helps_those_who_help_themselves : not in Bible, polling 53-82%, Sophocles/Euripides, Aesop 'Hercules and the Wagoner', Herbert 1651, Sidney Discourses Concerning Government, Franklin Poor Richard 1736, Semi-Pelagian criticism. Only a tertiary source opened; did not open Sidney/Franklin/Herbert texts. Demoted to limited accordingly. Religious tone checked: facts only."
+  },
+  {
+    "id": "world-churchill-liberal-at-twenty",
+    "category": "quote",
+    "belief": "「二十岁时不是自由派的人没有心；四十岁时还不是保守派的人没有脑。」——丘吉尔",
+    "truth": "没有记录表明丘吉尔说过；能查到的最早强匹配是 1872 年法国学者 Anselme Batbie 的一封公开信。",
+    "detail": "Quote Investigator 找到的最早强匹配，是 1872 年 Anselme Batbie 在公开信中的用法，他把这句话归给「伯克」（可能指埃德蒙·伯克），但 QI 在伯克的著作里没有找到。更早的相关说法：1799 年归于约翰·亚当斯的「十五岁不是民主派的男孩一无是处」（还没有心和脑的对比），以及 1861 年归于基佐（Guizot）的关于共和派的说法。\n\n「心与脑」的格式在 1870 年代就已成形，随后在法英两种语言里出现了各种年龄和各种党派的版本（共和派、社会主义者、自由派）。丘吉尔的署名到 1986 年前后才出现，此外迪斯雷利（1977 年起）、雨果（1916 年）、萧伯纳等人也都被当作作者。\n\n另有搜索结果提到，丘吉尔中心表示没有人听到过丘吉尔这么说；我没有能打开该中心的页面核对，只能当作旁证。",
+    "origin": "这句话原本是欧洲政治圈的老俏皮话，在法语和英语间不断换主语、换年龄；因为讲政治成长的段子最适合挂在雄辩的政治家名下，丘吉尔成了最方便的作者。",
+    "instead": "可以说「流行俏皮话，最早强匹配见于 1872 年法国（Batbie 把它归给「伯克」）；丘吉尔署名约 1986 年才出现」。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      { "label": "Quote Investigator, 2014 —— If You Are Not a Liberal at 25, You Have No Heart. If You Are Not a Conservative at 35 You Have No Brain", "url": "https://quoteinvestigator.com/2014/02/24/heart-head/" }
+    ],
+    "en": {
+      "belief": "\"If you're not a liberal at twenty you have no heart; if you're not a conservative at forty you have no brain.\" — Churchill",
+      "truth": "No record shows Churchill saying it. The earliest strong match is a public letter by the French academic Anselme Batbie in 1872.",
+      "detail": "Quote Investigator's earliest strong match is Batbie's 1872 letter, which credits the remark to \"Burke\" (probably Edmund Burke); QI found nothing like it in Burke's writings. Earlier precursors lack the heart/head contrast: a 1799 remark credited to John Adams about a boy of fifteen who is not a democrat, and a version attributed to François Guizot in 1861 about republicans.\n\nThe heart-and-head form was established by the 1870s and circulated in French and English, with the political label changing from \"republican\" to \"socialist\" to \"liberal\". Churchill attributions appear by 1986; Disraeli from 1977, Victor Hugo from 1916, and others.\n\nA search result also mentioned that the Churchill Centre says there is no record of anyone hearing him say it; I could not open that page, so treat it as corroboration only.",
+      "origin": "An old European political quip that kept changing its subject and its ages; a witty line about political maturity naturally attached itself to a famous orator, and Churchill became the default.",
+      "instead": "Say \"a popular quip first recorded strongly in 1872 France; Churchill attribution appears about 1986\".",
+      "sources": [
+        { "label": "Quote Investigator, 2014 — If You Are Not a Liberal at 25, You Have No Heart. If You Are Not a Conservative at 35 You Have No Brain", "url": "https://quoteinvestigator.com/2014/02/24/heart-head/" }
+      ]
+    },
+    "scene": "a small carved wooden heart beside a whole walnut on a writing desk",
+    "verification": "WebFetch https://quoteinvestigator.com/2014/02/24/heart-head/ : Batbie 1872 crediting 'Burke'; Adams 1799; Guizot 1861; Churchill by 1986, Disraeli from 1977, Hugo 1916, Shaw. Churchill Centre page not opened (winstonchurchill.org/resources/myths fetch had no such entry); the Churchill Centre line is from a WebSearch summary and labelled corroboration only. NOTE to editor: the belief says '40' while QI's title uses 25/35; age varies by version; the popular Chinese version uses 20/40 which I kept; consider matching the card to the commonest Chinese form."
+  },
+  {
+    "id": "world-goebbels-repeat-lie",
+    "category": "quote",
+    "belief": "「谎言重复一千遍就会变成真理。」——戈培尔",
+    "truth": "没有找到这句话的原始出处；与此相关的真实文献，是希特勒《我的奋斗》（1925）里的「大谎言」和戈培尔 1941 年指责英国的一篇文章。",
+    "detail": "据维基百科引用 Randall Bytwerk 的研究，流行的戈培尔版本被无数书籍和网页引用，却没有一处给出原始出处，对戈培尔来说也「不太可能」会这样说。\n\n真实的文献有两份。一是《我的奋斗》（1925）第十章，希特勒提出「大谎言」（große Lüge）的说法，意思是人们更容易相信弥天大谎，因为他们想不到别人会厚颜无耻到这样歪曲事实；而他是在指责别人这样做。二是戈培尔 1941 年 1 月 12 日发表在《Die Zeit ohne Beispiel》的文章「Aus Churchills Lügenfabrik」（出自丘吉尔的谎言工厂），他在文中说英国人奉行的原则是「撒谎就要撒大谎，并且坚持到底」，也是在指责对方。1943 年前后美国战略情报局的报告（后以《The Mind of Adolf Hitler》出版）也把「人们宁可相信大谎言」的原则归给希特勒。\n\n所以准确地说，是「查无出处」：不是证明他没有说过类似的话，而是找不到他说这句话的文献。",
+    "origin": "战后，人们需要一句话来概括纳粹宣传的手法，一句简洁的「戈培尔名言」比分散的文献更好用，于是被反复引用，并成了广告和评论文章中的标准例证。",
+    "instead": "要谈宣传手法，可以引《我的奋斗》里「大谎言」那一段，或戈培尔 1941 年那篇文章，并说明两者都是在指责对手。若引流行版本，请标注「常被归于戈培尔，无原始出处」。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      { "label": "Wikipedia —— Big lie（Bytwerk 的研究、1941 年戈培尔文章、《我的奋斗》第十章、OSS 报告）", "url": "https://en.wikipedia.org/wiki/Big_lie" }
+    ],
+    "en": {
+      "belief": "\"A lie repeated a thousand times becomes the truth.\" — Goebbels",
+      "truth": "No primary source has been found. The genuine related documents are Hitler's \"big lie\" passage in Mein Kampf (1925) and a 1941 Goebbels article accusing the British.",
+      "detail": "Wikipedia, citing Randall Bytwerk's research, notes that the popular Goebbels quotation has been repeated in countless books and web pages, but none cites a primary source, and it is \"an unlikely thing for Goebbels to have said\".\n\nThe real documents are two. In Mein Kampf (1925), chapter 10, Hitler discusses the \"big lie\" (große Lüge): people fall for colossal lies because they cannot believe others would have the impudence to distort the truth so infamously, and he accuses others of doing this. On 12 January 1941 Goebbels published \"Aus Churchills Lügenfabrik\" in Die Zeit ohne Beispiel, saying the English follow the principle that \"when one lies, one should lie big, and stick to it\", again as an accusation. A c. 1943 OSS report by Walter Langer (published in 1972 as The Mind of Adolf Hitler) also attributed to Hitler the idea that people will believe a big lie sooner than a little one.\n\nThis is \"no source found\", not proof that he never said anything similar.",
+      "origin": "After the war a short \"Goebbels quote\" summarised Nazi propaganda better than scattered documents, so it was repeated until it became a standard example.",
+      "instead": "Quote Mein Kampf's big-lie passage or the 1941 article directly, noting both are accusations against opponents. If using the popular line, label it \"often attributed to Goebbels; no primary source\".",
+      "sources": [
+        { "label": "Wikipedia — Big lie (Bytwerk's research, the 1941 Goebbels article, Mein Kampf ch. 10, the OSS report)", "url": "https://en.wikipedia.org/wiki/Big_lie" }
+      ]
+    },
+    "scene": "a wooden printing-press type tray with blank lead blocks beside a stack of unmarked newsprint",
+    "verification": "WebFetch en.wikipedia.org/wiki/Big_lie : Bytwerk 'none has cited a primary source / unlikely thing for Goebbels'; 12 Jan 1941 'Aus Churchills Lugenfabrik' in Die Zeit ohne Beispiel; Mein Kampf 1925 ch.10; OSS Langer c.1943 published 1972. Single tertiary source (Wikipedia). Did not open the Bytwerk/German Propaganda Archive page. 'Mein Kampf says he accuses others' is the standard reading from the Wikipedia passage; keep tone factual. The 'standard example in ads and op-eds' phrase in origin is my generalisation, softened; reviewer may want to cut it."
+  },
+  {
+    "id": "world-einstein-fish-climb-tree",
+    "category": "quote",
+    "belief": "「人人都是天才。但如果你用爬树的能力来评判一条鱼，它会终生以为自己很蠢。」——爱因斯坦",
+    "truth": "这句话不在爱因斯坦的著作里；能查到的最早署名爱因斯坦的出处是 2004 年的一本励志书，而它的思想源头是 1898 年的一篇教育寓言。",
+    "detail": "Quote Investigator 说，这句话没有收入普林斯顿版《The Ultimate Quotable Einstein》，最早的近似记录是 Matthew Kelly 2004 年的励志书《The Rhythm of Life》，其中一章题为「Everybody is a Genius」，把这句话归给了爱因斯坦。\n\n这一思想的老源头，是 1898 年发表在《Journal of Education》上的寓言「An Educational Allegory」，署名「Aesop, Jr.」，作者后来被确认是塔夫茨学院的物理学家 Amos E. Dolbear。寓言里的动物上学，每只动物都要被拿去和自己并不擅长的技能比较，意思是：不要用一个物种没有的技能去评判它。这篇文章在 20 世纪初被教育界反复转载。\n\nQuote Investigator 认为，「人人都是天才」一类说法（1970 年代起以各种形式出现）与 Dolbear 的寓言后来合并成了现在这句话；2004 年之后，社交媒体放大了爱因斯坦的署名。",
+    "origin": "一则老教育寓言和一类励志套话拼接在一起，被一本畅销励志书挂上了爱因斯坦的名字，再靠社交媒体图片广泛传播。",
+    "instead": "想引这个意思，可以写「出自 1898 年的教育寓言（Amos E. Dolbear 笔名 Aesop, Jr.）」，或者「常被误署为爱因斯坦」。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      { "label": "Quote Investigator, 2013 —— Everybody is a Genius. But If You Judge a Fish by Its Ability to Climb a Tree, It Will Live Its Whole Life Believing that It is Stupid", "url": "https://quoteinvestigator.com/2013/04/06/fish-climb/" }
+    ],
+    "en": {
+      "belief": "\"Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid.\" — Albert Einstein",
+      "truth": "It is not in Einstein's writings. The earliest Einstein attribution found is a 2004 self-help book, and the underlying idea goes back to an 1898 educational allegory.",
+      "detail": "Quote Investigator notes the line is not in The Ultimate Quotable Einstein (Princeton). The earliest close match is Matthew Kelly's 2004 book The Rhythm of Life, in a chapter titled \"Everybody is a Genius\", which credits Einstein.\n\nThe older source of the idea is \"An Educational Allegory\", published under the pen name \"Aesop, Jr.\" in the Journal of Education in 1898; the author was later identified as Amos E. Dolbear, a physicist at Tufts College. In it animals at school are judged on skills they do not have, illustrating why a creature should not be judged by a skill it lacks. The essay was widely reprinted in the early 1900s.\n\nQuote Investigator's view is that this allegory and the \"everybody is a genius\" phrasing, found in various forms since the 1970s, merged into the modern quote, and Kelly's 2004 attribution was amplified by social media.",
+      "origin": "An old educational fable and a motivational cliché were spliced together, attached to Einstein by a best-selling self-help book, and spread by image posts.",
+      "instead": "Credit the idea to the 1898 allegory (Amos E. Dolbear writing as Aesop, Jr.), or say \"often misattributed to Einstein\".",
+      "sources": [
+        { "label": "Quote Investigator, 2013 — Everybody is a Genius. But If You Judge a Fish by Its Ability to Climb a Tree...", "url": "https://quoteinvestigator.com/2013/04/06/fish-climb/" }
+      ]
+    },
+    "scene": "a glass fishbowl with a goldfish beside a small potted tree sapling on a school desk",
+    "verification": "WebFetch https://quoteinvestigator.com/2013/04/06/fish-climb/ : Kelly 2004 The Rhythm of Life chapter 'Everybody is a Genius'; not in Calaprice; 1898 'An Educational Allegory' by 'Aesop, Jr.' = Amos E. Dolbear of Tufts College, Journal of Education (journal name and 'Journal of Education' detail from the WebSearch summary of the same QI page; the fetch said 'published under pen name'); widely reprinted. Summarizer-relayed."
+  },
+  {
+    "id": "world-einstein-simple-as-possible",
+    "category": "quote",
+    "belief": "「一切都应该尽可能简单，但不能过于简单。」——爱因斯坦",
+    "truth": "思想确是爱因斯坦的，但这句话的现成措辞查不到他的原文；最早的记录是 1950 年作曲家罗杰·塞欣斯的转述。",
+    "detail": "Quote Investigator 查到，1950 年 1 月 8 日《纽约时报》上，作曲家 Roger Sessions 在一篇谈「难懂」作曲家的文章里，写到爱因斯坦「大意是」说一切应该尽可能简单，但不能更简单。「in effect」（大意）这个措辞提示这可能是转述而不是原话。1950 年 6 月，诗人 Louis Zukofsky 在《Poetry》杂志上把它加了引号并署名爱因斯坦，对后来的引用影响很大。1977 年 7 月的《读者文摘》也刊登过这句话，且没有出处。\n\n爱因斯坦 1933 年 6 月 10 日在牛津作《论理论物理学的方法》演讲，说过一句相关的话：理论的最高目标，是在不放弃对任何一个经验数据的充分描述的前提下，让不可约的基本要素尽可能简单、尽可能少。这是 Alice Calaprice 引用的前身。\n\nQuote Investigator 的结论是：爱因斯坦可能自己说过类似的话，但没有直接证据；塞欣斯也可能是自己概括了爱因斯坦的思想。这条属于「有分歧」。",
+    "origin": "爱因斯坦在牛津的原话冗长学术，塞欣斯 1950 年的简洁转述更好记；经杂志和《读者文摘》转载，被越来越多人当成原话。",
+    "instead": "写「爱因斯坦思想的概括，最早见于罗杰·塞欣斯 1950 年的转述；原话可见 1933 年牛津演讲」。",
+    "stakes": "harmless",
+    "confidence": "debated",
+    "sources": [
+      { "label": "Quote Investigator, 2011 —— Everything Should Be Made as Simple as Possible, But Not Simpler", "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple/" }
+    ],
+    "en": {
+      "belief": "\"Everything should be made as simple as possible, but not simpler.\" — Albert Einstein",
+      "truth": "The idea is Einstein's, but his own words for this exact sentence cannot be found; the earliest record is composer Roger Sessions's paraphrase in 1950.",
+      "detail": "Quote Investigator found that in the New York Times on 8 January 1950 the composer Roger Sessions wrote that Einstein \"said, in effect, that everything should be as simple as it can be but not simpler!\" The phrase \"in effect\" signals a paraphrase. In June 1950 the poet Louis Zukofsky put it in quotation marks in Poetry magazine and credited Einstein, which influenced later citations. Reader's Digest printed it in July 1977 without documentation.\n\nOn 10 June 1933, in his Oxford lecture \"On the Method of Theoretical Physics\", Einstein wrote that the supreme goal of all theory is to make the irreducible basic elements as simple and as few as possible without surrendering the adequate representation of a single datum of experience. Calaprice cites that as a precursor.\n\nQuote Investigator concludes Einstein may have said something like it but there is no direct evidence; Sessions may have crafted the phrasing himself. So this is a \"debated\" case.",
+      "origin": "Einstein's own sentence is long and academic; Sessions's short paraphrase is far more memorable, and magazines and Reader's Digest spread it until it was taken as his exact words.",
+      "instead": "Say \"a paraphrase of Einstein's view, first recorded by Roger Sessions in 1950; compare his 1933 Oxford lecture\".",
+      "sources": [
+        { "label": "Quote Investigator, 2011 — Everything Should Be Made as Simple as Possible, But Not Simpler", "url": "https://quoteinvestigator.com/2011/05/13/einstein-simple/" }
+      ]
+    },
+    "scene": "a single smooth river stone balanced on a plain wooden block beside a folded paper crane",
+    "verification": "WebFetch https://quoteinvestigator.com/2011/05/13/einstein-simple/ : Sessions NYT 8 Jan 1950 'in effect'; Zukofsky Poetry June 1950; Einstein 10 June 1933 Oxford lecture wording; QI conclusion. Reader's Digest July 1977 comes from the WebSearch summary of the same QI page, not the fetch. Calaprice-cited precursor per search summary."
+  }
+]

@@ -1,0 +1,696 @@
+[
+  {
+    "id": "luxun-no-road",
+    "category": "quote",
+    "belief": "「世上本没有路，走的人多了，也便成了路。」——鲁迅",
+    "truth": "鲁迅写的是「其实地上本没有路，走的人多了，也便成了路」，而且这句话在原文里是用来比喻「希望」的。",
+    "detail": "这句话在小说《故乡》的最后一段（篇末署一九二一年一月）。原文是：「我想：希望本是无所谓有，无所谓无的。这正如地上的路；其实地上本没有路，走的人多了，也便成了路。」\n\n所以有两处和流传版不同：一是「地上」常被顺口说成「世上」「世界上」，二是前面那半句被整个丢掉了。鲁迅在这里不是在讲「走路」，而是在讲「希望」：说不上有，也说不上无，是走的人多了才有的。这个比喻放回原来的位置，意思比「人多了就有路」更谨慎一点。\n\n这里的改动是无害的口误式改写，不是伪造：意思基本保留。值得提醒的只是，用引号写出来的话应当是原话。",
+    "origin": "《故乡》最初发表于一九二一年五月的《新青年》，后收入《呐喊》，是长期的语文课文。口耳相传里，「地上」被换成更顺口的「世上」，引文就这样慢慢变形。本站没有查到「世上」这一说法最早出现在何时何处。",
+    "instead": "需要加引号时照原文引：「其实地上本没有路，走的人多了，也便成了路」。要保留语境，就连前一句「希望本是无所谓有，无所谓无的」一起引。如果只是转述意思，不加引号也可以。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "鲁迅，《故乡》（《呐喊》，篇末署1921年1月）—— 中文马克思主义文库收录的《鲁迅全集》电子文本",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/03/002.htm"
+      }
+    ],
+    "en": {
+      "belief": "\"There was originally no road in the world; when many people walk, a road comes into being.\" —Lu Xun",
+      "truth": "Lu Xun wrote \"in fact the roads on the ground did not exist to begin with; they came to be when many people walked\" — and in the original it is a metaphor for hope.",
+      "detail": "The line is in the last paragraph of the short story 'My Old Home' (Guxiang), dated January 1921. The original reads, roughly: 'I thought: hope is neither something that exists nor something that does not. It is like the paths on the ground; in fact there were no paths to begin with, but when many people walk, a path comes to be.'\n\nSo the popular version differs in two ways. 'On the ground' (地上) is often smoothed into 'in the world' (世上), and the sentence before it — the one that says the image is about hope — is dropped. Lu Xun is not talking about roads; he is talking about hope, which you can neither claim exists nor deny, until enough people walk toward it.\n\nThis is a harmless slip rather than a fabrication; the sense survives. It is only worth noting that words in quotation marks should be the author's words.",
+      "origin": "The story first appeared in New Youth in May 1921, was collected in 'Call to Arms' (Nahan), and has been a standard school text for generations. In oral repetition, 'on the ground' became the smoother 'in the world'. We could not find when the 'world' version first appeared.",
+      "instead": "When you need quotation marks, quote the original: 'in fact there were no paths on the ground to begin with; when many people walk, a path comes to be.' To keep the context, quote the previous sentence about hope as well. If you are only paraphrasing, drop the quotation marks.",
+      "sources": [
+        {
+          "label": "Lu Xun, 'My Old Home' (Guxiang), in Call to Arms, dated Jan 1921 — electronic text of the Complete Works at the Chinese Marxists Internet Archive",
+          "url": "https://www.marxists.org/chinese/reference-books/luxun/03/002.htm"
+        }
+      ]
+    },
+    "scene": "an old village footpath worn through green grass, with a bamboo hat at the edge"
+  },
+  {
+    "id": "luxun-herd",
+    "category": "quote",
+    "belief": "「猛兽总是独行，牛羊才成群结队。」——鲁迅",
+    "truth": "原文是「猛兽是单独的，牛羊则结队」，但后面紧跟的半句讲的恰恰是成群的力量：野牛结成大队，可以排角成城抵御强敌。",
+    "detail": "这句话出自杂文《春末闲谈》（一九二五年四月二十四日发表于《莽原》周刊第一期，署名冥昭）。原文是：「猛兽是单独的，牛羊则结队；野牛的大队，就会排角成城以御强敌了，但拉开一匹，定只能牟牟地叫。」\n\n流传版只留下前半截，并改成「总是独行」「才成群结队」，读起来像是在说「合群的都是弱者、强者必孤独」的人生格言。可是原句的重心在后面：成群的牛能抵御强敌，拆散以后单独一头只能哞哞叫。上下文是一段讽刺——他接着写的是统治者如何想办法「禁止集合」「防说话」，也就是说，这几句是在解释为什么当权者害怕人聚在一起。\n\n因此把它当成「独行者更强」的出处，几乎是把原意反过来用。",
+    "origin": "杂文原文里这几句本来夹在一大段反讽的议论中间，脱离上下文后，前半句因为对仗而好记，被单独摘出，又被换成更像格言的措辞，在社交平台上以「鲁迅说」的名义流传。具体最早是谁摘出的，本站没有查到。",
+    "instead": "想引原话，就把整句引完：「猛兽是单独的，牛羊则结队；野牛的大队，就会排角成城以御强敌了，但拉开一匹，定只能牟牟地叫。」想表达「强者孤独」这个意思，最好别署鲁迅的名字。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "鲁迅，《春末闲谈》（《坟》，1925年4月24日《莽原》周刊第1期，署名冥昭）—— 中文马克思主义文库《鲁迅全集》电子文本",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/01/013.htm"
+      }
+    ],
+    "en": {
+      "belief": "\"Fierce beasts walk alone; only cattle and sheep move in herds.\" —Lu Xun",
+      "truth": "The original says beasts are solitary and cattle go in herds — but the very next clause is about the strength of the herd: wild oxen can form a wall of horns against a stronger enemy.",
+      "detail": "The line comes from the essay 'Idle Talk at the End of Spring' (first published in the weekly Mangyuan on 24 April 1925 under the pen name Mingzhao). Roughly, it reads: 'Beasts are solitary, cattle and sheep go in herds; a big herd of wild oxen can form a wall of horns against a stronger foe — but pull one animal out and it can only bellow.'\n\nThe viral version keeps only the first half and rewords it as 'always walk alone' and 'only then do they herd', so it reads as an aphorism that the strong are solitary and joiners are weak. The original's weight is on the second half: a herd can resist; a lone animal cannot. The surrounding passage is satire, going on to describe how rulers try to forbid assembly and suppress speech — the herd's strength is exactly why they fear it.\n\nUsing it as a source for 'the strong walk alone' therefore nearly inverts the meaning.",
+      "origin": "In the essay these sentences sit inside a long ironic argument. Pulled out of context, the first half is easy to remember because of its parallel structure, and it was reworded into a more aphoristic form and shared as 'Lu Xun said'. We could not trace who first excerpted it.",
+      "instead": "To quote him, give the whole sentence. If you want to express 'the strong are lonely', do not attach Lu Xun's name to it.",
+      "sources": [
+        {
+          "label": "Lu Xun, 'Idle Talk at the End of Spring' (in 'The Grave'; first published Mangyuan, 24 Apr 1925) — Chinese Marxists Internet Archive",
+          "url": "https://www.marxists.org/chinese/reference-books/luxun/01/013.htm"
+        }
+      ]
+    },
+    "scene": "a small flock of sheep behind a wooden fence, beside a single lantern"
+  },
+  {
+    "id": "luxun-time-life",
+    "category": "quote",
+    "belief": "「生命是以时间为单位的，浪费别人的时间等于谋财害命，浪费自己的时间等于慢性自杀。」——鲁迅",
+    "truth": "鲁迅确实写过「时间就是性命。无端的空耗别人的时间，其实是无异于谋财害命的」，但「生命是以时间为单位」和「慢性自杀」这两截在他的文集里找不到。",
+    "detail": "真句子出自《门外文谈》（一九三四年八月至九月在《申报·自由谈》连载，署名华圉）。上下文是在谈拉丁化字母书写快：「美国人说，时间就是金钱；但我想：时间就是性命。无端的空耗别人的时间，其实是无异于谋财害命的。」\n\n流传的长版本是把这两句扩写、拼接，再添上「浪费自己的时间等于慢性自杀」。本站把中文马克思主义文库上的《鲁迅全集》电子文本（含杂文集、小说集等30个部分）全文检索，没有找到「生命是以时间为单位」「慢性自杀」「浪费自己的时间」。需要说明的是，这个文本库不含日记和书信，所以只能说：在他公开发表的文集里没有，而不能说他任何场合都没说过。\n\n还有一点值得注意：原文那句是在说「别人的时间」，而且紧接着自嘲一句「像我们这样坐着乘风凉，谈闲天的人们，可又是例外」，语气比网上版轻松得多。",
+    "origin": "前两句是真的，所以整段读起来「很像鲁迅」。后面扩写的部分可能是转发时有人顺手加的，没有查到最早出处。",
+    "instead": "引原话时只引真的那两句：「时间就是性命。无端的空耗别人的时间，其实是无异于谋财害命的。」并注明《门外文谈》。「慢性自杀」那句不要署名鲁迅。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "鲁迅，《门外文谈》（《且介亭杂文》，1934年8月24日—9月10日《申报·自由谈》，署名华圉）—— 中文马克思主义文库《鲁迅全集》电子文本",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/18/008.htm"
+      },
+      {
+        "label": "虎嗅，整理文章（列举被篡改、杜撰的「鲁迅名言」及其真实出处）",
+        "url": "https://www.huxiu.com/article/4373413.html"
+      }
+    ],
+    "en": {
+      "belief": "\"Life is measured in units of time. Wasting other people's time is murder for money; wasting your own time is slow suicide.\" —Lu Xun",
+      "truth": "Lu Xun did write \"time is life; to squander other people's time for no reason is no different from murder for gain\" — but 'life is measured in units of time' and 'slow suicide' do not appear in his collected essays.",
+      "detail": "The genuine sentences come from 'Talks Outside the Gate on Writing' (serialized in Shen Bao's 'Free Talk' column, August–September 1934, under the pen name Huayu). He is arguing that Latinized script is quick to write: 'Americans say time is money; I think time is life. To waste other people's time for no reason is no different from murder for money.'\n\nThe long viral version expands and splices those two sentences and adds 'wasting your own time is slow suicide'. We searched the electronic text of Lu Xun's Complete Works at the Chinese Marxists Internet Archive (30 sections of essays, stories and so on) and found none of 'life is measured in time', 'slow suicide' or 'waste your own time'. That text does not include his diaries or letters, so what All we can say is that it is not in his published collections, not that he never said it anywhere.\n\nNote also that the original is about other people's time, and he follows it with a self-mocking remark that people like him, chatting in the cool of the evening, are an exception — a lighter tone than the internet version.",
+      "origin": "Because the first two sentences are real, the whole passage sounds convincingly like Lu Xun. The expansion was probably added by someone while reposting; We could not find its earliest appearance.",
+      "instead": "Quote only the genuine sentences — 'time is life; to waste other people's time for no reason is no different from murder for gain' — and cite 'Talks Outside the Gate on Writing'. Do not attach his name to the 'slow suicide' line.",
+      "sources": [
+        {
+          "label": "Lu Xun, 'Talks Outside the Gate on Writing' (in 'Qiejieting zawen'; Shen Bao, Aug–Sep 1934, pen name Huayu) — Chinese Marxists Internet Archive",
+          "url": "https://www.marxists.org/chinese/reference-books/luxun/18/008.htm"
+        },
+        {
+          "label": "Huxiu, compilation of altered and invented 'Lu Xun quotes' with their real sources",
+          "url": "https://www.huxiu.com/article/4373413.html"
+        }
+      ]
+    },
+    "scene": "an old pocket watch resting on a stack of newspaper clippings"
+  },
+  {
+    "id": "luxun-awakened",
+    "category": "quote",
+    "belief": "「人生最大的痛苦，是梦醒了无路可走。」——鲁迅",
+    "truth": "原句是「人生最苦痛的是梦醒了无路可以走」，出自一场关于娜拉出走以后的演讲，而且他紧接着的结论并不是绝望。",
+    "detail": "这句话出自鲁迅一九二三年十二月二十六日在北京女子高等师范学校的演讲《娜拉走后怎样》。原文：「人生最苦痛的是梦醒了无路可以走。」措辞和流传版略有差别（「最大的痛苦」「无路可走」），意思没有变。\n\n变形的是语境。演讲的问题很具体：易卜生笔下的娜拉离家出走以后会怎样？鲁迅的回答是，没有经济权的话，她只有两条路，「不是堕落，就是回来」。他接着说，假使寻不出路，「我们所要的倒是梦」，又说要有钱：「梦是好的；否则，钱是要紧的。」\n\n所以它是一句关于女性经济独立的冷静判断里的一句，而不是一句泛泛的人生哲理。把它单拿出来当成「人生最大的痛苦」的定义，是把一个具体论证当成了格言。",
+    "origin": "原文因为对仗短促而容易记，在教材和励志文章里被反复摘用，措辞逐渐变得更口语。这类改写很常见，并不是造假，只是离原文远了一点。",
+    "instead": "引用时用原话「人生最苦痛的是梦醒了无路可以走」，并说明这是在谈娜拉出走。想谈经济独立这个主题，更贴切的是同一演讲里的「梦是好的；否则，钱是要紧的」。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "鲁迅，《娜拉走后怎样》（1923年12月26日北京女子高等师范学校演讲，收入《坟》）—— 中文马克思主义文库《鲁迅全集》电子文本",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/01/018.htm"
+      }
+    ],
+    "en": {
+      "belief": "\"The greatest pain in life is to wake from a dream and find there is no road to take.\" —Lu Xun",
+      "truth": "The original is 'the most painful thing in life is to wake from the dream and have no road to go on', from a lecture about what happens after Nora leaves home — and his conclusion is not despair.",
+      "detail": "The line comes from Lu Xun's lecture 'What Happens After Nora Leaves Home?', given on 26 December 1923 at the Beijing Women's Normal College. The original is 'the most painful thing in life is to wake from the dream and have no road to go on'. The popular wording ('greatest pain', 'no road to walk') differs a little, but the sense is intact.\n\nWhat changes is the context. His question is concrete: what happens to Ibsen's Nora once she walks out? His answer is that without economic independence she has only two roads, 'to fall, or to come back'. He goes on to say that if no road can be found, 'what we need is a dream' — and then 'dreams are good; otherwise, money is what matters'.\n\nSo this is one sentence inside a sober argument about women's economic independence, not a general definition of life's greatest pain.",
+      "origin": "The sentence is short and balanced, so it was lifted again and again into textbooks and inspirational pieces, and each retelling made the wording a bit more colloquial. This is ordinary drift, not forgery — just a little further from the text each time.",
+      "instead": "Quote it as 'the most painful thing in life is to wake from the dream and have no road to go on' and say it comes from the lecture about Nora. For the theme of independence, the more fitting line from the same lecture is 'dreams are good; otherwise, money is what matters.'",
+      "sources": [
+        {
+          "label": "Lu Xun, 'What Happens After Nora Leaves Home?' (lecture, 26 Dec 1923; in 'The Grave') — Chinese Marxists Internet Archive",
+          "url": "https://www.marxists.org/chinese/reference-books/luxun/01/018.htm"
+        }
+      ]
+    },
+    "scene": "an open birdcage with its little door ajar beside a folded paper banknote"
+  },
+  {
+    "id": "zh-shameless-sanguo",
+    "category": "quote",
+    "belief": "「我从未见过有如此厚颜无耻之人！」——《三国演义》里诸葛亮骂王朗",
+    "truth": "罗贯中的小说里没有这句话。它是1994年央视电视剧《三国演义》为「骂死王朗」加的台词。",
+    "detail": "小说第九十三回《武乡侯骂死王朗》里，诸葛亮这一段的结尾是：「老贼速退！可教反臣与吾共决胜负！」王朗听完，「气满胸膛，大叫一声，撞死于马下」。整回原文里没有「厚颜无耻」这几个字。\n\n这句台词出现在1994年版电视剧（中国电视剧制作中心、中央电视台出品，唐国强饰演诸葛亮）第69集。维基百科对该剧的条目把它称作「原创台词」：编剧在小说的基础上把两军阵前的对骂扩成了更长的一段，结尾加上了这一句。二十多年后它被做成大量B站「鬼畜」视频，才成了网络名句。\n\n顺带一提，「骂死王朗」这件事本身也是小说虚构：史载王朗卒于公元228年，并没有在阵前与诸葛亮对话。",
+    "origin": "电视剧播出后，这一段表演流传很广；到了视频网站时代被反复剪辑、变调，台词随之脱离出处。很多人因为听着像古人的口吻，以为是原著里的话。",
+    "instead": "说「电视剧《三国演义》（1994年版）里诸葛亮的台词」最稳妥；引原著则用「老贼速退！可教反臣与吾共决胜负！」。别写成「《三国演义》原文」。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "罗贯中，《三国演义》第九十三回（原文）—— 维基文库",
+        "url": "https://zh.wikisource.org/wiki/三國演義/第093回"
+      },
+      {
+        "label": "三国演义（1994年电视剧）—— 维基百科条目（首播信息、第69集及该台词）",
+        "url": "https://zh.wikipedia.org/wiki/三国演义_(电视剧)"
+      },
+      {
+        "label": "骂死王朗 —— 维基百科条目（小说回目、史实与电视剧第69集）",
+        "url": "https://zh.wikipedia.org/zh-hans/%E9%AA%82%E6%AD%BB%E7%8E%8B%E6%9C%97"
+      }
+    ],
+    "en": {
+      "belief": "\"I have never seen anyone so shameless!\" —Zhuge Liang cursing Wang Lang in 'Romance of the Three Kingdoms'",
+      "truth": "The novel by Luo Guanzhong does not contain this line; it was added for the 1994 CCTV television series.",
+      "detail": "In chapter 93 of the novel, 'The Marquis of Wuxiang Curses Wang Lang to Death', Zhuge Liang's speech ends: 'Be gone, old villain! Send the traitor out to settle this with me!' Wang Lang, hearing it, 'his chest filled with fury, gave a great cry and fell dead from his horse.' The words 'shameless' or 'brazen' do not appear in the chapter.\n\nThe line comes from episode 69 of the 1994 series (produced by the China TV Drama Production Center and CCTV, with Tang Guoqiang as Zhuge Liang). Wikipedia's article on the series calls it an original line: the scriptwriters stretched the exchange between the two armies and gave it this ending. Years later it became a mainstream internet phrase through countless Bilibili remix videos.\n\nAs an aside, the scene itself is fiction: histories record Wang Lang dying in 228 CE without ever facing Zhuge Liang across the field.",
+      "origin": "After the series aired, the performance spread widely; in the video-site era it was cut and pitch-shifted over and over, and the line drifted away from its source. Because it sounds like the voice of an ancient hero, many people assume it is from the novel.",
+      "instead": "The safest wording is 'a line from the 1994 TV series, spoken by Zhuge Liang'. To quote the novel, use 'Be gone, old villain! Send the traitor out to settle this with me!' Do not call it 'the original text of Romance of the Three Kingdoms'.",
+      "sources": [
+        {
+          "label": "Luo Guanzhong, Romance of the Three Kingdoms, chapter 93 (original text) — Wikisource",
+          "url": "https://zh.wikisource.org/wiki/三國演義/第093回"
+        },
+        {
+          "label": "Three Kingdoms (1994 TV series) — Chinese Wikipedia (premiere details, episode 69 and the line)",
+          "url": "https://zh.wikipedia.org/wiki/三国演义_(电视剧)"
+        },
+        {
+          "label": "Cursing Wang Lang to Death — Chinese Wikipedia (novel chapter, historical facts, episode 69)",
+          "url": "https://zh.wikipedia.org/zh-hans/%E9%AA%82%E6%AD%BB%E7%8E%8B%E6%9C%97"
+        }
+      ]
+    },
+    "scene": "a folded paper fan and a bronze incense burner on a low wooden table"
+  },
+  {
+    "id": "zh-repay-virtue",
+    "category": "quote",
+    "belief": "「以德报怨」是孔子的教诲",
+    "truth": "《论语》里有人问孔子「以德报怨，何如？」，孔子没有赞成；「报怨以德」是《老子》第六十三章的话。",
+    "detail": "《论语·宪问》里，「或曰」（有人）问：「以德报怨，何如？」孔子反问并回答：「何以报德？以直报怨，以德报德。」意思是：你用恩德去回报怨恨，那拿什么去回报恩德呢？所以对怨恨用「直」（公正、坦率），对恩德才用恩德。他是在婉拒这个提法。\n\n「报怨以德」则在《老子》第六十三章：「大小多少，报怨以德。」所以这个主张更接近道家。\n\n有一点要如实说明：这一章里「以直报怨」的「直」，有现代学者据战国楚简的用字现象，主张应读作「德」（维基文库在该章附了这条学者意见）。这是少数意见；通行的、古今注家主要采用的读法仍是「以直报怨」。",
+    "origin": "「以德报怨」四个字太好记，又很像儒家宣扬宽厚的口吻，于是被当作孔子的话传开。其实这四个字在《论语》里是别人提的问题。",
+    "instead": "想引孔子，就说「孔子主张『以直报怨，以德报德』」。想说「以德报怨」的出处，可以说它是《老子》「报怨以德」的意思，在《论语》中则是孔子并未采纳的一个说法。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "《论语·宪问》（十四之三六）—— 维基文库（含「一作直」及学者意见的按语）",
+        "url": "https://zh.wikisource.org/wiki/論語/憲問第十四"
+      },
+      {
+        "label": "《道德经》第六十三章「大小多少，报怨以德」—— 维基文库（王弼本）",
+        "url": "https://zh.wikisource.org/wiki/道德經_(王弼本)"
+      },
+      {
+        "label": "澎湃新闻，《老祖宗：快别说了，这些所谓的古代名言都是错的！》（含「以德报怨」一条）",
+        "url": "https://m.thepaper.cn/newsDetail_forward_29191107"
+      }
+    ],
+    "en": {
+      "belief": "'Repay hatred with kindness' is a teaching of Confucius",
+      "truth": "In the Analects someone asks Confucius about repaying hatred with kindness, and he does not endorse it; 'repay hatred with virtue' is a line of the Laozi, chapter 63.",
+      "detail": "In Analects 14 ('Xianwen'), 'someone' asks: 'What about repaying resentment with kindness?' Confucius answers with a question — 'Then with what will you repay kindness?' — and says to meet resentment with 'straightness' (zhi, fairness and candor) and kindness with kindness. He is declining the proposal.\n\nThe positive formulation appears in chapter 63 of the Laozi: 'Whether great or small, many or few, repay resentment with virtue.' So the idea sits closer to Daoism.\n\nOne fair caveat: some modern scholars, pointing to how the Warring States bamboo texts write the character, argue that the 'straightness' in this Analects line should be read as 'virtue' (Wikisource notes this on that very chapter). That is a minority view; the standard reading, followed by most commentators, remains 'repay resentment with straightness'.",
+      "origin": "'Repay hatred with kindness' is catchy and sounds like Confucian generosity, so it spread as his words. In the Analects those four characters belong to someone else's question.",
+      "instead": "To cite Confucius, say he advocated 'repay resentment with straightness and kindness with kindness'. For 'repay resentment with virtue', point to the Laozi (ch. 63) — and in the Analects it is a position Confucius did not adopt.",
+      "sources": [
+        {
+          "label": "Analects 14 (section 36) — Wikisource (with a note on the variant reading and scholarly opinion)",
+          "url": "https://zh.wikisource.org/wiki/論語/憲問第十四"
+        },
+        {
+          "label": "Daodejing, chapter 63, 'repay resentment with virtue' — Wikisource (Wang Bi edition)",
+          "url": "https://zh.wikisource.org/wiki/道德經_(王弼本)"
+        },
+        {
+          "label": "The Paper, 'These so-called ancient sayings are all wrong' (includes this one)",
+          "url": "https://m.thepaper.cn/newsDetail_forward_29191107"
+        }
+      ]
+    },
+    "scene": "a bamboo-slip scroll, partly unrolled, next to a small ink stone and a cup of tea"
+  },
+  {
+    "id": "zh-fortress-besieged",
+    "category": "quote",
+    "belief": "「围在城里的人想逃出来，城外的人想冲进去」是钱钟书的独创妙喻",
+    "truth": "这个比喻在《围城》里就被点明是舶来品：书中人物说「法国也有这末一句话」，前面还有一句英国古话作铺垫。",
+    "detail": "《围城》里，褚慎明先说：「他引一句英国古话，说结婚仿佛金漆的鸟笼，笼子外面的鸟想住进去，笼内的鸟想飞出来。」苏小姐接着说：「法国也有这末一句话。不过，不说是鸟笼，说是被围困的城堡，城外的人想冲进去，城里的人想逃出来。」书名「围城」就从这句话来。\n\n也就是说，钱钟书本人并没有把它当成自己的发明，而是借人物之口交代了来源。《新文学史料》上一篇题为《谁把「围城」带来中国？》的文章（中国作家网转载，作者郭帅）进一步追溯，认为鸟笼的说法可以上溯到英国剧作家约翰·韦伯斯特的作品。本站没有独立核对这一追溯，只能转述。\n\n钱钟书的功劳是把它写成了一本小说，并让它成了中文里的常用比喻——这和「他发明了这个比喻」是两回事。",
+    "origin": "小说流行以后，「围城」成了婚姻、职业的代名词；读者记住了比喻，却容易忘了书里交代过出处，于是这句话常被当作钱钟书的原创名言。",
+    "instead": "可以说「钱钟书在《围城》里借苏文纨之口引用的法国说法」。夸他的话，应当夸他把它写进小说、用得好，而不是夸他发明了它。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "郭帅，《谁把「围城」带来中国？》，《新文学史料》；中国作家网 2023-05-30 转载（引述《围城》褚慎明、苏小姐对话）",
+        "url": "https://www.chinawriter.com.cn/n1/2023/0530/c404063-40001759.html"
+      }
+    ],
+    "en": {
+      "belief": "'Those inside the besieged city want to get out; those outside want to get in' is Qian Zhongshu's own invention",
+      "truth": "The novel itself says it is borrowed: a character says 'the French have a saying like that too', after an English one.",
+      "detail": "In 'Fortress Besieged' (Weicheng), Chu Shenming first says that an old English saying compares marriage to a gilded birdcage: the birds outside want to get in, the birds inside want to fly out. Miss Su replies that the French have the same saying, but with a besieged fortress instead of a cage — those outside want to charge in, those inside want to escape. The novel's title comes from that remark.\n\nSo Qian never presented the image as his own; he had the characters say where it came from. An article titled 'Who brought the \"besieged city\" to China?' (published in Xin Wenxue Shiliao and reposted by China Writers Net, author Guo Shuai) traces the birdcage image further back to the English playwright John Webster. We have not independently checked that tracing, so we are only reporting it.\n\nQian's achievement was to build a novel around the image and make it a common metaphor in Chinese — which is not the same as inventing it.",
+      "origin": "After the novel became popular, 'besieged city' became shorthand for marriage and careers. Readers remembered the metaphor but forgot that the book itself credits it, so it is often treated as Qian's original aphorism.",
+      "instead": "Say 'the French saying that Qian Zhongshu has Su Wenwan quote in Fortress Besieged'. If you want to praise him, praise how he used it in the novel, not the idea of having invented it.",
+      "sources": [
+        {
+          "label": "Guo Shuai, 'Who brought the \"besieged city\" to China?', Xin Wenxue Shiliao; reposted by China Writers Net, 30 May 2023 (quotes the Chu Shenming / Miss Su exchange)",
+          "url": "https://www.chinawriter.com.cn/n1/2023/0530/c404063-40001759.html"
+        }
+      ]
+    },
+    "scene": "a gilded birdcage with its door open, set on a windowsill beside a stack of old paperbacks"
+  },
+  {
+    "id": "zh-read-ten-thousand-books",
+    "category": "quote",
+    "belief": "「读万卷书，行万里路」是孔子（或先秦古训）说的",
+    "truth": "目前可查到的明确文献出处是明代董其昌谈画论的文字，并不是孔子；不过也有人主张更早，这一点本站没能核实。",
+    "detail": "董其昌《画禅室随笔》里谈画家的「气韵」：「气韵不可学，此生而知之，自有天授。然亦有学得处，读万卷书，行万里路，胸中脱去尘浊，自然丘壑内营。」京报网等媒体即据此把这句话的出处指向董其昌。原意是画家怎样培养胸中格局，后来才被推广成泛指「多读书、多游历」的成语。\n\n《论语》和先秦典籍里没有这句话。需要老实交代的是：有人说它还有更早的来源（搜索结果里出现过宋代刘彝、清代《两般秋雨庵随笔》提到的《眼镜铭》等说法），本站没能打开可靠的原始文献核对，所以这里只能说「董其昌是目前最常被引用、也最容易核实的出处」，不排除更早的用例。\n\n此外各处对董其昌这部书的称呼并不统一（《画禅室随笔》《画旨》《画诀》），引用时以所见版本为准。",
+    "origin": "这句话对仗工整、意思正面，又很符合「古人智慧」的口吻，于是常被笼统地说成「古人云」甚至孔子云。从画论变成通用格言，大约是在明清以后。具体什么时候开始被安到孔子名下，本站没有查到。",
+    "instead": "如果要标出处，稳妥的说法是「明代董其昌在《画禅室随笔》中说过」；不确定时写「古语」。别写成「孔子说」。",
+    "stakes": "harmless",
+    "confidence": "debated",
+    "sources": [
+      {
+        "label": "京报网，《清风丨读万卷书 行万里路》（引董其昌《画禅室随笔》原文） 2023-09-16",
+        "url": "https://news.bjd.com.cn/2023/09/16/10565086.shtml"
+      },
+      {
+        "label": "古文岛（原古诗文网）,「读万卷书，行万里路」出处页（称最早出自董其昌）",
+        "url": "https://m.gushiwen.cn/mingju/juv_7360eb6518d5.aspx"
+      }
+    ],
+    "en": {
+      "belief": "'Read ten thousand books, travel ten thousand miles' is from Confucius or an ancient maxim",
+      "truth": "The clearest source one can verify is the Ming painter Dong Qichang's writing on painting, not Confucius — though some claim an earlier source, which We could not check.",
+      "detail": "In Dong Qichang's 'Huachanshi Suibi', discussing the 'spirit resonance' of a painting, he writes that it cannot be learned, being innate — yet there is something to learn: 'read ten thousand books, travel ten thousand miles, and the dust and murk fall from your chest, and hills and valleys form naturally within.' Media such as Beijing Daily's website point to this passage as the source. It was about how a painter cultivates breadth of mind and only later became a general saying about reading and travel.\n\nNeither the Analects nor other pre-Qin texts contain the line. In fairness, some say there is an earlier source (searches turn up claims about the Song-dynasty Liu Yi, or a Qing note by Liang Shaoren citing an 'inscription for spectacles'). We could not open reliable primary texts to check them, so We can only say Dong Qichang is the most cited and most checkable source, and earlier uses are not ruled out.\n\nThe book itself is also named variously (Huachanshi Suibi, Huazhi, Huajue), so cite whichever edition you have seen.",
+      "origin": "The pairing is neat and positive, and fits the voice of 'ancient wisdom', so it is routinely credited to 'the ancients' or even Confucius. The shift from painting theory to general maxim probably happened in Ming–Qing times. We could not find when it was first pinned on Confucius.",
+      "instead": "If you cite a source, say 'Dong Qichang, Ming dynasty, in Huachanshi Suibi'. When unsure, write 'an old saying'. Do not write 'Confucius said'.",
+      "sources": [
+        {
+          "label": "Beijing Daily online, 'Read ten thousand books, travel ten thousand miles' (quotes Dong Qichang's text), 16 Sep 2023",
+          "url": "https://news.bjd.com.cn/2023/09/16/10565086.shtml"
+        },
+        {
+          "label": "Guwendao (gushiwen.cn), entry for the saying (gives Dong Qichang as the earliest source)",
+          "url": "https://m.gushiwen.cn/mingju/juv_7360eb6518d5.aspx"
+        }
+      ]
+    },
+    "scene": "a stack of linen-bound books beside a worn leather travel satchel and a rolled map"
+  },
+  {
+    "id": "zh-tagore-farthest-distance",
+    "category": "quote",
+    "belief": "「世界上最遥远的距离，不是生与死的距离……」——泰戈尔《飞鸟集》",
+    "truth": "泰戈尔的诗集里查不到这首诗；作者通常被追到张小娴，但归属说法并不统一。",
+    "detail": "这段「最遥远的距离」常被说成泰戈尔的情诗，可是翻遍泰戈尔作品也没有对应的句子。中国互联网联合辟谣平台（2018年12月转自今日头条的一篇文章）的说法是：它其实是作家张小娴早年所作，出自1997年的小说《荷包里的单人床》。\n\n另一篇讨论作者错位的文章（南方艺术网）则强调：这篇东西在网上有很多个扩写版本，不同来源说法不一，作者归属至今并无公认定论。也就是说，「不是泰戈尔」比较有把握，「就是张小娴」则只能说「有这种说法」。\n\n本站没能找到1997年原书原文来核对，所以这里不把「张小娴」写成确证。",
+    "origin": "泰戈尔的译本诗句（如《飞鸟集》）在中文世界地位很高，而这段文字意象和节奏与其译诗相近，便在网络转发中被安到他名下。网络上还陆续出现了加上「飞鸟与鱼」等内容的多个扩写版。",
+    "instead": "想引用这段话，标「网络流传的诗，作者有争议（常被追溯到张小娴）」。不要写「泰戈尔《飞鸟集》」；《飞鸟集》里真正的句子，请对照具体译本引用。",
+    "stakes": "harmless",
+    "confidence": "debated",
+    "sources": [
+      {
+        "label": "中国互联网联合辟谣平台，《世界上最遥远的距离不是生与死，而是假语录在我面前，我却当了真》（转自今日头条，2018-12-19）",
+        "url": "https://www.piyao.org.cn/2019-02/02/c_1210054152.htm"
+      },
+      {
+        "label": "南方艺术网，《作品作者错位 《世界上最遥远的距离》谁写的？》",
+        "url": "https://www.zgnfys.com/m/a/nfrw-5892.shtml"
+      }
+    ],
+    "en": {
+      "belief": "'The farthest distance in the world is not between life and death…' —Tagore, 'Stray Birds'",
+      "truth": "The poem is not in Tagore's collections; it is usually traced to Zhang Xiaoxian, but accounts of its authorship disagree.",
+      "detail": "This 'farthest distance' text is often passed around as a Tagore love poem, but nothing like it appears in his works. The China Joint Internet Rumor-Refuting Platform (reposting a Toutiao article, December 2018) says it is really the early work of the writer Zhang Xiaoxian, from her 1997 novel 'A Single Bed in the Pocket'.\n\nAnother piece on misattributed works (Southern Art Network) stresses that the text exists online in many expanded versions, that sources give different origins, and that authorship has no generally accepted answer. So 'not Tagore' is fairly safe, while 'it is Zhang Xiaoxian' can only be reported as a claim.\n\nWe could not find the 1997 book's original text to check, so we do not present Zhang Xiaoxian as established.",
+      "origin": "Tagore's translated verse (Stray Birds in particular) has high prestige in Chinese, and this text's imagery and rhythm resemble translated poetry, so online reposting pinned it on him. Several expanded versions (for example one with 'the bird and the fish') then multiplied.",
+      "instead": "If you quote it, label it 'a poem circulating online, author disputed (often traced to Zhang Xiaoxian)'. Do not write 'Tagore, Stray Birds'; for genuine Stray Birds lines, check a specific translation.",
+      "sources": [
+        {
+          "label": "China Joint Internet Rumor-Refuting Platform, 'The farthest distance… is fake quotations right in front of me' (from Toutiao, 19 Dec 2018)",
+          "url": "https://www.piyao.org.cn/2019-02/02/c_1210054152.htm"
+        },
+        {
+          "label": "Southern Art Network, 'Misplaced authorship: who wrote \"The farthest distance in the world\"?'",
+          "url": "https://www.zgnfys.com/m/a/nfrw-5892.shtml"
+        }
+      ]
+    },
+    "scene": "a paper airplane and a goldfish bowl on opposite ends of a long window ledge"
+  },
+  {
+    "id": "zh-linhuiyin-safe-sunny",
+    "category": "quote",
+    "belief": "「你若安好，便是晴天。」——林徽因",
+    "truth": "人民文学出版社的「林徽因语录打假」把它列为林徽因没说过的话；最容易查到的出处是一本林徽因传记的书名。",
+    "detail": "人民文学出版社在2025年6月发布的《林徽因语录打假！》一文里，列出11句「没说过的话」，「你若安好，便是晴天」排在第一位，归类为「伪鸡汤，杜撰」。\n\n能核实到的是：白落梅所著的林徽因传记，书名就叫《你若安好，便是晴天》（中国华侨出版社，豆瓣标注的版本为2013年2月）。这本书是传记性质的散文，豆瓣上也有读者批评它想象多于史实。书名用了这句话，但句子并不是林徽因的原文；至于这句话最早是谁写的，本站没有查到。\n\n林徽因留下的诗是真实存在的，例如《你是人间的四月天》，和这句话没有关系。",
+    "origin": "一本以林徽因为主角的畅销传记，把这句话印成大字书名，读者很容易把「书名」当成「她的话」。之后在社交平台上被配上她的照片和「林徽因」署名反复转发。",
+    "instead": "想引林徽因，选她真正写过的诗文（如《你是人间的四月天》）。要用这句话，标「网络流传」或「白落梅书名」，别署林徽因。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      {
+        "label": "人民文学出版社，《林徽因语录打假！「你若安好 便是晴天」位列榜首！》（澎湃号，2025-06-10）",
+        "url": "https://m.thepaper.cn/newsDetail_forward_30959316"
+      },
+      {
+        "label": "白落梅，《你若安好，便是晴天》—— 豆瓣读书（中国华侨出版社）",
+        "url": "https://book.douban.com/subject/20506611/"
+      }
+    ],
+    "en": {
+      "belief": "'If you are well, it is a sunny day.' —Lin Huiyin",
+      "truth": "The People's Literature Publishing House lists it among things Lin Huiyin did not say; the easiest source to find is the title of a biography of her.",
+      "detail": "In a June 2025 piece called 'Lin Huiyin quotes debunked', the People's Literature Publishing House lists 11 sayings she never said, and 'If you are well, it is a sunny day' tops the list, labelled 'fake inspirational soup, invented'.\n\nWhat We could verify is that Bai Luomei's biography of Lin Huiyin is titled exactly this (China Overseas Chinese Publishing House; Douban gives the edition as February 2013). The book is a lyrical, biography-style prose work, and readers on Douban criticize it for more imagination than documentation. The title uses the line, but the line is not Lin's own; We could not find who first wrote it.\n\nLin Huiyin's real poems exist — 'You Are the April Day on Earth', for example — and have nothing to do with this sentence.",
+      "origin": "A bestselling biography of Lin Huiyin printed the line in large type as its title, so readers easily treat 'a book title' as 'her words'. On social media it was then paired with her photo and her name and reposted endlessly.",
+      "instead": "To quote Lin Huiyin, choose something she actually wrote, such as 'You Are the April Day on Earth'. To use this line, label it 'popular online' or 'title of Bai Luomei's book', not Lin's.",
+      "sources": [
+        {
+          "label": "People's Literature Publishing House, 'Lin Huiyin quotes debunked!' (The Paper, 10 Jun 2025)",
+          "url": "https://m.thepaper.cn/newsDetail_forward_30959316"
+        },
+        {
+          "label": "Bai Luomei, 'If You Are Well, It Is a Sunny Day' — Douban Books (China Overseas Chinese Publishing House)",
+          "url": "https://book.douban.com/subject/20506611/"
+        }
+      ]
+    },
+    "scene": "a small porcelain teapot beside a half-open window and a folded blue umbrella"
+  },
+  {
+    "id": "zh-hushi-dirty-country",
+    "category": "quote",
+    "belief": "「一个肮脏的国家，如果人人讲规则而不是空谈道德，最终会变成一个有人味儿的正常国家。」——胡适",
+    "truth": "作者羽戈查了标注的出处（《介绍我自己的思想》）和《胡适文集》，都没有找到这段话；迄今查不到可靠出处。",
+    "detail": "这段话在微博和微信上长期署名胡适，伪造者还标了出处：《介绍我自己的思想》（1930年）。专栏作家羽戈在2016年10月的文章里说，他逐篇查了这篇文章，里面并没有关于「规则与道德」的论述；又翻了北大版十二卷《胡适文集》，也未发现类似言论。维基语录的胡适条目把这一句单独放进「误植」栏目。\n\n羽戈还从语言上提出一个佐证：文中的「人味儿」「没事儿」之类儿化音，与胡适的语言习惯不合。这属于推断，不能当作定论；真正站得住的是前面那一点——标注的出处里查无此语。\n\n这里只能证明「查无出处」，而不是「证明胡适一辈子没有说过类似意思的话」。",
+    "origin": "这类「某名人说某句金句」的帖子常在转发中给名言配上一个像模像样的出处（书名、年份），让人以为可靠。这一段至少在2016年前就已在微博、微信流传。最早在何处出现，本站没有查到。",
+    "instead": "如果想引胡适谈规则、谈秩序，请去读《胡适文集》里实际的文字，并写明篇名。这一句本身，最稳妥是标成「网传，查无出处」。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      {
+        "label": "羽戈，《从一段伪造的胡适名言说起》，新浪新闻专栏，2016-10-18",
+        "url": "https://news.sina.cn/zl/2016-10-18/zl-ifxwvpar8378190.d.html?from=wap"
+      },
+      {
+        "label": "胡适 —— 维基语录（「误植」栏目）",
+        "url": "https://zh.wikiquote.org/zh-cn/%E8%83%A1%E9%81%A9"
+      }
+    ],
+    "en": {
+      "belief": "'A filthy country, if everyone follows rules instead of preaching morality, will eventually become a normal, human country.' —Hu Shih",
+      "truth": "The columnist Yu Ge checked the cited source ('Introducing My Own Thinking') and the Collected Works of Hu Shih and found no such passage; no reliable source has turned up.",
+      "detail": "For years this passage circulated on Weibo and WeChat under Hu Shih's name, with a supposed source attached: 'Introducing My Own Thinking' (1930). In an October 2016 column, Yu Ge says he checked that essay and found no discussion of rules versus morality, then went through the 12-volume Peking University edition of Hu Shih's collected works and found nothing similar. The Chinese Wikiquote page for Hu Shih lists the line under 'misattributed'.\n\nYu Ge adds a linguistic hint: the colloquial -er endings in the text do not match Hu Shih's way of speaking. That is an inference, not proof; the solid point is the first one — the cited source does not contain it.\n\nWhat this shows is 'no source found', not that Hu Shih never said anything like it.",
+      "origin": "Posts of this kind often attach an impressive-looking source (title, year) to a quote, which makes it seem reliable. This one was already circulating on Weibo and WeChat by 2016. We could not find where it first appeared.",
+      "instead": "If you want Hu Shih on rules and order, read what he actually wrote in his collected works and cite the essay. For this sentence, the safest label is 'attributed online; no source found'.",
+      "sources": [
+        {
+          "label": "Yu Ge, 'Starting from a forged Hu Shih quotation', Sina News column, 18 Oct 2016",
+          "url": "https://news.sina.cn/zl/2016-10-18/zl-ifxwvpar8378190.d.html?from=wap"
+        },
+        {
+          "label": "Hu Shih — Chinese Wikiquote ('misattributed' section)",
+          "url": "https://zh.wikiquote.org/zh-cn/%E8%83%A1%E9%81%A9"
+        }
+      ]
+    },
+    "scene": "a brass desk lamp over a stack of bound volumes and a fountain pen"
+  },
+  {
+    "id": "zh-zhuangzi-moisten-foam",
+    "category": "quote",
+    "belief": "「相濡以沫」是庄子对患难相守、不离不弃的赞美",
+    "truth": "庄子的原话是「相濡以沫，不如相忘于江湖」——他的重心在后半句。",
+    "detail": "出自《庄子·大宗师》：「泉涸，鱼相与处于陆，相呴以湿，相濡以沫，不如相忘于江湖。」意思是泉水干了，鱼困在陆地上，互相吐气湿润对方、用唾沫湿润对方，可是这不如各自回到江湖里，彼此相忘。接下来一句是「与其誉尧而非桀也，不如两忘而化其道」，也是同一类对照：与其赞美一个、责备另一个，不如两边都忘掉。\n\n也就是说，庄子是拿它来对比：在困境里互相救助固然可贵，但更好的状态是不需要救助、各自自在。后世把前半句单独摘出来，当成「夫妻或朋友患难与共」的成语，是一次很成功的再创造，意思已经和原文不同。\n\n另一点：不同注家对庄子是否在「贬低」这种情谊有不同理解，有人读作对儒家「仁义」式温情的批评，有人读作对更自在的相处方式的向往。可以确定的只是原文的字面顺序。",
+    "origin": "成语流传的过程中，「不如相忘于江湖」这半句渐渐被省去，「相濡以沫」独立成为褒义词，用在夫妻和朋友身上，而且常被当作庄子的赞美来引用。",
+    "instead": "当作成语用没有问题，它在现代汉语里就是褒义。但说「庄子称赞」就不对了；要引出处，可以连后半句一起引：「相濡以沫，不如相忘于江湖」，再说明庄子的重点在后半句。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "《庄子·大宗师》（原文）—— 维基文库",
+        "url": "https://zh.wikisource.org/wiki/莊子/大宗師"
+      },
+      {
+        "label": "澎湃新闻，《老祖宗：快别说了，这些所谓的古代名言都是错的！》（含「相濡以沫」一条）",
+        "url": "https://m.thepaper.cn/newsDetail_forward_29191107"
+      }
+    ],
+    "en": {
+      "belief": "'Moistening each other with spit' (xiangru yimo) is Zhuangzi's praise of devotion in hard times",
+      "truth": "Zhuangzi's actual sentence is 'moistening each other with foam is not as good as forgetting each other in the rivers and lakes' — the weight is on the second half.",
+      "detail": "The passage is in the Zhuangzi, chapter 'The Great and Venerable Teacher': when the spring dries up, fish stranded on land breathe on each other to keep damp and moisten each other with spittle, but that is not as good as forgetting one another in the rivers and lakes. The next line is a parallel contrast: rather than praise Yao and condemn Jie, better to forget both and dissolve into the Way.\n\nSo he is contrasting two states: helping each other in distress is admirable, but better still is a condition in which no rescue is needed and each is at ease. Later usage lifted the first half out and turned it into a positive idiom for spouses and friends who stand by each other — a successful reinvention whose meaning departs from the source.\n\nOne more honest point: commentators differ on whether Zhuangzi is belittling such devotion — some read it as a critique of Confucian-style warmth, others as longing for a freer way of living together. What is certain is only the literal order of the text.",
+      "origin": "Over the centuries the half-sentence 'better to forget each other in the rivers and lakes' dropped away, and 'xiangru yimo' became an independent compliment for couples and friends, often credited as Zhuangzi's praise.",
+      "instead": "Using it as an idiom is fine — in modern Chinese it is positive. But do not say 'Zhuangzi praised this'. If you cite the source, quote the whole line 'moistening each other… is not as good as forgetting each other in the rivers and lakes' and note that his point lies in the second half.",
+      "sources": [
+        {
+          "label": "Zhuangzi, 'The Great and Venerable Teacher' (original text) — Wikisource",
+          "url": "https://zh.wikisource.org/wiki/莊子/大宗師"
+        },
+        {
+          "label": "The Paper, 'These so-called ancient sayings are all wrong' (includes this idiom)",
+          "url": "https://m.thepaper.cn/newsDetail_forward_29191107"
+        }
+      ]
+    },
+    "scene": "two small silver fish lying on a dry cracked clay dish beside an empty water jug"
+  },
+  {
+    "id": "luxun-coffee-genius",
+    "category": "quote",
+    "belief": "「哪里有天才，我是把别人喝咖啡的工夫都用在工作上的。」——鲁迅",
+    "truth": "在鲁迅公开发表的文集里查不到这句话；能找到的最早形态，是一篇没有注明来源的小学课文式短文《鲁迅先生珍惜时间》。",
+    "detail": "本站把中文马克思主义文库上的《鲁迅全集》电子文本（30个部分，含杂文集、小说集、序跋）全文检索，没有「哪里有天才」「喝咖啡的工夫」「喝咖啡的时间」这些字样。需要说明的是，这个文本库不含日记和书信，所以只能说「在他公开发表的文集里没有」，不能说「他任何场合都没说过」。\n\n这句话常见的出处是一篇题为《鲁迅先生珍惜时间》的短文（课文类阅读，作者未标注，网上可见2016年的转载版本），文中写「有人说鲁迅是天才，可他自己说」，然后直接引出这句，既没有交代时间场合，也没有注明依据。\n\n另有两点可以参照：一，鲁迅的日记里确实有喝咖啡的记录（如1913年5月28日「饮加非」、1930年2月16日「饮加非」等，据腾讯新闻整理）；二，他在1928年写过《革命咖啡店》，是对报上一则「咖啡店」广告的讽刺，里面说那家乐园「我没有去，也不想去」。这些都说明他与咖啡并非水火不容，但也都不是这句话的来源。",
+    "origin": "这句话在教学短文和励志文章里长期流传，「咖啡」又带有现代感，很容易被当作他的名言。本站没有查到它的最早出处，也不知道是否来自某位亲友的回忆转述，只能说迄今查不到可靠出处。",
+    "instead": "如果要谈鲁迅与勤奋，可以引他确实写过的文字，例如「时间就是性命。无端的空耗别人的时间，其实是无异于谋财害命的」（《门外文谈》）。「喝咖啡」这句，最稳妥的标注是「相传为鲁迅所说，未见于其公开著作」。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      {
+        "label": "鲁迅，《革命咖啡店》（《三闲集》，1928年）—— 中文马克思主义文库《鲁迅全集》电子文本",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/12/007.htm"
+      },
+      {
+        "label": "腾讯新闻，《鲁迅说的这句话，有可能是骗你的》（整理鲁迅日记中的喝咖啡记录）",
+        "url": "https://news.qq.com/rain/a/20220727A02X2J00"
+      }
+    ],
+    "en": {
+      "belief": "\"What genius? I just put the time others spend drinking coffee into work.\" —Lu Xun",
+      "truth": "The line does not appear in Lu Xun's published collections; the earliest form We could find is an unattributed school-reading piece called 'Lu Xun Cherished Time'.",
+      "detail": "We searched the electronic text of Lu Xun's Complete Works at the Chinese Marxists Internet Archive (30 sections: essay collections, fiction, prefaces) for 'where is there any genius' and 'the time others spend drinking coffee' and found neither. That text does not include his diaries or letters, so what All we can say is 'not in his published collections', not 'he never said it anywhere'.\n\nThe usual source is a short piece titled 'Lu Xun Cherished Time' (school reading material, author not stated; a 2016 repost is online). It says 'some say Lu Xun was a genius, but he himself said…' and then gives the line, with no date, no occasion and no source.\n\nTwo side facts: his diary does record coffee (for example 28 May 1913 and 16 Feb 1930, as compiled by Tencent News), and in 1928 he wrote 'The Revolutionary Coffee Shop', a satire on a newspaper advertisement for a cafe, saying of that 'paradise' that he had not gone and did not want to. So he was no enemy of coffee, but neither fact is the source of this line.",
+      "origin": "The line has circulated for years in teaching texts and inspirational writing, and 'coffee' gives it a modern flavor, so it is easily taken as his. We could not find its earliest appearance or whether it came from a relative's recollection; all All we can say is that no reliable source has turned up.",
+      "instead": "To talk about Lu Xun and diligence, quote something he did write, such as 'time is life; to waste other people's time for no reason is no different from murder for gain' ('Talks Outside the Gate on Writing'). For the coffee line, the safest label is 'attributed to Lu Xun; not found in his published works'.",
+      "sources": [
+        {
+          "label": "Lu Xun, 'The Revolutionary Coffee Shop' (in 'Sanxian ji', 1928) — Chinese Marxists Internet Archive",
+          "url": "https://www.marxists.org/chinese/reference-books/luxun/12/007.htm"
+        },
+        {
+          "label": "Tencent News, 'This saying of Lu Xun's may be a lie' (compiles diary entries about coffee)",
+          "url": "https://news.qq.com/rain/a/20220727A02X2J00"
+        }
+      ]
+    },
+    "scene": "a white coffee cup beside a stack of handwritten manuscript pages and an ink brush"
+  },
+  {
+    "id": "luxun-medicine",
+    "category": "quote",
+    "belief": "「学医救不了中国人。」——鲁迅",
+    "truth": "这不是鲁迅的原话；《呐喊·自序》里他讲的是自己为什么弃医从文，措辞和语气都更具体。",
+    "detail": "北京鲁迅博物馆的「鲁迅说过的话」检索系统上线时，媒体做过测试，搜「学医救不了中国人」得到的结果是找不到（搜狐转载的报道）。这句话是后人对一段经历的概括。\n\n真正的出处是《呐喊·自序》（1922年12月3日记于北京）。他回忆在仙台学医时看到幻灯片里的围观场面，说：「我便觉得医学并非一件紧要事，凡是愚弱的国民，即使体格如何健全，如何茁壮，也只能做毫无意义的示众的材料和看客」，所以「第一要著，是在改变他们的精神」，而他当时以为善于改变精神的是文艺。\n\n两处差别在于：原文是「医学并非一件紧要事」，是他当时的想法，并不是在下一个对所有医生的判断；而且他提出的是「改变精神」的主张。他此后并未否定医学本身，把它读成「医生没用」是过度解读。",
+    "origin": "把一段两千字的回忆压缩成一句口号，是传播里常见的做法。「学医救不了中国人」短、有力、有对象，比原文好记，于是被当作他的名言，课堂讲述和励志文章里反复出现。",
+    "instead": "引用时用原文：「我便觉得医学并非一件紧要事」，并说明这是他对自己为何放弃学医的解释。若要概括，写成「鲁迅在《呐喊·自序》中说，他当时认为改变国民精神比医治身体更要紧」。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "鲁迅，《呐喊·自序》（1922年12月3日）—— 中文马克思主义文库《鲁迅全集》电子文本",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/03/001.htm"
+      },
+      {
+        "label": "搜狐，《「鲁迅说过的话」检索系统上线！》（测试结果含「学医救不了中国人」未找到）",
+        "url": "https://www.sohu.com/a/312984295_563929"
+      },
+      {
+        "label": "虎嗅，整理文章（列举被概括、杜撰的「鲁迅名言」及真实出处）",
+        "url": "https://www.huxiu.com/article/4373413.html"
+      }
+    ],
+    "en": {
+      "belief": "\"Studying medicine cannot save the Chinese.\" —Lu Xun",
+      "truth": "This is not Lu Xun's wording; the preface to 'Call to Arms' explains why he gave up medicine, in more specific and more measured words.",
+      "detail": "When the Beijing Lu Xun Museum's 'things Lu Xun said' search tool went online, media tried this sentence and it was not found (as reported by Sohu). It is a later summary of an episode.\n\nThe real source is the preface to 'Call to Arms', dated 3 December 1922. He recalls the slides he saw while studying medicine in Sendai and writes, roughly: 'I felt medicine was not an important matter; a weak and foolish people, however healthy and robust in body, could only serve as meaningless material for public display, and as spectators', so 'the first priority is to change their spirit' — and at the time he thought literature was the best means.\n\nThe differences: the original says 'medicine is not an important matter' as his thinking then, not a verdict on all doctors, and the claim he actually makes is about changing the spirit. He never repudiated medicine itself, so reading it as 'doctors are useless' is an over-reading.",
+      "origin": "Compressing a two-thousand-word recollection into a slogan is common in transmission. 'Studying medicine cannot save the Chinese' is short, forceful and has a target; it is easier to remember than the original, and it spread through classroom talk and inspirational writing.",
+      "instead": "Quote the original, 'I felt medicine was not an important matter', and say it is his explanation for abandoning medicine. For a summary, write 'in the preface to Call to Arms he says he then thought changing a people's spirit mattered more than treating bodies'.",
+      "sources": [
+        {
+          "label": "Lu Xun, preface to 'Call to Arms' (3 Dec 1922) — Chinese Marxists Internet Archive",
+          "url": "https://www.marxists.org/chinese/reference-books/luxun/03/001.htm"
+        },
+        {
+          "label": "Sohu, 'The \"things Lu Xun said\" search tool is online!' (test result for this sentence: not found)",
+          "url": "https://www.sohu.com/a/312984295_563929"
+        },
+        {
+          "label": "Huxiu, compilation of summarized and invented 'Lu Xun quotes' with real sources",
+          "url": "https://www.huxiu.com/article/4373413.html"
+        }
+      ]
+    },
+    "scene": "a small brass microscope on a desk beside an inkwell and a brush pen"
+  },
+  {
+    "id": "luxun-village-dogs",
+    "category": "quote",
+    "belief": "「村里的狗叫了，其他的狗也跟着叫，但它们不知道为什么叫；当浑浊成为常态，清白就是一种罪。」——鲁迅",
+    "truth": "在鲁迅的文集里查不到这段话；有文章指出它的前半句与一部韩剧的台词相似，但本站没能核对剧集，所以只能说查无出处。",
+    "detail": "本站把中文马克思主义文库上的《鲁迅全集》电子文本（30个部分，1260页）全文检索，没有「村里的狗」这样的字样；含「狗叫」的三处都与此无关（一处是小说里孩子逗人学狗叫，一处是形容汽笛声，一处是讽刺刊物里骂主张废汉字者「外国狗叫」）。同样，这个文本库不含日记和书信，所以只能说「公开发表的文集里没有」。\n\n虎嗅整理的一篇文章把它归入「应为杜撰」，并说在韩剧《匹诺曹》里能找到类似的前半句。这一条是转述，本站没有去查剧集原文，请当作线索而不是定论。\n\n这段话的文风也是网络「鲁迅体」的典型：用动物比喻群体盲从，再配一句对仗的警句。鲁迅确实写过群体盲从，但不是这几句话。",
+    "origin": "「署名鲁迅」往往能让一句话显得深刻。这段话借用了「群体盲从」这个常见主题，最早出现的时间、地点本站没有查到。",
+    "instead": "如果你想引用，可以标成「网传句子，查无出处」。要谈群体心理，可以直接引鲁迅确实写过的话，例如《杂感》里的「勇者愤怒，抽刃向更强者；怯者愤怒，却抽刃向更弱者」（华盖集）。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      {
+        "label": "虎嗅，整理文章（列举被篡改、杜撰的「鲁迅名言」，含此句及韩剧《匹诺曹》线索）",
+        "url": "https://www.huxiu.com/article/4373413.html"
+      },
+      {
+        "label": "鲁迅，《杂感》（《华盖集》）—— 中文马克思主义文库《鲁迅全集》电子文本（真实原文对照）",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/08/011.htm"
+      }
+    ],
+    "en": {
+      "belief": "\"One dog in the village barked, and the other dogs joined in without knowing why; when murk becomes normal, being clean becomes a crime.\" —Lu Xun",
+      "truth": "This passage cannot be found in Lu Xun's collected writings; one article says its first half resembles a line in a Korean drama, but We could not check the show, so all All we can say is that no source has turned up.",
+      "detail": "We searched the electronic text of Lu Xun's Complete Works at the Chinese Marxists Internet Archive (30 sections, 1,260 pages) and found nothing like 'the dogs in the village'; the few hits for 'dog barking' are unrelated passages. As elsewhere, that text lacks his diaries and letters, so the claim is 'not in his published collections'.\n\nA Huxiu compilation lists it as 'probably invented' and says a similar first half can be found in the Korean drama 'Pinocchio'. That is second-hand — We did not check the series' script — so treat it as a lead, not a finding.\n\nThe style is typical of internet 'Lu Xun-speak': an animal metaphor for mindless crowds, followed by a balanced punchline. Lu Xun did write about crowd conformity, but not in these words.",
+      "origin": "Attaching Lu Xun's name makes a line sound profound. This one borrows the familiar theme of herd mentality; We could not find where or when it first appeared.",
+      "instead": "If you want to quote it, label it 'a line circulating online; no source found'. For Lu Xun on crowds, quote something he did write, such as 'the brave, in anger, draw their swords against the stronger; the timid, in anger, draw theirs against the weaker' ('Miscellaneous Thoughts', in 'Huagai ji').",
+      "sources": [
+        {
+          "label": "Huxiu, compilation of altered and invented 'Lu Xun quotes' (includes this line and the Korean-drama lead)",
+          "url": "https://www.huxiu.com/article/4373413.html"
+        },
+        {
+          "label": "Lu Xun, 'Miscellaneous Thoughts' (in 'Huagai ji') — Chinese Marxists Internet Archive (genuine text for comparison)",
+          "url": "https://www.marxists.org/chinese/reference-books/luxun/08/011.htm"
+        }
+      ]
+    },
+    "scene": "a village lane at dusk with a wooden gate, a lit paper lantern and an empty clay bowl"
+  },
+  {
+    "id": "luxun-mask",
+    "category": "quote",
+    "belief": "「面具戴太久，就会长到脸上，再想揭下来，除非伤筋动骨扒皮。」——鲁迅",
+    "truth": "全集里查不到这句话；鲁迅确实反复写过「假面具」，但没有这个「长到脸上」的说法。",
+    "detail": "本站在《鲁迅全集》电子文本（中文马克思主义文库，30个部分）里检索「面具戴」「长到脸上」，没有命中。含「假面具」的文章有：《忽然想到》《通讯》《我还不能「带住」》《「论语一年」》《论「第三种人」》《真假堂吉诃德》等，写的是对虚伪和装腔作势的批评，比如把某些人比作「戴着假面具的买办」（《真假堂吉诃德》）。这与「面具戴久了会长在脸上」的心理格言是两回事。\n\n虎嗅整理的文章把这句列为「伪作」，同时指出鲁迅在上述文章里谈过「假面具」。文本库不含日记和书信，所以只能证明「公开发表的文集里没有」。\n\n这种「戴久了摘不下来」的说法，在中文网络上很常见，出自谁之手，本站没有查到。",
+    "origin": "「假面具」确实是鲁迅的常用意象，这让这句话显得可信；再配上「伤筋动骨扒皮」这样的狠话，很有「鲁迅味」。它的最早出处本站没有查到。",
+    "instead": "如果要引鲁迅谈假面，可以去读《忽然想到》《「论语一年」》里的具体文字并写明篇名。这一句只能标成「网传，查无出处」。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      {
+        "label": "虎嗅，整理文章（列举被篡改、杜撰的「鲁迅名言」，含此句）",
+        "url": "https://www.huxiu.com/article/4373413.html"
+      },
+      {
+        "label": "鲁迅，《忽然想到》（《华盖集》，含「假面具」）—— 中文马克思主义文库《鲁迅全集》电子文本",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/08/020.htm"
+      }
+    ],
+    "en": {
+      "belief": "\"Wear a mask too long and it grows into your face; to take it off you must break bones and tear skin.\" —Lu Xun",
+      "truth": "The line is not in his collected works; Lu Xun did write repeatedly about 'false masks', but never this 'grows into your face' formulation.",
+      "detail": "We searched the electronic text of the Complete Works (Chinese Marxists Internet Archive, 30 sections) for the key phrases and found no match. Essays that do contain 'false mask' include 'Sudden Thoughts', 'Correspondence', 'I Cannot Stop Yet', 'Analects, One Year On', 'On the Third Kind of People' and 'The True and False Don Quixotes'; they criticize hypocrisy and posturing, for example calling some people compradors 'wearing false masks'. That is a different thing from the psychological aphorism that a mask worn long enough becomes your face.\n\nA Huxiu compilation lists this line as a fabrication while noting that Lu Xun did discuss 'false masks'. The text We searched lacks his diaries and letters, so We can only show that it is not in his published collections.\n\nThe 'worn so long it will not come off' idea is common online; We could not find who first wrote it in this form.",
+      "origin": "'False mask' really is a favorite image of his, which makes the line plausible, and the harsh ending ('break bones and tear skin') feels Lu Xun-like. We could not find its earliest appearance.",
+      "instead": "To quote Lu Xun on masks, read the specific passages in 'Sudden Thoughts' or 'Analects, One Year On' and cite the essay. This sentence can only be labelled 'attributed online; no source found'.",
+      "sources": [
+        {
+          "label": "Huxiu, compilation of altered and invented 'Lu Xun quotes' (lists this line as a fabrication)",
+          "url": "https://www.huxiu.com/article/4373413.html"
+        },
+        {
+          "label": "Lu Xun, 'Sudden Thoughts' (in 'Huagai ji', contains 'false mask') — Chinese Marxists Internet Archive",
+          "url": "https://www.marxists.org/chinese/reference-books/luxun/08/020.htm"
+        }
+      ]
+    },
+    "scene": "a plain white paper mask resting on a wooden table beside a small hand mirror"
+  },
+  {
+    "id": "luxun-sponge-time",
+    "category": "quote",
+    "belief": "「时间就像海绵里的水，只要愿挤，总还是有的。」——鲁迅",
+    "truth": "在鲁迅的文集里查不到这句话；迄今查不到可靠出处。",
+    "detail": "本站在《鲁迅全集》电子文本（中文马克思主义文库，30个部分，含《热风》《坟》《华盖集》等全部杂文集）里检索「海绵」「愿挤」，零命中。虎嗅整理的文章也说，查鲁迅全集和鲁迅博物馆的文献检索，均找不到出处，将它归为「杜撰或张冠李戴」。\n\n同样要老实说明：这个文本库不含日记和书信，所以只能证明它不在公开发表的文集里，而不能证明他从未说过类似的话。知乎上也有人在问这句话到底是不是鲁迅所说，但本站没有找到有人给出过确切的原始文献。\n\n这句话与他真正写过的关于时间的话（「时间就是性命」）主题相同，可能就是这样被联想到他名下的。",
+    "origin": "时间管理类文章常引用名人名言。这句话比喻形象、口语化，也契合励志语境，很容易被安上鲁迅的名字。本站没有查到最早是谁、在哪里这样写的。",
+    "instead": "想谈挤时间，可以直接说「时间像海绵里的水，挤一挤总会有」这句俗话式的比喻，不署名；或者引鲁迅确实写过的「时间就是性命」（《门外文谈》）。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      {
+        "label": "虎嗅，整理文章（列举被篡改、杜撰的「鲁迅名言」，含此句，称查全集与鲁迅博物馆文献均无）",
+        "url": "https://www.huxiu.com/article/4373413.html"
+      },
+      {
+        "label": "鲁迅，《门外文谈》（《且介亭杂文》）—— 他确实写过的关于时间的话",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/18/008.htm"
+      }
+    ],
+    "en": {
+      "belief": "\"Time is like water in a sponge; if you are willing to squeeze, there is always some.\" —Lu Xun",
+      "truth": "The line is not in Lu Xun's collected works; no reliable source has turned up.",
+      "detail": "We searched the electronic text of the Complete Works (Chinese Marxists Internet Archive, 30 sections, including 'Hot Wind', 'The Grave', 'Huagai ji' and all the other essay collections) for 'sponge' and 'willing to squeeze' and found nothing. A Huxiu compilation likewise says that neither the complete works nor the Lu Xun Museum's retrieval tool yields a source and classes the line as 'invented or misattributed'.\n\nAgain, that text does not contain his diaries and letters, so the claim is only that it is not in his published collections. Some people on Zhihu have asked whether he really said it, but We found nobody giving a concrete original source.\n\nThe theme is close to something he did write ('time is life'), which may be how it got attached to his name.",
+      "origin": "Time-management articles love famous quotations. This one is vivid, colloquial and fits the inspirational genre, so it was easy to put Lu Xun's name on it. We could not find who first wrote it or where.",
+      "instead": "To talk about finding time, you can use the image without a byline; or quote what Lu Xun did write, 'time is life' ('Talks Outside the Gate on Writing').",
+      "sources": [
+        {
+          "label": "Huxiu, compilation of altered and invented 'Lu Xun quotes' (says no source in the complete works or the museum's tool)",
+          "url": "https://www.huxiu.com/article/4373413.html"
+        },
+        {
+          "label": "Lu Xun, 'Talks Outside the Gate on Writing' (in 'Qiejieting zawen') — what he really wrote about time",
+          "url": "https://www.marxists.org/chinese/reference-books/luxun/18/008.htm"
+        }
+      ]
+    },
+    "scene": "a yellow natural sponge in a shallow porcelain basin beside a small hourglass"
+  },
+  {
+    "id": "luxun-child-ox",
+    "category": "quote",
+    "belief": "「俯首甘为孺子牛」是鲁迅表示甘愿为人民大众服务",
+    "truth": "鲁迅这句诗本身只有字面典故，全集注释指向的是《左传》里给孩子当牛的故事；「孺子」是否指人民大众，是后来的解读。",
+    "detail": "诗是《自嘲》（1932年10月12日的日记说，他为柳亚子写条幅，「偷得半联，凑成一律」）：「横眉冷对千夫指，俯首甘为孺子牛。」《鲁迅全集》的注释在「孺子牛」下引了《左传》哀公六年的典故：齐景公曾经口衔绳子扮牛，让儿子荼牵着走。又引清代洪亮吉《北江诗话》：一位钱秀才溺爱三个儿子，门联写着「酒酣或化庄生蝶，饭饱甘为孺子牛」，并说鲁迅条幅里所谓「偷得半联」，指的就是这一联。\n\n也就是说，这句诗的原型是「父亲愿意为孩子俯首当牛」。把「孺子」直接读作「人民大众」，是后来的引申，并不是注释里给出的本义。有文章引用鲁迅书信，说他谈到自己为孩子「加倍服务，为孺子牛耳」，所以「孺子」本义可能就是他的儿子海婴，但本站没有核对那封信的原文。\n\n这样的引申读法流传很广，也未必是错的——诗可以有多重读法。需要记住的只是：这是读法，不是他的明确声明。",
+    "origin": "这两句诗因为气势对仗，被反复引用，在教学和宣传中逐渐固定为「爱憎分明、为民服务」的解释。「偷得半联」的出处和《左传》典故很少被连带提及。",
+    "instead": "想引用，就连同注释说明：「出自《自嘲》(1932),『孺子牛』用《左传》典故，字面是为孩子当牛。」想表达「为人民服务」的读法时，写成「后人常这样解读」。",
+    "stakes": "harmless",
+    "confidence": "debated",
+    "sources": [
+      {
+        "label": "鲁迅，《自嘲》（《集外集》，1932年10月12日）及全集注释 —— 中文马克思主义文库《鲁迅全集》电子文本",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/22/038.htm"
+      },
+      {
+        "label": "鲁迅，《自嘲》（诗词集版本，含日记按语）—— 中文马克思主义文库",
+        "url": "https://www.marxists.org/chinese/reference-books/luxun/30/024.htm"
+      }
+    ],
+    "en": {
+      "belief": "'Head bowed, glad to be an ox for the children' means Lu Xun was glad to serve the people",
+      "truth": "The line itself carries only a literary allusion: the Complete Works' annotation points to a Zuo Zhuan story about playing an ox for a child; reading 'children' as 'the masses' is a later interpretation.",
+      "detail": "The poem is 'Mocking Myself'. His diary for 12 October 1932 says he wrote a scroll for Liu Yazi, having 'stolen half a couplet and stitched it into a regulated poem': 'Cold-browed, I face a thousand pointing fingers; head bowed, I am glad to be an ox for the child.' The annotation in the Complete Works glosses 'ox for the child' with the Zuo Zhuan (Duke Ai, year 6): Duke Jing of Qi once held a rope in his mouth and played an ox for his son Tu to lead. It also cites Hong Liangji's 'Beijiang Poetry Talks': a licentiate named Qian, who doted on his three sons, wrote on his door-couplet 'fed and merry, glad to be an ox for the children', and the annotation says that is the 'half couplet' he stole.\n\nSo the prototype of the line is 'a father willing to bow down and be an ox for his child'. Reading 'child' directly as 'the people' is a later extension, not the gloss given in the annotation. Some articles cite a letter of his about working harder 'to be an ox for the child' as evidence that the child was his son Haiying, but We did not check that letter.\n\nThe extended reading is widespread and not necessarily wrong — poems can bear several readings. It is just a reading, not his stated meaning.",
+      "origin": "The couplet is balanced and forceful, so it was quoted again and again, and in teaching and propaganda settled into 'clear in love and hate, serving the people'. The source of the 'stolen half couplet' and the Zuo Zhuan allusion are seldom quoted along with it.",
+      "instead": "Quote it with its context: 'from \"Mocking Myself\" (1932); \"ox for the child\" uses a Zuo Zhuan allusion — literally, playing an ox for a child.' For the 'serving the people' reading, say 'often interpreted as'.",
+      "sources": [
+        {
+          "label": "Lu Xun, 'Mocking Myself' (1932) and annotations — Chinese Marxists Internet Archive electronic text of the Complete Works",
+          "url": "https://www.marxists.org/chinese/reference-books/luxun/22/038.htm"
+        },
+        {
+          "label": "Lu Xun, 'Mocking Myself' (poetry volume, with diary note) — Chinese Marxists Internet Archive",
+          "url": "https://www.marxists.org/chinese/reference-books/luxun/30/024.htm"
+        }
+      ]
+    },
+    "scene": "a small clay ox figurine beside a child's wooden spinning top and a brush stand"
+  }
+]

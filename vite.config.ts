@@ -27,7 +27,7 @@ function prerenderPlugin(): Plugin {
 }
 
 const DESCRIPTION =
-  '早上不吃饭伤身、洗完头不吹干有湿气、骨头汤补钙……81 条听起来天经地义、但证据并不支持的生活常识，每条附出处。'
+  '早上不吃饭伤身、鲁迅说过的名言、电影里的桥段……一百多条听起来天经地义、但证据并不支持的说法，每条附出处。'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -41,7 +41,7 @@ export default defineConfig({
       // 两边都写会让 precache 清单里出现重复条目。
       manifest: {
         id: '/',
-        name: '其实不是 · 那些你以为对的生活常识',
+        name: '其实不是 · 那些你以为对的常识、名言和故事',
         short_name: '其实不是',
         description: DESCRIPTION,
         lang: 'zh-CN',
@@ -83,6 +83,12 @@ export default defineConfig({
             short_name: '关键时刻',
             url: '/?c=urgent',
             description: '急救类误区，信错了真的有风险',
+          },
+          {
+            name: '名言没说过：被误传的名言',
+            short_name: '名言',
+            url: '/?c=quote',
+            description: '这句话，其实不是他说的',
           },
         ],
       },

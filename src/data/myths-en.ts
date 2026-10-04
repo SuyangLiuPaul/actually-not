@@ -3,6 +3,7 @@
  * 结构字段（category / stakes / related）以 myths.ts 为准，这里只放文字。
  */
 import type { MythText } from '../types'
+import { MYTHS_EN_EXTRA } from './myths-en-extra.ts'
 
 export const MYTHS_EN: Record<string, MythText> = {
   "breakfast": {
@@ -1428,3 +1429,4 @@ export const MYTHS_EN: Record<string, MythText> = {
 },
 }
 
+Object.assign(MYTHS_EN, MYTHS_EN_EXTRA)

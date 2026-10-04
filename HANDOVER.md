@@ -6,7 +6,7 @@
 
 ## 0. 一句话
 
-「其实不是」是一个中英双语静态站点，收录 100 条**听起来天经地义、但证据并不支持**的生活常识
+「其实不是」是一个中英双语静态站点，收录 188 条**听起来天经地义、但证据并不支持**的生活常识
 （早上不吃饭伤身、洗完头不吹干有湿气、骨头汤补钙……），每条附出处。
 中文版在根路径，英文版（Actually, Not）在 `/en` 前缀下，页头可互相切换。
 纯前端，无后端，无数据库，无环境依赖。
@@ -349,7 +349,7 @@ npm run preview
 
 ## 10. 当前状态
 
-- 100 条内容，6 个分类（吃 23 / 身体 23 / 生活 17 / 睡 13 / 关键时刻 13 / 运动 11）
+- 188 条内容，9 个分类（吃 23 / 身体 23 / 睡 13 / 运动 15 / 生活 17 / 关键时刻 13 / 名言没说过 34 / 电影骗了你 22 / 起源是编的 28）
 - 其中 31 条标记为「可能有害」
 - **中英双语**：中文版在根路径，英文版在 `/en` 前缀（`/en`、`/en/quiz`、`/en/{id}`），
   全部 UI 文案在 `src/i18n.ts`，条目翻译在 `src/data/myths-en.ts`；
@@ -369,3 +369,42 @@ npm run preview
 
 可以做的方向（都不是必须的）：继续加条目、给条目加配图、
 做一个「每日一条」的推送、把内容拆成中英双语。
+
+---
+
+<!-- BEGIN CONTENT_PIPELINE -->
+## 11. 新板块与内容管线（2026-10-04）
+
+站点从「100 条生活常识」扩成多板块：`quote` 名言没说过（含「鲁迅没说过」）、`film` 电影骗了你、
+`origin` 起源是编的、`word` 这个词你用错了、`why` 为什么长这样。**沿用同一个卡片引擎**，只是多了分类，
+没有新路由；分类在 `src/types.ts`（中文名、emoji）、`src/i18n.ts`（英文名、强调色）、
+`scripts/generate-og.mjs`（OG 图左上角的板块名）三处登记，加新板块这三处都要动。
+
+**新板块的条目不写在 `myths.ts` 里**，走一条「研究 → 审稿 → 合并」的管线：
+
+```
+content-staging/BRIEF.md          研究员任务书（红线、格式、交付）——给 AI 研究员读
+content-staging/<name>.json       研究员交稿（中英文 + scene + verification，不发布）
+content-staging/<name>.log.md     采用 / 放弃的候选及原因（放弃的也留着，免得重查）
+content-staging/approve.py        审稿放行：去研究员口吻、半角标点转全角、补/删出处、跳过重复
+                                  → content-staging/approved/<name>.json
+content-staging/related-pairs.json  相关条目的成对链接（合并时自动做成双向）
+scripts/merge-staging.mjs         approved/*.json → src/data/myths-extra.ts + myths-en-extra.ts（别手改产物）
+```
+
+流程：`python3 content-staging/approve.py <name> ...` → `node scripts/merge-staging.mjs` → `npm run og` → `npm test`。
+`myths.ts` 末尾把 `MYTHS_EXTRA` 并进 `MYTHS`，`myths-en.ts` 同理，所以其它代码（页面、预渲染、测试、OG、sitemap）完全不用改。
+
+**研究员（AI）产出必须人工审。** 审稿时重点看：出处是否真能打开且支持结论；「查无出处」有没有被写成「是假的」
+（区分 `strong` 确切真源 / `limited` 只证明查无 / `debated` 有分歧）；有没有残留「我核对了…」这类研究员口吻
+（`approve.py` 的 `voice()` 会清洗常见句式，剩下的要人眼看）；涉及急救的有没有「先打急救电话」。
+
+**插画**：`public/illu/{id}.webp`。新板块的插画用 ChatGPT 图像生成（风格词和流程见 `PLAN-2026-10-04.md`「图片方案」），
+下载后用 `node scripts/illu-import.mjs <png> <id>` 裁成 960×400 webp，原图存档在 `content-staging/illu-raw/`；
+`node scripts/illu-sheet.mjs out.png id1 id2 ...` 拼总览图做目视检查。**页面脚本不允许直接回传图片数据，所以图片是点
+ChatGPT 的下载按钮存到 ~/Downloads 再导入的。** 旧的 104 条是 pollinations.ai 生成的 640×640 方图，质量参差，可以
+按同样流程逐步换掉。`scripts/illu-svg/` 是手绘 SVG 兜底库（25 个图元），ChatGPT 额度用完时用。
+卡片和详情页都是横幅裁切（object-cover），主体要放在画面中间。
+
+**OG 图**：左上角红字现在是板块名，页脚统一为「其实不是 · 每条附出处 · actually-not.com」。
+<!-- END CONTENT_PIPELINE -->

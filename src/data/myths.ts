@@ -1,4 +1,5 @@
 import type { Myth } from '../types'
+import { MYTHS_EXTRA } from './myths-extra.ts'
 
 /**
  * 每条都尽量做到：结论有出处、承认不确定的地方、说明这个说法当初是怎么来的。
@@ -2069,7 +2070,7 @@ export const MYTHS: Myth[] = [
         url: 'https://www.cdc.gov/drowning/prevention/index.html',
       },
     ],
-    related: ['seizure-mouth'],
+    related: ['seizure-mouth', 'film-cold-water-minutes'],
   },
   {
     id: 'heimlich-baby',
@@ -2114,7 +2115,7 @@ export const MYTHS: Myth[] = [
         url: 'https://pubmed.ncbi.nlm.nih.gov/34223300/',
       },
     ],
-    related: ['heimlich-baby', 'seizure-mouth', 'electric-shock-pull'],
+    related: ['heimlich-baby', 'seizure-mouth', 'electric-shock-pull', 'film-cpr-always-works'],
   },
   {
     id: 'stroke-needle',
@@ -2212,6 +2213,9 @@ export const MYTHS: Myth[] = [
         label: '触电急救原则（先断电后施救）—— 见红十字会急救教程（本条无稳定公开链接）',
       },
     ],
-    related: ['cpr-hard'],
+    related: ['cpr-hard', 'film-electric-shock-thrown-back'],
   },
 ]
+
+// 新板块（名言 / 电影 / 起源）的条目单独成文件，这里并入同一个列表
+MYTHS.push(...MYTHS_EXTRA)

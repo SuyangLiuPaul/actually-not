@@ -1,0 +1,557 @@
+[
+  {
+    "id": "origin-dragon-boat-qu-yuan",
+    "category": "origin",
+    "belief": "端午节吃粽子、赛龙舟，是为了纪念投江的屈原",
+    "truth": "屈原的故事是后来叠加到端午上的一层说法；五月初五的驱邪、祭龙等习俗，史料和学者的研究都指向它早于屈原的纪念。",
+    "detail": "屈原生活在战国时期（约公元前 340—前 278 年）。今天最流行的说法是：楚人为了打捞他或喂饱江里的鱼，划船赛渡、往江里投米团，于是有了龙舟与粽子。但英文维基对该节日的综述就指出，一些现代研究认为屈原、伍子胥的故事，可能是后来才叠加到既有节日习俗之上的。\n\n历史上其实有好几位「被纪念的人」：除屈原外，东汉的《曹娥碑》记有「五月五日，时迎伍君」，说的是吴地祭祀伍子胥；东汉孝女曹娥的故事也与这一天相连。同时，更早的文献里，五月本身就被视为需要驱疫避邪的时节——中文维基整理的材料提到《夏小正》里五月有蓄兰草沐浴的记载，《风俗通》把五月称作「恶月」。\n\n闻一多在《端午考》等文中提出另一种解释：端午最初是长江下游吴越民族祭龙的节日，龙舟竞渡是图腾祭祀的遗存。这一「祭龙说」影响很大，但后来的学者认为它并不能完全令人信服。把屈原与五月五日、投粽联系起来的最早明确文字，各资料说法不一（有的追到汉代，有的指向南朝梁吴均的《续齐谐记》），无论哪种，都已在屈原身后很久。所以较稳妥的说法是：端午的起源本身尚无定论，屈原是其中最动人的一层，而不是唯一或最早的一层。",
+    "origin": "屈原的忠诚与悲剧在后世深入人心，司马迁的《史记》也为他立传；后人把一个早已存在的、与驱邪、水与龙有关的节日，与这位诗人的结局联系起来，逐渐成为官方和民间最通行的解释，成为教材和节日宣传里最常见的解释。",
+    "instead": "可以说：「端午的起源有多种说法，屈原是最广为人知的一种；这个节日的驱邪、祭龙等习俗很可能比屈原更早。」纪念屈原本身并无不妥——只是不必把它说成唯一的来历。",
+    "stakes": "harmless",
+    "confidence": "debated",
+    "sources": [
+      {
+        "label": "Wikipedia —— Duanwu Festival（起源部分：屈原、伍子胥、曹娥与更早的节日说）",
+        "url": "https://en.wikipedia.org/wiki/Duanwu_Festival"
+      },
+      {
+        "label": "中文维基百科 —— 端午节（起源多元说；《夏小正》《风俗通》与屈原说的文献）",
+        "url": "https://zh.wikipedia.org/wiki/端午节"
+      },
+      {
+        "label": "清华大学 —— 闻一多《端午考》与「祭龙说」的介绍",
+        "url": "https://www.tsinghua.edu.cn/info/1365/81394.htm"
+      }
+    ],
+    "en": {
+      "belief": "People eat zongzi and race dragon boats at Duanwu to commemorate the drowned poet Qu Yuan",
+      "truth": "The Qu Yuan story is a layer added to Duanwu later; both the sources and scholars point to earlier customs on the fifth day of the fifth month, such as warding off evil and dragon rites.",
+      "detail": "Qu Yuan lived in the Warring States period (c. 340–278 BC). The best-known tale says the people of Chu raced boats to search for him, or threw rice into the river so fish would spare his body, giving us dragon boats and zongzi. But Wikipedia's survey of the festival notes that some modern research suggests the stories of Qu Yuan or Wu Zixu were superimposed onto pre-existing holiday traditions.\n\nSeveral people are in fact commemorated on this day. Beyond Qu Yuan, the Han-dynasty Stele of Cao E records the line 'on the fifth of the fifth month, welcoming Lord Wu', referring to rites for Wu Zixu in the Wu region, and the filial daughter Cao E is tied to the date too. Meanwhile, earlier texts treat the fifth month itself as a time for warding off pestilence: the Chinese Wikipedia summary points to the Xia Xiaozheng's mention of bathing with orchid herbs in the fifth month, and Fengsu Tongyi calling it an 'evil month'.\n\nWen Yiduo argued in 'Duanwu kao' and elsewhere that the day began as a dragon-totem festival of the Wu-Yue peoples of the lower Yangtze, with dragon-boat racing as a survival of totem rites. The theory has been very influential, though later scholars found it not fully convincing. The earliest explicit text tying Qu Yuan, the fifth day and thrown rice together is dated differently by different sources (some say the Han, others point to Wu Jun's Xu Qixie ji of the Liang dynasty), but either way it comes long after Qu Yuan's life. A safe summary: the festival's origin is unsettled, and Qu Yuan is its most moving layer rather than its only or earliest one.",
+      "origin": "Qu Yuan's loyalty and tragic end struck a deep chord, and Sima Qian gave him a biography in the Shiji. Later generations tied a pre-existing festival about warding off evil, water and dragons to his fate, and that account became the most common explanation in schools and festival publicity.",
+      "instead": "Say: 'Duanwu has several origin stories, and Qu Yuan's is the best known; its protective and dragon-related customs are probably older than him.' Remembering Qu Yuan at the festival is perfectly fine; just don't present it as the one and only origin.",
+      "sources": [
+        {
+          "label": "Wikipedia — Duanwu Festival (origins: Qu Yuan, Wu Zixu, Cao E and earlier-festival theories)",
+          "url": "https://en.wikipedia.org/wiki/Duanwu_Festival"
+        },
+        {
+          "label": "Chinese Wikipedia — Duanwu Festival (multiple origin theories; Xia Xiaozheng, Fengsu Tongyi and the Qu Yuan texts)",
+          "url": "https://zh.wikipedia.org/wiki/端午节"
+        },
+        {
+          "label": "Tsinghua University — introduction to Wen Yiduo's 'Duanwu kao' and the dragon-worship theory",
+          "url": "https://www.tsinghua.edu.cn/info/1365/81394.htm"
+        }
+      ]
+    },
+    "scene": "a bamboo-leaf wrapped rice dumpling tied with string beside a small carved wooden dragon boat model"
+  },
+  {
+    "id": "origin-vena-amoris-ring-finger",
+    "category": "origin",
+    "belief": "婚戒戴在左手无名指，是因为这根手指有一条「爱之血管」直通心脏",
+    "truth": "没有哪根手指有直通心脏的专属血管；这个解释是古代作家留下的说法，「vena amoris」这个拉丁词本身要到 1686 年才在英文文献里出现。",
+    "detail": "古罗马作家马克罗比乌斯（约公元 400 年，《农神节》）记录了一位医生的说法：有一条神经从心脏出发，通到左手无名指的指端。他说的是神经而不是血管。到了 7 世纪，塞维利亚的伊西多尔在讲礼仪的著作里写道：人们开始把戒指戴在从拇指数起的第四指上，因为那里有一条血管通向心脏。12 世纪的《格拉蒂安教令集》和索尔兹伯里的约翰也有类似说法——可见这是一个反复被转抄的解剖学想象。\n\n「vena amoris」（爱之静脉）这个词，据英文维基整理，目前所知最早见于英国教会法学者亨利·斯温伯恩 1686 年出版的婚约专著，他引用的是未点名的古代典籍，并把来源归到埃及，多半指的是马克罗比乌斯。威廉·哈维后来对血液循环的研究，使这种「某根手指有专线通向心脏」的想法站不住脚。\n\n需要留余地的是：这个传说被用来解释戒指的位置，但为什么西方传统最终选了这根手指，并没有可靠的单一答案；现有史料只能证明「古人和中世纪作家这样解释过」，不能证明这就是习俗的真正起因。",
+    "origin": "这一说法在古代晚期到中世纪的著作里反复出现，由神经变成血管，又在近现代的婚戒文化里被改名为「爱之静脉」，成为珠宝广告和婚礼文章里的常客。",
+    "instead": "可以说：「古代和中世纪有人这样解释过戴戒指的位置，这是一个浪漫的传说，不是解剖学事实。」想戴在哪根手指都行，婚戒的意义在于两个人。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Wikipedia —— Vena amoris（马克罗比乌斯、伊西多尔、斯温伯恩 1686）",
+        "url": "https://en.wikipedia.org/wiki/Vena_amoris"
+      },
+      {
+        "label": "Word Histories —— origin of 'the ring finger' and of French 'l'annulaire'（马克罗比乌斯、伊西多尔、索尔兹伯里的约翰、《格拉蒂安教令集》）",
+        "url": "https://wordhistories.net/2016/12/07/annulaire/"
+      }
+    ],
+    "en": {
+      "belief": "The wedding ring goes on the left ring finger because it has a 'vein of love' running straight to the heart",
+      "truth": "No finger has a special vessel running straight to the heart; the explanation is an old writers' claim, and the Latin phrase 'vena amoris' itself first appears in English only in 1686.",
+      "detail": "The Roman writer Macrobius (c. AD 400, Saturnalia) reported a doctor's claim that a nerve runs from the heart to the tip of the left ring finger. He said nerve, not vein. By the 7th century, Isidore of Seville wrote that people had begun wearing a ring on the fourth finger counting from the thumb because a vein there links it to the heart. The 12th-century Decretum of Gratian and John of Salisbury have similar passages, so this was an anatomical idea copied from book to book.\n\nThe term 'vena amoris' is, according to Wikipedia, first recorded in Henry Swinburne's treatise on marriage contracts, published in 1686; he cites unnamed ancient sources and an Egyptian connection, most likely meaning Macrobius. William Harvey's work on the circulation later left the idea of a dedicated finger-to-heart line untenable.\n\nOne caution: the story is used to explain where the ring goes, but there is no reliable single answer for why the tradition settled on that finger. The sources only show that ancient and medieval writers explained it this way, not that this was the real cause of the custom.",
+      "origin": "The claim recurs in late-antique and medieval writing, shifts from nerve to vein, and was later renamed 'vein of love' in modern wedding culture, where it is a staple of jewellery marketing and wedding articles.",
+      "instead": "Say: 'Ancient and medieval writers explained the ring finger this way; it's a romantic tradition, not anatomy.' Wear a ring on any finger you like; what matters is what it means to the two people.",
+      "sources": [
+        {
+          "label": "Wikipedia — Vena amoris (Macrobius, Isidore, Swinburne 1686)",
+          "url": "https://en.wikipedia.org/wiki/Vena_amoris"
+        },
+        {
+          "label": "Word Histories — origin of 'the ring finger' and of French 'l'annulaire' (Macrobius, Isidore, John of Salisbury, Decretum Gratiani)",
+          "url": "https://wordhistories.net/2016/12/07/annulaire/"
+        }
+      ]
+    },
+    "scene": "a plain gold ring resting on an open anatomy-style book beside a red thread"
+  },
+  {
+    "id": "origin-valentine-lupercalia",
+    "category": "origin",
+    "belief": "情人节源自古罗马牧神节，或是为了纪念为恋人秘密证婚而殉道的圣瓦伦丁",
+    "truth": "圣瓦伦丁生平几乎无考，牧神节的联系缺乏证据；有记录可查的「瓦伦丁节与爱情」的联系，最早出自乔叟 14 世纪 80 年代前后的诗。",
+    "detail": "二月十四日作为纪念名叫瓦伦丁的殉道者的日子，在 8 世纪的《格拉修圣礼书》里已有记载。但维基百科引用学者的话说，除了名字和葬在弗拉米尼亚大道、日期为 2 月 14 日之外，我们对瓦伦丁几乎一无所知；History.com 引用的研究者也说，早期殉道记载里「没有一个字」谈到浪漫。\n\n牧神节（Lupercalia，约 2 月 13—15 日）的说法也站不住：布鲁斯·福布斯等学者指出，把圣瓦伦丁节与牧神节的洁净仪式联系起来「没有证据」。学者 Jack Oruch 和 Henry Ansgar Kelly 的研究显示，这类推测大多出自 18 世纪古物学家（如 Alban Butler），后来被当成了事实。History.com 也说，早期记载并不支持牧神节有浪漫色彩的现代说法。\n\n目前能查到的第一次把「圣瓦伦丁节」与恋爱联系起来的，是乔叟的《百鸟会议》（约 1382 年），诗里说鸟儿在这一天挑选配偶。Kelly 还提出，乔叟指的可能是另一位瓦伦丁的纪念日（5 月 3 日），但 2 月 14 日更为人熟悉，才成了浪漫节日的日期——这一点学界仍有讨论。",
+    "origin": "18 世纪的古物学者把圣瓦伦丁节与罗马牧神节拉到一起，此后这类说法在通俗读物里反复出现，近现代商业化的情人节又把它们当成现成的来历。",
+    "instead": "可以说：「情人节与爱情的联系，目前最早见于 14 世纪的乔叟；牧神节和殉道恋爱故事都没有可靠的史料支持。」说「传说中」比说「事实上」更贴近证据。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Wikipedia —— Valentine's Day（圣瓦伦丁、乔叟《百鸟会议》、牧神节说的学术评价）",
+        "url": "https://en.wikipedia.org/wiki/Valentine%27s_Day"
+      },
+      {
+        "label": "History.com —— Livia Gershon, The Real St. Valentine and the medieval romance of the holiday",
+        "url": "https://www.history.com/articles/real-st-valentine-medieval"
+      }
+    ],
+    "en": {
+      "belief": "Valentine's Day comes from the Roman festival of Lupercalia, or honors a saint martyred for secretly marrying lovers",
+      "truth": "Almost nothing is known of St Valentine, the Lupercalia link lacks evidence, and the earliest recorded tie between Valentine's feast and romance is Chaucer in the 1380s.",
+      "detail": "Feb 14 as a feast for martyrs named Valentine is recorded in the 8th-century Gelasian Sacramentary. But Wikipedia, relaying scholars, says that apart from his name and burial on the Via Flaminia on Feb 14, nothing is known of him; History.com quotes a researcher saying the early martyrdom accounts have 'not a word' about romance.\n\nThe Lupercalia claim (c. Feb 13–15) fares no better: Bruce Forbes and others say there is no evidence linking St Valentine's Day to Lupercalia's purification rites. Jack Oruch and Henry Ansgar Kelly traced such speculation largely to 18th-century antiquaries such as Alban Butler, from whom it hardened into 'fact'. History.com likewise says early accounts do not support the modern claim that Lupercalia was romantic.\n\nThe first recorded link between St Valentine's Day and love is Chaucer's Parliament of Fowls (c. 1382), where birds choose mates on the day. Kelly suggests Chaucer may have meant a different Valentine, whose feast is May 3, but that Feb 14 was better known and so became the romantic date; that part is still discussed by scholars.",
+      "origin": "18th-century antiquaries joined St Valentine's Day to Lupercalia; such claims were then repeated in popular writing, and the commercial holiday later treated them as a ready-made origin.",
+      "instead": "Say: 'The earliest known link between Valentine's Day and romance is Chaucer in the 14th century; the Lupercalia and martyr-romance stories have no solid sources.' 'According to legend' fits the evidence better than 'in fact'.",
+      "sources": [
+        {
+          "label": "Wikipedia — Valentine's Day (St Valentine, Chaucer's Parliament of Fowls, scholarly assessment of Lupercalia)",
+          "url": "https://en.wikipedia.org/wiki/Valentine%27s_Day"
+        },
+        {
+          "label": "History.com — Livia Gershon, The real St. Valentine and the medieval romance of the holiday",
+          "url": "https://www.history.com/articles/real-st-valentine-medieval"
+        }
+      ]
+    },
+    "scene": "a folded paper love letter with a red wax seal beside a small bird figurine on a wooden table"
+  },
+  {
+    "id": "origin-watt-kettle",
+    "category": "origin",
+    "belief": "瓦特看到水壶盖被蒸汽顶起来，于是发明了蒸汽机",
+    "truth": "蒸汽机在瓦特之前就已有纽可门机；瓦特的贡献是 1765 年的分离冷凝器等改进，水壶灵感的故事来源不明，更像后人添上的。",
+    "detail": "英文维基说得很明确：瓦特并没有发明蒸汽机，而是大幅提高了既有的纽可门蒸汽机的效率。1763 年他在修理一台纽可门机模型时发现，每一个循环里大约四分之三的蒸汽热量都耗在了重新加热汽缸上；1765 年 5 月他在格拉斯哥草地散步时想到了分离冷凝器，让汽缸保持高温，燃料效率最高可达纽可门机的约五倍。\n\n至于水壶的故事：维基说这个故事可能是瓦特的儿子为美化父亲而编的；Science Museum 的文章则提到，馆里确实收藏一件被称为瓦特「philosophising steam kettle」（用于思考的蒸汽壶）的物件，并转述了「瓦特的蒸汽计划来自观察烧水壶」这一说法。能说的只有：「看到壶盖跳动就发明了蒸汽机」找不到可靠的当时记录。",
+    "origin": "19 世纪人们热衷于为大发明家配上一个顿悟的瞬间（与牛顿的苹果是同类故事）；水壶的故事至今流传，连博物馆也收藏了一件被称为「瓦特蒸汽壶」的物件。",
+    "instead": "可以说：「瓦特没有发明蒸汽机，他把已有的纽可门机改进得高效实用，关键是分离冷凝器。」水壶故事可以当作后人的传说来讲，并注明出处不明。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      {
+        "label": "Wikipedia —— James Watt（水壶传说；纽可门机；分离冷凝器 1765）",
+        "url": "https://en.wikipedia.org/wiki/James_Watt"
+      },
+      {
+        "label": "Science Museum Group blog —— Remembering James Watt（「philosophising steam kettle」与水壶故事）",
+        "url": "https://blog.sciencemuseum.org.uk/remembering-james-watt/"
+      }
+    ],
+    "en": {
+      "belief": "James Watt saw a kettle lid rattle with steam and thereby invented the steam engine",
+      "truth": "The Newcomen engine existed before Watt; his contribution was improvements such as the separate condenser (1765), and the kettle-inspiration story has an unclear source and looks like a later addition.",
+      "detail": "Wikipedia is explicit: Watt did not invent the steam engine but greatly improved the efficiency of the existing Newcomen engine. In 1763, repairing a Newcomen model, he found that about three-quarters of the steam's thermal energy went into reheating the cylinder each cycle; in May 1765, crossing Glasgow Green, he conceived the separate condenser, keeping the cylinder hot and making engines up to about five times as fuel-efficient.\n\nAs for the kettle: Wikipedia suggests the story may have been created by Watt's son to embellish his father's legacy. The Science Museum's blog notes that it holds an object known as Watt's 'philosophising steam kettle' and relays the story that his steam work was inspired by a boiling kettle. All that can be said is that no reliable contemporary record of 'saw the lid lift and invented the engine' has been found.",
+      "origin": "The 19th century liked to give great inventors a single flash of insight (the same kind of story as Newton's apple). The kettle tale is still told today, and a museum even keeps an object known as Watt's 'philosophising steam kettle'.",
+      "instead": "Say: 'Watt didn't invent the steam engine; he made the existing Newcomen engine efficient, chiefly with the separate condenser.' The kettle can be told as a later legend with an unclear source.",
+      "sources": [
+        {
+          "label": "Wikipedia — James Watt (kettle story; Newcomen engine; separate condenser, 1765)",
+          "url": "https://en.wikipedia.org/wiki/James_Watt"
+        },
+        {
+          "label": "Science Museum Group blog — Remembering James Watt ('philosophising steam kettle' and the kettle story)",
+          "url": "https://blog.sciencemuseum.org.uk/remembering-james-watt/"
+        }
+      ]
+    },
+    "scene": "a copper kettle with lid slightly lifted by steam beside a brass piston model and a small ruler"
+  },
+  {
+    "id": "origin-edison-invented-lightbulb",
+    "category": "origin",
+    "belief": "灯泡是爱迪生发明的",
+    "truth": "爱迪生之前已有多人做出白炽灯，斯旺 1878—1879 年就演示了碳丝灯；爱迪生的贡献是让它耐用、实用并配上整套供电系统。",
+    "detail": "Edison Papers 项目（罗格斯大学）的介绍写道，爱迪生 1878 年开始研究之前，实验者已摸索了约四十年，难点是让灯丝既发光又不熔化、不氧化、不耗电过多。更早的有：1802 年戴维用铂条通电发光，1840 年德拉鲁把铂丝封进真空管；英国的约瑟夫·斯旺 1878 年 12 月演示了碳棒灯，1879 年初重复演示。\n\n爱迪生做的是把它变成能用的产品：他判断灯需要高电阻以省下昂贵的铜导线；1879 年 3 月起把灯丝封进真空泡中；1879 年 10 月 21—22 日用碳化的棉线在真空里点亮了灯（维基记作持续约 13.5 小时），后来发现碳化竹丝可以亮 1200 小时以上；灯泡还被接成并联电路，使一盏灯熄灭不影响其他灯。\n\n专利上也不是一边倒：英国的两家公司后来合并成 Edison and Swan United Electric Company；在美国，专利局 1883 年曾以在先技术为由裁定爱迪生的专利无效，1889 年法官才对「高电阻碳丝」这一权利要求给予支持。另外有一个常见的先驱说法，海因里希·戈贝尔 1854 年的灯，据 2007 年的研究结论是虚构的。",
+    "origin": "爱迪生善于把一项技术包装、量产并讲成故事，门洛帕克实验室和随后建成的电力系统让他成了「发明电灯的人」，教科书和媒体把一个团队、多国发明者接力的过程，缩成了一个人的名字。",
+    "instead": "可以说：「爱迪生没有发明白炽灯，他和团队把它做成了耐用、可商用、能接入电网的产品。」同时可以提到斯旺——他们的英国公司后来合并。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Thomas A. Edison Papers (Rutgers) —— Electric Lamp（此前四十年的实验者；高电阻、真空、碳化棉线 1879 年 10 月、并联）",
+        "url": "https://edison.rutgers.edu/life-of-edison/inventions?catid=91&id=531%3Aelectric-lamp&view=article"
+      },
+      {
+        "label": "Wikipedia —— Incandescent light bulb（戴维、德拉鲁、斯旺、戈贝尔、专利之争）",
+        "url": "https://en.wikipedia.org/wiki/Incandescent_light_bulb"
+      }
+    ],
+    "en": {
+      "belief": "Thomas Edison invented the light bulb",
+      "truth": "Several people had made incandescent lamps before Edison, and Swan demonstrated a carbon-filament lamp in 1878–79; Edison's achievement was making it durable, practical and part of a whole supply system.",
+      "detail": "The Edison Papers project (Rutgers) says experimenters had struggled for about forty years before Edison began in 1878; the problem was getting a filament hot enough to give light without melting, oxidizing or drawing too much power. Earlier work includes Davy's platinum strip in 1802, De la Rue's platinum coil in a vacuum tube in 1840, and Joseph Swan in Britain, who demonstrated a carbon-rod lamp in December 1878 and again in early 1879.\n\nWhat Edison did was turn it into a product: he reasoned that lamps needed high resistance to save costly copper; from March 1879 he isolated the filament in a vacuum bulb; on 21–22 October 1879 a carbonized cotton thread glowed in vacuum (Wikipedia records about 13.5 hours), and he later found carbonized bamboo could last over 1,200 hours; and the lamps were wired in parallel so one could go out without affecting the others.\n\nPatents were not one-sided either: the two companies merged in Britain as the Edison and Swan United Electric Company; in the US the Patent Office in 1883 ruled Edison's patents invalid on prior art, and only in 1889 did a judge uphold the claim to a 'filament of carbon of high resistance'. Another commonly cited forerunner, Heinrich Göbel's 1850s lamps, was concluded by 2007 research to be fictitious.",
+      "origin": "Edison was good at packaging, manufacturing and storytelling; Menlo Park and the power system built around it made him 'the man who invented the lamp', and textbooks and press compressed a relay of inventors in several countries into one name.",
+      "instead": "Say: 'Edison didn't invent the incandescent lamp; he and his team made it durable, commercial and connectable to a grid.' Mention Swan too, whose British company merged with Edison's.",
+      "sources": [
+        {
+          "label": "Thomas A. Edison Papers (Rutgers) — Electric Lamp (forty years of earlier experiments; high resistance, vacuum, carbonized cotton Oct 1879, parallel circuits)",
+          "url": "https://edison.rutgers.edu/life-of-edison/inventions?catid=91&id=531%3Aelectric-lamp&view=article"
+        },
+        {
+          "label": "Wikipedia — Incandescent light bulb (Davy, De la Rue, Swan, Göbel, patent disputes)",
+          "url": "https://en.wikipedia.org/wiki/Incandescent_light_bulb"
+        }
+      ]
+    },
+    "scene": "an early carbon-filament glass bulb on a workbench beside a coil of copper wire and a small battery"
+  },
+  {
+    "id": "origin-archimedes-eureka-bath",
+    "category": "origin",
+    "belief": "阿基米德在澡盆里发现浮力原理，光着身子冲出去大喊「尤里卡」",
+    "truth": "这个故事最早见于阿基米德身后约两个世纪的维特鲁威，不见于他自己的著作；故事里的测量方法是否可行，学界一直有争论。",
+    "detail": "维特鲁威在《建筑十书》第九卷序言里讲了这个故事：叙拉古的国王希罗委托金匠做一顶金冠，怀疑金匠掺了银，让阿基米德查验；阿基米德入浴时看到水溢出，悟到办法，光着身子跑回家，一遍遍喊着希腊语「εὑρηκα」（我找到了）。英文维基指出，这则轶事并不出现在阿基米德任何一部留存下来的数学著作里，讲述者维特鲁威比他晚了大约两个世纪。\n\n伽利略博物馆的展览介绍说，维特鲁威记述的方法「自古以来就引发激烈的学术争论」。维基百科引述的批评之一是：金冠若只掺了少量银，排水的差别很小，当时的测量手段很难分辨。另一份古代材料（匿名的《称重之诗》，约 5 世纪）描述的是用天平把物体浸入水里比较，这种做法更接近阿基米德在《论浮体》里讲的原理。\n\n因此比较稳妥的看法是：浮力原理确实属于阿基米德，但「澡盆顿悟、大喊尤里卡」的具体场景是后来的传说，真假和细节无法从当时的记录里证实。",
+    "origin": "这则故事经维特鲁威和后来的普鲁塔克等人转述，成了「灵光一现」的经典范例；到近现代，它被写进教科书和科普读物，细节日益统一。",
+    "instead": "可以说：「阿基米德的浮力原理有他自己的著作为证；澡盆与金冠的故事出自两个世纪后的维特鲁威，更像一个流传的传说。」",
+    "stakes": "harmless",
+    "confidence": "debated",
+    "sources": [
+      {
+        "label": "Vitruvius, De Architectura, Book IX 序言（Penelope / University of Chicago 的 Thayer 版）",
+        "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Vitruvius/9*.html"
+      },
+      {
+        "label": "Wikipedia —— Archimedes（金冠故事的来源与不见于其著作；《论浮体》；《称重之诗》）",
+        "url": "https://en.wikipedia.org/wiki/Archimedes"
+      },
+      {
+        "label": "Museo Galileo —— Vitruvius and Archimedes（维特鲁威记述方法的学术争论）",
+        "url": "https://exhibits.museogalileo.it/archimedes/section/VitruviusArchimedes.html"
+      },
+      {
+        "label": "Wikipedia —— Eureka (word)（金冠排水差异难以测量的批评；维特鲁威与普鲁塔克的转述）",
+        "url": "https://en.wikipedia.org/wiki/Eureka_(word)"
+      }
+    ],
+    "en": {
+      "belief": "Archimedes discovered buoyancy in his bath and ran naked through the streets shouting 'Eureka'",
+      "truth": "The story first appears in Vitruvius, about two centuries after Archimedes, and not in his own works; whether the measurement it describes could actually work has long been debated.",
+      "detail": "Vitruvius tells it in the preface to Book IX of De Architectura: King Hiero of Syracuse commissioned a gold votive crown, suspected the goldsmith of mixing in silver, and asked Archimedes to examine it. Entering a bath, Archimedes saw the water overflow, grasped the method, leapt out, ran home naked and kept shouting the Greek 'εὑρηκα' ('I have found it'). Wikipedia notes that the anecdote appears in none of Archimedes' surviving mathematical works and that Vitruvius wrote around two centuries later.\n\nThe Museo Galileo exhibit says the method Vitruvius attributes to Archimedes 'has been the focus of lively scholarly debate ever since'. One criticism Wikipedia relays is that a crown with only a little silver would displace a barely different volume of water, hard to detect with ancient tools. Another ancient source, the anonymous poem Carmen de Ponderibus (c. 5th century), describes weighing the objects on a balance immersed in water, closer to the principle in Archimedes' On Floating Bodies.\n\nA safe reading is that the buoyancy principle is Archimedes' own, documented in his writings, while the bathtub scene and the shout are a later legend whose details cannot be checked against contemporary records.",
+      "origin": "The tale was passed on by Vitruvius and later writers such as Plutarch and became the classic picture of the sudden flash of insight; in modern times textbooks and popular science retold it until the details looked settled.",
+      "instead": "Say: 'The buoyancy principle is Archimedes' own, in his writings; the bath-and-crown story comes from Vitruvius two centuries later and is best told as a legend.'",
+      "sources": [
+        {
+          "label": "Vitruvius, De Architectura, Book IX preface (Thayer edition, University of Chicago)",
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Vitruvius/9*.html"
+        },
+        {
+          "label": "Wikipedia — Archimedes (source of the crown story, absence from his works, On Floating Bodies, Carmen de Ponderibus)",
+          "url": "https://en.wikipedia.org/wiki/Archimedes"
+        },
+        {
+          "label": "Museo Galileo — Vitruvius and Archimedes (scholarly debate over the method)",
+          "url": "https://exhibits.museogalileo.it/archimedes/section/VitruviusArchimedes.html"
+        },
+        {
+          "label": "Wikipedia — Eureka (word) (criticism that the displacement difference would be hard to measure; Vitruvius and Plutarch)",
+          "url": "https://en.wikipedia.org/wiki/Eureka_(word)"
+        }
+      ]
+    },
+    "scene": "a ceramic bathtub with water overflowing beside a gold wreath and a small balance scale"
+  },
+  {
+    "id": "origin-nian-beast",
+    "category": "origin",
+    "belief": "春节放鞭炮、贴红对联，是因为古时候有凶猛的「年兽」，人们用红色和响声把它吓跑",
+    "truth": "「年兽」故事在古籍里查不到；目前能查到的最早文字记录出现在 20 世纪 30 年代，通行版本要到 1980 年的报纸文章才定型。",
+    "detail": "民俗研究者祝淳翔的考察（澎湃新闻刊载）梳理了目前可见的文字线索：1933 年 1 月，孙玉声（海上漱石生）在《金刚钻》报上的《沪壖话旧录》里，提到一个与紫微星年画有关、「似狗非狗」被锁在石柱上的怪物；1939 年 12 月 31 日《申报》刊出署名「申」的《过年的传说》；1980 年 2 月 16 日《人民日报》刊出赵慈风、康新民的《过年的传说和风俗》，确立了今天人人熟悉的版本——年兽怕响声、怕红色、怕火。\n\n中国作家网转述的研究也说，年兽故事最早大约只能追溯到 20 世纪 30 年代，此前长期只在民间口头流传，没有权威的文字记录，所以各地版本不一；是 80 年代以后通过报刊和通俗读物，才逐渐统一并流行起来。\n\n要留余地的是：「查不到古籍记载」不等于「古时候绝对没有人这样讲过」，口头传说本来就难留痕迹。研究者的推测是，它可能由紫微星年画里的神兽，加上「年关」（年底逼债）的说法演变而来。可以确定的是，把它说成「几千年前就有」的古老起源，目前没有文字证据。",
+    "origin": "这个故事经 20 世纪的报刊、连环画和后来的动画反复讲述，逐渐成为解释春节习俗（放鞭炮、贴红、守岁）的「标准答案」。",
+    "instead": "可以说：「年兽是一个流传很广的故事，但目前最早的文字记录只到 20 世纪 30 年代。」讲给孩子听时当故事讲就好。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      {
+        "label": "澎湃新闻 —— 祝淳翔对「年兽」传说文献来源的考察（《金刚钻》1933、《申报》1939、《人民日报》1980）",
+        "url": "https://www.thepaper.cn/newsDetail_forward_2778438"
+      },
+      {
+        "label": "中国作家网 —— 关于年兽传说来源与最早记载的文章（2025）",
+        "url": "https://www.chinawriter.com.cn/n1/2025/0209/c442005-40415244.html"
+      }
+    ],
+    "en": {
+      "belief": "Firecrackers and red couplets at Spring Festival come from scaring away a fierce monster called Nian",
+      "truth": "The Nian monster cannot be found in classical texts; the earliest written trace found so far dates to the 1930s, and the standard version was fixed by a 1980 newspaper article.",
+      "detail": "Folklore researcher Zhu Chunxiang's survey (published by The Paper) lays out the written trail found so far: in January 1933, Sun Yusheng (pen name Haishang Shushengsheng) mentioned in the newspaper Jingangzuan a dog-like creature chained to a pillar, linked to Ziwei-star New Year pictures; on 31 December 1939 Shen Bao ran 'The Legend of New Year' signed 'Shen'; on 16 February 1980 People's Daily published Zhao Cifeng and Kang Xinmin's 'The Legend and Customs of New Year', which set the now-familiar version where Nian fears noise, red and fire.\n\nA piece on China Writers' Network, relaying research, likewise says the Nian tale can be traced back only to roughly the 1930s, having circulated orally before then without authoritative written records, which is why local versions vary; it was through newspapers and popular books from the 1980s that it became uniform and widespread.\n\nA caution: 'not found in old books' does not mean nobody ever told it before; oral legends leave few traces. Researchers speculate it may derive from the beast in Ziwei-star New Year pictures plus the idea of the 'year-end pass' (debt collection). What can be said is that describing it as an ancient origin thousands of years old has no written evidence at present.",
+      "origin": "The story was retold through 20th-century newspapers, picture books and later animation until it became the 'standard answer' for Spring Festival customs (firecrackers, red decorations, staying up late).",
+      "instead": "Say: 'Nian is a widely told story, but the earliest written record found is from the 1930s.' Tell it to children as a story.",
+      "sources": [
+        {
+          "label": "The Paper (Pengpai) — Zhu Chunxiang on the documentary sources of the Nian legend (Jingangzuan 1933, Shen Bao 1939, People's Daily 1980)",
+          "url": "https://www.thepaper.cn/newsDetail_forward_2778438"
+        },
+        {
+          "label": "China Writers' Network — article on the origin and earliest record of the Nian legend (2025)",
+          "url": "https://www.chinawriter.com.cn/n1/2025/0209/c442005-40415244.html"
+        }
+      ]
+    },
+    "scene": "a red paper couplet strip and a string of firecrackers beside a small carved wooden beast figurine"
+  },
+  {
+    "id": "origin-posh-port-out-starboard-home",
+    "category": "origin",
+    "belief": "「posh」（高档）是「Port Out, Starboard Home」的缩写，指富人坐船去印度时订的阴凉舱位",
+    "truth": "没有任何带 POSH 字样的船票或船公司记录被找到，这个解释到 1932 年才出现，而这个词早已在英语里存在。",
+    "detail": "这个故事说，英国与印度之间的邮轮上，富人为了避开太阳，去程订左舷（port）、回程订右舷（starboard），船票上因此盖着 POSH。词源网站 World Wide Words 的作者概括得很干脆：这是个很棒的故事，但从来没有找到过盖着 posh 的船票，公司记录里也没有这个说法。他还指出，这个解释直到 1932 年才出现，而这个词那时已在英语里存在多年。\n\nWordOrigins 的看法是：posh 有两个相关的意思。一是钱——来自罗姆语（Angloromani 的 posh，意为「一半」，指半便士），1830 年的法庭记录里已有用作「钱」的例子；二是「时髦、讲究」，可能与乌尔都语 safed-pōš（「穿白衣的人」，指体面人）有关，1914 年已有军队俚语里指好衣服的记载。更早，1801 年的一出戏里 Posh 还只是个人名。维基百科的「常见错误词源」条目也说：posh 大概源自 19 世纪指花花公子的俚语，最初是地下世界里指钱的词。\n\n同类的「缩写词源」还有两个：golf 并不是「Gentlemen Only, Ladies Forbidden」——这个词在中古苏格兰语里就已出现；tip 也不是「To Insure Promptness」——该词 17 世纪就有，而英语里首字母缩略词要到 20 世纪中叶才流行起来。上面这些词的真正来源，各家说法并不完全一致，只能说「不是缩写」是有证据的。",
+    "origin": "这类「每个字母代表一个词」的故事听起来聪明、画面感强，又不涉及任何人，因此很容易在旅游书和闲谈中代代相传；英语里首字母缩略词本身要到 20 世纪才多起来，把它套到更早的词上，就是事后的「倒推」。",
+    "instead": "可以说：「posh 的来源不确定，比较有依据的说法是它从指钱和讲究衣着的俚语演变而来；『Port Out, Starboard Home』没有任何文献支持。」遇到「X 其实是某某几个词的缩写」时，先问最早什么时候出现、有没有实物。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "WordOrigins.org —— Posh（无 POSH 船票、1932 年才出现的说法、罗姆语与乌尔都语来源）",
+        "url": "https://www.wordorigins.org/big-list-entries/posh"
+      },
+      {
+        "label": "Wikipedia —— List of common false etymologies of English words（posh、golf、tip）",
+        "url": "https://en.wikipedia.org/wiki/List_of_common_false_etymologies_of_English_words"
+      }
+    ],
+    "en": {
+      "belief": "'Posh' stands for 'Port Out, Starboard Home', the shady cabins wealthy passengers booked on ships to India",
+      "truth": "No ticket stamped POSH and no shipping-company record has ever been found; the explanation first appears in 1932, long after the word was in English.",
+      "detail": "The tale says that on liners between Britain and India the rich booked port-side cabins outbound and starboard-side homeward to avoid the sun, and their tickets were stamped POSH. The WordOrigins.org entry puts it bluntly: an excellent story, but no tickets with posh stamped on them have ever been found and company records show no sign of the phrase. It also notes that the explanation did not appear until 1932, by which time the word had long been established.\n\nWordOrigins' likelier sources are two related senses. One is money, from Angloromani posh ('half', as in a halfpenny), with 1830 court records already using it for money. The other is 'smart, stylish', possibly from Urdu safed-pōš ('white-clothed', i.e. well-dressed), with 1914 military slang using it for superior clothing. Earlier still, in 1801, Posh was merely a character's name in a play. Wikipedia's list of false etymologies likewise says posh probably derives from 19th-century slang for a dandy, originally underworld slang for money.\n\nTwo similar 'acronym' stories fail too: golf is not 'Gentlemen Only, Ladies Forbidden', since the word existed in Middle Scots, and tip is not 'To Insure Promptness', since the word dates to the 17th century while acronyms were nearly non-existent in English until the mid-20th. The real sources of these words are not fully settled, but 'not an acronym' is well supported.",
+      "origin": "'Each letter stands for a word' tales sound clever and visual and involve no real people, so they pass easily through guidebooks and chat; acronyms only became common in English in the 20th century, so applying one to an older word is an after-the-fact reconstruction.",
+      "instead": "Say: 'The origin of posh is uncertain; the better-supported view is that it grew from slang for money and for smart dress; there is no documentary support for Port Out, Starboard Home.' When told 'X is really an acronym', ask when it first appears and whether any physical evidence exists.",
+      "sources": [
+        {
+          "label": "WordOrigins.org — Posh (no POSH tickets, 1932 first appearance of the claim, Romani and Urdu sources)",
+          "url": "https://www.wordorigins.org/big-list-entries/posh"
+        },
+        {
+          "label": "Wikipedia — List of common false etymologies of English words (posh, golf, tip)",
+          "url": "https://en.wikipedia.org/wiki/List_of_common_false_etymologies_of_English_words"
+        }
+      ]
+    },
+    "scene": "an old steamship ticket-sized card and a brass porthole beside a folded linen jacket"
+  },
+  {
+    "id": "origin-cocktail-word-legends",
+    "category": "origin",
+    "belief": "「鸡尾酒」这个词来自独立战争时酒馆老板娘贝特西·弗拉纳根用鸡尾羽毛装饰酒杯（或法语蛋杯 coquetier）",
+    "truth": "老板娘贝特西是小说里的虚构人物，蛋杯说在时间上对不上；这个词到底从哪来仍无定论，较有依据的猜测与「竖着尾巴的马」有关。",
+    "detail": "「cocktail」最早的印刷记录是 1798 年伦敦《晨邮报》，1803 年又见于美国的一份农业报纸；1806 年 5 月 13 日，《平衡与哥伦比亚储藏库》杂志的编辑回答读者提问，给出了已知最早的定义：一种由烈酒、糖、水和苦精调成的「刺激性的酒」。\n\n贝特西·弗拉纳根的故事（约 1779 年的弗吉尼亚酒馆，用羽毛搅酒）：据 VinePair 引用历史学家威廉·格莱姆斯的考证，她其实是詹姆斯·菲尼莫尔·库珀小说《间谍》里的人物。蛋杯说（法语 coquetier，据说是佩肖用蛋杯调酒、被顾客读成 cocktail）：佩肖的药房 1834 年才开，而这个词在 1806 年已有定义。\n\n较有依据的说法见于 Difford's Guide 和 VinePair 的综述：牛津英语词典的思路是，cocktail 原指被截短尾巴、尾巴向上翘的马，通常是杂种马，「混合」的意思后来转到掺了东西的饮料上；调酒史学者大卫·翁德里奇则认为可能来自英国赛马圈的说法，指用土办法给疲马「提神」。需要强调的是，这仍是猜测，两篇综述都说真正的来源没有定论；有的传说（如墨西哥 cola de gallo）只有 1936 年的一条出处。",
+    "origin": "贝特西的故事源自库珀的小说《间谍》，却被后来的传说当成历史事实反复引用；蛋杯说则是在「cocktail」已经流行很久之后才被编出来的解释。",
+    "instead": "可以说：「鸡尾酒一词至少可追溯到 1798 年，来源没有定论；常听到的贝特西和蛋杯故事都有明显漏洞。」",
+    "stakes": "harmless",
+    "confidence": "debated",
+    "sources": [
+      {
+        "label": "Difford's Guide —— Origins of the word cocktail（1798、1803、1806；牛津英语词典的马尾说；各种说法的评估）",
+        "url": "https://www.diffordsguide.com/encyclopedia/2292/cocktails/origins-of-the-word-cocktail"
+      },
+      {
+        "label": "VinePair —— The term \"cocktail\" and its disputed origins（贝特西·弗拉纳根为小说人物；佩肖 1834 年；翁德里奇的看法）",
+        "url": "https://vinepair.com/articles/term-cocktail-disputed-origins/"
+      },
+      {
+        "label": "Wikipedia —— Cocktail（词源：争议；「cock-tail」与「刺激」的早期用例）",
+        "url": "https://en.wikipedia.org/wiki/Cocktail"
+      }
+    ],
+    "en": {
+      "belief": "The word 'cocktail' comes from a Revolutionary War tavern-keeper Betsy Flanagan decorating glasses with cock tail feathers (or from the French egg cup, coquetier)",
+      "truth": "Betsy Flanagan is a fictional character and the egg-cup story fails on dates; where the word really comes from is unsettled, with the better-supported guess involving horses with upright tails.",
+      "detail": "The earliest printed uses of 'cocktail' are 1798 in London's Morning Post and Gazetteer and 1803 in a US agricultural paper; on 13 May 1806 the editor of The Balance and Columbian Repository replied to a reader's question with the earliest known definition: a stimulating liquor of spirits, sugar, water and bitters.\n\nBetsy Flanagan (a Virginia tavern about 1779 where drinks were stirred with feathers): VinePair, citing historian William Grimes, says she was actually a character in James Fenimore Cooper's novel The Spy. The coquetier story (Antoine Peychaud serving drinks in French egg cups that customers mispronounced): his business opened only in 1834, decades after the word had been defined.\n\nThe better-supported account in the Difford's Guide and VinePair surveys: following the Oxford English Dictionary, a 'cocktail' was a horse with a docked, upright tail, usually of mixed breeding, and the sense of 'mixed' passed to adulterated drinks; the cocktail historian David Wondrich favours British sporting slang about stimulating tired horses. This is still conjecture, and both surveys say no definitive origin has been established; other tales (such as Mexican cola de gallo) rest on a single 1936 source.",
+      "origin": "Betsy's story comes from Cooper's novel The Spy, yet later tellings repeated it as fact; the egg-cup story was devised long after 'cocktail' was already in use.",
+      "instead": "Say: 'The word goes back to at least 1798 and its origin is unsettled; the popular Betsy and egg-cup tales both have clear holes.'",
+      "sources": [
+        {
+          "label": "Difford's Guide — Origins of the word cocktail (1798, 1803, 1806; OED horse-tail theory; assessment of theories)",
+          "url": "https://www.diffordsguide.com/encyclopedia/2292/cocktails/origins-of-the-word-cocktail"
+        },
+        {
+          "label": "VinePair — The term 'cocktail' and its disputed origins (Betsy Flanagan as novel character; Peychaud 1834; Wondrich's view)",
+          "url": "https://vinepair.com/articles/term-cocktail-disputed-origins/"
+        },
+        {
+          "label": "Wikipedia — Cocktail (etymology: disputed; early 'stimulating' uses)",
+          "url": "https://en.wikipedia.org/wiki/Cocktail"
+        }
+      ]
+    },
+    "scene": "a cocktail shaker and a coupe glass beside a small white eggcup and a single feather"
+  },
+  {
+    "id": "origin-sandwich-gambling-earl",
+    "category": "origin",
+    "belief": "三明治是桑威奇伯爵为了赌牌时不离开牌桌而发明的",
+    "truth": "「赌桌」这个说法只来自一位法国游记作家的一则传闻，传记作者认为它没有证据；夹肉面包本身并非他首创，不过这种食物的名字很可能确实来自他。",
+    "detail": "常见的版本说，第四代桑威奇伯爵约翰·蒙塔古赌博一整天，只吃夹在烤面包片中间的牛肉，后来别人也要「和桑威奇一样的」。这个说法的出处是法国作家格罗斯利（Pierre-Jean Grosley）关于 1765 年在伦敦见闻的游记，18 世纪 70 年代出版；他写的是一位大臣赌了 24 小时，并未点名。\n\n海军史学家罗杰（N. A. M. Rodger）在伯爵的传记里评论说，这则闲话没有旁证，似乎也没什么依据，尤其是它说的 1765 年，桑威奇正是内阁大臣、公务繁忙；罗杰认为更可能是他在办公桌前为了边工作边吃饭而用上了这种吃法。Word Histories 指出，「sandwich」一词最早见于吉本 1762 年的日记，也没有提到伯爵；但这个词几乎可以肯定是以他命名的，没有别的可信解释。\n\nHistory.com 的文章也强调，伯爵并不是想出这个主意的第一人；类似「面包夹馅」的食物在许多地方存在了很久。所以较稳妥的说法是：他的名字留在了这种食物上，而具体是怎么来的，现有史料不足以确定。",
+    "origin": "格罗斯利的游记只写了一位未点名的大臣赌了 24 小时；后来的转述把它安到桑威奇伯爵头上，赌博、24 小时、「和桑威奇一样」逐渐成了固定情节，也成了这位本来在海军和政治上更为人知的伯爵最出名的事。",
+    "instead": "可以说：「三明治以桑威奇伯爵命名，但他并没有发明夹肉面包；赌桌的故事来自一则 18 世纪的传闻，他的传记作者并不相信。」",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      {
+        "label": "Word Histories —— history of the word 'sandwich'（吉本 1762、格罗斯利《伦敦》、罗杰的评论）",
+        "url": "https://wordhistories.net/2017/03/23/sandwich/"
+      },
+      {
+        "label": "History.com —— Who Invented the Sandwich?（伯爵并非第一人；格罗斯利的轶事可能是编的）",
+        "url": "https://www.history.com/.amp/news/sandwich-inventor-john-montagu-earl-of-sandwich"
+      },
+      {
+        "label": "Wikipedia —— John Montagu, 4th Earl of Sandwich（格罗斯利的记述；罗杰的办公桌说）",
+        "url": "https://en.wikipedia.org/wiki/John_Montagu,_4th_Earl_of_Sandwich"
+      }
+    ],
+    "en": {
+      "belief": "The sandwich was invented by the Earl of Sandwich so he could keep gambling without leaving the card table",
+      "truth": "The gambling tale rests on one French travel writer's anecdote, which the earl's biographer finds unsupported; bread-and-filling foods were not his invention, though the name very likely does come from him.",
+      "detail": "The usual version says John Montagu, 4th Earl of Sandwich, gambled for a whole day eating only beef between toasted bread, and others began ordering 'the same as Sandwich'. The source is the French writer Pierre-Jean Grosley's account of his 1765 stay in London, published in the early 1770s; it describes a minister gaming for 24 hours, without naming him.\n\nThe naval historian N. A. M. Rodger, in his biography of the earl, says there is no supporting evidence for the piece of gossip and it does not seem likely to have any foundation, especially since in 1765 Sandwich was a busy Cabinet minister; he thinks the earl more probably ate this way at his desk. Word Histories notes that the earliest known use of the word 'sandwich' is in Edward Gibbon's 1762 diary, which does not mention the earl, but the word is almost certainly named for him, as there is no other plausible explanation.\n\nHistory.com also stresses that the earl was not the first to think of the idea; bread-wrapped fillings existed in many places long before. A safe summary: his name stuck to the food, and how that came about cannot be settled from the surviving sources.",
+      "origin": "Grosley's book describes only an unnamed minister gaming for 24 hours; later retellings attached it to the Earl of Sandwich, and gambling, 24 hours and 'the same as Sandwich' hardened into fixed plot, and into the thing the earl, better known for naval and political roles, is most remembered for.",
+      "instead": "Say: 'The sandwich is named after the Earl of Sandwich, but he didn't invent bread with fillings; the gambling story is an 18th-century anecdote his biographer doesn't believe.'",
+      "sources": [
+        {
+          "label": "Word Histories — history of the word 'sandwich' (Gibbon 1762, Grosley's Londres, Rodger's comment)",
+          "url": "https://wordhistories.net/2017/03/23/sandwich/"
+        },
+        {
+          "label": "History.com — Who Invented the Sandwich? (earl not the first; Grosley's anecdote may be invented)",
+          "url": "https://www.history.com/.amp/news/sandwich-inventor-john-montagu-earl-of-sandwich"
+        },
+        {
+          "label": "Wikipedia — John Montagu, 4th Earl of Sandwich (Grosley's account; Rodger's work-desk theory)",
+          "url": "https://en.wikipedia.org/wiki/John_Montagu,_4th_Earl_of_Sandwich"
+        }
+      ]
+    },
+    "scene": "a bread-and-beef sandwich on a pewter plate beside a deck of playing cards and a candle"
+  },
+  {
+    "id": "origin-toast-clink-poison",
+    "category": "origin",
+    "belief": "干杯时碰杯，是因为古人要让酒溅到对方杯里，防止被下毒",
+    "truth": "没有证据支持这个说法；碰杯的习俗只有约三百年历史，比祝酒晚得多，祝酒本身可以追溯到古代的祭酒仪式。",
+    "detail": "英文维基说，这个故事（碰杯会让酒溅进对方杯里）「没有真正的证据」；Mental Floss 的文章则指出，人们碰杯的历史不过约 300 年，而祝酒的习俗早就存在，所以「防毒」不太可能是起因。同一篇文章也说，「碰杯是为了用响声驱赶恶灵」之类的解释同样没有可靠证据。\n\n比较有依据的解释有两条：一是祝酒本身可能是古代祭酒仪式的世俗残余——维基百科引用《酒与文化国际手册》，认为向神灵献酒的神圣仪式是它的祖先；二是 toast 这个词在 17 世纪与「往酒里放调味的烤面包」有关，因为人们把一位女士的名字比作给酒添味的作料。至于碰杯，Mental Floss 引用的看法是：大家从共用一只「爱之杯」转向各人用自己的杯子后，把杯子碰在一起，是在象征性地重新把酒合在一起，表示亲近。这是一个解释，不是定论。",
+    "origin": "「防止下毒」这个解释听起来合情合理，又有一点宫廷阴谋的戏剧性，因此成为酒席上最常被讲的谈资；它反映的是后人替习俗找理由的倾向，而不是文献里有记载的起因。",
+    "instead": "可以说：「碰杯的起源没有定论；『防下毒』这个说法没有证据，而且碰杯的出现比祝酒晚得多。」",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      {
+        "label": "Wikipedia —— Toast (honor)（碰杯防毒说「没有真正的证据」；祭酒仪式说；toast 一词与烤面包）",
+        "url": "https://en.wikipedia.org/wiki/Toast_(honor)"
+      },
+      {
+        "label": "Mental Floss —— Why do we toast and clink glasses?（碰杯约 300 年；防毒与驱邪说无证据）",
+        "url": "https://www.mentalfloss.com/culture/why-do-we-toast-celebrate"
+      }
+    ],
+    "en": {
+      "belief": "People clink glasses so the drinks splash into each other's cup, to guard against poisoning",
+      "truth": "There is no evidence for this; clinking has only about 300 years of history, long after toasting began, and toasting itself goes back to ancient libations.",
+      "detail": "Wikipedia says that the account (clinking makes each drink spill into the other's) has 'no real evidence'; Mental Floss adds that people have only been clinking glasses for about 300 years, long after toasting was born, so poison testing is unlikely to be the cause. The same article says explanations such as driving away evil spirits with the noise also lack credible evidence.\n\nTwo better-supported explanations: toasting itself is probably a secular vestige of ancient sacrificial libations, according to the International Handbook on Alcohol and Culture as cited by Wikipedia; and the word 'toast' became attached to the custom in the 17th century from spiced toast used to flavour drinks, with a lady's name likened to the seasoning. As for the clink, Mental Floss relays the view that once people moved from a shared 'loving cup' to individual glasses, bringing the glasses together symbolically reunited the drink as one. That is an interpretation, not a settled fact.",
+      "origin": "'To avoid poison' sounds reasonable and has a touch of court intrigue, so it became the favourite table-talk explanation; it reflects people's habit of inventing reasons for customs rather than a documented cause.",
+      "instead": "Say: 'Nobody knows for sure how clinking began; the poison story has no evidence, and clinking is much younger than toasting.'",
+      "sources": [
+        {
+          "label": "Wikipedia — Toast (honor) (clink-and-poison claim 'no real evidence'; libation theory; the word 'toast')",
+          "url": "https://en.wikipedia.org/wiki/Toast_(honor)"
+        },
+        {
+          "label": "Mental Floss — Why do we toast and clink glasses? (about 300 years of clinking; poison and spirit theories unsupported)",
+          "url": "https://www.mentalfloss.com/culture/why-do-we-toast-celebrate"
+        }
+      ]
+    },
+    "scene": "two crystal wine glasses touching rims with a loose spiced toast slice on a wooden table"
+  },
+  {
+    "id": "origin-hanshi-jie-zitui",
+    "category": "origin",
+    "belief": "寒食节禁火吃冷食，是为了纪念被晋文公放火烧山逼出来、最终抱树而死的介子推",
+    "truth": "介子推「被烧死」的故事在早期史料里并没有，最早的寒食纪念记载出现在他身后约六百年；禁火习俗是否另有更古老的来源，学界有不同看法。",
+    "detail": "英文维基整理的材料显示：最早的寒食节记载见于桓谭《新论》（约公元 1 世纪），说太原郡的人们在隆冬前后五天不生火，以纪念介子推——距离他生活的春秋时期已有约六百年。更早的《左传》里，介子推是在自己觉得未被赏识后主动归隐，并没有被火烧死的情节。东汉时，周举曾批评当地因禁火而伤人性命的做法，可见这一习俗当时已经相当严格。\n\n另一些学者主张，寒食的根子是更古老的「改火」习俗：学者 Du Gongzhan 把它联系到《周礼》里仲春用木铎令国中禁火的规定；中国新闻网等介绍也提到，早春干燥易起火，古人要熄旧火、钻木取新火，其间吃冷食。他们认为介子推的传说是后来叠加上去的。也有学者（据英文维基）认为这些替代理论「不太可能成立」，因为早期史料一致把寒食与介子推联系，且这些理论依赖的春季时间并不是寒食最初的季节（最初在隆冬）。\n\n因此这是一个「学界有分歧」的题目：可以确定的是烧山的情节比较晚；至于禁火习俗是先有、后来才附会到介子推身上，还是一开始就与他相关，目前没有定论。",
+    "origin": "介子推从春秋时期一位自觉不受重视而隐居的人，在后世的叙述里逐渐成了割股奉君、不言禄、被火烧死的忠义典范；清明与寒食在时间上相近后又合并，这个故事就跟着进入了清明的由来。",
+    "instead": "可以说：「寒食节的由来有两种主要解释：纪念介子推，或来自更古老的禁火改火习俗；『烧山逼出』的情节在早期史料里并没有。」",
+    "stakes": "harmless",
+    "confidence": "debated",
+    "sources": [
+      {
+        "label": "Wikipedia —— Cold Food Festival（桓谭《新论》；《左传》中的介子推；周举；Du Gongzhan、de Groot、Frazer 的替代理论）",
+        "url": "https://en.wikipedia.org/wiki/Hanshi_Festival"
+      },
+      {
+        "label": "中国新闻网 —— 寒食节的两种起源说法（介子推与古老的改火习俗）",
+        "url": "https://www.chinanews.com.cn/life/2022/04-02/9718038.shtml"
+      },
+      {
+        "label": "The World of Chinese —— China's ancient Cold Food Festival（介子推传说的通行版本）",
+        "url": "https://www.theworldofchinese.com/2018/04/chinas-ancient-cold-food-festival-is-not-too-hot/"
+      }
+    ],
+    "en": {
+      "belief": "The Cold Food Festival bans fire and eats cold food to honour Jie Zitui, who died when the Duke of Jin set the mountain ablaze to force him out",
+      "truth": "The story of Jie Zitui burning to death is absent from the early sources, the earliest record of the festival comes about 600 years after him, and scholars differ over whether the fire ban has an older origin.",
+      "detail": "According to Wikipedia's account, the earliest record of the festival is in Huan Tan's New Discussions (c. 1st century AD), saying residents of Taiyuan avoided fire for five days around midwinter to honour Jie Zitui, about six hundred years after the Spring and Autumn period. In the earlier Zuozhuan, Jie Zitui withdraws voluntarily after feeling overlooked; there is no death by fire. A later Han biography has the official Zhou Ju criticizing locals for fire-avoidance that cost lives, showing the custom was strictly kept by then.\n\nOther scholars argue the roots lie in an older 'changing fire' practice: Du Gongzhan linked it to the Rites of Zhou's rule that in mid-spring wooden bells enforce a fire ban, and China News introduces it as extinguishing old fires and drilling new ones in dry early spring, with cold food eaten meanwhile; they see the Jie Zitui tale as added later. Wikipedia, however, says such alternative theories are 'unlikely accurate', because early sources consistently tie the festival to Jie Zitui and the theories lean on the spring timing, when the festival originally fell in midwinter.\n\nSo scholars disagree: what can be said is that the burning episode is late; whether the fire ban existed first and was attached to Jie Zitui, or was tied to him from the start, is unsettled.",
+      "origin": "Jie Zitui went from a man who withdrew when overlooked to a model of loyalty who cut flesh to feed his lord, refused rewards and burned to death; once the festival drew close to Qingming and merged with it, the story entered the explanation of Qingming too.",
+      "instead": "Say: 'There are two main explanations for the Cold Food Festival: commemorating Jie Zitui, or an older fire-changing custom; the 'burned out of the mountain' detail is not in the early sources.'",
+      "sources": [
+        {
+          "label": "Wikipedia — Cold Food Festival (Huan Tan; Zuozhuan's Jie Zitui; Zhou Ju; alternative theories of Du Gongzhan, de Groot, Frazer)",
+          "url": "https://en.wikipedia.org/wiki/Hanshi_Festival"
+        },
+        {
+          "label": "China News — two accounts of the Cold Food Festival's origin (Jie Zitui and the ancient fire-changing custom)",
+          "url": "https://www.chinanews.com.cn/life/2022/04-02/9718038.shtml"
+        },
+        {
+          "label": "The World of Chinese — China's ancient Cold Food Festival (the standard Jie Zitui legend)",
+          "url": "https://www.theworldofchinese.com/2018/04/chinas-ancient-cold-food-festival-is-not-too-hot/"
+        }
+      ]
+    },
+    "scene": "a cold unlit clay stove beside a plate of cold green rice cakes and a bundle of willow branches"
+  },
+  {
+    "id": "origin-thomas-crapper-flush-toilet",
+    "category": "origin",
+    "belief": "抽水马桶是托马斯·克拉珀发明的，英语里的「crap」（粪便、废话）就来自他的名字",
+    "truth": "克拉珀没有发明冲水马桶，「crap」这个词比他出生还早；他确有真实的发明，如浮球阀和 U 形弯管。",
+    "detail": "英文维基说，克拉珀持有九项专利，其中三项与抽水马桶的改进有关（如浮球阀），但没有一项是冲水马桶本身；他的广告还曾暗示自己发明了虹吸冲水，其中一则广告里的专利号其实属于 1898 年的阿尔伯特·吉布林。他确实改良了存水弯（1880 年的 U 形弯），在国王路开了世界上第一间浴室展厅，并多次获得皇家供货认证。\n\n「crap」的故事（第一次世界大战中美国士兵看到抽水箱上的名字，才说「去 crapper」）也站不住：该词在他之前很久就有。WordOrigins 的条目显示，在 1425 年之前抄写的一份手稿里，crappys 就指磨坊里的谷壳，更早的盎格鲁—诺曼文献里还有 chrape、crappe 等形式，最初指的是碎屑、废料；用来指排泄物则见于 19 世纪（牛津英语词典称最早把它用于排泄物是 1846 年，那时克拉珀才出生约十年）。词的真正来源仍有不确定之处，可能与法语、荷兰语有关。\n\nWordOrigins 的看法是：他的名字（Crapper）与职业太贴切，可能帮这个词流行起来，但不是它的来源。",
+    "origin": "姓氏与职业的巧合，加上他确有真实的卫生设备事业，使「克拉珀发明了马桶」成了流传很广的谈资，并常和「crap」一词的来源合在一起讲。",
+    "instead": "可以说：「克拉珀是真实的卫生设备商，改进了马桶的部件，但没有发明冲水马桶；crap 这个词在他之前就有。」",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Wikipedia —— Thomas Crapper（九项专利、无冲水马桶专利、U 形弯、广告误导；crap 一词早于他）",
+        "url": "https://en.wikipedia.org/wiki/Thomas_Crapper"
+      },
+      {
+        "label": "WordOrigins.org —— Crap（1425 年前手稿；盎格鲁—诺曼与荷兰语来源；19 世纪的排泄物用法）",
+        "url": "https://www.wordorigins.org/big-list-entries/crap"
+      }
+    ],
+    "en": {
+      "belief": "Thomas Crapper invented the flush toilet, and the English word 'crap' comes from his name",
+      "truth": "Crapper did not invent the flush toilet, and the word 'crap' is older than he was; he did have real inventions, such as the floating ballcock and the U-bend.",
+      "detail": "Wikipedia says Crapper held nine patents, three of them for water-closet improvements such as the floating ballcock, but none for the flush toilet itself; his advertising even implied he invented the siphonic flush, and one ad cited a patent number that actually belonged to Albert Giblin in 1898. He did improve the drain trap in 1880 with the U-bend, opened the world's first bathroom showroom on King's Road, and won several royal warrants.\n\nThe 'crap' story (American soldiers in the First World War saw his name on cisterns and began saying 'going to the crapper') fails as well: the word long predates him. The WordOrigins.org entry cites a manuscript copied before 1425 where 'crappys' means mill chaff, with earlier Anglo-Norman forms such as chrape and crappe meaning rubbish or chaff; its application to excrement is recorded in the 19th century (the OED's first such use is 1846, about ten years after Crapper's birth). The word's ultimate source is still uncertain, with French and Dutch influences likely.\n\nWordOrigins' view is that his name, so apt for his trade, may have helped the word spread but was not its source.",
+      "origin": "The coincidence of surname and trade, together with his genuine sanitary-ware business, made 'Crapper invented the toilet' a widely repeated piece of trivia, often joined to the origin of the word 'crap'.",
+      "instead": "Say: 'Crapper was a real sanitary-ware businessman who improved toilet parts but did not invent the flush toilet; the word crap existed before him.'",
+      "sources": [
+        {
+          "label": "Wikipedia — Thomas Crapper (nine patents, no flush-toilet patent, the U-bend, misleading ads; 'crap' predates him)",
+          "url": "https://en.wikipedia.org/wiki/Thomas_Crapper"
+        },
+        {
+          "label": "WordOrigins.org — Crap (pre-1425 manuscript; Anglo-Norman and Dutch roots; 19th-century excretory sense)",
+          "url": "https://www.wordorigins.org/big-list-entries/crap"
+        }
+      ]
+    },
+    "scene": "an old cast-iron cistern with a hanging chain beside a brass ballcock float and a drawn-out blueprint"
+  }
+]

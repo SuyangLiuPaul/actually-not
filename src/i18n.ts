@@ -9,18 +9,18 @@ export type Locale = 'zh' | 'en'
 const zh = {
   brand: '常识核对表',
   siteName: '其实不是',
-  homeTitle: '其实不是 · 那些你以为对的生活常识',
+  homeTitle: '其实不是 · 那些你以为对的常识、名言和故事',
   quizTitle: '你中了几条？｜其实不是',
   mythTitle: (belief: string) => `${belief}｜其实不是`,
   skipToContent: '跳到正文',
-  introLead: '早上不吃饭伤身、洗完头不吹干有湿气、骨头汤补钙——有些说法听起来天经地义，讲了几十年，但证据并不支持。',
+  introLead: '早上不吃饭伤身、洗完头不吹干有湿气、骨头汤补钙——有些说法听起来天经地义，讲了几十年，但证据并不支持。不只是生活常识——「鲁迅没说过」的名言、电影里演错的桥段、被人编出来的起源故事，这里也一并核对。',
   introCountLead: '这里收了 ',
   introCountNum: (n: number) => `${n} 条`,
   introTail: '，每条都写清楚了：真相是什么、这个说法当初怎么传开的、以及那到底该怎么做。',
   randomOne: '随便看一条',
   quizEntry: '你中了几条？',
   riskyNote: (n: number) => `其中 ${n} 条照做可能有害`,
-  searchPlaceholder: '搜一个说法，比如「感冒」「补钙」「减肥」',
+  searchPlaceholder: '搜一个说法，比如「感冒」「补钙」「鲁迅」「电影」',
   clearSearch: '清空搜索',
   filterAll: '全部',
   emptyResult: (q: string) => `没找到「${q}」相关的条目。`,
@@ -122,12 +122,12 @@ export type T = typeof zh
 const en: T = {
   brand: 'The Common-Sense Checklist',
   siteName: 'Actually, Not',
-  homeTitle: 'Actually, Not · Everyday things you thought were true',
+  homeTitle: 'Actually, Not · Common sense, quotes and stories you thought were true',
   quizTitle: 'How many got you? | Actually, Not',
   mythTitle: (belief) => `${belief} | Actually, Not`,
   skipToContent: 'Skip to content',
   introLead:
-    "Skipping breakfast wrecks your stomach. Going out with wet hair gives you a cold. Bone soup is full of calcium. Some claims sound self-evident — they've been repeated for decades — but the evidence doesn't back them. ",
+    "Skipping breakfast wrecks your stomach. Going out with wet hair gives you a cold. Bone soup is full of calcium. Some claims sound self-evident — they've been repeated for decades — but the evidence doesn't back them. And it's not only health: misattributed quotes, things the movies got wrong, and origin stories somebody made up get the same fact-check. ",
   introCountLead: 'This site collects ',
   introCountNum: (n) => `${n} of them`,
   introTail:
@@ -135,7 +135,7 @@ const en: T = {
   randomOne: 'Surprise me',
   quizEntry: 'How many got you?',
   riskyNote: (n) => `${n} of them can do real harm`,
-  searchPlaceholder: 'Search a claim — try "cold", "calcium", "weight loss"',
+  searchPlaceholder: 'Search a claim — try "cold", "calcium", "Einstein", "movie"',
   clearSearch: 'Clear search',
   filterAll: 'All',
   emptyResult: (q) => `Nothing matches "${q}".`,
@@ -257,6 +257,11 @@ export const SYNONYM_GROUPS: string[][] = [
   ['运动', '跑步', '锻炼', 'exercise', 'running'],
   ['怀孕', '孕妇', '月子', 'pregnancy', 'postpartum'],
   ['糖', '血糖', 'sugar', 'diabetes'],
+  ['鲁迅', 'lu xun', 'luxun'],
+  ['爱因斯坦', 'einstein'],
+  ['电影', '电视剧', '影视', 'film', 'movie', 'movies'],
+  ['起源', '来历', '由来', 'origin', 'origins'],
+  ['名言', '语录', '名人名言', 'quote', 'quotes'],
 ]
 
 /** 查询词扩展：返回包含 query 的所有同组词（含原词） */
@@ -279,6 +284,11 @@ export const CATEGORY_LABELS_EN: Record<CategoryId, string> = {
   move: 'Exercise',
   life: 'Daily life',
   urgent: 'Emergencies',
+  quote: 'Never said it',
+  film: 'Movies lied',
+  origin: 'Made-up origins',
+  word: 'Misused words',
+  why: 'Why it looks like that',
 }
 
 export const STAKES_META_EN: Record<Stakes, { label: string; hint: string }> = {
@@ -335,6 +345,11 @@ export const CAT_ACCENT: Record<CategoryId, string> = {
   move: '#4d7a3a',
   life: '#8a6d3b',
   urgent: '#c13024',
+  quote: '#8a3b5f',
+  film: '#2f5f8f',
+  origin: '#6a6f2e',
+  word: '#7a5a2e',
+  why: '#3f6b7a',
 }
 
 export function stakesMeta(s: Stakes, locale: Locale): { label: string; hint: string; tone: string } {

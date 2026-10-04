@@ -1,8 +1,8 @@
 {
   "id": "/",
-  "name": "Actually, Not · Everyday things you thought were true",
+  "name": "Actually, Not · Common sense, quotes and stories you thought were true",
   "short_name": "Actually, Not",
-  "description": "Everyday claims that sound self-evident but aren't backed by evidence — each entry with sources, how the myth spread, and what to do instead.",
+  "description": "Everyday claims, misattributed quotes and made-up origin stories that sound self-evident but aren't backed by evidence — each with sources, how the myth spread, and what to do instead.",
   "lang": "en",
   "dir": "ltr",
   "start_url": "/en",
@@ -32,6 +32,12 @@
       "short_name": "Emergencies",
       "url": "/en?c=urgent",
       "description": "First-aid myths with real risk"
+    },
+    {
+      "name": "Never said it: misquoted quotes",
+      "short_name": "Quotes",
+      "url": "/en?c=quote",
+      "description": "Famous lines they never actually said"
     }
   ]
 }

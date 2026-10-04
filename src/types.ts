@@ -5,6 +5,11 @@ export type CategoryId =
   | 'move'
   | 'life'
   | 'urgent'
+  | 'quote'
+  | 'film'
+  | 'origin'
+  | 'word'
+  | 'why'
 
 /**
  * 信了这条会怎样 —— 用来提醒读者哪些只是白费功夫，哪些真的会出事。
@@ -60,6 +65,11 @@ export const CATEGORIES: Category[] = [
   { id: 'move', label: '运动', emoji: '🏃' },
   { id: 'life', label: '生活', emoji: '🏠' },
   { id: 'urgent', label: '关键时刻', emoji: '🚨' },
+  { id: 'quote', label: '名言没说过', emoji: '💬' },
+  { id: 'film', label: '电影骗了你', emoji: '🎬' },
+  { id: 'origin', label: '起源是编的', emoji: '📜' },
+  { id: 'word', label: '这个词你用错了', emoji: '✍️' },
+  { id: 'why', label: '为什么长这样', emoji: '🔧' },
 ]
 
 export const STAKES_META: Record<

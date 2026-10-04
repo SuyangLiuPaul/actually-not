@@ -1,0 +1,489 @@
+[
+  {
+    "id": "film-silencer",
+    "category": "film",
+    "belief": "枪装上消音器，开火就只剩一声轻轻的「噗」，旁人什么也听不见",
+    "truth": "消音器只是降低枪声，并不能让它变安静；射击者自己的耳朵仍然处在有损伤风险的响度里。",
+    "detail": "一项发表在《国际听力学杂志》的实测研究（Campbell 等，2018）把枪口装上消音器后测量：在射击者耳边，噪声降低了约 17–24 分贝；在射击者身后一米的位置降低约 20–28 分贝；整体声功率降低 2–23 分贝。这是实实在在的下降，但离「听不见」差得很远。\n\n研究还发现，低速（亚音速）弹药的降噪效果更好，因为没有超音速弹丸带来的那一下尖锐爆裂声。作者的结论很克制：即使装了消音器，累积的暴露仍可能带来明显的听力风险，射击或狩猎时应当始终佩戴听力防护。",
+    "origin": "影视里为了表现「悄无声息」，常用一个很轻的拟音来代替消音后的声音，观众看多了，就把这个音效当成了现实。这里只能说是一种合理推断：我们没有查到某一部电影是这个画面的源头。",
+    "instead": "看到电影里的「噗」，把它当成音效设计就好。现实中，消音器是降噪装置，不是静音装置；任何射击场合都应当戴好听力防护。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Campbell AR 等，International Journal of Audiology 2018;57(Suppl 1):S28–S41 —— 使用消音器与低速弹药降低枪声噪声和听觉风险",
+        "url": "https://stacks.cdc.gov/view/cdc/211059"
+      }
+    ],
+    "en": {
+      "belief": "Put a silencer on a gun and all you hear is a soft 'pfft' — nobody nearby can hear a thing",
+      "truth": "A suppressor makes a gunshot quieter, not quiet; the shooter's ears are still in a range that can damage hearing.",
+      "detail": "A measurement study in the International Journal of Audiology (Campbell et al., 2018) tested guns with and without suppressors. At the shooter's ear, noise dropped by roughly 17–24 dB; one metre behind the shooter it dropped by about 20–28 dB; overall sound power fell by 2–23 dB. Those are real reductions, but a long way from 'inaudible'.\n\nThe study also found that low-velocity (subsonic) ammunition gave the biggest reduction, because there is no sharp supersonic crack from the bullet. The authors' conclusion is restrained: even with suppressors, cumulative exposure can still pose a significant hearing risk, and shooters should always wear hearing protection.",
+      "origin": "Films often use a soft sound effect to signal 'silent', and after enough viewings that effect starts to feel like how things really sound. That is a reasonable inference only; we did not trace it to any one film.",
+      "instead": "Treat the movie 'pfft' as sound design. In reality a suppressor is a noise-reduction device, not a silencing device, and hearing protection is still needed whenever firearms are used.",
+      "sources": [
+        {
+          "label": "Campbell AR et al., International Journal of Audiology 2018;57(Suppl 1):S28–S41 — Reduction of gunshot noise and auditory risk with firearm suppressors and low-velocity ammunition",
+          "url": "https://stacks.cdc.gov/view/cdc/211059"
+        }
+      ]
+    },
+    "scene": "an old film clapperboard and a reel of film on a wooden table"
+  },
+  {
+    "id": "film-cpr-always-works",
+    "category": "film",
+    "belief": "电视里心肺复苏（CPR）按几下，人就醒过来了，大多数都能救活",
+    "truth": "屏幕上的 CPR 成功率远高于现实：美国院外心脏骤停出院存活率长期只有约十分之一。",
+    "detail": "1996 年，Diem 等人在《新英格兰医学杂志》上统计了《急诊室的故事》《芝加哥希望》和《救援 911》共 97 集里的 60 次 CPR：75% 的病人当场被救回，约 67% 看上去活到了出院。作者的结论是，这比医学文献中最乐观的存活率还要高得多，可能让观众对 CPR 产生不切实际的印象。\n\n现实的数字是：美国 2024 年 CARES 登记数据显示，院外心脏骤停成人出院存活率中位数约 10.4%，30 年来几乎没变；有旁观者做 CPR 的约占 41.7%，做了 CPR 的存活率约 13.0%，没做的约 7.6%（数据经美国心脏协会 2025 年统计更新引用）。也就是说，CPR 不是「魔法」，但它是在救护车到达之前能为对方多争取机会的少数办法之一。",
+    "origin": "医疗剧需要一个紧凑、有希望的情节，抢救成功的镜头最多，抢救失败的很少拍；同时剧里的病人又以年轻人和外伤居多，与现实中以老年心脏病为主的人群不同。这些都抬高了观众对成功率的预期。",
+    "instead": "不要因为现实成功率不高就不去做：遇到有人突然倒下、没有反应、没有正常呼吸，先打急救电话（中国 120 / 澳洲 000 / 美国 911），并按调度员的指引做 CPR、找 AED。CDC 的建议也是这个顺序。",
+    "stakes": "risky",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Diem SJ, Lantos JD, Tulsky JA, NEJM 1996 —— Cardiopulmonary resuscitation on television: miracles and misinformation"
+      },
+      {
+        "label": "Sudden Cardiac Arrest Foundation —— 最新统计（引用 AHA 2025 Heart and Stroke Statistics 与 2024 CARES 年报）",
+        "url": "https://sca-aware.org/about-sudden-cardiac-arrest/latest-statistics"
+      },
+      {
+        "label": "CDC —— 院外心脏骤停与应对步骤",
+        "url": "https://www.cdc.gov/heart-disease/about/cardiac-arrest.html"
+      }
+    ],
+    "en": {
+      "belief": "On TV, a few chest compressions bring the person back — CPR saves most people",
+      "truth": "Screen CPR works far better than real CPR: out-of-hospital cardiac arrest survival to discharge in the US has hovered around one in ten.",
+      "detail": "In 1996 Diem and colleagues counted CPR in 97 episodes of ER, Chicago Hope and Rescue 911 in the New England Journal of Medicine: 60 CPR events, 75% of patients survived the immediate arrest and about 67% appeared to survive to discharge. The authors concluded this was significantly higher than the most optimistic survival rates in the medical literature and could give viewers an unrealistic impression.\n\nReal numbers: 2024 CARES registry data, as cited alongside the American Heart Association's 2025 statistics update, put median adult survival to hospital discharge after out-of-hospital arrest at about 10.4%, essentially unchanged for 30 years. Bystander CPR was given in about 41.7% of cases, and survival was about 13.0% with it versus 7.6% without. CPR is not magic, but it is one of the few things that can buy someone a better chance before an ambulance arrives.",
+      "origin": "Medical dramas need tight, hopeful plots, so successful resuscitations are filmed far more often than failed ones. On screen the patients are also mostly young people with trauma, unlike real arrests, which mostly involve older people with heart disease. Both push expectations up.",
+      "instead": "Lower real-world odds are a reason to act, not to hold back. If someone collapses, does not respond and is not breathing normally, call emergency services first (China 120 / Australia 000 / US 911), follow the dispatcher's instructions, and get an AED if one is available. This is also the CDC's sequence.",
+      "sources": [
+        {
+          "label": "Diem SJ, Lantos JD, Tulsky JA, NEJM 1996 — Cardiopulmonary resuscitation on television: miracles and misinformation"
+        },
+        {
+          "label": "Sudden Cardiac Arrest Foundation — latest statistics (citing AHA 2025 Heart and Stroke Statistics and the 2024 CARES annual report)",
+          "url": "https://sca-aware.org/about-sudden-cardiac-arrest/latest-statistics"
+        },
+        {
+          "label": "CDC — out-of-hospital cardiac arrest and what to do",
+          "url": "https://www.cdc.gov/heart-disease/about/cardiac-arrest.html"
+        }
+      ]
+    },
+    "scene": "a plain wall clock and a small first aid kit on a shelf"
+  },
+  {
+    "id": "film-quicksand",
+    "category": "film",
+    "belief": "流沙会把人一点点整个吞没，越挣扎陷得越深",
+    "truth": "实验显示，人不可能被流沙完全吞没，最多陷到一半左右；难的是拔出来，不是被吞掉。",
+    "detail": "2005 年，Khaldoun 等人在《自然》上研究了流沙的流变性质。《自然》新闻的报道指出：流沙比人体密度大，实验中与人体密度相当的铝珠从没有沉过一半以上，因此「整个人被吸进去」的概率为零。\n\n真正的麻烦在于脱身。报道提到，把一只脚从流沙里拔出来所需的力，相当于举起一辆中型轿车；但只要等待足够久，沙粒会沉降，浮力会让人慢慢浮回表面。",
+    "origin": "探险片和冒险片里，流沙是一种方便的「慢速致命陷阱」，让主角有时间说台词、等人来救。这类画面传播多年，被很多人当成了常识。",
+    "instead": "把流沙理解为「很难拔腿的泥潭」，而不是「会吞人的怪物」。至于现实中陷入后如何脱身，请参考当地救援机构的指南，这里不提供个人行动建议。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Nature News, 2005-09-28 —— 报道 Khaldoun 等人对流沙的研究（Nature 2005, 'Liquefaction of quicksand under stress'）",
+        "url": "https://www.nature.com/news/2005/050926/full/news050926-9.html"
+      }
+    ],
+    "en": {
+      "belief": "Quicksand swallows people whole, and the more you struggle the deeper you sink",
+      "truth": "Experiments show a person cannot be completely sucked under; at most you sink about halfway. The hard part is getting out, not being swallowed.",
+      "detail": "In 2005 Khaldoun and colleagues studied the rheology of quicksand in Nature. Nature's news report says quicksand is denser than a human body: aluminium beads of human density never sank more than halfway, so the probability of a person being completely sucked in is 'nil'.\n\nThe real problem is escape. The report says the force needed to pull a foot out is comparable to lifting a medium-sized car, but if you wait long enough the grains settle and buoyancy floats you back toward the surface.",
+      "origin": "Adventure films like quicksand because it is a slow-acting trap: it gives the hero time for dialogue and the rescuers time to arrive. Decades of that imagery turned it into 'common knowledge'.",
+      "instead": "Think of quicksand as a mire that is very hard to pull a leg out of, not a monster that eats people. For how to get free in practice, follow local rescue-agency guidance; we are not offering personal safety instructions here.",
+      "sources": [
+        {
+          "label": "Nature News, 28 Sep 2005 — report on Khaldoun et al.'s quicksand study (Nature 2005, 'Liquefaction of quicksand under stress')",
+          "url": "https://www.nature.com/news/2005/050926/full/news050926-9.html"
+        }
+      ]
+    },
+    "scene": "a glass jar of fine sand with a metal bead half buried"
+  },
+  {
+    "id": "film-coma-wakeup",
+    "category": "film",
+    "belief": "电影里昏迷多年的人，一睁眼就醒了，头发整齐、肌肉不萎缩，很快恢复如初",
+    "truth": "神经科医生评估了 30 部有长期昏迷情节的电影，只有 2 部描绘得大体准确。",
+    "detail": "梅奥诊所的神经科医生 Eelco Wijdicks 和 Coen Wijdicks 在 2006 年 5 月的《神经病学》杂志上回顾了 30 部影片。常见的失真包括：昏迷多年的人突然醒来、身体和认知都没有任何问题；病人像「睡美人」，没有喂食管、没有肌肉萎缩，还打扮得干干净净；几乎所有影片里病人都闭着眼睛，而现实中长期昏迷者眼睛往往是睁着或可以睁开的。\n\n研究者还让 72 位非医学背景的人观看其中的片段：超过三分之一的时候，观众看不出重要的错误；31% 的人认为昏迷者可以用手指敲出摩尔斯电码，39% 的人说这些场景会影响他们对家人的决定。作者担心的正是这个。",
+    "origin": "「沉睡后奇迹般醒来」是个现成的、温情又戏剧化的情节，写起来简单，观众也爱看。真实的昏迷恢复过程漫长、不确定，也不上镜，所以很少被拍出来。",
+    "instead": "家人遇到真实的昏迷病例时，应当向主治医生和护理团队了解具体病情和预期，而不要拿电影里的情节当参考。",
+    "stakes": "risky",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "美国神经病学会 (AAN) 新闻稿 —— Wijdicks E, Wijdicks C, Neurology 2006-05-09：电影对昏迷的描绘",
+        "url": "https://www.aan.com/pressroom/home/pressrelease/391"
+      },
+      {
+        "label": "HealthDay —— 对该研究的报道",
+        "url": "https://www.healthday.com/health-news/neurology/it-s-not-a-real-coma-it-just-looks-like-one-532556.html"
+      }
+    ],
+    "en": {
+      "belief": "In films a person who has been in a coma for years wakes up neatly groomed, with no wasting, and quickly recovers fully",
+      "truth": "Neurologists reviewed 30 films with prolonged comas and found only 2 portrayed it reasonably accurately.",
+      "detail": "Mayo Clinic neurologist Eelco Wijdicks and Coen Wijdicks reviewed 30 films in the 9 May 2006 issue of Neurology. Common distortions: people waking after years with no physical or cognitive problems; 'Sleeping Beauty' patients with no feeding tubes, no muscle loss and perfect grooming; and eyes closed in all but one film, whereas people in prolonged comas often have their eyes open or able to open.\n\nThey also showed clips to 72 people without medical training: more than a third of the time viewers could not spot important inaccuracies, 31% thought a comatose person could tap out Morse code, and 39% said such scenes would influence decisions about their own family members. That influence is what worried the authors.",
+      "origin": "'Miraculous awakening after a long sleep' is a ready-made, heart-warming, dramatic plot that is easy to write. Real recovery is long, uncertain and not very cinematic, so it is rarely filmed.",
+      "instead": "If a relative is actually in a coma, ask the treating doctors and care team about their specific situation and outlook rather than using film plots as a guide.",
+      "sources": [
+        {
+          "label": "American Academy of Neurology press release — Wijdicks E, Wijdicks C, Neurology 9 May 2006: portrayal of coma in films",
+          "url": "https://www.aan.com/pressroom/home/pressrelease/391"
+        },
+        {
+          "label": "HealthDay — coverage of the study",
+          "url": "https://www.healthday.com/health-news/neurology/it-s-not-a-real-coma-it-just-looks-like-one-532556.html"
+        }
+      ]
+    },
+    "scene": "a quiet empty hospital-style bedside table with a pitcher of water and a clock"
+  },
+  {
+    "id": "film-amnesia-second-blow",
+    "category": "film",
+    "belief": "失忆的人再被撞一下头就恢复记忆了；失忆者除了不记得过去，生活照常",
+    "truth": "神经心理学家分析了影片里的失忆情节，发现大多与现实几乎没有关系，「再撞一下治好失忆」更是在神经学上说不通。",
+    "detail": "伦敦国立神经病学和神经外科医院的 Sallie Baxendale 在 2004 年《英国医学杂志》上分析了影视里的失忆。据该文的报道，片中失忆者常常像「一张白纸」一样生活，没有太多日常困难，现实里失忆者却很难记住新信息，许多日常事务变得非常困难。\n\n其他常见的错误包括：失忆会让人性格大变（例如坏人变好人），而现实中性格和自我认同往往不受影响；以及「第二次头部重击能逆转第一次的失忆」，作者称其为影片中神经学上最离奇的情节之一。催眠或看到熟悉的东西就能治好失忆，在现实中也很少奏效。",
+    "origin": "失忆是个好用的戏剧装置：主角可以重新开始，也可以有悬念和身份之谜。编剧并不需要照顾神经科学，观众又没有机会对照真实病例。",
+    "instead": "看电影时把失忆当作剧情道具。如果身边的人真的出现记忆问题或头部受伤后意识模糊，请让医生评估，不要靠「再撞一下」或类似的说法。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Baxendale S, BMJ 2004;329(7480):1480–1483 —— Memories aren't made of this: amnesia at the movies"
+      },
+      {
+        "label": "ScienceDaily, 2004-12 —— 对 Baxendale 论文的报道",
+        "url": "https://www.sciencedaily.com/releases/2004/12/041219161255.htm"
+      }
+    ],
+    "en": {
+      "belief": "A second knock on the head cures amnesia, and amnesiacs otherwise get on fine with life",
+      "truth": "A neuropsychologist's review of film amnesia found it bears little relation to reality, and a 'second blow cure' makes no neurological sense.",
+      "detail": "Sallie Baxendale of the National Hospital for Neurology and Neurosurgery in London analysed amnesia in films in the BMJ in 2004. According to coverage of the paper, film amnesiacs typically function on a 'clean slate' with few everyday problems, whereas real patients have significant difficulty taking in new information, making many everyday tasks extremely hard.\n\nOther common errors: amnesia changing someone's personality (for example bad characters turning good), when in reality personality and identity are usually unaffected; and a second serious head injury reversing the first, which the author calls one of the most neurologically bizarre features of film amnesia. Hypnosis or seeing familiar things curing amnesia is also rarely effective in reality.",
+      "origin": "Amnesia is a handy dramatic device: it gives a hero a fresh start, suspense and an identity mystery. Writers need not respect neuroscience, and audiences rarely get to compare with real cases.",
+      "instead": "Enjoy amnesia as a plot device. If someone you know has real memory problems, or is confused after a head injury, have a doctor assess them rather than relying on 'another knock' or similar ideas.",
+      "sources": [
+        {
+          "label": "Baxendale S, BMJ 2004;329(7480):1480–1483 — Memories aren't made of this: amnesia at the movies"
+        },
+        {
+          "label": "ScienceDaily, Dec 2004 — coverage of Baxendale's paper",
+          "url": "https://www.sciencedaily.com/releases/2004/12/041219161255.htm"
+        }
+      ]
+    },
+    "scene": "a closed old photo album and a single loose photograph on a desk"
+  },
+  {
+    "id": "film-vacuum-explode",
+    "category": "film",
+    "belief": "人暴露在太空真空中会瞬间爆炸或者瞬间冻成冰",
+    "truth": "身体不会爆炸，也不会瞬间冻僵；真正的危险是缺氧，大约十几秒内就会失去意识。",
+    "detail": "哈佛大学的科普文章指出：太空本身没有「温度」，热量在真空中只能靠辐射散失，速度很慢，所以不会瞬间冻僵。真正的危险是肺里的空气膨胀可能造成损伤、体液在低压下形成气泡（ebullism），以及缺氧：缺氧的血液大约 15 秒内就会送到大脑，导致意识丧失。\n\n另一份航空航天科普资料总结了 20 世纪 50–60 年代美国宇航局和空军的动物实验，以及 1965 年宇航局一次压力服泄漏事故等案例：人在真空中大约能保持 10–15 秒的清醒，而在约 90 秒内重新加压、恢复的话，后果还可能相对轻微、可逆；约 2–4 分钟后死亡几乎无法避免。",
+    "origin": "科幻片需要一个醒目的视觉效果，「爆体」和「瞬间冰冻」最直观。再加上「真空」听起来像是极端的力量，很容易让人以为身体会被撕开。",
+    "instead": "遇到科幻片里的类似场景，可以把它当作视觉效果。现实中的太空服和舱压设计，针对的是缺氧和压力变化，而不是「爆炸」。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      {
+        "label": "哈佛大学 Science in the News —— The human body in space: Distinguishing fact from fiction（2013）",
+        "url": "https://sites.harvard.edu/sitn/flash/2013/space-human-body"
+      },
+      {
+        "label": "Aerospaceweb.org —— Human Exposure to the Vacuum of Space",
+        "url": "https://aerospaceweb.org/question/atmosphere/q0291.shtml"
+      }
+    ],
+    "en": {
+      "belief": "A person exposed to the vacuum of space explodes or instantly freezes solid",
+      "truth": "The body does not explode or flash-freeze; the real danger is lack of oxygen, with unconsciousness in roughly 15 seconds.",
+      "detail": "A Harvard Science in the News article says space has no 'temperature' of its own and, with radiation the only way to shed heat in a vacuum, you would not freeze instantly. The real hazards are expanding air damaging the lungs, body fluids forming gas bubbles at low pressure (ebullism), and hypoxia: deoxygenated blood reaches the brain in about 15 seconds, causing unconsciousness.\n\nAn aerospace explainer summarises 1950s–60s NASA and US Air Force animal experiments and incidents such as a 1965 NASA pressure-suit leak: a person stays conscious for roughly 10–15 seconds, may survive about 90 seconds with relatively minor, reversible effects if recompressed in time, and death becomes unavoidable after roughly two to four minutes.",
+      "origin": "Science fiction wants a striking image, and 'bursting' and 'flash freezing' are the most vivid. 'Vacuum' also sounds like an extreme force, so it is easy to imagine the body being torn apart.",
+      "instead": "Treat such scenes as visual effects. Real spacesuits and cabin-pressure design address oxygen and pressure change, not 'explosion'.",
+      "sources": [
+        {
+          "label": "Harvard Science in the News — The human body in space: Distinguishing fact from fiction (2013)",
+          "url": "https://sites.harvard.edu/sitn/flash/2013/space-human-body"
+        },
+        {
+          "label": "Aerospaceweb.org — Human Exposure to the Vacuum of Space",
+          "url": "https://aerospaceweb.org/question/atmosphere/q0291.shtml"
+        }
+      ]
+    },
+    "scene": "a small toy rocket model and a sealed glass jar on a workbench"
+  },
+  {
+    "id": "film-concussion-knockout",
+    "category": "film",
+    "belief": "电影里头部挨一下，要么当场晕倒要么没事；没晕倒就说明没伤到脑子",
+    "truth": "多数运动相关的脑震荡并不伴随失去意识，有没有昏过去也不是判断严重程度的可靠指标。",
+    "detail": "2012 年苏黎世第四届运动脑震荡国际会议的共识声明（McCrory 等，2013）指出，运动相关的脑震荡大多不伴随意识丧失，而且意识丧失本身并不能可靠地预测损伤的轻重；该声明还提到，80%–90% 的脑震荡会在 7–10 天内缓解。\n\n美国疾控中心的头部损伤页面则把「意识丧失，并且越来越困、叫不醒或没法保持清醒」列为需要急救的危险信号。也就是说，是否昏倒并不是唯一该看的东西，而身体出现危险信号时应当立即求助。",
+    "origin": "影视里的「一击即倒」简洁好用：晕过去就是受伤，没晕就是没事。这种二分法既省镜头，也容易被当作医学常识。",
+    "instead": "头部受击后出现意识混乱、越来越困、叫不醒等 CDC 列出的危险信号时，立刻拨打急救电话（中国 120 / 澳洲 000 / 美国 911）。其他情况请让医护人员评估，不要凭「有没有昏倒」自己判断。",
+    "stakes": "risky",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "McCrory P 等，Journal of Athletic Training 2013 —— Consensus Statement on Concussion in Sport: the 4th International Conference, Zurich, 2012",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3715021/"
+      },
+      {
+        "label": "CDC HEADS UP —— 脑震荡的症状与危险信号",
+        "url": "https://www.cdc.gov/heads-up/signs-symptoms/index.html"
+      }
+    ],
+    "en": {
+      "belief": "In movies a blow to the head either knocks you out or does nothing; if you did not pass out, your brain is fine",
+      "truth": "Most sport-related concussions occur without loss of consciousness, and passing out is not a reliable measure of how serious the injury is.",
+      "detail": "The consensus statement from the 4th International Conference on Concussion in Sport (Zurich, 2012; McCrory et al., 2013) notes that most sports-related concussions occur without loss of consciousness and that loss of consciousness is not a reliable predictor of severity. It also notes that 80% to 90% of concussions resolve within 7–10 days.\n\nThe CDC's HEADS UP page lists loss of consciousness with increasing drowsiness, inability to wake up, or inability to stay awake as a danger sign needing emergency care. In other words, whether someone blacked out is not the only thing to look at, and danger signs call for immediate help.",
+      "origin": "Film's 'one blow and down' is tidy: passed out means hurt, awake means fine. That binary saves screen time and is easily taken for medical fact.",
+      "instead": "After a blow to the head, if the person is confused, getting increasingly sleepy or cannot be woken, or shows other danger signs listed by the CDC, call emergency services at once (China 120 / Australia 000 / US 911). Otherwise have a health professional assess them rather than relying on whether they blacked out.",
+      "sources": [
+        {
+          "label": "McCrory P et al., Journal of Athletic Training 2013 — Consensus Statement on Concussion in Sport: the 4th International Conference, Zurich, 2012",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3715021/"
+        },
+        {
+          "label": "CDC HEADS UP — concussion signs, symptoms and danger signs",
+          "url": "https://www.cdc.gov/heads-up/signs-symptoms/index.html"
+        }
+      ]
+    },
+    "scene": "a cycling helmet and a folded paper checklist on a bench"
+  },
+  {
+    "id": "film-csi-effect",
+    "category": "film",
+    "belief": "看了刑侦剧的陪审员都指望案子有高科技证据，没有就判无罪（所谓「CSI 效应」）",
+    "truth": "美国司法部下属研究机构资助的一项调查发现，所谓 CSI 效应的证据很薄弱。",
+    "detail": "2008 年，法官 Donald Shelton 和两位犯罪学教授在美国国家司法研究所 (NIJ) 的支持下，调查了密歇根州安娜堡 1027 名被随机传唤的潜在陪审员。结果：确实有 46% 的人期待每个刑事案件都有某种科学证据，强奸案中对 DNA 的期望尤其高（73%）。\n\n但研究发现几乎没有证据表明爱看 CSI 的人更愿意在缺乏科学证据时判无罪：13 种情景中只有 4 种看剧者与不看者有差别，而且结果并不一致；更高的期待并没有变成「没有这类证据就不能定罪」的要求，多数情景下陪审员仍愿意依据目击证词定罪。作者认为更像是 30 年技术进步带来的普遍「技术效应」，而不是某部剧的影响。",
+    "origin": "21 世纪初，媒体和检察官圈子里流传「CSI 效应让检方更难赢」的说法，后来才有人做实证检验。这个说法本身也成了一个流行的、没怎么被验证的故事。",
+    "instead": "可以说：影视确实可能抬高人们对科学证据的期待，但至今并没有可靠证据证明它会让陪审员轻易放走罪犯。这类说法最好分开看「期待」和「判决」。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      {
+        "label": "美国国家司法研究所 (NIJ), 2008 —— 'The CSI effect': does it really exist?（Shelton, Barak, Kim）",
+        "url": "https://nij.ojp.gov/topics/articles/csi-effect-does-it-really-exist"
+      }
+    ],
+    "en": {
+      "belief": "Jurors who watch crime dramas expect high-tech evidence in every case and acquit without it (the 'CSI effect')",
+      "truth": "A study supported by the US Department of Justice's research arm found little evidence for a CSI effect.",
+      "detail": "In 2008, Judge Donald Shelton and two criminology professors, with National Institute of Justice support, surveyed 1,027 randomly summoned prospective jurors in Ann Arbor, Michigan. Yes, 46% expected some scientific evidence in every criminal case, with especially high expectations for DNA in rape cases (73%).\n\nBut they found scant evidence that heavy CSI viewers were more likely to acquit without such evidence: only 4 of 13 scenarios showed any difference between viewers and non-viewers, and results were inconsistent. Higher expectations did not turn into a demand for scientific evidence as a prerequisite for conviction; jurors would convict on eyewitness testimony alone in most scenarios. The authors suggest a broader 'tech effect' from 30 years of technological change rather than a TV-show effect.",
+      "origin": "In the early 2000s, media and prosecutors popularised the claim that 'the CSI effect makes the prosecution's job harder'; it was only later that anyone tested it empirically. The claim became a widely told story with little checking behind it.",
+      "instead": "A fair statement: TV may raise expectations of scientific evidence, but there is no reliable evidence that it makes jurors let guilty people go. Keep 'expectations' and 'verdicts' separate.",
+      "sources": [
+        {
+          "label": "National Institute of Justice, 2008 — 'The CSI effect': does it really exist? (Shelton, Barak, Kim)",
+          "url": "https://nij.ojp.gov/topics/articles/csi-effect-does-it-really-exist"
+        }
+      ]
+    },
+    "scene": "a magnifying glass resting on a blank notepad beside a desk lamp"
+  },
+  {
+    "id": "film-bullet-knockback",
+    "category": "film",
+    "belief": "中弹的人会被子弹的冲击力向后抛飞、撞破窗户或门",
+    "truth": "按动量守恒，子弹能传给人体的速度只有每秒几厘米到十几厘米，根本推不倒人。",
+    "detail": "1996 年，法医学研究所的 Karger 和瑞士国防采购署弹药测试中心的 Kneubuehl 在《国际法医学杂志》上计算了这个问题。把子弹的动量传给一个 80 公斤的目标，最坏的情形（子弹留在体内）也只会让身体获得 0.01–0.18 米/秒的向后速度，而正常步行就有 1–2 米/秒。论文表格里从 .22 步枪弹到 .375 大口径步枪弹和 12 号霰弹枪都在这个范围内。\n\n论文还给出一个简明的论证：开枪时枪的后坐动量不小于子弹的动量，如果子弹能把对方掀飞，射手自己也会被同样推开。经验证据方面，作者提到猎人的经验，以及一部纪录片里一名穿防弹衣的人被步枪弹击中两次而没有明显位移。至于人为什么会倒下，通常是伤情或心理反应，而不是动量。",
+    "origin": "电影需要「命中」的视觉冲击，把中弹人物抛飞比让他们倒下更有戏剧性。作者还指出，这个观念之所以难改，一个原因是有些医学鉴定人也这么讲，在法庭上差点造成误判。",
+    "instead": "把「中弹后飞出去」当作特效。若在科普或写作中需要描写，更接近现实的是人受伤后因为伤势或惊吓而倒下，而不是被推着飞出去。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Karger B, Kneubuehl BP, Int J Legal Med 1996;109:147–149 —— On the physics of momentum in ballistics: can the human body be displaced or knocked down by a small arms projectile?（全文的网络副本）",
+        "url": "https://www.jfk-assassination.net/pdf/fisicamomento.pdf"
+      }
+    ],
+    "en": {
+      "belief": "A person who is shot is thrown backwards by the bullet's impact, crashing through windows or doors",
+      "truth": "By conservation of momentum, a bullet can impart only centimetres to a few decimetres per second to a body, nowhere near enough to knock someone over.",
+      "detail": "In 1996 Karger (Institute of Legal Medicine, Münster) and Kneubuehl (Defence Procurement Agency's ammunition test centre, Thun) worked through the physics in the International Journal of Legal Medicine. Transferring the bullet's momentum to an 80 kg target in the worst case (bullet stays in the body) gives a backward velocity of only 0.01–0.18 m/s, versus 1–2 m/s for an ordinary walking pace. Their table runs from .22 rimfire to a .375 magnum rifle and a 12-gauge shotgun, all within that range.\n\nThey add a simple argument: a gun's recoil momentum is at least that of the bullet, so if a bullet could throw the target backwards the shooter would be thrown backwards too. For empirical evidence they point to hunters' experience and a video documentary of a person in body armour hit twice by a rifle bullet without noticeable movement. When people do fall, the cause is normally the wound or a psychological reaction, not momentum.",
+      "origin": "Film needs a punchy visual for a 'hit', and a body flung backwards reads more dramatically than one that simply drops. The authors also note that the belief persists partly because some expert witnesses repeat it, which in one case risked a miscarriage of justice.",
+      "instead": "Treat the 'flung backwards' shot as a special effect. If you are writing or explaining, the more realistic picture is that a person falls because of injury or shock, not because they were pushed.",
+      "sources": [
+        {
+          "label": "Karger B, Kneubuehl BP, Int J Legal Med 1996;109:147–149 — On the physics of momentum in ballistics: can the human body be displaced or knocked down by a small arms projectile? (web copy of the full paper)",
+          "url": "https://www.jfk-assassination.net/pdf/fisicamomento.pdf"
+        }
+      ]
+    },
+    "scene": "a row of wooden dominoes and a small brass weight on a table"
+  },
+  {
+    "id": "film-flatline-shock",
+    "category": "film",
+    "belief": "监护仪上心跳变成一条直线，医生用除颤器一电就能让心脏重新跳起来",
+    "truth": "按急救指南，心电图呈直线（心搏停止）属于「不可电击」节律，除颤器并不用来给它「重启」。",
+    "detail": "英国复苏委员会 2025 年的成人高级生命支持流程图把心脏骤停的心律分成两类：可电击的（室颤、无脉性室速）和不可电击的（无脉电活动 PEA、心搏停止）。对后者，流程是给肾上腺素，然后立即继续做 2 分钟 CPR，而不是电击。\n\n影视的影响并非只停留在观感上：Alismail 等人 2018 年在《医学教育与实践进展》上调查了 170 名非医学专业的大学生，发现看医疗剧越多的人，越倾向于对心搏停止的病人选择电击，超过一半的参与者认为这种节律需要除颤。需要说明的是，这个研究规模不大，只调查了学生。\n\n另有急救医学评论提醒：监护仪上看起来「是直线」，有时其实是电极脱落、振幅太小，或是很细的室颤，所以真实抢救中会先核对导联和节律；这是临床判断问题，不改变「真正的心搏停止不可电击」这一指南结论。",
+    "origin": "「直线→电击→重新起搏」是影视里最经典的抢救镜头：画面明确、有节奏，还有「zap」的动作。真实的流程则是不断做 CPR、用药、查找可逆原因，看起来平淡得多。",
+    "instead": "看剧时把这类镜头当作戏剧化处理。现实中遇到有人倒下且没有反应、没有正常呼吸，先打急救电话（中国 120 / 澳洲 000 / 美国 911）；如果现场有 AED，按语音提示使用，机器会自己判断是否需要电击。",
+    "stakes": "risky",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Resuscitation Council UK, Guidelines 2025 —— Adult advanced life support 流程图",
+        "url": "https://www.resus.org.uk/sites/default/files/2025-10/Adult%20ALS%20algorithm%202025.pdf"
+      },
+      {
+        "label": "Alismail A, Meyer NC, Almutairi W, Daher NS, Advances in Medical Education and Practice 2018 —— CPR in medical TV shows: non-health care student perspective",
+        "url": "https://www.dovepress.com/cpr-in-medical-tv-shows-non-health-care-student-perspective-peer-reviewed-fulltext-article-AMEP"
+      },
+      {
+        "label": "resus.com.au —— Should cardiac arrest patients in asystole be shocked?（对「看起来是直线」的临床讨论）",
+        "url": "https://resus.com.au/shock-patients-asystole/"
+      }
+    ],
+    "en": {
+      "belief": "When the heart monitor goes to a flat line, a defibrillator shock restarts the heart",
+      "truth": "In resuscitation guidelines a flat line (asystole) is a 'non-shockable' rhythm; defibrillators are not used to 'restart' it.",
+      "detail": "The Resuscitation Council UK's 2025 adult advanced life support algorithm splits cardiac arrest rhythms into shockable (VF / pulseless VT) and non-shockable (PEA / asystole). For the latter the pathway is adrenaline, then immediately resume 2 minutes of CPR, not a shock.\n\nThe influence of TV is measurable: Alismail and colleagues (Advances in Medical Education and Practice, 2018) surveyed 170 non-medical college students and found that the more medical shows people watched, the more likely they were to choose a shock for asystole; more than half thought it needed defibrillation. It is a small, student-only study.\n\nOne emergency-medicine commentary adds a caveat: what looks like a flat line on a monitor can sometimes be a lead problem, low amplitude or very fine ventricular fibrillation, so real teams check leads and rhythm. That is a clinical judgement issue and does not change the guideline position that true asystole is not shocked.",
+      "origin": "'Flat line, charge, clear, zap, heartbeat returns' is the classic emergency-room shot: clear image, strong rhythm, a physical action. The real process of continuous CPR, drugs and looking for reversible causes looks far duller.",
+      "instead": "Take such scenes as dramatisation. In real life, if someone collapses, does not respond and is not breathing normally, call emergency services first (China 120 / Australia 000 / US 911) and, if an AED is available, follow its voice prompts; the machine decides whether a shock is appropriate.",
+      "sources": [
+        {
+          "label": "Resuscitation Council UK, Guidelines 2025 — Adult advanced life support algorithm",
+          "url": "https://www.resus.org.uk/sites/default/files/2025-10/Adult%20ALS%20algorithm%202025.pdf"
+        },
+        {
+          "label": "Alismail A, Meyer NC, Almutairi W, Daher NS, Advances in Medical Education and Practice 2018 — CPR in medical TV shows: non-health care student perspective",
+          "url": "https://www.dovepress.com/cpr-in-medical-tv-shows-non-health-care-student-perspective-peer-reviewed-fulltext-article-AMEP"
+        },
+        {
+          "label": "resus.com.au — Should cardiac arrest patients in asystole be shocked? (clinical discussion of apparent flat lines)",
+          "url": "https://resus.com.au/shock-patients-asystole/"
+        }
+      ]
+    },
+    "scene": "a coiled coloured cable and a small plain plastic box on a metal tray"
+  },
+  {
+    "id": "film-space-sound",
+    "category": "film",
+    "belief": "太空中飞船爆炸、激光炮开火，都能听到震耳欲聋的声音",
+    "truth": "声音需要介质传播，太空基本是真空，所以爆炸在真空中是听不到的。",
+    "detail": "声音是在空气等介质里传播的压力波。NASA 的科学页面解释说，「太空里没有声音」这个流行说法的来源就在于：太空的大部分基本上是真空，没有介质可以让声波传播。\n\n电磁波（光、无线电）不需要介质，所以我们能看到爆炸的光，也能接收无线电，但这并不等于能听到。NASA 制作的「数据声音化」项目是把天文数据转换成人能听到的声音，这是科学家的转换，而不是太空本身发出的声音。",
+    "origin": "有声音的爆炸更有冲击力，音效设计也更容易让观众投入。个别影片（如有意保持静默的科幻片）则是少数例外。",
+    "instead": "看科幻片时，爆炸声可以当作艺术手法。想「听到」太空，可以去听 NASA 的数据声音化作品，它们是把数据换成声音的。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "史密森尼国家航空航天博物馆 —— How Things Fly：声音在太空里怎么传播",
+        "url": "https://howthingsfly.si.edu/ask-an-explainer/how-does-sound-travel-space"
+      },
+      {
+        "label": "NASA Science —— Data Sonifications: Black Holes",
+        "url": "https://science.nasa.gov/learners/highlights/data-sonifications"
+      }
+    ],
+    "en": {
+      "belief": "In space, exploding ships and laser cannons make deafening noises",
+      "truth": "Sound needs a medium to travel through, and most of space is essentially a vacuum, so an explosion there would be silent.",
+      "detail": "Sound is a pressure wave carried by a medium such as air. A NASA science page explains that the popular idea that there is no sound in space comes from the fact that most of space is essentially a vacuum, which gives sound waves nothing to propagate through.\n\nElectromagnetic waves (light, radio) need no medium, so we can see an explosion's light and receive radio, but that is not the same as hearing it. NASA's data sonification projects translate astronomical data into audible sound; that is scientists' translation, not sound that space itself makes.",
+      "origin": "An explosion with sound hits harder and is easier for sound designers to make immersive. A few deliberately quiet science-fiction films are the exception.",
+      "instead": "Take space-battle sound as an artistic choice. If you want to 'hear' space, listen to NASA's data sonifications, which turn data into sound.",
+      "sources": [
+        {
+          "label": "Smithsonian National Air and Space Museum — How Things Fly: how does sound travel in space?",
+          "url": "https://howthingsfly.si.edu/ask-an-explainer/how-does-sound-travel-space"
+        },
+        {
+          "label": "NASA Science — Data Sonifications: Black Holes",
+          "url": "https://science.nasa.gov/learners/highlights/data-sonifications"
+        }
+      ]
+    },
+    "scene": "a toy rocket beside a small brass bell under a glass dome"
+  },
+  {
+    "id": "film-water-breaking",
+    "category": "film",
+    "belief": "电影里孕妇「羊水破了」，是分娩开始时哗地一大股，随后立刻要赶去医院",
+    "truth": "足月时在宫缩开始之前就破水的只占约 8% 的妊娠；英国 NHS 描述的破水可以是缓缓渗出，也可以是一股涌出。",
+    "detail": "美国妇产科医师学会（ACOG）第 217 号实践简报指出，足月的胎膜早破（即在临产之前破水）约发生在 8% 的妊娠中；早产的胎膜早破约占 2–3%。也就是说，影视里「破水是分娩的第一个信号」只代表了少数情形。\n\n英国 NHS 的说明里，破水可以是「缓慢的渗漏，也可以是一下子涌出、无法控制」，它既可能发生在临产前，也可能发生在临产中。NHS 的建议是：破水后应尽快联系助产士或产科；若胎膜破裂后 24 小时内仍未临产，因为感染风险略增，通常会建议引产。",
+    "origin": "破水是一个视觉化的、能立刻让人明白「要生了」的戏剧信号，在喜剧里尤其好用，于是被反复使用并默认为标准开场。",
+    "instead": "影片当作戏剧即可。真实情况下，如果怀疑自己破水，不管是涌出还是只是渗出，请按当地产科机构的指引，尽快联系助产士或产科（NHS 的做法是紧急联系），必要时拨打当地急救电话（中国 120 / 澳洲 000 / 美国 911）。",
+    "stakes": "risky",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "ACOG Practice Bulletin No. 217 —— Prelabor Rupture of Membranes, Obstet Gynecol 2020（摘要页，引用足月约 8%、早产 2–3%）",
+        "url": "https://opqic.org/?p=11100"
+      },
+      {
+        "label": "NHS —— 分娩的迹象（Signs of labour）",
+        "url": "https://www.nhs.uk/pregnancy/labour-and-birth/signs-of-labour/"
+      }
+    ],
+    "en": {
+      "belief": "In films, a pregnant woman's 'water breaks' as a big gush at the start of labour and she must rush to hospital",
+      "truth": "Water breaking before labour starts at term happens in only about 8% of pregnancies, and the NHS describes it as either a slow trickle or a sudden gush.",
+      "detail": "ACOG Practice Bulletin No. 217 says prelabor rupture of membranes at term occurs in approximately 8% of pregnancies, and preterm prelabor rupture complicates about 2–3% of pregnancies in the US. So the film idea that waters breaking is the first sign of birth reflects only a minority of cases.\n\nThe NHS describes it as 'a slow trickle or a sudden gush of water you cannot control', and says waters can break before labour starts or during labour. Its advice is to call your midwife or maternity unit urgently if your waters break; if labour does not start within 24 hours, induction may be offered because of a small increased risk of infection.",
+      "origin": "Breaking waters is a visual, instantly readable signal that 'the baby is coming', especially handy in comedies, so it was repeated until it became the default opening.",
+      "instead": "Enjoy it as drama. In real life, if you suspect your waters have broken, whether gush or trickle, follow your local maternity service's guidance and contact your midwife or maternity unit promptly (the NHS says urgently), and call emergency services if needed (China 120 / Australia 000 / US 911).",
+      "sources": [
+        {
+          "label": "ACOG Practice Bulletin No. 217 — Prelabor Rupture of Membranes, Obstet Gynecol 2020 (summary page quoting about 8% at term, 2–3% preterm)",
+          "url": "https://opqic.org/?p=11100"
+        },
+        {
+          "label": "NHS — Signs of labour",
+          "url": "https://www.nhs.uk/pregnancy/labour-and-birth/signs-of-labour/"
+        }
+      ]
+    },
+    "scene": "a small packed hospital bag and a wall calendar on a hallway table"
+  },
+  {
+    "id": "film-truth-serum",
+    "category": "film",
+    "belief": "给间谍或嫌疑人打一针「吐真剂」，他就会老老实实说出真话",
+    "truth": "没有任何药物能稳定可靠地让人说真话；被药物放松后说出的内容可能真假难辨。",
+    "detail": "美国中央情报局历史审查项目公开的《审讯中的「吐真剂」》一文（Bimmerle）写道：「吐真血清」这个词用错了两次，这些药物既不是血清，也不一定带来可作为证据的真话。文中回顾了二十世纪早期的东莨菪碱实验：1922 年一位产科医生让两名嫌疑人在药物下受审，他们都否认了指控，之后在审判中也被判无罪，但「吐真药」的名号却由此传开。\n\n《发现》杂志的一篇文章总结说，近一个世纪的科学文献都没有证实任何化合物能毫无疑问地让人吐出真话：受试者可能回忆起事实，也可能想象或受暗示，而且往往难以区分。",
+    "origin": "间谍片和悬疑片需要一个「撬开嘴」的快捷办法，而 20 世纪 20 年代起媒体对「吐真血清」的报道，给了它一个科学外衣。",
+    "instead": "把这类药物看作影视道具。真实的访谈和审讯，可靠性来自核对证据，而不是某种药物。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Bimmerle G, CIA Studies in Intelligence —— 'Truth' Drugs in Interrogation（CIA 历史审查项目公开版）",
+        "url": "https://cia.gov/resources/csi/static/Truth-Drugs-in-Interrogation.pdf"
+      },
+      {
+        "label": "Discover Magazine —— The Truth About Truth Serum",
+        "url": "https://www.discovermagazine.com/the-truth-about-truth-serum-42882"
+      }
+    ],
+    "en": {
+      "belief": "Inject a spy or suspect with a 'truth serum' and he will honestly tell you everything",
+      "truth": "No drug reliably makes people tell the truth; what people say under sedating drugs can be a mix of fact and fantasy.",
+      "detail": "The CIA's declassified article 'Truth' Drugs in Interrogation (Bimmerle) says 'truth serum' is a misnomer twice over: the drugs are not sera, and they do not necessarily bring forth probative truth. It recounts early-20th-century scopolamine experiments: in 1922 an obstetrician interviewed two suspects under the drug, both denied the charges and were later found not guilty, yet the idea of a 'truth drug' took off.\n\nA Discover Magazine article sums up that nearly a century of scientific literature has not confirmed that any chemical compound can without doubt coax out the truth: subjects may recall facts, imagination or suggestion, often indistinguishably.",
+      "origin": "Spy and thriller plots need a shortcut to 'make him talk', and from the 1920s press coverage of 'truth serum' gave that shortcut a scientific look.",
+      "instead": "Treat truth serum as a movie prop. In real interviews and investigations, reliability comes from checking against evidence, not from a drug.",
+      "sources": [
+        {
+          "label": "Bimmerle G, CIA Studies in Intelligence — 'Truth' Drugs in Interrogation (CIA Historical Review Program release)",
+          "url": "https://cia.gov/resources/csi/static/Truth-Drugs-in-Interrogation.pdf"
+        },
+        {
+          "label": "Discover Magazine — The Truth About Truth Serum",
+          "url": "https://www.discovermagazine.com/the-truth-about-truth-serum-42882"
+        }
+      ]
+    },
+    "scene": "an old brass desk lamp shining on an empty interview table and two chairs"
+  }
+]

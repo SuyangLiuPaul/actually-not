@@ -1,0 +1,407 @@
+[
+  {
+    "id": "why-manhole-round",
+    "category": "why",
+    "belief": "井盖是圆的，因为只有圆形的盖子才不会掉进自己的洞里",
+    "truth": "圆形确实掉不下去，但并不是唯一选择：任何「等宽」曲线（比如勒洛三角形）都不会掉；圆形胜在好做、省料。",
+    "detail": "盖子会不会掉进洞里，取决于它在各个方向上的宽度。圆形在任何方向的宽度都一样，所以无论怎么斜着放，都比洞口的直径大，掉不下去。方形盖子沿对角线的长度比边长大，斜着就能滑进方形的洞。\n\n但这条性质并不是圆形独有。数学上叫「等宽曲线」的形状都有它，最简单的是勒洛三角形——在正三角形的三个顶点之间画圆弧得到的弧边三角形；还有勒洛五边形、七边形。《科学新闻》（Science News）2003 年的一篇科普文章就是这样讲的，并提到有些国家的硬币也用等宽的七边形。\n\n那为什么街上几乎都是圆的？常被提到的原因是：圆形最容易铸造和车削，同样的口径用料也比方形少；圆形井筒承受土压的受力也更均匀；圆盖不用对准方向就能盖上，还可以滚着搬。这些实际理由各自的分量，不同地区、不同厂家的说法并不一样，所以更稳妥的说法是「掉不下去」是一条硬道理，「好做」是让圆形胜出的现实原因。",
+    "origin": "这道题在流行文化里出名，是因为它被当作「考察思维方式的面试题」——作家 William Poundstone 2003 年谈科技公司招聘谜题的书里写过（据维基百科「Manhole cover」词条引述）。题目被简化成「为什么是圆的？答：因为不会掉下去」，「只有圆的才行」这层意思就是在转述中悄悄加上的。",
+    "instead": "下次看到井盖，可以留意：不是所有的盖子都是圆的，方形、长方形的盖子通常搭在比洞口更大的框或台阶上，不是靠形状防掉落。「不会掉进去」是圆形的优点之一，不是它存在的唯一理由。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Ivars Peterson, Science News 2003 —— Why manhole covers are round（科普文章，讲等宽曲线与勒洛三角形）",
+        "url": "https://www.sciencenews.org/?p=26010"
+      },
+      {
+        "label": "Wikipedia —— Manhole cover（列出圆形井盖的几项常见理由，并引用 Poundstone 2003）",
+        "url": "https://en.wikipedia.org/wiki/Manhole_cover"
+      }
+    ],
+    "en": {
+      "belief": "Manhole covers are round because only a round lid can't fall into its own hole.",
+      "truth": "A circle can't fall through, but it isn't the only shape that can: any curve of constant width, such as a Reuleaux triangle, works too. Round wins mostly because it is easy and cheap to make.",
+      "detail": "Whether a lid can drop into its opening depends on its width in every direction. A circle has the same width everywhere, so however you tilt it, it is still wider than the hole. A square lid is longer along its diagonal than along its side, so tilted it can slip into a square opening.\n\nBut that property isn't unique to circles. Any 'curve of constant width' has it. The simplest alternative is the Reuleaux triangle, an equilateral triangle with its sides bulged into circular arcs, and there are Reuleaux pentagons and heptagons too. A 2003 Science News article by Ivars Peterson explains exactly this, and notes that some coins use a constant-width heptagon shape.\n\nSo why are street covers nearly always round? The reasons usually given are practical: circles are easiest to cast and machine and use less material than a square of the same width; a round shaft resists soil pressure evenly; a round lid needs no alignment and can be rolled. How much each reason weighs varies by place and maker, so the careful version is: not falling in is a hard geometric fact, and ease of manufacture is what makes the circle the usual winner.",
+      "origin": "The question became famous as a 'how do you think?' interview puzzle, popularised by William Poundstone's 2003 book about tech-company hiring puzzles (as cited in Wikipedia's 'Manhole cover' article). Boiled down to 'why round? so it can't fall in', the extra idea that only a circle works got added in the retelling.",
+      "instead": "Next time you see a manhole cover, notice that not all are round. Square or rectangular ones usually sit on a frame or ledge larger than the opening rather than relying on shape alone. Not falling in is one advantage of the circle, not its only reason for existing.",
+      "sources": [
+        {
+          "label": "Ivars Peterson, Science News 2003: Why manhole covers are round (popular article on constant-width curves and the Reuleaux triangle)",
+          "url": "https://www.sciencenews.org/?p=26010"
+        },
+        {
+          "label": "Wikipedia: Manhole cover (lists the common reasons for round covers; cites Poundstone 2003)",
+          "url": "https://en.wikipedia.org/wiki/Manhole_cover"
+        }
+      ]
+    },
+    "scene": "a round cast-iron manhole cover on cobblestones beside a rounded three-sided metal plate"
+  },
+  {
+    "id": "why-comet-round-windows",
+    "category": "why",
+    "belief": "飞机舷窗是圆角的，因为早年彗星客机的方形窗户把飞机撕裂了",
+    "truth": "教训是对的——带尖角的开口会产生应力集中——但事故里最先断裂的是近似方形的天线窗和应急舱门窗，不是客舱窗户本身。",
+    "detail": "1954 年，英国海外航空和南非航空的两架「彗星」1 型客机在地中海上空空中解体。调查人员把一整节机身泡进水箱反复加压，模拟成千上万次飞行，结果机身在近似方形的前部应急舱门窗角上因金属疲劳开裂。随后在厄尔巴岛附近打捞到的残骸中，起点被确认在机顶两个自动测向仪（ADF）天线窗一带——这些开口同样近似方形，位于机身最顶部。\n\n美国联邦航空局（FAA）的事故经验库写得很清楚：这些「近似方形」的开口让局部应力比设计时估计的高得多，每次增压—减压都在拐角处累积疲劳，最后撕开机身。圆形、椭圆形的开口让应力沿着弧线平滑流过，不会在角上堆起来，所以此后的喷气客机都用圆角窗户。\n\n不过，航空安全咨询机构 Aerossurance 专门梳理过「彗星」的常见误解：失事的起点是天线开口和应急舱门，不能简单说成「客舱方窗把飞机撕裂了」；调查带来的另一个大变化是「失效—安全」设计思想，以及对机身疲劳试验的重视。FAA 还提到一个关键失误：厂家做疲劳试验的那节机身事先已经加压到两倍工作压力，造成材料冷作硬化，反而掩盖了真实的疲劳寿命。",
+    "origin": "「彗星」事故是航空史上被讲得最多的案例之一，而「方窗—应力集中—改圆窗」是最容易画图、也最容易记住的一条线索，于是被压缩成「方窗害死人」。严格说，这个简化版并不算错，只是把几处近似方形的开口都算到了客舱窗户头上。",
+    "instead": "下次从圆角舷窗往外看，可以想到：圆角是应力沿弧线平滑流动的结果。更准确的说法是「飞机上任何带尖角的开口，都是疲劳裂纹最爱的起点」，所以舱门、天线口、检修口的拐角也都是圆的。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "美国联邦航空局（FAA）事故经验库 —— De Havilland DH-106 Comet 1",
+        "url": "https://www.faa.gov/lessons_learned/transport_airplane/accidents/G-ALYV"
+      },
+      {
+        "label": "Aerossurance —— Common Comet Misconceptions and Collaborative Contribution to Safety",
+        "url": "https://aerossurance.com/safety-management/comet-misconceptions/"
+      }
+    ],
+    "en": {
+      "belief": "Airliner windows have rounded corners because the Comet's square windows tore early jets apart.",
+      "truth": "The lesson is right, since sharp-cornered openings concentrate stress, but the first fractures were at roughly square antenna windows and an escape-hatch window, not at the passenger windows themselves.",
+      "detail": "In 1954 two de Havilland Comet 1 airliners, one flown for BOAC and one for South African Airways, broke up in flight over the Mediterranean. Investigators put a whole fuselage in a water tank and pressurised it again and again to simulate thousands of flights. It cracked from fatigue at the corner of a roughly square forward escape-hatch window. Wreckage recovered near Elba then showed the break-up began around the two automatic direction finder (ADF) antenna windows on top of the fuselage, which were also roughly square.\n\nThe US Federal Aviation Administration's lessons-learned page explains that these squarish openings produced much higher local stress than the designers had estimated, and each pressurisation cycle wore the material at the corners until it tore. Round and oval openings let stress flow smoothly round the curve instead of piling up at corners, which is why jets since then have rounded windows.\n\nHowever, the safety consultancy Aerossurance has catalogued common Comet misconceptions, pointing out that the failures began at the antenna aperture and the escape hatch, so it is too simple to say square passenger windows ripped the aircraft apart. The investigation also drove the shift to fail-safe design and to serious fatigue testing. The FAA adds a telling detail: the test fuselage that survived 16,000 cycles had earlier been pressurised to twice working pressure, which hardened the material and masked the true fatigue life.",
+      "origin": "The Comet crashes are among the most retold stories in aviation, and 'square window, stress concentration, round window' is the easiest thread to draw and remember, so it got compressed into 'square windows killed them'. The short version isn't wrong, it just credits every squarish opening to the passenger windows.",
+      "instead": "Next time you look out of a rounded window, think of stress flowing smoothly around the curve. The more accurate rule is that any sharp-cornered opening in a pressurised skin is a favourite starting point for fatigue cracks, which is why doors, antenna cut-outs and access panels have rounded corners too.",
+      "sources": [
+        {
+          "label": "US Federal Aviation Administration, Lessons Learned: De Havilland DH-106 Comet 1",
+          "url": "https://www.faa.gov/lessons_learned/transport_airplane/accidents/G-ALYV"
+        },
+        {
+          "label": "Aerossurance: Common Comet Misconceptions and Collaborative Contribution to Safety",
+          "url": "https://aerossurance.com/safety-management/comet-misconceptions/"
+        }
+      ]
+    },
+    "scene": "a small airliner window frame with rounded corners beside a square metal frame with a hairline crack"
+  },
+  {
+    "id": "why-pen-cap-hole",
+    "category": "why",
+    "belief": "笔帽顶上的小孔是为了平衡气压，免得墨水干掉或漏出来",
+    "truth": "它主要是一项安全设计：万一孩子把笔帽吸进气管，小孔能留一条通气的路。ISO 11540 就是为此而设的标准。",
+    "detail": "ISO 11540 的名称是「书写和标记工具——降低窒息风险的笔帽规范」。按加拿大标准委员会数据库里的条目，它规定了为降低窒息风险对笔帽的要求，适用于在正常或可预见情况下可能被 14 岁以下儿童使用的书写、标记工具；专供成人使用的（如珠宝笔、昂贵的钢笔、专业绘图笔）不在适用范围内。1993 年版已被作废，2014 年版为现行版本。\n\n通气孔的思路很直接：笔帽是个大小刚好能卡住气管的小物件，如果它被吸进去，带通气孔的笔帽至少不会把空气彻底堵死，给救援争取时间。有科普报道提到标准对通气量有数值要求（每分钟 8 升左右），但本站没能打开标准全文核实具体数字，所以这里不当作定论。\n\n需要说清楚的是：这个标准关心的是防窒息，不是墨水。至于孔在别处是否还有其他作用，这里没有权威来源可以引用，所以不下断言。",
+    "origin": "把笔帽小孔解释成「平衡气压」「防墨水干」，是顺着「小孔=透气」的直觉想出来的功能解释。本站没有查到这种说法最早出自哪里。真正的规范性来源是 1993 年发布、2014 年修订的 ISO 11540。",
+    "instead": "下次看到笔帽上的小孔，可以留意它是不是在笔帽的顶端或侧面：它是给孩子准备的安全设计。给小孩的文具，笔帽上有没有通气孔，是个值得顺手看一眼的细节。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "加拿大标准委员会（SCC）标准数据库 —— ISO 11540:2014 书写和标记工具：降低窒息风险的笔帽规范",
+        "url": "https://ccn-scc.ca/standardsdb/standards/8154463"
+      },
+      {
+        "label": "加拿大标准委员会（SCC）标准数据库 —— ISO 11540:1993（已作废）",
+        "url": "https://ccn-scc.ca/standardsdb/standards/8109284"
+      },
+      {
+        "label": "Mental Floss —— The surprising reason why pen caps have tiny holes in the top（科普报道，提到通气量数值）",
+        "url": "https://www.mentalfloss.com/article/545682/surprising-reason-why-pen-caps-have-tiny-holes-top"
+      }
+    ],
+    "en": {
+      "belief": "The tiny hole in a pen cap is there to equalise air pressure so the ink doesn't dry out or leak.",
+      "truth": "It is mainly a safety feature: if a child inhales the cap, the hole leaves an air path. ISO 11540 is the standard written for exactly this.",
+      "detail": "ISO 11540 is titled for caps on writing and marking instruments that reduce the risk of asphyxiation. According to the Standards Council of Canada's database entry, it sets requirements for such caps and relates to instruments likely, in normal or foreseeable use, to be used by children up to 14. Instruments designed only for adults (jewellery pens, expensive fountain pens, professional technical pens) are outside its scope. The 1993 edition has been withdrawn and the 2014 edition is current.\n\nThe idea is simple. A pen cap is about the size that can lodge in a windpipe, and if one is inhaled, a cap with a vent at least doesn't seal the airway completely, buying time for help. A popular-science article reports that the standard sets a numerical air-flow requirement (around 8 litres per minute), but We could not open the full standard to verify the number, so it isn't presented here as settled.\n\nTo be clear, the standard is about asphyxiation, not ink. Whether the hole has any other effect is something We found no authoritative source for, so no claim is made.",
+      "origin": "Explaining the hole as 'pressure equalising' or 'keeps ink from drying' follows the intuition that a small hole means ventilation. We could not find where that explanation first appeared. The documented source of the design is ISO 11540, first published in 1993 and revised in 2014.",
+      "instead": "Next time you see a vent in a pen cap, notice where it is: it is a child-safety feature. For stationery that children use, a quick look for a vent in the cap is a small detail worth noticing.",
+      "sources": [
+        {
+          "label": "Standards Council of Canada database: ISO 11540:2014, caps for writing and marking instruments to reduce the risk of asphyxiation",
+          "url": "https://ccn-scc.ca/standardsdb/standards/8154463"
+        },
+        {
+          "label": "Standards Council of Canada database: ISO 11540:1993 (annulled)",
+          "url": "https://ccn-scc.ca/standardsdb/standards/8109284"
+        },
+        {
+          "label": "Mental Floss: The surprising reason why pen caps have tiny holes in the top (popular article citing the air-flow figure)",
+          "url": "https://www.mentalfloss.com/article/545682/surprising-reason-why-pen-caps-have-tiny-holes-top"
+        }
+      ]
+    },
+    "scene": "a capped ballpoint pen with a visible tiny hole in the cap, lying on a notebook"
+  },
+  {
+    "id": "why-a4-ratio",
+    "category": "why",
+    "belief": "A4 纸 210×297 毫米这个别扭的尺寸，是随便定的",
+    "truth": "它不是随便定的：长边与短边之比是 √2，所以沿长边对折，得到的纸比例不变；整套尺寸从面积 1 平方米的 A0 一路对折而来。",
+    "detail": "ISO 216 定义的 A 系列纸张有两条规则：每一张纸的长宽比都是 √2（约 1.4142）；A0 的面积是 1 平方米。因为 √2 这个比例，一张纸沿长边对半裁开，得到的两张还是同样的比例，A4 对折就是 A5，A3 对折就是 A4，一路通到底。\n\nA0 的实际尺寸是 841×1189 毫米，面积约 1 平方米；每对折一次得到下一档。A4 理论上不是整数毫米，标准把它凑整成 210×297，所以才看起来别扭。\n\n这个想法并不新。剑桥大学 Markus Kuhn 的整理里提到，哥廷根大学物理教授利希滕贝格 1786 年写给友人的一封信就讨论过 √2 比例的好处；法国在 1798 年的一项纸张税法里定义过与今天 ISO 尺寸一一对应的几种纸；后来德国人 Walter Porstmann 在一百多年后独立重新发明，1922 年成为德国标准 DIN 476，之后被许多国家采用，最终在 1975 年成为国际标准 ISO 216，也成为联合国官方文件的尺寸。北美（美国、加拿大）是主要例外。",
+    "origin": "「A4 尺寸很怪」这个印象来自毫米数不整。人们看到 210 和 297，自然觉得是随便取的；而 √2 这层设计逻辑不会写在纸上，只有对折时才能感觉到。",
+    "instead": "下次拿一张 A4 纸对折，叠上去看看：折出来的 A5 和原来的 A4 是同样的形状。需要缩印、放大复印时，A4 缩成 A5、A3 放大成 A4，页面都刚好铺满，是这个比例的实惠之处。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Markus Kuhn（剑桥大学计算机实验室）—— International standard paper sizes（ISO 216 的设计原理与历史）",
+        "url": "https://www.cl.cam.ac.uk/~mgk25/iso-paper.html"
+      }
+    ],
+    "en": {
+      "belief": "A4's awkward 210 × 297 mm size was picked arbitrarily.",
+      "truth": "It isn't arbitrary: the long side to the short side is the square root of two, so folding a sheet in half along its long side gives a sheet of the same shape. The whole series descends from A0, which has an area of one square metre.",
+      "detail": "ISO 216 defines the A series with two rules: every sheet has a height-to-width ratio of the square root of two (about 1.4142), and A0 has an area of one square metre. Because of that ratio, cutting a sheet in half across its long side gives two sheets with the same proportions, so A3 halved is A4, A4 halved is A5, and so on.\n\nA0 measures 841 × 1189 mm. The exact halved dimensions aren't whole millimetres, so the standard rounds them, giving the slightly odd-looking 210 × 297 for A4.\n\nThe idea is old. In Markus Kuhn's write-up at the University of Cambridge, the physics professor Georg Christoph Lichtenberg is shown discussing the advantages of the square-root-of-two ratio in a letter of 1786; a French paper-tax law of 1798 defined sizes that correspond exactly to some modern ISO sizes; and Walter Porstmann independently reinvented the system in Germany, where it became DIN 476 in 1922. Many countries followed, and it became the international standard ISO 216, and the UN's document format, in 1975. The United States and Canada are the main exceptions.",
+      "origin": "The 'it looks random' impression comes from the unround millimetre numbers. Seeing 210 and 297, people assume they were picked by chance; the square-root-of-two logic isn't printed on the paper and only shows when you fold it.",
+      "instead": "Fold a sheet of A4 in half and lay it over another: the A5 you made has the same shape as the A4. That's why scaling A4 down to A5, or A3 up to A4, on a copier fills the page exactly.",
+      "sources": [
+        {
+          "label": "Markus Kuhn, University of Cambridge Computer Laboratory: International standard paper sizes (design principles and history of ISO 216)",
+          "url": "https://www.cl.cam.ac.uk/~mgk25/iso-paper.html"
+        }
+      ]
+    },
+    "scene": "a sheet of A4 paper folded in half on a desk beside a ruler and a pencil"
+  },
+  {
+    "id": "why-qwerty-slow-down",
+    "category": "why",
+    "belief": "QWERTY 键盘故意把字母排得乱七八糟，好让打字员慢下来，免得卡键",
+    "truth": "「为了防卡键而减速」流传最广，但并非定论：京都大学的研究者通过电报机史料提出，这个排列是在演变中为莫尔斯电码接收员等需求逐步形成的。",
+    "detail": "最常见的说法是：早期打字机的字杆会卡在一起，发明者克里斯托弗·肖尔斯就把常用字母拆开放，让打字员慢下来。这是一个流行了几十年的故事，甚至出现在不少学术论文里。\n\n2011 年，京都大学的安冈孝一和安冈素子发表了《QWERTY 的前史》。他们认为：最早的打字机键盘源自电报用的印字电报机，是为莫尔斯电码的接收员设计的；排列在研制过程中反复变动，先后经过肖尔斯等人、其他合作者和制造商之手，最后「偶然」变成了 QWERTY——一会儿为了接收电报，一会儿为了在发明者与厂商之间折中，最后又为了避开旧专利。他们明确不同意「肖尔斯意图让打字员变慢」，并逐一驳斥了「TYPE WRITER 能在一行里打出」这类流传的说法。\n\n另一边的说法也有来头：他们在论文中引述了东京大学教授山田尚勇 1980 年的论文，该文认为排列是为了让常用的字母组合的字杆错开、减少卡键。安冈夫妇对这个说法并不认同，但机械卡键确实是早期打字机要解决的问题。所以更稳妥的理解是：来历复杂，没有一个干净的单一原因。",
+    "origin": "「为防卡键而减速」的说法在上世纪八十年代起，通过技术史、经济学（如关于「路径依赖」的论文）和科普读物反复被引用，越传越确定。安冈夫妇在论文里点名了这条引用链，指出其中的细节（比如「ed 必须由同一根手指敲」）在历史材料里站不住。",
+    "instead": "遇到「某某设计是故意的」这类说法时，可以问一句：谁最早这么说的、依据什么？QWERTY 的例子说明，一个键盘排列背后可能是电报、专利、厂商妥协的叠加，而不是某个人的巧妙计划。更稳妥的说法是「来历有争议，但至少不是简单的『故意拖慢』」。",
+    "stakes": "harmless",
+    "confidence": "debated",
+    "sources": [
+      {
+        "label": "Koichi Yasuoka & Motoko Yasuoka, ZINBUN No.42, 京都大学人文科学研究所 2011 —— On the Prehistory of QWERTY",
+        "url": "https://repository.kulib.kyoto-u.ac.jp/server/api/core/bitstreams/dc434be9-80cd-499b-a984-f9fa35954c3b/content"
+      }
+    ],
+    "en": {
+      "belief": "QWERTY scrambled the letters on purpose to slow typists down so the typebars wouldn't jam.",
+      "truth": "The 'slow them down' story is the most widespread version but isn't settled: researchers at Kyoto University argue the layout evolved through telegraph equipment and Morse-code receivers, with no consistent plan to slow typing.",
+      "detail": "The usual story: early typewriters' typebars jammed, so the inventor Christopher Latham Sholes separated common letters to slow typists down. It has circulated for decades and appears even in academic papers.\n\nIn 2011 Koichi and Motoko Yasuoka of Kyoto University published 'On the Prehistory of QWERTY'. They argue that the first typewriter keyboard descended from printing telegraphs and was developed for Morse-code receivers, that the arrangement changed many times and 'accidentally' grew into QWERTY, through Sholes and others, then other partners, then manufacturers, at times to receive telegraphs, at times as a compromise between inventors and producers, and finally to avoid old patents. They explicitly disagree that Sholes meant to slow operators down, and they take apart related tales such as the idea that TYPE WRITER was meant to be typed from one row for salesmen.\n\nThe other side has a source too: the Yasuokas quote a 1980 paper by Prof. Hisao Yamada of the University of Tokyo which says the layout was meant to separate frequent letter pairs to reduce jams. The Yasuokas reject this, though typebar jamming was certainly a real problem for early typewriters. The safest reading is that the history is tangled and has no single clean cause.",
+      "origin": "From the 1980s the jam-and-slow-down story was repeated in technical histories, economics papers about path dependence, and popular books, getting more certain each time. The Yasuokas name this chain of citations and argue that its details, such as 'ed' having to be typed with the same finger, don't hold up against the historical machines.",
+      "instead": "When you hear that a design was 'done on purpose', ask who first said so and on what evidence. QWERTY shows how a layout can be the product of telegraphy, patents and manufacturer compromises rather than one clever plan. The careful line is 'the origin is disputed, but it wasn't simply a deliberate slow-down'.",
+      "sources": [
+        {
+          "label": "Koichi Yasuoka & Motoko Yasuoka, ZINBUN No. 42, Kyoto University 2011: On the Prehistory of QWERTY",
+          "url": "https://repository.kulib.kyoto-u.ac.jp/server/api/core/bitstreams/dc434be9-80cd-499b-a984-f9fa35954c3b/content"
+        }
+      ]
+    },
+    "scene": "an old manual typewriter with exposed typebars beside a Morse telegraph key"
+  },
+  {
+    "id": "why-pill-score-line",
+    "category": "why",
+    "belief": "药片中间那道刻痕只是装饰，有没有刻痕，掰开来吃都差不多",
+    "truth": "刻痕是专门为分割设计的：美国 FDA 的指南要求带刻痕的药片要有数据支持，而缓释药片因为掰开可能破坏释药控制，不应有刻痕。",
+    "detail": "美国 FDA 药品评价和研究中心（CDER）2013 年 3 月发布的指南《药片刻痕：命名、标签和评价数据》里，把「刻痕」定义为压在药片平面上的一条凹线，目的是便于把较高剂量的药片分成小份。指南建议申请者提供数据，证明带刻痕的药片能被可靠地分开；对分开后的药片，还要看稳定性等项目。\n\n指南还写明：对于掰开后药物释放的控制可能被破坏的缓释类药片，不应带有刻痕。FDA 的内部研究认为，掰开药片在某些情况下存在安全问题，尤其是当药片没有刻痕、也没有评估过能否分割时：药物含量、重量、崩解或溶出的差异，都可能影响分开后每一份里有多少药物能被吸收。\n\n需要说明的边界：指南同时写到，没有专门规定要求药片必须有刻痕，也并不讨论在什么医疗条件下可以考虑分割药片。所以刻痕说明「设计上可以分」，不等于「你的情况下应该分」。是否掰开，应以说明书、医生或药师的意见为准。",
+    "origin": "刻痕看上去像一道随手压的装饰线，而很多药片上又确实印着字、标志，于是人们很容易把它当作装饰，或者反过来认为「没刻痕的也一样能掰」。这种直觉来自「药片都是一块压实的粉」，但不同剂型的内部结构差别很大。",
+    "instead": "可以留意药片上有没有刻痕，以及药盒说明书里有没有写「可掰开服用」。拿不准时，把药盒带给药师问一句，比自己判断可靠。本条只讲药片设计的一般规律，不构成用药建议。",
+    "stakes": "risky",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "US FDA / CDER, Guidance for Industry 2013 —— Tablet Scoring: Nomenclature, Labeling, and Data for Evaluation",
+        "url": "https://www.fda.gov/media/81626/download"
+      }
+    ],
+    "en": {
+      "belief": "The line across the middle of a pill is just decoration; split or not, a pill is a pill, scored or not.",
+      "truth": "A score is designed for splitting: FDA's guidance asks for data supporting scored tablets, and says modified-release tablets, whose drug release can be compromised by splitting, should not be scored.",
+      "detail": "In its March 2013 guidance 'Tablet Scoring: Nomenclature, Labeling, and Data for Evaluation', the US FDA's CDER defines a score as a debossed line across a tablet's surface, and says it facilitates splitting a higher-strength tablet into smaller portions. It recommends that sponsors supply data showing scored tablets can be split reliably, including checks on the split portions' stability.\n\nIt also states that modified-release products for which control of drug release can be compromised by splitting should not have a scoring feature. FDA's own research concluded that splitting can raise safety issues in some cases, especially when tablets are not scored or evaluated for splitting: variation in content, weight, disintegration or dissolution can change how much drug is in each piece and available for absorption.\n\nThe guidance also draws its own limits. It notes there are no standards or regulatory requirements specifically addressing scoring, and it does not describe the medical circumstances in which splitting is appropriate. So a score says 'designed to be split', not 'you should split this one'. For that, follow the leaflet and the advice of your doctor or pharmacist.",
+      "origin": "A score looks like a casually pressed decorative line, and many tablets also carry printed letters and logos, so it's easy to treat it as decoration or to assume unscored pills can be broken just as well. The intuition comes from picturing every tablet as a plain pressed lump of powder, but internal construction differs a lot between dosage forms.",
+      "instead": "Notice whether a tablet has a score, and whether the leaflet says it may be split. When unsure, show the pack to a pharmacist rather than judging for yourself. This entry describes how tablets are designed in general and is not medication advice.",
+      "sources": [
+        {
+          "label": "US FDA / CDER, Guidance for Industry (March 2013): Tablet Scoring: Nomenclature, Labeling, and Data for Evaluation",
+          "url": "https://www.fda.gov/media/81626/download"
+        }
+      ]
+    },
+    "scene": "a white round tablet with a groove across it beside a small pill cutter on a table"
+  },
+  {
+    "id": "why-runway-numbers",
+    "category": "why",
+    "belief": "机场跑道上那两个大数字，只是随手编的序号",
+    "truth": "数字是跑道中线的磁方位角除以 10 后取整；所以同一条跑道两端的数字相差 18，而且磁极漂移够多时，跑道还会改名。",
+    "detail": "美国联邦航空局《航空情报手册》（AIM）写得很明确：跑道号是最接近「跑道中线磁方位角的十分之一」的整数，方位角从磁北起顺时针量，并且从进近方向来确定。比如朝向磁方位约 092 度的跑道叫 09，另一头的方位约 272 度，就叫 27。同一条跑道两端的朝向相差 180 度，所以数字相差 18。平行跑道再用 L、R、C（左、右、中）区分。\n\n因为用的是磁北而不是真北，而地球磁场在缓慢变化，跑道有时需要改名。美国国家海洋和大气管理局（NOAA）的国家环境信息中心说，阿拉斯加费尔班克斯国际机场 2009 年把 1L-19R 改成了 2L-20R，并且预计 2033 年前后可能再改一次。图森机场管理局在一则公告里也说，这种改名在几乎每个机场都会发生，大约每 30 年一次——这是该机场的说法，不是统一规定。",
+    "origin": "跑道号看上去像编号，是因为它们是两位数字、涂在跑道头上，旁边没有任何解释。没有查到这个误解的具体来源；它更像是「看到数字就当成序号」的自然想法。",
+    "instead": "下次在机场看到跑道号，可以估一下：09 大概朝东，18 朝南，27 朝西，36 朝北。航班降落时，窗外看到的数字就是飞机对着的那一头的方向。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "US FAA, Aeronautical Information Manual 2-3 —— Airport Marking Aids and Signs（跑道标识）",
+        "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap2_section_3.html"
+      },
+      {
+        "label": "NOAA 国家环境信息中心（NCEI）—— Airport Runway Names Shift with Magnetic Field",
+        "url": "https://www.ncei.noaa.gov/node/253"
+      },
+      {
+        "label": "FAASafety.gov 公告 —— 图森国际机场跑道关闭与改号说明",
+        "url": "https://www.faasafety.gov/SPANS/noticeView.aspx?nid=13246"
+      }
+    ],
+    "en": {
+      "belief": "The big numbers painted on an airport runway are just serial numbers.",
+      "truth": "The number is the runway centreline's magnetic bearing divided by ten and rounded, so the two ends of a runway differ by 18, and when magnetic north drifts enough, runways get renamed.",
+      "detail": "The FAA's Aeronautical Information Manual is explicit: the runway number is the whole number nearest one-tenth of the magnetic azimuth of the runway centreline, measured clockwise from magnetic north, determined from the approach direction. A runway pointing at about 092 degrees is Runway 09; the other end, at about 272 degrees, is 27. The two ends differ by 180 degrees, hence 18 in the numbers. Parallel runways add L, R or C for left, right or centre.\n\nBecause it uses magnetic rather than true north, and Earth's magnetic field slowly changes, runways sometimes have to be renumbered. NOAA's National Centers for Environmental Information says Fairbanks International Airport in Alaska renamed runway 1L-19R to 2L-20R in 2009 and expects to need another change around 2033. A Tucson Airport Authority notice also says such renumbering happens at almost every airport, roughly once every 30 years; that is the airport's own statement, not a universal rule.",
+      "origin": "Runway numbers look like serial numbers because they are two digits painted at the end of the pavement with no explanation next to them. We found no particular source for the misconception; it is the natural assumption when you see a number with no context.",
+      "instead": "Next time you see a runway number, estimate the direction: 09 points roughly east, 18 south, 27 west, 36 north. The number you see through the window when landing tells you which way the aircraft is facing.",
+      "sources": [
+        {
+          "label": "US FAA, Aeronautical Information Manual 2-3: Airport Marking Aids and Signs (runway designators)",
+          "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap2_section_3.html"
+        },
+        {
+          "label": "NOAA National Centers for Environmental Information: Airport Runway Names Shift with Magnetic Field",
+          "url": "https://www.ncei.noaa.gov/node/253"
+        },
+        {
+          "label": "FAASafety.gov notice: Tucson International Airport runway closure and renumbering",
+          "url": "https://www.faasafety.gov/SPANS/noticeView.aspx?nid=13246"
+        }
+      ]
+    },
+    "scene": "a miniature runway model with large painted white numbers beside a handheld compass"
+  },
+  {
+    "id": "why-black-box-orange",
+    "category": "why",
+    "belief": "飞机的「黑匣子」是黑色的，所以才叫黑匣子",
+    "truth": "它们其实是醒目的橙色，为的是事故后在残骸里容易被找到；「黑匣子」这个叫法的来历没有定论。",
+    "detail": "澳大利亚运输安全局（ATSB）的说明写得很直接：通常被称作「黑匣子」的飞行记录器，实际上是漆成橙色的，目的是帮助事故后的找回。飞行记录器一般有两个：驾驶舱话音记录器和飞行数据记录器。\n\n名字的来历没有定论。维基百科的「飞行记录器」词条说，「黑匣子」本是二战期间英国对雷达、导航等电子设备的一种叫法，这类设备常装在不反光的黑色外壳里；最早查到的相关文字出现在 1946 年《Flight》杂志的一篇文章里；到 1967 年各国普遍强制安装飞行记录器时，这个称呼已经进入大众用语，当时有报道特意说明这些所谓的「黑匣子」其实是荧光橙色。不过该词条自己也标注说，这一部分的论证可能含有原创研究，所以这只是一种说法，不是定论。",
+    "origin": "名称早于记录器本身的外观设计：「黑匣子」在工程里原本就可以指「只知道输入输出、不知道内部」的系统，在航空里又沿用了早年电子设备的叫法。因此，叫黑匣子的东西不必是黑的，这个名字与颜色其实没有关系。",
+    "instead": "看到新闻里说「黑匣子找到了」，可以想象那是一个醒目橙色的坚固金属盒。至于它为什么叫这个名字，不妨记住：叫法和颜色无关。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "澳大利亚运输安全局（ATSB）—— Black box flight recorders（事实说明，经 SKYbrary 转载）",
+        "url": "https://skybrary.aero/sites/default/files/bookshelf/3679.pdf"
+      },
+      {
+        "label": "Wikipedia —— Flight recorder（术语与名称来历一节；该节自带「可能含原创研究」标注）",
+        "url": "https://en.wikipedia.org/wiki/Flight_recorder"
+      }
+    ],
+    "en": {
+      "belief": "The 'black box' in an aircraft is black, which is why it's called that.",
+      "truth": "Flight recorders are actually bright orange so they are easy to spot in wreckage; where the name 'black box' came from isn't settled.",
+      "detail": "A fact sheet from the Australian Transport Safety Bureau says plainly that flight recorders, popularly known as 'black boxes', are in fact painted orange to help recovery after an accident. There are normally two: the cockpit voice recorder and the flight data recorder.\n\nThe name's origin isn't settled. Wikipedia's 'Flight recorder' article says 'black box' was a British Second World War phrase for secret radar and navigation electronics, often housed in non-reflective black cases; the earliest reference it finds is a 1946 Flight magazine article; and by 1967, when many countries mandated flight recorders, the phrase was in general use, with one report noting these so-called black boxes were in fact fluorescent flame-orange. The article itself flags that section as possibly containing original research, so treat it as one explanation rather than a conclusion.",
+      "origin": "The name predates the look of the recorders: 'black box' already meant, in engineering, a system known only by its inputs and outputs, and in aviation it carried over from early electronic equipment. So something called a black box needn't be black; the name and the colour are unrelated.",
+      "instead": "When the news says 'the black box has been found', picture a tough, conspicuously orange metal box. As for the name, remember that it has nothing to do with the colour.",
+      "sources": [
+        {
+          "label": "Australian Transport Safety Bureau (ATSB): Black box flight recorders fact sheet, hosted on SKYbrary",
+          "url": "https://skybrary.aero/sites/default/files/bookshelf/3679.pdf"
+        },
+        {
+          "label": "Wikipedia: Flight recorder (Terminology section, which flags itself as possibly original research)",
+          "url": "https://en.wikipedia.org/wiki/Flight_recorder"
+        }
+      ]
+    },
+    "scene": "a bright orange rectangular metal box with a cable, resting on a grey gravel surface"
+  },
+  {
+    "id": "why-golf-ball-dimples",
+    "category": "why",
+    "belief": "高尔夫球表面的小坑只是为了好握、防滑；光滑的球应该飞得更远",
+    "truth": "凹坑是空气动力学设计：它们让紧贴球面的气流变成湍流、在球后更晚分离，使阻力比光滑球显著降低。",
+    "detail": "物体在空气中飞行时，前后压力差造成的「压差阻力」是主要的阻力来源。光滑球的气流会在球的中部较早脱离表面，后面拖出一大片低压的尾流，阻力很大。\n\n2006 年发表在《流体物理》（Physics of Fluids）上的一篇研究（Choi、Jeon 和 Choi）测量了凹坑表面上方的气流速度，解释了机制：凹坑引起局部分离，并触发分离剪切层的不稳定，产生很强的湍流；有了这股湍流，气流带着较高的动量重新附着到球面上，能够克服球后部的强逆压梯度，使主分离点向后推迟，阻力因此大幅下降。论文引言写到，凹坑可使球的阻力比光滑表面降低多达约 50%。",
+    "origin": "没有查到「凹坑是为了好握」这一说法的具体出处。它更像是外行从手感出发的直觉：球身有纹路，就想到防滑。这种直觉忽略了球飞行时，表面形状会改变空气怎么绕过它。",
+    "instead": "下次看高尔夫球，可以想到：那几百个小坑是在给空气「制造小漩涡」，让气流贴着球走得更远。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Choi, Jeon & Choi, Physics of Fluids 18, 041702 (2006) —— Mechanism of drag reduction by dimples on a sphere",
+        "url": "https://research.engineering.ucdavis.edu/biosport/wp-content/uploads/sites/24/2014/06/Choi-et-al-2006-Mechanism-of-drag-reduction-by-dimples-on-a-sphere.pdf"
+      }
+    ],
+    "en": {
+      "belief": "A golf ball's dimples are just for grip, and a smooth ball would fly farther.",
+      "truth": "The dimples are aerodynamic: they make the air layer next to the ball turbulent, so the flow separates later behind it, and drag falls well below that of a smooth ball.",
+      "detail": "When an object flies through air, the pressure difference between its front and back, pressure drag, is the main resistance. On a smooth sphere the flow leaves the surface early, trailing a large low-pressure wake and giving high drag.\n\nA 2006 letter in Physics of Fluids by Choi, Jeon and Choi measured the air velocity above a dimpled surface and explained the mechanism: dimples cause local flow separation and trigger instability in the separating shear layer, generating strong turbulence; with this the flow reattaches to the surface with high momentum near the wall and can overcome the strong adverse pressure gradient at the rear, so the main separation is delayed and drag is greatly reduced. The paper's introduction says dimples reduce drag on a sphere by as much as 50 per cent compared with a smooth surface.",
+      "origin": "We found no source for the 'dimples are for grip' idea. It looks like a layperson's intuition from touch: a textured ball suggests grip. It overlooks that surface shape changes how air flows around a ball in flight.",
+      "instead": "Next time you see a golf ball, picture the dimples stirring up tiny turbulence that lets air cling to the ball longer.",
+      "sources": [
+        {
+          "label": "Choi, Jeon & Choi, Physics of Fluids 18, 041702 (2006): Mechanism of drag reduction by dimples on a sphere",
+          "url": "https://research.engineering.ucdavis.edu/biosport/wp-content/uploads/sites/24/2014/06/Choi-et-al-2006-Mechanism-of-drag-reduction-by-dimples-on-a-sphere.pdf"
+        }
+      ]
+    },
+    "scene": "a white dimpled golf ball on a short green lawn beside a smooth white sphere"
+  },
+  {
+    "id": "why-coin-ridged-edge",
+    "category": "why",
+    "belief": "硬币边上的一圈竖纹，是为了防滑或者好看",
+    "truth": "这圈纹路最初是为防「剪边」：人们会削下贵金属币边缘的一点金属，齿纹让这种动作一眼就能被看出来。",
+    "detail": "过去的金币、银币，价值就来自它所含的贵金属。如果币边是光滑的，有人把边缘削掉一点，币看上去还差不多，仍能按面值花出去，削下来的金属却可以熔掉卖钱，这叫「剪边」。英国皇家铸币局（Royal Mint）的介绍说，英国在 17 世纪中叶引进了能铸造更厚的硬币、并在边缘压出竖纹（milled edge）的机器；该局的另一篇介绍说，这种带纹边缘在英国币上始于 1660 年代，用来对付剪边。有的 17 世纪币的边缘还刻着拉丁文「Decus et Tutamen」，意思是「装饰与保护」。\n\n所以这圈纹路原本是一种防伪、防损的设计，而不是为了手感。今天大多数硬币已经不含贵金属，边缘的纹路是否仍有其他用途，因国家和币种而异，这里没有权威来源可以统一说明，所以不下断言。",
+    "origin": "当币的价值不再取决于金属，「防止剪边」这一层需求消失了，齿纹却因为传统被保留下来；人们看到它，自然从当下的功能（握感、辨识）去想它的用处。具体是谁第一次这样解释的，没有查到。",
+    "instead": "下次摸硬币的边，可以想到它原本是一圈「防篡改封条」：任何削过的痕迹都会在纹路上露出来。你也可以比较一下手边几种面额的硬币，看哪些边缘有纹、哪些光滑。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "The Royal Mint —— The Milled Edge Motif（期刊文章，讲带纹币边的由来与时间）",
+        "url": "https://886.royalmint.com/blogs/the-journal/the-milled-edge-motif"
+      },
+      {
+        "label": "The Royal Mint —— Clippers and Counterfeiters: Notes for Teachers（教师资料，讲剪边与 17 世纪中叶引进压纹机器）",
+        "url": "https://www.royalmint.com/globalassets/the-royal-mint/pdf/clippers-and-counterfeiters-notes-for-teachers.pdf"
+      }
+    ],
+    "en": {
+      "belief": "The ridges around a coin's edge are for grip, or just for looks.",
+      "truth": "The ridges began as protection against clipping: people shaved metal from the edges of precious-metal coins, and a milled edge makes that tampering obvious at a glance.",
+      "detail": "Gold and silver coins used to be worth what their metal was worth. With a smooth edge, someone could shave a little metal off, the coin still looked about right and spent at face value, and the shavings could be melted down and sold. This was called clipping. The Royal Mint says machines able to strike thicker coins and put milling around the edge were brought in during the mid-17th century; another Royal Mint article says milled edges began on British coinage in the 1660s, as a response to clipping. Some 17th-century coins carry the Latin edge inscription 'Decus et Tutamen', meaning 'an ornament and a safeguard'.\n\nSo the ridges were originally an anti-tampering feature, not a matter of feel. Most coins today contain little precious metal, and whether their edge ridges serve other purposes varies by country and coin; We found no authoritative source that settles that, so no claim is made.",
+      "origin": "Once value no longer depended on metal, the anti-clipping need disappeared but the ridges stayed by tradition, so people naturally explain them by present-day functions such as grip or identification. We could not trace who first offered that explanation.",
+      "instead": "Next time you run a thumb along a coin's edge, think of it as a tamper-evident seal: any filing would show up in the ridges. Compare coins of different values in your pocket and see which have ridged edges and which are smooth.",
+      "sources": [
+        {
+          "label": "The Royal Mint: The Milled Edge Motif (journal article on the origin and timing of milled edges)",
+          "url": "https://886.royalmint.com/blogs/the-journal/the-milled-edge-motif"
+        },
+        {
+          "label": "The Royal Mint: Clippers and Counterfeiters, notes for teachers (clipping and the mid-17th-century milling machines)",
+          "url": "https://www.royalmint.com/globalassets/the-royal-mint/pdf/clippers-and-counterfeiters-notes-for-teachers.pdf"
+        }
+      ]
+    },
+    "scene": "a stack of silver coins with ridged edges beside a small pair of metal shears"
+  },
+  {
+    "id": "why-wire-marker-balls",
+    "category": "why",
+    "belief": "高压电线上挂的彩色大球是装饰，或者是配重、给鸟看的",
+    "truth": "它们是给低空飞行的航空器看的：把本来很难看见的细电线标出来。美国联邦航空局的标准对球的大小、颜色和间距都有规定。",
+    "detail": "美国联邦航空局的咨询通告 AC 70/7460-1（障碍物标识与照明）第 3.5.1 条「球形标志」写道，球形标志主要用于标识不到 69 千伏的架空线和悬链线，也可以用投影面积不小于球的其他形状，例如圆柱。球径方面：跨越峡谷、湖泊、河流等的大跨度线路，直径不应小于 36 英寸（约 91 厘米）；较小的 20 英寸（约 51 厘米）球可以用在跨度较小的线路上，或距地面不到 50 英尺、距跑道端 1500 英尺以内的电力线。每个标志应为单一颜色，即航空橙、白或黄。\n\n安装上，无灯标志一般沿线约每 200 英尺一个，跑道端等关键区域更密，为 30 至 50 英尺；颜色宜交替安装橙、白、黄，因为交替的颜色在各种背景下最容易看见。\n\n这是美国的标准；其他国家有自己的规定，这里没有逐一核实。本条也没有评价「给鸟看」之类的说法：本站查到的 FAA 文件只说明了面向航空器的用途，没有谈鸟。",
+    "origin": "球挂在远离道路的高处，看起来没有实用功能，旁边又没有标牌解释，人们只好从「好看」或「物理上有用」去猜。没有找到这些猜测最早出处。",
+    "instead": "下次在山口、河谷或机场附近看到电线上的彩球，可以想到：那是给直升机、农用飞机的驾驶员看的路标。如果你在这些地方做低空飞行，球就是你需要避让电线的信号。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "US FAA, Advisory Circular 70/7460-1M —— Obstruction Marking and Lighting（第 3.5.1 条 Spherical Markers）",
+        "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/Advisory_Circular_70_7460_1M.pdf"
+      }
+    ],
+    "en": {
+      "belief": "The big coloured balls on power lines are decoration, or counterweights, or for birds.",
+      "truth": "They are for low-flying aircraft: they make hard-to-see wires visible. The FAA sets rules for their size, colour and spacing.",
+      "detail": "The US FAA's Advisory Circular 70/7460-1, Obstruction Marking and Lighting, section 3.5.1 'Spherical Markers', says spherical markers are primarily used to identify overhead wires and catenary lines under 69 kilovolts, and that other shapes such as cylinders are acceptable if their projected area is no less than that of a sphere. For extensive crossings of canyons, lakes or rivers, diameter should be at least 36 inches (91 cm); smaller 20-inch (51 cm) spheres are allowed on less extensive spans or on power lines below 50 feet above ground within 1,500 feet of a runway end. Each marker should be a solid colour: aviation orange, white or yellow.\n\nFor installation, unlighted markers should be spaced about 200 feet apart, closer (30 to 50 feet) in critical areas near runway ends, and alternating colours are recommended because that gives the most conspicuity against all backgrounds.\n\nThis is the US standard; other countries have their own rules, which We did not check. The entry also makes no claim about birds: the FAA document reviewed describes only the use for aircraft.",
+      "origin": "The balls hang high, away from roads, with no sign to explain them, so people guess from 'decoration' or 'something physical'. we couldn't trace where those guesses first appeared.",
+      "instead": "Next time you see coloured balls on wires near a mountain pass, river valley or airport, think of them as road signs for helicopter and crop-duster pilots. If you fly low in such places, the balls are your cue to watch for wires.",
+      "sources": [
+        {
+          "label": "US FAA, Advisory Circular 70/7460-1M: Obstruction Marking and Lighting (section 3.5.1, Spherical Markers)",
+          "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/Advisory_Circular_70_7460_1M.pdf"
+        }
+      ]
+    },
+    "scene": "orange and white spheres threaded along a taut wire strung between two wooden poles"
+  }
+]

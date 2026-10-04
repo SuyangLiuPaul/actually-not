@@ -1,0 +1,651 @@
+[
+  {
+    "id": "origin-railway-gauge",
+    "category": "origin",
+    "belief": "铁轨的宽度是两千年前罗马战车的轮距，连航天飞机的火箭助推器宽度都被它决定了",
+    "truth": "标准轨距（1435 毫米）能查到的直接来源是英国煤矿的马拉轨道和斯蒂芬森的铁路；「罗马战车」这一环查不到任何文献链条。",
+    "detail": "史料能追到的链条是这样的：英国东北部煤矿用马拉的矿车在木轨、铁轨上运煤，乔治·斯蒂芬森在这些煤矿工作时，沿用了当地常见的约 4 英尺 8 英寸的轨距，后来在利物浦—曼彻斯特铁路（1830 年通车）上定为 4 英尺 8.5 英寸。多出来的半英寸据说是为了让车辆过弯时不容易卡住。\n\n至于「罗马战车」：马车的轮距大致取决于一匹驮马并排站在两根车辕之间需要多宽，所以世界各地的马车轮距都在五英尺上下——这是一个实用上的巧合，而不是一条代代相传的传承。有历史学者还指出，英国的马拉轨道其实从来没有过统一轨距，宽窄不一。\n\n所谓「航天飞机助推器受制于铁轨宽度」，被后来的评论者指出，真正限制运输的更可能是隧道和桥梁的净空（装载限界），而不是轨距本身。这个故事自称的「环环相扣」，在每一环上都缺少文献。",
+    "origin": "这个故事以「马屁股决定航天飞机」的段子形式流传，据维基百科的说法至少从 1937 年起就有类似版本，后来在互联网上被反复转发。段子的魅力在于把毫不相干的东西用一条因果链串起来。",
+    "instead": "可以说：「标准轨距主要来自英国早期煤矿马拉轨道的尺寸，经斯蒂芬森推广；马车轮距大致相近是因为都要容下一匹马。」不要说它「就是罗马战车的轮距」，除非有人拿出文献。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      {
+        "label": "Wikipedia —— Standard-gauge railway（历史部分：斯蒂芬森与煤矿马拉轨道；罗马战车说法的流传）",
+        "url": "https://en.wikipedia.org/wiki/Standard-gauge_railway"
+      },
+      {
+        "label": "Tastes of History —— Dispelling some myths: Romans, railways and NASA rockets（2023；引用 Baxter 1966 对马拉轨道无统一轨距的研究）",
+        "url": "https://www.tastesofhistory.co.uk/post/dispelling-some-myths-romans-railways-and-nasa-rockets"
+      },
+      {
+        "label": "Network Rail —— George Stephenson（1781–1848）：马车轮距与早期轨道约 4 英尺 8 英寸",
+        "url": "https://www.networkrail.co.uk/who-we-are/our-history/eminent-engineers/george-stephenson/"
+      }
+    ],
+    "en": {
+      "belief": "Railway track width comes from Roman chariot wheels, and even the Space Shuttle's rocket boosters were sized by it",
+      "truth": "The standard gauge (1,435 mm) can be traced to English colliery horse-drawn wagonways and George Stephenson's railways; no documentary chain links it to Roman chariots.",
+      "detail": "The traceable chain runs like this: coal mines in north-east England used horse-drawn wagons on wooden and iron ways. George Stephenson, working at those collieries, adopted the roughly 4 ft 8 in gauge common there, then fixed 4 ft 8.5 in for the Liverpool and Manchester Railway (opened 1830). The extra half inch is said to have eased curves.\n\nAs for the 'Roman chariot': a cart's wheel spacing is set largely by how wide a draught horse standing between two shafts needs to be, so horse-drawn vehicles around the world sit near five feet. That is a practical coincidence, not an inherited standard. One historian of wagonways has also noted that English horse railways never had a single uniform gauge.\n\nThe claim that the Shuttle's boosters were limited by track gauge has been challenged too: the constraint on rail transport is more plausibly the loading gauge (tunnel and bridge clearances) than the distance between the rails. The story's neat 'link by link' feel has no document behind most of its links.",
+      "origin": "The tale spread as a 'horse's behind decides the Space Shuttle' anecdote; according to Wikipedia, versions of it have circulated since at least 1937, and the internet kept repeating it. Its charm is chaining unrelated things into one cause.",
+      "instead": "Say: 'Standard gauge mostly comes from early English colliery wagonways and was spread by Stephenson; cart widths were similar because they had to fit a horse.' Don't say it 'is' the chariot width unless someone produces a source.",
+      "sources": [
+        {
+          "label": "Wikipedia — Standard-gauge railway (history: Stephenson and colliery wagonways; spread of the chariot story)",
+          "url": "https://en.wikipedia.org/wiki/Standard-gauge_railway"
+        },
+        {
+          "label": "Tastes of History — Dispelling some myths: Romans, railways and NASA rockets (2023; cites Baxter 1966 on the lack of a standard wagonway gauge)",
+          "url": "https://www.tastesofhistory.co.uk/post/dispelling-some-myths-romans-railways-and-nasa-rockets"
+        },
+        {
+          "label": "Network Rail — George Stephenson (1781–1848): cart wheel spacing and early trackways of about 4 ft 8 in",
+          "url": "https://www.networkrail.co.uk/who-we-are/our-history/eminent-engineers/george-stephenson/"
+        }
+      ]
+    },
+    "scene": "a section of old iron railway track beside a wooden coal wagon wheel"
+  },
+  {
+    "id": "origin-coca-cola-santa",
+    "category": "origin",
+    "belief": "圣诞老人的红衣服是可口可乐为了推广品牌发明的",
+    "truth": "红衣圣诞老人在可口可乐1931年的广告之前就有了；可口可乐把这个形象推广得更广，但没有发明它。",
+    "detail": "可口可乐公司自己的历史页面就写明：圣诞老人在画家桑德布罗姆（Haddon Sundblom）动笔之前就已经穿着红外套出现过。该页面还说，漫画家托马斯·纳斯特（Thomas Nast）从 1862 年起为《哈珀周刊》画了约三十年的圣诞老人，外套的颜色从褐黄逐渐变成了今天的红色。\n\n维基百科的「圣诞老人」条目也提到，20 世纪初的《Puck》杂志封面上，圣诞老人已经是红白装扮、基本是今天的样子；白石饮料（White Rock）在 1915 年做过黑白广告，1923—1925 年做过彩色广告，都早于可口可乐的大规模系列。\n\n所以准确的说法是：可口可乐 1931 年请桑德布罗姆画了一个和蔼、圆润、更像普通人的圣诞老人，并在此后几十年的广告里反复出现，让这个形象深入人心。「发明红衣」这一点，不成立。",
+    "origin": "这个说法大概源于可口可乐那组广告确实太有名、太长寿，人们倒推：「既然最出名的红衣圣诞老人是它画的，那红色一定是它定的。」维基百科记录这类说法属于流传的都市传说。",
+    "instead": "可以说：「可口可乐的广告在 20 世纪中叶让红衣圣诞老人家喻户晓，但红外套在 19 世纪的插画里就有了。」想看更早的红衣形象，可以找纳斯特的圣诞老人插画。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "The Coca-Cola Company —— Haddon Sundblom and the Coca-Cola Santas（官方历史页面）",
+        "url": "https://www.coca-colacompany.com/about-us/history/haddon-sundblom-and-the-coca-cola-santas"
+      },
+      {
+        "label": "Wikipedia —— Santa Claus（可口可乐都市传说；Puck 封面；White Rock 广告）",
+        "url": "https://en.wikipedia.org/wiki/Santa_Claus"
+      },
+      {
+        "label": "The Ferret —— No, Santa Claus was not first dressed in red by Coca-Cola（列举 1868、1881 等更早的红衣形象）",
+        "url": "https://theferret.scot/fact-check-coca-cola-red-santa-claus-christmas/"
+      }
+    ],
+    "en": {
+      "belief": "Santa's red suit was invented by Coca-Cola to sell soda",
+      "truth": "A red-coated Santa existed before Coca-Cola's 1931 ads; the company popularised the image but did not invent it.",
+      "detail": "Coca-Cola's own history page says Santa appeared in a red coat before artist Haddon Sundblom painted him. It adds that cartoonist Thomas Nast drew Santa for Harper's Weekly for about thirty years from 1862, and that the coat's colour shifted from tan to the red we know.\n\nWikipedia's Santa Claus article notes that Puck magazine covers in the first years of the 20th century already showed Santa in red and white, essentially in his current form, and that White Rock Beverages used Santa in monochrome ads in 1915 and colour ads in 1923–25 — all before Coca-Cola's big series.\n\nThe accurate version: in 1931 Coca-Cola commissioned Sundblom to paint a warm, plump, human-looking Santa, and decades of repeated ads fixed that look in public memory. 'Invented the red suit' does not hold up.",
+      "origin": "The idea probably grew out of how famous and long-running those ads were: people reasoned backwards from 'the best-known red Santa was Coke's' to 'Coke chose the red'. Wikipedia records this as an urban legend.",
+      "instead": "Say: 'Coca-Cola's ads made the red-suited Santa a household image in the mid-20th century, but red coats appear in 19th-century illustrations.' For earlier examples, look at Thomas Nast's Santa drawings.",
+      "sources": [
+        {
+          "label": "The Coca-Cola Company — Haddon Sundblom and the Coca-Cola Santas (company history page)",
+          "url": "https://www.coca-colacompany.com/about-us/history/haddon-sundblom-and-the-coca-cola-santas"
+        },
+        {
+          "label": "Wikipedia — Santa Claus (Coca-Cola urban legend; Puck covers; White Rock ads)",
+          "url": "https://en.wikipedia.org/wiki/Santa_Claus"
+        },
+        {
+          "label": "The Ferret — No, Santa Claus was not first dressed in red by Coca-Cola (earlier red Santas, 1868, 1881)",
+          "url": "https://theferret.scot/fact-check-coca-cola-red-santa-claus-christmas/"
+        }
+      ]
+    },
+    "scene": "a red felt coat with white fur trim draped over a wooden chair beside a glass bottle"
+  },
+  {
+    "id": "origin-napoleon-short",
+    "category": "origin",
+    "belief": "拿破仑是个矮子，只有一米五几",
+    "truth": "拿破仑身高约 1.68–1.70 米，在当时的法国男性里属于平均甚至略高；「矮」主要来自法制英寸的换算误会和英国漫画。",
+    "detail": "拿破仑基金会（Fondation Napoléon）的文章引用了他去世时的测量：安托马尔奇记录为「5 法尺 2 法寸 4 法分」，折合约 1.686 米；英国室内装潢匠安德鲁·达林当年的测量是 5 英尺 7 英寸，约 1.70 米。1802 年还有英国访客估计这位第一执政约 5 英尺 7 英寸。\n\n误会出在单位：法国旧制的「寸」比英制的「寸」长。如果把「5 英尺 2 英寸」按英制直接理解，就成了约 1.57 米——于是「矮子拿破仑」就诞生了。维基百科「拿破仑情结」条目也写到，他的身高折合英制略低于 5 英尺 6 英寸到 5 英尺 7 英寸，属当时平均水平。\n\n另一半原因是宣传：基金会的文章认为，1802 年《亚眠和约》之后，英国讽刺漫画（如 1803 年的吉尔雷、1814 年的克鲁克香克）故意把他画成迷你的「小波尼」。他身边的军官高大、服饰华丽，更衬得他朴素瘦小。",
+    "origin": "英国漫画把一个政治对手画成小个子，法制单位被误读成英制，两件事叠加，再加上后来心理学上的「拿破仑情结」一词，让这个印象越来越深。",
+    "instead": "可以说：「拿破仑身高大约 1.68 米，在当时算正常偏高；说他矮，是英国漫画和单位换算的功劳。」引用具体数字时，请注明是法制还是英制。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Fondation Napoléon —— La taille de Napoléon（测量记录、单位换算与英国漫画的作用）",
+        "url": "https://www.napoleon.org/histoire-des-2-empires/articles/la-taille-de-napoleon"
+      },
+      {
+        "label": "Wikipedia —— Napoleon complex（身高折合与吉尔雷漫画的影响）",
+        "url": "https://en.wikipedia.org/wiki/Napoleon_complex"
+      }
+    ],
+    "en": {
+      "belief": "Napoleon was a tiny man, barely five feet tall",
+      "truth": "Napoleon stood about 1.68–1.70 m, average or slightly above for a Frenchman of his time; the 'short' image comes from a unit mix-up and British caricature.",
+      "detail": "A Fondation Napoléon article cites the measurement taken at his death: Antommarchi recorded '5 pieds 2 pouces 4 lignes' in old French units, about 1.686 m. An English upholsterer, Andrew Darling, measured 5 ft 7 in in English units, about 1.70 m. An English visitor in 1802 also put the First Consul at roughly 5 ft 7 in.\n\nThe confusion lies in units: the old French inch was longer than the English one. Read '5 ft 2 in' as English measure and you get about 1.57 m — hence 'tiny Napoleon'. Wikipedia's Napoleon complex entry likewise puts his height in imperial terms at just under 5 ft 6 in to 5 ft 7 in, about average for the era.\n\nThe other half is propaganda: the Foundation's article argues that after the 1802 Peace of Amiens, British satirists (Gillray in 1803, Cruikshank in 1814) deliberately drew him as a miniature 'Little Boney', and the tall, flamboyantly dressed officers around him made him look smaller by comparison.",
+      "origin": "British cartoons shrank a political enemy, French units were misread as English ones, and later the psychological term 'Napoleon complex' deepened the impression.",
+      "instead": "Say: 'Napoleon was around 1.68 m, normal to slightly tall for his day; the 'short' legend comes from British caricature and unit conversion.' When quoting a figure, say whether it is French or English measure.",
+      "sources": [
+        {
+          "label": "Fondation Napoléon — La taille de Napoléon (measurements, unit conversion, role of British caricature)",
+          "url": "https://www.napoleon.org/histoire-des-2-empires/articles/la-taille-de-napoleon"
+        },
+        {
+          "label": "Wikipedia — Napoleon complex (height conversion; Gillray caricatures)",
+          "url": "https://en.wikipedia.org/wiki/Napoleon_complex"
+        }
+      ]
+    },
+    "scene": "a tall bicorne hat and a wooden ruler lying on an old map"
+  },
+  {
+    "id": "origin-viking-horned-helmets",
+    "category": "origin",
+    "belief": "维京战士都戴着带牛角的头盔",
+    "truth": "迄今没有发现过带角的维京时代头盔；这个形象大体来自 19 世纪的舞台和插画，尤其是 1876 年瓦格纳歌剧的服装。",
+    "detail": "丹麦国家博物馆说得很明确：维京时代只保存下来一顶头盔（挪威的耶尔蒙德布头盔，约公元 950—975 年），它没有角，带有护目框；同时没有任何同时代的文字提到维京人戴角盔。挪威科学网站引用考古学家的话：从未发现过带角的维京时代头盔。\n\n真正带角的头盔是青铜器时代的，比如 1942 年在丹麦沼泽中出土的维克瑟头盔，距维京时代约两千年，更可能用于仪式。需要留余地的是：丹麦国家博物馆提到，在铁器时代和维京时代的一些图像（如金角和奥塞贝格挂毯）上确实有带角头饰的人物，推测这类装束若真有，也更可能属于仪式或特殊人物，而不是普通战士的日常战斗装备。\n\n大众形象的来源，据多方介绍，是 1876 年拜罗伊特首演瓦格纳《尼伯龙根的指环》时，服装设计师卡尔·埃米尔·德普勒为角色设计了带角盔，此后通过插画、儿童读物和影视被反复使用。",
+    "origin": "19 世纪的北欧浪漫主义热潮需要一个一眼能认出的「野蛮人」形象；舞台服装给了它一对牛角，后来的插画家和电影人照搬。",
+    "instead": "可以说：「维京时代没发现过带角头盔；有角的头盔是更早的青铜时代，或是后世舞台造型。」不用说「绝对没有人在仪式上戴过角饰」——只能说没有证据表明维京战士日常这样作战。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "National Museum of Denmark —— Viking Age helmets（Helmets 页面）",
+        "url": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/weapons/helmets/"
+      },
+      {
+        "label": "ScienceNorway —— No, the Vikings didn't wear helmets with horns（采访考古学家 Ingrid Ystgaard）",
+        "url": "https://sciencenorway.no/bronze-age-viking-age/no-the-vikings-didnt-wear-helmets-with-horns/1995364"
+      },
+      {
+        "label": "Wikipedia —— Horned helmet（维京形象的由来；维克瑟青铜头盔）",
+        "url": "https://en.wikipedia.org/wiki/Horned_helmet"
+      },
+      {
+        "label": "Wikipedia —— Carl Emil Doepler（1876 年拜罗伊特《指环》服装设计）",
+        "url": "https://en.wikipedia.org/wiki/Carl_Emil_Doepler"
+      }
+    ],
+    "en": {
+      "belief": "Viking warriors wore helmets with bull horns",
+      "truth": "No horned helmet from the Viking Age has ever been found; the image largely comes from 19th-century stage and book illustration, especially Wagner's 1876 costumes.",
+      "detail": "The National Museum of Denmark is explicit: only one Viking Age helmet survives (the Gjermundbu helmet from Norway, c. 950–975), and it has no horns, only a face guard; no contemporary source mentions Vikings wearing horned headgear. ScienceNorway quotes an archaeologist saying helmets with horns have never been found from the Viking Age.\n\nGenuinely horned helmets are Bronze Age, such as the Veksø helmets found in a Danish bog in 1942, some two thousand years before the Vikings and more likely ritual objects. To be fair, the Danish museum notes that Iron Age and Viking-period images (the Golden Horns, the Oseberg tapestry) do show figures with horned headgear, and suggests that if such gear existed it belonged to ritual or special figures rather than ordinary battle dress.\n\nThe popular image is usually traced to the 1876 Bayreuth premiere of Wagner's Ring cycle, where costume designer Carl Emil Doepler gave characters horned helmets; illustrators, children's books and films then copied them.",
+      "origin": "19th-century Nordic romanticism wanted an instantly recognisable 'barbarian'; stage costume supplied the horns and later artists and filmmakers copied them.",
+      "instead": "Say: 'No horned helmets have been found from the Viking Age; horns belong to the Bronze Age or to later stage design.' Avoid claiming nobody ever wore horns in ritual — the accurate claim is that there's no evidence Vikings routinely fought that way.",
+      "sources": [
+        {
+          "label": "National Museum of Denmark — Viking Age helmets",
+          "url": "https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/weapons/helmets/"
+        },
+        {
+          "label": "ScienceNorway — No, the Vikings didn't wear helmets with horns (interview with archaeologist Ingrid Ystgaard)",
+          "url": "https://sciencenorway.no/bronze-age-viking-age/no-the-vikings-didnt-wear-helmets-with-horns/1995364"
+        },
+        {
+          "label": "Wikipedia — Horned helmet (origin of the Viking image; Veksø Bronze Age helmets)",
+          "url": "https://en.wikipedia.org/wiki/Horned_helmet"
+        },
+        {
+          "label": "Wikipedia — Carl Emil Doepler (costumes for the 1876 Bayreuth Ring)",
+          "url": "https://en.wikipedia.org/wiki/Carl_Emil_Doepler"
+        }
+      ]
+    },
+    "scene": "a plain rounded iron helmet with eye guard beside a pair of curved cattle horns"
+  },
+  {
+    "id": "origin-flat-earth-columbus",
+    "category": "origin",
+    "belief": "哥伦布时代的人都以为地球是平的，哥伦布是为了证明地球是圆的才出海",
+    "truth": "中世纪的学者普遍知道地球是球形；哥伦布当年被质疑的是地球有多大，而不是形状。",
+    "detail": "据维基百科「平坦地球神话」条目，中世纪的欧洲学者（包括哥伦布读过的那些）大多认为地球是球形，球形说出现在当时大学的标准教科书里；从奥古斯丁到阿奎那的基督教思想家都接受球形。史学家杰弗里·伯顿·拉塞尔（Jeffrey Burton Russell）的概括是：从公元前三世纪起，西方没有受过教育的人相信地球是平的。\n\n1490 年代西班牙的真正争论是距离：哥伦布把地球的周长低估了，认为向西到亚洲很近；西班牙的学者则认为亚洲远得多——他们在这一点上反而是对的。美洲的存在，才让这趟航行没有以灾难告终。\n\n这个故事的流行，主要归功于华盛顿·欧文 1828 年出版的《哥伦布的生平与航行》，书里虚构了哥伦布与教会人士就地球形状争论的场面；后来德雷珀和怀特在 19 世纪后期写「科学与宗教的冲突」时又拿它当典型例子。",
+    "origin": "欧文 1828 年的畅销传记添油加醋，随后被「科学与宗教必然对立」的叙事采用，进入教科书，再被反复转述。",
+    "instead": "可以说：「当时受过教育的人都知道地球是圆的；争论的是地球多大、亚洲多远。」讲哥伦布的故事时，把「证明地球是圆的」换成「押注地球比专家算的小」。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Wikipedia —— Myth of the flat Earth（欧文 1828；德雷珀与怀特；1490 年代争论的是尺寸）",
+        "url": "https://en.wikipedia.org/wiki/Myth_of_the_flat_Earth"
+      },
+      {
+        "label": "HISTORY.com —— Christopher Columbus never set out to prove the Earth was round（引用 Jeffrey Burton Russell）",
+        "url": "https://www.history.com/news/christopher-columbus-never-set-out-to-prove-the-earth-was-round"
+      }
+    ],
+    "en": {
+      "belief": "In Columbus's day everyone thought the Earth was flat, and he sailed to prove it was round",
+      "truth": "Medieval scholars generally knew the Earth was a sphere; what Columbus's critics doubted was its size, not its shape.",
+      "detail": "According to Wikipedia's 'Myth of the flat Earth', most medieval scholars, including those Columbus read, held the Earth to be spherical, and sphericity appeared in standard university textbooks; Christian thinkers from Augustine to Aquinas accepted it. Historian Jeffrey Burton Russell is quoted by HISTORY.com: no educated person in Western history from the third century BC onward believed the Earth was flat.\n\nThe real 1490s dispute was about distance: Columbus underestimated the planet's circumference and thought Asia was close to the west; Spanish scholars thought it was much farther — and on that point they were right. The existence of the Americas is what kept his voyage from ending in disaster.\n\nThe story's popularity is mostly due to Washington Irving's 1828 biography of Columbus, which invented scenes of clerics arguing about the Earth's shape; later writers such as Draper and White used it in their 'conflict of science and religion' narratives.",
+      "origin": "Irving's 1828 bestseller embellished the tale, the 'science versus religion' storyline adopted it, textbooks repeated it.",
+      "instead": "Say: 'Educated people knew the Earth was round; the argument was how big it was and how far Asia lay.' Replace 'proved the Earth round' with 'bet the Earth was smaller than the experts calculated'.",
+      "sources": [
+        {
+          "label": "Wikipedia — Myth of the flat Earth (Irving 1828; Draper and White; the 1490s dispute was about size)",
+          "url": "https://en.wikipedia.org/wiki/Myth_of_the_flat_Earth"
+        },
+        {
+          "label": "HISTORY.com — Christopher Columbus never set out to prove the Earth was round (quotes Jeffrey Burton Russell)",
+          "url": "https://www.history.com/news/christopher-columbus-never-set-out-to-prove-the-earth-was-round"
+        }
+      ]
+    },
+    "scene": "an old brass globe next to a compass and a rolled sea chart"
+  },
+  {
+    "id": "origin-newton-apple-head",
+    "category": "origin",
+    "belief": "牛顿被苹果砸中脑袋，当场想到了万有引力",
+    "truth": "苹果的故事出自牛顿晚年的口述，经友人斯蒂克利记录；我们读到的记载里是「看着苹果落下」引发思考，没有「砸中脑袋」，更不是一下子顿悟。",
+    "detail": "牛顿计划（Newton Project）的介绍写道：斯蒂克利（William Stukeley）是第一个记录这则轶事的人，他在《艾萨克·牛顿爵士生平回忆录》中写到，牛顿曾向他讲起：引力的念头是由一个苹果的坠落引发的。斯蒂克利的手稿在牛顿去世后才写成，1752 年才出版。\n\n《科学美国人》转载的斯蒂克利原文中，牛顿是在花园里、苹果树下喝茶时，看到苹果落下，开始思索为什么苹果总是垂直落向地面。文中没有提到苹果砸到头。\n\n需要留余地的是：这是牛顿多年后的回忆，经他人转述；牛顿的引力理论是经过多年的数学工作才成形的，不可能由一个苹果一下子完成。我们没有查遍所有同时代的记载（如孔杜伊特的版本），所以只能说「在我们读到的这则最早记载里没有砸头」。",
+    "origin": "斯蒂克利的记载传开后，逐渐家喻户晓；「砸中脑袋」这一更戏剧化的细节，我们没有在读到的最早记载里找到，推测是后来流行转述加上去的。",
+    "instead": "可以说：「牛顿晚年说过，看到苹果落地让他开始思考引力；他的理论是多年计算的结果。」不要说「被苹果砸中后发现了万有引力」。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      {
+        "label": "The Newton Project, University of Oxford —— Introduction（斯蒂克利首次记录苹果轶事）",
+        "url": "https://newtonproject.ox.ac.uk/view/texts/normalized/OTHE00017"
+      },
+      {
+        "label": "Scientific American —— What's the real story with Newton and the apple? See for yourself（斯蒂克利手稿原文）",
+        "url": "https://www.scientificamerican.com/blog/observations/whats-the-real-story-with-newton-and-the-apple-see-for-yourself/"
+      }
+    ],
+    "en": {
+      "belief": "An apple hit Newton on the head and he instantly discovered gravity",
+      "truth": "The apple story comes from Newton's own late-life recollection recorded by his friend Stukeley; in the account we read, he watched an apple fall and began to think — no blow to the head, and no instant revelation.",
+      "detail": "The Newton Project's introduction says William Stukeley was the first to record the anecdote, in his Memoirs of Sir Isaac Newton's Life: Newton told him the notion of gravitation was occasioned by the fall of an apple. Stukeley's manuscript was written after Newton's death and published only in 1752.\n\nIn the Stukeley text reproduced by Scientific American, Newton and Stukeley are having tea in the garden under apple trees when Newton recalls watching an apple fall and wondering why it always descended perpendicularly to the ground. There is no mention of it hitting his head.\n\nTo leave room: this is Newton's recollection decades later, passed on by someone else, and his theory of gravitation took years of mathematical work, not a single moment. We did not check every contemporary version (for example Conduitt's), so the safe claim is that the earliest account we read has no blow to the head.",
+      "origin": "Once Stukeley's account circulated, the story became famous; we did not find the 'hit on the head' detail in the earliest account, so it was presumably added in later popular retellings.",
+      "instead": "Say: 'Late in life Newton said watching an apple fall set him thinking about gravity; the theory itself took years of calculation.' Don't say an apple hit him and he discovered gravity.",
+      "sources": [
+        {
+          "label": "The Newton Project, University of Oxford — Introduction (Stukeley first recorded the apple anecdote)",
+          "url": "https://newtonproject.ox.ac.uk/view/texts/normalized/OTHE00017"
+        },
+        {
+          "label": "Scientific American — What's the real story with Newton and the apple? See for yourself (Stukeley's manuscript text)",
+          "url": "https://www.scientificamerican.com/blog/observations/whats-the-real-story-with-newton-and-the-apple-see-for-yourself/"
+        }
+      ]
+    },
+    "scene": "a single red apple on grass beneath a bare apple tree branch"
+  },
+  {
+    "id": "origin-great-wall-from-space",
+    "category": "origin",
+    "belief": "万里长城是唯一能从太空用肉眼看到的人造建筑",
+    "truth": "从月球上看不到长城；在近地轨道上，不借助长焦镜头也很难甚至不可能看到它。",
+    "detail": "美国国家航空航天局（NASA）的说明写道：长城从月球上是看不见的，在地球轨道上也「很难甚至不可能」在不借助高倍镜头的情况下看到；那张著名的从国际空间站拍到的长城照片，是用了长焦镜头才拍到的。欧洲航天局（ESA）的宇航员托马斯·佩斯凯在回答时同样说，用肉眼是看不到的，要拍到它需要特别的方法和约 1150 毫米的镜头。\n\n原因在于：NASA 与 ESA 的说明都强调，要拍到它需要长焦镜头和专门的方法，而不是靠肉眼。\n\n本条只引用 NASA 和 ESA 的正式说法，不讨论个别人声称的目击。",
+    "origin": "这条说法在载人航天出现以前就在流传，并在中文世界的教科书和课外读物中长期被引用。本条没有核实它最早见于何处，所以不下结论。",
+    "instead": "可以说：「NASA 和 ESA 都说用肉眼很难甚至不可能在轨道上看到它。」若有人说「我看到了」，请问他用的是什么镜头、什么高度。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "NASA —— Great Wall（图片说明：月球上不可见；地球轨道上很难或不可能不借助高倍镜头看到）",
+        "url": "https://www.nasa.gov/image-article/great-wall/"
+      },
+      {
+        "label": "ESA —— Great Wall of China from space（宇航员 Thomas Pesquet：肉眼不可见；需特殊方法与约 1150 毫米镜头）",
+        "url": "https://www.esa.int/ESA_Multimedia/Images/2021/05/Great_Wall_of_China_from_space"
+      }
+    ],
+    "en": {
+      "belief": "The Great Wall of China is the only man-made structure visible from space with the naked eye",
+      "truth": "The Wall cannot be seen from the Moon, and from low Earth orbit it is difficult or impossible to see without a powerful lens.",
+      "detail": "NASA's caption says the Wall isn't visible from the Moon and is 'difficult or impossible' to see from Earth orbit without the high-powered lenses used for the photo taken from the International Space Station. ESA astronaut Thomas Pesquet says it is not possible to see it with the naked eye; photographing it needs particular techniques and a lens of about 1,150 mm.\n\nBoth agencies stress that capturing it takes a long lens and deliberate technique, not unaided sight.\n\nThis entry relies only on the official NASA and ESA statements and does not weigh individual claimed sightings.",
+      "origin": "The claim was circulating long before crewed spaceflight and has been repeated in textbooks and children's books for generations. This entry did not verify its earliest appearance, so it makes no claim about that.",
+      "instead": "Say: 'NASA and ESA both say you can't reliably see it from orbit with the naked eye.' If someone says they saw it, ask what lens and what altitude.",
+      "sources": [
+        {
+          "label": "NASA — Great Wall (image caption: not visible from the Moon; difficult or impossible from Earth orbit without high-powered lenses)",
+          "url": "https://www.nasa.gov/image-article/great-wall/"
+        },
+        {
+          "label": "ESA — Great Wall of China from space (astronaut Thomas Pesquet: not visible to the naked eye; special techniques and a ~1,150 mm lens)",
+          "url": "https://www.esa.int/ESA_Multimedia/Images/2021/05/Great_Wall_of_China_from_space"
+        }
+      ]
+    },
+    "scene": "a weathered stone wall segment on a hillside seen from above, with a camera lens beside it"
+  },
+  {
+    "id": "origin-sos-save-our-souls",
+    "category": "origin",
+    "belief": "SOS 是「Save Our Souls（拯救我们的灵魂）」的缩写",
+    "truth": "SOS 起初不是任何词的缩写，只是一串好认的摩尔斯电码；「Save Our Souls」是后来才编出来帮助记忆的说法。",
+    "detail": "维基百科的「SOS」条目指出：1906 年国际无线电报公约确定 SOS 时，它只是一个独特的摩尔斯信号（三点、三划、三点，连在一起发送），最初并不是缩写。德国早在 1905 年就规定使用这个信号，1906 年的柏林会议把它定为国际遇险信号，1908 年 7 月 1 日起生效。\n\nMental Floss 网站也介绍说：这个信号被选中是因为发送快、辨识度高、不易与别的信号混淆；当时竞争的方案里还有意大利提出的 SSSDDD。「S」是三个点、「O」是三划，人们为了记住这串节奏，才把它读作 SOS，之后才有人为这三个字母配上「Save Our Souls」「Save Our Ship」。\n\n泰坦尼克号在 1912 年起初用的是马可尼公司的旧信号 CQD，之后才改发 SOS。",
+    "origin": "事后补出来的解释（逆向缩写，backronym）更好记、更有戏剧性，于是比真实的技术原因传得更远。",
+    "instead": "可以说：「SOS 是一种信号模式，三点三划三点，不是缩写；『Save Our Souls』是后人编的助记语。」",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Wikipedia —— SOS（1905 德国规定；1906 柏林公约；最初不是缩写）",
+        "url": "https://en.wikipedia.org/wiki/SOS"
+      },
+      {
+        "label": "Mental Floss —— What SOS stands for（德国 1905；柏林会议 1906；意大利 SSSDDD 方案；泰坦尼克与 CQD）",
+        "url": "https://www.mentalfloss.com/history/what-sos-stands-for"
+      }
+    ],
+    "en": {
+      "belief": "SOS stands for 'Save Our Souls'",
+      "truth": "SOS was never originally an abbreviation, just a distinctive Morse sequence; 'Save Our Souls' was invented afterwards as a memory aid.",
+      "detail": "Wikipedia's SOS article says that when the 1906 International Radiotelegraph Convention adopted it, SOS was merely a distinctive Morse code sequence (three dots, three dashes, three dots sent continuously) and was not initially an abbreviation. Germany had mandated the signal in 1905; the 1906 Berlin convention made it the international distress signal, in force from 1 July 1908.\n\nMental Floss adds that it was chosen because it was fast to send, distinct and hard to misread, beating rival proposals such as Italy's SSSDDD. Three dots make an 'S' and three dashes an 'O', so operators came to say 'SOS' to remember the rhythm; only afterwards did people attach phrases like 'Save Our Souls' and 'Save Our Ship'.\n\nOn the Titanic in 1912, operators first used the Marconi company's older CQD call before also sending SOS.",
+      "origin": "The after-the-fact explanation (a backronym) is easier to remember and more dramatic than the technical reason, so it travelled further.",
+      "instead": "Say: 'SOS is a signal pattern, three dots-three dashes-three dots, not an abbreviation; 'Save Our Souls' is a later mnemonic.'",
+      "sources": [
+        {
+          "label": "Wikipedia — SOS (Germany 1905; Berlin convention 1906; not originally an abbreviation)",
+          "url": "https://en.wikipedia.org/wiki/SOS"
+        },
+        {
+          "label": "Mental Floss — What SOS stands for (Germany 1905; Berlin 1906; Italy's SSSDDD proposal; Titanic and CQD)",
+          "url": "https://www.mentalfloss.com/history/what-sos-stands-for"
+        }
+      ]
+    },
+    "scene": "an old brass telegraph key on a wooden desk beside a coil of wire"
+  },
+  {
+    "id": "origin-marco-polo-pasta",
+    "category": "origin",
+    "belief": "意大利面是马可·波罗从中国带回意大利的",
+    "truth": "马可·波罗1295年回到威尼斯之前，意大利（西西里）就已经有成规模的面食生产了。",
+    "detail": "维基百科「意面史」条目记录了更早的证据：1154 年，阿拉伯地理学家伊德里西为诺曼西西里宫廷写的地理著作里，就提到当地生产并出口一种叫 itriyya 的面食；1279 年热那亚的一份遗嘱提到面食，比马可·波罗返回早约 16 年。《科学美国人》的文章也引用伊德里西，说西西里的特拉比亚镇把面粉做成条状，晒干后用船运往意大利其他地区和外国。\n\n维基百科还提到，面食很可能是沿丝绸之路和阿拉伯世界的传播逐步到达西西里的，而不是由某一个人「带回」。马可·波罗的游记（由鲁斯蒂凯洛记录）里确实提到过类似「拉加纳」的食物，但那只是他在旅途中的见闻，不是把面食引入意大利。\n\n关于这个传说的来源，作家简·格里格森（Jane Grigson）认为它出自 20 世纪二三十年代一则加拿大意大利面公司的广告——这是维基百科转述的说法，我们没有查到原始广告。",
+    "origin": "据说是 20 世纪早期的商业宣传：把意面和马可·波罗的名人故事绑在一起，既浪漫又好卖。",
+    "instead": "可以说：「面食在马可·波罗之前就已存在于西西里，可能是经阿拉伯世界传入；马可·波罗带回面条是 20 世纪的传说。」",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Wikipedia —— History of pasta（1154 伊德里西；1279 热那亚遗嘱；Grigson 谈传说的来源）",
+        "url": "https://en.wikipedia.org/wiki/History_of_pasta"
+      },
+      {
+        "label": "Scientific American —— Noodling the Noodles（伊德里西 1154 对特拉比亚面食工业的描述）",
+        "url": "https://www.scientificamerican.com/article/noodling-the-noodles"
+      }
+    ],
+    "en": {
+      "belief": "Marco Polo brought pasta to Italy from China",
+      "truth": "Italy (Sicily) was already producing pasta commercially before Marco Polo returned to Venice in 1295.",
+      "detail": "Wikipedia's History of pasta records earlier evidence: in 1154 the Arab geographer al-Idrisi, writing for Norman Sicily, described a food called itriyya being made and exported there; a Genoese will of 1279 mentions pasta, about 16 years before Marco Polo's return. Scientific American also cites al-Idrisi: the Sicilian town of Trabia made flour into strings, dried them in the sun and shipped them to other parts of Italy and abroad.\n\nWikipedia adds that noodle-making most likely spread gradually along the Silk Road and through the Arab world to Sicily, rather than being 'brought back' by one person. Polo's book (as written down by Rustichello) does mention a food similar to lagana, but that is something he saw on his travels, not an introduction of pasta to Italy.\n\nOn the legend's source, writer Jane Grigson believed it came from a 1920s–30s advertisement by a Canadian spaghetti company — Wikipedia's report of her view; we did not find the original advertisement.",
+      "origin": "Reportedly a 20th-century marketing story: pairing pasta with a famous explorer made it romantic and sellable.",
+      "instead": "Say: 'Pasta was already made in Sicily before Marco Polo, probably arriving via the Arab world; the Marco Polo story is a 20th-century legend.'",
+      "sources": [
+        {
+          "label": "Wikipedia — History of pasta (al-Idrisi 1154; Genoese will 1279; Grigson on the legend's origin)",
+          "url": "https://en.wikipedia.org/wiki/History_of_pasta"
+        },
+        {
+          "label": "Scientific American — Noodling the Noodles (al-Idrisi 1154 on Trabia's pasta industry)",
+          "url": "https://www.scientificamerican.com/article/noodling-the-noodles"
+        }
+      ]
+    },
+    "scene": "strands of dried pasta hanging on a wooden rack beside a rolling pin and flour"
+  },
+  {
+    "id": "origin-forbidden-fruit-apple",
+    "category": "origin",
+    "belief": "亚当夏娃偷吃的禁果是苹果",
+    "truth": "《创世记》只说「树上的果子」，没有指明是什么果；把它说成苹果，是后来艺术和语言演变的结果。",
+    "detail": "《创世记》3 章 3 节和 6 节都只写「果子」（英文 NIV 译作 fruit），没有给出种类。早期的评论者提出过无花果、葡萄、石榴、香橼等多种说法。\n\n罗格斯大学古典学与犹太研究教授阿赞·亚丁-以色列（Azzan Yadin-Israel）研究认为：把禁果画成苹果，最早出现在 12 世纪的法国艺术里。语言上，拉丁语「pomum」本来泛指「水果」，传入古法语后演变为 pom，逐渐专指「苹果」。\n\n常被提到的「malum 谐音」说法（拉丁文 mālum 指恶，mâlum 指苹果）则缺乏支持：他检查了中世纪拉丁文评注，几乎没有人用过这个双关；直到 14 世纪，评注者还在说无花果和葡萄。\n\n这条只讲文本与历史事实，不涉及对经文的信仰解读。",
+    "origin": "12 世纪起的法国艺术与语言演变，让「果子」在欧洲人的想象里逐渐固定成了「苹果」。",
+    "instead": "可以说：「《创世记》没有说是什么果子；苹果的形象来自中世纪以后的艺术和语言演变。」",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Rutgers University —— How the Forbidden Fruit Became an Apple（Azzan Yadin-Israel）",
+        "url": "https://www.rutgers.edu/news/how-forbidden-fruit-became-apple"
+      },
+      {
+        "label": "Wikipedia —— Forbidden fruit（《创世记》未指明果子；苹果最早见于 12 世纪法国艺术）",
+        "url": "https://en.wikipedia.org/wiki/Forbidden_fruit"
+      },
+      {
+        "label": "BibleGateway —— Genesis 3:1-6（NIV 经文，只称 fruit）",
+        "url": "https://www.biblegateway.com/passage/?search=Genesis+3%3A1-6&version=NIV"
+      }
+    ],
+    "en": {
+      "belief": "The forbidden fruit Adam and Eve ate was an apple",
+      "truth": "Genesis says only 'fruit of the tree' and never names it; the apple is a later development in art and language.",
+      "detail": "Genesis 3:3 and 3:6 speak only of 'fruit' (in the NIV), without naming a kind. Early commentators proposed figs, grapes, pomegranates, citrons and others.\n\nAzzan Yadin-Israel, professor of Jewish Studies and Classics at Rutgers, argues that depicting the fruit as an apple first appears in 12th-century French art. Linguistically, Latin 'pomum' meant fruit in general and became Old French 'pom', which narrowed to mean 'apple'.\n\nThe popular 'malum pun' explanation (Latin mālum, evil, and mâlum, apple) lacks support: he found that medieval Latin commentators almost never used the pun, and even in the 14th century commentators still spoke of figs and grapes.\n\nThis entry deals only with the text and its history, not with religious interpretation.",
+      "origin": "From the 12th century onward, French art and the evolution of a word gradually fixed 'fruit' as 'apple' in Europe's imagination.",
+      "instead": "Say: 'Genesis never says which fruit; the apple comes from medieval art and language change.'",
+      "sources": [
+        {
+          "label": "Rutgers University — How the Forbidden Fruit Became an Apple (Azzan Yadin-Israel)",
+          "url": "https://www.rutgers.edu/news/how-forbidden-fruit-became-apple"
+        },
+        {
+          "label": "Wikipedia — Forbidden fruit (Genesis doesn't specify; apple first in 12th-century French art)",
+          "url": "https://en.wikipedia.org/wiki/Forbidden_fruit"
+        },
+        {
+          "label": "BibleGateway — Genesis 3:1-6 (NIV text, 'fruit' only)",
+          "url": "https://www.biblegateway.com/passage/?search=Genesis+3%3A1-6&version=NIV"
+        }
+      ]
+    },
+    "scene": "a ripe fig, a pomegranate and a red apple on a simple wooden table"
+  },
+  {
+    "id": "origin-iron-maiden",
+    "category": "origin",
+    "belief": "「铁处女」是中世纪常用的酷刑工具",
+    "truth": "目前查不到 19 世纪以前有铁处女的记载；最早的描述出现在 1793 年，实物多是 19 世纪的展品。",
+    "detail": "维基百科「铁处女」条目写道：在 19 世纪以前没有关于铁处女存在的证据。最早的记载来自纽伦堡一本导游手册，作者是约翰·菲利普·西本克斯（1759–1796），他在 1793 年声称一名伪造硬币者在 1515 年被用此刑处死。英国 History 网站指出，历史学家没有找到这次处决的其他同时代记录，也没有找到当时纽伦堡有铁处女的证据。\n\nMedievalists.net 的文章同样认为，西本克斯「很可能只是编造了这个故事」，而到了 19 世纪初，铁处女已作为展品出现在博物馆，后来还在 1893 年芝加哥世博会上展出。维基百科还提到，沃尔夫冈·席尔德（Wolfgang Schild）教授推测，这些展品是 19 世纪的展览经营者用各种旧物拼凑而成，用来吸引观众。\n\n需要留余地的是：这些资料对「西本克斯是故意编造还是真的相信」看法不一，但对「中世纪没有这种东西的记载」是一致的。",
+    "origin": "一本 1793 年的导游册、一批 19 世纪的博物馆展品，加上「黑暗的中世纪」这个现成的想象框架，让它成了中世纪酷刑的代表。",
+    "instead": "可以说：「铁处女是 18 世纪末才出现在文字里的东西，没有证据表明中世纪使用过；博物馆里的多是后世制品。」遇到「中世纪酷刑」展，可以问展品的出处。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Wikipedia —— Iron maiden (torture device)（19 世纪前无记载；西本克斯 1793；席尔德教授的推测）",
+        "url": "https://en.wikipedia.org/wiki/Iron_maiden_(torture_device)"
+      },
+      {
+        "label": "History.co.uk —— The Iron Maiden: medieval torture device or modern myth?（西本克斯的记载与缺乏旁证）",
+        "url": "https://www.history.co.uk/articles/the-iron-maiden-medieval-torture-device-or-modern-myth"
+      },
+      {
+        "label": "Medievalists.net —— Medieval torture devices（铁处女是后世产物；1893 年芝加哥世博会）",
+        "url": "https://www.medievalists.net/2023/12/medieval-torture-devices/"
+      }
+    ],
+    "en": {
+      "belief": "The 'iron maiden' was a common medieval torture device",
+      "truth": "No record of an iron maiden is known from before the 19th century; the earliest description dates to 1793 and the surviving objects are mostly 19th-century exhibits.",
+      "detail": "Wikipedia's article says there is no evidence of iron maidens before the 19th century. The earliest account is in a Nuremberg guidebook by Johann Philipp Siebenkees (1759–1796), who in 1793 claimed a coin forger was executed with one in 1515. History.co.uk notes that historians have found no other contemporary record of that execution or any evidence of an iron maiden in Nuremberg then.\n\nMedievalists.net likewise says Siebenkees likely just invented the story, and that by the early 19th century the device was displayed in museums and later at the 1893 Chicago World's Fair. Wikipedia adds that Professor Wolfgang Schild theorises that 19th-century exhibitors assembled such objects from assorted older items to draw crowds.\n\nTo leave room: these sources differ on whether Siebenkees invented the tale or believed it, but agree there is no medieval record of the device.",
+      "origin": "An 1793 guidebook, a set of 19th-century museum exhibits, and a ready-made image of the 'dark Middle Ages' made it the symbol of medieval torture.",
+      "instead": "Say: 'The iron maiden first appears in writing in the late 18th century; there's no evidence the Middle Ages used it, and museum pieces are mostly later constructions.' At a 'medieval torture' exhibit, ask where the piece came from.",
+      "sources": [
+        {
+          "label": "Wikipedia — Iron maiden (torture device) (no evidence before the 19th century; Siebenkees 1793; Schild's theory)",
+          "url": "https://en.wikipedia.org/wiki/Iron_maiden_(torture_device)"
+        },
+        {
+          "label": "History.co.uk — The Iron Maiden: medieval torture device or modern myth? (Siebenkees' account and lack of corroboration)",
+          "url": "https://www.history.co.uk/articles/the-iron-maiden-medieval-torture-device-or-modern-myth"
+        },
+        {
+          "label": "Medievalists.net — Medieval torture devices (iron maiden a later product; 1893 Chicago exposition)",
+          "url": "https://www.medievalists.net/2023/12/medieval-torture-devices/"
+        }
+      ]
+    },
+    "scene": "a rusted spiked iron cabinet door slightly ajar in a dim museum hall"
+  },
+  {
+    "id": "origin-medieval-no-bathing",
+    "category": "origin",
+    "belief": "中世纪的欧洲人一千年不洗澡，满身臭气",
+    "truth": "中世纪欧洲城市有大量公共浴场，人们经常洗漱；洗澡减少主要发生在中世纪之后。",
+    "detail": "Medievalists.net 汇总的资料显示：13 世纪的巴黎有 32 家以上的浴场，伦敦南华克有 18 个热水浴池；爱德华三世 1351 年在威斯敏斯特宫装了冷热水龙头。弗吉尼亚·史密斯（Virginia Smith）的《干净：个人卫生与洁净史》被引用说，到 15 世纪，在城镇浴场里「泡澡聚餐」像下馆子一样平常。\n\nTastes of History 的文章补充：完整的泡澡因为成本较少见，但用盆、桶洗漱很普遍，几乎每个家庭的账本里都有付给洗衣女工的钱。黑死病（1346—1353）之后，人们因为害怕传染而回避公共浴场；维基百科「Bathing」条目则提到，16 世纪梅毒的出现、「洗澡打开毛孔会招病」的错误观念以及对裸体的宗教限制，都使公共浴场衰落。\n\n留余地：当然，修道院、地区和阶层之间差别很大，穷人的洗澡条件肯定不如城里富人；这条只反驳「整个中世纪一千年都不洗澡」这一说法。",
+    "origin": "本条没有核实这个说法最早由谁提出。可以确认的是，史料显示公共浴场的衰落主要发生在黑死病之后和 16 世纪，而不是整个中世纪。",
+    "instead": "可以说：「中世纪城市里有浴场，人们会洗漱；公共浴场的衰落主要在黑死病之后和 16 世纪。」",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Medievalists.net —— People in the Middle Ages and baths（巴黎、伦敦浴场数量；Virginia Smith 的研究）",
+        "url": "https://www.medievalists.net/2023/11/people-middle-ages-baths/"
+      },
+      {
+        "label": "Tastes of History —— Dispelling some myths: medieval bathing（日常洗漱；浴场；黑死病的影响）",
+        "url": "https://www.tastesofhistory.co.uk/post/dispelling-some-myths-medieval-bathing"
+      },
+      {
+        "label": "Wikipedia —— Bathing（公共浴场在 16 世纪前后的衰落）",
+        "url": "https://en.wikipedia.org/wiki/Bathing"
+      }
+    ],
+    "en": {
+      "belief": "Medieval Europeans went a thousand years without bathing and stank",
+      "truth": "Medieval European towns had many public bathhouses and people washed regularly; bathing declined mostly after the Middle Ages.",
+      "detail": "Medievalists.net gathers evidence: Paris had more than 32 bathhouses by the 13th century, Southwark in London offered 18 hot baths, and Edward III had hot and cold taps installed at Westminster Palace in 1351. Virginia Smith's Clean: A History of Personal Hygiene and Purity is cited as saying that by the 15th century bath-feasting in town bathhouses seems to have been as common as going to a restaurant.\n\nTastes of History adds that full baths were rarer because of cost, but washing with basins and buckets was widespread, and 'virtually every household account book' records payments to washerwomen. After the Black Death (1346–1353) people avoided public baths for fear of contagion; Wikipedia's Bathing article says the 16th-century appearance of syphilis, the false belief that bathing opens pores to disease, and religious limits on nudity also drove the decline of public baths.\n\nTo leave room: practice varied widely by region, class and monastery, and the poor certainly had worse facilities. This entry only rebuts the claim that the whole millennium went unwashed.",
+      "origin": "This entry did not verify who first made the claim. What the sources do show is that public bathing declined mainly after the Black Death and in the 16th century, not across the whole Middle Ages.",
+      "instead": "Say: 'Medieval towns had bathhouses and people washed; public bathing declined mainly after the Black Death and in the 16th century.'",
+      "sources": [
+        {
+          "label": "Medievalists.net — People in the Middle Ages and baths (bathhouse counts in Paris and London; Virginia Smith)",
+          "url": "https://www.medievalists.net/2023/11/people-middle-ages-baths/"
+        },
+        {
+          "label": "Tastes of History — Dispelling some myths: medieval bathing (daily washing; bathhouses; effect of the plague)",
+          "url": "https://www.tastesofhistory.co.uk/post/dispelling-some-myths-medieval-bathing"
+        },
+        {
+          "label": "Wikipedia — Bathing (decline of public bathhouses around the 16th century)",
+          "url": "https://en.wikipedia.org/wiki/Bathing"
+        }
+      ]
+    },
+    "scene": "a wooden washtub with a bar of soap, a linen towel and a jug on stone floor"
+  },
+  {
+    "id": "origin-gunpowder-fireworks-only",
+    "category": "origin",
+    "belief": "中国人发明了火药，却只拿来做烟花爆竹，是西方人用它造了枪炮",
+    "truth": "中国很早就把火药用于战争：10 世纪就有火药箭，11 世纪的军事典籍记载了配方，12 世纪出现了火药武器。",
+    "detail": "维基百科「火药」条目说，火药在中国发明，最早的可确认记载出现在唐代 9 世纪，源自炼丹实验；10 世纪已有使用火药的火箭，1044 年的《武经总要》记录了最早的火药配方，12 世纪炸弹和「火枪」成为重要武器，13 世纪出现金属管的手持火炮。\n\nMedievalists.net 的文章也写道：火药虽发明于中国，但一旦其性质清楚就被用于战争；火枪最早的记载是 1132 年德安之围，现存确切年代最早的金属火器是 1298 年（元代）的「Xanadu 铳」。明朝早期规定步兵部队里火器手要占约十分之一。\n\n留余地：这不是说中国在火炮技术上「领先西方」，两边的发展路径不同——Medievalists.net 提到，欧洲更侧重用大炮攻城墙，中国则发展了更适合步兵的便携火器。",
+    "origin": "这个说法大概是把「烟花」这种后来最常见的和平用途倒推成了火药的最初用途，也受到「中国发明、西方发展」叙事的影响。本条没有核实具体是谁最先这样说的。",
+    "instead": "可以说：「火药在中国诞生后很快就被用于战争，宋代已有火药箭和火枪；烟花是它的用途之一，而不是唯一用途。」",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Wikipedia —— Gunpowder（9 世纪起源；10 世纪火药箭；1044 年《武经总要》；12 世纪火枪与炸弹）",
+        "url": "https://en.wikipedia.org/wiki/Gunpowder"
+      },
+      {
+        "label": "Medievalists.net —— The origins of the gunpowder age（军事应用时间线；1132；1298）",
+        "url": "https://www.medievalists.net/2022/11/origins-gunpowder-age/"
+      }
+    ],
+    "en": {
+      "belief": "The Chinese invented gunpowder but only used it for fireworks; Westerners made guns and cannon",
+      "truth": "China used gunpowder in war early: fire arrows by the 10th century, a recorded formula in an 11th-century military manual, and gunpowder weapons in the 12th century.",
+      "detail": "Wikipedia's Gunpowder article says gunpowder was invented in China, with the earliest confirmed reference in the Tang dynasty (9th century), arising from alchemical experiments. Fire arrows used it in the 10th century, the Wujing Zongyao of 1044 documented the earliest chemical formula, bombs and fire lances became prominent in the 12th century, and metal-barrelled hand cannon appeared in the 13th.\n\nMedievalists.net likewise says that although gunpowder was invented in China it was applied to warfare as soon as its properties were clear; fire lances are first documented at the siege of De'an in 1132, and the Xanadu Gun of 1298 is the oldest definitively dated firearm. Early Ming policy reportedly set gunners at around 10% of infantry units.\n\nTo leave room: this does not mean China 'led' in every technology; the two regions developed along different paths — Europe leaned toward artillery to breach walls, China toward portable infantry firearms.",
+      "origin": "Probably a back-projection of fireworks, the most familiar peaceful use today, onto the invention's beginnings, helped by an 'invented in China, developed in the West' narrative. This entry did not verify who first said it.",
+      "instead": "Say: 'Gunpowder was weaponised in China soon after it appeared; Song-era armies had fire arrows and fire lances. Fireworks were one use, not the only one.'",
+      "sources": [
+        {
+          "label": "Wikipedia — Gunpowder (9th-century origin; 10th-century fire arrows; 1044 Wujing Zongyao; 12th-century fire lances and bombs)",
+          "url": "https://en.wikipedia.org/wiki/Gunpowder"
+        },
+        {
+          "label": "Medievalists.net — The origins of the gunpowder age (military timeline; 1132; 1298)",
+          "url": "https://www.medievalists.net/2022/11/origins-gunpowder-age/"
+        }
+      ]
+    },
+    "scene": "a clay fire-arrow cylinder and a small black powder pouch beside a wooden bow"
+  },
+  {
+    "id": "origin-ok-zero-killed",
+    "category": "origin",
+    "belief": "OK 来自美国内战：打了没有伤亡的仗就写「0 Killed」",
+    "truth": "OK 最早的印刷用例是 1839 年波士顿的报纸，比美国内战（1861 年）早二十多年。",
+    "detail": "语言学家艾伦·沃克·里德（Allen Walker Read）在 1963—1964 年发表的研究确认：OK 最早出现在 1839 年 3 月 23 日的《波士顿晨邮报》，编辑查尔斯·戈登·格林用它作为 oll korrect（all correct 的故意拼错）的缩写——这是当时报界流行的一股玩笑缩写风。1840 年大选中，支持马丁·范布伦的人组织了以他的绰号「Old Kinderhook」命名的 OK 俱乐部，让它传遍全国。\n\n既然 1839 年就有了，内战（1861—1865）时才产生的说法在时间上就站不住。词源网站 wordorigins.org 把各种没有可靠证据的民间说法一并列出，包括杰克逊总统不识字、乔克托语、德语 Ober Kommando 等。\n\n需要留余地的是：维基百科指出里德本人并不绝对排除其他影响，西非语言（如沃洛夫语）的影响是个有人提出但没有文献证明的假设。",
+    "origin": "「0 Killed」之类的说法听起来像是军事故事，容易记。而真正的来源是一个已经过时的报界玩笑，没那么戏剧化。",
+    "instead": "可以说：「OK 在 1839 年的美国报纸里就有了，原是『all correct』的搞怪拼写缩写；内战说法时间对不上。」",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Wikipedia —— OK（词源：1839；Allen Walker Read；其他假说）",
+        "url": "https://en.wikipedia.org/wiki/OK"
+      },
+      {
+        "label": "Word Origins —— OK / okay / A-OK（1839 年 3 月 23 日；民间词源列表）",
+        "url": "https://wordorigins.org/big-list-entries/ok-okay"
+      }
+    ],
+    "en": {
+      "belief": "OK comes from the American Civil War: battles without casualties were reported as '0 Killed'",
+      "truth": "The earliest printed OK is from a Boston newspaper in 1839, more than twenty years before the Civil War began in 1861.",
+      "detail": "Linguist Allen Walker Read established in his 1963–64 research that OK first appeared in the Boston Morning Post on 23 March 1839, used by editor Charles Gordon Greene as an abbreviation of 'oll korrect', a comic misspelling of 'all correct', part of a newspaper fad for humorous abbreviations. In the 1840 election, supporters of Martin Van Buren formed OK clubs after his nickname 'Old Kinderhook', spreading it nationwide.\n\nSince it existed in 1839, an explanation that arose during the Civil War (1861–65) cannot fit the dates. Wordorigins.org lists various folk etymologies without credible evidence, including Andrew Jackson's supposed illiteracy, Choctaw, and German 'Ober Kommando'.\n\nTo leave room: Wikipedia notes that Read himself did not rule out other influences, and a West African (for example Wolof) contribution has been proposed but lacks documentary proof.",
+      "origin": "'0 Killed' sounds like a military anecdote and is easy to remember; the real source is an outdated newspaper joke, less dramatic.",
+      "instead": "Say: 'OK appears in American newspapers by 1839 as a joking misspelling of 'all correct'; the Civil War story doesn't fit the dates.'",
+      "sources": [
+        {
+          "label": "Wikipedia — OK (etymology: 1839; Allen Walker Read; other hypotheses)",
+          "url": "https://en.wikipedia.org/wiki/OK"
+        },
+        {
+          "label": "Word Origins — OK / okay / A-OK (23 March 1839; list of folk etymologies)",
+          "url": "https://wordorigins.org/big-list-entries/ok-okay"
+        }
+      ]
+    },
+    "scene": "an old newspaper page with a folded pencil and a small enamel badge on a desk"
+  },
+  {
+    "id": "origin-li-bai-moon-drowning",
+    "category": "origin",
+    "belief": "李白醉酒后跳进江里捞月亮，淹死了",
+    "truth": "「捉月而死」是后世的传说：与李白同时代和较早的文献没有这个说法，目前能查到的最早明确记载是北宋梅尧臣的诗。",
+    "detail": "李白去世在公元 762 年，地点在当涂。据爱思想网上一篇考证文章，李阳冰（762 年）的序、范传正（817 年）的碑文以及新旧《唐书》中，都没有「捉月」的情节，只记他死在当涂；文章认为这个传说是在李白死后一百多年里逐渐形成的。\n\n目前能查到的最早明确材料，文章认为是北宋梅尧臣（1002—1060）的一首诗，诗里写到了醉酒追月落水的情节。五代王定保《唐摭言》被清代王琦引过「因醉入水捉月而死」一语，但文章指出现存《唐摭言》各本中找不到这一条。中文维基百科也说，「捉月」说是从宋代开始流传的。苏富比的一篇文章把它称为「apocryphal（真实性存疑）」的故事。\n\n因此，我们只能说：没有可靠的早期史料支持这一说法。不能反过来说「李白一定不是这么死的」——我们没有他死因的可靠详细记录。",
+    "origin": "李白爱酒、爱月，诗里反复写到，后人把诗人形象和结局合成一个浪漫的故事，从宋代起逐渐流传，经文人诗作固定下来。",
+    "instead": "可以说：「李白死在当涂，死因史料没有细说；『醉酒捉月而死』最早可见于北宋诗文，是传说。」背诵这个故事时，加一句「相传」。",
+    "stakes": "harmless",
+    "confidence": "limited",
+    "sources": [
+      {
+        "label": "爱思想 —— 关于李白「捉月而死」传说形成过程的考证文章（李阳冰序、范传正碑文、新旧《唐书》、梅尧臣诗、《唐摭言》）",
+        "url": "https://www.aisixiang.com/data/85828.html"
+      },
+      {
+        "label": "中文维基百科 —— 李白（「自宋代起」有捉月传说）",
+        "url": "https://zh.wikipedia.org/wiki/李白"
+      },
+      {
+        "label": "Sotheby's —— Reaching for the Moon: Reimagining the Death of a Legendary Poet（称之为 apocryphal story）",
+        "url": "https://www.sothebys.com/en/articles/reaching-for-the-moon-reimaging-the-death-of-a-legendary-poet"
+      }
+    ],
+    "en": {
+      "belief": "Li Bai got drunk, jumped into the river to grasp the moon's reflection, and drowned",
+      "truth": "The 'grasping the moon' death is a later legend: early and near-contemporary texts don't have it, and the earliest explicit account we found is a Northern Song poem by Mei Yaochen.",
+      "detail": "Li Bai died in 762 at Dangtu. According to an essay on aisixiang.com, neither Li Yangbing's preface (762), Fan Chuanzheng's epitaph (817) nor the Old and New Tang Histories contain the moon-grasping episode; they record only that he died in Dangtu. The essay argues the legend formed gradually over more than a century after his death.\n\nThe earliest explicit material it identifies is Mei Yaochen's (1002–1060) Northern Song poem, which tells of a drunken poet reaching for the moon. A Qing scholar, Wang Qi, cited a line from Wang Dingbao's Five Dynasties Tang Zhiyan about drowning while grasping the moon, but the essay says it cannot be found in the extant editions. Chinese Wikipedia also says the legend circulates 'from the Song dynasty on', and a Sotheby's article calls it an apocryphal story.\n\nSo we can say there's no reliable early source for it; we cannot say he surely did not die that way, because we have no detailed reliable record of his death.",
+      "origin": "Li Bai loved wine and the moon, which fill his poems; later writers merged poet and ending into one romantic story that spread from the Song dynasty and was fixed by literary retellings.",
+      "instead": "Say: 'Li Bai died at Dangtu and the sources don't detail the cause; the drunken moon-grasping death first appears in Northern Song writing and is legend.' Add 'it is said' when telling it.",
+      "sources": [
+        {
+          "label": "Aisixiang — essay on the formation of the 'grasping the moon' legend (Li Yangbing's preface, Fan Chuanzheng's epitaph, the Tang Histories, Mei Yaochen's poem, Tang Zhiyan)",
+          "url": "https://www.aisixiang.com/data/85828.html"
+        },
+        {
+          "label": "Chinese Wikipedia — Li Bai (moon-grasping legend circulating from the Song dynasty)",
+          "url": "https://zh.wikipedia.org/wiki/李白"
+        },
+        {
+          "label": "Sotheby's — Reaching for the Moon: Reimagining the Death of a Legendary Poet (calls it an apocryphal story)",
+          "url": "https://www.sothebys.com/en/articles/reaching-for-the-moon-reimaging-the-death-of-a-legendary-poet"
+        }
+      ]
+    },
+    "scene": "a small wooden boat on dark water with a round moon reflected beside an overturned wine cup"
+  }
+]

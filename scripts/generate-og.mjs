@@ -125,13 +125,17 @@ function ruledLines() {
   return `<g stroke="#e2dcd1" stroke-width="1.5">${out}</g>`
 }
 
+/** 卡片左上角红字：条目所属板块（中 / 英） */
+const CAT_ZH = { eat: '吃', body: '身体', sleep: '睡', move: '运动', life: '生活', urgent: '关键时刻', quote: '名言没说过', film: '电影骗了你', origin: '起源是编的', word: '这个词你用错了', why: '为什么长这样' }
+const CAT_EN = { eat: 'FOOD', body: 'BODY', sleep: 'SLEEP', move: 'EXERCISE', life: 'DAILY LIFE', urgent: 'EMERGENCIES', quote: 'NEVER SAID IT', film: 'MOVIES LIED', origin: 'MADE-UP ORIGINS', word: 'MISUSED WORDS', why: 'WHY IT LOOKS LIKE THAT' }
+
 function svg(m, opts = {}) {
   const {
     serif = SERIF,
     sans = SANS,
     wrapFn = wrap,
     header = '常识核对表',
-    footer = '其实不是 · 那些你以为对的生活常识',
+    footer = '其实不是 · 每条附出处 · actually-not.com',
     headerSpacing = 6,
   } = opts
   const belief = layoutBelief(m.belief, wrapFn)
@@ -180,7 +184,7 @@ async function main() {
   await mkdir(outDirEn, { recursive: true })
   let total = 0
   for (const m of MYTHS) {
-    const buf = await sharp(Buffer.from(svg(m)), { density: 144 })
+    const buf = await sharp(Buffer.from(svg(m, { header: CAT_ZH[m.category] })), { density: 144 })
       .resize(W, H)
       .png({ compressionLevel: 9 })
       .toBuffer()
@@ -197,8 +201,8 @@ async function main() {
             serif: SERIF_EN,
             sans: SANS_EN,
             wrapFn: wrapWords,
-            header: 'THE COMMON-SENSE CHECKLIST',
-            footer: 'Actually, Not · everyday things you thought were true',
+            header: CAT_EN[m.category],
+            footer: 'Actually, Not · every entry sourced · actually-not.com',
             headerSpacing: 3,
           },
         ),

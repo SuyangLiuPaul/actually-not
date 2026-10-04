@@ -1,0 +1,378 @@
+[
+  {
+    "id": "film-cyanide-almond-smell",
+    "category": "film",
+    "belief": "电影里侦探一闻到苦杏仁味，就断定是氰化物中毒——因为人人都闻得出来",
+    "truth": "并不是人人都闻得到：相当一部分人闻不出氰化氢的气味，所以它的气味不能当作警报。",
+    "detail": "美国国家职业安全卫生研究所（NIOSH）的应急响应卡写道：氰化氢气体确实有一种独特的苦杏仁味（也有人形容为「旧球鞋味」），但「相当大比例的人闻不到它」，因此气味不能为危险浓度提供足够的预警。\n\n同一份资料还给出了时间尺度：吸入后，症状在数秒到数分钟内出现，严重时数分钟内可致死；经皮肤接触则可能立即出现症状，也可能延迟 30–60 分钟。早期表现是头晕、呼吸急促、恶心、意识混乱，而不是影视里那种「一口下去、当场倒地」的单一画面。",
+    "origin": "「苦杏仁味＝氰化物」在侦探小说和影视里反复出现，久而久之成了一个现成的破案记号。这一段是合理推断：我们没有查到某一部作品是它的最早源头。",
+    "instead": "把「杏仁味」当作文学符号，别当检测手段。现实中如果怀疑有有毒气体或化学品泄漏，不要靠闻来判断：立刻离开现场、到空气流通处，并拨打急救电话（中国 120 / 澳洲 000 / 美国 911）。",
+    "stakes": "risky",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "NIOSH —— Emergency Response Card: Hydrogen Cyanide (AC)",
+        "url": "https://www.cdc.gov/niosh/ershdb/emergencyresponsecard_29750038.html"
+      }
+    ],
+    "en": {
+      "belief": "In the movies the detective smells bitter almonds and knows it is cyanide — because everyone can smell it",
+      "truth": "Not everyone can smell it: a large share of people cannot detect hydrogen cyanide, so its odor is not a reliable warning.",
+      "detail": "The NIOSH emergency response card says hydrogen cyanide gas does have a distinctive bitter-almond odor (some people describe a musty 'old sneakers' smell), but that a large proportion of people cannot detect it, so the odor does not give adequate warning of hazardous concentrations.\n\nThe same card gives the time course: after inhalation, symptoms begin within seconds to minutes and death may occur within minutes; after skin exposure, symptoms may be immediate or delayed by 30 to 60 minutes. Early signs are lightheadedness, rapid breathing, nausea and confusion — not a single instant collapse.",
+      "origin": "'Bitter almonds means cyanide' recurs so often in detective fiction and film that it became a ready-made clue. This is a reasonable inference only; we did not trace it to one earliest source.",
+      "instead": "Treat the almond smell as a literary symbol, not a detection method. If you suspect toxic gas or a chemical leak, do not rely on smell: leave at once for fresh air and call emergency services (China 120 / Australia 000 / US 911).",
+      "sources": [
+        {
+          "label": "NIOSH — Emergency Response Card: Hydrogen Cyanide (AC)",
+          "url": "https://www.cdc.gov/niosh/ershdb/emergencyresponsecard_29750038.html"
+        }
+      ]
+    },
+    "scene": "a small bowl of raw almonds beside a magnifying glass on a wooden desk",
+    "verification": "Opened https://www.cdc.gov/niosh/ershdb/emergencyresponsecard_29750038.html. Page (via fetch summary) states: distinctive bitter almond odor (others 'old sneakers smell'); 'a large proportion of people cannot detect it; the odor does not provide adequate warning of hazardous concentrations'; after inhalation symptoms begin within seconds to minutes, death may occur within minutes; after skin exposure onset immediate or delayed 30-60 min; early symptoms lightheadedness, rapid breathing, nausea, confusion. A search snippet claiming 20-40% anosmic came from pages I did not open (haz-map, Merck vet manual 403), so NO percentage is stated. Origin paragraph labelled inference."
+  },
+  {
+    "id": "film-polygraph-lie-detector",
+    "category": "film",
+    "belief": "人一接上测谎仪，只要说谎，仪器就会准确地把谎言揭穿",
+    "truth": "测谎仪测的是紧张等生理反应而不是「谎言」：准确率高于乱猜、但远谈不上完美，也可被刻意干扰。",
+    "detail": "美国国家科学院 2003 年的专门报告《The Polygraph and Lie Detection》回顾了大量研究，结论很克制：针对某一具体事件的调查，测谎在研究文献所代表的人群里区分说谎与说真话的能力「远高于随机，但远低于完美」。\n\n报告同时指出：测谎仪记录的所有生理指标，都可以通过有意识的认知或身体手段改变，因此有人可能在测试中显得「没说谎」而逃过；用于联邦机构的雇员安全筛查时，其准确度不足以支撑依赖，因为真正的违规者极少，哪怕准确率不低，也会产生大量被错判为说谎的忠诚员工，和被漏掉的真正威胁——报告称这是一个「不可接受的选择」。",
+    "origin": "影视常把一台同时记录心率、呼吸、皮肤电的仪器，演成「有罪就报警」的机器，剧情因此变得干净利落。这一点是推断，我们没有查到某一部作品是源头。",
+    "instead": "看到「测谎结果」时，把它理解为一个有误差的线索，而不是证据本身；真实的审讯和筛查里，结论更依赖其他可核对的事实。",
+    "stakes": "wasteful",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "National Research Council, 2003 —— The Polygraph and Lie Detection（全书在线阅读）",
+        "url": "https://www.nationalacademies.org/read/10420/chapter/2"
+      }
+    ],
+    "en": {
+      "belief": "Hook someone up to a lie detector and, if they lie, the machine will accurately expose it",
+      "truth": "A polygraph measures arousal, not lies: it beats guessing but is far from perfect, and it can be deliberately gamed.",
+      "detail": "The US National Academies' 2003 report The Polygraph and Lie Detection reviewed the research and reached a restrained conclusion: for specific-incident investigations, polygraph tests can discriminate lying from truth-telling 'at rates well above chance, though well below perfection' in the populations studied.\n\nThe report also notes that all the physiological indicators a polygraph measures can be altered by conscious cognitive or physical effort, so a deceptive person may appear non-deceptive. For employee security screening, accuracy was judged insufficient to justify reliance: because real violators are rare, even a fairly accurate test falsely flags many loyal employees or misses real threats — in the report's words, 'an unacceptable choice'.",
+      "origin": "Films often turn an instrument that records heart rate, breathing and skin conductance into a machine that 'goes off when you are guilty', which makes plots tidy. That is an inference; we did not trace it to one film.",
+      "instead": "Treat a polygraph result as an error-prone lead, not as proof itself; real investigations and screening rely on other verifiable facts.",
+      "sources": [
+        {
+          "label": "National Research Council, 2003 — The Polygraph and Lie Detection (read online)",
+          "url": "https://www.nationalacademies.org/read/10420/chapter/2"
+        }
+      ]
+    },
+    "scene": "a paper strip-chart recorder with wavy ink lines and a pen on a desk",
+    "verification": "Opened https://www.nationalacademies.org/read/10420/chapter/2 (NAS 2003 report, summary chapter). Fetch summary gave: 'at rates well above chance, though well below perfection'; screening generalization 'not justified'; all indicators 'can be altered by conscious efforts through cognitive or physical means'; screening 'an unacceptable choice...between too many loyal employees falsely judged deceptive and too many major security threats left undetected'; insufficient to justify reliance in employee screening; base-rate argument. A search snippet quoting 85%/89% accuracy was NOT seen on the opened page, so those figures are omitted. APA page fetch returned nothing, so only one source. Origin labelled inference."
+  },
+  {
+    "id": "film-cold-water-minutes",
+    "category": "film",
+    "belief": "一掉进冰冷的水里，几分钟人就冻僵、冻死了",
+    "truth": "冰水里最先要命的是前几分钟的「冷休克」和随后的手脚失灵，而不是几分钟内「冻死」；体温低到昏迷通常要半小时到一小时。",
+    "detail": "加拿大安全划船委员会（CSBC）介绍了由曼尼托巴大学 Giesbrecht 提出的「1-10-1」口诀：第 1 分钟是冷休克——突然猛吸一口气，接着过度换气，呼吸量可达正常的 600%–1000%，关键是不要呛水、稳住呼吸；约 10 分钟内，手指、手臂和腿会失去有效活动能力，游泳能力丧失，没有救生衣就可能溺水；而即使在冰水里，因低体温而失去意识也大约要 1 小时。\n\n2020 年一篇关于冷水游泳的综述（Knechtle 等，IJERPH）也把浸入冷水分成三段：最初约 3 分钟是冷休克（皮肤降温、过度换气、心率加快、吸气反射）；3 分钟后是肌肉神经冷却；约 30 分钟后才进入低体温阶段。综述说，没有适应的人死亡风险来自最初的冷休克、游泳能力逐渐下降，或低体温；各阶段的时长随水温等因素差别很大。所以真实的危险时间表，比电影里的「冻僵」更早、也更细。",
+    "origin": "影视常把冰水中的死亡压缩成几分钟里「慢慢冻僵、沉下去」的画面，戏剧上很有效。这一点是推断，我们没有查到某一部作品是它的源头。",
+    "instead": "这是人群层面的一般规律，不是个人医疗建议。要点是：冷水的危险在最初几分钟，所以水边活动时要穿救生衣；看到有人落入冰水，先大声呼救并拨打急救电话（中国 120 / 澳洲 000 / 美国 911），不要贸然下水去救。",
+    "stakes": "risky",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Canadian Safe Boating Council —— 1-10-1 Principle",
+        "url": "https://csbc.ca/1-10-1-principle/"
+      },
+      {
+        "label": "Knechtle B 等, Int J Environ Res Public Health 2020 —— Cold Water Swimming: Benefits and Risks, A Narrative Review",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7730683/"
+      }
+    ],
+    "en": {
+      "belief": "Fall into freezing water and within a few minutes you freeze solid and die",
+      "truth": "In icy water the first killers are cold shock in the opening minutes and then loss of use of your limbs — not freezing to death within minutes; hypothermic unconsciousness usually takes 30 minutes to an hour.",
+      "detail": "The Canadian Safe Boating Council describes the '1-10-1' rule from Manitoba's Gordon Giesbrecht: in the first minute comes cold shock — a sudden gasp, then hyperventilation that can reach 600–1000% of normal breathing; the priority is keeping your airway clear and your breathing under control. Over roughly 10 minutes you lose effective use of fingers, arms and legs, swimming fails, and without a lifejacket drowning becomes likely; and even in ice water it takes about an hour before hypothermia causes unconsciousness.\n\nA 2020 narrative review of cold-water swimming (Knechtle et al., IJERPH) splits immersion into three stages too: cold shock in roughly the first three minutes (skin cooling, hyperventilation, fast heart rate, gasp reflex); neuromuscular cooling after three minutes; and hypothermia after about 30 minutes. It says unadapted people can die from the initial cold shock, from progressive loss of swimming efficiency, or from hypothermia, and that durations vary considerably with water temperature and other factors. The real timetable is earlier and more nuanced than movie 'freezing'.",
+      "origin": "Films often compress death in icy water into a few minutes of slowly freezing and sinking, which works dramatically. That is an inference; we did not trace it to one film.",
+      "instead": "This is a general population-level pattern, not personal medical advice. The practical point: the danger is in the first minutes, so wear a lifejacket near cold water; if someone falls into icy water, shout for help and call emergency services (China 120 / Australia 000 / US 911) rather than going in yourself.",
+      "sources": [
+        {
+          "label": "Canadian Safe Boating Council — 1-10-1 Principle",
+          "url": "https://csbc.ca/1-10-1-principle/"
+        },
+        {
+          "label": "Knechtle B et al., Int J Environ Res Public Health 2020 — Cold Water Swimming: Benefits and Risks, A Narrative Review",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7730683/"
+        }
+      ]
+    },
+    "scene": "an orange life jacket and a coiled rope lying on thin ice at a lake edge",
+    "verification": "Opened https://csbc.ca/1-10-1-principle/ (fetch summary): 1 min cold shock, gasp + hyperventilation up to 600-1000% above normal; 10 min lose effective use of fingers/arms/legs, swim failure, lifejacket vital; 'even in ice water it could take approximately 1 hour before becoming unconscious due to Hypothermia'. Attribution to Giesbrecht/Univ. of Manitoba came from a search-result summary (not on the CSBC fetch summary) - widely stated but treat as secondary. Pulled full text of PMC7730683 via Europe PMC: Table 2 'Three stages of immersion': Initial (Cold Shock) first three minutes; short-term after three minutes superficial neuromuscular cooling; long-term after 30 min hypothermia; text: durations vary considerably with water temperature etc.; death risk from initial neurogenic cold shock, progressive decrease in swimming efficiency or hypothermia. PubMed Tipton 2017 page was cookie-walled, not used. Origin labelled inference."
+  },
+  {
+    "id": "film-fingerprint-zero-error",
+    "category": "film",
+    "belief": "电影里指纹一比对就是铁证——百分之百准确，从来不会出错",
+    "truth": "指纹比对是有价值的线索，但美国国家科学院认为「零错误率」的说法在科学上不可信，通用的 ACE-V 流程也还算不上经过验证的方法。",
+    "detail": "美国国家科学院下属委员会 2009 年的报告《Strengthening Forensic Science in the United States: A Path Forward》在指纹（摩擦嵴）一节的「总结评估」里写道：这项技术历史上既帮助找出有罪者、也帮助排除无辜者；指纹包含大量细节，认真比对确实「看上去合理」能判断两枚印痕是否同源；但关于它的准确性和可靠性，已有的信息有限，而「零错误率」的说法在科学上并不可信。\n\n报告还指出，业内通行的 ACE-V（分析、比对、评估、验证）只是一个宽泛的框架，具体程度不足以称为经过验证的方法：它不能防止偏见，不足以保证可重复和透明，也不能保证两位分析员得出相同结论；所以仅仅按 ACE-V 的步骤做，并不等于过程科学、结果可靠。报告承认「每个人的指纹独一无二、终生不变」有一定科学证据，但强调这并不等于任何人都能可靠地分辨两枚印痕是否来自同一手指——同一根手指每次留下的印痕也会因按压力度而不同。注意：这份报告写于 2009 年，此后相关研究仍在继续，本条只反映该报告的结论。",
+    "origin": "报告回顾说，美国法院长期把指纹视为「头号识别科学」，却并未引用支持其可靠性的研究；DNA 技术刚出现时甚至被称作「DNA 指纹」，暗示它像指纹一样可靠。直到为 DNA 证据做验证时，人们才发现对指纹的这些假设从未经过同等的科学审视。报告还提到 2004 年的 Mayfield 案重新引发了围绕指纹证据的争论。",
+    "instead": "看到「指纹匹配」，把它读作「受过训练的专家判断两枚印痕可能同源」，而不是数学意义上的确证；真实案件里，指纹最好有其他独立证据一起佐证。",
+    "stakes": "risky",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "National Research Council, 2009 —— Strengthening Forensic Science in the United States: A Path Forward（第 5 章 friction ridge analysis 一节及其「Summary Assessment」；美国司法部 NIJ 托管的 PDF）",
+        "url": "https://www.ojp.gov/pdffiles1/nij/grants/228091.pdf"
+      }
+    ],
+    "en": {
+      "belief": "In the movies a fingerprint match is ironclad — 100% accurate, never wrong",
+      "truth": "Fingerprint comparison is a valuable lead, but the US National Academies found 'zero error rate' claims scientifically implausible, and the standard ACE-V procedure is not a validated method.",
+      "detail": "In the fingerprint (friction ridge) section's 'Summary Assessment', the National Academies committee's 2009 report Strengthening Forensic Science in the United States: A Path Forward says the technique has historically helped to identify the guilty and exclude the innocent; because ridges contain so much detail it seems plausible that a careful comparison can tell whether two impressions share a source; but information on accuracy and reliability is limited, and claims of zero error rates are not scientifically plausible.\n\nIt adds that ACE-V (analysis, comparison, evaluation, verification) is only a broadly stated framework, not specific enough to qualify as a validated method: it does not guard against bias, is too broad to ensure repeatability and transparency, and does not guarantee that two analysts will reach the same result — so following its steps does not by itself mean the work is scientific or reliable. The report accepts there is some scientific support for fingerprints being unique and persistent, but stresses this does not mean anyone can reliably tell whether two impressions came from the same finger, since impressions from one finger vary with pressure. Note that the report dates from 2009 and research has continued since; this entry reflects only that report's conclusions.",
+      "origin": "The report recalls that US courts long treated fingerprinting as the premier identification science without citing studies of its reliability; when DNA first appeared it was even called 'DNA fingerprinting' to suggest it was as reliable. Only in validating DNA evidence did it become apparent that assumptions about fingerprints had never had the same scientific scrutiny. It also notes that the 2004 Mayfield case refuelled the debate.",
+      "instead": "Read 'fingerprint match' as 'a trained expert judges the two impressions may share a source', not as mathematical proof; in real cases fingerprints are best supported by independent evidence.",
+      "sources": [
+        {
+          "label": "National Research Council, 2009 — Strengthening Forensic Science in the United States: A Path Forward (Chapter 5, friction ridge analysis and its 'Summary Assessment'; PDF hosted by the US DOJ/NIJ)",
+          "url": "https://www.ojp.gov/pdffiles1/nij/grants/228091.pdf"
+        }
+      ]
+    },
+    "scene": "an ink pad and a paper card stamped with a swirling ridge pattern beside a magnifying glass",
+    "verification": "Downloaded https://www.ojp.gov/pdffiles1/nij/grants/228091.pdf (HTTP 200, NAS report as DOJ-hosted copy), pdftotext, read the friction-ridge 'Summary Assessment' (around report pp.143-144): 'claims that these analyses have zero error rates are not scientifically plausible'; ACE-V 'not specific enough to qualify as a validated method... does not guard against bias; is too broad to ensure repeatability and transparency; does not guarantee that two analysts... obtain the same results'; 'Uniqueness and persistence are necessary conditions... but do not imply that anyone can reliably discern...'; also the court-history passage (Crisp: 'since at least 1911', 'pointed to no studies'), 'DNA fingerprinting' sentence, and 'The 2004 Brandon Mayfield case refueled the debate'. Page numbers approximate (printed 143-144/ chapter 5). Report is 2009; later work (e.g., PCAST 2016) NOT checked, hence the caveat sentence."
+  },
+  {
+    "id": "film-electric-shock-thrown-back",
+    "category": "film",
+    "belief": "电影里人一触电就被「砰」地弹飞，所以触电了总能自己甩开",
+    "truth": "更常见也更危险的情形是肌肉被电流「锁住」、松不开手；被弹开只是可能性之一，而且弹开本身也可能带来致命的坠落。",
+    "detail": "美国职业安全与健康管理局（OSHA）建筑业电气事故页面（这里引用的是 UAH 托管的存档副本）给了一张电流与人体反应的对照表：约 5 毫安，感觉到轻微电击，一般人还能松手；6–16 毫安，疼痛并开始失去肌肉控制，称为「冻结电流」或「摆脱电流」范围；17–99 毫安，极度疼痛、呼吸停止、严重肌肉收缩，人无法松手，可能致死；100–2000 毫安，可引起心室颤动。\n\n同一页也写到「被弹开」的情形：如果电击刺激了伸肌，人可能被抛离电路，常导致从高处坠落，即使没被电死也可能致命；而当肌肉收缩让受害者无法脱离电路时，即使相对较低的电压也极其危险，因为伤害随接触时间增加——页面特别强调「低电压不等于低危险」。皮肤潮湿会使人体电阻大幅下降：页面的算例是 120 伏在干燥条件下约 1 毫安，在潮湿条件下可达 120 毫安。",
+    "origin": "「被电弹飞」的画面干净利落，能一帧交代发生了什么，所以影视里很常见。这是推断：我们没有查到某一部作品是它的源头。",
+    "instead": "现实中看到有人触电，先拨打急救电话（中国 120 / 澳洲 000 / 美国 911）并听从调度员的指引，不要徒手去拉一个可能仍与电路接触的人。平时也别指望「碰到了就能自己甩开」：潮湿环境里尤其要远离破损的电线和电器。",
+    "stakes": "risky",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "OSHA Construction eTool —— Electrical Incidents: How Electrical Current Affects the Human Body（UAH 托管的 PDF 存档，页面打印于 2013 年）",
+        "url": "https://www.uah.edu/images/administrative/facilities/oehs/how_electrical_current_affects_the_human_body.pdf"
+      }
+    ],
+    "en": {
+      "belief": "In the movies a person who touches live electricity is blasted backwards — so you can always pull free",
+      "truth": "The commoner and more dangerous outcome is muscles locking so you cannot let go; being thrown clear is only one possibility, and the fall itself can be deadly.",
+      "detail": "The OSHA construction eTool page on electrical incidents (cited here as an archived copy hosted by UAH) tabulates current against effect: about 5 mA, slight shock, the average person can let go; 6–16 mA, painful shock with beginning loss of muscular control — the 'freezing current' or 'let-go' range; 17–99 mA, extreme pain, respiratory arrest and severe muscle contraction, the person cannot let go and death is possible; 100–2000 mA, ventricular fibrillation.\n\nThe same page covers being thrown: if the extensor muscles are excited, the person may be thrown away from the circuit, often causing a fall from elevation that can kill even when the shock does not. But when muscle contraction prevents the victim freeing themselves, even relatively low voltages can be extremely dangerous because injury grows with time in the circuit — 'low voltage does not imply low hazard'. Wet skin lowers body resistance sharply: the page's worked example is about 1 mA at 120 V when dry versus 120 mA when wet.",
+      "origin": "A person flung backwards is a crisp, one-frame way to show what happened, so it is common on screen. That is an inference; we did not trace it to one film.",
+      "instead": "If you see someone being electrocuted, call emergency services (China 120 / Australia 000 / US 911) and follow the dispatcher's instructions; do not grab a person who may still be in the circuit with bare hands. And never count on 'I would just pull away': stay clear of damaged cords and appliances, especially in wet places.",
+      "sources": [
+        {
+          "label": "OSHA Construction eTool — Electrical Incidents: How Electrical Current Affects the Human Body (archived PDF hosted by UAH, printed 2013)",
+          "url": "https://www.uah.edu/images/administrative/facilities/oehs/how_electrical_current_affects_the_human_body.pdf"
+        }
+      ]
+    },
+    "scene": "a household wall outlet with a frayed extension cord and a rubber-handled screwdriver",
+    "verification": "Downloaded the UAH PDF (saved by WebFetch), pdftotext. It is a print of the OSHA Construction eTool page (dated 9/6/2013) citing NIOSH 1998 and Greenwald 1991. Table: 5 mA 'Average individual can let go'; 6-16 mA 'freezing current or let-go range'; 17-99 mA 'Individual cannot let go. Death is possible'; 100-2000 mA ventricular fibrillation. Footnotes: 'If the extensor muscles are excited by the shock, the person may be thrown away from the circuit. Often, this can result in a fall from elevation that kills a victim even when electrocution does not'; 'When muscular contraction... does not allow the victim to free himself... LOW VOLTAGE DOES NOT IMPLY LOW HAZARD!'; wet vs dry 120 V example (1 mA vs 120 mA). I did not open the live osha.gov URL (page is archived/removed), so the UAH copy is cited. 'Do not grab' advice is general safety wording, not a quoted OSHA line; 120/000/911 hint per BRIEF."
+  },
+  {
+    "id": "film-adrenaline-heart-needle",
+    "category": "film",
+    "belief": "电影里往昏迷者胸口直接扎一针肾上腺素，人就猛地惊醒了",
+    "truth": "现行复苏指南用的是静脉或骨内给药，直接向心脏注射的做法已被弃用；而阿片类药物过量的解药是纳洛酮，不是肾上腺素。",
+    "detail": "2025 年发表在《Journal of Clinical Medicine》的一篇系统综述与荟萃分析（Zagalioti 等，开放获取）写道：现行复苏指南把静脉通路作为首选给药途径，静脉延迟或不可行时用骨内通路作为替代；并说「向心脏内注射肾上腺素曾被尝试，但因实际限制和风险已被放弃」。\n\n《低俗小说》里那一幕——用心内注射肾上腺素抢救海洛因过量——被维基百科的相关词条评价为远离常规做法；词条称心内注射「被认为已过时」「在现代实践中很少使用」，自 1970 年代起，随着静脉注射同样有效而且风险更小，它就逐渐衰落了。至于阿片类药物过量，美国 MedlinePlus 对纳洛酮的说明是：它通过阻断阿片类药物的作用，缓解高浓度阿片类药物引起的危险症状（如呼吸停止、意识丧失），用药后要立即拨打 911 并留在原地密切观察。",
+    "origin": "这个桥段在电影里很有戏剧效果：一针下去，起死回生。我们没有查到它在现实医学中的明确源头；维基百科词条的说法是，这一做法确曾在医学史上存在，后来才被淘汰。",
+    "instead": "遇到疑似药物过量或有人倒下，不要自己动手注射任何东西：立刻拨打急救电话（中国 120 / 澳洲 000 / 美国 911），按调度员指引做 CPR 等；如果现场备有纳洛酮，也应在打急救电话的同时按说明使用。",
+    "stakes": "risky",
+    "confidence": "limited",
+    "sources": [
+      {
+        "label": "Zagalioti SC 等, J Clin Med 2025 —— Does the Injection Site Matter During CPR? A Systematic Review and Meta-Analysis of Drug Pharmacokinetics and Pharmacodynamics",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12609464/"
+      },
+      {
+        "label": "MedlinePlus —— Naloxone Injection",
+        "url": "https://medlineplus.gov/druginfo/meds/a612022.html"
+      },
+      {
+        "label": "Wikipedia —— Intracardiac injection",
+        "url": "https://en.wikipedia.org/wiki/Intracardiac_injection"
+      }
+    ],
+    "en": {
+      "belief": "In the movies a needle of adrenaline plunged straight into an unconscious person's chest makes them jolt awake",
+      "truth": "Current resuscitation guidelines use intravenous or intraosseous drug delivery; injecting directly into the heart has been abandoned, and the antidote for an opioid overdose is naloxone, not adrenaline.",
+      "detail": "A 2025 systematic review and meta-analysis in the Journal of Clinical Medicine (Zagalioti et al., open access) says current resuscitation guidelines recommend intravenous access as the first-line route, with intraosseous access as the alternative when IV is delayed or not feasible, and that intracardiac injection of adrenaline 'was once explored but has since been abandoned due to practical limitations and risks'.\n\nThe Pulp Fiction scene — intracardiac adrenaline for a heroin overdose — is described in the relevant Wikipedia article as far from normal treatment; the article calls intracardiac injection 'considered obsolete' and 'rarely used in modern practice', declining from the 1970s as intravenous injection proved equally effective and less risky. For opioid overdose, the US MedlinePlus entry says naloxone works by blocking the effects of opioids, relieving dangerous symptoms such as stopped breathing and loss of consciousness, and that after giving it you should call 911 immediately and stay watching the person closely.",
+      "origin": "The scene is dramatically powerful: one needle and the person is back from the dead. We found no clear real-world source for it; the Wikipedia article says the technique did exist in medical history and was later discarded.",
+      "instead": "If someone may have overdosed or has collapsed, do not inject anything yourself: call emergency services at once (China 120 / Australia 000 / US 911) and follow the dispatcher's instructions, such as CPR; if naloxone is on hand, use it as directed while calling.",
+      "sources": [
+        {
+          "label": "Zagalioti SC et al., J Clin Med 2025 — Does the Injection Site Matter During CPR? A Systematic Review and Meta-Analysis of Drug Pharmacokinetics and Pharmacodynamics",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12609464/"
+        },
+        {
+          "label": "MedlinePlus — Naloxone Injection",
+          "url": "https://medlineplus.gov/druginfo/meds/a612022.html"
+        },
+        {
+          "label": "Wikipedia — Intracardiac injection",
+          "url": "https://en.wikipedia.org/wiki/Intracardiac_injection"
+        }
+      ]
+    },
+    "scene": "a white first-aid kit and a stethoscope resting on a folded cloth",
+    "verification": "Pulled full text of PMC12609464 (J Clin Med 2025;14(21):7497, CC BY) via Europe PMC: abstract 'Current resuscitation guidelines recommend intravenous (IV) access as the first-line route, with intraosseous (IO) access... alternative'; discussion: 'Similarly, intracardiac injection of adrenaline was once explored but has since been abandoned due to practical limitations and risks.' (single sentence in a review, hence confidence=limited). Opened https://medlineplus.gov/druginfo/meds/a612022.html (fetch summary): naloxone 'works by blocking the effects of opiates...', reverses stopped breathing/loss of consciousness, 'call 911 immediately and then stay with you and watch you closely'. Opened https://en.wikipedia.org/wiki/Intracardiac_injection: 'considered obsolete', 'rarely used in modern practice', declined from 1970s as IV 'equally effective... less prone to risks'; mentions Pulp Fiction heroin overdose scene vs naloxone. Gizmodo article also opened (no citations) - not used. Did not find AHA/ERC guideline text itself; guideline statement is via the review."
+  },
+  {
+    "id": "film-time-of-death-to-the-minute",
+    "category": "film",
+    "belief": "电影里法医一量体温，就能报出「死亡时间是昨晚十点十七分」",
+    "truth": "死亡时间只能估算成一个区间：在一项 76 例已知死亡时间的验证研究里，常用 Henssge 方法给出的 95% 预测区间，只有约 37% 真正包含了死亡时间。",
+    "detail": "Heinrich 等人 2025 年发表在《国际法医学杂志》的研究，用汉堡大学法医学研究所 76 例已知确切死亡时间的遗体，检验了常用的 Henssge 复合法（把体温与其他死后征象结合起来推算）。结果：95% 预测区间与真实死亡时间吻合的比例是 36.8%（95% 置信区间 26.1%–48.7%）；存放在温暖环境的遗体吻合 61.9%，冷藏的仅 27.3%；体重指数和体表面积也会影响结果。作者的结论是吻合度「低到中等」，需要更大样本的外部验证。这是单中心、便利样本的研究，它说明这类方法有明显误差，并不意味着法医推断没有价值。\n\n一位副法医官在实验室医学博客里也写道：死亡时间「只会是估计」；体温受体型、衣着、风等多种因素影响；尸斑一旦固定，只能区分「短于」还是「长于」大约 8–12 小时；最可靠的办法往往是认真调查现场线索，比如信件日期、日历上的标记。",
+    "origin": "一个精确到分钟的数字，能让侦探剧情一下子推进，所以影视爱用。这是推断：我们没有查到某一部作品是它的源头。",
+    "instead": "读到或看到「推定死亡时间」时，把它理解成一个带误差的区间，需要和现场线索、监控、手机记录等其他证据互相印证，而不是一个读数。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Heinrich F 等, Int J Legal Med 2025 —— An assessment of the Henssge method for forensic death time estimation in the early post-mortem interval",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11732859/"
+      },
+      {
+        "label": "Krywanczyk A, Lab Medicine Blog 2023 —— Determining Time of Death: Separating Science from Pseudoscience",
+        "url": "https://labmedicineblog.com/2023/01/25/determining-time-of-death-separating-science-from-pseudoscience/"
+      }
+    ],
+    "en": {
+      "belief": "In the movies the medical examiner takes one temperature reading and announces 'time of death: 10:17 last night'",
+      "truth": "Time of death can only be estimated as a range: in a 76-case validation study, the common Henssge method's 95% prediction interval contained the true time in only about 37% of cases.",
+      "detail": "Heinrich et al. (2025, International Journal of Legal Medicine) tested the widely used Henssge compound method — body temperature combined with other post-mortem signs — on 76 deceased people with known times of death at the Hamburg-Eppendorf institute of legal medicine. The 95% prediction interval matched the actual time of death in 36.8% of cases (95% CI 26.1–48.7%); 61.9% for warm-stored bodies versus 27.3% for cold-stored; body mass index and body surface area also mattered. The authors call the agreement 'low to moderate' and recommend larger external validation. This is a single-centre convenience sample: it shows these methods carry substantial error, not that forensic estimates are worthless.\n\nA deputy medical examiner writing on a laboratory-medicine blog says the same in plain words: time of death 'will be an estimate'; body temperature is affected by body habitus, clothing, wind and more; once livor is fixed it only separates 'less than' from 'more than' about 8–12 hours; and the best estimate usually comes from thorough scene investigation, such as mail dates and calendar marks.",
+      "origin": "A to-the-minute number moves a detective plot along, so screens love it. That is an inference; we did not trace it to one film.",
+      "instead": "When you read or watch an 'estimated time of death', treat it as a range with error, to be cross-checked against scene clues, CCTV, phone records and other evidence — not a single reading.",
+      "sources": [
+        {
+          "label": "Heinrich F et al., Int J Legal Med 2025 — An assessment of the Henssge method for forensic death time estimation in the early post-mortem interval",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11732859/"
+        },
+        {
+          "label": "Krywanczyk A, Lab Medicine Blog 2023 — Determining Time of Death: Separating Science from Pseudoscience",
+          "url": "https://labmedicineblog.com/2023/01/25/determining-time-of-death-separating-science-from-pseudoscience/"
+        }
+      ]
+    },
+    "scene": "a stopped brass pocket watch beside a glass laboratory thermometer on a desk",
+    "verification": "Europe PMC abstract + full text of PMC11732859 (Heinrich F, Rimkus-Ebeling F, Dietz E, Raupach T, Ondruschka B; Int J Legal Med 2025, doi 10.1007/s00414-024-03338-5): n=76, convenience sample, Hamburg-Eppendorf; overall agreement with 95% prediction interval 36.8% (95% CI 26.1-48.7); warm-stored 61.9% (38.4-81.9), cold-stored 27.3% (16.1-41.0); BMI/BSA influence; conclusion 'low to moderate agreement'. I read the data via Europe PMC's API, not by opening the pmc.ncbi.nlm.nih.gov URL itself (same article). Opened https://labmedicineblog.com/2023/01/25/... (author Dr Alison Krywanczyk, deputy medical examiner per fetch summary; no formal citations; 'it will be an estimate', algor mortis variables, livor 'less than/greater than 8 to 12 hours', scene investigation). StatPearls and Springer pages were 403/redirect, not used. Origin labelled inference."
+  },
+  {
+    "id": "film-heart-attack-collapse",
+    "category": "film",
+    "belief": "电影里心脏病发作，就是突然捂住胸口、大叫一声倒地",
+    "truth": "银幕上的心脏病发作多是摔倒和昏迷，而真实的症状更常是胸口压迫或紧缩感、气短、恶心出汗，有时并不剧烈——尤其在女性身上。",
+    "detail": "2024 年发表在《美国心脏协会杂志》（JAHA）上的一项研究（Shaw 等）分析了 100 个流行影片中的心肌梗死场景。银幕上最常出现的两个表现是摔倒和失去意识：10 名女性角色全部摔倒，男性角色中 88% 摔倒；68% 的男性角色失去意识。胸痛反而没那么常画出来：男性 67%、女性 50%；还有 29% 的男性和 40% 的女性角色会尖叫或大喊。作者的结论是，影片更多展示严重、甚至不典型的表现，这可能强化对典型症状的错误想象，而真实症状可能更含蓄，尤其是女性。\n\n英国 NHS 的描述更平实：胸痛可能像「压榨感或紧缩感」，也可能向手臂、颈部和下颌放射；还可能伴有气短、恶心或呕吐、出汗、皮肤发白发青发灰。NHS 的指引是：胸口发紧或像被挤压的疼痛，或疼痛向手臂、颈部、下颌扩散，就应拨打急救电话，并且不要自己开车去急诊。",
+    "origin": "银幕上需要让观众一眼看懂「出事了」，所以捂胸、倒地是最省事的视觉符号。这是推断；上面的研究说明了银幕上的画法有多集中，但没有追溯这个套路的起点。",
+    "instead": "别等症状「像电影里那样」才当真。出现胸口压迫或紧缩感、疼痛扩散到手臂颈部下颌、气短、恶心出汗，即使不剧烈，也应立即拨打急救电话（中国 120 / 澳洲 000 / 美国 911 / 英国 999），不要自己开车去医院。",
+    "stakes": "risky",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Shaw KE 等, J Am Heart Assoc 2024 —— Portrayal of Acute Myocardial Infarction in Popular Film: A Review of Gender, Race, and Ethnicity",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11963949/"
+      },
+      {
+        "label": "NHS —— Heart attack: Symptoms",
+        "url": "https://www.nhs.uk/conditions/heart-attack/symptoms/"
+      }
+    ],
+    "en": {
+      "belief": "In the movies a heart attack means clutching your chest, crying out and collapsing",
+      "truth": "On screen heart attacks are mostly falls and fainting; real symptoms are more often chest pressure or tightness, breathlessness, nausea and sweating, and may not be dramatic — especially in women.",
+      "detail": "A 2024 study in the Journal of the American Heart Association (Shaw et al.) analysed heart attack scenes in the 100 most popular films portraying them. The two most common on-screen signs were falling and loss of consciousness: all 10 women and 88% of men fell, and 68% of men lost consciousness. Chest pain was actually portrayed less often — 67% of men and 50% of women — while 29% of men and 40% of women screamed or yelled. The authors conclude that films portray more severe, even unusual presentations, which may perpetuate false beliefs about typical symptoms that can be more subtle, particularly in women.\n\nThe UK NHS is plainer: chest pain may feel like crushing or squeezing and may spread to the arm, neck and jaw, with possible breathlessness, nausea or vomiting, sweating, and pale, blue or grey skin. Its advice is to call emergency services for tight or squeezing chest pain or pain spreading to the arms, neck or jaw, and not to drive yourself to A&E.",
+      "origin": "A screen needs to tell the audience at a glance that something is wrong, so clutching and collapsing is the cheapest visual shorthand. That is an inference; the study shows how concentrated the screen portrayal is but does not trace the trope's origin.",
+      "instead": "Do not wait for symptoms to 'look like the movies'. Chest pressure or tightness, pain spreading to the arm, neck or jaw, breathlessness, nausea or sweating — even if not severe — warrant calling emergency services at once (China 120 / Australia 000 / US 911 / UK 999), and not driving yourself to hospital.",
+      "sources": [
+        {
+          "label": "Shaw KE et al., J Am Heart Assoc 2024 — Portrayal of Acute Myocardial Infarction in Popular Film: A Review of Gender, Race, and Ethnicity",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11963949/"
+        },
+        {
+          "label": "NHS — Heart attack: Symptoms",
+          "url": "https://www.nhs.uk/conditions/heart-attack/symptoms/"
+        }
+      ]
+    },
+    "scene": "a small red cushion beside a wall clock and a glass of water on a wooden table",
+    "verification": "Europe PMC full text of PMC11963949 (Shaw KE et al., JAHA 2024, doi 10.1161/JAHA.123.034222): 'top 100 most popular films portraying heart attack scenes'; 'The 2 most prevalent presenting signs or symptoms of AMI were falls and loss of consciousness. Seventy-nine men (88%) fell... all 10 women (100%) fell. Eight women (88%) and 61 men (68%) experienced loss of consciousness. Chest pain was portrayed by 5 women (50%) and 60 men (67%). Four women (40%) screamed or yelled... 26 men (29%)'; discussion: films portray more severe symptoms... 'may perpetuate false beliefs on typical symptoms of AMI, which can be more subtle, particularly in women'. (A JEMS summary said 90% of men fell; the paper itself says 88% - paper used.) Opened https://www.nhs.uk/conditions/heart-attack/ and /symptoms/ (fetch summaries): 'crushing or squeezing on your chest', may spread to arm/neck/jaw, breathlessness, nausea/vomiting, sweating, pale/blue/grey skin; 'Call 999 if...'; 'Do not drive yourself to A&E' (that last line was on the /symptoms/ page fetch). Not used: AHA news page (403) and the 'mild/intermittent' claim, which the NHS pages did not state."
+  },
+  {
+    "id": "film-shark-smell-blood-miles",
+    "category": "film",
+    "belief": "鲨鱼能闻到几公里外的一滴血——电影里血一入海，鲨鱼就循味从远处赶来",
+    "truth": "鲨鱼嗅觉不错，但实验测得的灵敏度与普通硬骨鱼相当；没有证据支持「几公里外嗅到一滴血」。",
+    "detail": "Meredith 和 Kajiura 2010 年发表在《实验生物学杂志》的研究，比较了五种亲缘较远的软骨鱼（包括鲨鱼）的嗅觉器官：它们的嗅板数量和表面积各不相同，但都与嗅觉灵敏度（阈值）无关；对氨基酸气味（鱼类嗅觉的主要刺激物）的阈值在约 10 的负 9.0 次方到负 6.9 次方摩尔每升之间，与硬骨鱼相当。此前人们常以为，鲨鱼嗅觉器官表面积大，所以嗅觉特别灵，但这一点缺乏直接证据。\n\n美国物理联合会的 Inside Science 报道了这项研究，并引用第一作者的话：目前所知，它们「连奥运会泳池里的一滴东西都闻不出来」。需要说明的是，这项研究测的是对氨基酸的阈值，并没有直接测量血在真实海水里能被嗅到多远；气味靠水流扩散，距离取决于洋流，并不是一个固定的「几英里」。",
+    "origin": "「一滴血引来鲨鱼」是鲨鱼片和恐怖片里的常见套路，它让危险有了一个可见的开关。这是推断：我们没有查到某一部作品是它的最早源头。",
+    "instead": "把它当成「鲨鱼嗅觉不错，但并不神」。真实的海边安全，以当地救生员和海滩告示的提示为准。",
+    "stakes": "harmless",
+    "confidence": "strong",
+    "sources": [
+      {
+        "label": "Meredith TL, Kajiura SM, J Exp Biol 2010 —— Olfactory morphology and physiology of elasmobranchs",
+        "url": "https://europepmc.org/article/MED/20889825"
+      },
+      {
+        "label": "AIP Inside Science, 2010 —— Shark Smell Myth Found Fishy",
+        "url": "https://www.aip.org/inside-science/shark-smell-myth-found-fishy"
+      }
+    ],
+    "en": {
+      "belief": "A shark can smell a single drop of blood from miles away — in the movies, blood hits the water and sharks arrive from afar",
+      "truth": "Sharks smell well, but measured sensitivity is comparable to ordinary bony fish; there is no evidence for 'one drop of blood from miles away'.",
+      "detail": "Meredith and Kajiura (2010, Journal of Experimental Biology) compared the olfactory organs of five distantly related elasmobranchs, including sharks: the number of lamellae and lamellar surface area varied, but neither correlated with olfactory threshold; thresholds to amino acid odorants — the main olfactory stimuli of all fishes — ranged from about 10^-9.0 to 10^-6.9 mol per litre, comparable to bony fishes. The idea that a large olfactory surface makes sharks exceptionally sensitive had lacked direct evidence.\n\nThe American Institute of Physics' Inside Science covered the study and quoted its lead author saying that, from what is known now, sharks can't smell a drop of anything in an Olympic-sized swimming pool. Note that the study measured thresholds to amino acids, not how far blood can be smelled in real seawater; odor spreads with currents, so distance depends on the water movement, not on a fixed number of miles.",
+      "origin": "'One drop of blood draws the shark' is a staple of shark and horror films: it gives danger a visible trigger. That is an inference; we did not trace it to one film.",
+      "instead": "Take it as 'sharks smell well, but not magically'. For real beach safety, follow local lifeguards and beach signage.",
+      "sources": [
+        {
+          "label": "Meredith TL, Kajiura SM, J Exp Biol 2010 — Olfactory morphology and physiology of elasmobranchs",
+          "url": "https://europepmc.org/article/MED/20889825"
+        },
+        {
+          "label": "AIP Inside Science, 2010 — Shark Smell Myth Found Fishy",
+          "url": "https://www.aip.org/inside-science/shark-smell-myth-found-fishy"
+        }
+      ]
+    },
+    "scene": "a clear glass water tank with a single drop of red dye spreading near the surface",
+    "verification": "Europe PMC record/abstract of PMID 20889825 (Meredith TL, Kajiura SM; J Exp Biol 2010, doi 10.1242/jeb.045849): five distantly related elasmobranch species; lamellae number and surface area did not correlate with threshold; thresholds 10^-9.0 to 10^-6.9 mol/l; 'comparable thresholds with teleosts'; 'direct evidence correlating the size of the olfactory organ to olfactory sensitivity is lacking'. Opened https://www.aip.org/inside-science/shark-smell-myth-found-fishy (fetch summary): dated Oct 13 2010, Tricia Meredith, FAU; quote 'they can't smell a drop of anything in an Olympic-sized swimming pool'; 'matches typical fish'. The paper does NOT test blood or distance, stated in the entry. I did not open journals.biologists.com. An arXiv paper on odor diffusion was opened but is tangential and not used."
+  },
+  {
+    "id": "film-drowning-loud-splash",
+    "category": "film",
+    "belief": "电影里溺水的人会大声呼救、拼命挥手、扑腾出大片水花",
+    "truth": "真实的溺水往往又快又安静：人常常喊不出声、也腾不出手挥，容易被旁人当成在玩水。",
+    "detail": "美国儿科学会（AAP）2026 年更新的预防溺水建议，开篇就说，溺水「迅速，而且常常无声」。2024 年发表在《Sensors》的一篇关于溺水检测技术的综述，在背景介绍里写得更具体：溺水往往是一个无声的事件，受害者很少有抽搐般的动作，而是耗尽力气让头部保持在水面之上，常常无法呼救或发出求助信号；水进入喉部或气管时会出现痉挛，使人喊不出声。\n\n需要说明：这两处都是机构建议和综述的概括性描述，我们没有找到专门的一手观察研究，所以证据强度标为「有限」。这并不影响实际结论——安全指南的核心就是「别等到听见呼救」。",
+    "origin": "影视里需要声音和动作让观众立刻看懂有人遇险，所以溺水总被画成大喊和挥手。这是推断：我们没有查到某一部作品是它的源头。",
+    "instead": "不要等到听见呼救：水里有人突然变得异常安静、动作怪异，就按可能出事处理——立刻叫人，拨打急救电话（中国 120 / 澳洲 000 / 美国 911），并向岸上的救生员求助；不要贸然下水，先找漂浮物或救生设备。",
+    "stakes": "risky",
+    "confidence": "limited",
+    "sources": [
+      {
+        "label": "American Academy of Pediatrics, 2026 —— AAP Releases Updated Drowning Prevention Recommendations",
+        "url": "https://www.healthychildren.org/English/news/Pages/AAP-releases-updated-drowning-prevention-recommendations.aspx"
+      },
+      {
+        "label": "Jalalifar S 等, Sensors 2024 —— Enhancing Water Safety: Exploring Recent Technological Approaches for Drowning Detection",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10820385/"
+      }
+    ],
+    "en": {
+      "belief": "In the movies a drowning person shouts for help, waves frantically and thrashes up a big splash",
+      "truth": "Real drowning is often quick and quiet: people frequently cannot call out or wave, and can be mistaken for someone playing in the water.",
+      "detail": "The American Academy of Pediatrics' updated drowning-prevention recommendations (2026) open by calling drowning 'quick and often silent'. A 2024 review in Sensors on drowning-detection technology says more specifically, in its background, that drowning is often a silent event: victims rarely show convulsive movements, instead spending their energy keeping their head above water, often unable to call for help or signal distress; when water reaches the larynx or trachea, spasm can stop them shouting.\n\nNote that both are summary statements by an institution and a review; we found no primary observational study, so confidence is marked 'limited'. That does not change the practical point — safety guidance is built on 'do not wait to hear a cry for help'.",
+      "origin": "Films need sound and motion so the audience instantly sees someone is in trouble, so drowning is drawn as shouting and waving. That is an inference; we did not trace it to one film.",
+      "instead": "Do not wait to hear a call for help: if someone in the water suddenly goes unusually quiet or moves oddly, treat it as possibly serious — shout for help, call emergency services (China 120 / Australia 000 / US 911) and alert a lifeguard on shore; do not rush in yourself, look for something that floats first.",
+      "sources": [
+        {
+          "label": "American Academy of Pediatrics, 2026 — AAP Releases Updated Drowning Prevention Recommendations",
+          "url": "https://www.healthychildren.org/English/news/Pages/AAP-releases-updated-drowning-prevention-recommendations.aspx"
+        },
+        {
+          "label": "Jalalifar S et al., Sensors 2024 — Enhancing Water Safety: Exploring Recent Technological Approaches for Drowning Detection",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10820385/"
+        }
+      ]
+    },
+    "scene": "an empty inflatable swim ring floating alone on calm pool water",
+    "verification": "Opened the AAP healthychildren.org page (published 5/18/2026 per fetch): opening sentence 'Drowning, quick and often silent, is a leading cause of unintentional injury death in children' - nothing more on appearance/timing. Europe PMC full text of PMC10820385 (Jalalifar et al., Sensors 2024;24:331): 'drowning is often a silent event, and victims rarely exhibit convulsive movements. Instead, they exert considerable energy to keep their heads above water, often unable to call for help or signal their distress. When water enters their larynx or trachea, panic and spasms can occur, preventing them from shouting'. Red Cross, RLSSA, and Vittone-style 'instinctive drowning response' pages were 403 or blog-only; the '20-60 seconds' figure was NOT confirmed on any opened page and is omitted. Confidence=limited because both sources are secondary summaries."
+  }
+]

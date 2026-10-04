@@ -26,8 +26,8 @@ const MYTHS_EN = mythsFor('en')
 export const ROUTES: PrerenderRoute[] = [
   {
     path: '/',
-    title: '其实不是 · 那些你以为对的生活常识',
-    description: `早上不吃饭伤身、洗完头不吹干有湿气、骨头汤补钙……${MYTHS.length} 条听起来天经地义、但证据并不支持的生活常识，每条附出处。`,
+    title: '其实不是 · 那些你以为对的常识、名言和故事',
+    description: `早上不吃饭伤身、鲁迅说过的名言、电影里的桥段……${MYTHS.length} 条听起来天经地义、但证据并不支持的说法，每条附出处。`,
   },
   {
     path: '/quiz',
@@ -44,8 +44,8 @@ export const ROUTES: PrerenderRoute[] = [
   })),
   {
     path: '/en',
-    title: 'Actually, Not · Everyday things you thought were true',
-    description: `Skipping breakfast wrecks your stomach? Bone soup is full of calcium? ${MYTHS_EN.length} everyday claims that sound self-evident but aren't backed by evidence — each with sources.`,
+    title: 'Actually, Not · Common sense, quotes and stories you thought were true',
+    description: `Skipping breakfast wrecks your stomach? Einstein said it? The movies got it right? ${MYTHS_EN.length} claims that sound self-evident but aren't backed by evidence — each with sources.`,
   },
   {
     path: '/en/quiz',

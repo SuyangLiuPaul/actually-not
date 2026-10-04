@@ -33,3 +33,6 @@ dist-ssr
 .env
 .env.*
 !.env.example
+
+# 插画原图存档（ChatGPT 生成，每张 ~1.2MB，只留本地；成品是 public/illu 里的 webp）
+content-staging/illu-raw/
