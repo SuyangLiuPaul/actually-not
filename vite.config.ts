@@ -95,7 +95,9 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,ico,webmanifest}'],
         // 每条的 OG 分享图是给爬虫看的，不进预缓存（61 张约 3MB，会拖慢 SW 安装）
-        globIgnores: ['og/**', 'illu/**', 'town/**'],
+        // 预渲染出的每条/每页 HTML（458 个，各约 430KB）只给爬虫和首屏用，不进预缓存：
+        // 离线时任何路由都回退到 index.html，由客户端按 URL 渲染（内容都在 JS 包里）。
+        globIgnores: ['og/**', 'illu/**', 'town/**', '*/index.html', '*/*/index.html'],
         cleanupOutdatedCaches: true,
         clientsClaim: true,
         navigateFallback: '/index.html',

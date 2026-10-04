@@ -21,9 +21,17 @@ const CONF = new Set(['strong', 'limited', 'debated'])
 const base = readFileSync(join(root, 'src/data/myths.ts'), 'utf8')
 const existing = new Set([...base.matchAll(/^\s*id: '([a-z0-9-]+)'/gm)].map((m) => m[1]))
 
+const onlyIllustrated = process.argv.includes('--only-illustrated')
 const files = readdirSync(dir).filter((f) => f.endsWith('.json')).sort()
 const all = []
 for (const f of files) all.push(...JSON.parse(readFileSync(join(dir, f), 'utf8')).map((e) => ({ ...e, _file: f })))
+// --only-illustrated：还没出插画的条目先留在 staging，不进站（等插画齐了再合并）
+if (onlyIllustrated) {
+  const have = new Set(readdirSync(join(root, 'public', 'illu')).map((n) => n.replace(/\.webp$/, '')))
+  const skipped = all.filter((e) => !have.has(e.id)).map((e) => e.id)
+  all.splice(0, all.length, ...all.filter((e) => have.has(e.id)))
+  console.log(`跳过 ${skipped.length} 条（无插画）`)
+}
 
 const errs = []
 const seen = new Set()
