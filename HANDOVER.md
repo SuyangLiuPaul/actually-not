@@ -408,3 +408,24 @@ ChatGPT 的下载按钮存到 ~/Downloads 再导入的。** 旧的 104 条是 po
 
 **OG 图**：左上角红字现在是板块名，页脚统一为「其实不是 · 每条附出处 · actually-not.com」。
 <!-- END CONTENT_PIPELINE -->
+
+---
+
+## 12. 交接现状（2026-10-06，提交 a85971d，已推送上线）
+
+**线上 227 条**：吃 23 / 身体 23 / 睡 13 / 运动 15 / 生活 17 / 关键时刻 13 / 名言没说过 49 / 电影骗了你 22 / 起源是编的 28 / 这个词你用错了 13 / 为什么长这样 11。每条都有中英文、出处、插画、中英 OG 图。测试 3642 项全绿，Netlify 自动部署（push `main` 即可）。
+
+**没做完、可以接着做**
+1. 第 7 组 4 张插画风格不一致（暖色满版，别的是奶油底扁平）：`luxun-some-live-dead`、`luxun-one-confidant`、`zh-fools-trouble-themselves`、`zh-liang-qichao-drink-ice`。
+2. 近期网格裁切出的插画只有约 768px 宽，偏糊；旧的 104 张 pollinations 方图质量参差。可按统一风格逐步换。
+3. `PLAN-2026-10-04.md` 里没写"网格裁切"出图法（见下）。
+4. 线上只抽查过 3 个新条目页能打开，没有逐条看内容与图。建议做一次全站目视抽检（每板块 3–5 条）。
+5. 已知 lint 警告：`src/App.tsx:128` useEffect 缺 `locale` 依赖（未处理）。
+6. ChatGPT 历史里留有一批 "Create … Illustration" 对话，需要 Paul 自己清理。
+7. 每个板块还可以继续补条目（准确性优先于数量）。
+
+**出图方法（ChatGPT 限流下唯一跑通的）**：一个对话里让它生成 2×2 四宫格合成图（奶油底、统一风格、无文字、无人脸），用 `/backend-api/conversation/...` 取回图片（约每分钟 1 次 GET，否则 429；别开太多标签页；生成中别关页），再 `node scripts/illu-import-quad.mjs <png> id1 id2 id3 id4` 裁成四张 960×400 webp。检查用 `node scripts/illu-sheet.mjs out.png id...`。单张图用 `scripts/illu-import.mjs <png> <id>`。
+
+**加新条目**：见第 11 节管线（BRIEF → 研究员 JSON → `content-staging/approve.py` → `node scripts/merge-staging.mjs` → `npm run og` → `npm test` → build → push）。新条目必须有 `public/illu/<id>.webp`，否则测试不过；`--only-illustrated` 可先合并已有图的条目。
+
+**注意**：研究员（AI）的稿子一律人工审：出处能打开、结论不过度（"查无出处" ≠ "是假的"）、无"我核对了…"口吻、急救类要写先打急救电话。
