@@ -335,6 +335,7 @@ export default function App() {
           </div>
         </header>
 
+        <a className="app-web-entry" href="/app/"><span><strong>{locale === 'zh' ? '把好奇心随身带走' : 'Take your curiosity with you'}</strong><small>{locale === 'zh' ? '每日续玩 · 动手实验 · 随机探索 · 我的改观簿' : 'Daily discoveries · experiments · exploration · your journal'}</small></span><span>{locale === 'zh' ? '进入 App ↗' : 'Open app ↗'}</span></a>
         <PlayDeck key={locale} locale={locale} onOpen={open} onBrowse={browseAll} onRead={markRead} />
         <div id="library" className="mb-4 flex flex-wrap items-end justify-between gap-3">
           <h2 className="text-2xl" style={{ fontFamily: 'var(--font-serif)' }}>{locale === 'zh' ? '全部内容，随你翻。' : 'Every entry. Yours to explore.'}</h2>

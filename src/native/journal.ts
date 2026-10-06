@@ -21,7 +21,7 @@ export function loadJournal(): Discovery[] {
   try {
     const raw: unknown = JSON.parse(localStorage.getItem(JOURNAL_KEY) ?? '[]')
     const known = new Set(PLAY_QUESTIONS.map(q => q.id))
-    return Array.isArray(raw) ? raw.filter((r): r is Discovery => typeof r === 'object' && r !== null && known.has(r.id) && typeof r.shownAt === 'string' && typeof r.answer?.zh === 'string' && typeof r.answer?.en === 'string' && (r.choice === null || (typeof r.choice?.zh === 'string' && typeof r.choice?.en === 'string')) && (r.correct === null || typeof r.correct === 'boolean') && (r.certainty === null || [0,1,2].includes(r.certainty))) : []
+    return Array.isArray(raw) ? raw.filter((r): r is Discovery => typeof r === 'object' && r !== null && known.has(r.id) && typeof r.shownAt === 'string' && Number.isFinite(Date.parse(r.shownAt)) && typeof r.answer?.zh === 'string' && typeof r.answer?.en === 'string' && (r.choice === null || (typeof r.choice?.zh === 'string' && typeof r.choice?.en === 'string')) && (r.correct === null || typeof r.correct === 'boolean') && (r.certainty === null || [0,1,2].includes(r.certainty))) : []
   } catch { return [] }
 }
 export function appendDiscovery(record: Discovery): Discovery[] {
@@ -46,4 +46,23 @@ export function dailyQuestions(day: string, journal: Discovery[]): PlayQuestion[
   for (const q of ordered) if (chosen.length < 3 && !chosen.some(c => c.id === q.id)) chosen.push(q)
   // 沿用经过测试的洗牌，逐题保持中英对应和正确答案映射。
   return chosen.map((q,i) => playRound(q.topic, seed + i).find(item => item.id === q.id) ?? q)
+}
+
+/** 最近一次仍选错或跳过的题，优先回看；本日刚揭晓的题不立即重问。 */
+export function reviewQuestions(day: string, journal: Discovery[]): PlayQuestion[] {
+  const latest = new Map<string, Discovery>()
+  for (const record of journal) {
+    if (!Number.isFinite(Date.parse(record.shownAt))) continue
+    if (!latest.has(record.id) || latest.get(record.id)!.shownAt < record.shownAt) latest.set(record.id, record)
+  }
+  return [...latest.values()]
+    .filter(r => r.correct !== true && localDay(new Date(r.shownAt)) < day)
+    .sort((a,b) => a.shownAt.localeCompare(b.shownAt))
+    .flatMap(r => { const q = PLAY_QUESTIONS.find(q => q.id === r.id); return q ? [q] : [] })
+}
+
+export function resumeStep(questions: PlayQuestion[], records: Discovery[]): number {
+  const seen = new Set(records.map(r => r.id))
+  const first = questions.findIndex(q => !seen.has(q.id))
+  return first < 0 ? questions.length : first
 }
