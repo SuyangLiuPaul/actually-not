@@ -429,3 +429,12 @@ ChatGPT 的下载按钮存到 ~/Downloads 再导入的。** 旧的 104 条是 po
 **加新条目**：见第 11 节管线（BRIEF → 研究员 JSON → `content-staging/approve.py` → `node scripts/merge-staging.mjs` → `npm run og` → `npm test` → build → push）。新条目必须有 `public/illu/<id>.webp`，否则测试不过；`--only-illustrated` 可先合并已有图的条目。
 
 **注意**：研究员（AI）的稿子一律人工审：出处能打开、结论不过度（"查无出处" ≠ "是假的"）、无"我核对了…"口吻、急救类要写先打急救电话。
+
+### 2026-10-06 接手更新
+
+- 已完成每板块 3–5 条的线上目视抽检：35 条中文详情、对应 70 张中英文 OG 图。完整样本和问题见 PLAN-2026-10-04.md 末尾。
+- 四张指定风格不一致插画已重做；另替换旧方图 wet-hair、hand-sanitizer，以及网格图 why-runway-numbers、word-weiyan-weixing。旧方图还剩 102 张。
+- 本次使用 Codex 内置图像工具分别生成，原图均 1942×809，用 illu-import 导入。八张均已目视检查，不需要四宫格放大。原图仍仅本地留档。
+- 四条名言按既有审核管线修正，审稿覆盖单独留档；「十年饮冰」仍为 limited。另修正两条急救建议的呼救顺序并补官方来源。没有新增条目，仍为 227 条。
+- 仍须逐步复核旧条目出处、正文口吻、急救情境，继续换图。generate-revisions.mjs 的历史追踪目前未覆盖新板块，也不能准确捕捉正文修改；详见进度记录。
+- ChatGPT 历史对话未操作。

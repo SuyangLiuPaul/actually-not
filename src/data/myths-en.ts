@@ -1068,15 +1068,15 @@ export const MYTHS_EN: Record<string, MythText> = {
   "truth": "Water makes an already-blocked airway more dangerous. The airway and the esophagus are two different paths.",
   "detail": "A foreign object lodged in the airway won't be flushed down by water — the water itself has to pass through the pharynx, and it can trigger choking and aspiration, making things worse. Don't sweep blindly inside the mouth with a finger either; that often pushes the object deeper.\n\nJudging whether the obstruction is complete matters: if the person can still cough or make sounds, air is still getting through — encourage hard coughing. If they can't cough audibly, can't speak, clutch their throat with both hands, or turn blue, that's a complete obstruction and you must act immediately.",
   "origin": "'Wash it down' is experience from food stuck in the esophagus (where a drink of water really does help), misapplied to an airway obstruction.",
-  "instead": "For complete obstruction in adults and children over one year: stand behind them and alternate 5 back blows (heel of the hand between the shoulder blades) with 5 abdominal thrusts (the Heimlich maneuver), repeating until the object comes out. For infants under one year, switch to 5 back blows plus 5 chest thrusts — no abdominal thrusts. If the person loses consciousness, start CPR. Call an ambulance (120 in China) at the same time. These moves are worth practicing once in a real training session.",
+  "instead": "For complete obstruction, call local emergency services first (120 in mainland China); ask someone else to call or use speakerphone while giving care. For adults and children over one year: stand behind them and alternate 5 back blows (heel of the hand between the shoulder blades) with 5 abdominal thrusts (the Heimlich maneuver), repeating until the object comes out. For infants under one year, switch to 5 back blows plus 5 chest thrusts — no abdominal thrusts. If the person loses consciousness, start CPR. These moves are worth practicing once in a real training session.",
   "sources": [
     {
       "label": "American Red Cross — Adult & Child Choking: Symptoms and First Aid",
       "url": "https://www.redcross.org/take-a-class/resources/learn-first-aid/adult-child-choking"
     },
     {
-      "label": "St John Ambulance — Choking (includes infant procedure)",
-      "url": "https://www.sja.org.uk/first-aid-advice/choking/"
+      "label": "American Red Cross — Infant choking: calling for help, back blows and chest thrusts",
+      "url": "https://www.redcross.org/take-a-class/resources/learn-first-aid/infant-choking"
     }
   ]
 },
@@ -1361,13 +1361,18 @@ export const MYTHS_EN: Record<string, MythText> = {
 },
   "electric-shock-pull": {
   "belief": "If someone's being electrocuted, grab them and pull them away immediately",
-  "truth": "Grabbing them barehanded lets the current flow through you too — that's how double electrocutions happen. The first step is always cutting the power, not pulling the person.",
-  "detail": "The human body conducts. When someone is in tetanic grip on a live source and you yank them, the circuit runs through you, and now two people are being shocked. Step one of electrical first aid is breaking the circuit: flip the breaker, pull the plug. If you can't reach a switch, push the wire or the person apart with something dry and insulating — dry wood, plastic, thick rubber. Dry and insulating are the operative words.\n\nOnce they're clear, check consciousness and breathing: no normal breathing means start CPR and have someone call an ambulance. A shock victim may look fine, but current through the heart can trigger arrhythmias — even someone who feels fine should get checked at a hospital.",
+  "truth": "Grabbing them barehanded lets the current flow through you too — that's how double electrocutions happen. Call for help and isolate the supply safely; never pull the person barehanded.",
+  "detail": "Touching someone who is still in contact with electricity can electrocute the rescuer too. Call local emergency services first and switch off the supply only if it is safe. Ordinary wood, plastic or rubber must not be assumed to provide reliable insulation at any voltage. If the supply cannot be safely isolated, stay clear and wait for professional rescue.\n\nOnce power is isolated and the scene is safe, check responsiveness and breathing. If breathing is not normal, follow the emergency dispatcher’s CPR instructions and use an available AED. Electrical injuries need medical assessment.",
   "origin": "Seeing someone you love getting shocked, 'pull them off' is hardwired. First-aid training exists precisely to slam the brakes on instinct at moments like this.",
-  "instead": "Memorize it: cut the power first (breaker / insulating object) → call emergency services → CPR if there's no normal breathing. Until you've confirmed the power is off, hands off.",
+  "instead": "Call local emergency services first (120 in mainland China), while someone safely isolates the power. Do not touch the person until isolation is confirmed. If it cannot be done safely, wait for professional rescue. Once safe, check breathing and follow the dispatcher’s instructions.",
   "sources": [
     {
-      "label": "Electrical-injury first aid (power off before rescue) — Red Cross first-aid guidance (no stable public link)"
+      "label": "St John Ambulance — Electric shock (low-voltage household and workplace supplies: do not touch, isolate power, call for help)",
+      "url": "https://www.sja.org.uk/first-aid-advice/electrocution/"
+    },
+    {
+      "label": "Mayo Clinic — Electrical shock first aid: high-voltage safety and medical assessment",
+      "url": "https://www.mayoclinic.org/first-aid/first-aid-electrical-shock/basics/art-20056695"
     }
   ]
 },

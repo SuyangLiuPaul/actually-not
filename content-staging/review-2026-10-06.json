@@ -1,0 +1,70 @@
+{
+  "luxun-some-live-dead": {
+    "zh": {
+      "detail": "《有的人》是臧克家 1949 年写的诗，副题为「纪念鲁迅有感」。中国作家网《走进臧克家故居》记述其创作时间为 1949 年 10 月，并引述了这两句开头。\n\n诗歌纪念的是鲁迅，作者却是臧克家。引用时应同时注明作者和作品名称，避免把纪念对象当作作者。",
+      "origin": "诗歌的纪念对象与作者是两个人；摘录脱离作品标题后，容易混淆这两层关系。",
+      "sources": [
+        {
+          "label": "中国作家网 —— 《走进臧克家故居》(提及《有的人》1949 年 10 月创作,副题「纪念鲁迅有感」)",
+          "url": "https://www.chinawriter.com.cn/n1/2023/0728/c404063-40045334.html"
+        }
+      ]
+    },
+    "en": {
+      "detail": "Zang Kejia wrote 'Some People' in 1949, with the subtitle 'Thoughts in Memory of Lu Xun'. The China Writers Network article about Zang's former home dates its composition to October 1949 and quotes these opening lines.\n\nLu Xun is the subject of the memorial poem; Zang Kejia is its author. Cite both the author and the poem's title to keep the two roles clear.",
+      "origin": "A memorial poem's subject and author are different people. An excerpt detached from the title can blur those roles.",
+      "sources": [
+        {
+          "label": "China Writers Network, 'Visiting Zang Kejia's former home' (notes the poem, written Oct 1949, subtitled 'Thoughts in Memory of Lu Xun')",
+          "url": "https://www.chinawriter.com.cn/n1/2023/0728/c404063-40045334.html"
+        }
+      ]
+    }
+  },
+  "luxun-one-confidant": {
+    "zh": {
+      "truth": "这副联被记为清人何瓦琴的句子；鲁迅在 1933 年春抄写成联语赠给瞿秋白，不宜仅署名为鲁迅原创。",
+      "detail": "人民政协网《瞿秋白绘制阿Q漫画》记述：1933 年春，鲁迅将清代何瓦琴的这副联句书写成联语，赠给瞿秋白。\n\n书写者不等于原作者。现有出处支持「鲁迅抄写并赠送这副联」，并不支持把它当作鲁迅原创。",
+      "origin": "鲁迅书赠瞿秋白的联语，容易在转引时被简化成「鲁迅说」。",
+      "sources": [
+        {
+          "label": "人民政协网 —— 《瞿秋白绘制阿Q漫画》(记 1933 年春鲁迅将清代何瓦琴名句书写成联语赠瞿秋白)",
+          "url": "https://www.rmzxw.com.cn/c/2024-07-17/3579048.shtml"
+        }
+      ]
+    },
+    "en": {
+      "belief": "\"Finding one true confidant in life is enough; regard that person as a kindred spirit in this world.\" — Lu Xun",
+      "truth": "The couplet is attributed to the Qing-dynasty writer He Waqin. Lu Xun copied it as a gift for Qu Qiubai in spring 1933; attributing its authorship solely to Lu Xun is misleading.",
+      "detail": "The CPPCC Net article about Qu Qiubai's Ah Q cartoon records that in spring 1933 Lu Xun wrote out this couplet by the Qing writer He Waqin and gave it to Qu Qiubai.\n\nThe calligrapher and the original author are different roles. This source supports the account of Lu Xun copying and gifting the couplet, not his authorship.",
+      "origin": "A couplet Lu Xun wrote out for Qu Qiubai can be reduced in retelling to 'Lu Xun said'.",
+      "instead": "Cite it as a couplet attributed to the Qing writer He Waqin, copied by Lu Xun for Qu Qiubai in 1933.",
+      "sources": [
+        {
+          "label": "人民政协网 — Qu Qiubai’s Ah Q cartoon (Lu Xun copies He Waqin’s couplet as a gift, spring 1933)",
+          "url": "https://www.rmzxw.com.cn/c/2024-07-17/3579048.shtml"
+        }
+      ]
+    }
+  },
+  "zh-fools-trouble-themselves": {
+    "zh": {
+      "detail": "《新唐书·陆象先传》记述陆象先任蒲州刺史、兼河东按察使时，以仁恕为政。传中这段话讨论的是施政应当简省，避免无谓地扰民生事。\n\n流行版本把「天下」改为「世上」，把「扰之为烦耳」改为「自扰之」，也把施政语境转成了「个人别自寻烦恼」的劝慰。它可以作为今天的俗语使用，但不是史书原文。"
+    },
+    "en": {
+      "detail": "The New Book of Tang describes Lu Xiangxian governing Puzhou and inspecting Hedong with leniency. His remark concerns keeping government simple and avoiding needless interference.\n\nThe popular version changes both the wording and the emphasis: advice about governing becomes advice not to worry unnecessarily. It can be used as a modern proverb, but should not be presented as the exact wording of the historical text."
+    }
+  },
+  "zh-liang-qichao-drink-ice": {
+    "zh": {
+      "truth": "这句话尚缺可核实的梁启超原文出处。「饮冰」典故可以追溯到《庄子·人间世》，但不能据此认定整句出自梁启超。",
+      "detail": "中文维基语录将此句标为伪托，但这一二手标注本身不足以证明它是谁创作的，也不能代替梁启超作品的具体出处。\n\n《庄子·人间世》的「饮冰」描写受命后的内心焦灼；梁启超的「饮冰室主人」之号与这个典故有关。典故的来源和「十年饮冰，难凉热血」整句的作者，是两个需要分别核实的问题。现有出处尚不能确认梁启超写过这句话，也不能据此证明他绝未写过。",
+      "origin": "「饮冰」典故及「饮冰室主人」之号容易让人把整句与梁启超联系起来；整句的创作时间和作者仍待可靠出处确认。"
+    },
+    "en": {
+      "truth": "The complete line lacks a verifiable source in Liang Qichao's own writings. The 'drinking ice' allusion can be traced to the Zhuangzi, but that does not establish his authorship of this sentence.",
+      "detail": "Chinese Wikiquote labels the line a false attribution. That secondary annotation alone does not identify its author or replace a specific reference to Liang's writings.\n\nIn the Zhuangzi, 'drinking ice' describes anxiety after receiving a mission. Liang's studio name refers to that allusion. The allusion's source and the authorship of the complete modern line are separate questions. The available sources neither confirm Liang wrote the line nor prove that he never did.",
+      "origin": "The allusion and Liang's studio name encourage the association, but the complete line's author and date still need reliable documentation."
+    }
+  }
+}

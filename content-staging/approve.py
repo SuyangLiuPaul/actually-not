@@ -32,6 +32,9 @@ PATCHES = {
   ('en','detail'): [('\n\nA search result also mentioned that the Churchill Centre says there is no record of anyone hearing him say it; I could not open that page, so treat it as corroboration only.','')],
  },
 }
+# 已打开出处逐条复核的编辑覆盖；保留原始研究稿便于追溯。
+from pathlib import Path
+REVIEWED = json.loads((Path(__file__).parent / 'review-2026-10-06.json').read_text())
 EXTRA = {}
 SKIP = {'film-drowning-loud-splash'}  # 与现有 drowning-silent 重复
 URL_FIX = {'http://www.diffordsguide.com/encyclopedia/2292/cocktails/origins-of-the-word-cocktail': 'https://www.diffordsguide.com/encyclopedia/2292/cocktails/origins-of-the-word-cocktail'}
@@ -84,6 +87,9 @@ def apply(e):
                 raise SystemExit(f"补丁未命中 {e['id']} {lang}.{field}: {old[:30]}…")
             tgt[field] = tgt[field].replace(old, new)
     e.update(EXTRA.get(e['id'], {}))
+    reviewed = REVIEWED.get(e['id'], {})
+    e.update(reviewed.get('zh', {}))
+    e['en'].update(reviewed.get('en', {}))
     voice(e)
     for lst in (e['sources'], e['en']['sources']):
         for x in lst:

@@ -1552,41 +1552,33 @@ export const MYTHS_EN_EXTRA: Record<string, MythText> = {
   "luxun-some-live-dead": {
     "belief": "\"Some people are alive, yet already dead; some are dead, yet still alive.\" —Lu Xun",
     "truth": "These are the opening lines of poet Zang Kejia's 1949 poem 'Some People', subtitled 'Thoughts in Memory of Lu Xun' — it is about Lu Xun, not by him.",
-    "detail": "'Some People' (Youde ren) was published in 1949 with the subtitle 'Thoughts in Memory of Lu Xun'; Zang Kejia wrote it for the thirteenth anniversary of Lu Xun's death. An article on the China Writers Network about Zang's former home says it was written in October 1949, takes Lu Xun's spirit as its axis, and opens with 'some people are alive, yet already dead; some are dead, yet still alive'.\n\nThe mix-up is easy to understand: the poem is about Lu Xun, appears in school texts and memorial articles, and once the line is clipped from its title and author it reads like his own words. We found only scattered statements that it is widely misattributed to Lu Xun, no systematic count, so I say only that people often quote it that way.\n\nFor reference, a full-text search of an electronic text of Lu Xun's Complete Works returns zero hits. That shows only that it is not in the published collected writings, not that he never wrote anything similar in letters or diaries, but together with the poem's provenance the conclusion is clear.",
-    "origin": "A 1949 memorial poem whose first two lines were clipped into slogans and quote cards; detached from the title, they became tied to Lu Xun's name.",
+    "detail": "Zang Kejia wrote 'Some People' in 1949, with the subtitle 'Thoughts in Memory of Lu Xun'. The China Writers Network article about Zang's former home dates its composition to October 1949 and quotes these opening lines.\n\nLu Xun is the subject of the memorial poem; Zang Kejia is its author. Cite both the author and the poem's title to keep the two roles clear.",
+    "origin": "A memorial poem's subject and author are different people. An excerpt detached from the title can blur those roles.",
     "instead": "Cite it as: Zang Kejia, 'Some People' (1949, subtitled 'Thoughts in Memory of Lu Xun'): 'Some people are alive, yet already dead; some are dead, yet still alive.'",
     "sources": [
       {
         "label": "China Writers Network, 'Visiting Zang Kejia's former home' (notes the poem, written Oct 1949, subtitled 'Thoughts in Memory of Lu Xun')",
         "url": "https://www.chinawriter.com.cn/n1/2023/0728/c404063-40045334.html"
-      },
-      {
-        "label": "Electronic text of Lu Xun's Complete Works, Chinese Marxists Internet Archive (full-text search: zero hits)",
-        "url": "https://www.marxists.org/chinese/reference-books/luxun/index.htm"
       }
     ]
   },
   "luxun-one-confidant": {
-    "belief": "\"To find one true confidant in life is enough; treat the whole world as kin.\" —Lu Xun",
-    "truth": "The couplet is by the Qing-dynasty writer He Wayin; in spring 1933 Lu Xun copied it out as a scroll for Qu Qiubai — he transcribed it, he did not compose it.",
-    "detail": "Several articles record that in spring 1933 Lu Xun wrote out the couplet by the Qing writer He Wayin, 'to find one true confidant in life is enough; treat the world as kin', as a scroll for Qu Qiubai. The People's Political Consultative Conference website article 'Qu Qiubai's cartoon of Ah Q' says exactly this, and another article on Aisixiang also describes Lu Xun writing the couplet out by hand as a gift.\n\nSo the couplet is not Lu Xun's composition but a line by an earlier writer that he chose and copied; the calligraphy became famous because of the two men's friendship, and the words were then quoted widely as a 'Lu Xun saying'. A full-text search of an electronic text of his Complete Works gives zero hits for either half of the couplet, which fits.\n\nOne caveat: We did not open an image of the original scroll, and the detail that its inscription says it is He Wayin's line was not in any page I opened; this entry does not rely on it.",
-    "origin": "Lu Xun's handwriting made the couplet famous, and in secondary quotation 'X wrote it out for Y' easily shrinks to 'X said'.",
-    "instead": "Write: 'a line by the Qing writer He Wayin, which Lu Xun wrote out for Qu Qiubai in 1933'. If you want to speak of their friendship, citing the gift is more accurate than a bare attribution.",
+    "belief": "\"Finding one true confidant in life is enough; regard that person as a kindred spirit in this world.\" — Lu Xun",
+    "truth": "The couplet is attributed to the Qing-dynasty writer He Waqin. Lu Xun copied it as a gift for Qu Qiubai in spring 1933; attributing its authorship solely to Lu Xun is misleading.",
+    "detail": "The CPPCC Net article about Qu Qiubai's Ah Q cartoon records that in spring 1933 Lu Xun wrote out this couplet by the Qing writer He Waqin and gave it to Qu Qiubai.\n\nThe calligrapher and the original author are different roles. This source supports the account of Lu Xun copying and gifting the couplet, not his authorship.",
+    "origin": "A couplet Lu Xun wrote out for Qu Qiubai can be reduced in retelling to 'Lu Xun said'.",
+    "instead": "Cite it as a couplet attributed to the Qing writer He Waqin, copied by Lu Xun for Qu Qiubai in 1933.",
     "sources": [
       {
-        "label": "CPPCC Net, 'Qu Qiubai's cartoon of Ah Q' (spring 1933: Lu Xun writes He Wayin's couplet for Qu Qiubai)",
+        "label": "人民政协网 — Qu Qiubai’s Ah Q cartoon (Lu Xun copies He Waqin’s couplet as a gift, spring 1933)",
         "url": "https://www.rmzxw.com.cn/c/2024-07-17/3579048.shtml"
-      },
-      {
-        "label": "Electronic text of Lu Xun's Complete Works, Chinese Marxists Internet Archive (full-text search: zero hits)",
-        "url": "https://www.marxists.org/chinese/reference-books/luxun/index.htm"
       }
     ]
   },
   "zh-fools-trouble-themselves": {
     "belief": "\"There was originally no trouble in the world; fools make trouble for themselves.\" —proverb",
     "truth": "The source is a remark by Lu Xiangxian in the New Book of Tang: 'There is originally nothing the matter in the world; mediocre people stir it up into trouble.' The popular form is a later smoothing.",
-    "detail": "In the Wikisource text of the New Book of Tang, the biography of Lu Xiangxian says that while governor of Puzhou and inspector of Hedong he governed with leniency, and said: 'The world has originally nothing the matter with it; mediocre people stir it into trouble. If you only clear the source, why worry about simplicity?'\n\nCompared with today's 'shi shang ben wu shi, yong ren zi rao zhi', 'tianxia' (the realm) becomes 'shishang' (the world), and the clause 'stir it into trouble' becomes 'trouble themselves'. The meaning is close, but the original is about government: officials stirring things up with fussy rules. Today it is used as personal advice not to overthink, which shifts the emphasis.\n\nThis is a case of wording drift plus a change of context, not a false attribution to a famous person, so it is treated as harmless.",
+    "detail": "The New Book of Tang describes Lu Xiangxian governing Puzhou and inspecting Hedong with leniency. His remark concerns keeping government simple and avoiding needless interference.\n\nThe popular version changes both the wording and the emphasis: advice about governing becomes advice not to worry unnecessarily. It can be used as a modern proverb, but should not be presented as the exact wording of the historical text.",
     "origin": "A provincial official's remark in a dynastic history, reshaped by folk usage into a proverb and later into lifestyle advice, with the meaning sliding from 'officials, stop meddling' to 'don't worry so much'.",
     "instead": "When accuracy matters, quote the Tang text 'The world originally has nothing the matter...' and say it is about governing; as an everyday proverb the short form is fine, just do not present it as the history's wording.",
     "sources": [
@@ -1598,9 +1590,9 @@ export const MYTHS_EN_EXTRA: Record<string, MythText> = {
   },
   "zh-liang-qichao-drink-ice": {
     "belief": "\"Ten years drinking ice, and still the hot blood does not cool.\" —Liang Qichao",
-    "truth": "Chinese Wikiquote lists it as a false attribution to Liang Qichao, and We could not find it in his writings; what can be traced is the source of 'drinking ice': the Zhuangzi, chapter 'In the World of Men'.",
-    "detail": "Chinese Wikiquote's page on Liang Qichao lists 'Ten years drinking ice, the hot blood does not cool' at the head of its quotations and marks it with the note that it is a spurious attribution to Liang. 'Drinking ice' does connect to him: he styled himself 'Master of the Ice-Drinker's Studio', alluding to the Zhuangzi where Duke Zigao of Ye says 'This morning I received my orders and by evening I am drinking ice — am I feverish inside?' The point is that anxiety about the mission leaves him feeling hot.\n\nSo 'drinking ice' is real, but 'ten years' and 'hot blood does not cool' appear to be a later poetic embellishment that sounds right with the studio name. Online it is often said to express his feelings after the failed 1898 reforms, but what We found were secondary retellings, not his own text.\n\nThe finding is 'no source in his writing found', not proof that he would never have written it, hence the confidence level of limited.",
-    "origin": "The studio name plus a Zhuangzi allusion makes a later parallel couplet sound like Liang's voice, and it circulates on inspirational posts and bookmarks.",
+    "truth": "The complete line lacks a verifiable source in Liang Qichao's own writings. The 'drinking ice' allusion can be traced to the Zhuangzi, but that does not establish his authorship of this sentence.",
+    "detail": "Chinese Wikiquote labels the line a false attribution. That secondary annotation alone does not identify its author or replace a specific reference to Liang's writings.\n\nIn the Zhuangzi, 'drinking ice' describes anxiety after receiving a mission. Liang's studio name refers to that allusion. The allusion's source and the authorship of the complete modern line are separate questions. The available sources neither confirm Liang wrote the line nor prove that he never did.",
+    "origin": "The allusion and Liang's studio name encourage the association, but the complete line's author and date still need reliable documentation.",
     "instead": "Say: 'Liang Qichao styled himself \"Master of the Ice-Drinker's Studio\", from the Zhuangzi.' Label the couplet as 'attributed online, no original text found'.",
     "sources": [
       {
