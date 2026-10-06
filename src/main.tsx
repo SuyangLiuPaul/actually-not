@@ -4,6 +4,8 @@ import './index.css'
 import App from './App.tsx'
 import { ErrorBoundary } from './components/ErrorBoundary.tsx'
 import { UpdatePrompt } from './components/UpdatePrompt.tsx'
+import { Capacitor } from '@capacitor/core'
+import NativeApp from './native/NativeApp'
 import { mythsFor } from './data/localized.ts'
 import { parsePath } from './i18n.ts'
 
@@ -26,11 +28,12 @@ ldScript.type = 'application/ld+json'
 ldScript.textContent = JSON.stringify(faqLd)
 document.head.appendChild(ldScript)
 
+const appShell = Capacitor.isNativePlatform() || import.meta.env.VITE_APP_SHELL === 'true' || /^\/app\/?$/.test(window.location.pathname)
 const app = (
   <StrictMode>
     <ErrorBoundary>
-      <App />
-      <UpdatePrompt />
+      {appShell ? <NativeApp /> : <App />}
+      {!Capacitor.isNativePlatform() && <UpdatePrompt />}
     </ErrorBoundary>
   </StrictMode>
 )
@@ -41,7 +44,7 @@ const normalizePath = (path: string) => path.replace(/\/+$/, '') || '/'
 const samePage = container.dataset.prerenderPath !== undefined &&
   normalizePath(container.dataset.prerenderPath) === normalizePath(window.location.pathname)
 const hasCategory = new URLSearchParams(window.location.search).has('c')
-if (container.hasChildNodes() && samePage && !hasCategory) hydrateRoot(container, app)
+if (container.hasChildNodes() && samePage && !hasCategory && !appShell) hydrateRoot(container, app)
 else {
   container.replaceChildren()
   createRoot(container).render(app)

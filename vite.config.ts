@@ -1,5 +1,6 @@
 import { defineConfig, build as viteBuild, type Plugin } from 'vite'
 import { resolve } from 'node:path'
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
@@ -22,6 +23,8 @@ function prerenderPlugin(): Plugin {
         build: { ssr: 'src/entry-server.tsx', outDir: 'dist-ssr', emptyOutDir: true },
       })
       await prerender(resolve('dist'), resolve('dist-ssr'))
+      mkdirSync(resolve('dist/app'), { recursive: true })
+      writeFileSync(resolve('dist/app/index.html'), readFileSync(resolve('dist/index.html'), 'utf8'))
     },
   }
 }
@@ -46,7 +49,7 @@ export default defineConfig({
         description: DESCRIPTION,
         lang: 'zh-CN',
         dir: 'ltr',
-        start_url: '/',
+        start_url: '/app/',
         scope: '/',
         display: 'standalone',
         display_override: ['standalone', 'minimal-ui', 'browser'],
@@ -93,11 +96,11 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,png,ico,webmanifest}'],
+        globPatterns: ['**/*.{js,css,html,svg,png,webp,ico,webmanifest}'],
         // 每条的 OG 分享图是给爬虫看的，不进预缓存（61 张约 3MB，会拖慢 SW 安装）
         // 预渲染出的每条/每页 HTML（458 个，各约 430KB）只给爬虫和首屏用，不进预缓存：
         // 离线时任何路由都回退到 index.html，由客户端按 URL 渲染（内容都在 JS 包里）。
-        globIgnores: ['og/**', 'illu/**', 'town/**', '*/index.html', '*/*/index.html'],
+        globIgnores: ['og/**', 'town/**', '*/index.html', '*/*/index.html'],
         cleanupOutdatedCaches: true,
         clientsClaim: true,
         navigateFallback: '/index.html',

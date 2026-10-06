@@ -2,6 +2,9 @@ import { useEffect, useRef, useState } from 'react'
 import { mythsFor } from '../data/localized'
 import { playRound, type PlayTopic } from '../data/play'
 import { categoryLabel, type Locale } from '../i18n'
+import { PLAY_QUESTIONS, type PlayQuestion } from '../data/play'
+import type { Discovery } from '../native/journal'
+import { shareDiscovery, tapFeedback } from '../native/platform'
 
 const SAVED_KEY = 'actually-not-saved-v1'
 const COPY = {
@@ -27,13 +30,16 @@ const COPY = {
   },
 }
 
-type Props = { locale: Locale; onOpen: (id: string) => void; onBrowse: () => void; onRead: (id: string) => void }
+type Props = { locale: Locale; onOpen: (id: string) => void; onBrowse: () => void; onRead: (id: string) => void; initialRound?: PlayQuestion[]; onDiscovery?: (record: Discovery) => void }
 
-export function PlayDeck({ locale, onOpen, onBrowse, onRead }: Props) {
+export function PlayDeck({ locale, onOpen, onBrowse, onRead, initialRound, onDiscovery }: Props) {
   const t = COPY[locale]
   const [topic, setTopic] = useState<PlayTopic>('mix')
   // 预渲染与首次水合保持相同；挂载后才读取当天和个人收藏。
   const [seed, setSeed] = useState(0)
+  const [firstRound, setFirstRound] = useState(true)
+  const [challenge, setChallenge] = useState<PlayQuestion[] | null>(null)
+  const [shareNotice, setShareNotice] = useState('')
   const [step, setStep] = useState(0)
   const [choice, setChoice] = useState<number | null>(null)
   const [certainty, setCertainty] = useState<number | null>(null)
@@ -43,12 +49,18 @@ export function PlayDeck({ locale, onOpen, onBrowse, onRead }: Props) {
   const focusRef = useRef<HTMLHeadingElement>(null)
   const interacted = useRef(false)
   const myths = mythsFor(locale)
-  const questions = playRound(topic, seed)
+  const questions = firstRound && topic === 'mix' ? (challenge ?? initialRound ?? playRound(topic, seed)) : playRound(topic, seed)
   const q = questions[step]
   const myth = q ? myths.find((m) => m.id === q.id) : null
 
   useEffect(() => {
     setSeed(Math.floor(Date.now() / 86_400_000))
+    const params = new URLSearchParams(window.location.search)
+    const ids = (params.get('challenge') ?? '').split(',')
+    if (ids.length === 3 && new Set(ids).size === 3) {
+      const round = ids.map(id => PLAY_QUESTIONS.find(q => q.id === id))
+      if (round.every((q): q is PlayQuestion => !!q)) setChallenge(round)
+    }
     try {
       const raw: unknown = JSON.parse(localStorage.getItem(SAVED_KEY) ?? '[]')
       if (Array.isArray(raw)) {
@@ -64,6 +76,7 @@ export function PlayDeck({ locale, onOpen, onBrowse, onRead }: Props) {
 
   function reset(nextTopic: PlayTopic, nextSeed: number) {
     interacted.current = true
+    setFirstRound(false)
     setTopic(nextTopic)
     setSeed(nextSeed)
     setStep(0)
@@ -72,10 +85,15 @@ export function PlayDeck({ locale, onOpen, onBrowse, onRead }: Props) {
     setRevealed(false)
   }
 
-  function reveal() {
+  function reveal(skip = false) {
     if (!myth) return
+    const recordedChoice = skip ? null : choice
+    const recordedCertainty = skip ? null : certainty
+    if (skip) { setChoice(null); setCertainty(null) }
     setRevealed(true)
     onRead(myth.id)
+    void tapFeedback()
+    onDiscovery?.({ id: myth.id, shownAt: new Date().toISOString(), choice: recordedChoice === null ? null : { zh: q.choices.zh[recordedChoice], en: q.choices.en[recordedChoice] }, answer: { zh: q.choices.zh[q.answer], en: q.choices.en[q.answer] }, certainty: recordedCertainty, correct: recordedChoice === null ? null : recordedChoice === q.answer })
   }
 
   function save(id: string) {
@@ -84,6 +102,13 @@ export function PlayDeck({ locale, onOpen, onBrowse, onRead }: Props) {
     else next.add(id)
     setSaved(next)
     try { localStorage.setItem(SAVED_KEY, JSON.stringify([...next])) } catch { /* 本次会话仍可收藏。 */ }
+    window.dispatchEvent(new Event('actually-not-saved'))
+  }
+
+  async function shareRound() {
+    const params = new URLSearchParams({ challenge: questions.map(q => q.id).join(',') })
+    const result = await shareDiscovery(locale === 'zh' ? '三次改观 · 其实不是' : 'Three discoveries · Actually, Not', locale === 'zh' ? '这三条，你怎么看？先猜，再让出处说话。' : 'What do you think about these three? Guess, then let the sources speak.', `https://actually-not.com/${locale === 'en' ? 'en/' : ''}?${params}`)
+    setShareNotice(result === 'copied' ? (locale === 'zh' ? '挑战链接已复制。' : 'Challenge link copied.') : '')
   }
 
   function advance() {
@@ -111,7 +136,7 @@ export function PlayDeck({ locale, onOpen, onBrowse, onRead }: Props) {
             {!revealed ? <>
               <div className="play-answers">{q.choices[locale].map((answer, i) => <button key={answer} aria-pressed={choice === i} onClick={() => setChoice(i)}><span aria-hidden="true">{'ABC'[i]}</span>{answer}</button>)}</div>
               <div className="play-certainty"><p>{t.certainty}</p><div>{t.levels.map((label, i) => <button key={label} aria-pressed={certainty === i} onClick={() => setCertainty(i)}>{label}</button>)}</div></div>
-              <div className="play-actions"><button className="play-text-button" onClick={() => { setChoice(null); setCertainty(null); reveal() }}>{t.skip}</button><button className="play-primary" disabled={choice === null} onClick={reveal}>{t.reveal} →</button></div>
+              <div className="play-actions"><button className="play-text-button" onClick={() => reveal(true)}>{t.skip}</button><button className="play-primary" disabled={choice === null} onClick={() => reveal()}>{t.reveal} →</button></div>
             </> : <div className="play-reveal" aria-live="polite">
               <p className="play-feedback">{choice === null ? t.evidence : choice === q.answer ? t.supported : certainty === 2 ? t.sure : t.surprise}</p>
               <div className="play-finding"><span className="play-stamp">{t.strengths[myth.confidence]}</span><p>{myth.truth}</p></div>
@@ -127,6 +152,7 @@ export function PlayDeck({ locale, onOpen, onBrowse, onRead }: Props) {
           <div className="play-actions"><button className="play-primary" onClick={() => reset(topic, seed + 1)}>{t.again} →</button><button className="play-text-button" onClick={onBrowse}>{t.all} ↓</button></div>
         </div>}
       </div>
+      <div className="play-share"><button className="play-text-button" onClick={() => void shareRound()}>{locale === 'zh' ? '这三条，邀请朋友也猜猜 ↗' : 'Invite a friend to guess these three ↗'}</button><span role="status">{shareNotice}</span></div>
       <div className="play-bottom"><button className="play-text-button" onClick={onBrowse}>{t.all} · {myths.length} ↓</button><a href="/town/">{t.town} ↗<small>{t.townNote}</small></a></div>
     </section>
   )

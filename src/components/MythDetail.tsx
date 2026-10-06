@@ -4,6 +4,7 @@ import { StakesDot } from './MythCard'
 import { REVISIONS } from '../data/revisions'
 import { mythsFor } from '../data/localized'
 import { FEEDBACK_EMAIL, categoryLabel, catEmoji, CAT_ACCENT, confidenceMeta, stakesMeta, STRINGS, pathFor, type Locale } from '../i18n'
+import { shareDiscovery } from '../native/platform'
 import type { Myth } from '../types'
 
 export function MythDetail({
@@ -78,33 +79,10 @@ export function MythDetail({
   // 优先调起系统分享，不行就复制深链
   const t = STRINGS[locale]
   const share = async () => {
-    const url = `${window.location.origin}${pathFor(locale, myth.id)}`
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: t.shareNativeTitle(myth.belief),
-          text: t.shareNativeText(myth.belief, myth.truth),
-          url,
-        })
-        return
-      } catch (err) {
-        // 用户主动取消不算失败，也不再退回复制
-        if (err instanceof Error && err.name === 'AbortError') return
-      }
-    }
-    try {
-      await navigator.clipboard.writeText(url)
-    } catch {
-      // 老浏览器没有 clipboard API，退回隐藏输入框
-      const ta = document.createElement('textarea')
-      ta.value = url
-      ta.style.position = 'fixed'
-      ta.style.opacity = '0'
-      document.body.appendChild(ta)
-      ta.select()
-      document.execCommand('copy')
-      ta.remove()
-    }
+    const url = `https://actually-not.com${pathFor(locale, myth.id)}`
+    const result = await shareDiscovery(t.shareNativeTitle(myth.belief), t.shareNativeText(myth.belief, myth.truth), url)
+    if (result !== 'copied') return
+
     setShared(true)
     window.setTimeout(() => setShared(false), 1600)
   }

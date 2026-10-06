@@ -36,3 +36,18 @@ dist-ssr
 
 # 插画原图存档（ChatGPT 生成，每张 ~1.2MB，只留本地；成品是 public/illu 里的 webp）
 content-staging/illu-raw/
+
+# 原生构建与签名凭据
+dist-app/
+*.xcarchive/
+*.ipa
+*.aab
+*.apk
+*.jks
+*.keystore
+android/local.properties
+android/key.properties
+ios/App/App/public/
+ios/App/App/capacitor.config.json
+android/app/src/main/assets/public/
+android/app/src/main/assets/capacitor.config.json
