@@ -16,6 +16,7 @@ import { useReadProgress } from './hooks/useReadProgress'
 import { MythCard } from './components/MythCard'
 import { MythDetail } from './components/MythDetail'
 import { Quiz } from './components/Quiz'
+import { PlayDeck } from './components/PlayDeck'
 
 type Theme = 'light' | 'dark' | 'auto'
 
@@ -81,6 +82,7 @@ export default function App() {
     }
   }, [updateState])
   const searchRef = useRef<HTMLInputElement>(null)
+  const openerRef = useRef<HTMLElement | null>(null)
   const { read, markRead, toggleRead, readCount } = useReadProgress()
 
   // 主题
@@ -127,7 +129,7 @@ export default function App() {
     const qs = params.toString()
     history.replaceState('', document.title, `${pathFor(locale, m.id)}${qs ? `?${qs}` : ''}`)
     setOpenId(m.id)
-  }, [])
+  }, [locale])
 
   // 打开详情即算「看过」
   useEffect(() => {
@@ -136,6 +138,7 @@ export default function App() {
 
   const open = useCallback(
     (id: string) => {
+      openerRef.current = document.activeElement instanceof HTMLElement ? document.activeElement : null
       history.pushState('', '', pathFor(locale, id))
       setOpenId(id)
     },
@@ -148,7 +151,8 @@ export default function App() {
     setOpenId(null)
     // 焦点还给对应卡片，键盘用户不至于丢位置
     requestAnimationFrame(() => {
-      document.querySelector<HTMLElement>(`[data-myth-id="${id}"]`)?.focus()
+      if (openerRef.current && document.contains(openerRef.current)) openerRef.current.focus()
+      else document.querySelector<HTMLElement>(`[data-myth-id="${id}"]`)?.focus()
     })
   }, [locale])
 
@@ -207,6 +211,13 @@ export default function App() {
     open(pool[Math.floor(Math.random() * pool.length)].id)
   }
 
+  const browseAll = () => {
+    setQuery('')
+    setCat('all')
+    setStakes('all')
+    document.getElementById('library')?.scrollIntoView({ behavior: 'instant' })
+  }
+
   const riskyCount = myths.filter((m) => m.stakes === 'risky').length
 
   return (
@@ -220,15 +231,15 @@ export default function App() {
       </a>
       <div className="mx-auto max-w-5xl px-5 sm:px-8">
         {/* ── 页头 ── */}
-        <header className="pt-14 pb-10 sm:pt-20 sm:pb-14">
-          <div className="mb-7 flex items-start justify-between gap-4">
+        <header className="pt-5 pb-5 sm:pt-6 sm:pb-5">
+          <div className="mb-3 flex items-start justify-between gap-4">
             <span
-              className="text-[11px] font-semibold tracking-[0.18em] uppercase"
+              className="min-w-0 flex-1 text-[10px] font-semibold tracking-[0.14em] uppercase"
               style={{ color: 'var(--pen)' }}
             >
               {t.brand}
             </span>
-            <div className="flex items-center gap-2">
+            <div className="flex shrink-0 items-center gap-2">
               <button
                 type="button"
                 onClick={() => void checkUpdates()}
@@ -307,27 +318,33 @@ export default function App() {
           </div>
 
           <h1
-            className="text-[2.75rem] leading-[1.08] font-bold tracking-tight sm:text-[4.25rem]"
+            className="text-[1.9rem] leading-[1.08] font-bold tracking-tight sm:text-[2.75rem]"
             style={{ fontFamily: 'var(--font-serif)' }}
           >
             {t.siteName}
           </h1>
 
-          <p
-            className="mt-5 max-w-[46ch] text-[15px] leading-[1.85] sm:text-base"
-            style={{ color: 'var(--ink-soft)' }}
-          >
-            {t.introLead}
-            {t.introCountLead}
-            <strong style={{ color: 'var(--ink)' }}>{t.introCountNum(myths.length)}</strong>
-            {t.introTail}
+          <p className="mt-3 text-sm" style={{ color: 'var(--ink-soft)' }}>
+            {locale === 'zh' ? `名言、故事、常识里的意外真相。${myths.length} 条，每条附出处。` : `Unexpected truths behind quotes, stories and common sense. ${myths.length} entries, every one sourced.`}
           </p>
 
-          <div className="mt-7 flex flex-wrap items-center gap-3">
+          <div className="mt-4 flex flex-wrap items-center gap-3">
+            <button onClick={browseAll} className="play-primary">{locale === 'zh' ? `全部 ${myths.length} 条 ↓` : `All ${myths.length} entries ↓`}</button>
+            <button className="play-text-button" onClick={() => { document.getElementById('library')?.scrollIntoView({ behavior: 'instant' }); searchRef.current?.focus({ preventScroll: true }) }}>{locale === 'zh' ? '搜索内容' : 'Search entries'}</button>
+
+          </div>
+        </header>
+
+        <PlayDeck key={locale} locale={locale} onOpen={open} onBrowse={browseAll} onRead={markRead} />
+        <div id="library" className="mb-4 flex flex-wrap items-end justify-between gap-3">
+          <h2 className="text-2xl" style={{ fontFamily: 'var(--font-serif)' }}>{locale === 'zh' ? '全部内容，随你翻。' : 'Every entry. Yours to explore.'}</h2>
+          <p className="text-xs" style={{ color: 'var(--ink-faint)' }}>{locale === 'zh' ? '不用答题，也能直接查阅。' : 'No quiz required. Go straight to any entry.'}</p>
+        </div>
+        <div className="mb-4 flex flex-wrap items-center gap-3">
             <button
               onClick={randomOne}
               className="inline-flex items-center gap-2 rounded-lg px-4 py-2.5 text-sm font-medium transition-transform active:scale-[0.97]"
-              style={{ background: 'var(--pen)', color: '#fff' }}
+              style={{ background: 'var(--paper-raised)', color: 'var(--ink-soft)', border: '1px solid var(--rule)' }}
             >
               <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
@@ -354,9 +371,7 @@ export default function App() {
             <p className="text-[13px]" style={{ color: 'var(--ink-faint)' }}>
               {t.riskyNote(riskyCount)}
             </p>
-          </div>
-        </header>
-
+        </div>
         {/* ── 筛选 ── */}
         <div
           className="sticky top-0 z-30 -mx-5 mb-8 border-y px-5 py-3 backdrop-blur sm:-mx-8 sm:px-8"

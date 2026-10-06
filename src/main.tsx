@@ -35,6 +35,14 @@ const app = (
   </StrictMode>
 )
 
-// 预渲染页面带着完整 HTML 来，接管即可；dev / SPA 回退页则从空开始渲染
-if (container.hasChildNodes()) hydrateRoot(container, app)
-else createRoot(container).render(app)
+// 离线回退可能拿到首页 HTML，但当前 URL 是英文页或条目页。
+// 只有同一路径且没有客户端分类参数时才接管；否则按真实 URL 重新渲染。
+const normalizePath = (path: string) => path.replace(/\/+$/, '') || '/'
+const samePage = container.dataset.prerenderPath !== undefined &&
+  normalizePath(container.dataset.prerenderPath) === normalizePath(window.location.pathname)
+const hasCategory = new URLSearchParams(window.location.search).has('c')
+if (container.hasChildNodes() && samePage && !hasCategory) hydrateRoot(container, app)
+else {
+  container.replaceChildren()
+  createRoot(container).render(app)
+}

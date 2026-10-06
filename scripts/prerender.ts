@@ -130,7 +130,7 @@ export async function prerender(distDir: string, ssrDir: string): Promise<void> 
 
   for (const route of ssr.ROUTES) {
     const body = ssr.render(route.path)
-    let html = template.replace('<div id="root"></div>', `<div id="root">${body}</div>`)
+    let html = template.replace('<div id="root"></div>', `<div id="root" data-prerender-path="${esc(route.path)}">${body}</div>`)
     html = applyMeta(html, route)
     const file =
       route.path === '/' ? join(distDir, 'index.html') : join(distDir, route.path.slice(1), 'index.html')
