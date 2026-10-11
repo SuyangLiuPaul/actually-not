@@ -1,0 +1,21 @@
+{
+  "generator": "Codex内置image_gen（非CLI）",
+  "ids": [
+    "origin-kongming-lantern",
+    "origin-kite-inventor",
+    "origin-empty-fort"
+  ],
+  "size": "原图1942×809，导入960×400 WebP",
+  "style": "Flat minimalist editorial illustration, warm cream paper background (#f7f4ee), muted earthy palette, one small red accent (#c13024), soft rounded shapes, gentle shadows. No people, no faces, no text, no letters, no watermark. Complete subjects in the middle horizontal third with generous empty space above and below.",
+  "scenes": {
+    "origin-kongming-lantern": "an unlit paper sky lantern beside its delicate bamboo frame",
+    "origin-kite-inventor": "a bamboo bird shaped kite beside a small carved wooden bird",
+    "origin-empty-fort": "a miniature open city gate beside a seven string wooden zither"
+  },
+  "visualReview": "三张原图与导入总览已目视检查，物件完整，无真人、文字、水印。插画为意象，不是文物或技术复原图。",
+  "prompts": {
+    "origin-kongming-lantern": "Use case: illustration-story. Asset type: bilingual knowledge website card illustration, wide 2.4:1 landscape. Flat minimalist editorial illustration, warm cream paper background (#f7f4ee), muted earthy palette, exactly ONE small red accent (#c13024), soft rounded shapes and gentle shadows. Scene: an unlit cream paper sky lantern beside its delicate exposed bamboo frame, resting on a simple surface. Object still life only. Put the complete subjects in the middle horizontal third with generous empty space above and below so a horizontal banner crop keeps them whole. No fire, no launching scene, no people, no faces, no text or letters, no watermark. Clean contemporary flat shapes matching a quiet cream-paper editorial website, not photorealistic or a detailed historical painting.",
+    "origin-kite-inventor": "Use case: illustration-story. Asset type: wide 2.4:1 landscape editorial website illustration. Flat minimalist editorial illustration on warm cream paper background (#f7f4ee), muted earthy palette, exactly ONE small red accent (#c13024), simple soft rounded vector-like shapes, gentle soft shadows. Scene: a bird-shaped bamboo kite beside a small carved wooden bird, no people. The kite is visibly a light bamboo frame with a plain paper covering, the wooden bird a separate grounded object. Quiet object still life, do not present as a historical reconstruction or a flying machine. Complete subjects centered in the middle horizontal third with generous cream negative space above and below for a banner crop. No text, no letters, no watermark, no faces, no photorealism, no detailed landscape.",
+    "origin-empty-fort": "Use case: illustration-story. Asset type: wide 2.4:1 landscape editorial illustration for a cream-paper knowledge website. Flat minimalist style, warm cream background (#f7f4ee), muted earth tones, one small red accent (#c13024), simple rounded shapes and gentle soft shadows. Scene: a small tabletop miniature of an ancient Chinese city gate standing open beside a seven-string wooden guqin zither lying flat. No people or statues, no battle scene. The open gate and whole zither are clearly readable as quiet still-life objects. Keep all objects centered in the middle horizontal third, with generous empty cream space above and below for safe wide banner cropping. No text, no letters, no symbols or calligraphy, no watermark, no photorealism or elaborate landscape."
+  }
+}

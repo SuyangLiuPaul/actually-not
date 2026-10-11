@@ -64,6 +64,19 @@ if (errs.length) {
 
 // related：从 related-pairs.json 生成双向链接；一端是现有条目（如 cpr-hard）时，只给新条目这一端写，
 // 现有条目那一端要在 myths.ts 里手动补（测试会查对称性）。
+// 经审稿确认的收录/修订日期。旧的 git pickaxe 生成器不覆盖 staging；
+// 显式日期由合并管线生成独立记录，不编造旧条目的历史日期。
+const revisionDates = JSON.parse(readFileSync(join(root, 'content-staging', 'revision-dates.json'), 'utf8'))
+const revisions = Object.fromEntries(all.filter(e => revisionDates[e.id]).map(e => {
+  const dates = revisionDates[e.id]
+  const valid = date => /^\d{4}-\d{2}-\d{2}$/.test(date) && new Date(`${date}T00:00:00Z`).toISOString().slice(0, 10) === date
+  if (!valid(dates.added) || !valid(dates.updated) || dates.updated < dates.added) throw new Error(`修订日期无效：${e.id}`)
+  return [e.id, dates]
+}))
+writeFileSync(join(root, 'src/data/revisions-staging.ts'), `/** 由 scripts/merge-staging.mjs 从已审核日期生成，不要手改 */
+export const STAGING_REVISIONS: Record<string, { added: string; updated: string }> = ${JSON.stringify(revisions, null, 2)}
+`)
+
 const pairs = JSON.parse(readFileSync(join(root, 'content-staging', 'related-pairs.json'), 'utf8'))
 const rel = new Map(all.map((e) => [e.id, []]))
 for (const [a, b] of pairs) {

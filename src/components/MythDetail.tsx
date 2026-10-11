@@ -1,11 +1,15 @@
 import { useEffect, useRef, useState } from 'react'
 import { Strike } from './Strike'
 import { StakesDot } from './MythCard'
-import { REVISIONS } from '../data/revisions'
+import { REVISIONS as LEGACY_REVISIONS } from '../data/revisions'
+import { STAGING_REVISIONS } from '../data/revisions-staging'
 import { mythsFor } from '../data/localized'
 import { FEEDBACK_EMAIL, categoryLabel, catEmoji, CAT_ACCENT, confidenceMeta, stakesMeta, STRINGS, pathFor, type Locale } from '../i18n'
 import { shareDiscovery } from '../native/platform'
+
 import type { Myth } from '../types'
+
+const REVISIONS = { ...LEGACY_REVISIONS, ...STAGING_REVISIONS }
 
 export function MythDetail({
   myth,

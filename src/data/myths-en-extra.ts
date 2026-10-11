@@ -356,6 +356,73 @@ export const MYTHS_EN_EXTRA: Record<string, MythText> = {
       }
     ]
   },
+  "origin-kongming-lantern": {
+    "belief": "Zhuge Liang invented Kongming lanterns to send military messages",
+    "truth": "The name ‘Kongming lantern’ does not establish Zhuge Liang as the inventor. That attribution remains a legend, and the original inventor is uncertain.",
+    "detail": "Taiwan’s Ministry of Education dictionary explicitly calls the attribution a legend. Taiwan Historica gives two traditional explanations: Zhuge Liang invented the lantern for military communication, or its shape resembled the hat in his portraits. Neither story verifies the other.\n\nDated descriptions tell us something more limited. Taiwan Historica reproduces the preface to Yang Tingli’s poem ‘Foreign Lanterns,’ written in Yili in 1803. It describes a paper-covered bamboo frame that rises when lit. This documents such a device at that time; it does not establish 1803 as its invention date or identify an inventor in the Three Kingdoms era.\n\nThe article also quotes Lian Heng’s childhood recollection of Kongming lanterns. His link to Zhuge Liang’s military campaigns is explicitly something he had heard. These accounts show the name and the attribution circulating together, but do not settle who first invented the device.",
+    "origin": "Taiwan Historica notes that inventions with unclear origins are often attached to famous historical figures. The name ‘Kongming lantern’ invites later writers to explain the object through Zhuge Liang. In retelling, the qualifier ‘according to legend’ can easily disappear.",
+    "instead": "Say: ‘Sky lanterns are also called Kongming lanterns. Tradition links them to Zhuge Liang, but their inventor is not securely established.’ Keep the qualifier when telling the story, and distinguish it from a documented invention history.",
+    "sources": [
+      {
+        "label": "Taiwan Ministry of Education, Revised Mandarin Chinese Dictionary — Kongming lantern, explicitly described as a legend",
+        "url": "https://dict.revised.moe.edu.tw/dictView.jsp?ID=78986&la=0&powerMode=0"
+      },
+      {
+        "label": "Taiwan Historica — Pingxi Sky Lanterns: invention and hat-shape traditions",
+        "url": "https://www.th.gov.tw/Epaper_Content/237/8493/"
+      },
+      {
+        "label": "Taiwan Historica — Sky Lanterns in Historical Records: Yang Tingli and Lian Heng",
+        "url": "https://www.th.gov.tw/Epaper_Content/238/7786/"
+      }
+    ]
+  },
+  "origin-kite-inventor": {
+    "belief": "Mozi invented the kite, and Lu Ban later improved it",
+    "truth": "Ancient texts tell wooden-bird stories about Mozi and Gongshu Zi, but they do not establish a sole inventor of the kite or a complete chain of development.",
+    "detail": "The Han Feizi tells of Mozi taking three years to make a wooden bird that broke after one day of flight. The Mozi describes Gongshu Zi making a magpie from bamboo and wood, supposedly staying aloft for three days. Both passages turn to whether craftsmanship is useful. Their characters and details differ, and neither sets out a complete ‘Mozi invented it, then Lu Ban improved it’ sequence.\n\nAncient readers also questioned the embellishment. In the Lunheng, Wang Chong discusses the wooden-bird stories about Lu Ban and Mozi and treats the three-day flight claim as an exaggeration. The spectacular detail should not be presented as a verified flight record.\n\nThese passages describe wooden birds without explaining tethering or a wind-driven design. They are relevant to discussions of kite origins, but cannot by themselves establish exactly what devices were involved, still less who single-handedly invented the kite as we understand it today.",
+    "origin": "The neat sequence of Mozi making a wooden bird and Lu Ban improving it with bamboo still appears in cultural tourism writing. Visit Beijing recounts it explicitly as a legend. Drop that qualifier in retelling, and an ancient story begins to sound like an established invention history.",
+    "instead": "Say: ‘Early Chinese texts describe wooden birds made by Mozi and Gongshu Zi, often linked to kite origins. The devices and the original inventor remain uncertain.’ Keep the interesting accounts, along with the questions they leave unanswered.",
+    "sources": [
+      {
+        "label": "Han Feizi, Wai chu shuo zuo shang — the story of Mozi’s wooden bird",
+        "url": "https://zh.wikisource.org/zh-hant/韓非子/外儲說左上"
+      },
+      {
+        "label": "Mozi, Lu wen — Gongshu Zi’s bamboo-and-wood magpie",
+        "url": "https://zh.wikisource.org/zh-hans/墨子/魯問"
+      },
+      {
+        "label": "Wang Chong, Lunheng, Ru zeng (Siku Quanshu edition, volume 8) — skepticism about a three-day wooden-bird flight",
+        "url": "https://zh.wikisource.org/zh-hant/論衡_(四庫全書本)/卷08"
+      },
+      {
+        "label": "Visit Beijing — Chinese Kites, Emblems of the Auspicious (a modern example of the legend)",
+        "url": "https://english.visitbeijing.com.cn/article/47ON6NxIbtF"
+      }
+    ]
+  },
+  "origin-empty-fort": {
+    "belief": "After losing Jieting, Zhuge Liang played a zither on the city wall and frightened Sima Yi into retreat",
+    "truth": "The zither-playing scene is a classic episode in Romance of the Three Kingdoms. A similar earlier story appears in Pei Songzhi’s annotations, immediately followed by his objections.",
+    "detail": "Chapter 95 of Romance of the Three Kingdoms gives the familiar scene: after Jieting is lost, Zhuge Liang has only 2,500 troops at Xicheng. He opens the gates and plays a zither on the tower. Suspecting an ambush, Sima Yi withdraws. This is a passage in a novel, not a battle report.\n\nYet the story predates the novel. Pei Songzhi’s annotations to Zhuge Liang’s biography in the Records of the Three Kingdoms preserve an account attributed to Guo Chong. It places Zhuge Liang at Yangping with 10,000 men against Sima Yi’s 200,000. Open gates and concealed military activity make Sima Yi suspect a trap. The outline is similar, but the details differ.\n\nPei then challenges the account: when Zhuge Liang first stayed at Yangping, Sima Yi was stationed at Wancheng; they confronted one another in Guanzhong only after Cao Zhen’s death. He also questions the troop deployments. A historian can preserve a story to criticize it. Omitting those objections turns evidence that a story circulated into apparent proof that it happened.",
+    "origin": "The anecdote becomes a vivid confrontation in the novel. The Beijing opera sequence ‘Losing Jieting, the Empty Fort Strategy, and Executing Ma Su’ likewise presents open gates, a composed Zhuge Liang playing his instrument, and Sima Yi’s retreat. Its literary and theatrical familiarity does not resolve the historical problems.",
+    "instead": "Introduce it as ‘the scene in Romance of the Three Kingdoms.’ For history, explain that an earlier account exists and Pei explicitly challenged it. This entry concerns Zhuge Liang’s zither-playing encounter with Sima Yi, not whether commanders ever used apparent weakness to suggest a trap.",
+    "sources": [
+      {
+        "label": "Romance of the Three Kingdoms, chapter 95 — the fictional zither-playing episode",
+        "url": "https://zh.wikisource.org/zh-hans/三國演義/第095回"
+      },
+      {
+        "label": "Records of the Three Kingdoms, volume 35, Pei Songzhi’s annotations — Guo Chong’s account and the rebuttal immediately after it",
+        "url": "https://zh.wikisource.org/zh-hans/三國志/卷35"
+      },
+      {
+        "label": "China’s Ministry of Culture and Tourism — synopsis of the Beijing opera Jieting / Empty Fort / Ma Su sequence",
+        "url": "https://www.mct.gov.cn/ggfw/zyjzzt/yanchu/yanchujqrm/202101/t20210111_920679.html"
+      }
+    ]
+  },
   "origin-railway-gauge": {
     "belief": "Railway track width comes from Roman chariot wheels, and even the Space Shuttle's rocket boosters were sized by it",
     "truth": "The standard gauge (1,435 mm) can be traced to English colliery horse-drawn wagonways and George Stephenson's railways; no documentary chain links it to Roman chariots.",

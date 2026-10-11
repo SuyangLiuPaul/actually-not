@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { MYTHS } from './myths'
 import { MYTHS_EN } from './myths-en'
+import { STAGING_REVISIONS } from './revisions-staging'
 import { CATEGORIES, STAKES_META, type Myth } from '../types'
 
 const CATEGORY_IDS = new Set(CATEGORIES.map((c) => c.id))
@@ -192,5 +193,19 @@ describe('英文翻译', () => {
     it('有对应的 public/og/en/{id}.png', () => {
       expect(OG_EN_FILES.has(`${id}.png`)).toBe(true)
     })
+  })
+})
+
+// 管线里的明确日期不能指向不存在的条目或产生不可用的展示日期。
+describe('已审核的修订日期', () => {
+  it('日期属于有效条目，且收录不晚于修订', () => {
+    for (const [id, dates] of Object.entries(STAGING_REVISIONS)) {
+      expect(MYTHS.some(m => m.id === id), id).toBe(true)
+      for (const date of [dates.added, dates.updated]) {
+        expect(date).toMatch(/^\d{4}-\d{2}-\d{2}$/)
+        expect(new Date(`${date}T00:00:00Z`).toISOString().slice(0, 10)).toBe(date)
+      }
+      expect(dates.added <= dates.updated, id).toBe(true)
+    }
   })
 })
