@@ -3,7 +3,8 @@ import { MYTHS } from '../data/myths'
 
 /**
  * 「看过」进度：打开过详情的条目算已读，存 localStorage，下次来接着看。
- * 内容改版后被删掉的 id 会在加载时过滤掉。
+ * 存储里不认识的 id（内容改版删掉的，或 Android 包里不含的分类）原样保留、不计数——
+ * 不能在读取时丢掉，否则写回时会把用户在别的平台或旧版本里的进度一起抹掉。
  */
 const KEY = 'read-v1'
 const KNOWN_IDS = new Set(MYTHS.map((m) => m.id))
@@ -14,7 +15,7 @@ function load(): Set<string> {
     if (!raw) return new Set()
     const ids: unknown = JSON.parse(raw)
     if (!Array.isArray(ids)) return new Set()
-    return new Set(ids.filter((x): x is string => typeof x === 'string' && KNOWN_IDS.has(x)))
+    return new Set(ids.filter((x): x is string => typeof x === 'string'))
   } catch {
     return new Set()
   }
@@ -53,5 +54,7 @@ export function useReadProgress() {
     })
   }, [])
 
-  return { read, markRead, toggleRead, readCount: read.size }
+  let readCount = 0
+  for (const id of read) if (KNOWN_IDS.has(id)) readCount++
+  return { read, markRead, toggleRead, readCount }
 }

@@ -64,10 +64,8 @@ export function PlayDeck({ locale, onOpen, onBrowse, onRead, initialRound, onDis
     }
     try {
       const raw: unknown = JSON.parse(localStorage.getItem(SAVED_KEY) ?? '[]')
-      if (Array.isArray(raw)) {
-        const known = new Set(mythsFor('zh').map((m) => m.id))
-        setSaved(new Set(raw.filter((id): id is string => typeof id === 'string' && known.has(id))))
-      }
+      // 不认识的 id（比如 Android 包里没有的分类）也保留，否则下次写回会把它们抹掉
+      if (Array.isArray(raw)) setSaved(new Set(raw.filter((id): id is string => typeof id === 'string')))
     } catch { /* 收藏失败不影响阅读或游玩。 */ }
   }, [])
 
@@ -125,12 +123,12 @@ export function PlayDeck({ locale, onOpen, onBrowse, onRead, initialRound, onDis
 
   return (
     <section className="play" aria-label={t.title}>
-      <div className="play-topline"><p className="play-eyebrow">{t.eyebrow}</p><button className="play-text-button" aria-expanded={collectionOpen} onClick={() => setCollectionOpen(!collectionOpen)}>{t.collection} <span>{saved.size}</span></button></div>
+      <div className="play-topline"><p className="play-eyebrow">{t.eyebrow}</p><button className="play-text-button" aria-expanded={collectionOpen} onClick={() => setCollectionOpen(!collectionOpen)}>{t.collection} <span>{myths.filter((m) => saved.has(m.id)).length}</span></button></div>
       <div className="play-heading"><h2>{reviewMode ? (locale === 'zh' ? '这次，再想想。' : 'Think again.') : t.title}</h2><p>{reviewMode ? (locale === 'zh' ? '把以前的发现重新想一次。仍然可以随时看答案。' : 'Revisit your earlier discoveries. You can still go straight to the answer.') : t.intro}</p></div>
       {!reviewMode && <div className="play-topics" aria-label={locale === 'zh' ? '选择玩法' : 'Choose a theme'}>
         {(['mix', 'quote', 'film', 'why'] as PlayTopic[]).map((id) => <button key={id} aria-pressed={topic === id} onClick={() => reset(id, seed)}>{t.topics[id]}</button>)}
       </div>}
-      {collectionOpen && <div className="play-collection"><h3>{t.collection}</h3>{saved.size ? <ul>{myths.filter((m) => saved.has(m.id)).map((m) => <li key={m.id}><button className="play-text-button" onClick={() => onOpen(m.id)}>{m.belief} ↗</button></li>)}</ul> : <p>{t.empty}</p>}<button className="play-text-button" onClick={() => setCollectionOpen(false)}>{t.close}</button></div>}
+      {collectionOpen && <div className="play-collection"><h3>{t.collection}</h3>{myths.some((m) => saved.has(m.id)) ? <ul>{myths.filter((m) => saved.has(m.id)).map((m) => <li key={m.id}><button className="play-text-button" onClick={() => onOpen(m.id)}>{m.belief} ↗</button></li>)}</ul> : <p>{t.empty}</p>}<button className="play-text-button" onClick={() => setCollectionOpen(false)}>{t.close}</button></div>}
       <div className="play-stage">
         {myth && q ? <>
           <div className="play-art"><img src={`/illu/${myth.id}.webp`} width={960} height={400} alt="" fetchPriority="high" /><span className="play-art-label">{categoryLabel(myth.category, locale)}</span><div className="play-page-number" aria-hidden="true">0{step + 1}<span>/ {String(questions.length).padStart(2,'0')}</span></div></div>
