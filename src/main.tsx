@@ -12,6 +12,11 @@ import { parsePath } from './i18n.ts'
 const container = document.getElementById('root')
 if (!container) throw new Error('找不到 #root 挂载点')
 
+// 旧链接 /m/<条目>/（YouTube 简介里用过）→ 条目真实地址。服务器有 301，
+// 但装过 service worker 的回访者会被离线首页兜住，所以这里再跳一次。
+const legacy = window.location.pathname.match(/^\/(en\/)?m\/(.+)$/)
+if (legacy) window.location.replace(`/${legacy[1] ?? ''}${legacy[2]}${window.location.search}${window.location.hash}`)
+
 // 结构化数据：每条内容以 FAQ JSON-LD 暴露给搜索引擎；语言跟着当前页面走
 const locale = parsePath(window.location.pathname).locale
 const faqLd = {
