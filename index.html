@@ -14,17 +14,26 @@
       }
     </script>
 
-    <!-- 首次访问按系统语言进英文版；用户手动切过一次语言后就不再自作主张 -->
+    <!-- 首次访问按系统语言选版本：系统是中文 → 中文版，其他任何语言 → 英文版。
+         首页和每个条目页都适用（视频简介里的条目链接也会落到对的语言）。
+         只在第一次访问时自动切；用户手动点过一次语言切换后就不再自作主张。
+         搜索引擎爬虫不跳转，免得中文页被当成英文页的重定向。 -->
     <script>
       try {
-        var p = location.pathname
-        if (
-          (p === '/' || p === '/index.html') &&
-          !localStorage.getItem('lang-picked') &&
-          /^en\b/i.test(navigator.language || '')
-        ) {
-          localStorage.setItem('lang-picked', '1')
-          location.replace('/en' + location.search + location.hash)
+        var p = location.pathname.replace(/\/index\.html$/, '/')
+        var bot = /bot|crawl|spider|slurp|facebookexternalhit|preview/i.test(navigator.userAgent || '')
+        if (!bot && !localStorage.getItem('lang-picked')) {
+          var sys = (navigator.languages && navigator.languages[0]) || navigator.language || ''
+          var wantEn = !/^zh\b/i.test(sys)
+          var isEn = p === '/en' || p.indexOf('/en/') === 0
+          // 只处理首页、/quiz 和条目页（/xxx-yyy/），不碰 /privacy /support /town /app 等
+          var rest = isEn ? p.slice(3) : p
+          var page = /^\/?$|^\/[a-z0-9]+(-[a-z0-9]+)*\/?$/.test(rest) && !/^\/(privacy|support|town|app|assets|icons|illu|og)\b/.test(rest)
+          if (page && wantEn !== isEn) {
+            localStorage.setItem('lang-picked', '1')
+            var target = wantEn ? '/en' + (rest === '/' || rest === '' ? '' : rest) : (rest || '/')
+            location.replace(target + location.search + location.hash)
+          }
         }
       } catch (e) {}
     </script>
