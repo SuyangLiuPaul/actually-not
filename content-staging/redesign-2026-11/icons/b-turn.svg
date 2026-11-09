@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Concept B · 「翻过来」Turn it over.
+       A paper card on an ink ground; its corner curls up to reveal the red underside.
+       The tick on the face is what you believed; the red underneath is what the sources say. -->
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#2b2822"/>
+      <stop offset="1" stop-color="#121110"/>
+    </linearGradient>
+    <radialGradient id="pool" cx="0.5" cy="0.42" r="0.6">
+      <stop offset="0" stop-color="#4a443a" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#4a443a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#fffdf8"/>
+      <stop offset="1" stop-color="#ebe3d4"/>
+    </linearGradient>
+    <linearGradient id="flap" x1="772" y1="560" x2="560" y2="610" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8f2017"/>
+      <stop offset="0.55" stop-color="#cf3a2d"/>
+      <stop offset="1" stop-color="#ec6a5c"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2e2a25"/>
+      <stop offset="1" stop-color="#121110"/>
+    </linearGradient>
+    <clipPath id="cardClip">
+      <path d="M308 192 H716 A56 56 0 0 1 772 248 V560 L500 832 H308 A56 56 0 0 1 252 776 V248 A56 56 0 0 1 308 192 Z"/>
+    </clipPath>
+    <filter id="drop" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#ground)"/>
+  <rect width="1024" height="1024" fill="url(#pool)"/>
+  <g transform="rotate(-5 512 512)">
+  <!-- card cast shadow -->
+  <path d="M308 192 H716 A56 56 0 0 1 772 248 V560 L500 832 H308 A56 56 0 0 1 252 776 V248 A56 56 0 0 1 308 192 Z"
+        fill="#000" opacity="0.5" transform="translate(0 30)" filter="url(#drop)"/>
+  <!-- card -->
+  <path d="M308 192 H716 A56 56 0 0 1 772 248 V560 L500 832 H308 A56 56 0 0 1 252 776 V248 A56 56 0 0 1 308 192 Z" fill="url(#card)"/>
+  <!-- the belief: an ink tick -->
+  <path d="M352 432 L452 532 L640 316" fill="none" stroke="url(#ink)" stroke-width="84"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- shadow the curled flap casts on the card -->
+  <g clip-path="url(#cardClip)">
+    <path d="M772 560 L500 832 Q522 584 772 560 Z" fill="#3a2a20" opacity="0.38"
+          transform="translate(-22 -14)" filter="url(#soft)"/>
+  </g>
+  <!-- the curled corner: red underside -->
+  <path d="M772 560 L500 832 Q522 584 772 560 Z" fill="url(#flap)"/>
+  <path d="M772 560 Q522 584 500 832" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="5"/>
+  </g>
+</svg>

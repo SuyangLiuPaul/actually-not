@@ -499,3 +499,30 @@ Google Play 个人开发者账号不能发布含「医疗」功能的应用（�
 ### 命令行验证 iOS 构建的坑
 `xcodebuild … -scheme App` 在新的 derivedDataPath 上会卡在「Checking out capacitor-swift-pm」之后（0% CPU，不报错）。复用已有的 SPM 缓存就能过：
 `cp -R <旧构建>/SourcePackages <某目录>`，然后加 `-clonedSourcePackagesDirPath <某目录> -disableAutomaticPackageResolution`。2026-11-09 用 Codex 留下的 `…/work/ios-build/SourcePackages` 验证通过：模拟器 Debug 构建成功，App.app 内含 en.lproj、zh-Hans.lproj，版本 1.1 (3)。
+
+---
+
+## 14. 1.2 版（2026-11-09）：每日「你信吗？」、三个标签、改观簿 v2、新图标
+
+**版本**：Android versionCode 4 / versionName 1.2；iOS MARKETING_VERSION 1.2 / CURRENT_PROJECT_VERSION 4；`app-build.json` 1.2.0。出包命令与 §13 相同（iOS 230 条、Android 194 条，测完留在 iOS 风味）。设计依据：`content-staging/redesign-2026-11/REDESIGN.md`、`MEETING.md`；截图在同目录 `screens-v1.2/`（390×844，浅色 / 深色，另有 320 宽和 4 张分享图样张）。
+
+### 改了什么
+- **三个标签**：今天 / 资料库 / 改观簿（`src/native/NativeApp.tsx` 只做状态和路由，视图在 `TodayView`、`LibraryView`、`JournalView`、`SettingsView`）。「玩法」标签取消：两个实验和 10 道手写挑战题（PlayDeck）收进资料库的折叠书架，随时可用。
+- **每日「你信吗？」**（`BeliefCard.tsx`、`journal.ts` 的 `dailyBeliefIds`）：每天 3 条，从**平台过滤后的全部条目**出题（急救类不进随机，沿用旧规则），按本地日期确定，只看当天之前的记录，所以当天怎么答都不改题单。全部表过态以后从最久以前的开始再问。表态：我一直这么以为 / 说不准 / 我不信，或「直接看答案」。揭晓 = 红笔划过、其实、证据强度标签、出处入口、分享结论图、有视频就显示（未上线显示「X 月 X 日上线」）。回应文案在 `copy.ts`（表态 × 证据强度矩阵），研究有限 / 尚有争议永远不说对错。没有分数、连胜、徽章、解锁。
+- **改观簿 v2**：「你改观过 N 件事」**只算「我一直这么以为」**（说不准不算）；筛选（改观了 / 本来就不信 / 说不准 / 收藏）、各板块阅读记录、间隔回看（只针对改观过的条目，2 → 7 → 21 天后毕业；「有点忘了」回到 7 天档）。设置在右上角齿轮里（语言、外观、放大文字、提醒、导出、隐私、免责声明、版本）。
+- **记录格式**（`journal.ts`）：存储键仍是 `actually-not-journal-v1`（本地存储来源没动，`server.iosScheme` 没动）。每条记录加 `v: 2` 和 `kind`（belief / quiz / review）。1.1 的记录启动时就地迁移为 `kind: 'quiz'`，迁移前把原始字符串备份到 `actually-not-journal-v1-backup`。**1.1 的 `loadJournal` 会丢掉不在 10 道手写题里的记录——已修**：现在不按内容 id 过滤，Android 排除分类的记录保留、只是不显示不计数；认不出的记录（坏数据、以后版本的新类型）原样保留。上限 10000 条。导出（version 2）导出的是存储里的全部原始记录。顺带修了同类问题：`useReadProgress` 和 PlayDeck 读收藏时也会丢掉不认识的 id，然后写回抹掉。
+- **提醒**（`reminders.ts`、`platform.ts` 的 `scheduleReminders`）：默认关闭、默认 20:00；用户在 3 个不同的日子打开过 App 后，改观簿里才出现一行开启邀请（拒绝后不再提，设置里始终可以手动开）。每天最多一条，正文是当天第 1 条的说法；本机预排 7 天（id 310–316），每次打开、表态、换语言时静默重排（不弹权限框）。开启前会取消 1.1 的重复提醒 id 301。1.1 已开提醒的用户：保留原时间，下次打开 App 自动换成带内容的通知。
+- **结论分享图**（`shareCard.ts`）：canvas 1080×1350，浅色；说法被红笔划掉、其实、证据强度标签（一定印出）、页脚 actually-not.com；不放二维码。App 里用已有的 Filesystem + Share 插件，网页用带文件的 Web Share，不支持就下载 PNG。入口：揭晓卡片和详情页底部（详情页底部还加了「收藏」）。没有新增依赖。
+- **语言**：首次启动跟随系统（zh* → 中文，其余英文）；只有在设置里手动选过才记住（`app-locale`）。
+- **图标 A**：母版在 `assets/app-icon/`（浅色底向边缘略压暗以便在浅色壁纸上保持轮廓；红笔收笔圆钝）。`npm run icons`（`scripts/generate-icons.mjs`）一次生成网站 favicon / PWA、iOS 浅色 / 深色 / 着色三种外观（单张 1024 的 Xcode 资产目录格式）、Android 自适应前景 / 背景 / 单色主题层 + 旧版圆形和方形启动图标、通知小图标；加 `--check` 输出自查图 `content-staging/redesign-2026-11/icon-check-v1.2.png`（各尺寸、Android 圆形遮罩与安全圆、着色、单色、favicon）。旧的 `scripts/mobile/icons.mjs` 已并入。
+
+### 验证（2026-11-09）
+- `npm test` 3739 项通过（新增 33 项：选题确定性与 Android 过滤、旧记录迁移含 Android 排除 id、改观计数口径、2/7/21 回看、提醒排程、分享图排版——全部 230 条中英文都排得进且标签一定印出）；`tsc -b --noEmit`、`npm run lint`、`npm run build` 通过。
+- `npm run app:build`（ios，230）与 `APP_PLATFORM=android npm run app:build`（194）、`npx cap sync`、`./gradlew assembleDebug`、iOS 模拟器 Debug 构建（§13 的 SPM 缓存做法）通过；App.app 版本 1.2 (4)，Assets.car 内含 AppIcon 深色与着色两种外观。
+- 浏览器（headless Chrome，/app/，390×844 与 320×640，浅色 / 深色）走过：今天提问、揭晓、3 条完成、英文首启、资料库、搜索、无结果、改观簿（有记录 / 空）、回看、设置、详情页；无横向溢出、无控制台错误。
+
+### 没验证、要真机做的
+- 本机通知的实际送达与锁屏显示（iOS / Android 13+ 权限框时机），以及 3 天后的开启邀请（网页里不显示提醒相关 UI，所以截图里没有它）。
+- 真机上的分享面板（Filesystem 写缓存 + Share files）。网页 headless 里只验证了画图。
+- 真机桌面上看图标（iOS 深色 / 着色、Android 主题图标、各家启动器遮罩）。提交商店前请 Paul 亲自看一眼红笔笔触（REDESIGN §6 的风险）。
+- VoiceOver / TalkBack 全流程。
