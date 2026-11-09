@@ -35,7 +35,7 @@ await build({ configFile:false, plugins:[platformData,react(),tailwindcss(), {na
 // 本地应用无需首次访问语言重定向、旧 hash 路由脚本或 service worker。
 // 入口使用同一套双语数据；应用语言在 App 内选择。
 mkdirSync('dist-app', { recursive:true })
-writeFileSync('dist-app/app-build.json', JSON.stringify({version:'1.1.0',platform,builtAt:new Date().toISOString(),entries:expectedEntries}))
+writeFileSync('dist-app/app-build.json', JSON.stringify({version:'1.2.0',platform,builtAt:new Date().toISOString(),entries:expectedEntries}))
 
 const html=readFileSync('dist-app/index.html','utf8').replace(/<script>[^]*?<\/script>/g,'')
 writeFileSync('dist-app/index.html',html)
