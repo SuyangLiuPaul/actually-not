@@ -456,3 +456,46 @@ ChatGPT 的下载按钮存到 ~/Downloads 再导入的。** 旧的 104 条是 po
 - 原稿与核对记录见 content-staging/origin-three-2026-10-11.json、同名 log.md；发布稿不含内部核对记录。插画分别由内置图像工具生成，原图 1942×809，原图、导入结果和六张 OG 均目视检查，提示词与风格记录见 content-staging/illustrations-2026-10-11.json。
 - 为 staging 条目增加显式审核日期记录（revision-dates.json → revisions-staging.ts），保留旧条目的历史日期；旧 git pickaxe 脚本的历史局限仍存在。以后原生包生成的 entries 元数据读取实际数据长度；本次未重新打包或上传任何商店包，现有构建 2 仍为 227 条。
 - 按顺序 og、test（3705 项）、tsc --noEmit、build 全部通过；另外 lint、typecheck、diff --check 通过。构建预渲染 464 页。六个详情路由正文、图片、日期、置信度和无横向溢出已核对，分享元数据以各页预渲染 HTML 为准。
+
+---
+
+## 13. 1.1 版（2026-11-09）：视频、Android 去医疗、iOS 多语言
+
+**版本**：Android versionCode 3 / versionName 1.1；iOS MARKETING_VERSION 1.1 / CURRENT_PROJECT_VERSION 3；`app-build.json` version 1.1.0。
+
+### 怎么出两个商店包（两个包内容不同，务必按各自命令）
+
+```bash
+# iOS（含全部 230 条）
+npm run app:build                 # 默认 APP_PLATFORM=ios；dist-app/app-build.json 应显示 platform:ios, entries:230
+npx cap sync ios
+# 然后 Xcode 打包 / 上传（本仓库的自动化不做上传）
+
+# Android（不含 urgent 急救 + body 身体，共 194 条）
+APP_PLATFORM=android npm run app:build   # app-build.json 应显示 platform:android, entries:194
+npx cap sync android
+cd android && ./gradlew bundleRelease    # 或 assembleDebug 本地试装
+```
+
+**测完请把工作区留在 iOS 风味**：`npm run app:build && npx cap sync`。`dist-app`、`ios/App/App/public`、`android/app/src/main/assets/public` 都被 git 忽略，不会误提交，但打 Android 包前必须重新用 `APP_PLATFORM=android` 构建，否则会把医疗条目带进 Play 包。
+
+### 为什么 Android 要去掉两个分类
+Google Play 个人开发者账号不能发布含「医疗」功能的应用（之前申报的「急救与急救知识」「医疗参考与教育」被拒）。Android 包整体排除 `urgent`、`body`：列表、搜索、每日题、随机、玩法、提醒、相关链接、分类标签、计数全部看不到；条目正文与插画也不进安装包。网站和 iOS 不受影响。
+- 唯一过滤点：`src/data/platform.ts`（`filterMythsForPlatform`、`ANDROID_EXCLUDED_CATEGORIES`），`myths.ts` 末尾与 `types.ts` 的 `CATEGORIES` 调用它；其余代码都读过滤后的 `MYTHS`。被排除条目在 `related` 里的链接一并删除（不留断链）。
+- 构建时：`scripts/mobile/build.mjs` 用 `APP_PLATFORM` 定义 `VITE_APP_PLATFORM`；Android 时把 `myths.ts` / `myths-en.ts` 替换成已过滤的 JSON（正文不进包），并删掉被排除条目的 `illu/*.webp`。node 脚本（og / links / revisions）不带这个变量，仍然看到全部条目。
+- 注意 `tongue-map`（舌头味觉图）属于 `body`，所以 Android 包里没有它，也就没有它的视频。
+- 测试：`src/data/platform.test.ts`。
+
+### 视频（YouTube 嵌入）
+- `src/data/videos.ts`：条目 id → `{ youtubeId, durationSec, style }`。**10 个 youtubeId 现在都是 `'PENDING'`**；PENDING 时界面完全不渲染（详情页没有播放器、视频列表不出现），所以现在就可以发版。视频上传后，把真实 ID 填进去即可（11 位 ID，测试会校验格式）。
+- 详情页（网站 + 原生）：`src/components/EntryVideo.tsx`，9:16、最大宽 360px、居中、youtube-nocookie 嵌入、懒加载，下方说明「看 1 分钟动画」/ "Watch the 1-minute animation"，另有「在 YouTube 打开」兜底链接。
+- 原生应用「全部」页顶部的「视频 / Videos」列表：`src/native/VideoShelf.tsx`。有真实视频就一直显示，不依赖日期、开关或解锁（审核 5.6 教训）。
+- 站点没有 CSP（`netlify.toml`、`public/_headers` 都没有），无需放行 frame-src；如以后加 CSP，必须允许 `frame-src https://www.youtube-nocookie.com`。Capacitor iOS 的 `allowNavigation` 只管顶层导航，iframe 子帧默认放行，所以没动 `capacitor.config.ts`。
+- 待真机验证：iOS 的 WebView 来源是 `capacitor://localhost`，YouTube 有时对非 http(s) 来源报播放器配置错误（153）；真机上用真实视频 ID 试一次。万一不行，兜底链接会在系统浏览器里打开。不要为此改 `server.iosScheme`（会改变本地存储来源，丢用户的收藏和改观簿）。
+
+### iOS 多语言
+`ios/App/App/en.lproj` 与 `zh-Hans.lproj` 各有 `InfoPlist.strings`（`CFBundleDisplayName`：Actually, Not / 其实不是；Info.plist 里没有其他权限说明字符串，所以没有别的要翻）。已在 pbxproj 注册（knownRegions += zh-Hans，`InfoPlist.strings` PBXVariantGroup 进 Resources 阶段）。内容只有简体 + 英文，没有繁体，所以不加 zh-Hant。`CFBundleLocalizations` = zh-Hans, en 与之一致。
+
+### 命令行验证 iOS 构建的坑
+`xcodebuild … -scheme App` 在新的 derivedDataPath 上会卡在「Checking out capacitor-swift-pm」之后（0% CPU，不报错）。复用已有的 SPM 缓存就能过：
+`cp -R <旧构建>/SourcePackages <某目录>`，然后加 `-clonedSourcePackagesDirPath <某目录> -disableAutomaticPackageResolution`。2026-11-09 用 Codex 留下的 `…/work/ios-build/SourcePackages` 验证通过：模拟器 Debug 构建成功，App.app 内含 en.lproj、zh-Hans.lproj，版本 1.1 (3)。
