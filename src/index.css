@@ -377,3 +377,13 @@ a {
 @media(max-width:700px){.app-route{padding:15px 14px;}.app-route strong{font-size:17px;}.app-route-icon{display:none;}.app-route p{font-size:11px;}.app-route-dots{gap:4px;}.app-route-dots>span{width:24px;height:24px;}.app-next-paths{grid-template-columns:1fr;gap:10px;}.app-next-paths button{padding:16px;}.app-trail-heading{align-items:flex-start;flex-direction:column;gap:0;margin-bottom:18px;}.app-trail-heading h2{font-size:27px;}.app-worlds{grid-template-columns:1fr 1fr;gap:10px;}.app-worlds button{padding:14px;}.app-worlds strong{font-size:14px;}.app-surprise{grid-template-columns:1fr;}.app-surprise img{aspect-ratio:12/5;height:auto;}.app-surprise>div{padding:18px;}.app-surprise h3{font-size:20px;}}
 
 .app-web-entry{display:flex;justify-content:space-between;align-items:center;gap:16px;border:1px solid var(--rule);border-radius:12px;background:var(--slate-soft);padding:16px 18px;text-decoration:none;margin:8px 0 28px;}.app-web-entry strong{display:block;font:500 19px/1.5 var(--font-serif);}.app-web-entry small{display:block;font-size:12px;color:var(--ink-soft);margin-top:4px;}.app-web-entry>span:last-child{font-size:13px;color:var(--pen);white-space:nowrap;}
+
+/* 视频列表（原生应用「全部」页） */
+.app-videos{margin:0 0 24px;}
+.app-videos h3{font:600 18px/1.4 var(--font-serif);margin:0 0 10px;display:flex;align-items:baseline;gap:10px;}
+.app-videos h3 span{font:400 12px/1.4 var(--font-sans, inherit);color:var(--ink-soft);}
+.app-videos ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+.app-videos button{width:100%;display:flex;align-items:center;gap:12px;text-align:left;padding:8px;min-height:56px;background:var(--paper-raised);border:1px solid var(--rule);border-radius:10px;}
+.app-videos img{width:96px;height:40px;object-fit:cover;border-radius:6px;flex:none;}
+.app-videos strong{display:block;font-size:14px;line-height:1.4;font-weight:500;}
+.app-videos small{display:block;font-size:12px;color:var(--ink-soft);margin-top:2px;}

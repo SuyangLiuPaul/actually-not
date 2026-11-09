@@ -1,5 +1,6 @@
 import type { Myth } from '../types'
 import { MYTHS_EXTRA } from './myths-extra.ts'
+import { APP_PLATFORM, filterMythsForPlatform } from './platform.ts'
 
 /**
  * 每条都尽量做到：结论有出处、承认不确定的地方、说明这个说法当初是怎么来的。
@@ -2224,3 +2225,11 @@ export const MYTHS: Myth[] = [
 
 // 新板块（名言 / 电影 / 起源）的条目单独成文件，这里并入同一个列表
 MYTHS.push(...MYTHS_EXTRA)
+
+// 平台过滤（仅 Android 包生效，其余平台原样保留）：整个应用只在这一处过滤，
+// 所有消费者拿到的都是同一份已过滤的 MYTHS。
+if (APP_PLATFORM === 'android') {
+  const kept = filterMythsForPlatform(MYTHS, APP_PLATFORM)
+  MYTHS.length = 0
+  MYTHS.push(...kept)
+}

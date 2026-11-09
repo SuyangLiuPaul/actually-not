@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Strike } from './Strike'
+import { EntryVideo } from './EntryVideo'
 import { StakesDot } from './MythCard'
 import { REVISIONS as LEGACY_REVISIONS } from '../data/revisions'
 import { STAGING_REVISIONS } from '../data/revisions-staging'
@@ -235,6 +236,8 @@ export function MythDetail({
               {myth.truth}
             </p>
           </div>
+
+          <EntryVideo id={myth.id} title={myth.belief} locale={locale} />
 
           <Section title={t.detailEvidence} body={myth.detail} />
           <Section title={t.detailOrigin} body={myth.origin} />

@@ -1,3 +1,5 @@
+import { excludedCategoriesFor, APP_PLATFORM } from './data/platform.ts'
+
 export type CategoryId =
   | 'eat'
   | 'body'
@@ -58,7 +60,7 @@ export interface Category {
   emoji: string
 }
 
-export const CATEGORIES: Category[] = [
+const ALL_CATEGORIES: Category[] = [
   { id: 'eat', label: '吃', emoji: '🍚' },
   { id: 'body', label: '身体', emoji: '🩺' },
   { id: 'sleep', label: '睡', emoji: '🌙' },
@@ -72,6 +74,11 @@ export const CATEGORIES: Category[] = [
   { id: 'word', label: '这个词你用错了', emoji: '✍️' },
   { id: 'why', label: '为什么长这样', emoji: '🔧' },
 ]
+
+/** 当前平台可见的分类（Android 包不含 urgent / body，见 data/platform.ts） */
+export const CATEGORIES: Category[] = ALL_CATEGORIES.filter(
+  (c) => !excludedCategoriesFor(APP_PLATFORM).includes(c.id),
+)
 
 export const STAKES_META: Record<
   Stakes,

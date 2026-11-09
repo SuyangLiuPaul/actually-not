@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { categoryLabel, confidenceMeta, type Locale } from '../i18n'
+import { APP_PLATFORM } from '../data/platform'
 import { CATEGORIES, type CategoryId, type Myth } from '../types'
 
 export function DiscoveryTrail({ myths, read, locale, onOpen, onRead, onCategory }: {
@@ -26,6 +27,6 @@ export function DiscoveryTrail({ myths, read, locale, onOpen, onRead, onCategory
       <div><p className="play-eyebrow">{categoryLabel(entry.category,locale)} · {confidenceMeta(entry.confidence,locale).label}</p><h3>{entry.belief}</h3>{revealed ? <><p className="app-surprise-truth" aria-live="polite">{entry.truth}</p><button className="play-text-button" onClick={()=>onOpen(entry.id)}>{zh?'读解释和出处 ↗':'Read the explanation and sources ↗'}</button></> : <button className="play-primary" onClick={()=>{setRevealed(true);onRead(entry.id)}}>{zh?'其实呢？ →':'Actually? →'}</button>}</div>
     </article> : <p className="app-trail-note">{zh?'优先翻到你还没读过的内容。没有分数，也不用等明天。':'Unseen entries come first. No scores, no waiting for tomorrow.'}</p>}
     <div className="app-worlds">{CATEGORIES.map((c,i)=>{const entries=myths.filter(m=>m.category===c.id);const count=entries.filter(m=>read.has(m.id)).length;return <button key={c.id} onClick={()=>onCategory(c.id)}><span className="app-world-number" aria-hidden="true">{String(i+1).padStart(2,'0')}</span><strong>{categoryLabel(c.id,locale)} <span aria-hidden="true">↗</span></strong><small>{zh?`${entries.length} 条 · 已读 ${count}`:`${entries.length} entries · ${count} read`}</small><span className="app-world-meter" aria-hidden="true"><span style={{width:`${entries.length?count/entries.length*100:0}%`}}/></span></button>})}</div>
-    <p className="app-experiment-note">{zh?'急救内容请从板块直接阅读，不参加随机翻牌。所有板块随时开放。':'Emergency entries are directly accessible in their category and excluded from random cards. Every category is always open.'}</p>
+    {APP_PLATFORM!=='android'&&<p className="app-experiment-note">{zh?'急救内容请从板块直接阅读，不参加随机翻牌。所有板块随时开放。':'Emergency entries are directly accessible in their category and excluded from random cards. Every category is always open.'}</p>}
   </section>
 }
