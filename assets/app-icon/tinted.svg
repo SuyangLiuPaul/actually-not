@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Tinted appearance: grayscale on black. The pen is cut out of the tick with a gap so the two marks stay separable once tinted. -->
+  <defs><mask id="gap" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024"><rect width="1024" height="1024" fill="#fff"/>
+    <g transform="translate(512 512) scale(1.1) translate(-518 -504)"><path d="M206 568 C400 534 640 504 860 500 A17 17 0 0 1 867 534 C650 552 420 616 214 656 A44 44 0 0 1 206 568 Z" fill="#000" stroke="#000" stroke-width="44" stroke-linejoin="round"/></g></mask></defs>
+  <rect width="1024" height="1024" fill="#000"/>
+  <g mask="url(#gap)"><g transform="translate(512 512) scale(1.1) translate(-518 -504)"><path d="M300 520 L452 672 L742 336" fill="none" stroke="#b8b8b8" stroke-width="118" stroke-linecap="round" stroke-linejoin="round"/></g></g>
+  <g transform="translate(512 512) scale(1.1) translate(-518 -504)"><path d="M206 568 C400 534 640 504 860 500 A17 17 0 0 1 867 534 C650 552 420 616 214 656 A44 44 0 0 1 206 568 Z" fill="#ffffff"/></g>
+</svg>

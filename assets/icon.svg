@@ -1,11 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <!-- 图标只用几何图形，不含文字：避免依赖系统字体，任何尺寸下都一致。
-       语义：一个「对勾」被红笔划掉 —— 你以为对的，其实不是。
-       红线刻意比对勾细，且几乎水平，这样在 16px 下两者不会糊成一团。 -->
-  <rect width="512" height="512" rx="114" fill="#f7f4ee"/>
-  <path d="M132 252 L226 346 L392 148"
-        fill="none" stroke="#1c1a17" stroke-width="58"
-        stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M74 322 Q 256 296 438 312"
-        fill="none" stroke="#cf3a30" stroke-width="30" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="512" height="512">
+  <!-- 小尺寸图标（favicon、浏览器标签、PWA）：v1.2 图标 A「划掉」的扁平版。
+       只用几何图形、不含文字；没有阴影和纸纹（16px 下会糊），红笔比 App 图标里更粗，
+       右端是圆钝的收笔。App 图标的母版在 assets/app-icon/。 -->
+  <rect width="1024" height="1024" rx="228" fill="#f1ebdf"/>
+  <g transform="translate(512 512) scale(1.12) translate(-518 -504)">
+    <path d="M300 520 L452 672 L742 336" fill="none" stroke="#1c1a17" stroke-width="124"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M200 560 C400 526 640 494 862 486 A32 32 0 0 1 870 550 C650 564 420 624 212 666 A54 54 0 0 1 200 560 Z"
+          fill="#c8352a"/>
+  </g>
 </svg>
