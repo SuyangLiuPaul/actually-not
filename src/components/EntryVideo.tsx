@@ -1,4 +1,5 @@
-import { styleLabel, videoFor } from '../data/videos'
+import { useEffect, useState } from 'react'
+import { isLive, publishLabel, styleLabel, videoFor } from '../data/videos'
 import type { Locale } from '../i18n'
 
 /**
@@ -7,8 +8,24 @@ import type { Locale } from '../i18n'
  */
 export function EntryVideo({ id, title, locale }: { id: string; title: string; locale: Locale }) {
   const video = videoFor(id)
+  // 预渲染时不知道访问时刻；挂载后再判断是否已公开，避免水合不一致（先显示预告卡）。
+  const [now, setNow] = useState<Date | null>(null)
+  useEffect(() => setNow(new Date()), [])
   if (!video) return null
   const caption = locale === 'en' ? 'Watch the 1-minute animation' : '看 1 分钟动画'
+  if (!now || !isLive(video, now)) {
+    const when = publishLabel(video, locale)
+    return (
+      <figure className="mx-auto mt-6 w-full" style={{ maxWidth: 360 }} data-entry-video={id} data-video-upcoming="">
+        <div className="rounded-xl border px-4 py-5 text-center text-[14px]" style={{ borderColor: 'var(--rule)', background: 'var(--paper-raised)', color: 'var(--ink-soft)' }}>
+          {now
+            ? (locale === 'en' ? `▶ 1-minute animation · coming ${when}` : `▶ 1 分钟动画 · ${when}上线`)
+            : (locale === 'en' ? '▶ 1-minute animation' : '▶ 1 分钟动画')}
+          <span className="mt-1 block text-[12px]" style={{ color: 'var(--ink-faint)' }}>{styleLabel(video.style, locale)}</span>
+        </div>
+      </figure>
+    )
+  }
   return (
     <figure className="mx-auto mt-6 w-full" style={{ maxWidth: 360 }} data-entry-video={id}>
       <div
