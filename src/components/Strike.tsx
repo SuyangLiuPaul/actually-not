@@ -44,8 +44,10 @@ export function Strike({
     measure()
     // 字体加载完会改换行，补量一次
     document.fonts?.ready.then(measure).catch(() => {})
+    // 行内元素的尺寸变化 ResizeObserver 不一定报告，所以连同所在的块级父元素一起观察
     const ro = new ResizeObserver(measure)
     ro.observe(el)
+    if (el.parentElement) ro.observe(el.parentElement)
     return () => ro.disconnect()
   }, [children])
 

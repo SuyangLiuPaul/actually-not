@@ -22,6 +22,7 @@ export function MythDetail({
   onNext,
   onToggleRead,
   onOpenMyth,
+  actions,
 }: {
   myth: Myth
   index: number
@@ -32,6 +33,8 @@ export function MythDetail({
   onNext?: () => void
   onToggleRead: () => void
   onOpenMyth: (id: string) => void
+  /** 安装版在底部放的额外操作（收藏、分享结论图）；网站不传 */
+  actions?: React.ReactNode
 }) {
   const panelRef = useRef<HTMLDivElement>(null)
   const [struck, setStruck] = useState(false)
@@ -391,6 +394,8 @@ export function MythDetail({
               </div>
             </div>
           )}
+
+          {actions && <div className="detail-actions">{actions}</div>}
 
           {/* 收录/修订时间 + 纠错入口 */}
           {REVISIONS[myth.id] && (
