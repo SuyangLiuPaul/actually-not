@@ -32,6 +32,7 @@ export const VIDEOS: Record<string, EntryVideo> = {
   'origin-great-wall-from-space': { youtubeId: 'fqZNkrSSzoY', durationSec: 52, publishAt: '2026-11-12T17:00:00+11:00', style: 'Glow sketch' },
   'tongue-map': { youtubeId: '69L8h8QzHV0', durationSec: 60, publishAt: '2026-11-26T17:00:00+11:00', style: '3D cartoon' },
   'origin-railway-gauge': { youtubeId: '0MDB7LfwHP4', durationSec: 54, publishAt: '2026-12-10T17:00:00+11:00', style: 'Toy bricks' },
+  'honey-for-sugar': { youtubeId: 'cl3CPGBpa3w', durationSec: 149, publishAt: '2026-11-13T23:00:00+11:00', style: 'Claymation', landscape: true, en: { youtubeId: VIDEO_PENDING, durationSec: 168, publishAt: '2026-11-14T11:00:00+11:00' } },
   leftovers: { youtubeId: 'gbajL3AI8us', durationSec: 212, publishAt: '2026-11-13T17:00:00+11:00', style: 'Kitchen flat illustration', landscape: true, en: { youtubeId: 'p9GyW8ikX_U', durationSec: 215, publishAt: '2026-11-11T11:00:00+11:00' } },
 }
 
