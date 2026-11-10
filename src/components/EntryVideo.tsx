@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
-import { isLive, publishLabel, styleLabel, videoFor } from '../data/videos'
+import { isLive, lengthLabel, publishLabel, styleLabel, videoFor } from '../data/videos'
 import type { Locale } from '../i18n'
 
 /**
- * 条目详情页里的竖屏（9:16）短动画。该条目没有视频、或视频 ID 仍是 PENDING 时什么都不渲染。
+ * 条目详情页里的动画：默认竖屏（9:16）短片，landscape 的是横屏（16:9）。该条目没有视频、或视频 ID 仍是 PENDING 时什么都不渲染。
  * 用 youtube-nocookie 域名嵌入；懒加载，进入视口前不请求任何第三方资源。
  */
 export function EntryVideo({ id, title, locale }: { id: string; title: string; locale: Locale }) {
@@ -12,25 +12,27 @@ export function EntryVideo({ id, title, locale }: { id: string; title: string; l
   const [now, setNow] = useState<Date | null>(null)
   useEffect(() => setNow(new Date()), [])
   if (!video) return null
-  const caption = locale === 'en' ? 'Watch the 1-minute animation' : '看 1 分钟动画'
+  const len = lengthLabel(video, locale)
+  const caption = locale === 'en' ? `Watch the ${len}` : `看${len}`
+  const maxWidth = video.landscape ? 720 : 360
   if (!now || !isLive(video, now)) {
     const when = publishLabel(video, locale)
     return (
-      <figure className="mx-auto mt-6 w-full" style={{ maxWidth: 360 }} data-entry-video={id} data-video-upcoming="">
+      <figure className="mx-auto mt-6 w-full" style={{ maxWidth }} data-entry-video={id} data-video-upcoming="">
         <div className="rounded-xl border px-4 py-5 text-center text-[14px]" style={{ borderColor: 'var(--rule)', background: 'var(--paper-raised)', color: 'var(--ink-soft)' }}>
           {now
-            ? (locale === 'en' ? `▶ 1-minute animation · coming ${when}` : `▶ 1 分钟动画 · ${when}上线`)
-            : (locale === 'en' ? '▶ 1-minute animation' : '▶ 1 分钟动画')}
+            ? (locale === 'en' ? `▶ ${len} · coming ${when}` : `▶ ${len} · ${when}上线`)
+            : `▶ ${len}`}
           <span className="mt-1 block text-[12px]" style={{ color: 'var(--ink-faint)' }}>{styleLabel(video.style, locale)}</span>
         </div>
       </figure>
     )
   }
   return (
-    <figure className="mx-auto mt-6 w-full" style={{ maxWidth: 360 }} data-entry-video={id}>
+    <figure className="mx-auto mt-6 w-full" style={{ maxWidth }} data-entry-video={id}>
       <div
         className="overflow-hidden rounded-xl border"
-        style={{ aspectRatio: '9 / 16', borderColor: 'var(--rule)', background: 'var(--paper-raised)' }}
+        style={{ aspectRatio: video.landscape ? '16 / 9' : '9 / 16', borderColor: 'var(--rule)', background: 'var(--paper-raised)' }}
       >
         <iframe
           src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}?playsinline=1&rel=0`}

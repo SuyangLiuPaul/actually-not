@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { Strike } from '../components/Strike'
 import { categoryLabel, confidenceMeta, type Locale } from '../i18n'
-import { isLive, publishLabel, videoFor } from '../data/videos'
+import { isLive, publishLabel, videoFor, lengthLabel } from '../data/videos'
 import type { Myth } from '../types'
 import { STANCES, type BeliefRecord, type Stance } from './journal'
 import { claimSize, responseFor, STANCE_LABEL } from './copy'
@@ -57,7 +57,7 @@ export function BeliefCard({ myth, locale, record, firstTime, onAnswer, onOpen, 
         </p>
         <div className="belief-meta">
           <ConfidenceChip confidence={myth.confidence} locale={locale} />
-          {video && <button className="chip-button" onClick={() => onOpen(myth.id)}>{isLive(video) ? (zh ? '▶ 1 分钟动画' : '▶ 1-min animation') : (zh ? `动画 ${publishLabel(video, locale)}上线` : `Animation coming ${publishLabel(video, locale)}`)}</button>}
+          {video && <button className="chip-button" onClick={() => onOpen(myth.id)}>{isLive(video) ? `▶ ${lengthLabel(video, locale)}` : (zh ? `动画 ${publishLabel(video, locale)}上线` : `Animation coming ${publishLabel(video, locale)}`)}</button>}
         </div>
         <div className="belief-actions">
           <button className="ghost-button" onClick={() => onOpen(myth.id)}>{zh ? `解释和出处 · ${myth.sources.length}` : `Sources · ${myth.sources.length}`}</button>

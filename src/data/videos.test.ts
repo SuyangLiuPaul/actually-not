@@ -11,7 +11,7 @@ describe('视频数据', () => {
   it('字段合法：时长为正、风格非空、youtubeId 是 PENDING 或形如 YouTube ID', () => {
     for (const [id, v] of Object.entries(VIDEOS)) {
       expect(v.durationSec, id).toBeGreaterThan(0)
-      expect(v.durationSec, id).toBeLessThanOrEqual(60 * 3)
+      expect(v.durationSec, id).toBeLessThanOrEqual(v.landscape ? 60 * 10 : 60 * 3)   // 竖屏短片 ≤3 分钟；横屏长片 ≤10 分钟
       expect(v.style.length, id).toBeGreaterThan(0)
       expect(v.youtubeId === VIDEO_PENDING || /^[A-Za-z0-9_-]{6,20}$/.test(v.youtubeId), id).toBe(true)
     }

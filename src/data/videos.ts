@@ -13,6 +13,8 @@ export interface EntryVideo {
   style: string
   /** YouTube 定时公开的时间（墨尔本 17:00）。到点之前视频在 YouTube 上还是私享，嵌入也播不了，所以界面先不显示。 */
   publishAt?: string
+  /** 横屏（16:9）视频；不填就是 9:16 竖屏短片 */
+  landscape?: boolean
 }
 
 export const VIDEO_PENDING = 'PENDING'
@@ -28,17 +30,25 @@ export const VIDEOS: Record<string, EntryVideo> = {
   'origin-great-wall-from-space': { youtubeId: 'fqZNkrSSzoY', durationSec: 52, publishAt: '2026-11-12T17:00:00+11:00', style: 'Glow sketch' },
   'tongue-map': { youtubeId: '69L8h8QzHV0', durationSec: 60, publishAt: '2026-11-26T17:00:00+11:00', style: '3D cartoon' },
   'origin-railway-gauge': { youtubeId: '0MDB7LfwHP4', durationSec: 54, publishAt: '2026-12-10T17:00:00+11:00', style: 'Toy bricks' },
+  leftovers: { youtubeId: 'gbajL3AI8us', durationSec: 212, publishAt: '2026-11-13T17:00:00+11:00', style: 'Kitchen flat illustration', landscape: true },
 }
 
 const STYLE_ZH: Record<string, string> = {
   'Pixel art': '像素风', Stickman: '火柴人', Claymation: '黏土动画', Chalkboard: '黑板',
   'PS2 retro 3D': 'PS2 复古 3D', '90s anime': '90 年代动漫', 'Comic book': '美漫',
   'Glow sketch': '发光速写', '3D cartoon': '3D 卡通', 'Toy bricks': '积木玩具',
+  'Kitchen flat illustration': '厨房插画',
 }
 
 /** 风格标签的本地化显示（数据里存英文，中文界面查表） */
 export function styleLabel(style: string, locale: 'zh' | 'en'): string {
   return locale === 'zh' ? (STYLE_ZH[style] ?? style) : style
+}
+
+/** 「1 分钟动画」/「4 分钟动画」这样的长度标签（按分钟四舍五入，至少 1） */
+export function lengthLabel(v: EntryVideo, locale: 'zh' | 'en'): string {
+  const m = Math.max(1, Math.round(v.durationSec / 60))
+  return locale === 'zh' ? `${m} 分钟动画` : `${m}-minute animation`
 }
 
 /** 该条目的可播放视频；没有，或还是 PENDING 占位时返回 undefined（界面据此什么都不渲染） */

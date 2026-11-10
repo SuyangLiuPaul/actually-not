@@ -8,7 +8,7 @@ export function VideoShelf({ myths, locale, onOpen }: { myths: Myth[]; locale: L
   const items = myths.flatMap((m) => { const video = videoFor(m.id); return video ? [{ m, video }] : [] })
   if (!items.length) return null
   return <section className="app-videos" aria-labelledby="videos-title">
-    <h3 id="videos-title">{zh ? '视频' : 'Videos'}<span>{zh ? `${items.length} 个 1 分钟动画` : `${items.length} one-minute animations`}</span></h3>
+    <h3 id="videos-title">{zh ? '视频' : 'Videos'}<span>{zh ? `${items.length} 个动画` : `${items.length} animations`}</span></h3>
     <ul>{items.map(({ m, video }) => <li key={m.id}><button onClick={() => onOpen(m.id)}>
       <img src={`/illu/${m.id}.webp`} width="96" height="40" alt="" loading="lazy" />
       <span><strong>{m.belief}</strong><small>{isLive(video) ? '▶ ' : ''}{Math.round(video.durationSec)} {zh ? '秒' : 's'} · {styleLabel(video.style, locale)}{isLive(video) ? '' : (zh ? ` · ${publishLabel(video, locale)}上线` : ` · coming ${publishLabel(video, locale)}`)}</small></span>
