@@ -144,6 +144,42 @@ export const MYTHS_EN: Record<string, MythText> = {
     }
   ]
 },
+  "honey-for-sugar": {
+  "belief": "Swapping sugar for honey counts as cutting down on sugar",
+  "truth": "The sugar in honey is already counted among the 'free sugars' you're told to limit. Swap sugar for honey and sugar is still sugar.",
+  "detail": "The WHO's 2015 definition of free sugars covers monosaccharides and disaccharides added to food, plus sugars naturally present in honey, syrups, fruit juices and fruit juice concentrates. It recommends keeping free sugars below 10% of daily energy (a strong recommendation) and ideally below 5% (a conditional recommendation). The Chinese Nutrition Society's Dietary Guidelines for Chinese Residents (2022) advise keeping added sugar under 50 g a day, ideally under 25 g. (We could not find wording in that guideline that specifically lists honey as an added sugar, so for honey we rely only on the WHO definition.)\n\nNow the arithmetic: according to USDA FoodData Central, 100 g of honey contains 82.1 g of total sugars, and one tablespoon is 21 g. 21 × 0.821 is about 17 g (our own conversion, hence 'about'). Seventeen grams is already close to two-thirds of the 25 g a day you are best off staying under.\n\nThe other tip in the same viral anti-aging video, 'eat vegetables before rice and your post-meal blood sugar can be nearly 40% lower', is only half right. There is research behind it: a 2015 study in Diabetes Care had 11 overweight or obese people with type 2 diabetes, all taking metformin, eat the same meal. Compared with eating carbohydrates first, eating vegetables and protein first and carbohydrates last gave blood glucose about 28.6%, 36.7% and 16.8% lower at 30, 60 and 120 minutes. So 'nearly 40%' is closest to the single one-hour time point, not the whole meal; and it was only 11 people, all with diabetes and all on medication. Later work (a 2019 study of 15 people with prediabetes, a 2025 meta-analysis, and a 2026 systematic review of 6 studies with 144 participants) saw a similar trend, but the review rated the certainty of the evidence (GRADE) as low, with large differences between studies. Verdict: eating vegetables first is worth trying and does no harm, but 'forty percent lower' can't be applied to everyone.",
+  "origin": "Honey is natural and unrefined, so it sounds 'cleaner' than white sugar, and 'swap in honey' gets treated as a way of cutting sugar. The claim appeared in a very popular anti-aging video, alongside 'vegetables first', where both sound like simple, doable health tips. (We don't name the video; we only check these two statements.)",
+  "instead": "To cut down on sugar, use less of it, whether it is white sugar or honey; the best target is under 25 g of added sugar a day. Honey is fine as a flavour, just don't treat it as 'not sugar'. Eating vegetables first is worth a try, but don't expect a fixed reduction. This entry is general information, not medical advice; people with diabetes should follow their doctor's guidance on diet.",
+  "sources": [
+    {
+      "label": "WHO — Guideline: Sugars intake for adults and children (2015; definition of free sugars and the 10% / 5% recommendations)",
+      "url": "https://www.who.int/mediacentre/news/releases/2015/sugar-guideline/en/"
+    },
+    {
+      "label": "Chinese Nutrition Society — Dietary Guidelines for Chinese Residents (2022), core recommendations: added sugar under 50 g a day, ideally under 25 g"
+    },
+    {
+      "label": "USDA FoodData Central — Honey (SR Legacy, FDC 169640)",
+      "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/169640/nutrients"
+    },
+    {
+      "label": "Shukla et al., Diabetes Care 2015 — Food order and postprandial glucose and insulin (11 people with type 2 diabetes)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4876745"
+    },
+    {
+      "label": "Shukla et al., Diabetes Obes Metab 2019 — Food order and glycaemic excursions in prediabetes (15 people)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30101510/"
+    },
+    {
+      "label": "Acta Diabetologica 2025 — Meta-analysis of nutrient intake order in type 2 diabetes",
+      "url": "https://link.springer.com/article/10.1007/s00592-025-02586-0"
+    },
+    {
+      "label": "McKenzie et al., Endocrinol Diabetes Metab 2026 — Systematic review (6 studies, 144 participants, GRADE low)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13121093/"
+    }
+  ]
+},
   "microwave": {
   "belief": "Microwave ovens give off radiation — microwaved food causes cancer and loses all its nutrients",
   "truth": "Microwaves are non-ionizing radiation. All they do is spin water molecules to generate heat — they can't change the chemical structure of food.",

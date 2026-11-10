@@ -221,6 +221,51 @@ export const MYTHS: Myth[] = [
         url: 'https://honey.com/',
       },
     ],
+    related: ['honey-for-sugar'],
+  },
+  {
+    id: 'honey-for-sugar',
+    category: 'eat',
+    belief: '用蜂蜜代替白糖，就算控糖了',
+    truth: '蜂蜜里的糖本来就属于「要少吃」的游离糖，把白糖换成蜂蜜，糖还是糖。',
+    detail:
+      '世界卫生组织（2015）对「游离糖」的定义，包括加入食物的单糖和双糖，以及天然存在于蜂蜜、糖浆、果汁、浓缩果汁中的糖。它建议游离糖低于每日总能量的 10%（强推荐），最好低于 5%（条件推荐）。中国营养学会《中国居民膳食指南（2022）》的建议是：添加糖每天不超过 50 克，最好控制在 25 克以下。（我们没有查到这版指南专门把蜂蜜列为添加糖的原文，所以蜂蜜这一点只引用世界卫生组织的定义。）\n\n再算一笔账：按美国农业部 FoodData Central 的数据，每 100 克蜂蜜含总糖 82.1 克，一汤匙是 21 克，21 × 0.821 约等于 17 克（这是我们自己的换算，所以说「左右」）。17 克，差不多已经是一天最好不超过的 25 克的三分之二。\n\n同一条抗老视频里的另一条建议是「先吃菜再吃饭，餐后血糖能低将近 40%」，只对了一半。确实有研究：2015 年发表在 Diabetes Care 上的一项研究，11 位超重或肥胖、正在服用二甲双胍的 2 型糖尿病患者吃同样的一顿饭，「先吃菜和蛋白质、主食最后」与「先吃主食」相比，饭后 30、60、120 分钟的血糖分别低约 28.6%、36.7%、16.8%。所以「将近 40%」最接近的只是饭后一小时那一个时间点；而且只有 11 个人，全是糖尿病患者并且都在服药。后来的研究（2019 年 15 位糖尿病前期患者；2025 年 meta 分析；2026 年纳入 6 项研究、144 人的系统综述）看到了类似的趋势，但后者的证据把握度（GRADE）为「低」，各研究之间差别也很大。结论：先吃菜值得试、没坏处，但「低四成」不能套在每个人身上。',
+    origin:
+      '蜂蜜是天然的、不经精炼，听上去就比白糖「干净」，于是「换成蜂蜜」被当成一种控糖办法。这个说法在一条很火的抗老视频里出现，和「先吃菜再吃饭」放在一起讲，听上去都像是简单可行的健康小窍门。（我们不点名那条视频，只核对这两句话。）',
+    instead:
+      '想控糖，办法是少放，不管放的是白糖还是蜂蜜；添加糖每天最好不超过 25 克。蜂蜜当调味可以，别当作「不算糖」。先吃菜再吃饭可以试，但别指望固定的降幅。本条是科普，不构成医疗建议；糖尿病患者的饮食请听医生的。',
+    stakes: 'harmless',
+    confidence: 'strong',
+    sources: [
+      {
+        label: 'WHO —— Guideline: Sugars intake for adults and children（2015，游离糖的定义与 10% / 5% 建议）',
+        url: 'https://www.who.int/mediacentre/news/releases/2015/sugar-guideline/en/',
+      },
+      {
+        label: '中国营养学会《中国居民膳食指南（2022）》核心推荐 —— 添加糖每天不超过 50 克，最好 25 克以下',
+      },
+      {
+        label: 'USDA FoodData Central —— Honey（SR Legacy，FDC 169640）',
+        url: 'https://fdc.nal.usda.gov/fdc-app.html#/food-details/169640/nutrients',
+      },
+      {
+        label: 'Shukla et al., Diabetes Care 2015 —— 进食顺序对餐后血糖和胰岛素的影响（11 位 2 型糖尿病患者）',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4876745',
+      },
+      {
+        label: 'Shukla et al., Diabetes Obes Metab 2019 —— 糖尿病前期患者的进食顺序与餐后血糖（15 人）',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/30101510/',
+      },
+      {
+        label: 'Acta Diabetologica 2025 —— 2 型糖尿病营养素进食顺序的 meta 分析',
+        url: 'https://link.springer.com/article/10.1007/s00592-025-02586-0',
+      },
+      {
+        label: 'McKenzie et al., Endocrinol Diabetes Metab 2026 —— 系统综述（6 项研究、144 人，GRADE 低）',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC13121093/',
+      },
+    ],
+    related: ['honey-crystal', 'sugar-hyper', 'juice-fruit'],
   },
   {
     id: 'microwave',
@@ -410,7 +455,7 @@ export const MYTHS: Myth[] = [
         label: 'Hoover & Milich, J Abnorm Child Psychol 1994 —— 母亲期望效应实验',
       },
     ],
-    related: ['juice-fruit', 'craving-deficiency'],
+    related: ['juice-fruit', 'craving-deficiency', 'honey-for-sugar'],
   },
   {
     id: 'carrot-vision',
@@ -456,7 +501,7 @@ export const MYTHS: Myth[] = [
         label: 'WHO —— 游离糖定义包含果汁（Guideline: Sugars intake, 2015）',
       },
     ],
-    related: ['detox', 'sugar-hyper'],
+    related: ['detox', 'sugar-hyper', 'honey-for-sugar'],
   },
 
   {
