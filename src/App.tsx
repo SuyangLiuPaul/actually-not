@@ -1,3 +1,4 @@
+import { Subscribe } from './components/Subscribe'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { CATEGORIES, type CategoryId, type Stakes } from './types'
 import {
@@ -519,6 +520,7 @@ export default function App() {
           className="border-t pt-8 pb-16 text-[13px] leading-[1.8]"
           style={{ borderColor: 'var(--rule)', color: 'var(--ink-faint)' }}
         >
+          <Subscribe locale={locale} />
           <p className="max-w-[62ch]">
             <strong style={{ color: 'var(--ink-soft)' }}>{t.footerAboutTitle}</strong>
             {t.footerAbout}
