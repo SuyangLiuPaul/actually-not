@@ -7,7 +7,7 @@ import type { Locale } from '../i18n'
  * 用 youtube-nocookie 域名嵌入；懒加载，进入视口前不请求任何第三方资源。
  */
 export function EntryVideo({ id, title, locale }: { id: string; title: string; locale: Locale }) {
-  const video = videoFor(id)
+  const video = videoFor(id, locale)
   // 预渲染时不知道访问时刻；挂载后再判断是否已公开，避免水合不一致（先显示预告卡）。
   const [now, setNow] = useState<Date | null>(null)
   useEffect(() => setNow(new Date()), [])

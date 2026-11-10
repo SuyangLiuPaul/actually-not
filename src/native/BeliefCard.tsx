@@ -27,7 +27,7 @@ export function BeliefCard({ myth, locale, record, firstTime, onAnswer, onOpen, 
   const zh = locale === 'zh'
   const revealed = !!record
   const truthRef = useRef<HTMLDivElement>(null)
-  const video = videoFor(myth.id)
+  const video = videoFor(myth.id, locale)
   const answeredHere = useRef(false)
   useEffect(() => { if (revealed && answeredHere.current) truthRef.current?.focus({ preventScroll: true }) }, [revealed])
 

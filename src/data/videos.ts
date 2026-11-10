@@ -15,6 +15,8 @@ export interface EntryVideo {
   publishAt?: string
   /** 横屏（16:9）视频；不填就是 9:16 竖屏短片 */
   landscape?: boolean
+  /** 英文版（英文界面优先用它）；只填和中文版不同的字段 */
+  en?: { youtubeId: string; durationSec?: number; publishAt?: string }
 }
 
 export const VIDEO_PENDING = 'PENDING'
@@ -30,7 +32,7 @@ export const VIDEOS: Record<string, EntryVideo> = {
   'origin-great-wall-from-space': { youtubeId: 'fqZNkrSSzoY', durationSec: 52, publishAt: '2026-11-12T17:00:00+11:00', style: 'Glow sketch' },
   'tongue-map': { youtubeId: '69L8h8QzHV0', durationSec: 60, publishAt: '2026-11-26T17:00:00+11:00', style: '3D cartoon' },
   'origin-railway-gauge': { youtubeId: '0MDB7LfwHP4', durationSec: 54, publishAt: '2026-12-10T17:00:00+11:00', style: 'Toy bricks' },
-  leftovers: { youtubeId: 'gbajL3AI8us', durationSec: 212, publishAt: '2026-11-13T17:00:00+11:00', style: 'Kitchen flat illustration', landscape: true },
+  leftovers: { youtubeId: 'gbajL3AI8us', durationSec: 212, publishAt: '2026-11-13T17:00:00+11:00', style: 'Kitchen flat illustration', landscape: true, en: { youtubeId: 'p9GyW8ikX_U', durationSec: 215, publishAt: '2026-11-11T11:00:00+11:00' } },
 }
 
 const STYLE_ZH: Record<string, string> = {
@@ -52,8 +54,9 @@ export function lengthLabel(v: EntryVideo, locale: 'zh' | 'en'): string {
 }
 
 /** 该条目的可播放视频；没有，或还是 PENDING 占位时返回 undefined（界面据此什么都不渲染） */
-export function videoFor(id: string): EntryVideo | undefined {
-  const v = VIDEOS[id]
+export function videoFor(id: string, locale?: 'zh' | 'en'): EntryVideo | undefined {
+  const base = VIDEOS[id]
+  const v = base && locale === 'en' && base.en && base.en.youtubeId !== VIDEO_PENDING ? { ...base, ...base.en } : base
   return v && v.youtubeId !== VIDEO_PENDING && /^[A-Za-z0-9_-]{6,20}$/.test(v.youtubeId) ? v : undefined
 }
 
