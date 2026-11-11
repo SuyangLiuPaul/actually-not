@@ -9,7 +9,7 @@ type Site = { name: string; handle: string; href?: string }
 
 const ZH: Site[] = [
   { name: '视频号', handle: '先别急着信（微信里搜索）' },
-  { name: '公众号', handle: '先别急着信（扫二维码）' },
+  { name: '公众号', handle: '先别急着信呀 · ID notsofastshow（或扫二维码）' },
   { name: '抖音', handle: '先别急着信', href: 'https://www.douyin.com/user/MS4wLjABAAAAJLHasftN7oI0l3i_G2e-rswPmv3oAd_y9HYpjKzRhLD4QGWtu8CDVUngeV9ZvieF' },
   { name: '小红书', handle: '先别急着信', href: 'https://www.xiaohongshu.com/user/profile/5e185efd000000000100a404' },
   { name: 'B站', handle: '先别急着信', href: 'https://space.bilibili.com/3546678881683541' },
