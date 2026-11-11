@@ -52,7 +52,7 @@ const ZH: { lead: string; blocks: Block[]; channelLead: string; channelTail: str
     },
   ],
   channelLead: '我们也有一个同名的视频频道「先别急着信」（英文 Not So Fast，YouTube：',
-  channelTail: '），把其中一些说法讲成一两分钟的短视频。视频里的解说是 AI 合成的语音，用的是创作者本人声音的克隆，不是真人现场录音——这一点我们不想含糊。',
+  channelTail: '），把其中一些说法讲成几分钟的短视频。视频里的解说是 AI 合成的语音，用的是创作者本人声音的克隆，不是真人现场录音——这一点我们不想含糊。',
 }
 
 const EN: typeof ZH = {
