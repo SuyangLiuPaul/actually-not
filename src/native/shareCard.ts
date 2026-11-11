@@ -157,7 +157,7 @@ export function layoutShareCard(input: CardInput, measure: Measure): CardLayout 
   ops.push({ t: 'text', text: confText, x: PAD + 28, y: y + 42, font: confFont, color })
 
   ops.push({ t: 'rule', x1: PAD, x2: CARD_W - PAD, y: FOOTER_TOP })
-  ops.push({ t: 'text', text: zh ? '其实不是 · 每条附出处' : 'Actually, Not · every entry sourced', x: PAD, y: FOOTER_TOP + 70, font: `600 30px ${SERIF}`, color: CARD_COLORS.ink })
+  ops.push({ t: 'text', text: zh ? '先别急着信 · 每条附出处' : 'Not So Fast · every entry sourced', x: PAD, y: FOOTER_TOP + 70, font: `600 30px ${SERIF}`, color: CARD_COLORS.ink })
   ops.push({ t: 'text', text: 'actually-not.com', x: CARD_W - PAD, y: FOOTER_TOP + 70, font: `500 28px ${SANS}`, color: CARD_COLORS.soft, align: 'right' })
   return { width: CARD_W, height: CARD_H, ops, beliefLines, truthLines }
 }

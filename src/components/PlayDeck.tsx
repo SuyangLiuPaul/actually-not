@@ -109,7 +109,7 @@ export function PlayDeck({ locale, onOpen, onBrowse, onRead, initialRound, onDis
 
   async function shareRound() {
     const params = new URLSearchParams({ challenge: questions.map(q => q.id).join(',') })
-    const result = await shareDiscovery(locale === 'zh' ? '三次改观 · 其实不是' : 'Three discoveries · Actually, Not', locale === 'zh' ? '这三条，你怎么看？先猜，再让出处说话。' : 'What do you think about these three? Guess, then let the sources speak.', `https://actually-not.com/${locale === 'en' ? 'en/' : ''}?${params}`)
+    const result = await shareDiscovery(locale === 'zh' ? '三次改观 · 先别急着信' : 'Three discoveries · Not So Fast', locale === 'zh' ? '这三条，你怎么看？先猜，再让出处说话。' : 'What do you think about these three? Guess, then let the sources speak.', `https://actually-not.com/${locale === 'en' ? 'en/' : ''}?${params}`)
     setShareNotice(result === 'copied' ? (locale === 'zh' ? '挑战链接已复制。' : 'Challenge link copied.') : '')
   }
 

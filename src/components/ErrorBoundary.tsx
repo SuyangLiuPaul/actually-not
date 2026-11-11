@@ -91,7 +91,7 @@ export class ErrorBoundary extends Component<Props, State> {
 
         <p className="mt-8 text-[13px]" style={{ color: 'var(--ink-faint)' }}>
           反复出现的话，欢迎{' '}
-          <a href="mailto:lsy95112@gmail.com" className="underline underline-offset-2">
+          <a href="mailto:contact@actually-not.com" className="underline underline-offset-2">
             发邮件告诉我们
           </a>
           。

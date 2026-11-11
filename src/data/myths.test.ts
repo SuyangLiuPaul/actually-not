@@ -38,6 +38,11 @@ describe('内容数据完整性', () => {
     expect(dupes).toEqual([])
   })
 
+  it('id 不与站点页面路由冲突（quiz / about）', () => {
+    const clash = MYTHS.filter((m) => ['quiz', 'about'].includes(m.id)).map((m) => m.id)
+    expect(clash).toEqual([])
+  })
+
   it('id 是可用作 URL 片段的短横线小写形式', () => {
     const bad = MYTHS.filter((m) => !/^[a-z0-9]+(-[a-z0-9]+)*$/.test(m.id)).map((m) => m.id)
     expect(bad).toEqual([])

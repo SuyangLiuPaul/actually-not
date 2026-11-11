@@ -68,7 +68,7 @@ export default function NativeApp() {
   const { read, markRead, toggleRead, readCount } = useReadProgress()
   const current = myths.find((m) => m.id === openId)
 
-  useEffect(() => { document.documentElement.lang = zh ? 'zh-CN' : 'en'; document.title = zh ? '其实不是' : 'Actually, Not' }, [zh])
+  useEffect(() => { document.documentElement.lang = zh ? 'zh-CN' : 'en'; document.title = zh ? '先别急着信' : 'Not So Fast' }, [zh])
   useEffect(() => { document.documentElement.dataset.theme = theme; remember('app-theme', theme) }, [theme])
   useEffect(() => { document.documentElement.classList.toggle('app-large', large); remember('app-large', large ? '1' : '0') }, [large])
   useEffect(() => { setUseDays((days) => { const next = addUseDay(days, day); remember('app-used-days', JSON.stringify(next)); return next }) }, [day])
@@ -121,7 +121,7 @@ export default function NativeApp() {
     setNotice('')
     try {
       const canvas = await renderShareCard({ belief: m.belief, truth: m.truth, confidence: m.confidence, confidenceLabel: confidenceMeta(m.confidence, locale).label, category: categoryLabel(m.category, locale), locale, artSrc: `/illu/${m.id}.webp` })
-      const result = await shareCanvas(canvas, `actually-not-${m.id}.png`, zh ? '其实不是' : 'Actually, Not')
+      const result = await shareCanvas(canvas, `actually-not-${m.id}.png`, zh ? '先别急着信' : 'Not So Fast')
       if (result === 'downloaded') setNotice(zh ? '结论图已保存。' : 'Image saved.')
     } catch { setNotice(zh ? '暂时无法生成结论图。' : 'Could not create the image.') }
   }
@@ -158,7 +158,7 @@ export default function NativeApp() {
       {tab === 'library' && <LibraryView key={`${locale}:${libraryFilter.nonce}`} myths={myths} locale={locale} read={read} readCount={readCount} saved={saved} initial={libraryFilter} onOpen={open} onRead={markRead} onQuiz={quiz} />}
       {tab === 'journal' && journalMode === 'settings' && <SettingsView locale={locale} theme={theme} large={large} nativeApp={native} reminderOn={reminderOn} reminderTime={reminderTime} busy={busy} notice={notice}
         onBack={() => { setJournalMode('list'); setNotice('') }} onLocale={chooseLocale} onTheme={setTheme} onLarge={setLarge} onReminderTime={setReminderTime} onReminderToggle={() => void reminderToggle()}
-        onExport={() => void exportJournal()} onShareApp={() => void shareDiscovery(zh ? '其实不是' : 'Actually, Not', zh ? '每天一条「你以为」，每条附出处。' : 'One “you might think” a day, every one sourced.', 'https://actually-not.com/')} onPrivacy={() => void openSource('https://actually-not.com/privacy/')} />}
+        onExport={() => void exportJournal()} onShareApp={() => void shareDiscovery(zh ? '先别急着信' : 'Not So Fast', zh ? '每天一条「你以为」，每条附出处。' : 'One “you might think” a day, every one sourced.', 'https://actually-not.com/')} onPrivacy={() => void openSource('https://actually-not.com/privacy/')} />}
       {tab === 'journal' && journalMode !== 'settings' && <JournalView journal={journal} myths={myths} locale={locale} day={day} read={read} readCount={readCount} saved={saved} due={due} reviewing={journalMode === 'review'} showOffer={showOffer}
         onReviewStart={() => setJournalMode('review')} onReviewEnd={() => setJournalMode('list')} onReviewRecord={reviewed} onOpen={open} onSave={save} onSettings={() => { setJournalMode('settings'); window.scrollTo({ top: 0 }) }}
         onToday={() => switchTab('today')} onLibrary={toLibrary} onOfferAccept={() => { dismissOffer(); void enableReminder() }} onOfferDismiss={dismissOffer} />}

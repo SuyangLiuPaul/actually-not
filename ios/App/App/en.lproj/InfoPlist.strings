@@ -1,2 +1,2 @@
 /* 应用名称（桌面图标下方的名字）。Info.plist 里没有其他需要本地化的权限说明。 */
-"CFBundleDisplayName" = "Actually, Not";
+"CFBundleDisplayName" = "Not So Fast";

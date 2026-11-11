@@ -135,7 +135,7 @@ function svg(m, opts = {}) {
     sans = SANS,
     wrapFn = wrap,
     header = '常识核对表',
-    footer = '其实不是 · 每条附出处 · actually-not.com',
+    footer = '先别急着信 · 每条附出处 · actually-not.com',
     headerSpacing = 6,
   } = opts
   const belief = layoutBelief(m.belief, wrapFn)
@@ -202,7 +202,7 @@ async function main() {
             sans: SANS_EN,
             wrapFn: wrapWords,
             header: CAT_EN[m.category],
-            footer: 'Actually, Not · every entry sourced · actually-not.com',
+            footer: 'Not So Fast · every entry sourced · actually-not.com',
             headerSpacing: 3,
           },
         ),

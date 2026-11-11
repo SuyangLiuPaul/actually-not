@@ -1,6 +1,6 @@
 # 内容研究任务书（所有研究员共用）
 
-你在为 https://actually-not.com（「其实不是」/ Actually, Not）写新条目。这是一个中英双语卡片站：
+你在为 https://actually-not.com（「先别急着信」/ Not So Fast）写新条目。这是一个中英双语卡片站：
 **一个人人都信的说法 → 一句纠正 → 可核对的出处**。护城河是**准确**，不是数量。
 
 先读这三样（路径都在 `/Users/pliu0036/Documents/CodingProject/not-so-fast/site/`）：

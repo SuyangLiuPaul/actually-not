@@ -8,10 +8,16 @@ export type Locale = 'zh' | 'en'
 
 const zh = {
   brand: '常识核对表',
-  siteName: '其实不是',
-  homeTitle: '其实不是 · 那些你以为对的常识、名言和故事',
-  quizTitle: '你中了几条？｜其实不是',
-  mythTitle: (belief: string) => `${belief}｜其实不是`,
+  siteName: '先别急着信',
+  slogan: '信不信，查过再说。',
+  aboutLink: '关于我们',
+  aboutTitle: '关于我们｜先别急着信',
+  aboutDescription: '先别急着信：把流传很广的说法拿去对照最好的证据，每条附出处。我们怎么核查、怎么改错，以及怎么联系我们。',
+  aboutBack: '← 回到全部条目',
+  contactLabel: '联系我们',
+  homeTitle: '先别急着信 · 那些你以为对的常识、名言和故事',
+  quizTitle: '你中了几条？｜先别急着信',
+  mythTitle: (belief: string) => `${belief}｜先别急着信`,
   skipToContent: '跳到正文',
   introLead: '早上不吃饭伤身、洗完头不吹干有湿气、骨头汤补钙——有些说法听起来天经地义，讲了几十年，但证据并不支持。不只是生活常识——「鲁迅没说过」的名言、电影里演错的桥段、被人编出来的起源故事，这里也一并核对。',
   introCountLead: '这里收了 ',
@@ -71,7 +77,7 @@ const zh = {
   shareCopied: '链接已复制',
   shareAria: '分享这一条，复制链接',
   shareTitle: '分享这一条',
-  shareNativeTitle: (belief: string) => `其实不是：${belief}`,
+  shareNativeTitle: (belief: string) => `先别急着信：${belief}`,
   shareNativeText: (belief: string, truth: string) => `你以为「${belief}」？其实——${truth}`,
   correctionLead: '这条写错了、出处打不开、或者有更准的说法？',
   correctionCta: '发邮件纠错',
@@ -101,7 +107,7 @@ const zh = {
   quizNotBelieved: '没信过',
   quizImgAlt: (score: number, total: number) => `成绩图：${total} 条里中过 ${score} 条`,
   quizShareText: (score: number, total: number, origin: string) =>
-    `我在「其实不是」的常识测验里 ${total} 条中过 ${score} 条——你呢？ ${origin}/quiz`,
+    `我在「先别急着信」的常识测验里 ${total} 条中过 ${score} 条——你呢？ ${origin}/quiz`,
   quizVerdict: (n: number): string => {
     if (n <= 2) return '你不太好骗。'
     if (n <= 5) return '正常人水平——这些说法本来就设计得很可信。'
@@ -110,7 +116,7 @@ const zh = {
   },
   quizImgHeader: '常识核对表 · 你中了几条',
   quizImgScore: (score: number, total: number) => `${total} 条里中过 ${score} 条`,
-  quizImgFooter: '其实不是 · 每条附出处 · actually-not.com/quiz',
+  quizImgFooter: '先别急着信 · 每条附出处 · actually-not.com/quiz',
   quizImgFile: (score: number, total: number) => `你中了几条-${score}of${total}.png`,
 
   updateNew: '有新内容',
@@ -129,10 +135,16 @@ export type T = typeof zh
 
 const en: T = {
   brand: 'The Common-Sense Checklist',
-  siteName: 'Actually, Not',
-  homeTitle: 'Actually, Not · Common sense, quotes and stories you thought were true',
-  quizTitle: 'How many got you? | Actually, Not',
-  mythTitle: (belief) => `${belief} | Actually, Not`,
+  siteName: 'Not So Fast',
+  slogan: "Not so fast. Let's check.",
+  aboutLink: 'About',
+  aboutTitle: 'About | Not So Fast',
+  aboutDescription: 'Not So Fast takes popular claims and checks them against the best evidence, with sources for every entry. How we work, how we correct mistakes, and how to reach us.',
+  aboutBack: '← Back to all entries',
+  contactLabel: 'Contact',
+  homeTitle: 'Not So Fast · Common sense, quotes and stories you thought were true',
+  quizTitle: 'How many got you? | Not So Fast',
+  mythTitle: (belief) => `${belief} | Not So Fast`,
   skipToContent: 'Skip to content',
   introLead:
     "Skipping breakfast wrecks your stomach. Going out with wet hair gives you a cold. Bone soup is full of calcium. Some claims sound self-evident — they've been repeated for decades — but the evidence doesn't back them. And it's not only health: misattributed quotes, things the movies got wrong, and origin stories somebody made up get the same fact-check. ",
@@ -195,7 +207,7 @@ const en: T = {
   shareCopied: 'Link copied',
   shareAria: 'Share this entry, copy link',
   shareTitle: 'Share this entry',
-  shareNativeTitle: (belief) => `Actually, Not: ${belief}`,
+  shareNativeTitle: (belief) => `Not So Fast: ${belief}`,
   shareNativeText: (belief, truth) => `You'd think "${belief}"? Actually — ${truth}`,
   correctionLead: 'Something wrong here, a dead source link, or a more accurate framing?',
   correctionCta: 'Email a correction',
@@ -227,7 +239,7 @@ const en: T = {
   quizNotBelieved: 'Nope',
   quizImgAlt: (score, total) => `Score card: ${score} out of ${total}`,
   quizShareText: (score, total, origin) =>
-    `I fell for ${score} out of ${total} everyday myths on "Actually, Not" — how about you? ${origin}/en/quiz`,
+    `I fell for ${score} out of ${total} everyday myths on "Not So Fast" — how about you? ${origin}/en/quiz`,
   quizVerdict: (n) => {
     if (n <= 2) return "You're hard to fool."
     if (n <= 5) return "About average — these claims were engineered to sound true."
@@ -236,7 +248,7 @@ const en: T = {
   },
   quizImgHeader: 'The Common-Sense Checklist',
   quizImgScore: (score, total) => `${score} out of ${total} got me`,
-  quizImgFooter: 'Actually, Not · every entry sourced · actually-not.com/en/quiz',
+  quizImgFooter: 'Not So Fast · every entry sourced · actually-not.com/en/quiz',
   quizImgFile: (score, total) => `actually-not-${score}of${total}.png`,
 
   updateNew: 'New content available',
@@ -251,8 +263,11 @@ const en: T = {
   checkUpdateLatest: "You're up to date",
 }
 
+/** 站点公开联系邮箱（页脚、关于页） */
+export const CONTACT_EMAIL = 'contact@actually-not.com'
+
 /** 投稿 / 纠错反馈邮箱 */
-export const FEEDBACK_EMAIL = 'lsy95112@gmail.com'
+export const FEEDBACK_EMAIL = 'contact@actually-not.com'
 
 export const STRINGS: Record<Locale, T> = { zh, en }
 

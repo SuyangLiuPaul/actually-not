@@ -44,8 +44,8 @@ export default defineConfig({
       // 两边都写会让 precache 清单里出现重复条目。
       manifest: {
         id: '/',
-        name: '其实不是 · 那些你以为对的常识、名言和故事',
-        short_name: '其实不是',
+        name: '先别急着信 · 那些你以为对的常识、名言和故事',
+        short_name: '先别急着信',
         description: DESCRIPTION,
         lang: 'zh-CN',
         dir: 'ltr',
@@ -91,7 +91,7 @@ export default defineConfig({
             name: '名言没说过：被误传的名言',
             short_name: '名言',
             url: '/?c=quote',
-            description: '这句话，其实不是他说的',
+            description: '这句话，先别急着信他说的',
           },
         ],
       },

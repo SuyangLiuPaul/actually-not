@@ -23,8 +23,8 @@ export function parseTime(time: string): { hour: number; minute: number } | null
 export function reminderText(belief: string, locale: Locale): { title: string; body: string } {
   const claim = belief.trim()
   return locale === 'zh'
-    ? { title: '其实不是', body: `「${claim}」你信吗？` }
-    : { title: 'Actually, Not', body: `“${claim}” Do you buy it?` }
+    ? { title: '先别急着信', body: `「${claim}」你信吗？` }
+    : { title: 'Not So Fast', body: `“${claim}” Do you buy it?` }
 }
 
 /**

@@ -4,6 +4,7 @@ import App from './App'
 import { ErrorBoundary } from './components/ErrorBoundary'
 import { MYTHS } from './data/myths'
 import { mythsFor } from './data/localized'
+import { STRINGS } from './i18n'
 
 /**
  * 预渲染入口（只在构建时运行，不进客户端 bundle）。
@@ -26,39 +27,41 @@ const MYTHS_EN = mythsFor('en')
 export const ROUTES: PrerenderRoute[] = [
   {
     path: '/',
-    title: '其实不是 · 那些你以为对的常识、名言和故事',
+    title: '先别急着信 · 那些你以为对的常识、名言和故事',
     description: `早上不吃饭伤身、鲁迅说过的名言、电影里的桥段……${MYTHS.length} 条听起来天经地义、但证据并不支持的说法，每条附出处。`,
   },
   {
     path: '/quiz',
-    title: '你中了几条？｜其实不是',
+    title: '你中了几条？｜先别急着信',
     description:
       '随机抽 10 条听起来天经地义的说法，只问你信不信过，最后逐条对答案——每条都有出处。',
   },
+  { path: '/about', title: STRINGS.zh.aboutTitle, description: STRINGS.zh.aboutDescription },
   ...MYTHS.map((m) => ({
     path: `/${m.id}`,
-    title: `${m.belief}｜其实不是`,
+    title: `${m.belief}｜先别急着信`,
     description: m.truth,
     image: `/og/${m.id}.png`,
-    imageAlt: `「${m.belief}」——其实不是`,
+    imageAlt: `「${m.belief}」——先别急着信`,
   })),
   {
     path: '/en',
-    title: 'Actually, Not · Common sense, quotes and stories you thought were true',
+    title: 'Not So Fast · Common sense, quotes and stories you thought were true',
     description: `Skipping breakfast wrecks your stomach? Einstein said it? The movies got it right? ${MYTHS_EN.length} claims that sound self-evident but aren't backed by evidence — each with sources.`,
   },
   {
     path: '/en/quiz',
-    title: 'How many got you? | Actually, Not',
+    title: 'How many got you? | Not So Fast',
     description:
       'We draw 10 random everyday claims, ask if you ever believed them, then go through the answers one by one — every one with sources.',
   },
+  { path: '/en/about', title: STRINGS.en.aboutTitle, description: STRINGS.en.aboutDescription },
   ...MYTHS_EN.map((m) => ({
     path: `/en/${m.id}`,
-    title: `${m.belief} | Actually, Not`,
+    title: `${m.belief} | Not So Fast`,
     description: m.truth,
     image: `/og/en/${m.id}.png`,
-    imageAlt: `"${m.belief}" — actually, not`,
+    imageAlt: `"${m.belief}" — Not So Fast`,
   })),
 ]
 

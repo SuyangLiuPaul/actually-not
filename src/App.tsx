@@ -19,6 +19,7 @@ import { MythCard } from './components/MythCard'
 import { MythDetail } from './components/MythDetail'
 import { Quiz } from './components/Quiz'
 import { PlayDeck } from './components/PlayDeck'
+import { About, MailLink } from './components/About'
 
 type Theme = 'light' | 'dark' | 'auto'
 
@@ -51,6 +52,7 @@ export default function App() {
     return mythsFor(parsePath(currentPath()).locale).some((m) => m.id === id) ? id : null
   })
   const [quizOpen, setQuizOpen] = useState(() => parsePath(currentPath()).id === 'quiz')
+  const [aboutOpen, setAboutOpen] = useState(() => parsePath(currentPath()).id === 'about')
   const [theme, setTheme] = useState<Theme>('auto')
   // 手动检查更新：点了以后问 service worker 要新版本，
   // 有新版时 UpdatePrompt 的弹条会自动出现；没有就显示「已是最新」几秒
@@ -97,7 +99,7 @@ export default function App() {
   useEffect(() => {
     document
       .querySelector('meta[name="apple-mobile-web-app-title"]')
-      ?.setAttribute('content', locale === 'en' ? 'Actually, Not' : '其实不是')
+      ?.setAttribute('content', locale === 'en' ? 'Not So Fast' : '先别急着信')
     const manifest = document.querySelector<HTMLLinkElement>('link[rel="manifest"]')
     if (manifest) manifest.href = locale === 'en' ? '/manifest-en.webmanifest' : '/manifest.webmanifest'
   }, [locale])
@@ -116,6 +118,7 @@ export default function App() {
       setLocale(loc)
       setOpenId(mythsFor(loc).some((m) => m.id === id) ? id : null)
       setQuizOpen(id === 'quiz')
+      setAboutOpen(id === 'about')
     }
     window.addEventListener('popstate', sync)
     return () => window.removeEventListener('popstate', sync)
@@ -164,6 +167,20 @@ export default function App() {
     setQuizOpen(true)
   }, [locale])
 
+  const openAbout = useCallback(() => {
+    history.pushState('', '', pathFor(locale, 'about'))
+    setOpenId(null)
+    setQuizOpen(false)
+    setAboutOpen(true)
+    window.scrollTo(0, 0)
+  }, [locale])
+
+  const closeAbout = useCallback(() => {
+    history.pushState('', '', pathFor(locale, ''))
+    setAboutOpen(false)
+    window.scrollTo(0, 0)
+  }, [locale])
+
   const closeQuiz = useCallback(() => {
     history.pushState('', '', `${pathFor(locale, '')}${window.location.search}`)
     setQuizOpen(false)
@@ -187,12 +204,14 @@ export default function App() {
 
   // 标题跟着当前条目 / 测验走（和预渲染页面的 <title> 同一格式）
   useEffect(() => {
-    document.title = quizOpen
-      ? t.quizTitle
-      : openMyth
+    document.title = aboutOpen
+      ? t.aboutTitle
+      : quizOpen
+        ? t.quizTitle
+        : openMyth
         ? t.mythTitle(openMyth.belief)
         : t.homeTitle
-  }, [openMyth, quizOpen, t])
+  }, [openMyth, quizOpen, aboutOpen, t])
 
   // 「/」聚焦搜索框
   useEffect(() => {
@@ -297,7 +316,7 @@ export default function App() {
                 )}
               </button>
               <a
-                href={pathFor(locale === 'en' ? 'zh' : 'en', openId ?? (quizOpen ? 'quiz' : ''))}
+                href={pathFor(locale === 'en' ? 'zh' : 'en', openId ?? (quizOpen ? 'quiz' : aboutOpen ? 'about' : ''))}
                 aria-label={t.langToggleLabel}
                 onClick={() => {
                   try {
@@ -319,13 +338,34 @@ export default function App() {
             </div>
           </div>
 
-          <h1
-            className="text-[1.9rem] leading-[1.08] font-bold tracking-tight sm:text-[2.75rem]"
-            style={{ fontFamily: 'var(--font-serif)' }}
-          >
-            {t.siteName}
-          </h1>
+          {(() => {
+            const Brand = aboutOpen ? 'p' : 'h1'
+            return (
+              <Brand
+                className="text-[1.9rem] leading-[1.08] font-bold tracking-tight sm:text-[2.75rem]"
+                style={{ fontFamily: 'var(--font-serif)' }}
+              >
+                {aboutOpen ? (
+                  <a href={pathFor(locale, '')} onClick={(e) => { if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return; e.preventDefault(); closeAbout() }}>{t.siteName}</a>
+                ) : t.siteName}
+              </Brand>
+            )
+          })()}
 
+          {!aboutOpen && (<p className="mt-2 text-[15px] italic" style={{ color: 'var(--ink-soft)', fontFamily: 'var(--font-serif)' }} data-slogan="">
+            {t.slogan}
+            {' '}
+                <a
+                  href={pathFor(locale, 'about')}
+                  onClick={(e) => { if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return; e.preventDefault(); openAbout() }}
+                  className="text-[13px] not-italic underline decoration-dotted underline-offset-[3px]"
+                  style={{ color: 'var(--ink-faint)', fontFamily: 'var(--font-sans)' }}
+                >
+                  {t.aboutLink}
+                </a>
+          </p>)}
+
+          {!aboutOpen && (<>
           <p className="mt-3 text-sm" style={{ color: 'var(--ink-soft)' }}>
             {locale === 'zh' ? `名言、故事、常识里的意外真相。${myths.length} 条，每条附出处。` : `Unexpected truths behind quotes, stories and common sense. ${myths.length} entries, every one sourced.`}
           </p>
@@ -335,8 +375,12 @@ export default function App() {
             <button className="play-text-button" onClick={() => { document.getElementById('library')?.scrollIntoView({ behavior: 'instant' }); searchRef.current?.focus({ preventScroll: true }) }}>{locale === 'zh' ? '搜索内容' : 'Search entries'}</button>
 
           </div>
+          </>)}
         </header>
 
+        {aboutOpen ? (
+          <About locale={locale} onBack={closeAbout} />
+        ) : (<>
         <a className="app-web-entry" href="/app/"><span><strong>{locale === 'zh' ? '把好奇心随身带走' : 'Take your curiosity with you'}</strong><small>{locale === 'zh' ? '每日续玩 · 动手实验 · 随机探索 · 我的改观簿' : 'Daily discoveries · experiments · exploration · your journal'}</small></span><span>{locale === 'zh' ? '进入 App ↗' : 'Open app ↗'}</span></a>
         <PlayDeck key={locale} locale={locale} onOpen={open} onBrowse={browseAll} onRead={markRead} />
         <div id="library" className="mb-4 flex flex-wrap items-end justify-between gap-3">
@@ -515,6 +559,7 @@ export default function App() {
             </>
           )}
         </main>
+        </>)}
 
         {/* ── 页脚 ── */}
         <footer
@@ -545,6 +590,16 @@ export default function App() {
             >
               {t.footerSubmit}
             </a>
+            <MailLink className="" />
+            {!aboutOpen && (
+              <a
+                href={pathFor(locale, 'about')}
+                onClick={(e) => { if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return; e.preventDefault(); openAbout() }}
+                className="underline decoration-dotted underline-offset-[3px]"
+              >
+                {t.aboutLink}
+              </a>
+            )}
             <a
               href="https://github.com/SuyangLiuPaul/actually-not"
               target="_blank"

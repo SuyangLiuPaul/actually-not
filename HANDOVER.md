@@ -6,9 +6,9 @@
 
 ## 0. 一句话
 
-「其实不是」是一个中英双语静态站点，收录 188 条**听起来天经地义、但证据并不支持**的生活常识
+「先别急着信」（英文 Not So Fast；信不信，查过再说。）是一个中英双语静态站点，收录 188 条**听起来天经地义、但证据并不支持**的生活常识
 （早上不吃饭伤身、洗完头不吹干有湿气、骨头汤补钙……），每条附出处。
-中文版在根路径，英文版（Actually, Not）在 `/en` 前缀下，页头可互相切换。
+中文版在根路径，英文版（Not So Fast）在 `/en` 前缀下，页头可互相切换。
 纯前端，无后端，无数据库，无环境依赖。
 
 | | |
@@ -406,7 +406,7 @@ ChatGPT 的下载按钮存到 ~/Downloads 再导入的。** 旧的 104 条是 po
 按同样流程逐步换掉。`scripts/illu-svg/` 是手绘 SVG 兜底库（25 个图元），ChatGPT 额度用完时用。
 卡片和详情页都是横幅裁切（object-cover），主体要放在画面中间。
 
-**OG 图**：左上角红字现在是板块名，页脚统一为「其实不是 · 每条附出处 · actually-not.com」。
+**OG 图**：左上角红字现在是板块名，页脚统一为「先别急着信 · 每条附出处 · actually-not.com」。
 <!-- END CONTENT_PIPELINE -->
 
 ---
@@ -494,7 +494,7 @@ Google Play 个人开发者账号不能发布含「医疗」功能的应用（�
 - 待真机验证：iOS 的 WebView 来源是 `capacitor://localhost`，YouTube 有时对非 http(s) 来源报播放器配置错误（153）；真机上用真实视频 ID 试一次。万一不行，兜底链接会在系统浏览器里打开。不要为此改 `server.iosScheme`（会改变本地存储来源，丢用户的收藏和改观簿）。
 
 ### iOS 多语言
-`ios/App/App/en.lproj` 与 `zh-Hans.lproj` 各有 `InfoPlist.strings`（`CFBundleDisplayName`：Actually, Not / 其实不是；Info.plist 里没有其他权限说明字符串，所以没有别的要翻）。已在 pbxproj 注册（knownRegions += zh-Hans，`InfoPlist.strings` PBXVariantGroup 进 Resources 阶段）。内容只有简体 + 英文，没有繁体，所以不加 zh-Hant。`CFBundleLocalizations` = zh-Hans, en 与之一致。
+`ios/App/App/en.lproj` 与 `zh-Hans.lproj` 各有 `InfoPlist.strings`（`CFBundleDisplayName`：Not So Fast / 先别急着信；Info.plist 里没有其他权限说明字符串，所以没有别的要翻）。已在 pbxproj 注册（knownRegions += zh-Hans，`InfoPlist.strings` PBXVariantGroup 进 Resources 阶段）。内容只有简体 + 英文，没有繁体，所以不加 zh-Hant。`CFBundleLocalizations` = zh-Hans, en 与之一致。
 
 ### 命令行验证 iOS 构建的坑
 `xcodebuild … -scheme App` 在新的 derivedDataPath 上会卡在「Checking out capacitor-swift-pm」之后（0% CPU，不报错）。复用已有的 SPM 缓存就能过：
@@ -526,3 +526,12 @@ Google Play 个人开发者账号不能发布含「医疗」功能的应用（�
 - 真机上的分享面板（Filesystem 写缓存 + Share files）。网页 headless 里只验证了画图。
 - 真机桌面上看图标（iOS 深色 / 着色、Android 主题图标、各家启动器遮罩）。提交商店前请 Paul 亲自看一眼红笔笔触（REDESIGN §6 的风险）。
 - VoiceOver / TalkBack 全流程。
+
+## 品牌与关于页（2026-11-12）
+
+公开品牌统一为「先别急着信」/ Not So Fast（域名 actually-not.com 不变；旧名「其实不是」/ Actually Not 不再作品牌用）。
+口号：「信不信，查过再说。」/ "Not so fast. Let's check."。联系邮箱 `contact@actually-not.com`（`CONTACT_EMAIL` / `FEEDBACK_EMAIL`，在 `src/i18n.ts`）。
+- **保留的旧名**：`cardCta`（卡片上的「其实不是」/ "Actually, not"）是翻开答案的功能标签，不是品牌。
+- **/about 与 /en/about**：`src/components/About.tsx`，在 `App.tsx` 里和 `quiz` 一样按路径 id 判断（条目 id 不可取 `about` / `quiz`，有测试挡）；`entry-server.tsx` 的 `ROUTES` 里预渲染。
+- 品牌文案改过后要重跑 `npm run icons`（og.png）和 `npm run og`（逐条分享图，本地跑）。
+- 硬规则：任何新增文案不得出现关注 / 订阅 / 点赞 / 三连类号召。

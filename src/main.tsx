@@ -33,6 +33,19 @@ ldScript.type = 'application/ld+json'
 ldScript.textContent = JSON.stringify(faqLd)
 document.head.appendChild(ldScript)
 
+// 站点名结构化数据：搜索引擎显示的站名随语言走（中文「先别急着信」，英文 Not So Fast）
+const siteLd = document.createElement('script')
+siteLd.type = 'application/ld+json'
+siteLd.textContent = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: locale === 'en' ? 'Not So Fast' : '先别急着信',
+  alternateName: locale === 'en' ? '先别急着信' : 'Not So Fast',
+  url: 'https://actually-not.com/',
+  inLanguage: locale === 'en' ? 'en' : 'zh-CN',
+})
+document.head.appendChild(siteLd)
+
 const appShell = Capacitor.isNativePlatform() || import.meta.env.VITE_APP_SHELL === 'true' || /^\/app\/?$/.test(window.location.pathname)
 const app = (
   <StrictMode>

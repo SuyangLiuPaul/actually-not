@@ -2,7 +2,7 @@ import type { CapacitorConfig } from '@capacitor/cli'
 
 const config: CapacitorConfig = {
   appId: 'com.actuallynot.app',
-  appName: '其实不是',
+  appName: '先别急着信',
   webDir: 'dist-app',
   ios: { contentInset: 'automatic', preferredContentMode: 'mobile' },
   android: { allowMixedContent: false },
