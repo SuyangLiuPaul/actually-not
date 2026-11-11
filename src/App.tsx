@@ -1,4 +1,5 @@
 import { Subscribe } from './components/Subscribe'
+import { WhereToWatch } from './components/WhereToWatch'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { CATEGORIES, type CategoryId, type Stakes } from './types'
 import {
@@ -521,6 +522,7 @@ export default function App() {
           style={{ borderColor: 'var(--rule)', color: 'var(--ink-faint)' }}
         >
           <Subscribe locale={locale} />
+          <WhereToWatch locale={locale} />
           <p className="max-w-[62ch]">
             <strong style={{ color: 'var(--ink-soft)' }}>{t.footerAboutTitle}</strong>
             {t.footerAbout}
