@@ -1,0 +1,9 @@
+{
+  "ids": ["gossip"],
+  "generator": "Not So Fast 自制原创美术：八卦（zh v5）视频竖屏静帧，非第三方素材、非 AI 生成的外部图片",
+  "source": "channel/ep-bagua/out/八卦-zh-v5-still.png（1080×1920）",
+  "raw": "content-staging/illu-raw/gossip.png（即上述静帧原图）",
+  "import": "裁出静帧中央的场景卡片（去掉含中文标题的顶部区域，卡片内只有房子、对话气泡、纸杯电话和两个小人，无文字），按高度缩到 400px；两侧用同一静帧下方空白纸纹铺底，合成 960×400 WebP（quality 84）。没有走 scripts/illu-import.mjs，因为原图是竖屏、直接居中裁成横幅会切掉主体。",
+  "visualReview": "导入结果已目视检查：无文字、无水印，主体居中。",
+  "scene": "four little houses on a shelf above a speech bubble, two figures talking through a paper-cup telephone"
+}
