@@ -5,6 +5,9 @@ import { ErrorBoundary } from './components/ErrorBoundary'
 import { MYTHS } from './data/myths'
 import { mythsFor } from './data/localized'
 import { STRINGS } from './i18n'
+import { bundledContentSources } from './content/bundled'
+import { buildContentPayload } from './content/payload'
+import type { ContentPayload } from './content/schema'
 
 /**
  * 预渲染入口（只在构建时运行，不进客户端 bundle）。
@@ -75,4 +78,9 @@ export function render(path: string): string {
       </ErrorBoundary>
     </StrictMode>,
   )
+}
+
+/** 远程内容 JSON（原生 App 不发版更新内容用），由 scripts/content-export.ts 在构建末尾写到 dist/content/v1/ */
+export function contentPayload(meta: { contentAt: string; generatedAt: string }): ContentPayload {
+  return buildContentPayload(bundledContentSources(), meta)
 }

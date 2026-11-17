@@ -175,6 +175,21 @@ export function dailyBeliefIds(day: string, entries: readonly Entry[], journal: 
   return picked.map((m) => m.id)
 }
 
+/** 当天题单的存储键：{ day, ids } */
+export const DAILY_PICKS_KEY = 'app-daily-picks'
+
+/**
+ * 当天题单一旦定下就不变。dailyBeliefIds 本身只看当天之前的记录，所以当天怎么答都不改题单；
+ * 但原生 App 白天可能换上新的远程内容（多了条目），重新排序会换掉已经出过的题。
+ * 存下来的题单是同一天、且每条都还在当前内容里，就沿用它；否则用新算出来的。
+ */
+export function pinnedDailyIds(day: string, computed: string[], stored: unknown, visible: ReadonlySet<string>): string[] {
+  if (typeof stored !== 'object' || stored === null) return computed
+  const { day: storedDay, ids } = stored as { day?: unknown; ids?: unknown }
+  if (storedDay !== day || !Array.isArray(ids) || ids.length === 0) return computed
+  return ids.every((id) => typeof id === 'string' && visible.has(id)) ? (ids as string[]) : computed
+}
+
 /** 当天对某条的表态记录（没有就是 undefined） */
 export function beliefOn(day: string, id: string, journal: readonly JournalRecord[]): BeliefRecord | undefined {
   let found: BeliefRecord | undefined

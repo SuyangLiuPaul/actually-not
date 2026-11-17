@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import { mythsFor } from '../data/localized'
-import { playRound, type PlayTopic } from '../data/play'
+import { playQuestions, playRound, type PlayTopic } from '../data/play'
 import { categoryLabel, type Locale } from '../i18n'
-import { PLAY_QUESTIONS, type PlayQuestion } from '../data/play'
+import type { PlayQuestion } from '../data/play'
 import { resumeStep, type Discovery } from '../native/journal'
 import { shareDiscovery, tapFeedback } from '../native/platform'
 
@@ -59,7 +59,7 @@ export function PlayDeck({ locale, onOpen, onBrowse, onRead, initialRound, onDis
     const params = new URLSearchParams(window.location.search)
     const ids = (params.get('challenge') ?? '').split(',')
     if (ids.length === 3 && new Set(ids).size === 3) {
-      const round = ids.map(id => PLAY_QUESTIONS.find(q => q.id === id))
+      const round = ids.map(id => playQuestions().find(q => q.id === id))
       if (round.every((q): q is PlayQuestion => !!q)) setChallenge(round)
     }
     try {

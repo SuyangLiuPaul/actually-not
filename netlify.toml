@@ -88,6 +88,16 @@
     Cache-Control = "public, max-age=0, must-revalidate"
     Content-Type = "application/manifest+json"
 
+# 远程内容（原生 App 不发版更新内容用，见 HANDOVER「不发版更新内容」）：
+# 短缓存 + 必须回源验证；App 的 WebView 来源是 capacitor://localhost（iOS）/ https://localhost（Android），
+# 是跨域请求，所以要 CORS。内容公开、不带凭据，用 * 即可。
+[[headers]]
+  for = "/content/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "GET, HEAD, OPTIONS"
+
 [[headers]]
   for = "/index.html"
   [headers.values]

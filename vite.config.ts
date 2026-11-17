@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import { prerender } from './scripts/prerender.ts'
+import { writeContentFile } from './scripts/content-export.ts'
 
 /**
  * 构建末尾：SSR 打包 → 给首页和每条内容预渲染真实路径的 HTML。
@@ -22,6 +23,9 @@ function prerenderPlugin(): Plugin {
         plugins: [react()],
         build: { ssr: 'src/entry-server.tsx', outDir: 'dist-ssr', emptyOutDir: true },
       })
+      // 原生 App 不发版更新内容用的 JSON（只是数据，不是代码）。json 不在 PWA 预缓存的 globPatterns 里。
+      // 必须在 prerender 之前：prerender 结束时会删掉 dist-ssr
+      await writeContentFile(resolve('dist'), resolve('dist-ssr'))
       await prerender(resolve('dist'), resolve('dist-ssr'))
       mkdirSync(resolve('dist/app'), { recursive: true })
       writeFileSync(resolve('dist/app/index.html'), readFileSync(resolve('dist/index.html'), 'utf8'))

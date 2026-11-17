@@ -75,6 +75,9 @@ const ALL_CATEGORIES: Category[] = [
   { id: 'why', label: '为什么长这样', emoji: '🔧' },
 ]
 
+/** 全部分类 id（不分平台）。远程内容校验用：Android 包看不到的分类在远程数据里仍是合法分类，只是之后被过滤掉。 */
+export const ALL_CATEGORY_IDS: readonly CategoryId[] = ALL_CATEGORIES.map((c) => c.id)
+
 /** 当前平台可见的分类（Android 包不含 urgent / body，见 data/platform.ts） */
 export const CATEGORIES: Category[] = ALL_CATEGORIES.filter(
   (c) => !excludedCategoriesFor(APP_PLATFORM).includes(c.id),

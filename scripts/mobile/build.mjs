@@ -6,6 +6,9 @@ import { resolve } from 'node:path'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { mkdirSync, writeFileSync, readFileSync, rmSync } from 'node:fs'
+import { bundledContentSources } from '../../src/content/bundled.ts'
+import { buildContentPayload } from '../../src/content/payload.ts'
+import { gitContentAt } from '../content-export.ts'
 
 // 平台：ios（默认，含全部内容）| android（不含 urgent / body 分类，见 src/data/platform.ts）。
 // Google Play 个人开发者账号不能发布含「医疗」功能的应用，所以 Android 包整体排除这两个分类。
@@ -31,11 +34,17 @@ const platformData = {
 }
 console.log(`app:build 平台 = ${platform}，条目 ${expectedEntries}`)
 
-await build({ configFile:false, plugins:[platformData,react(),tailwindcss(), {name:'native-entry', transformIndexHtml: {order:'pre',handler:html => html.replace('/src/main.tsx','/src/native/main.tsx').replace(/<script>[^]*?<\/script>/g,'')}}], define:{ 'import.meta.env.VITE_APP_SHELL':'"true"', 'import.meta.env.VITE_APP_PLATFORM':JSON.stringify(platform) }, build:{ outDir:'dist-app',emptyOutDir:true }, base:'/' })
+// 安装包里这份内容的版本与时间。App 启动后拉 actually-not.com/content/v1/content.json，
+// 只有比这份新（时间更晚、版本不同）才换上（src/content/loader.ts）。版本按完整内容算（不分平台），
+// 和网站构建导出的 JSON 用同一个函数，所以内容相同就是同一个版本。
+const bundledContent = buildContentPayload(bundledContentSources(), { contentAt: gitContentAt(), generatedAt: new Date().toISOString() })
+console.log(`app:build 内容版本 ${bundledContent.version}（${bundledContent.contentAt}）`)
+
+await build({ configFile:false, plugins:[platformData,react(),tailwindcss(), {name:'native-entry', transformIndexHtml: {order:'pre',handler:html => html.replace('/src/main.tsx','/src/native/main.tsx').replace(/<script>[^]*?<\/script>/g,'')}}], define:{ 'import.meta.env.VITE_APP_SHELL':'"true"', 'import.meta.env.VITE_APP_PLATFORM':JSON.stringify(platform), 'import.meta.env.VITE_CONTENT_VERSION':JSON.stringify(bundledContent.version), 'import.meta.env.VITE_CONTENT_AT':JSON.stringify(bundledContent.contentAt) }, build:{ outDir:'dist-app',emptyOutDir:true }, base:'/' })
 // 本地应用无需首次访问语言重定向、旧 hash 路由脚本或 service worker。
 // 入口使用同一套双语数据；应用语言在 App 内选择。
 mkdirSync('dist-app', { recursive:true })
-writeFileSync('dist-app/app-build.json', JSON.stringify({version:'1.2.0',platform,builtAt:new Date().toISOString(),entries:expectedEntries}))
+writeFileSync('dist-app/app-build.json', JSON.stringify({version:'1.2.0',platform,builtAt:new Date().toISOString(),entries:expectedEntries,contentVersion:bundledContent.version,contentAt:bundledContent.contentAt}))
 
 const html=readFileSync('dist-app/index.html','utf8').replace(/<script>[^]*?<\/script>/g,'')
 writeFileSync('dist-app/index.html',html)

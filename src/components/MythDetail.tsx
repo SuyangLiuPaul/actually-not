@@ -5,6 +5,7 @@ import { StakesDot } from './MythCard'
 import { REVISIONS as LEGACY_REVISIONS } from '../data/revisions'
 import { STAGING_REVISIONS } from '../data/revisions-staging'
 import { mythsFor } from '../data/localized'
+import { contentOverride } from '../content/current'
 import { FEEDBACK_EMAIL, categoryLabel, catEmoji, CAT_ACCENT, confidenceMeta, stakesMeta, STRINGS, pathFor, type Locale } from '../i18n'
 import { shareDiscovery } from '../native/platform'
 
@@ -99,6 +100,7 @@ export function MythDetail({
   const stakes = stakesMeta(myth.stakes, locale)
   const conf = confidenceMeta(myth.confidence, locale)
   const all = mythsFor(locale)
+  const revision = (contentOverride()?.revisions ?? REVISIONS)[myth.id]
   const relatedMyths = (myth.related ?? [])
     .map((id) => all.find((m) => m.id === id))
     .filter((m): m is Myth => m !== undefined)
@@ -397,16 +399,16 @@ export function MythDetail({
 
           {actions && <div className="detail-actions">{actions}</div>}
 
-          {/* 收录/修订时间 + 纠错入口 */}
-          {REVISIONS[myth.id] && (
+          {/* 收录/修订时间 + 纠错入口（原生 App 拿到远程内容时读那一份的日期） */}
+          {revision && (
             <p className="mt-8 border-t pt-5 text-[12px]" style={{ borderColor: 'var(--rule)', color: 'var(--ink-faint)' }}>
-              {t.detailAdded(REVISIONS[myth.id].added)}
-              {REVISIONS[myth.id].updated !== REVISIONS[myth.id].added &&
-                ` · ${t.detailRevised(REVISIONS[myth.id].updated)}`}
+              {t.detailAdded(revision.added)}
+              {revision.updated !== revision.added &&
+                ` · ${t.detailRevised(revision.updated)}`}
             </p>
           )}
           <p
-            className={`${REVISIONS[myth.id] ? 'mt-2' : 'mt-8 border-t pt-5'} text-[13px] leading-[1.8]`}
+            className={`${revision ? 'mt-2' : 'mt-8 border-t pt-5'} text-[13px] leading-[1.8]`}
             style={{ borderColor: 'var(--rule)', color: 'var(--ink-faint)' }}
           >
             {t.correctionLead}

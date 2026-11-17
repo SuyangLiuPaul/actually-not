@@ -3,13 +3,15 @@ import { App as DeviceApp } from '@capacitor/app'
 import { Filesystem, Directory, Encoding } from '@capacitor/filesystem'
 import { Share } from '@capacitor/share'
 import { mythsFor } from '../data/localized'
+import { startNativeContent } from '../content/native'
+import { useContentRevision } from '../content/useContentRevision'
 import type { CategoryId, Myth } from '../types'
 import { categoryLabel, confidenceMeta, parsePath, type Locale } from '../i18n'
 import { MythDetail } from '../components/MythDetail'
 import { useReadProgress } from '../hooks/useReadProgress'
 import {
   addUseDay, appendRecord, beliefOn, dailyBeliefIds, dueReviews, loadJournal, localDay, migrateStoredJournal, quizRecord, rawJournal,
-  REMINDER_OFFER_AFTER_DAYS, SAVED_KEY, type Discovery, type Stance,
+  REMINDER_OFFER_AFTER_DAYS, SAVED_KEY, DAILY_PICKS_KEY, pinnedDailyIds, type Discovery, type Stance,
 } from './journal'
 import { native, openSource, scheduleReminders, shareCanvas, shareDiscovery, stopReminder, tapFeedback } from './platform'
 import { DEFAULT_REMINDER_TIME, reminderPlan } from './reminders'
@@ -61,13 +63,23 @@ export default function NativeApp() {
   const [notice, setNotice] = useState('')
   const [busy, setBusy] = useState(false)
   const opener = useRef<HTMLElement | null>(null)
-  const myths = useMemo(() => mythsFor(locale), [locale])
+  // 远程内容换上来时（src/content/）contentRev 会变，条目列表跟着重算
+  const contentRev = useContentRevision()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const myths = useMemo(() => mythsFor(locale), [locale, contentRev])
   const visible = useMemo(() => new Set(myths.map((m) => m.id)), [myths])
-  const todayIds = useMemo(() => dailyBeliefIds(day, myths, journal), [day, myths, journal])
+  const todayIds = useMemo(() => {
+    let pinned: unknown = null
+    try { pinned = JSON.parse(stored(DAILY_PICKS_KEY, 'null')) } catch { /* 坏记录就重算 */ }
+    return pinnedDailyIds(day, dailyBeliefIds(day, myths, journal), pinned, visible)
+  }, [day, myths, journal, visible])
+  useEffect(() => { remember(DAILY_PICKS_KEY, JSON.stringify({ day, ids: todayIds })) }, [day, todayIds])
   const due = useMemo(() => dueReviews(day, journal, visible), [day, journal, visible])
   const { read, markRead, toggleRead, readCount } = useReadProgress()
   const current = myths.find((m) => m.id === openId)
 
+  // 远程内容：先用打包数据渲染（上面已经渲染了），后台读缓存、拉更新；只在原生 App 里生效
+  useEffect(() => { startNativeContent() }, [])
   useEffect(() => { document.documentElement.lang = zh ? 'zh-CN' : 'en'; document.title = zh ? '先别急着信' : 'Not So Fast' }, [zh])
   useEffect(() => { document.documentElement.dataset.theme = theme; remember('app-theme', theme) }, [theme])
   useEffect(() => { document.documentElement.classList.toggle('app-large', large); remember('app-large', large ? '1' : '0') }, [large])

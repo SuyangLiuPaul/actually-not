@@ -6,6 +6,8 @@
  * 播放器是 9:16 竖屏短片。publishAt 之前（YouTube 上还是私享）显示「X 月 X 日上线」预告卡，
  * 到点自动变成播放器。不隐藏任何东西，没有开关或解锁。
  */
+import { contentOverride } from '../content/current.ts'
+
 export interface EntryVideo {
   youtubeId: string
   durationSec: number
@@ -36,6 +38,11 @@ export const VIDEOS: Record<string, EntryVideo> = {
   leftovers: { youtubeId: 'gbajL3AI8us', durationSec: 212, publishAt: '2026-11-13T17:00:00+11:00', style: 'Kitchen flat illustration', landscape: true, en: { youtubeId: 'p9GyW8ikX_U', durationSec: 215, publishAt: '2026-11-11T11:00:00+11:00' } },
 }
 
+/** 当前生效的视频表：原生 App 拿到更新的远程内容时用那一份，否则用上面打包的 VIDEOS */
+function currentVideos(): Record<string, EntryVideo> {
+  return contentOverride()?.videos ?? VIDEOS
+}
+
 const STYLE_ZH: Record<string, string> = {
   'Pixel art': '像素风', Stickman: '火柴人', Claymation: '黏土动画', Chalkboard: '黑板',
   'PS2 retro 3D': 'PS2 复古 3D', '90s anime': '90 年代动漫', 'Comic book': '美漫',
@@ -56,7 +63,7 @@ export function lengthLabel(v: EntryVideo, locale: 'zh' | 'en'): string {
 
 /** 该条目的可播放视频；没有，或还是 PENDING 占位时返回 undefined（界面据此什么都不渲染） */
 export function videoFor(id: string, locale?: 'zh' | 'en'): EntryVideo | undefined {
-  const base = VIDEOS[id]
+  const base = currentVideos()[id]
   const v = base && locale === 'en' && base.en && base.en.youtubeId !== VIDEO_PENDING ? { ...base, ...base.en } : base
   return v && v.youtubeId !== VIDEO_PENDING && /^[A-Za-z0-9_-]{6,20}$/.test(v.youtubeId) ? v : undefined
 }
@@ -79,5 +86,5 @@ export function publishLabel(v: EntryVideo, locale: 'zh' | 'en'): string {
 
 /** 所有有可播放视频的条目 id（视频列表用） */
 export function videoIds(): string[] {
-  return Object.keys(VIDEOS).filter((id) => videoFor(id))
+  return Object.keys(currentVideos()).filter((id) => videoFor(id))
 }

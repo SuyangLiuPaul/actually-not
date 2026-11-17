@@ -53,7 +53,8 @@ jobs:
             dist/icons/maskable-192.png \
             dist/icons/maskable-512.png \
             dist/_redirects \
-            dist/_headers
+            dist/_headers \
+            dist/content/v1/content.json
           do
             test -s "$f" || { echo "缺少产物：$f"; exit 1; }
           done

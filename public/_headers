@@ -26,3 +26,9 @@
 
 /index.html
   Cache-Control: public, max-age=0, must-revalidate
+
+# 远程内容（原生 App 不发版更新内容用）：短缓存 + 回源验证 + CORS（App 来源 capacitor://localhost / https://localhost）
+/content/*
+  Cache-Control: public, max-age=300, must-revalidate
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, HEAD, OPTIONS

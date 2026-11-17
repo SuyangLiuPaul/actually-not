@@ -1,4 +1,5 @@
 import type { Locale } from '../i18n'
+import { contentOverride } from '../content/current.ts'
 
 export type PlayTopic = 'mix' | 'quote' | 'film' | 'why'
 export type PlayQuestion = {
@@ -23,6 +24,11 @@ export const PLAY_QUESTIONS: PlayQuestion[] = [
   { id: 'why-coin-ridged-edge', topic: 'why', question: { zh: '硬币边缘的齿纹，最初主要防什么？', en: 'What did ridged coin edges originally help prevent?' }, choices: { zh: ['硬币从手里滑走', '有人削走边缘的贵金属', '机器把硬币夹住'], en: ['Coins slipping from your hand', 'Clipping precious metal off the edge', 'Coins jamming machines'] }, answer: 1 },
 ]
 
+/** 当前生效的题库：原生 App 拿到更新的远程内容时用那一份，否则用打包的 PLAY_QUESTIONS */
+export function playQuestions(): PlayQuestion[] {
+  return contentOverride()?.play ?? PLAY_QUESTIONS
+}
+
 function random(seed: number) {
   let n = seed | 0
   return () => {
@@ -33,7 +39,7 @@ function random(seed: number) {
 
 export function playRound(topic: PlayTopic, seed: number): PlayQuestion[] {
   const next = random(seed)
-  const pool = PLAY_QUESTIONS.filter((q) => topic === 'mix' || q.topic === topic)
+  const pool = playQuestions().filter((q) => topic === 'mix' || q.topic === topic)
   for (let i = pool.length - 1; i > 0; i--) {
     const j = Math.floor(next() * (i + 1))
     ;[pool[i], pool[j]] = [pool[j], pool[i]]

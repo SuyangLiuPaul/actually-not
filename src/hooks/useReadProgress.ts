@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
-import { MYTHS } from '../data/myths'
+import { mythsFor } from '../data/localized'
 
 /**
  * 「看过」进度：打开过详情的条目算已读，存 localStorage，下次来接着看。
@@ -7,7 +7,6 @@ import { MYTHS } from '../data/myths'
  * 不能在读取时丢掉，否则写回时会把用户在别的平台或旧版本里的进度一起抹掉。
  */
 const KEY = 'read-v1'
-const KNOWN_IDS = new Set(MYTHS.map((m) => m.id))
 
 function load(): Set<string> {
   try {
@@ -54,7 +53,9 @@ export function useReadProgress() {
     })
   }, [])
 
+  // 每次渲染现算：原生 App 换上远程内容后，新条目也要计入
+  const known = new Set(mythsFor('zh').map((m) => m.id))
   let readCount = 0
-  for (const id of read) if (KNOWN_IDS.has(id)) readCount++
+  for (const id of read) if (known.has(id)) readCount++
   return { read, markRead, toggleRead, readCount }
 }

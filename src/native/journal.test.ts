@@ -1,7 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import {
   addDays, addUseDay, appendRecord, beliefOn, changedMindIds, dailyBeliefIds, dueReviews, JOURNAL_BACKUP_KEY, JOURNAL_KEY,
-  latestBeliefs, loadJournal, localDay, migrateStoredJournal, nextReviewDay, parseJournal, resumeStep,
+  latestBeliefs, loadJournal, localDay, migrateStoredJournal, nextReviewDay, parseJournal, pinnedDailyIds, resumeStep,
   type BeliefRecord, type JournalRecord, type ReviewRecord, type Stance,
 } from './journal'
 import { MYTHS } from '../data/myths'
@@ -232,5 +232,23 @@ describe('其它', () => {
     expect(resumeStep(qs, [])).toBe(0)
     expect(resumeStep(qs, [{ id: 'a' }])).toBe(1)
     expect(resumeStep(qs, qs)).toBe(3)
+  })
+})
+
+describe('当天题单固定（远程内容白天换上时不换题）', () => {
+  const visible = new Set(['a', 'b', 'c', 'd'])
+  it('同一天、每条都还在 → 沿用存下来的题单', () => {
+    expect(pinnedDailyIds('2026-11-18', ['d', 'b', 'a'], { day: '2026-11-18', ids: ['a', 'b', 'c'] }, visible)).toEqual(['a', 'b', 'c'])
+  })
+  it('换了一天 → 用新算出来的', () => {
+    expect(pinnedDailyIds('2026-11-19', ['d', 'b', 'a'], { day: '2026-11-18', ids: ['a', 'b', 'c'] }, visible)).toEqual(['d', 'b', 'a'])
+  })
+  it('有一条已经不在当前内容里 → 用新算出来的', () => {
+    expect(pinnedDailyIds('2026-11-18', ['d', 'b', 'a'], { day: '2026-11-18', ids: ['a', 'b', 'gone'] }, visible)).toEqual(['d', 'b', 'a'])
+  })
+  it('没存过或存坏了 → 用新算出来的', () => {
+    for (const stored of [null, 'x', 42, { day: '2026-11-18' }, { day: '2026-11-18', ids: [] }, { day: '2026-11-18', ids: [1, 2] }]) {
+      expect(pinnedDailyIds('2026-11-18', ['d'], stored, visible)).toEqual(['d'])
+    }
   })
 })

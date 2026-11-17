@@ -6,6 +6,8 @@ import { ErrorBoundary } from './components/ErrorBoundary.tsx'
 import { UpdatePrompt } from './components/UpdatePrompt.tsx'
 import { Capacitor } from '@capacitor/core'
 import NativeApp from './native/NativeApp'
+import { RemoteContentBoundary } from './content/RemoteContentBoundary.tsx'
+import { revertToBundledContent } from './content/native.ts'
 import { mythsFor } from './data/localized.ts'
 import { parsePath } from './i18n.ts'
 
@@ -50,7 +52,7 @@ const appShell = Capacitor.isNativePlatform() || import.meta.env.VITE_APP_SHELL 
 const app = (
   <StrictMode>
     <ErrorBoundary>
-      {appShell ? <NativeApp /> : <App />}
+      {appShell ? <RemoteContentBoundary revert={revertToBundledContent}><NativeApp /></RemoteContentBoundary> : <App />}
       {!Capacitor.isNativePlatform() && <UpdatePrompt />}
     </ErrorBoundary>
   </StrictMode>
