@@ -37,7 +37,7 @@ npm run dev          # http://localhost:5173
 | 命令 | 作用 |
 |---|---|
 | `npm run dev` | 开发服务器（**Service Worker 在这个模式下是关的**） |
-| `npm run check` | lint + 类型检查 + 676 条内容测试。**提交前跑这个** |
+| `npm run check` | lint + 类型检查 + 全部测试。**提交前跑这个** |
 | `npm test` | 只跑内容测试 |
 | `npm run build` | 构建到 `dist/` |
 | `npm run preview` | 跑构建产物 → 要测 PWA / 离线**必须用这个**，不能用 dev |
@@ -535,3 +535,37 @@ Google Play 个人开发者账号不能发布含「医疗」功能的应用（�
 - **/about 与 /en/about**：`src/components/About.tsx`，在 `App.tsx` 里和 `quiz` 一样按路径 id 判断（条目 id 不可取 `about` / `quiz`，有测试挡）；`entry-server.tsx` 的 `ROUTES` 里预渲染。
 - 品牌文案改过后要重跑 `npm run icons`（og.png）和 `npm run og`（逐条分享图，本地跑）。
 - 硬规则：任何新增文案不得出现关注 / 订阅 / 点赞 / 三连类号召。
+
+---
+
+## 15. 不发版更新内容（远程内容，2026-11-18）
+
+**目的**：原生 App（iOS / Android）加新条目、新视频不用再等商店审核。push 到 main → Netlify 构建 → App 下次打开就拿到。
+**前提**：手机上的 App 必须是带这套代码的版本，所以**需要发一次商店版（1.3）**；1.2 及以前的安装包永远只用打包数据。网站本身不变，仍然只用打包数据。
+
+**流程**
+1. `npm run build` 末尾（`vite.config.ts` 的 prerenderPlugin → `scripts/content-export.ts`）用 SSR bundle 导出 `dist/content/v1/content.json`：
+   全部条目（中文结构 + 中文文字，**完整集合，不按平台过滤**）、英文文字（出处只存 label，url 按下标从中文补回）、
+   收录/修订日期、视频表、玩法题；加 `schema: 1`、`version`（内容哈希，内容不变版本就不变）、
+   `contentAt`（git HEAD 提交时间）、`generatedAt`（构建时间）。约 820 KB，gzip 约 320 KB（Netlify 自动压缩）。
+   产物只在 `dist/`，不进 git，也不进 PWA 预缓存（json 不在 globPatterns）。
+2. 缓存头 / CORS：`netlify.toml` 和 `public/_headers` 的 `/content/*`（两边保持一致，见 §7 ③）：
+   `max-age=300, must-revalidate`，`Access-Control-Allow-Origin: *`（App 的 WebView 来源是 `capacitor://localhost` / `https://localhost`，属于跨域；内容公开、不带凭据）。
+3. App 启动（只在 `Capacitor.isNativePlatform()` 时；`/app/` 网页预览不拉）：`NativeApp` 挂载 → `src/content/native.ts`：
+   - 先照常用打包数据渲染（不等网络）；
+   - 读本机缓存（Capacitor Filesystem，`Directory.Data/content/v1/content.json`），合法且比打包数据新 → 换上；
+   - 后台拉远程（5 秒超时），合法、比当前这份新、条目数没有骤降超过 20% → 先写缓存，再换上。
+   - 「新」= `contentAt` 更晚 **且** `version` 不同。打包数据的版本和时间由 `scripts/mobile/build.mjs` 注入（`VITE_CONTENT_VERSION` / `VITE_CONTENT_AT`，也写进 `dist-app/app-build.json`）。
+     用提交时间而不是构建时间，是为了重新部署旧提交时 App 不会退回旧内容；商店更新后打包数据比缓存新，缓存自动失效。
+4. 校验（`src/content/validate.ts`）：schema、每个字段的类型和取值（分类/风险/证据强度必须是已知值，出处必须 https，related 不能断链，英文出处条数和中文一致，视频 ID 格式，玩法题 3 个选项……），最后重算内容哈希必须等于 `version`（挡住半截下载）。任何一处不对就整份不用，保持当前这份。
+5. **Android 继续不含医疗分类**：远程 JSON 是完整集合，换上前经过和打包时同一个 `filterMythsForPlatform`（`src/content/loader.ts` 的 `snapshotFromPayload`），条目、related、英文、视频、日期、玩法题一起去掉 urgent / body。测试在 `src/content/loader.test.ts`。
+6. 兜底：`RemoteContentBoundary` 包着 NativeApp，万一某份远程内容让界面渲染出错，记下这个版本（`localStorage content-bad-version`）、退回打包数据、重新渲染；以后不再采用这个版本。
+7. 内容白天换上时，当天的「你信吗？」题单不变（`journal.ts` 的 `pinnedDailyIds`，存 `app-daily-picks`）。
+
+**数据访问**：界面照旧调 `mythsFor()`、`videoFor()`、`playQuestions()`，`MythDetail` 的日期读 `contentOverride()`；这些函数在有远程内容时读那一份（`src/content/current.ts`），没有就读打包数据。`NativeApp` 用 `useContentRevision()` 让列表在内容换上时重算。新增读内容的地方也要走这几个函数，别直接 import `MYTHS` / `VIDEOS`（网站专用的 `entry-server.tsx` 除外）。
+
+**App Store 2.5.2**：下载的只是 JSON 数据，经 `JSON.parse` + 逐字段校验后交给已打包的界面渲染；不下载、不执行代码（没有 eval、动态 import、远程脚本或 HTML）。代码注释里也写了（`src/content/schema.ts`、`loader.ts`）。
+
+**改结构**：不兼容的改动要把 `CONTENT_SCHEMA` 加一并换路径（`/content/v2/`），旧 App 继续读 v1。新增分类同理：旧 App 的校验器不认识新分类，会拒绝整份（安全，但旧 App 就拿不到更新了）——加分类要配一次商店发版。
+
+**验证**：`curl -sI https://actually-not.com/content/v1/content.json` 应该看到 200、`cache-control: public, max-age=300, must-revalidate`、`access-control-allow-origin: *`。真机上：装 1.3 → 断网打开（照常显示打包内容）→ 联网重开 → 新条目出现；Android 包里仍然没有急救 / 身体。
