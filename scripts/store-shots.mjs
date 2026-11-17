@@ -21,10 +21,13 @@ const server = createServer(async (req, res) => {
   catch { const b = await readFile(join(dist, 'index.html')); res.writeHead(200, { 'content-type': 'text/html' }); res.end(b) }
 }).listen(8765)
 
-const DEVICES = { iphone: { w: 402, h: 874, s: 3 }, ipad: { w: 768, h: 1024, s: 2.6875 } }
+// STORE=play: Google Play phone shots 1080×1920 (2:1 max ratio) from the Android flavor (run APP_PLATFORM=android npm run app:build first)
+const PLAY = process.env.STORE === 'play'
+const DEVICES = PLAY ? { phone: { w: 360, h: 640, s: 3 } } : { iphone: { w: 402, h: 874, s: 3 }, ipad: { w: 768, h: 1024, s: 2.6875 } }
+const COUNT = PLAY ? { zh: '近 200 条，几秒查到', en: 'Nearly 200 myth checks, found fast' } : { zh: '230 多条，几秒查到', en: '230+ myth checks, found in seconds' }
 const CAPTIONS = {
-  zh: ['每天三条「你信吗？」', '先猜，再看证据', '230 多条，几秒查到', '记下你改观过的事'],
-  en: ['Three “Do you buy it?” a day', 'Guess first, then see the sources', '230+ myth checks, found in seconds', 'Keep track of what changed your mind'],
+  zh: ['每天三条「你信吗？」', '先猜，再看证据', COUNT.zh, '记下你改观过的事'],
+  en: ['Three “Do you buy it?” a day', 'Guess first, then see the sources', COUNT.en, 'Keep track of what changed your mind'],
 }
 const SUB = { zh: '先别急着信 · 信不信，查过再说', en: 'Not So Fast · Let’s check' }
 
