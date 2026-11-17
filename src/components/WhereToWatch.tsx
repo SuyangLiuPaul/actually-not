@@ -19,6 +19,8 @@ const INTL: Site[] = [
   { name: 'TikTok', handle: '@notsofastshow', href: 'https://www.tiktok.com/@notsofastshow' },
   { name: 'Instagram', handle: '@notsofast.show', href: 'https://www.instagram.com/notsofast.show/' },
   { name: 'Facebook', handle: 'Not So Fast', href: 'https://www.facebook.com/profile.php?id=61596198909883' },
+  { name: 'Threads', handle: '@notsofast.show', href: 'https://www.threads.com/@notsofast.show' },
+  { name: 'Pinterest', handle: 'notsofastshow', href: 'https://www.pinterest.com/notsofastshow/' },
 ]
 
 function Row({ s }: { s: Site }) {

@@ -1,5 +1,6 @@
 import type { Locale } from '../i18n'
 import { CONTACT_EMAIL, STRINGS } from '../i18n'
+import { GetTheApp } from './GetTheApp'
 
 /** 信封图标（内联 SVG，不引入图标库）。跟随当前文字颜色。 */
 export function MailIcon({ size = 15 }: { size?: number }) {
@@ -22,7 +23,7 @@ export function MailLink({ className = '', subject }: { className?: string; subj
   )
 }
 
-type Block = { h: string; p?: string[]; list?: { b: string; t: string }[]; channel?: boolean }
+type Block = { h: string; p?: string[]; list?: { b: string; t: string }[]; channel?: boolean; app?: boolean }
 
 const YT = 'https://www.youtube.com/@notsofastshow'
 
@@ -46,6 +47,7 @@ const ZH: { lead: string; blocks: Block[]; channelLead: string; channelTail: str
       ],
     },
     { h: '视频频道', channel: true },
+    { h: '手机 App', app: true },
     {
       h: '这不是医疗建议',
       p: ['这里讲的是人群层面的一般规律，不能代替医生对你个人情况的判断。身体不舒服，请找医生。详见页脚的免责声明。'],
@@ -75,6 +77,7 @@ const EN: typeof ZH = {
       ],
     },
     { h: 'The video channel', channel: true },
+    { h: 'The app', app: true },
     {
       h: 'Not medical advice',
       p: ['What we write describes general, population-level patterns. It is no substitute for a doctor who knows your situation. If you are unwell, see one. The disclaimer in the footer has the details.'],
@@ -134,6 +137,7 @@ export function About({ locale, onBack }: { locale: Locale; onBack: () => void }
               {c.channelTail}
             </p>
           ) : null}
+          {b.app ? <GetTheApp locale={locale} detailed /> : null}
         </section>
       ))}
 
