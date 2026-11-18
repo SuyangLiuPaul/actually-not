@@ -112,7 +112,7 @@ async function askGemini(system: string, turns: { role: string; text: string }[]
   })
   let last = 'upstream'
   for (const model of MODELS) {
-    for (let i = 0; i < Math.min(keys.length, 6); i++) {
+    for (let i = 0; i < keys.length; i++) {
       const key = keys[(start + i) % keys.length]
       let res: Response
       try {
@@ -120,7 +120,7 @@ async function askGemini(system: string, turns: { role: string; text: string }[]
           method: 'POST', headers: { 'content-type': 'application/json', 'x-goog-api-key': key }, body, signal: AbortSignal.timeout(12000),
         })
       } catch { last = 'timeout'; continue }
-      if (res.status === 429 || res.status === 403) { last = 'quota'; continue } // this key is out: try the next one
+      if (res.status === 429 || res.status === 403 || res.status === 404 || res.status === 400) { last = 'quota'; continue } // this key is out: try the next one
       if (res.status >= 500) { last = 'busy'; break } // the model is overloaded: fall back to the next model
       if (!res.ok) { last = `upstream_${res.status}`; break }
       const j = (await res.json().catch(() => null)) as { candidates?: { content?: { parts?: { text?: string }[] } }[] } | null
