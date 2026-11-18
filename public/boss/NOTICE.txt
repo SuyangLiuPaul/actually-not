@@ -9,3 +9,10 @@ Contractor towers: KayKit City Builder Bits by Kay Lousberg (CC0), as bundled in
 Plaza visitors: Paul's own 雅伟之界 models (traveller-v1, shepherd-v1).
 
 Street traffic: cars from Kenney Car Kit by Kenney (www.kenney.nl), CC0 1.0. Tram: "Tram" by Poly by Google, CC-BY 3.0 (https://creativecommons.org/licenses/by/3.0/), via Poly Pizza https://poly.pizza/m/e9pQgEqPGir, scaled and re-oriented.
+
+v11 street life and wall art
+- Visiting farm / zoo / parade animals (office-assets/fauna/animal-*.glb, Textures/colormap.png): Kenney "Cube Pets" (kenney.nl), CC0, via Paul's own 雅伟之界 (yahwehs-globe) project.
+- Voxel giraffe and elephant (office-assets/fauna/giraffe.glb, elephant.glb): from Paul's own 雅伟之界 Ark set.
+- Framed pictures (office-assets/art/*.webp): Paul's own 雅伟之界 voxel Bible scenes (no-text-derivatives-v2), cropped and resized.
+- Verse text on the plaques: Chinese from Paul's edited CUV (cuvs-yhwh), English from the ASV (public domain).
+- All passers-by, dogs, ducks, koi, birds, flags and props are generated in code (no third-party assets).
