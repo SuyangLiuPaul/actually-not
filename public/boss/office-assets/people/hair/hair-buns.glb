@@ -1,0 +1,173 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v4.5.1",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 9852,
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 3501,
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 1
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 3501,
+      "max": [
+        32767,
+        26971,
+        25755
+      ],
+      "min": [
+        -32767,
+        -26971,
+        -25755
+      ],
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 2
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 1,
+      "byteOffset": 0,
+      "byteLength": 19704,
+      "target": 34963,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 0,
+          "byteLength": 3429,
+          "mode": "TRIANGLES",
+          "byteStride": 2,
+          "count": 9852
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 19704,
+      "byteLength": 14004,
+      "target": 34962,
+      "byteStride": 4,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 3432,
+          "byteLength": 5286,
+          "mode": "ATTRIBUTES",
+          "filter": "OCTAHEDRAL",
+          "byteStride": 4,
+          "count": 3501
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 33708,
+      "byteLength": 28008,
+      "target": 34962,
+      "byteStride": 8,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 8720,
+          "byteLength": 19262,
+          "mode": "ATTRIBUTES",
+          "byteStride": 8,
+          "count": 3501
+        }
+      }
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "hair-buns.glb.bin",
+      "byteLength": 27984
+    },
+    {
+      "byteLength": 61716,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "fallback": true
+        }
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "hair-buns_mat",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.12,
+          0.1,
+          0.09,
+          1
+        ],
+        "roughnessFactor": 0.8,
+        "metallicFactor": 0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "hair-buns",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 2
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "hair-buns",
+      "translation": [
+        0,
+        0.10530370473861694,
+        -0.007701236754655838
+      ],
+      "scale": [
+        0.1507568359375,
+        0.1507568359375,
+        0.1507568359375
+      ],
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization"
+  ]
+}

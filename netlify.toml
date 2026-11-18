@@ -9,15 +9,6 @@
 # Netlify 号称会自动重定向到主域名，实测（2026-08-31）并没有：
 # actually-not.netlify.app 仍返回 200。所以显式写死。
 # 必须排在下面的 SPA 兜底之前——首个匹配生效。
-# ── /boss → Paul's private office dashboard (a claude.ai artifact that only Paul's account can open) ──
-# No password is stored anywhere: access is enforced by claude.ai login. 302 so nothing caches it; noindex so it is never listed.
-[[redirects]]
-  from = "/boss"
-  to = "https://claude.ai/artifact/6bjqbCfLcMHQNFrXz1jPaR"
-  status = 302
-  force = true
-  headers = {X-Robots-Tag = "noindex, nofollow"}
-
 [[redirects]]
   from = "https://actually-not.netlify.app/*"
   to = "https://actually-not.com/:splat"
@@ -39,6 +30,14 @@
   force = true
 
 # 单页应用：所有路径都回到 index.html
+# /boss = Paul HQ: password-gated (netlify/edge-functions/boss-gate.ts), API at /boss/api/* (netlify/functions/boss-api.mts).
+# Not part of the SPA: unknown files under it 404. Real files (index.html, manifest, icons) win over the 404 rule.
+# (No /boss -> /boss/ redirect: Netlify ignores the trailing slash, so it would loop.)
+[[redirects]]
+  from = "/boss/*"
+  to = "/boss/404.html"
+  status = 404
+
 # BEGIN ACTUALLY_NOT_TOWN (managed local integration)
 # Do not force a /town -> /town/ redirect: Netlify normalises trailing slashes.
 [[redirects]]
@@ -138,3 +137,10 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 # END ACTUALLY_NOT_TOWN_HEADERS
+
+# Paul HQ: never indexed, never cached by shared caches (keep in sync with public/_headers)
+[[headers]]
+  for = "/boss/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow, noarchive"
+    Cache-Control = "private, no-cache"

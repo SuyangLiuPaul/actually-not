@@ -1,0 +1,9 @@
+Yahweh Word office tower (personal use).
+3D scene code adapted from Claw3D (https://github.com/iamlukethedev/claw3d), MIT License, see LICENSE-claw3d.txt:
+retro-office furniture/machine/kitchen/agent models and the furniture GLBs it ships (Kenney Furniture Kit style assets).
+Project logos are the owner's own app icons.
+Post-processing: postprocessing (Zlib licence, github.com/pmndrs/postprocessing) and N8AO (ISC licence, github.com/N8python/n8ao).
+Also bundled: three.js, @react-three/fiber, @react-three/drei, React (all MIT).
+Animated people: officelapse character layer (MIT, github.com/deepak982/officelapse, see LICENSE-officelapse.txt) with Quaternius's CC0 rig and clips via ActionForge (office-assets/people/CREDITS.md).
+Contractor towers: KayKit City Builder Bits by Kay Lousberg (CC0), as bundled in Agentshire (MIT).
+Plaza visitors: Paul's own 雅伟之界 models (traveller-v1, shepherd-v1).

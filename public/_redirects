@@ -2,9 +2,9 @@
 https://actually-not.netlify.app/*  https://actually-not.com/:splat  301!
 http://actually-not.netlify.app/*   https://actually-not.com/:splat  301!
 
-# /boss → Paul's private office dashboard (claude.ai artifact, only Paul's account can open; no password stored here)
-/boss   https://claude.ai/artifact/6bjqbCfLcMHQNFrXz1jPaR   302!
-/boss/  https://claude.ai/artifact/6bjqbCfLcMHQNFrXz1jPaR   302!
+# /boss = Paul HQ (password-gated by netlify/edge-functions/boss-gate.ts; API = netlify/functions/boss-api.mts).
+# Keep it out of the SPA fallback: unknown files under it 404 (no /boss -> /boss/ rule: Netlify ignores the trailing slash and it would loop).
+/boss/*  /boss/404.html  404
 
 # YouTube 简介里用过的 /m/<条目>/ → 条目真实地址（与 netlify.toml 保持一致）
 /m/*  /:splat  301!

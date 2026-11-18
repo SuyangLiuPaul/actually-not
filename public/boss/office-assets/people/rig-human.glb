@@ -1,0 +1,2640 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v4.5.1",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 17196,
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 3389,
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 1
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 3389,
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 2
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 24036,
+      "normalized": false,
+      "byteOffset": 34392,
+      "bufferView": 0
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 5157,
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 3
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 5157,
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 4
+    },
+    {
+      "type": "MAT4",
+      "componentType": 5126,
+      "count": 71,
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 5
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 3389,
+      "max": [
+        32767,
+        30815,
+        6228
+      ],
+      "min": [
+        -32767,
+        -30815,
+        -6228
+      ],
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 6
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 3389,
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 7
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 3389,
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 8
+    },
+    {
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 5157,
+      "max": [
+        32031,
+        25291,
+        3228
+      ],
+      "min": [
+        -32031,
+        -27475,
+        -4784
+      ],
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 9
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 5157,
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 10
+    },
+    {
+      "type": "VEC2",
+      "componentType": 5123,
+      "count": 5157,
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 11
+    },
+    {
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 5157,
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 12
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 1,
+      "byteOffset": 0,
+      "byteLength": 82464,
+      "target": 34963,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 0,
+          "byteLength": 15919,
+          "mode": "TRIANGLES",
+          "byteStride": 2,
+          "count": 41232
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 82464,
+      "byteLength": 13556,
+      "target": 34962,
+      "byteStride": 4,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 15920,
+          "byteLength": 6848,
+          "mode": "ATTRIBUTES",
+          "filter": "OCTAHEDRAL",
+          "byteStride": 4,
+          "count": 3389
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 96020,
+      "byteLength": 13556,
+      "target": 34962,
+      "byteStride": 4,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 22768,
+          "byteLength": 2875,
+          "mode": "ATTRIBUTES",
+          "byteStride": 4,
+          "count": 3389
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 109576,
+      "byteLength": 20628,
+      "target": 34962,
+      "byteStride": 4,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 25644,
+          "byteLength": 10599,
+          "mode": "ATTRIBUTES",
+          "filter": "OCTAHEDRAL",
+          "byteStride": 4,
+          "count": 5157
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 130204,
+      "byteLength": 20628,
+      "target": 34962,
+      "byteStride": 4,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 36244,
+          "byteLength": 2083,
+          "mode": "ATTRIBUTES",
+          "byteStride": 4,
+          "count": 5157
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 150832,
+      "byteLength": 4544,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 38328,
+          "byteLength": 3023,
+          "mode": "ATTRIBUTES",
+          "byteStride": 64,
+          "count": 71
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 155376,
+      "byteLength": 27112,
+      "target": 34962,
+      "byteStride": 8,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 41352,
+          "byteLength": 15414,
+          "mode": "ATTRIBUTES",
+          "byteStride": 8,
+          "count": 3389
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 182488,
+      "byteLength": 13556,
+      "target": 34962,
+      "byteStride": 4,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 56768,
+          "byteLength": 245,
+          "mode": "ATTRIBUTES",
+          "byteStride": 4,
+          "count": 3389
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 196044,
+      "byteLength": 13556,
+      "target": 34962,
+      "byteStride": 4,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 57016,
+          "byteLength": 5941,
+          "mode": "ATTRIBUTES",
+          "byteStride": 4,
+          "count": 3389
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 209600,
+      "byteLength": 41256,
+      "target": 34962,
+      "byteStride": 8,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 62960,
+          "byteLength": 20065,
+          "mode": "ATTRIBUTES",
+          "byteStride": 8,
+          "count": 5157
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 250856,
+      "byteLength": 20628,
+      "target": 34962,
+      "byteStride": 4,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 83028,
+          "byteLength": 357,
+          "mode": "ATTRIBUTES",
+          "byteStride": 4,
+          "count": 5157
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 271484,
+      "byteLength": 20628,
+      "target": 34962,
+      "byteStride": 4,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 83388,
+          "byteLength": 16840,
+          "mode": "ATTRIBUTES",
+          "byteStride": 4,
+          "count": 5157
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 292112,
+      "byteLength": 20628,
+      "target": 34962,
+      "byteStride": 4,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 100228,
+          "byteLength": 7084,
+          "mode": "ATTRIBUTES",
+          "byteStride": 4,
+          "count": 5157
+        }
+      }
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "rig-human.glb.bin",
+      "byteLength": 107312
+    },
+    {
+      "byteLength": 312740,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "fallback": true
+        }
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "M_Main",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8007264733314514,
+          0.40298932790756226,
+          0.0429254025220871,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "metallicFactor": 0
+      }
+    },
+    {
+      "name": "M_Joints",
+      "doubleSided": true,
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.40037965774536133,
+          0.13159601390361786,
+          0.7071905136108398,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "metallicFactor": 0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mannequin",
+      "extras": {
+        "hops": {}
+      },
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "JOINTS_0": 2,
+            "POSITION": 7,
+            "TEXCOORD_0": 8,
+            "WEIGHTS_0": 9,
+            "TEXCOORD_1": 8
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        },
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "JOINTS_0": 5,
+            "POSITION": 10,
+            "TEXCOORD_0": 11,
+            "TEXCOORD_1": 12,
+            "WEIGHTS_0": 13
+          },
+          "mode": 4,
+          "material": 1,
+          "indices": 3
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "ik_hand_l",
+      "translation": [
+        0.7935500144958496,
+        1.4408000707626343,
+        -0.06539981812238693
+      ]
+    },
+    {
+      "name": "ik_hand_r",
+      "translation": [
+        -0.7935500144958496,
+        1.4408000707626343,
+        -0.06540019065141678
+      ]
+    },
+    {
+      "name": "ik_hand_gun",
+      "children": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "ik_hand_root",
+      "rotation": [
+        0.7071067690849304,
+        0,
+        0,
+        0.7071067690849304
+      ],
+      "children": [
+        2
+      ]
+    },
+    {
+      "name": "index_04_leaf_l",
+      "translation": [
+        4.697540134657174e-9,
+        0.030100105330348015,
+        1.0693611329770647e-8
+      ],
+      "rotation": [
+        4.1180931362579326e-16,
+        1,
+        1.4787951179418804e-17,
+        0.0000036517765238386346
+      ]
+    },
+    {
+      "name": "index_03_l",
+      "translation": [
+        9.722498361952603e-10,
+        0.034800052642822266,
+        1.0693611329770647e-8
+      ],
+      "children": [
+        4
+      ]
+    },
+    {
+      "name": "index_02_l",
+      "translation": [
+        -5.128198976578346e-10,
+        0.04070001840591431,
+        1.136087224296034e-8
+      ],
+      "children": [
+        5
+      ]
+    },
+    {
+      "name": "index_01_l",
+      "translation": [
+        0.001999831758439541,
+        0.1198999211192131,
+        0.030899997800588608
+      ],
+      "rotation": [
+        -4.854115687180638e-8,
+        0.7071095705032349,
+        -4.854154056488369e-8,
+        0.707103967666626
+      ],
+      "children": [
+        6
+      ]
+    },
+    {
+      "name": "middle_04_leaf_l",
+      "translation": [
+        -5.866240826435387e-9,
+        0.034437183290719986,
+        2.5992932251028833e-8
+      ],
+      "rotation": [
+        9.313227522511625e-9,
+        1,
+        -5.5467012344376405e-15,
+        0.0000036517760690912837
+      ]
+    },
+    {
+      "name": "middle_03_l",
+      "translation": [
+        -2.7830537874251604e-10,
+        0.03393314778804779,
+        1.605138209015422e-7
+      ],
+      "rotation": [
+        8.156294306616019e-9,
+        -3.566927135600917e-12,
+        -0.0011296597076579928,
+        0.9999993443489075
+      ],
+      "children": [
+        8
+      ]
+    },
+    {
+      "name": "middle_02_l",
+      "translation": [
+        3.637978807091713e-10,
+        0.042347248643636703,
+        2.018612121901242e-8
+      ],
+      "rotation": [
+        -1.1900032070855104e-8,
+        -9.910034570737025e-9,
+        0.0015135601861402392,
+        0.9999988675117493
+      ],
+      "children": [
+        9
+      ]
+    },
+    {
+      "name": "middle_01_l",
+      "translation": [
+        -0.00040022601024247706,
+        0.12159990519285202,
+        0.0052000004798173904
+      ],
+      "rotation": [
+        -0.01670246012508869,
+        0.7069122791290283,
+        -0.016702570021152496,
+        0.7069067358970642
+      ],
+      "children": [
+        10
+      ]
+    },
+    {
+      "name": "pinky_04_leaf_l",
+      "translation": [
+        -3.5834091249853373e-9,
+        0.028164202347397804,
+        1.1433525060056127e-7
+      ],
+      "rotation": [
+        2.421439049271612e-8,
+        1,
+        1.6284096602614886e-14,
+        0.00000365177675121231
+      ]
+    },
+    {
+      "name": "pinky_03_l",
+      "translation": [
+        -3.58431861968711e-9,
+        0.027665333822369576,
+        2.2544884359376738e-7
+      ],
+      "rotation": [
+        -4.400461328657457e-9,
+        4.186874371508997e-12,
+        0.000609522860031575,
+        0.9999998211860657
+      ],
+      "children": [
+        12
+      ]
+    },
+    {
+      "name": "pinky_02_l",
+      "translation": [
+        3.346940502524376e-9,
+        0.04029057174921036,
+        -1.4873648979119025e-9
+      ],
+      "rotation": [
+        5.882122788847255e-9,
+        -1.0178268894378562e-8,
+        -0.0008342716027982533,
+        0.9999996423721313
+      ],
+      "children": [
+        13
+      ]
+    },
+    {
+      "name": "pinky_01_l",
+      "translation": [
+        0.0015997173031792045,
+        0.107699915766716,
+        -0.040800001472234726
+      ],
+      "rotation": [
+        -0.023706039413809776,
+        0.7067120671272278,
+        -0.02370619960129261,
+        0.7067065238952637
+      ],
+      "children": [
+        14
+      ]
+    },
+    {
+      "name": "ring_04_leaf_l",
+      "translation": [
+        1.2751115718856454e-9,
+        0.03182259574532509,
+        -1.1624800322351803e-7
+      ],
+      "rotation": [
+        1.862645149230957e-9,
+        1,
+        5.017902800631517e-14,
+        0.00000365177675121231
+      ]
+    },
+    {
+      "name": "ring_03_l",
+      "translation": [
+        -6.176378519739956e-9,
+        0.030919553712010384,
+        -1.0190598231929471e-7
+      ],
+      "rotation": [
+        7.704945126363327e-9,
+        -2.098988951398928e-12,
+        -0.0010670634219422936,
+        0.9999994039535522
+      ],
+      "children": [
+        16
+      ]
+    },
+    {
+      "name": "ring_02_l",
+      "translation": [
+        -7.830749382264912e-10,
+        0.039324983954429626,
+        -1.0246476733755117e-7
+      ],
+      "rotation": [
+        -8.660336892063469e-10,
+        -9.627518338106711e-9,
+        0.000012190081179141998,
+        1
+      ],
+      "children": [
+        17
+      ]
+    },
+    {
+      "name": "ring_01_l",
+      "translation": [
+        -0.00010019120236393064,
+        0.11909990012645721,
+        -0.017100004479289055
+      ],
+      "rotation": [
+        -0.012588735669851303,
+        0.7069975137710571,
+        -0.012588820420205593,
+        0.706991970539093
+      ],
+      "children": [
+        18
+      ]
+    },
+    {
+      "name": "thumb_04_leaf_l",
+      "translation": [
+        -2.0787410903722048e-7,
+        0.0408623106777668,
+        -1.862645149230957e-8
+      ],
+      "rotation": [
+        2.3757428024850924e-8,
+        0.5061779022216797,
+        2.723667478221614e-7,
+        0.8624290823936462
+      ]
+    },
+    {
+      "name": "thumb_03_l",
+      "translation": [
+        -1.2301234164624475e-7,
+        0.049077946692705154,
+        -2.514570951461792e-8
+      ],
+      "rotation": [
+        0.0002478846290614456,
+        0.00008091918425634503,
+        -0.0005353352753445506,
+        0.9999998211860657
+      ],
+      "children": [
+        20
+      ]
+    },
+    {
+      "name": "thumb_02_l",
+      "translation": [
+        5.90443960390985e-9,
+        0.0430297926068306,
+        4.284083843231201e-8
+      ],
+      "rotation": [
+        -0.000135714202770032,
+        -0.0000741071708034724,
+        0.000047934565372997895,
+        1
+      ],
+      "children": [
+        21
+      ]
+    },
+    {
+      "name": "thumb_01_l",
+      "translation": [
+        0.02279982902109623,
+        0.02729993499815464,
+        0.03359999507665634
+      ],
+      "rotation": [
+        0.2474130243062973,
+        0.9457945227622986,
+        0.20344115793704987,
+        0.05358405411243439
+      ],
+      "children": [
+        22
+      ]
+    },
+    {
+      "name": "hand_l",
+      "translation": [
+        1.2729826082136242e-8,
+        0.27264055609703064,
+        -1.8102070953318616e-9
+      ],
+      "rotation": [
+        -0.008619682863354683,
+        -4.1722387322806753e-7,
+        2.1919726034269615e-9,
+        0.9999628663063049
+      ],
+      "children": [
+        7,
+        11,
+        15,
+        19,
+        23
+      ]
+    },
+    {
+      "name": "lowerarm_l",
+      "translation": [
+        2.1565142560575623e-8,
+        0.2744402587413788,
+        -1.2878444977104664e-9
+      ],
+      "rotation": [
+        0.01718229055404663,
+        -0.00002035305260505993,
+        3.6708831885334803e-7,
+        0.9998524188995361
+      ],
+      "children": [
+        24
+      ]
+    },
+    {
+      "name": "upperarm_l",
+      "translation": [
+        -0.03007233701646328,
+        0.21858175098896027,
+        -0.01696845516562462
+      ],
+      "rotation": [
+        0.18026958405971527,
+        0.6838500499725342,
+        -0.17983640730381012,
+        0.6837477087974548
+      ],
+      "children": [
+        25
+      ]
+    },
+    {
+      "name": "clavicle_l",
+      "translation": [
+        0.018799999728798866,
+        0.1405535787343979,
+        0.08089503645896912
+      ],
+      "rotation": [
+        -0.6040205955505371,
+        -0.34510302543640137,
+        -0.35671767592430115,
+        0.6235507726669312
+      ],
+      "children": [
+        26
+      ]
+    },
+    {
+      "name": "index_04_leaf_r",
+      "translation": [
+        -9.713403414934874e-10,
+        0.030099960044026375,
+        1.1624820217548404e-8
+      ],
+      "rotation": [
+        1.7660197551910774e-16,
+        -1,
+        2.368324237555521e-16,
+        0.0000036517765238386346
+      ]
+    },
+    {
+      "name": "index_03_r",
+      "translation": [
+        -4.6966306399554014e-9,
+        0.03480002284049988,
+        -1.0758446933323285e-7
+      ],
+      "children": [
+        28
+      ]
+    },
+    {
+      "name": "index_02_r",
+      "translation": [
+        -5.3552526857458815e-9,
+        0.04070010781288147,
+        -1.0784840043243094e-7
+      ],
+      "children": [
+        29
+      ]
+    },
+    {
+      "name": "index_01_r",
+      "translation": [
+        -0.0019998278003185987,
+        0.11989995837211609,
+        0.030899999663233757
+      ],
+      "rotation": [
+        -4.8541142660951664e-8,
+        -0.7071096301078796,
+        4.854153345945633e-8,
+        0.7071039080619812
+      ],
+      "children": [
+        30
+      ]
+    },
+    {
+      "name": "middle_04_leaf_r",
+      "translation": [
+        4.00359567720443e-9,
+        0.03443721681833267,
+        2.6527175123192137e-8
+      ],
+      "rotation": [
+        9.313225746154785e-9,
+        -1,
+        -4.341538183106307e-14,
+        0.000003651776296464959
+      ]
+    },
+    {
+      "name": "middle_03_r",
+      "translation": [
+        2.141860022675246e-9,
+        0.03393318131566048,
+        4.189584501546051e-8
+      ],
+      "rotation": [
+        8.186298749990328e-9,
+        2.2575290595239217e-11,
+        0.0011296587763354182,
+        0.9999993443489075
+      ],
+      "children": [
+        32
+      ]
+    },
+    {
+      "name": "middle_02_r",
+      "translation": [
+        6.311893230304122e-10,
+        0.04234728217124939,
+        -9.737595974002033e-8
+      ],
+      "rotation": [
+        -1.100992630398423e-8,
+        -3.3837239676870468e-9,
+        -0.0015135611174628139,
+        0.9999988675117493
+      ],
+      "children": [
+        33
+      ]
+    },
+    {
+      "name": "middle_01_r",
+      "translation": [
+        0.00040023319888859987,
+        0.12159993499517441,
+        0.00520000234246254
+      ],
+      "rotation": [
+        -0.01670246012508869,
+        -0.7069123387336731,
+        0.016702566295862198,
+        0.7069066762924194
+      ],
+      "children": [
+        34
+      ]
+    },
+    {
+      "name": "pinky_04_leaf_r",
+      "translation": [
+        3.5824996302835643e-9,
+        0.028164170682430267,
+        -1.2279903671696957e-7
+      ],
+      "rotation": [
+        2.60770320892334e-8,
+        -1,
+        -3.1884908667338674e-14,
+        0.0000036517765238386346
+      ]
+    },
+    {
+      "name": "pinky_03_r",
+      "translation": [
+        3.58431861968711e-9,
+        0.027665363624691963,
+        -1.1715911796272849e-8
+      ],
+      "rotation": [
+        -4.416420118502629e-9,
+        -1.6191496060580235e-11,
+        -0.0006095209391787648,
+        0.9999998211860657
+      ],
+      "children": [
+        36
+      ]
+    },
+    {
+      "name": "pinky_02_r",
+      "translation": [
+        8.576535037718713e-10,
+        0.04029053822159767,
+        -1.963655904546613e-9
+      ],
+      "rotation": [
+        5.623980836588771e-9,
+        -2.9140143631423143e-9,
+        0.0008342642686329782,
+        0.9999996423721313
+      ],
+      "children": [
+        37
+      ]
+    },
+    {
+      "name": "pinky_01_r",
+      "translation": [
+        -0.0015997047303244472,
+        0.10769994556903839,
+        -0.040800001472234726
+      ],
+      "rotation": [
+        -0.023706039413809776,
+        -0.7067121267318726,
+        0.02370619773864746,
+        0.7067064642906189
+      ],
+      "children": [
+        38
+      ]
+    },
+    {
+      "name": "ring_04_leaf_r",
+      "translation": [
+        -1.2760210665874183e-9,
+        0.031822629272937775,
+        4.2641943309718044e-9
+      ],
+      "rotation": [
+        3.725290742551124e-9,
+        -1,
+        -6.052667895150524e-15,
+        0.000003651776296464959
+      ]
+    },
+    {
+      "name": "ring_03_r",
+      "translation": [
+        2.4510882212780416e-9,
+        0.03091958537697792,
+        -1.0054915833279665e-7
+      ],
+      "rotation": [
+        7.732828599671393e-9,
+        2.1304747896411236e-11,
+        0.0010670634219422936,
+        0.9999994039535522
+      ],
+      "children": [
+        40
+      ]
+    },
+    {
+      "name": "ring_02_r",
+      "translation": [
+        -2.5420376914553344e-9,
+        0.03932501748204231,
+        -2.1878902600747097e-7
+      ],
+      "rotation": [
+        7.371431243186066e-10,
+        -3.438689111234794e-9,
+        -0.000012191012501716614,
+        1
+      ],
+      "children": [
+        41
+      ]
+    },
+    {
+      "name": "ring_01_r",
+      "translation": [
+        0.00010020103945862502,
+        0.1190999373793602,
+        -0.017100002616643906
+      ],
+      "rotation": [
+        -0.012588738463819027,
+        -0.7069975137710571,
+        0.01258881762623787,
+        0.706991970539093
+      ],
+      "children": [
+        42
+      ]
+    },
+    {
+      "name": "thumb_04_leaf_r",
+      "translation": [
+        -6.444497557822615e-8,
+        0.040862299501895905,
+        1.4901161193847656e-8
+      ],
+      "rotation": [
+        1.9437893072904444e-8,
+        -0.5061777830123901,
+        -2.737419038112421e-7,
+        0.862429141998291
+      ]
+    },
+    {
+      "name": "thumb_03_r",
+      "translation": [
+        -5.5804321164032444e-8,
+        0.04907788336277008,
+        5.587935447692871e-9
+      ],
+      "rotation": [
+        0.0002478510432410985,
+        -0.00008099935803329572,
+        0.0005353167653083801,
+        0.9999998807907104
+      ],
+      "children": [
+        44
+      ]
+    },
+    {
+      "name": "thumb_02_r",
+      "translation": [
+        -7.172275218181312e-9,
+        0.04302985966205597,
+        -1.6763806343078613e-8
+      ],
+      "rotation": [
+        -0.00013566949928645045,
+        0.0000740157556720078,
+        -0.000047864316002232954,
+        1
+      ],
+      "children": [
+        45
+      ]
+    },
+    {
+      "name": "thumb_01_r",
+      "translation": [
+        -0.022799823433160782,
+        0.027299968525767326,
+        0.03359999507665634
+      ],
+      "rotation": [
+        0.2474130541086197,
+        -0.9457944631576538,
+        -0.2034410983324051,
+        0.053584057837724686
+      ],
+      "children": [
+        46
+      ]
+    },
+    {
+      "name": "hand_r",
+      "translation": [
+        -2.204334137445585e-8,
+        0.2726404666900635,
+        1.72497038875008e-9
+      ],
+      "rotation": [
+        -0.008619682863354683,
+        5.364287289921776e-7,
+        -2.1920292248012174e-9,
+        0.9999628663063049
+      ],
+      "children": [
+        31,
+        35,
+        39,
+        43,
+        47
+      ]
+    },
+    {
+      "name": "lowerarm_r",
+      "translation": [
+        -1.4812334825364815e-7,
+        0.2744402289390564,
+        -7.94170773588121e-9
+      ],
+      "rotation": [
+        0.017182305455207825,
+        0.00002035305260505993,
+        -3.691950496431673e-7,
+        0.9998524188995361
+      ],
+      "children": [
+        48
+      ]
+    },
+    {
+      "name": "upperarm_r",
+      "translation": [
+        0.03007233701646328,
+        0.21858175098896027,
+        -0.01696845516562462
+      ],
+      "rotation": [
+        0.18026958405971527,
+        -0.6838500499725342,
+        0.17983640730381012,
+        0.6837477087974548
+      ],
+      "children": [
+        49
+      ]
+    },
+    {
+      "name": "clavicle_r",
+      "translation": [
+        -0.018799999728798866,
+        0.1405535787343979,
+        0.08089503645896912
+      ],
+      "rotation": [
+        -0.6040205955505371,
+        0.34510302543640137,
+        0.35671767592430115,
+        0.6235507726669312
+      ],
+      "children": [
+        50
+      ]
+    },
+    {
+      "name": "Head",
+      "translation": [
+        0,
+        0.08258678019046783,
+        -1.3969838619232178e-9
+      ],
+      "rotation": [
+        -0.07867422699928284,
+        0,
+        0,
+        0.9969003796577454
+      ]
+    },
+    {
+      "name": "neck_01",
+      "translation": [
+        0,
+        0.1728907823562622,
+        -1.862645149230957e-9
+      ],
+      "rotation": [
+        0.11098591238260269,
+        0,
+        0,
+        0.9938219785690308
+      ],
+      "children": [
+        52
+      ]
+    },
+    {
+      "name": "spine_03",
+      "translation": [
+        0,
+        0.14127187430858612,
+        5.587935447692871e-9
+      ],
+      "rotation": [
+        -0.0002685915678739548,
+        0,
+        0,
+        1
+      ],
+      "children": [
+        27,
+        51,
+        53
+      ]
+    },
+    {
+      "name": "spine_02",
+      "translation": [
+        0,
+        0.12403485178947449,
+        3.4924596548080444e-10
+      ],
+      "rotation": [
+        -0.07727984338998795,
+        0,
+        0,
+        0.9970094561576843
+      ],
+      "children": [
+        54
+      ]
+    },
+    {
+      "name": "spine_01",
+      "translation": [
+        0,
+        0.1381763368844986,
+        -1.210719347000122e-8
+      ],
+      "rotation": [
+        -0.06470262259244919,
+        0,
+        0,
+        0.9979045987129211
+      ],
+      "children": [
+        55
+      ]
+    },
+    {
+      "name": "ball_leaf_l",
+      "translation": [
+        6.8294805366519995e-9,
+        0.07890003174543381,
+        -5.368017141904602e-11
+      ]
+    },
+    {
+      "name": "ball_l",
+      "translation": [
+        3.919922164641321e-9,
+        0.1733010858297348,
+        -8.578354027122259e-9
+      ],
+      "rotation": [
+        0.0001371279067825526,
+        -0.9643067717552185,
+        0.26478710770606995,
+        0.0004994344199076295
+      ],
+      "children": [
+        57
+      ]
+    },
+    {
+      "name": "foot_l",
+      "translation": [
+        -7.219114195322618e-9,
+        0.4294798970222473,
+        2.408341970294714e-9
+      ],
+      "rotation": [
+        -0.5290717482566833,
+        -0.0003280931559856981,
+        0.00034345293533988297,
+        0.8485770225524902
+      ],
+      "children": [
+        58
+      ]
+    },
+    {
+      "name": "calf_l",
+      "translation": [
+        7.450580596923828e-9,
+        0.4003097712993622,
+        -2.3283064365386963e-10
+      ],
+      "rotation": [
+        0.03658590838313103,
+        -0.0001311732194153592,
+        -0.000004802307103091152,
+        0.9993305206298828
+      ],
+      "children": [
+        59
+      ]
+    },
+    {
+      "name": "thigh_l",
+      "translation": [
+        0.08900000154972076,
+        0.027770841494202614,
+        0.04602379724383354
+      ],
+      "rotation": [
+        0.992484450340271,
+        0,
+        0,
+        0.12237062305212021
+      ],
+      "children": [
+        60
+      ]
+    },
+    {
+      "name": "ball_leaf_r",
+      "translation": [
+        -8.071681101284867e-9,
+        0.07890003174543381,
+        -2.2050139492080234e-10
+      ]
+    },
+    {
+      "name": "ball_r",
+      "translation": [
+        -3.5306584322825074e-9,
+        0.1733010858297348,
+        -8.185452315956354e-9
+      ],
+      "rotation": [
+        0.0001371279067825526,
+        -0.9643067717552185,
+        0.26478710770606995,
+        0.0004994344199076295
+      ],
+      "children": [
+        62
+      ]
+    },
+    {
+      "name": "foot_r",
+      "translation": [
+        7.682046998525038e-9,
+        0.42947983741760254,
+        1.3169483281672e-9
+      ],
+      "rotation": [
+        -0.5290717482566833,
+        -0.0003280931559856981,
+        0.00034345293533988297,
+        0.8485770225524902
+      ],
+      "children": [
+        63
+      ]
+    },
+    {
+      "name": "calf_r",
+      "translation": [
+        -7.450580596923828e-9,
+        0.4003097712993622,
+        -2.3283064365386963e-10
+      ],
+      "rotation": [
+        0.03658590838313103,
+        -0.0001311732194153592,
+        -0.000004802307103091152,
+        0.9993305206298828
+      ],
+      "children": [
+        64
+      ]
+    },
+    {
+      "name": "thigh_r",
+      "translation": [
+        -0.08900000154972076,
+        0.027770841494202614,
+        0.04602379724383354
+      ],
+      "rotation": [
+        0.992484450340271,
+        0,
+        0,
+        0.12237062305212021
+      ],
+      "children": [
+        65
+      ]
+    },
+    {
+      "name": "pelvis",
+      "translation": [
+        0,
+        0.05010002851486206,
+        0.916700005531311
+      ],
+      "rotation": [
+        0.7904685139656067,
+        0,
+        0,
+        0.6125027537345886
+      ],
+      "children": [
+        56,
+        61,
+        66
+      ]
+    },
+    {
+      "name": "socket_offhand_grip",
+      "translation": [
+        0.7935500144958496,
+        1.4407999515533447,
+        -0.06540000438690186
+      ]
+    },
+    {
+      "name": "socket_offhand",
+      "rotation": [
+        0.7071067690849304,
+        0,
+        0,
+        0.7071067690849304
+      ],
+      "children": [
+        68
+      ]
+    },
+    {
+      "name": "root",
+      "rotation": [
+        -0.7071067690849304,
+        0,
+        0,
+        0.7071067690849304
+      ],
+      "children": [
+        3,
+        67,
+        69
+      ]
+    },
+    {
+      "name": "Mannequin",
+      "extras": {
+        "amp_blendinator": {
+          "schema": 1,
+          "smart_layers": {
+            "schema": 1,
+            "groups": {},
+            "layers": {},
+            "composites": {}
+          }
+        },
+        "ual_uuid": "2c69a611-948b-4fa1-b45f-57f98358401c",
+        "ual_version_group_id": "2c69a611-948b-4fa1-b45f-57f98358401c",
+        "ual_version": 1,
+        "ual_version_label": "v001",
+        "ual_asset_name": "RIG_Q_TPSCR",
+        "ual_asset_type": "rig",
+        "ual_representation_type": "none",
+        "ual_imported": true,
+        "ual_asset_id": "2c69a611-948b-4fa1-b45f-57f98358401c",
+        "ual_variant_name": "Base",
+        "als": {},
+        "amp_selection_sets": {},
+        "ht_props": {
+          "surface_props": {
+            "active_obj_index": 0
+          },
+          "short_hair_props": {}
+        },
+        "hops": {}
+      },
+      "mesh": 0,
+      "skin": 0
+    },
+    {
+      "name": "Armature",
+      "extras": {
+        "rig_ui": {
+          "name": "rig_ui.py",
+          "type": "Text"
+        },
+        "wiggle_enable": 0,
+        "active_selection_set": 0,
+        "amp_blendinator": {
+          "schema": 1,
+          "smart_layers": {
+            "schema": 1,
+            "groups": {},
+            "layers": {},
+            "composites": {}
+          }
+        },
+        "ual_uuid": "2c69a611-948b-4fa1-b45f-57f98358401c",
+        "ual_version_group_id": "2c69a611-948b-4fa1-b45f-57f98358401c",
+        "ual_version": 1,
+        "ual_version_label": "v001",
+        "ual_asset_name": "RIG_Q_TPSCR",
+        "ual_asset_type": "rig",
+        "ual_representation_type": "none",
+        "ual_imported": true,
+        "ual_asset_id": "2c69a611-948b-4fa1-b45f-57f98358401c",
+        "ual_variant_name": "Base",
+        "als": {},
+        "hops": {},
+        "amp_selection_sets": {},
+        "amp_pathing": {},
+        "ht_props": {
+          "surface_props": {
+            "active_obj_index": 1
+          },
+          "short_hair_props": {}
+        }
+      },
+      "children": [
+        71,
+        70
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "name": "Armature",
+      "inverseBindMatrices": 6,
+      "joints": [
+        70,
+        3,
+        2,
+        0,
+        1,
+        67,
+        56,
+        55,
+        54,
+        27,
+        26,
+        25,
+        24,
+        7,
+        6,
+        5,
+        4,
+        11,
+        10,
+        9,
+        8,
+        15,
+        14,
+        13,
+        12,
+        19,
+        18,
+        17,
+        16,
+        23,
+        22,
+        21,
+        20,
+        51,
+        50,
+        49,
+        48,
+        31,
+        30,
+        29,
+        28,
+        35,
+        34,
+        33,
+        32,
+        39,
+        38,
+        37,
+        36,
+        43,
+        42,
+        41,
+        40,
+        47,
+        46,
+        45,
+        44,
+        53,
+        52,
+        61,
+        60,
+        59,
+        58,
+        57,
+        66,
+        65,
+        64,
+        63,
+        62,
+        69,
+        68
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "extras": {
+        "bc": {},
+        "wiggle": {
+          "is_rendering": 0
+        },
+        "ual_file_id": "e03dbb99-63b1-48fa-b04a-b74ec26264eb",
+        "ual_file_last_path": "C:\\Users\\Hassan\\Desktop\\new skeleton.blend",
+        "animtoolbox": {},
+        "emp": {
+          "selected_keyframes": "{}"
+        },
+        "btc": {},
+        "ual_props": {},
+        "amp_mopaths_registry": {},
+        "amp_onion_skin_properties": {},
+        "mopath_sculpt_settings": {},
+        "CCICLinkProps": {},
+        "ah_nla": {},
+        "ah_keys": {
+          "ir_aim": {}
+        },
+        "CC3ImportProps": {},
+        "amp_silhouette": {},
+        "amp_anim_swapper_props": {
+          "actions_collection": [
+            {
+              "action": {
+                "name": "A_TPose",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "Action",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "ArmatureAction",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "backflip",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "backflip.001",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "backflip.002",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "bandage_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "bow_aim_down",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "bow_aim_neutral",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "bow_aim_up",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "bow_notch",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "bow_rapidshoot_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "bow_shoot",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "chest_open",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "climbup_1m",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "climbup_2m",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "consume",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "doublejump",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "farm_harvest",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "farm_pickingtree",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "farm_plantseed",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "farm_scatteringseeds",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "farm_watering",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "fish_cast",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "fish_cast_idle_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "fish_oh_idle_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "fish_reel",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "fish_reel_failed",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "getoffwall_2m",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "hit_knockback",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "idle_foldarms_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "idle_lantern_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "idle_no_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "idle_rail_call",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "idle_rail_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "idle_shield_break",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "idle_shield_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "idle_talkingphone_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "idletolay",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "jogtoflip",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "kipup",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "laytoidle",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "liftair",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "liftair_fall",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "liftair_fall_air_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "liftair_fall_impact",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "liftair_hit_l",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "liftair_hit_r",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "liftair_idle_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "melee_combo",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "melee_hook",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "melee_hook_rec",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "melee_knee",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "melee_knee_rec",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "melee_uppercut",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "mining_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "monstertransformation",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "ninjajump_double",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "ninjajump_idle_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "ninjajump_land",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "ninjajump_start",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "overhandthrow",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "safetyvault",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "shield_dash",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "shield_oneshot",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "slide_exit",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "slide_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "slide_start",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sprint_shield_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "stepup",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "surprise",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_aerial_a",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_aerial_a_rec",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_aerial_b",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_aerial_combo_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_aerial_idle_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_block",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_dash",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_dash.001",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_dash.002",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_groundpound",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_heavy_a",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_heavy_a_rec",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_heavy_b",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_heavy_b_rec",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_heavy_c",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_heavy_c_rec",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_heavy_combo",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_heavy_d",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_light_a",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_light_a_rec",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_light_b",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_light_b_rec",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_light_c",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_light_combo",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_light_d",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_regular_a",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_regular_a_rec",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_regular_b",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_regular_b_rec",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_regular_c",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_regular_combo",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "sword_uppercut",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "swordlight_c_rec",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "treechopping_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "turn180_l",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "turn180_r",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "walk_bwd_l_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "walk_bwd_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "walk_bwd_r_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "walk_carry_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "walk_fwd_l_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "walk_fwd_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "walk_fwd_r_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "walk_l_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "walk_r_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "wallrun_jump_l",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "wallrun_jump_r",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "wallrun_l_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "wallrun_r_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "yes",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "zombie_bite",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "zombie_idle_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "zombie_run_bwd_l_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "zombie_run_bwd_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "zombie_run_bwd_r_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "zombie_run_fwd_l_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "zombie_run_fwd_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "zombie_run_fwd_r_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "zombie_run_l_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "zombie_run_r_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "zombie_scratch",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "zombie_spawn",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "zombie_walk_bwd_l_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "zombie_walk_bwd_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "zombie_walk_bwd_r_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "zombie_walk_fwd_l_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "zombie_walk_fwd_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "zombie_walk_fwd_r_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "zombie_walk_l_loop",
+                "type": "Action"
+              }
+            },
+            {
+              "action": {
+                "name": "zombie_walk_r_loop",
+                "type": "Action"
+              }
+            }
+          ]
+        },
+        "amp_anim_set": {
+          "presets": [
+            {
+              "name": "AnimSet_Preset.001"
+            }
+          ],
+          "active_preset_index": 0
+        },
+        "amp_blendinator": {
+          "animation_mixer": {}
+        },
+        "character_lab": {
+          "project_root": "D:\\Github\\portfolio-website\\",
+          "action_scope": 0,
+          "asset_library": 1
+        },
+        "amp_keyposer_properties": {
+          "active_track_index": 0,
+          "selected_entry_uuid": "",
+          "object_name": "Armature",
+          "layer_cache_signature": "|",
+          "provider_topology_signature": "",
+          "any_layer_solo": 0,
+          "solo_group_uuid": ""
+        },
+        "amp_temp_transforms_props": {
+          "temp_global_active": 0,
+          "temp_relative_active": 0,
+          "ignore_depsgraph_update": 0,
+          "ignore_selection_change": 0,
+          "initial_active_object_name": "",
+          "initial_active_bone_name": "",
+          "processing": 0,
+          "needs_update": 0,
+          "last_update_time": 0,
+          "last_was_transform": 0,
+          "is_frame_change": 0
+        },
+        "anim_link": {},
+        "anim_overlap": {},
+        "ht_props": {
+          "hair_drawing": {},
+          "mask_preview_obj": {}
+        },
+        "amp_temp_pivot_props": {},
+        "Dprops": {},
+        "fprops": {},
+        "amp_copy_transforms_props": {},
+        "amp_root_motion_props": {},
+        "amp_cursor_mover_props": {},
+        "amp_dynamic_parent_props": {},
+        "amp_data_transfer": {},
+        "amp_adjustment_blend_settings": {}
+      },
+      "nodes": [
+        72
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization"
+  ]
+}

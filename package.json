@@ -30,6 +30,7 @@
     "@capacitor/haptics": "^8.0.2",
     "@capacitor/local-notifications": "^8.3.1",
     "@capacitor/share": "^8.0.3",
+    "@netlify/blobs": "^11.1.9",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },

@@ -147,7 +147,7 @@ ${ssr.ROUTES.map((r) => `  <url><loc>${pageUrl(r.path)}</loc><lastmod>${today}</
   writeFileSync(join(distDir, 'sitemap.xml'), sitemap)
   writeFileSync(
     join(distDir, 'robots.txt'),
-    `User-agent: *\nAllow: /\nSitemap: ${ORIGIN}/sitemap.xml\n`,
+    `User-agent: *\nAllow: /\nDisallow: /boss\nSitemap: ${ORIGIN}/sitemap.xml\n`,
   )
 
   rmSync(ssrDir, { recursive: true, force: true })

@@ -104,11 +104,11 @@ export default defineConfig({
         // 每条的 OG 分享图是给爬虫看的，不进预缓存（61 张约 3MB，会拖慢 SW 安装）
         // 预渲染出的每条/每页 HTML（458 个，各约 430KB）只给爬虫和首屏用，不进预缓存：
         // 离线时任何路由都回退到 index.html，由客户端按 URL 渲染（内容都在 JS 包里）。
-        globIgnores: ['og/**', 'town/**', '*/index.html', '*/*/index.html'],
+        globIgnores: ['og/**', 'town/**', 'boss/**', '*/index.html', '*/*/index.html'],
         cleanupOutdatedCaches: true,
         clientsClaim: true,
         navigateFallback: '/index.html',
-        navigateFallbackDenylist: [/^\/town(?:\/|\?|$)/],
+        navigateFallbackDenylist: [/^\/town(?:\/|\?|$)/, /^\/boss(?:\/|\?|$)/],
         // 站点是纯静态的，整站都能预缓存 —— 装上之后完全离线可用
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
       },

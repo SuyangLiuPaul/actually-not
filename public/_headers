@@ -35,3 +35,8 @@
 
 /boss
   X-Robots-Tag: noindex, nofollow
+
+# Paul HQ: never indexed, never cached by shared caches (keep in sync with netlify.toml)
+/boss/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: private, no-cache
