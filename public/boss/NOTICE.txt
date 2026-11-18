@@ -16,3 +16,8 @@ v11 street life and wall art
 - Framed pictures (office-assets/art/*.webp): Paul's own 雅伟之界 voxel Bible scenes (no-text-derivatives-v2), cropped and resized.
 - Verse text on the plaques: Chinese from Paul's edited CUV (cuvs-yhwh), English from the ASV (public domain).
 - All passers-by, dogs, ducks, koi, birds, flags and props are generated in code (no third-party assets).
+
+v12 additions
+- Pocket-farm animals (office-assets/fauna/sheep.glb, goat.glb, ass.glb, dove.glb): Paul's own 雅伟之界 (yahwehs-globe) models. The cow is the Kenney "Cube Pets" cow already listed above.
+- Project logos brand/sparkers.png and brand/sparklive.png: Paul's own app icons (SparkTranscribe).
+- Paul's cars are the Kenney Car Kit SUV (CC0) with its colours re-baked in code. The carport, kiosk, flags, video wall and all other v12 objects are generated in code.
