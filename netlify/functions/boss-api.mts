@@ -13,7 +13,7 @@ import {
   COOKIE_NAME,
 } from '../shared/boss-session.ts'
 
-export const config = { path: '/boss/api/*' }
+export const config = { path: ['/boss/api/login', '/boss/api/logout', '/boss/api/batch', '/boss/api/changes', '/boss/api/db', '/boss/api/db/*'] }
 
 const COLLECTIONS = ['agents', 'tasks', 'questions', 'inbox', 'reviews', 'controls', 'meta', 'sessions']
 const MAX_DOC_BYTES = 256 * 1024
