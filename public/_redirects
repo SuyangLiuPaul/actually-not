@@ -2,6 +2,10 @@
 https://actually-not.netlify.app/*  https://actually-not.com/:splat  301!
 http://actually-not.netlify.app/*   https://actually-not.com/:splat  301!
 
+# /boss → Paul's private office dashboard (claude.ai artifact, only Paul's account can open; no password stored here)
+/boss   https://claude.ai/artifact/6bjqbCfLcMHQNFrXz1jPaR   302!
+/boss/  https://claude.ai/artifact/6bjqbCfLcMHQNFrXz1jPaR   302!
+
 # YouTube 简介里用过的 /m/<条目>/ → 条目真实地址（与 netlify.toml 保持一致）
 /m/*  /:splat  301!
 

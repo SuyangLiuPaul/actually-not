@@ -32,3 +32,6 @@
   Cache-Control: public, max-age=300, must-revalidate
   Access-Control-Allow-Origin: *
   Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+
+/boss
+  X-Robots-Tag: noindex, nofollow
