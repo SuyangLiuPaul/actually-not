@@ -9,6 +9,15 @@
 # Netlify 号称会自动重定向到主域名，实测（2026-08-31）并没有：
 # actually-not.netlify.app 仍返回 200。所以显式写死。
 # 必须排在下面的 SPA 兜底之前——首个匹配生效。
+# ── /boss → Paul's private office dashboard (a claude.ai artifact that only Paul's account can open) ──
+# No password is stored anywhere: access is enforced by claude.ai login. 302 so nothing caches it; noindex so it is never listed.
+[[redirects]]
+  from = "/boss"
+  to = "https://claude.ai/artifact/6bjqbCfLcMHQNFrXz1jPaR"
+  status = 302
+  force = true
+  headers = {X-Robots-Tag = "noindex, nofollow"}
+
 [[redirects]]
   from = "https://actually-not.netlify.app/*"
   to = "https://actually-not.com/:splat"
