@@ -7,3 +7,5 @@ Also bundled: three.js, @react-three/fiber, @react-three/drei, React (all MIT).
 Animated people: officelapse character layer (MIT, github.com/deepak982/officelapse, see LICENSE-officelapse.txt) with Quaternius's CC0 rig and clips via ActionForge (office-assets/people/CREDITS.md).
 Contractor towers: KayKit City Builder Bits by Kay Lousberg (CC0), as bundled in Agentshire (MIT).
 Plaza visitors: Paul's own 雅伟之界 models (traveller-v1, shepherd-v1).
+
+Street traffic: cars from Kenney Car Kit by Kenney (www.kenney.nl), CC0 1.0. Tram: "Tram" by Poly by Google, CC-BY 3.0 (https://creativecommons.org/licenses/by/3.0/), via Poly Pizza https://poly.pizza/m/e9pQgEqPGir, scaled and re-oriented.
