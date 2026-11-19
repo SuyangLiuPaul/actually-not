@@ -28,3 +28,5 @@ v14 Noah's ark (building/Ark.tsx, ArkLife.tsx)
 - The plaque, lamps, forecourt and glow are generated in code (no third-party assets).
 
 v14b additions (office-assets/ark/*.glb): more of Paul's own 雅伟之界 models (public/models/bible-cutouts): Ham and the three daughters-in-law, Noah in his guiding and praying poses, lion and lioness, deer, two horses, ox, lamb, squirrel, raven, dove, barrel, crate and hay bale. Textures cut to 256 px (128 px for props), meshes simplified, quantised and unused clips stripped with glTF-Transform (MIT). Nothing was downloaded from third parties in v14b.
+
+v14e (office-assets/ark/man.glb, woman.glb, priest.glb): Paul's own 雅伟之界 models (public/models), slimmed with glTF-Transform (MIT). The traveller and shepherd are the existing office-assets/visitors models (also Paul's own).
