@@ -21,3 +21,8 @@ v12 additions
 - Pocket-farm animals (office-assets/fauna/sheep.glb, goat.glb, ass.glb, dove.glb): Paul's own 雅伟之界 (yahwehs-globe) models. The cow is the Kenney "Cube Pets" cow already listed above.
 - Project logos brand/sparkers.png and brand/sparklive.png: Paul's own app icons (SparkTranscribe).
 - Paul's cars are the Kenney Car Kit SUV (CC0) with its colours re-baked in code. The carport, kiosk, flags, video wall and all other v12 objects are generated in code.
+
+v14 Noah's ark (building/Ark.tsx, ArkLife.tsx)
+- The 1:1 ark (135 x 22.5 x 13.5 m: gopher-wood strakes, side door, gangway, clerestory, roof) is generated in code, ported from Paul's own 雅伟之界 (yahwehs-globe, src/scene-assembly/noahs-ark-world.ts).
+- Noah, his wife, Shem's and Japheth's figures, and the giraffe, elephant and camel pairs (office-assets/ark/*.glb): Paul's own 雅伟之界 models (public/models/bible-cutouts), textures cut to 256 px and meshes simplified with glTF-Transform (MIT).
+- The plaque, lamps, forecourt and glow are generated in code (no third-party assets).
