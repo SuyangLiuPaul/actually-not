@@ -569,3 +569,11 @@ Google Play 个人开发者账号不能发布含「医疗」功能的应用（�
 **改结构**：不兼容的改动要把 `CONTENT_SCHEMA` 加一并换路径（`/content/v2/`），旧 App 继续读 v1。新增分类同理：旧 App 的校验器不认识新分类，会拒绝整份（安全，但旧 App 就拿不到更新了）——加分类要配一次商店发版。
 
 **验证**：`curl -sI https://actually-not.com/content/v1/content.json` 应该看到 200、`cache-control: public, max-age=300, must-revalidate`、`access-control-allow-origin: *`。真机上：装 1.3 → 断网打开（照常显示打包内容）→ 联网重开 → 新条目出现；Android 包里仍然没有急救 / 身体。
+
+## Videos: Bilibili fallback (2026-11-19)
+- In `src/data/videos.ts`, each entry gets `bili: "BV..."`, the B站 copy of the zh video. Add it for every new episode once B站 has it; the BV id is in the B站 稿件管理.
+- `EntryVideo.tsx` picks the player in this order:
+  1. a saved manual choice (localStorage `an-video-src`);
+  2. a mainland-China timezone, which gets B站 at once;
+  3. otherwise a 3-second probe of a YouTube thumbnail, falling back to B站 if it fails.
+- A switch button is always shown. EN pages fall back to the zh B站 copy (there are no EN B站 uploads).
