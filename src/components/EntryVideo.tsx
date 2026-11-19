@@ -11,6 +11,27 @@ export function EntryVideo({ id, title, locale }: { id: string; title: string; l
   // 预渲染时不知道访问时刻；挂载后再判断是否已公开，避免水合不一致（先显示预告卡）。
   const [now, setNow] = useState<Date | null>(null)
   useEffect(() => setNow(new Date()), [])
+  // 中国大陆访客打不开 YouTube（Paul 2026-11-19）：有 B站版本时，
+  // 1) 时区是中国大陆的，直接先用 B站（不用等）；
+  // 2) 其他人先用 YouTube，同时用一张 YouTube 缩略图探测 3 秒，加载不出来就自动换成 B站；
+  // 3) 播放器下面始终有「换 B站 / 换 YouTube」，用户选过的会记住（localStorage）。
+  const [src, setSrc] = useState<'yt' | 'bili'>('yt')
+  useEffect(() => {
+    if (!video?.bili) return
+    let saved: string | null = null
+    try { saved = localStorage.getItem('an-video-src') } catch { /* private mode */ }
+    if (saved === 'yt' || saved === 'bili') { setSrc(saved); return }
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''
+    if (/^Asia\/(Shanghai|Urumqi|Chongqing|Harbin|Kashgar)$/.test(tz)) { setSrc('bili'); return }
+    let done = false
+    const img = new Image()
+    const t = window.setTimeout(() => { if (!done) { done = true; setSrc('bili') } }, 3000)
+    img.onload = () => { if (!done) { done = true; window.clearTimeout(t) } }
+    img.onerror = () => { if (!done) { done = true; window.clearTimeout(t); setSrc('bili') } }
+    img.src = `https://i.ytimg.com/vi/${video.youtubeId}/default.jpg?probe=${Date.now()}`
+    return () => { done = true; window.clearTimeout(t) }
+  }, [video?.bili, video?.youtubeId])
+  const pick = (v: 'yt' | 'bili') => { setSrc(v); try { localStorage.setItem('an-video-src', v) } catch { /* ignore */ } }
   if (!video) return null
   const len = lengthLabel(video, locale)
   const caption = locale === 'en' ? `Watch the ${len}` : `看${len}`
@@ -35,7 +56,10 @@ export function EntryVideo({ id, title, locale }: { id: string; title: string; l
         style={{ aspectRatio: video.landscape ? '16 / 9' : '9 / 16', borderColor: 'var(--rule)', background: 'var(--paper-raised)' }}
       >
         <iframe
-          src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}?playsinline=1&rel=0`}
+          key={src}
+          src={src === 'bili' && video.bili
+            ? `https://player.bilibili.com/player.html?bvid=${video.bili}&autoplay=0&high_quality=1&danmaku=0`
+            : `https://www.youtube-nocookie.com/embed/${video.youtubeId}?playsinline=1&rel=0`}
           title={title}
           loading="lazy"
           allow="encrypted-media; picture-in-picture; fullscreen"
@@ -49,14 +73,23 @@ export function EntryVideo({ id, title, locale }: { id: string; title: string; l
       </figcaption>
       {/* 嵌入播放器加载不出来时（离线、被拦截）的兜底：直接去 YouTube 看 */}
       <p className="mt-1 text-center text-[12px]">
+        {video.bili ? (
+          <button type="button" onClick={() => pick(src === 'bili' ? 'yt' : 'bili')} className="mr-3 underline decoration-dotted underline-offset-[3px]" style={{ color: 'var(--ink-faint)' }}>
+            {src === 'bili'
+              ? (locale === 'en' ? 'Switch to YouTube' : '换成 YouTube 播放')
+              : (locale === 'en' ? 'Can’t play? Try Bilibili (Chinese)' : '播放不了？换成 B站')}
+          </button>
+        ) : null}
         <a
-          href={`https://www.youtube.com/watch?v=${video.youtubeId}`}
+          href={src === 'bili' && video.bili ? `https://www.bilibili.com/video/${video.bili}` : `https://www.youtube.com/watch?v=${video.youtubeId}`}
           target="_blank"
           rel="noopener noreferrer"
           className="underline decoration-dotted underline-offset-[3px]"
           style={{ color: 'var(--ink-faint)' }}
         >
-          {locale === 'en' ? 'Open on YouTube ↗' : '在 YouTube 打开 ↗'}
+          {src === 'bili' && video.bili
+            ? (locale === 'en' ? 'Open on Bilibili ↗' : '在 B站打开 ↗')
+            : (locale === 'en' ? 'Open on YouTube ↗' : '在 YouTube 打开 ↗')}
         </a>
       </p>
     </figure>
