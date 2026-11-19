@@ -9,7 +9,7 @@ import { COOKIE_NAME, readCookie, safeEqualStrings, verifySessionValue } from '.
 
 export const config = { path: '/boss/api/chat' }
 
-const MODELS = ['gemini-2.5-flash-lite', 'gemini-2.5-flash']
+const MODELS = ['gemini-3.1-flash-lite', 'gemini-flash-lite-latest', 'gemini-3-flash-preview', 'gemini-2.5-flash-lite'] // 11-19: newer free-tier projects can't call 2.5-flash-lite (404) — 3.1 first so all keys work
 const RL_MAX = 20
 const RL_WINDOW_MS = 10 * 60 * 1000
 const MAX_TURNS = 8
